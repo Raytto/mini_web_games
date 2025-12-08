@@ -1,0 +1,24 @@
+(base) root@pphk2:~/dev/mini_web_games# python3 -m http.server 8003
+Serving HTTP on 0.0.0.0 port 8003 (http://0.0.0.0:8003/) ...
+185.220.238.100 - - [08/Dec/2025 12:44:09] "GET / HTTP/1.1" 200 -
+185.220.238.100 - - [08/Dec/2025 12:44:09] "GET /style.css HTTP/1.1" 200 -
+185.220.238.102 - - [08/Dec/2025 12:44:10] code 404, message File not found
+185.220.238.102 - - [08/Dec/2025 12:44:10] "GET /favicon.ico HTTP/1.1" 404 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

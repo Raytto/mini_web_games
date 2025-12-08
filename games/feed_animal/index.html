@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Feed the Cat</title>
+    <style>
+        @font-face {
+            font-family: 'Fredoka One';
+            src: local('Fredoka One'), local('Verdana'), sans-serif;
+        }
+
+        #gameCanvas {
+            cursor: pointer;
+            /* touch-action: none is critical for dragging on mobile */
+            touch-action: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐱</text></svg>">
+</head>
+
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <a href="../../index.html" class="back-btn">⬅</a>
+            <!-- We don't really need a score for this game, it's open ended play. Maybe just a reaction text? -->
+            <div id="reaction-text"
+                style="position: absolute; top: 15%; left: 50%; transform: translateX(-50%); font-size: 40px; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); display: none; pointer-events: none; font-family: 'Fredoka One';">
+                YUMMY!
+            </div>
+
+            <div id="start-screen">
+                <h1>Feed the Cat!</h1>
+                <p>Drag food to the cat's mouth!</p>
+                <button id="start-btn">PLAY</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
