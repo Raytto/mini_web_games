@@ -3,6 +3,7 @@ const ctx = canvas.getContext('2d');
 const scoreEl = document.getElementById('score');
 const startScreen = document.getElementById('start-screen');
 const startBtn = document.getElementById('start-btn');
+const resourceLoader = document.getElementById('resource-loader');
 
 let score = 0;
 let isPlaying = false;
@@ -18,6 +19,8 @@ function resize() {
 window.addEventListener('resize', resize);
 resize();
 
+// Audio (BGM in Shell)
+
 // Game Configuration
 const GRAVITY = 0.2; // For particles
 const BUBBLE_SPAWN_Rate = 300; // ms
@@ -26,37 +29,65 @@ let lastSpawnTime = 0;
 class Bubble {
     constructor() {
         // Spawn from the right side, somewhat randomly vertically but clustered
-        // Assuming character is on right.
         this.x = canvas.width + 50;
 
-        // Approximate mouth position: 70-90% height from top? No, usually 40-70%.
-        // Let's randomize it a bit around typical mouth height
-        this.y = canvas.height * 0.5 + (Math.random() * 200 - 100);
+        // Approximate mouth position area
+        const mouthBand = canvas.height * 0.55 + (Math.random() * 240 - 120);
 
-        // Size
-        this.r = 20 + Math.random() * 30; // 20-50px radius
+        // Size: mix of tiny, mid, and oversized bubbles for more variance
+        const sizeRoll = Math.random();
+        if (sizeRoll < 0.2) {
+            this.r = 14 + Math.random() * 12; // 14-26px radius
+        } else if (sizeRoll > 0.85) {
+            this.r = 80 + Math.random() * 50; // 80-130px radius
+        } else {
+            this.r = 35 + Math.random() * 45; // 35-80px radius
+        }
 
-        // Movement
-        this.speedX = -(1 + Math.random() * 2); // Moving left
-        this.speedY = (Math.random() - 0.5) * 1; // Slight vertical drift
+        // Keep bubbles on-screen even when large
+        const safeMargin = this.r + 12;
+        this.y = Math.min(canvas.height - safeMargin, Math.max(safeMargin, mouthBand));
 
-        // Oscillation for "wobble"
+        // Movement - VARIETY of SPEEDS
+        this.speedX = -(0.2 + Math.random() * 0.6); // Very slow range: -0.2 to -0.8
+        this.speedY = (Math.random() - 0.5) * 0.3; // Gentle vertical drift
+
+        // Oscillation for "wobble" (Composed of two sine waves for irregularity)
         this.angle = Math.random() * Math.PI * 2;
-        this.wobbleSpeed = 0.05 + Math.random() * 0.05;
-        this.wobbleAmp = 0.5 + Math.random() * 1;
+        this.angle2 = Math.random() * Math.PI * 2;
+        this.wobbleSpeed = 0.005 + Math.random() * 0.02; // Slower wobble
+        this.wobbleSpeed2 = 0.01 + Math.random() * 0.03;
+        this.wobbleAmp = 1.0 + Math.random() * 2.0;
 
-        // Visuals
-        this.color = `hsla(${Math.random() * 360}, 70%, 70%, 0.3)`;
+        // Extra randomness in path (turbulence)
+        this.wanderStrength = 0.02 + Math.random() * 0.05;
+
+        // Visuals - VIBRANT COLORS
+        this.hue = Math.floor(Math.random() * 360);
         this.markedForDeletion = false;
     }
 
     update() {
+        // Random walk on vertical speed to keep trajectories varied
+        this.speedY += (Math.random() - 0.5) * this.wanderStrength;
+        this.speedY *= 0.99; // Slight damping
+        this.speedY = Math.max(-0.8, Math.min(0.8, this.speedY)); // Cap vertical speed strictly
+
+        // Randomize horizontal speed slightly (wind gusts)
+        this.speedX += (Math.random() - 0.5) * 0.02;
+        this.speedX = Math.max(-1.0, Math.min(-0.15, this.speedX)); // Cap horizontal speed strictly
+
         this.x += this.speedX;
-        this.y += this.speedY + Math.sin(this.angle) * this.wobbleAmp;
+
+        // Composite wobble
+        const wobble = Math.sin(this.angle) * this.wobbleAmp + Math.sin(this.angle2) * (this.wobbleAmp * 0.6);
+        this.y += this.speedY + wobble;
+
         this.angle += this.wobbleSpeed;
+        this.angle2 += this.wobbleSpeed2;
 
         // Remove if off screen
-        if (this.x + this.r < 0) {
+        if (this.x + this.r + 50 < 0) {
             this.markedForDeletion = true;
         }
     }
@@ -66,28 +97,38 @@ class Bubble {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
 
-        // Bubble Gradient
-        // Inner transparent, outer rim
+        // Bubble Gradient - VIBRANT AND CLEAR
+        // Center highlight to colored rim
         let gradient = ctx.createRadialGradient(
             this.x - this.r * 0.3, this.y - this.r * 0.3, this.r * 0.1,
             this.x, this.y, this.r
         );
-        gradient.addColorStop(0, 'rgba(255, 255, 255, 0.1)');
-        gradient.addColorStop(0.8, 'rgba(255, 255, 255, 0.3)');
-        gradient.addColorStop(1, 'rgba(255, 255, 255, 0.6)');
+
+        // Shiny white highlight
+        gradient.addColorStop(0, `hsla(${this.hue}, 100%, 95%, 0.9)`);
+        // Vibrant body color
+        gradient.addColorStop(0.4, `hsla(${this.hue}, 80%, 70%, 0.5)`);
+        // Darker, rich rim
+        gradient.addColorStop(1, `hsla(${this.hue}, 90%, 45%, 0.9)`);
 
         ctx.fillStyle = gradient;
         ctx.fill();
 
         // Rim stroke
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
+        ctx.strokeStyle = `hsla(${this.hue}, 100%, 90%, 0.8)`;
         ctx.lineWidth = 2;
         ctx.stroke();
 
         // Specular highlight (the shine)
         ctx.beginPath();
         ctx.arc(this.x - this.r * 0.3, this.y - this.r * 0.3, this.r * 0.2, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+        ctx.fill();
+
+        // Secondary small highlight
+        ctx.beginPath();
+        ctx.arc(this.x + this.r * 0.4, this.y + this.r * 0.4, this.r * 0.05, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
         ctx.fill();
 
         ctx.restore();
@@ -95,15 +136,19 @@ class Bubble {
 }
 
 class Particle {
-    constructor(x, y, color) {
+    constructor(x, y, hue) {
         this.x = x;
         this.y = y;
-        this.vx = (Math.random() - 0.5) * 10;
-        this.vy = (Math.random() - 0.5) * 10;
+        // Increase velocity slightly for more "scattering" effect
+        this.vx = (Math.random() - 0.5) * 15;
+        this.vy = (Math.random() - 0.5) * 15;
         this.life = 1; // opacity
-        this.decay = 0.02 + Math.random() * 0.03;
-        this.size = Math.random() * 3 + 2;
-        this.color = '200, 230, 255'; // Light blueish
+        this.decay = 0.015 + Math.random() * 0.03; // Last slightly longer
+        this.size = Math.random() * 4 + 3; // Slightly larger
+
+        // Use passed hue or random fall back (though hue should always be passed now)
+        const finalHue = (hue !== undefined) ? hue : Math.floor(Math.random() * 360);
+        this.color = `hsl(${finalHue}, 100%, 60%)`;
     }
 
     update() {
@@ -118,7 +163,7 @@ class Particle {
         ctx.globalAlpha = this.life;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgb(${this.color})`;
+        ctx.fillStyle = this.color;
         ctx.fill();
         ctx.restore();
     }
@@ -174,11 +219,68 @@ function popBubble(b) {
     scoreEl.innerText = score;
 
     // Create particles
-    for (let i = 0; i < 10; i++) {
-        particles.push(new Particle(b.x, b.y));
+    for (let i = 0; i < 30; i++) {
+        particles.push(new Particle(b.x, b.y, b.hue));
     }
 
-    // Play sound? (Optional, unimplemented for now as requested)
+    // Play sound
+    playPopSound();
+}
+
+// Audio Context for procedural sounds
+let audioCtx;
+
+function initAudio() {
+    if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+}
+
+function unlockAudio() {
+    if (!audioCtx) initAudio();
+
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume().then(() => {
+            if (resourceLoader) resourceLoader.classList.add('hidden');
+            ['touchstart', 'touchend', 'mousedown', 'keydown', 'click'].forEach(evt => {
+                window.removeEventListener(evt, unlockAudio);
+            });
+        }).catch(e => console.error(e));
+    } else {
+        if (resourceLoader) resourceLoader.classList.add('hidden');
+    }
+}
+
+// Bind listeners to unlock audio on first interaction
+['touchstart', 'touchend', 'mousedown', 'keydown', 'click'].forEach(evt => {
+    window.addEventListener(evt, unlockAudio, { passive: true });
+});
+
+function playPopSound() {
+    if (!audioCtx) return;
+
+    const osc = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+
+    osc.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+
+    osc.type = 'sine';
+
+    // Frequency sweep for "pop" effect
+    const freqCheck = Math.random() * 200 + 600; // Vary slightly
+    osc.frequency.setValueAtTime(freqCheck, audioCtx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(100, audioCtx.currentTime + 0.1);
+
+    // Volume envelope
+    gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+    gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.1);
 }
 
 // Event Listeners
@@ -223,23 +325,24 @@ function animate(timestamp) {
 }
 
 function startGame() {
+    initAudio();
     isPlaying = true;
     score = 0;
     scoreEl.innerText = score;
     bubbles = [];
     particles = [];
-    startScreen.style.display = 'none';
+    if (startScreen) startScreen.style.display = 'none';
     lastTime = performance.now();
     requestAnimationFrame(animate);
 }
 
-startBtn.addEventListener('click', startGame);
+// startBtn.addEventListener('click', startGame);
 
 // Pre-spawn some bubbles so the screen isn't empty
 function init() {
     // Generate background bubbles? No, wait for play.
     resize();
+    startGame();
 }
 
 init();
-

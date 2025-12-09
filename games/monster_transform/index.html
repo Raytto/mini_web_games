@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Little Monster Transform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="../../home.html" class="back-btn">←</a>
+    <div id="game-container">
+        <!-- SVG Monster -->
+        <svg id="monster" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Body -->
+            <path id="monster-body" d="" fill="#FF6B6B" stroke="none" />
+
+            <!-- Face Container -->
+            <g id="face-container">
+                <!-- Eyes -->
+                <g id="monster-eyes" transform="translate(0, -30)"></g>
+                <!-- Nose -->
+                <g id="monster-nose" transform="translate(0, 10)"></g>
+                <!-- Mouth -->
+                <g id="monster-mouth" transform="translate(0, 40)"></g>
+            </g>
+        </svg>
+
+        <div id="instruction">Tap to Change!</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>

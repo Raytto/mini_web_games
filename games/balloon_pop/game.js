@@ -21,7 +21,7 @@ const COLORS = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#FF9F43', '#A8D8EA', '#AA96DA'
 
 class Balloon {
     constructor() {
-        this.radius = Math.random() * 30 + 40; // 40-70px radius
+        this.radius = Math.random() * 60 + 60; // 60-120px (Larger size)
         this.x = Math.random() * (canvas.width - this.radius * 2) + this.radius;
         this.y = canvas.height + this.radius;
         this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
@@ -29,6 +29,19 @@ class Balloon {
         this.speedX = (Math.random() - 0.5) * 1; // Slight horizontal drift
         this.wobble = Math.random() * Math.PI * 2;
         this.wobbleSpeed = Math.random() * 0.05 + 0.02;
+
+        const types = ['oval', 'oval', 'heart', 'star', 'duck', 'bear'];
+        this.type = types[Math.floor(Math.random() * types.length)];
+
+        // Adjust sizes/aspects based on type
+        this.aspectRatio = 1;
+        if (this.type === 'oval') {
+            this.aspectRatio = Math.random() * 0.15 + 0.8; // 0.8 - 0.95
+        } else if (this.type === 'duck') {
+            this.radius *= 1.2; // Duck needs to be a bit bigger
+        }
+
+        // No patterns, just pure shapes with shading
     }
 
     update() {
@@ -41,32 +54,151 @@ class Balloon {
         ctx.save();
         ctx.translate(this.x, this.y);
 
-        // Balloon body
+        // 1. Define the Path for the Shape
         ctx.beginPath();
-        ctx.scale(0.8, 1); // Oval shape
-        ctx.arc(0, 0, this.radius, 0, Math.PI * 2);
+
+        switch (this.type) {
+            case 'oval':
+                ctx.scale(this.aspectRatio, 1);
+                ctx.arc(0, 0, this.radius, 0, Math.PI * 2);
+                break;
+
+            case 'heart':
+                const rH = this.radius;
+                // Soft Rounded Heart
+                ctx.moveTo(0, rH * 0.3);
+                // Top Left Lobe
+                ctx.bezierCurveTo(0, -rH * 0.5, -rH * 1.4, -rH * 0.6, -rH * 1.4, 0);
+                // Bottom Left Side (curving towards a rounded tip)
+                ctx.bezierCurveTo(-rH * 1.4, rH * 0.9, -rH * 0.5, rH * 1.5, 0, rH * 1.6);
+                // Bottom Right Side 
+                ctx.bezierCurveTo(rH * 0.5, rH * 1.5, rH * 1.4, rH * 0.9, rH * 1.4, 0);
+                // Top Right Lobe
+                ctx.bezierCurveTo(rH * 1.4, -rH * 0.6, 0, -rH * 0.5, 0, rH * 0.3);
+                break;
+
+            case 'star':
+                const points = [];
+                const rS = this.radius;
+                const rS2 = rS * 0.6; // Fatter inner radius
+
+                // Calculate all 10 points (alternating outer/inner)
+                for (let i = 0; i < 10; i++) {
+                    const angle = Math.PI / 5 * i - Math.PI / 2;
+                    let r_curr = (i % 2 === 0) ? rS : rS2;
+                    points.push({
+                        x: Math.cos(angle) * r_curr,
+                        y: Math.sin(angle) * r_curr
+                    });
+                }
+
+                const len = points.length;
+                // Helper for interpolation
+                const lerp = (p1, p2, t) => ({
+                    x: p1.x + (p2.x - p1.x) * t,
+                    y: p1.y + (p2.y - p1.y) * t
+                });
+
+                // Draw rounded star by curbing corners
+                const cornerT = 0.75; // 0.5 = max roundness, 1.0 = sharp
+
+                const startP = lerp(points[len - 1], points[0], cornerT);
+                ctx.moveTo(startP.x, startP.y);
+
+                for (let i = 0; i < len; i++) {
+                    const curr = points[i];
+                    const next = points[(i + 1) % len];
+
+                    const endCorner = lerp(curr, next, 1 - cornerT);
+                    const startNext = lerp(curr, next, cornerT);
+
+                    // Round the tip using quadratic curve
+                    ctx.quadraticCurveTo(curr.x, curr.y, endCorner.x, endCorner.y);
+                    // Line to start of next corner
+                    ctx.lineTo(startNext.x, startNext.y);
+                }
+                ctx.closePath();
+                break;
+
+            case 'duck':
+                // Duck Silhouette
+                const rD = this.radius * 0.8;
+                // Body
+                ctx.moveTo(rD, 0);
+                ctx.ellipse(0, rD * 0.3, rD, rD * 0.6, 0, 0, Math.PI * 2);
+                // Head
+                ctx.moveTo(-rD * 0.3 + rD * 0.6, -rD * 0.6); // Start of head
+                ctx.arc(-rD * 0.3, -rD * 0.6, rD * 0.5, 0, Math.PI * 2);
+                // Beak
+                ctx.moveTo(-rD * 0.7, -rD * 0.6);
+                ctx.lineTo(-rD * 1.1, -rD * 0.7);
+                ctx.lineTo(-rD * 1.1, -rD * 0.5);
+                ctx.closePath();
+                break;
+
+            case 'bear':
+                const rB = this.radius * 0.8;
+                // Head
+                ctx.arc(0, 0, rB, 0, Math.PI * 2);
+                // Left Ear
+                ctx.moveTo(-rB * 0.7 + rB * 0.4, -rB * 0.7);
+                ctx.arc(-rB * 0.7, -rB * 0.7, rB * 0.35, 0, Math.PI * 2);
+                // Right Ear
+                ctx.moveTo(rB * 0.7 + rB * 0.4, -rB * 0.7);
+                ctx.arc(rB * 0.7, -rB * 0.7, rB * 0.35, 0, Math.PI * 2);
+                break;
+        }
+
+        // 2. Base Fill & Clip
+        ctx.save();
+        ctx.clip(); // Restrict all drawing to the shape
+
+        // Base Color
         ctx.fillStyle = this.color;
         ctx.fill();
 
-        // Shine/Reflection
-        ctx.beginPath();
-        ctx.arc(-this.radius * 0.3, -this.radius * 0.3, this.radius * 0.2, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
-        ctx.fill();
+        // 3. Shading Removed (Flat style with highlight)
+
+        ctx.restore(); // End Clip
+
+        // 4. Highlight (Glossy Reflection)
+        // Draw a separate shiny oval on top
+        if (this.type !== 'star' || true) { // High light for all
+            ctx.beginPath();
+            // Position based on "Light from Top Left"
+            // For complex shapes, a simple oval highlight roughly at top-left works well enough
+            // Adjust position for scale
+            let hx = -this.radius * 0.3;
+            let hy = -this.radius * 0.3;
+            let hr = this.radius * 0.2;
+
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+
+            if (this.type === 'oval') {
+                ctx.scale(this.aspectRatio, 1);
+            }
+            ctx.beginPath();
+            ctx.ellipse(hx, hy, hr, hr * 0.6, Math.PI / 4, 0, Math.PI * 2);
+            ctx.fill();
+        }
 
         ctx.restore();
 
         // String
         ctx.beginPath();
-        ctx.moveTo(this.x, this.y + this.radius);
-        ctx.lineTo(this.x, this.y + this.radius + 40);
+        let stringY = this.radius;
+        if (this.type === 'heart') stringY = this.radius * 1.5;
+        // Duck/Bear approx bottom is radius
+
+        ctx.moveTo(this.x, this.y + stringY);
+        ctx.lineTo(this.x, this.y + stringY + 40);
         ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
         ctx.lineWidth = 2;
         ctx.stroke();
     }
 
     isOffScreen() {
-        return this.y < -this.radius - 50;
+        return this.y < -this.radius - 80;
     }
 }
 
@@ -160,24 +292,133 @@ class Particle {
 }
 
 // Sound Effects using Web Audio API
+// BGM handled by shell
+
+// Sound Effects using Web Audio API
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+const resourceLoader = document.getElementById('resource-loader');
+
+function unlockAudio() {
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume().then(() => {
+            if (resourceLoader) resourceLoader.classList.add('hidden');
+            ['touchstart', 'touchend', 'mousedown', 'keydown', 'click'].forEach(evt => {
+                window.removeEventListener(evt, unlockAudio);
+            });
+        }).catch(e => console.error(e));
+    } else {
+        if (resourceLoader) resourceLoader.classList.add('hidden');
+    }
+}
+
+['touchstart', 'touchend', 'mousedown', 'keydown', 'click'].forEach(evt => {
+    window.addEventListener(evt, unlockAudio, { passive: true });
+});
+
+// Sound Types for Balloon Pop
+const soundTypes = [
+    // 0: Classic Pop (Triangle ramp)
+    (ctx, t) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(400 + Math.random() * 200, t);
+        osc.frequency.linearRampToValueAtTime(100, t + 0.1);
+
+        gain.gain.setValueAtTime(0.5, t);
+        gain.gain.exponentialRampToValueAtTime(0.01, t + 0.2);
+
+        osc.start(t);
+        osc.stop(t + 0.2);
+    },
+    // 1: Squeak Pop (High pitch)
+    (ctx, t) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(800 + Math.random() * 300, t);
+        osc.frequency.exponentialRampToValueAtTime(100, t + 0.15);
+
+        gain.gain.setValueAtTime(0.4, t);
+        gain.gain.exponentialRampToValueAtTime(0.01, t + 0.15);
+
+        osc.start(t);
+        osc.stop(t + 0.15);
+    },
+    // 2: Rubber Snap (Sawtooth)
+    (ctx, t) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(150 + Math.random() * 50, t);
+        osc.frequency.exponentialRampToValueAtTime(50, t + 0.1);
+
+        gain.gain.setValueAtTime(0.3, t);
+        gain.gain.exponentialRampToValueAtTime(0.01, t + 0.1);
+
+        osc.start(t);
+        osc.stop(t + 0.1);
+    },
+    // 3: Double Pop (Two quick sounds)
+    (ctx, t) => {
+        const osc1 = ctx.createOscillator();
+        const gain1 = ctx.createGain();
+        osc1.connect(gain1);
+        gain1.connect(ctx.destination);
+
+        osc1.type = 'square';
+        osc1.frequency.setValueAtTime(300, t);
+        gain1.gain.setValueAtTime(0.2, t);
+        gain1.gain.exponentialRampToValueAtTime(0.01, t + 0.05);
+        osc1.start(t);
+        osc1.stop(t + 0.05);
+
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.connect(gain2);
+        gain2.connect(ctx.destination);
+
+        osc2.type = 'square';
+        osc2.frequency.setValueAtTime(400, t + 0.06);
+        gain2.gain.setValueAtTime(0.2, t + 0.06);
+        gain2.gain.exponentialRampToValueAtTime(0.01, t + 0.15);
+        osc2.start(t + 0.06);
+        osc2.stop(t + 0.15);
+    },
+    // 4: Bubble Pop (Sine water)
+    (ctx, t) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(600, t);
+        osc.frequency.exponentialRampToValueAtTime(1200, t + 0.05);
+
+        gain.gain.setValueAtTime(0.6, t);
+        gain.gain.exponentialRampToValueAtTime(0.01, t + 0.05);
+
+        osc.start(t);
+        osc.stop(t + 0.05);
+    }
+];
+
 function playPopSound() {
     if (audioCtx.state === 'suspended') audioCtx.resume();
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
 
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(400, audioCtx.currentTime);
-    osc.frequency.exponentialRampToValueAtTime(50, audioCtx.currentTime + 0.1);
-
-    gain.gain.setValueAtTime(0.5, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
-
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-
-    osc.start();
-    osc.stop(audioCtx.currentTime + 0.1);
+    // Pick a random sound generator
+    const soundGen = soundTypes[Math.floor(Math.random() * soundTypes.length)];
+    soundGen(audioCtx, audioCtx.currentTime);
 }
 
 function spawnBalloon() {
@@ -185,7 +426,7 @@ function spawnBalloon() {
     balloons.push(new Balloon());
     // Spawn faster as score increases, but cap it
     let spawnRate = Math.max(500, 2000 - score * 10);
-    spawnTimer = setTimeout(spawnBalloon, Math.random() * 1000 + 500);
+    spawnTimer = setTimeout(spawnBalloon, Math.random() * 600 + 200);
 }
 
 function update() {
@@ -308,14 +549,18 @@ function startGame() {
     balloons = [];
     particles = [];
     document.getElementById('score').innerText = score;
-    document.getElementById('start-screen').classList.add('hidden');
+    const startScreen = document.getElementById('start-screen');
+    if (startScreen) startScreen.classList.add('hidden');
     document.getElementById('game-over-screen').classList.add('hidden');
 
     if (audioCtx.state === 'suspended') audioCtx.resume();
+    // bgm handled by shell
 
     spawnBalloon();
     update();
 }
 
-document.getElementById('start-btn').addEventListener('click', startGame);
+// document.getElementById('start-btn').addEventListener('click', startGame);
 document.getElementById('restart-btn').addEventListener('click', startGame);
+
+startGame();

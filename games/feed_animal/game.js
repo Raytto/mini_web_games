@@ -10,11 +10,27 @@ let gameRunning = false;
 // Assets
 const images = {};
 const imageSources = {
-    bg: '../../upload/img/kitchen_bg.png',
+    bg: '../../upload/img/cat_game_floor_bg.png',
     cat_neutral: '../../upload/img/cat_neutral.png',
     cat_happy: '../../upload/img/cat_happy.png',
-    cat_disgust: '../../upload/img/cat_disgust.png'
+    cat_disgust: '../../upload/img/cat_disgust.png',
+    bowl: '../../upload/img/empty_pet_bowl.png',
+    kraft_paper: '../../upload/img/kraft_paper_texture.png'
 };
+
+// Audio (BGM in Shell)
+
+const sfx = {
+    happy: [
+        new Audio('../../upload/audio/cat-meow.mp3'),
+        new Audio('../../upload/audio/cat-meow-2.mp3')
+    ],
+    disgust: [
+        new Audio('../../upload/audio/cat-meow-3.mp3')
+    ]
+};
+// Sound Effect Volume
+Object.values(sfx).flat().forEach(audio => audio.volume = 0.6);
 
 let loadedImages = 0;
 const totalImages = Object.keys(imageSources).length;
@@ -22,10 +38,33 @@ const totalImages = Object.keys(imageSources).length;
 // Game State
 let catState = 'neutral'; // neutral, happy, disgust
 let catStateTimer = 0;
-const CAT_REACTION_TIME = 120; // frames (approx 2 seconds)
+const CAT_REACTION_TIME = 300; // frames (approx 5 seconds)
 
 // Food
-const foodEmojis = ['🍎', '🌭', '🌽', '🍚', '🍇', '🍓', '🍔', '🍕', '🥦', '🍦', '🍩', '🥕'];
+// Food Preferences and Data
+const FOOD_DATA = {
+    // Favorites (Happy)
+    '🐟': { reaction: 'happy', emojis: ['😋', '😍', '🐟', '😻', '💖'] },   // Fish
+    '🍖': { reaction: 'happy', emojis: ['😋', '😍', '🍖', '🦁', '🤤'] },   // Meat
+    '🍗': { reaction: 'happy', emojis: ['😋', '😍', '🍗', '🍗', '🥰'] },   // Turkey
+    '🍤': { reaction: 'happy', emojis: ['😋', '😍', '🍤', '🌊', '🤩'] },   // Shrimp
+    '🥛': { reaction: 'happy', emojis: ['😋', '🥰', '🥛', '🍼', '😽'] },   // Milk
+    '🧀': { reaction: 'happy', emojis: ['😋', '🧀', '🐁', '👌', '😺'] },   // Cheese
+    '🍔': { reaction: 'happy', emojis: ['😋', '🍔', '👍', '😺', '🍟'] },   // Burger (Meat)
+    '🥩': { reaction: 'happy', emojis: ['😋', '😍', '🥩', '🍴', '🦁'] },   // Steak
+
+    // Dislike/Hate (Disgust)
+    '🥦': { reaction: 'disgust', emojis: ['🤢', '😒', '🥦', '😑', '🍃'] }, // Broccoli (Veggies)
+    '🍋': { reaction: 'disgust', emojis: ['😖', '😵', '🍋', '😝', '🥴'] }, // Lemon (Sour)
+    '🧅': { reaction: 'disgust', emojis: ['🤢', '🤮', '🧅', '😢', '😷'] }, // Onion (Toxic/Smell)
+    '🌶️': { reaction: 'disgust', emojis: ['🔥', '🥵', '🌶️', '😱', '🚒'] }, // Chili (Spicy)
+    '🍫': { reaction: 'disgust', emojis: ['🤢', '💀', '🍫', '🚫', '⚠️'] }, // Chocolate (Toxic)
+    '💊': { reaction: 'disgust', emojis: ['🤢', '🤮', '💊', '🏥', '💉'] }, // Medicine
+    '🍇': { reaction: 'disgust', emojis: ['🤢', '🤮', '🍇', '🚫', '😵'] }, // Grapes (Toxic)
+    '🌽': { reaction: 'disgust', emojis: ['😒', '🌽', '😑', '😶', '🌾'] }  // Corn (Filler/Bland)
+};
+
+const foodEmojis = Object.keys(FOOD_DATA);
 let foods = [];
 let draggedFood = null;
 
@@ -58,16 +97,18 @@ window.addEventListener('resize', resize);
 
 function initGame() {
     resize();
-    // Initial render or waitForStart
-    draw();
+    // Auto-start
+    startGame();
 }
 
-startBtn.addEventListener('click', () => {
-    startScreen.classList.add('hidden');
+// startBtn removed
+function startGame() {
+    if (startScreen) startScreen.classList.add('hidden');
     gameRunning = true;
     spawnFoods();
     loop();
-});
+}
+
 
 function spawnFoods() {
     // Fill the tray with foods
@@ -123,21 +164,18 @@ function update() {
 function draw() {
     ctx.clearRect(0, 0, width, height);
 
-    // 1. Background
+    // 1. Background (Floor)
     if (images.bg) {
-        // Draw BG to cover screen (like CSS object-fit: cover)
         const bgRatio = images.bg.width / images.bg.height;
         const canvasRatio = width / height;
         let sWidth, sHeight, sx, sy;
 
         if (canvasRatio > bgRatio) {
-            // Canvas is wider than BG -> Crop top/bottom
             sWidth = images.bg.width;
             sHeight = sWidth / canvasRatio;
             sx = 0;
             sy = (images.bg.height - sHeight) / 2;
         } else {
-            // Canvas is taller than BG -> Crop left/right
             sHeight = images.bg.height;
             sWidth = sHeight * canvasRatio;
             sy = 0;
@@ -146,56 +184,131 @@ function draw() {
         ctx.drawImage(images.bg, sx, sy, sWidth, sHeight, 0, 0, width, height);
     }
 
+    // Constants for layout
+    const trayHeight = height * 0.25;
+    const playAreaHeight = height - trayHeight;
+    const shortEdge = Math.min(width, playAreaHeight); // Use play area for sizing
+
     // 2. Cat
     let currentCatImg = images.cat_neutral;
     if (catState === 'happy') currentCatImg = images.cat_happy;
     if (catState === 'disgust') currentCatImg = images.cat_disgust;
 
+    let catSize = shortEdge * 1.8; // 1.5x larger (was 1.2)
+    let catX = (width - catSize) / 2 - 25 * scale; // Move left to correct right-bias
+
+    // Calculate bowl position to serve as anchor
+    const bowlSize = catSize * 0.5;
+    const bowlX = width / 2;
+    // Position bowl near the bottom of the play area
+    const bowlY = (height - trayHeight) - bowlSize * 0.1;
+
+    // Position cat closer to the plate
+    let catY = bowlY - catSize * 0.82;
+
     if (currentCatImg) {
-        // Size: 1/2 of the short edge
-        const shortEdge = Math.min(width, height);
-        const catSize = shortEdge * 0.5;
-
-        // Center the cat
-        const catX = (width - catSize) / 2;
-        const catY = (height - catSize) / 2;
-
         ctx.drawImage(currentCatImg, catX, catY, catSize, catSize);
 
-        // Define mouth area for collision detection
+        // Update mouth rect based on new position
         catMouthRect = {
             x: catX + catSize * 0.42,
             y: catY + catSize * 0.25,
             w: catSize * 0.16,
             h: catSize * 0.1
         };
-
-        // Debug mouth
-        // ctx.strokeStyle = 'red';
-        // ctx.strokeRect(catMouthRect.x, catMouthRect.y, catMouthRect.w, catMouthRect.h);
     }
 
-    // 4. Tray Area (Visual indicator)
-    const trayY = height * 0.75;
-    // Optional: Draw a semi-transparent overlay for tray if needed, but keeping it minimal as per user preference likely
-    // display text
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
-    ctx.fillRect(0, trayY, width, height * 0.25);
+    // 3. Bowl (Plate) - Procedural to ensure transparency/style
+    // derived variables above
 
-    ctx.fillStyle = '#fff';
-    ctx.font = `bold ${20 * scale}px "Fredoka One"`;
+    drawBowl(bowlX, bowlY, bowlSize);
+
+    // 4. Tray Area (Kraft Paper Table)
+    const trayY = height - trayHeight;
+
+    if (images.kraft_paper) {
+        // Draw kraft paper texture clipping to tray area
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(0, trayY, width, trayHeight);
+        ctx.clip();
+
+        // Draw image covering the area
+        // We can just stretch it for now as it's a texture
+        ctx.drawImage(images.kraft_paper, 0, trayY, width, trayHeight);
+        ctx.restore();
+    } else {
+        // Fallback
+        ctx.fillStyle = '#d2b48c'; // Tan color
+        ctx.fillRect(0, trayY, width, trayHeight);
+    }
+
+    // Shadow/Edge for the table
+    ctx.shadowColor = 'rgba(0,0,0,0.3)';
+    ctx.shadowBlur = 20;
+    ctx.shadowOffsetY = -5;
+    ctx.fillStyle = 'rgba(0,0,0,0.1)';
+    ctx.fillRect(0, trayY, width, 5); // visual separator
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetY = 0;
+
+
+    // Text on Table
+    ctx.fillStyle = '#5c4033'; // Dark brown pen color
+    ctx.font = `bold ${22 * scale}px "Fredoka One"`;
     ctx.textAlign = 'center';
-    ctx.textBaseline = 'alphabetic'; // Reset baseline
-    ctx.fillText("Delicious Food Below!", width / 2, trayY + 30 * scale);
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillText("Delicious Food for Kitty!", width / 2, trayY + 40 * scale);
 
     // 5. Foods
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
+    ctx.shadowColor = 'rgba(0,0,0,0.2)';
+    ctx.shadowBlur = 5;
 
     foods.forEach(food => {
-        ctx.font = `${food.size}px Arial`; // Emoji font
+        ctx.font = `${food.size}px Arial`;
         ctx.fillText(food.type, food.x, food.y);
     });
+
+    ctx.shadowBlur = 0; // Reset
+}
+
+function drawBowl(x, y, size) {
+    const radiusX = size / 2;
+    const radiusY = size / 4; // Perspective compression
+
+    // Shadow
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+    ctx.beginPath();
+    ctx.ellipse(x, y + 10 * scale, radiusX * 1.1, radiusY * 1.1, 0, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Bowl Outer (Ceramic White)
+    const pattern = ctx.createLinearGradient(x, y - radiusY, x, y + radiusY);
+    pattern.addColorStop(0, '#f0f0f0');
+    pattern.addColorStop(1, '#d0d0d0');
+    ctx.fillStyle = pattern;
+
+    ctx.beginPath();
+    ctx.ellipse(x, y, radiusX, radiusY, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.lineWidth = 2 * scale;
+    ctx.strokeStyle = '#bbb';
+    ctx.stroke();
+
+    // Bowl Inner (Depth)
+    ctx.fillStyle = '#e8e8e8'; // Slightly darker
+    ctx.beginPath();
+    ctx.ellipse(x, y - 5 * scale, radiusX * 0.85, radiusY * 0.85, 0, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Inner Shadow (Gradient)
+    const innerGrad = ctx.createRadialGradient(x, y - 5 * scale, 0, x, y - 5 * scale, radiusX * 0.85);
+    innerGrad.addColorStop(0.8, 'rgba(0,0,0,0)');
+    innerGrad.addColorStop(1, 'rgba(0,0,0,0.1)');
+    ctx.fillStyle = innerGrad;
+    ctx.fill();
 }
 
 function loop() {
@@ -273,14 +386,25 @@ function eatFood(food) {
     const index = foods.indexOf(food);
     if (index > -1) foods.splice(index, 1);
 
-    // Trigger Reaction
-    const isGood = Math.random() > 0.5; // Random reaction
-    catState = isGood ? 'happy' : 'disgust';
+    // Get Preference Data
+    const data = FOOD_DATA[food.type] || { reaction: 'neutral', emojis: ['?'] };
+
+    // Set State
+    catState = data.reaction;
     catStateTimer = CAT_REACTION_TIME;
 
-    // Show Bubble with Emoji
-    const moodEmojis = isGood ? ['😍', '😋', '🥰', '🤩'] : ['🤢', '🤮', '😖', '😵'];
-    const moodEmoji = pickRandom(moodEmojis);
+    // Play Sound
+    if (sfx[data.reaction]) {
+        const sounds = sfx[data.reaction];
+        const sound = sounds[Math.floor(Math.random() * sounds.length)];
+
+        // Reset to look for new start
+        sound.currentTime = 0;
+        sound.play().catch(e => console.warn('SFX Error:', e));
+    }
+
+    // Show Bubble with specific Emoji from the list
+    const moodEmoji = pickRandom(data.emojis);
 
     reactionText.innerHTML = `<span style="font-size: 80px;">${moodEmoji}</span>`;
     reactionText.style.display = 'block';

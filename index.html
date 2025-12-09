@@ -3,112 +3,257 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <title>Mini Game Hub</title>
     <style>
-        @font-face {
-            font-family: 'Fredoka One';
-            src: local('Fredoka One'), local('Verdana'), sans-serif;
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #222;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        #music-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #music-toggle:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        #music-toggle.off {
+            opacity: 0.6;
+            filter: grayscale(100%);
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
 </head>
 
-<body class="arcade-hub">
-    <div class="hub-container">
-        <h1 class="hub-title">Kids Game Arcade</h1>
+<body>
+    <audio id="bgm" loop autoplay>
+        <source src="upload/audio/bgm_piano.mp3" type="audio/mpeg">
+    </audio>
 
-        <div class="games-grid">
-            <!-- Game 1: Fruit Slice -->
-            <a href="games/fruit_slice/index.html" class="game-card card-fruit">
-                <div class="card-image-header">
-                    <img src="upload/img/card_fruit.png" alt="Fruit Slice">
-                </div>
-                <div class="card-content">
-                    <div class="card-info">
-                        <div class="card-title">Fruit Slice</div>
-                        <div class="card-desc">Slice delicious fruits! Avoid missing any!</div>
-                    </div>
-                    <div class="play-tag">PLAY</div>
-                </div>
-            </a>
+    <div id="music-toggle" class="off" title="Toggle Music">🎵</div>
 
-            <!-- Game 2: Balloon Pop -->
-            <a href="games/balloon_pop/index.html" class="game-card card-balloon">
-                <div class="card-image-header">
-                    <img src="upload/img/card_balloon.png" alt="Balloon Pop">
-                </div>
-                <div class="card-content">
-                    <div class="card-info">
-                        <div class="card-title">Balloon Pop</div>
-                        <div class="card-desc">Pop colorful balloons! Watch for surprises!</div>
-                    </div>
-                    <div class="play-tag">PLAY</div>
-                </div>
-            </a>
+    <!-- Load the original menu page -->
+    <iframe id="content-frame" src="home.html"></iframe>
 
-            <!-- Game 3: Feed the Cat -->
-            <a href="games/feed_animal/index.html" class="game-card card-cat">
-                <div class="card-image-header">
-                    <img src="upload/img/card_cat.png" alt="Feed the Cat">
-                </div>
-                <div class="card-content">
-                    <div class="card-info">
-                        <div class="card-title">Feed the Cat</div>
-                        <div class="card-desc">Delicious food or yucky? Feed the cat!</div>
-                    </div>
-                    <div class="play-tag">PLAY</div>
-                </div>
-            </a>
+    <script>
+        const bgm = document.getElementById('bgm');
+        const toggleBtn = document.getElementById('music-toggle');
+        const iframe = document.getElementById('content-frame');
 
-            <!-- Game 4: Feed Ants -->
-            <a href="games/feed_ants/index.html" class="game-card card-ants">
-                <div class="card-image-header">
-                    <img src="upload/img/card_ants.png" alt="Feed Ants">
-                </div>
-                <div class="card-content">
-                    <div class="card-info">
-                        <div class="card-title">Feed the Ants</div>
-                        <div class="card-desc">Drag sweets to feed the hungry ants!</div>
-                    </div>
-                    <div class="play-tag">PLAY</div>
-                </div>
-            </a>
+        // BGM Configuration
+        const HOME_BGM = 'upload/audio/bgm_piano.mp3';
+        const GAME_BGMS = [
+            'upload/audio/bgm_piano2.mp3',
+            'upload/audio/bgm_piano3.mp3',
+            'upload/audio/bgm_piano4.mp3'
+        ];
+        let unplayedGameBgms = [];
+        let isPlaying = false;
 
-            <!-- Game 5: Bubble Pop -->
-            <a href="games/bubble_pop/index.html" class="game-card card-bubble">
-                <div class="card-image-header">
-                    <img src="upload/img/bubble_pop_thumbnail.png" alt="Bubble Pop">
-                </div>
-                <div class="card-content">
-                    <div class="card-info">
-                        <div class="card-title">Bubble Pop</div>
-                        <div class="card-desc">Pop the bubbles! Fun & Satisfying!</div>
-                    </div>
-                    <div class="play-tag">PLAY</div>
-                </div>
-            </a>
+        // Prevent multiple BGM instances if this page is loaded inside an iframe
+        if (window.self !== window.top) {
+            if (bgm) {
+                bgm.pause();
+                bgm.remove();
+            }
+            if (toggleBtn) {
+                toggleBtn.style.display = 'none';
+            }
+        }
 
-            <a href="#" class="game-card card-puzzle" style="opacity: 0.8; cursor: not-allowed;"
-                onclick="return false;">
-                <div class="card-image-header">
-                    <img src="upload/img/card_puzzle.png" alt="Puzzle It">
-                </div>
-                <div class="card-content">
-                    <div class="card-info">
-                        <div class="card-title">Puzzle It</div>
-                        <div class="card-desc">Coming Soon! Solve fun and colorful puzzles.</div>
-                    </div>
-                    <div class="play-tag">SOON</div>
-                </div>
-            </a>
-        </div>
-    </div>
-    </div>
-    </div>
+        if (bgm) {
+            bgm.volume = 0.2;
+        }
+
+        function updateIcon() {
+            if (!toggleBtn) return;
+            if (isPlaying) {
+                toggleBtn.textContent = '🎵';
+                toggleBtn.classList.remove('off');
+                toggleBtn.style.animation = 'pulse 2s infinite';
+            } else {
+                toggleBtn.textContent = '🔇';
+                toggleBtn.classList.add('off');
+                toggleBtn.style.animation = 'none';
+            }
+        }
+
+        function tryPlay() {
+            if (!bgm || window.self !== window.top) return;
+            if (!bgm.paused) {
+                isPlaying = true;
+                updateIcon();
+                return;
+            }
+
+            bgm.play().then(() => {
+                isPlaying = true;
+                updateIcon();
+                // Remove the global listeners if we succeed
+                document.removeEventListener('click', tryPlay);
+                document.removeEventListener('touchstart', tryPlay);
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                if (iframeDoc) {
+                    iframeDoc.removeEventListener('click', tryPlay);
+                    iframeDoc.removeEventListener('touchstart', tryPlay);
+                }
+            }).catch(e => {
+                console.log("Autoplay prevented, waiting for interaction");
+                isPlaying = false;
+                updateIcon();
+            });
+        }
+
+        // --- New BGM Logic ---
+
+        function getNextGameTrack() {
+            if (unplayedGameBgms.length === 0) {
+                unplayedGameBgms = [...GAME_BGMS];
+            }
+            const randomIndex = Math.floor(Math.random() * unplayedGameBgms.length);
+            return unplayedGameBgms.splice(randomIndex, 1)[0];
+        }
+
+        function playHomeBgm() {
+            if (bgm.getAttribute('data-mode') === 'home') return;
+
+            // If checking absolute path is tricky, triggering based on mode switch is safer 
+            // provided we handle the initial load correctly.
+
+            bgm.setAttribute('data-mode', 'home');
+            bgm.onended = null;
+            bgm.loop = true;
+
+            // Avoid reloading if already correct (e.g. initial load)
+            if (!bgm.src.endsWith(HOME_BGM)) {
+                bgm.src = HOME_BGM;
+                if (isPlaying) bgm.play().catch(console.error);
+            }
+        }
+
+        function playGameBgm() {
+            if (bgm.getAttribute('data-mode') === 'game') return;
+
+            bgm.setAttribute('data-mode', 'game');
+            bgm.loop = false;
+
+            const playNext = () => {
+                // Ensure we are still in game mode (in case user switched to home while waiting)
+                if (bgm.getAttribute('data-mode') !== 'game') return;
+
+                const track = getNextGameTrack();
+                bgm.src = track;
+                if (isPlaying) bgm.play().catch(console.error);
+            };
+
+            bgm.onended = playNext;
+            playNext();
+        }
+
+        function checkGameState() {
+            try {
+                const href = iframe.contentWindow.location.href;
+                // Determine mode based on URL
+                if (href.includes('home.html') || href.endsWith('/')) {
+                    playHomeBgm();
+                } else {
+                    playGameBgm();
+                }
+
+                // Attach interaction listeners to new frame content
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                iframeDoc.addEventListener('click', tryPlay);
+                iframeDoc.addEventListener('touchstart', tryPlay);
+            } catch (e) {
+                console.log("Cannot access iframe content");
+            }
+        }
+
+        // Initialize state
+        // Set initial mode to 'home' implicitly matching the HTML defaults
+        if (bgm.src.endsWith(HOME_BGM)) {
+            bgm.setAttribute('data-mode', 'home');
+        }
+
+        // Try to auto-play immediately
+        tryPlay();
+
+        // Listeners
+        document.addEventListener('click', tryPlay);
+        document.addEventListener('touchstart', tryPlay);
+
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (isPlaying) {
+                    if (bgm) bgm.pause();
+                    isPlaying = false;
+                } else {
+                    if (bgm) bgm.play().catch(console.error);
+                    isPlaying = true;
+                }
+                updateIcon();
+            });
+        }
+
+        // Monitor Iframe Navigation
+        iframe.onload = checkGameState;
+
+        // Add pulse animation
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+                100% { transform: scale(1); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Register Service Worker for caching
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>

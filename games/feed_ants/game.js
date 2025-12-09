@@ -15,6 +15,69 @@ const SPAWN_RATE = 60;
 const antSprite = new Image();
 antSprite.src = 'ant_walk_sheet_transparent.png';
 
+// BGM handled by shell
+
+// Audio System
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
+
+function playSpawnSound() {
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    const t = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(600, t);
+    osc.frequency.exponentialRampToValueAtTime(300, t + 0.1);
+
+    gain.gain.setValueAtTime(0.3, t);
+    gain.gain.exponentialRampToValueAtTime(0.01, t + 0.1);
+
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(t + 0.1);
+}
+
+function playDropSound() {
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    const t = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(200, t);
+    osc.frequency.exponentialRampToValueAtTime(50, t + 0.1);
+
+    gain.gain.setValueAtTime(0.3, t);
+    gain.gain.exponentialRampToValueAtTime(0.01, t + 0.1);
+
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(t + 0.1);
+}
+
+function playFinishSound() {
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    const t = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(880, t);
+    osc.frequency.linearRampToValueAtTime(1200, t + 0.1);
+
+    gain.gain.setValueAtTime(0.08, t); // Reduced volume (was 0.2)
+    gain.gain.linearRampToValueAtTime(0.01, t + 0.2);
+
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(t + 0.2);
+}
+
 // Food Types
 const FOOD_TYPES = [
     { type: 'apple', emoji: '🍎' },
@@ -41,13 +104,14 @@ window.addEventListener('resize', resize);
 // Background Generation
 function generateBackground() {
     bgElements = [];
-    const density = (width * height) / 20000; // Adjust density based on screen size
+    const density = (width * height) / 60000; // Halved density (was 30000)
 
     // Crushed Stones
-    for (let i = 0; i < density * 1.5; i++) {
+    for (let i = 0; i < density * 0.6; i++) {
         const x = Math.random() * width;
         const y = Math.random() * height;
-        const size = 6 + Math.random() * 8;
+        // Richer size variety: some small (~9px), some big (~60px)
+        const size = (3 + Math.random() * 17) * 3;
         const vertices = [];
         const numPoints = 6; // Hexagon-ish irregular
         for (let j = 0; j < numPoints; j++) {
@@ -80,7 +144,7 @@ function generateBackground() {
             // Randomize blade
             blades.push({
                 angle: -Math.PI / 2 + (Math.random() - 0.5) * 1.5,
-                length: 12 + Math.random() * 15,
+                length: (12 + Math.random() * 15) * 6, // 6x length (2x of previous)
                 curve: (Math.random() - 0.5) * 15
             });
         }
@@ -116,7 +180,7 @@ class Ant {
         this.animSpeed = 0.2; // Speed of animation
     }
 
-    update() {
+    updateAndWrap(targetAnts, currentAntCount) {
         let currentSpeed = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
 
         // Update Animation
@@ -207,10 +271,20 @@ class Ant {
         this.y += this.vy;
 
         // Bounce/Wrap logic
-        if (this.x < -50) this.x = width + 50;
-        if (this.x > width + 50) this.x = -50;
-        if (this.y < -50) this.y = height + 50;
-        if (this.y > height + 50) this.y = -50;
+        // Only wrap if we are within population limits
+        const shouldWrap = currentAntCount <= targetAnts;
+
+        if (this.x < -50) {
+            if (shouldWrap) this.x = width + 50;
+        } else if (this.x > width + 50) {
+            if (shouldWrap) this.x = -50;
+        }
+
+        if (this.y < -50) {
+            if (shouldWrap) this.y = height + 50;
+        } else if (this.y > height + 50) {
+            if (shouldWrap) this.y = -50;
+        }
     }
 
     draw(ctx) {
@@ -352,15 +426,12 @@ function handleEnd(e) {
     if (draggingFood) {
         draggingFood.dragging = false;
         draggingFood = null;
+        playDropSound();
     }
 }
 
 // Spawner
-function spawnAnts() {
-    let totalFoodHealth = foods.reduce((sum, f) => sum + f.health, 0);
-    let targetAnts = 15 + Math.floor(totalFoodHealth / 30);
-    if (targetAnts > MAX_ANTS) targetAnts = MAX_ANTS;
-
+function spawnAnts(targetAnts) {
     if (ants.length < targetAnts) {
         let edge = Math.floor(Math.random() * 4);
         let x, y;
@@ -425,7 +496,7 @@ function loop() {
 
         } else if (el.type === 'weed') {
             ctx.strokeStyle = el.color;
-            ctx.lineWidth = 2;
+            ctx.lineWidth = 12; // 6x thickness
             ctx.lineCap = 'round';
             el.blades.forEach(blade => {
                 ctx.beginPath();
@@ -447,33 +518,53 @@ function loop() {
     trySpawnFood();
 
     // Update & Draw Foods
+    // Check for consumed food
+    foods.forEach(f => {
+        if (f.health <= 0) playFinishSound();
+    });
     foods = foods.filter(f => f.health > 0);
     foods.forEach(f => {
         f.update();
         f.draw(ctx);
     });
 
+    // Calculate Target Ants
+    let totalFoodHealth = foods.reduce((sum, f) => sum + f.health, 0);
+
+    // Ambient ants (fluctuate between 0 and 5 over time)
+    const time = Date.now() / 5000; // Slow fluctuation
+    const ambientAnts = Math.floor(Math.abs(Math.sin(time)) * 6);
+
+    // Positive correlation: 0 food = 0 ants. 1 food unit (~400 health) approx 15-20 ants.
+    let targetAnts = Math.floor(totalFoodHealth / 20) + ambientAnts;
+    if (targetAnts > MAX_ANTS) targetAnts = MAX_ANTS;
+
     // Spawn Logic
     spawnTimer++;
     if (spawnTimer > SPAWN_RATE) {
-        spawnAnts();
+        // Only spawn if below target
+        if (ants.length < targetAnts) {
+            spawnAnts(targetAnts);
+        }
         spawnTimer = 0;
     }
 
     // Update & Draw Ants
-    ants = ants.filter(ant => {
-        if (ant.x < -100 || ant.x > width + 100 || ant.y < -100 || ant.y > height + 100) {
-            let totalFoodHealth = foods.reduce((sum, f) => sum + f.health, 0);
-            let targetAnts = 15 + Math.floor(totalFoodHealth / 30);
-            if (ants.length > targetAnts) return false;
-        }
-        return true;
-    });
+    // we iterate backwards or use filter to safely remove
+    for (let i = ants.length - 1; i >= 0; i--) {
+        let ant = ants[i];
 
-    ants.forEach(ant => {
-        ant.update();
+        // Custom update with external logic for wrapping
+        ant.updateAndWrap(targetAnts, ants.length);
+
+        // Remove if far off screen (failed to wrap)
+        if (ant.x < -150 || ant.x > width + 150 || ant.y < -150 || ant.y > height + 150) {
+            ants.splice(i, 1);
+            continue;
+        }
+
         ant.draw(ctx);
-    });
+    }
 
     requestAnimationFrame(loop);
 }
@@ -510,6 +601,7 @@ function setupUI() {
             newFood.dragging = true;
             foods.push(newFood);
             draggingFood = newFood;
+            playSpawnSound();
         };
 
         item.addEventListener('mousedown', startDrag);

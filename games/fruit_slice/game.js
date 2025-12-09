@@ -8,18 +8,175 @@ const scoreEl = document.getElementById('score');
 const finalScoreEl = document.getElementById('final-score');
 const startBtn = document.getElementById('start-btn');
 const restartBtn = document.getElementById('restart-btn');
+const resourceLoader = document.getElementById('resource-loader');
 
-// Audio
-const sliceSound = new Audio('slice.mp3');
-sliceSound.preload = 'auto'; // Preload
+// Audio - Procedural + Sample
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+const sliceSample = new Audio('slice.mp3');
+sliceSample.preload = 'auto';
+
+// Prepare Noise Buffer for Swoosh (better than oscillator)
+let noiseBuffer = null;
+function createNoiseBuffer() {
+    if (noiseBuffer) return;
+    const bufferSize = audioCtx.sampleRate * 2.0; // 2 seconds
+    noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const data = noiseBuffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) {
+        data[i] = Math.random() * 2 - 1;
+    }
+}
+
+function initAudio() {
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    createNoiseBuffer();
+}
+
+function unlockAudio() {
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume().then(() => {
+            if (resourceLoader) resourceLoader.classList.add('hidden');
+            // Remove listeners once unlocked
+            ['touchstart', 'touchend', 'mousedown', 'keydown', 'click'].forEach(evt => {
+                window.removeEventListener(evt, unlockAudio);
+            });
+        }).catch(e => console.error("Audio resume failed", e));
+    } else {
+        if (resourceLoader) resourceLoader.classList.add('hidden');
+    }
+}
+
+// Check immediately (in case already running)
+if (audioCtx.state === 'running') {
+    if (resourceLoader) resourceLoader.classList.add('hidden');
+} else {
+    // Bind to all interaction events to ensure immediate unlock
+    ['touchstart', 'touchend', 'mousedown', 'keydown', 'click'].forEach(evt => {
+        window.addEventListener(evt, unlockAudio, { passive: true });
+    });
+}
+
+// 1. Swoosh Sound (Movement)
+let lastSwooshTime = 0;
+let lastMoveTime = 0;
+let lastMoveX = 0;
+let lastMoveY = 0;
+
+function playSwoosh() {
+    initAudio();
+    if (!noiseBuffer) return;
+
+    // Filtered Noise 'Whoosh'
+    const src = audioCtx.createBufferSource();
+    src.buffer = noiseBuffer;
+    src.loop = true;
+
+    const filter = audioCtx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.Q.value = 1;
+
+    const gain = audioCtx.createGain();
+
+    // Envelope
+    const now = audioCtx.currentTime;
+    // Start low, sweep up, sweep down
+    filter.frequency.setValueAtTime(100, now);
+    filter.frequency.exponentialRampToValueAtTime(800, now + 0.1);
+    filter.frequency.exponentialRampToValueAtTime(100, now + 0.2);
+
+    gain.gain.setValueAtTime(0.01, now);
+    gain.gain.linearRampToValueAtTime(0.3, now + 0.05); // Louder (was 0.05)
+    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+
+    src.connect(filter);
+    filter.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    src.start(now);
+    src.stop(now + 0.25);
+}
+
+function updateSwoosh(x, y) {
+    const now = performance.now();
+    const dt = now - lastMoveTime;
+
+    // Only check if sufficient time passed to avoid noise
+    if (dt > 20) {
+        const dx = x - lastMoveX;
+        const dy = y - lastMoveY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const speed = dist / dt; // px per ms
+
+        // Lower threshold (was 1.5) and check cooldown
+        if (speed > 0.8 && now - lastSwooshTime > 150) {
+            playSwoosh();
+            lastSwooshTime = now;
+        }
+
+        lastMoveX = x;
+        lastMoveY = y;
+        lastMoveTime = now;
+    }
+}
+
+// 2. Slice Sound (Hit)
+// 2. Slice Sound (Hit) - "Chua/Squish" Sound
+// We will generate a burst of low-passed noise + a quick pitch sweeping tone to simulate the 'squish/tear'
 function playSliceSound() {
-    const sound = sliceSound.cloneNode();
-    sound.volume = Math.random() * 0.2 + 0.6; // 0.6 - 0.8
-    // Pitch shift up to make it sound faster/sharper (0.5x to 1.5x faster than base, so 1.5-2.5x total speed)
-    // "chuala" implies a quick heavy slice.
-    sound.playbackRate = 1.5 + Math.random() * 0.8;
-    // sound.preservesPitch = false; // Not needed for simple Audio, playbackRate affects pitch by default
-    sound.play().catch(e => console.log('Audio error:', e));
+    initAudio();
+
+    const t = audioCtx.currentTime;
+
+    // 1. The "Chua" (Noise Burst)
+    // Create random noise buffer per hit for variety or reuse a short buffer
+    // Reusing the noiseBuffer is fine if we filter it differently, but new noise is fresher.
+    const bufferSize = audioCtx.sampleRate * 0.2; // 0.2s duration
+    const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) {
+        data[i] = Math.random() * 2 - 1;
+    }
+
+    const noise = audioCtx.createBufferSource();
+    noise.buffer = buffer;
+
+    const noiseFilter = audioCtx.createBiquadFilter();
+    noiseFilter.type = 'lowpass';
+    // Start high (crisp cut) and quickly drop (muffle/juice)
+    noiseFilter.frequency.setValueAtTime(2000, t);
+    noiseFilter.frequency.exponentialRampToValueAtTime(300, t + 0.1);
+
+    const noiseGain = audioCtx.createGain();
+    noiseGain.gain.setValueAtTime(0.8, t); // Loud attack
+    noiseGain.gain.exponentialRampToValueAtTime(0.01, t + 0.15); // Fast decay
+
+    noise.connect(noiseFilter);
+    noiseFilter.connect(noiseGain);
+    noiseGain.connect(audioCtx.destination);
+    noise.start(t);
+
+
+    // 2. The "Squish" (Liquid Tones)
+    // Multiple sines descending rapidly in pitch
+    const sineCount = 3;
+    for (let i = 0; i < sineCount; i++) {
+        const osc = audioCtx.createOscillator();
+        const oscGain = audioCtx.createGain();
+
+        osc.type = 'sine';
+        // Random start frequencies for "wet" sound
+        const startFreq = 600 + Math.random() * 400;
+        osc.frequency.setValueAtTime(startFreq, t);
+        osc.frequency.exponentialRampToValueAtTime(100, t + 0.1); // Drop pitch fast
+
+        oscGain.gain.setValueAtTime(0.3, t);
+        oscGain.gain.exponentialRampToValueAtTime(0.01, t + 0.1);
+
+        osc.connect(oscGain);
+        oscGain.connect(audioCtx.destination);
+        osc.start(t);
+        osc.stop(t + 0.1);
+    }
 }
 
 // Game State
@@ -34,27 +191,27 @@ let spawnInterval = 30; // Spawns faster (was 60)
 
 // Fruit Configuration
 const FRUIT_TYPES = [
-    { name: 'Watermelon', emoji: '🍉', color: '#ff5e62', radius: 60, points: 10 },
-    { name: 'Orange', emoji: '🍊', color: '#ffa500', radius: 50, points: 20 },
-    { name: 'Apple', emoji: '🍎', color: '#ff4d4d', radius: 48, points: 15 },
-    { name: 'Banana', emoji: '🍌', color: '#ffe135', radius: 55, points: 20 },
-    { name: 'Pineapple', emoji: '🍍', color: '#ffff00', radius: 65, points: 30 },
-    { name: 'Mango', emoji: '🥭', color: '#ffcc00', radius: 55, points: 25 },
-    { name: 'Strawberry', emoji: '🍓', color: '#ff0000', radius: 45, points: 30 },
-    { name: 'Grape', emoji: '🍇', color: '#800080', radius: 45, points: 25 },
-    { name: 'Peach', emoji: '🍑', color: '#ffcc99', radius: 50, points: 20 },
-    { name: 'Cherry', emoji: '🍒', color: '#cc0000', radius: 40, points: 40 },
-    { name: 'Pear', emoji: '🍐', color: '#dbe600', radius: 50, points: 20 },
-    { name: 'Kiwi', emoji: '🥝', color: '#8b4513', radius: 45, points: 30 },
-    { name: 'Lemon', emoji: '🍋', color: '#fff700', radius: 48, points: 20 },
-    { name: 'Coconut', emoji: '🥥', color: '#f0f0f0', radius: 52, points: 25 },
-    { name: 'Avocado', emoji: '🥑', color: '#568203', radius: 50, points: 30 },
-    { name: 'Melon', emoji: '🍈', color: '#98FB98', radius: 55, points: 25 },
-    { name: 'Tangerine', emoji: '🍊', color: '#FFA500', radius: 46, points: 20 },
-    { name: 'Green Apple', emoji: '🍏', color: '#7FFF00', radius: 48, points: 15 },
+    { name: 'Watermelon', emoji: '🍉', color: '#ff5e62', radius: 110, points: 10 },
+    { name: 'Orange', emoji: '🍊', color: '#ffa500', radius: 90, points: 20 },
+    { name: 'Apple', emoji: '🍎', color: '#ff4d4d', radius: 85, points: 15 },
+    { name: 'Banana', emoji: '🍌', color: '#ffe135', radius: 95, points: 20 },
+    { name: 'Pineapple', emoji: '🍍', color: '#ffff00', radius: 115, points: 30 },
+    { name: 'Mango', emoji: '🥭', color: '#ffcc00', radius: 95, points: 25 },
+    { name: 'Strawberry', emoji: '🍓', color: '#ff0000', radius: 80, points: 30 },
+    { name: 'Grape', emoji: '🍇', color: '#800080', radius: 80, points: 25 },
+    { name: 'Peach', emoji: '🍑', color: '#ffcc99', radius: 90, points: 20 },
+    { name: 'Cherry', emoji: '🍒', color: '#cc0000', radius: 75, points: 40 },
+    { name: 'Pear', emoji: '🍐', color: '#dbe600', radius: 90, points: 20 },
+    { name: 'Kiwi', emoji: '🥝', color: '#8b4513', radius: 80, points: 30 },
+    { name: 'Lemon', emoji: '🍋', color: '#fff700', radius: 85, points: 20 },
+    { name: 'Coconut', emoji: '🥥', color: '#f0f0f0', radius: 92, points: 25 },
+    { name: 'Avocado', emoji: '🥑', color: '#568203', radius: 88, points: 30 },
+    { name: 'Melon', emoji: '🍈', color: '#98FB98', radius: 100, points: 25 },
+    { name: 'Tangerine', emoji: '🍊', color: '#FFA500', radius: 82, points: 20 },
+    { name: 'Green Apple', emoji: '🍏', color: '#7FFF00', radius: 85, points: 15 },
 ];
 
-const GRAVITY = 0.1; // Reduced gravity (was 0.2)
+const GRAVITY = 0.04; // Reduced gravity significantly for slower fall
 
 // Resize handling
 function resize() {
@@ -75,6 +232,9 @@ function handleInput(x, y) {
 
     // Add to trail
     trail.push({ x, y, life: 10 });
+
+    // Check for swoosh sound
+    updateSwoosh(x, y);
 
     if (isPlaying) {
         checkCollisions();
@@ -98,12 +258,12 @@ class Fruit {
         const centerX = canvas.width / 2;
         const distFromCenter = this.x - centerX;
 
-        this.vx = -distFromCenter * 0.01 + (Math.random() - 0.5) * 2;
-        // Slower upward force for kids (was 13-18, now 8-12)
-        this.vy = -(Math.random() * 4 + 10);
+        this.vx = -distFromCenter * 0.005 + (Math.random() - 0.5) * 1.5; // Slower horizontal
+        // Much slower upward force for floating effect (was 10-14, now 6-9 match low gravity)
+        this.vy = -(Math.random() * 3 + 6.5);
 
         this.rotation = 0;
-        this.rotationSpeed = (Math.random() - 0.5) * 0.1; // Slower rotation
+        this.rotationSpeed = (Math.random() - 0.5) * 0.05; // Very slow rotation
         this.active = true;
     }
 
@@ -278,7 +438,8 @@ function distSq(v, w) {
 function createSplash(x, y, color, amount = 15, speedMult = 1.0) {
     for (let i = 0; i < amount; i++) {
         const speed = (Math.random() * 8 + 4) * speedMult;
-        const size = Math.random() * 8 + 3;
+        // Increased size: was random * 8 + 3, now random * 12 + 6
+        const size = Math.random() * 12 + 6;
         particles.push(new Particle(x, y, color, speed, size));
     }
 }
@@ -370,6 +531,11 @@ function loop() {
     }
 
     // Update & Draw Particles (Juice & Slices)
+    // Limit particle count to avoid overload
+    while (particles.length > 100) {
+        particles.shift(); // Remove oldest
+    }
+
     for (let i = particles.length - 1; i >= 0; i--) {
         const p = particles[i];
         p.update();
@@ -438,13 +604,14 @@ function startGame() {
     trail = [];
     isPlaying = true;
     canvas.classList.add('playing');
-    startScreen.classList.add('hidden');
-    gameOverScreen.classList.add('hidden');
+    if (startScreen) startScreen.classList.add('hidden');
+    if (gameOverScreen) gameOverScreen.classList.add('hidden');
     loop();
 }
 
-startBtn.addEventListener('click', startGame);
+// startBtn.addEventListener('click', startGame);
 restartBtn.addEventListener('click', startGame);
 
 // Init
 resize();
+startGame();

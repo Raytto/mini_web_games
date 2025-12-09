@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Time Magic</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-container">
+        <a href="../../home.html" class="back-btn">⬅</a>
+        <div id="scene" class="sunny">
+            <!-- Layers -->
+            <div id="sky-layer"></div>
+
+            <div id="mountain-layer">
+                <div class="mountain mt-back-1"></div>
+                <div class="mountain mt-back-2"></div>
+                <div class="mountain mt-mid-1"></div>
+                <div class="mountain mt-mid-2"></div>
+            </div>
+
+            <div id="ground-layer">
+                <div class="hill"></div>
+                <div class="river"></div>
+            </div>
+
+            <div id="elements">
+                <!-- Interactive Elements drawn with CSS -->
+
+                <div class="element sun-container" id="sun">
+                    <div class="sun-core"></div>
+                    <div class="sun-rays"></div>
+                </div>
+
+                <div class="element cloud-container" id="cloud">
+                    <div class="cloud-puff p1"></div>
+                    <div class="cloud-puff p2"></div>
+                    <div class="cloud-puff p3"></div>
+                </div>
+
+                <!-- Weather Particles Containers -->
+                <div class="weather-container" id="rain-container"></div>
+                <div class="weather-container" id="snow-container"></div>
+
+                <div class="element rainbow-container" id="rainbow">
+                    <div class="rainbow-arc"></div>
+                </div>
+
+                <div class="element house-container" id="house">
+                    <div class="roof"></div>
+                    <div class="chimney">
+                        <div class="smoke"></div>
+                    </div>
+                    <div class="walls">
+                        <div class="window"></div>
+                        <div class="door"></div>
+                    </div>
+                </div>
+
+                <div class="element tree-container" id="tree">
+                    <div class="foliage f1"></div>
+                    <div class="foliage f2"></div>
+                    <div class="foliage f3"></div>
+                    <div class="trunk"></div>
+                </div>
+
+                <div class="element flower-container" id="flower">
+                    <div class="petals"></div>
+                    <div class="center"></div>
+                    <div class="stalk"></div>
+                    <div class="leaves"></div>
+                </div>
+            </div>
+
+            <div id="overlay-text">Sunny</div>
+            <div id="hint-text">Swipe Up/Down</div>
+        </div>
+    </div>
+
+    <!-- Audio Elements (Placeholder logic in JS will handle playback if files missing using web audio or synthesis if needed, 
+         but for now we setup structure. User asked for specific sounds but I don't have them yet. 
+         I will use the same BGM logic effectively or simple synthesized beeps in JS if needed, 
+         or just standard MP3 references that "should" exist or placeholders.) 
+         For now, I will assume we might populate `upload/audio` later or use what's there. 
+         I'll stick to visual feedback mostly if sounds are missing. -->
+
+    <script src="game.js"></script>
+</body>
+
+</html>

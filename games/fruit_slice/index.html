@@ -18,6 +18,25 @@
             background-size: cover;
             background-position: center;
         }
+
+        #resource-loader {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            pointer-events: none;
+            transition: opacity 0.5s;
+            z-index: 100;
+        }
+
+        #resource-loader.hidden {
+            opacity: 0;
+        }
     </style>
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon"
@@ -28,16 +47,14 @@
     <div id="game-container">
         <canvas id="gameCanvas"></canvas>
         <div id="ui-layer">
-            <a href="../../index.html" class="back-btn">⬅</a>
+            <a href="../../home.html" class="back-btn">⬅</a>
             <div id="score-board">
                 <span class="score-icon">🍎</span>
                 <span id="score">0</span>
             </div>
-            <div id="start-screen">
-                <h1>Fruit Slice!</h1>
-                <p>Move your mouse to slice frames!</p>
-                <button id="start-btn">PLAY</button>
-            </div>
+
+            <div id="resource-loader">资源加载中...</div>
+
             <div id="game-over-screen" class="hidden">
                 <h1>Great Job!</h1>
                 <p>Score: <span id="final-score">0</span></p>
@@ -45,7 +62,7 @@
             </div>
         </div>
     </div>
-    <script src="game.js?v=1"></script>
+    <script src="game.js?v=4"></script>
 </body>
 
 </html>

@@ -445,6 +445,28 @@ canvas.playing {
     background: #5DADE2;
 }
 
+/* Animal Tap - Cute Pink/Purple */
+.card-animal-tap {
+    border-color: #FF9A9E;
+    box-shadow: 0 10px 0 #d9787c, 0 20px 40px rgba(255, 154, 158, 0.3);
+}
+
+.card-animal-tap:hover {
+    box-shadow: 0 15px 0 #d9787c, 0 30px 60px rgba(255, 154, 158, 0.4);
+}
+
+.card-animal-tap:active {
+    box-shadow: 0 5px 0 #d9787c;
+}
+
+.card-animal-tap .card-title {
+    color: #FF6B6B;
+}
+
+.card-animal-tap .play-tag {
+    background: #FF9A9E;
+}
+
 /* --- Back Button --- */
 .back-btn {
     position: absolute;
@@ -477,4 +499,68 @@ canvas.playing {
 .back-btn:active {
     transform: translateY(3px);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* --- Coming Soon State --- */
+.game-card.coming-soon {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.game-card.coming-soon:hover {
+    transform: none;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.game-card.coming-soon:active {
+    transform: none;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.game-card.coming-soon .play-tag {
+    background: #999 !important;
+}
+
+/* Monster Transform - Vibrant Purple/Green */
+.card-monster {
+    border-color: #9b59b6;
+    box-shadow: 0 10px 0 #8e44ad, 0 20px 40px rgba(155, 89, 182, 0.3);
+}
+
+.card-monster:hover {
+    box-shadow: 0 15px 0 #8e44ad, 0 30px 60px rgba(155, 89, 182, 0.4);
+}
+
+.card-monster:active {
+    box-shadow: 0 5px 0 #8e44ad;
+}
+
+.card-monster .card-title {
+    color: #8e44ad;
+}
+
+.card-monster .play-tag {
+    background: #9b59b6;
+}
+
+/* Time Magic - Sky Blue/Yellow */
+.card-time-magic {
+    border-color: #87CEEB;
+    box-shadow: 0 10px 0 #5F9EA0, 0 20px 40px rgba(135, 206, 235, 0.3);
+}
+
+.card-time-magic:hover {
+    box-shadow: 0 15px 0 #5F9EA0, 0 30px 60px rgba(135, 206, 235, 0.4);
+}
+
+.card-time-magic:active {
+    box-shadow: 0 5px 0 #5F9EA0;
+}
+
+.card-time-magic .card-title {
+    color: #4682B4;
+}
+
+.card-time-magic .play-tag {
+    background: #87CEEB;
 }
