@@ -1,19 +1,31 @@
 const scene = document.getElementById('scene');
-const elementsContainer = document.getElementById('elements');
 const overlayText = document.getElementById('overlay-text');
-const interactiveElements = document.querySelectorAll('.element');
+const rainContainer = document.getElementById('rain-container');
+const snowContainer = document.getElementById('snow-container');
 
 const states = [
-    { name: 'sunny', text: 'Sunny Day ☀️', bg: 'var(--bg-sunny)' },
-    { name: 'rainy', text: 'Rainy Day 🌧️', bg: 'var(--bg-rainy)' },
-    { name: 'snowy', text: 'Snowy Day ❄️', bg: 'var(--bg-snowy)' },
-    { name: 'rainbow', text: 'Rainbow! 🌈', bg: 'var(--bg-rainbow)' }
+    { name: 'sunny', text: 'Sunny Day ☀️' },
+    { name: 'rainy', text: 'Rainy Day 🌧️' },
+    { name: 'snowy', text: 'Snowy Day ❄️' },
+    { name: 'rainbow', text: 'Rainbow! 🌈' }
 ];
 
 let currentStateIndex = 0;
 let particleInterval = null;
 
-// Audio Context for synthetic sounds (soft beeps/bloops)
+// Preload images to avoid flashing
+const imageUrls = [
+    'assets/bg_sunny.png',
+    'assets/bg_rainy.png',
+    'assets/bg_snowy.png',
+    'assets/bg_rainbow.png'
+];
+imageUrls.forEach(url => {
+    const img = new Image();
+    img.src = url;
+});
+
+// Audio Context for synthetic sounds
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 function playSound(type) {
     if (audioCtx.state === 'suspended') {
@@ -28,63 +40,80 @@ function playSound(type) {
     const now = audioCtx.currentTime;
 
     if (type === 'swipe') {
+        // Whoosh sound
         osc.type = 'sine';
         osc.frequency.setValueAtTime(200, now);
-        osc.frequency.exponentialRampToValueAtTime(400, now + 0.1);
-        gainNode.gain.setValueAtTime(0.3, now);
+        osc.frequency.exponentialRampToValueAtTime(600, now + 0.15);
+        gainNode.gain.setValueAtTime(0.2, now);
         gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
         osc.start(now);
         osc.stop(now + 0.3);
     } else if (type === 'click') {
+        // Cute pop sound
         osc.type = 'triangle';
-        osc.frequency.setValueAtTime(300 + Math.random() * 200, now);
-        osc.frequency.linearRampToValueAtTime(100, now + 0.2);
+        osc.frequency.setValueAtTime(400 + Math.random() * 200, now);
+        osc.frequency.exponentialRampToValueAtTime(100, now + 0.1);
         gainNode.gain.setValueAtTime(0.3, now);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
         osc.start(now);
-        osc.stop(now + 0.2);
+        osc.stop(now + 0.15);
     }
 }
 
 function updateState() {
     const state = states[currentStateIndex];
 
-    // Remove old state classes
+    // Update Scene Class
     states.forEach(s => scene.classList.remove(s.name));
-
-    // Add new state class
     scene.classList.add(state.name);
+
+    // Update Text
     overlayText.textContent = state.text;
+    overlayText.style.animation = 'none';
+    void overlayText.offsetWidth; // trigger reflow
+    overlayText.style.animation = 'pulse 0.5s';
 
     // Manage particles
-    clearInterval(particleInterval);
-    elementsContainer.querySelectorAll('.particle').forEach(el => el.remove());
+    clearParticles();
 
     if (state.name === 'rainy') {
-        startParticles('💧', 200, 1.5); // Emoji, interval, speed factor
+        startParticles(rainContainer, 'rain-drop', '💧', 50, 0.8); // Fast rain
     } else if (state.name === 'snowy') {
-        startParticles('❄️', 300, 3);
+        startParticles(snowContainer, 'snow-flake', '❄️', 300, 4); // Slow snow
     }
 
     playSound('swipe');
 }
 
-function startParticles(char, interval, durationIsSeconds) {
+function clearParticles() {
+    if (particleInterval) clearInterval(particleInterval);
+    rainContainer.innerHTML = '';
+    snowContainer.innerHTML = '';
+}
+
+function startParticles(container, className, char, interval, durationIsSeconds) {
     particleInterval = setInterval(() => {
         const p = document.createElement('div');
-        p.textContent = char;
-        p.classList.add('particle');
+        p.classList.add('particle', className);
+        p.textContent = char; // Use Emoji
         p.style.left = Math.random() * 100 + 'vw';
-        p.style.fontSize = (Math.random() * 2 + 1) + 'rem';
-        p.style.animationDuration = (Math.random() * 1 + durationIsSeconds) + 's';
-        p.style.opacity = Math.random() * 0.5 + 0.5;
 
-        elementsContainer.appendChild(p);
+        // Randomize size using fontSize instead of scale for crisp Emojis
+        const size = Math.random() * 1.5 + 1; // 1rem to 2.5rem
+        p.style.fontSize = `${size}rem`;
+
+        // Pass scale for animation if needed (optional, but font-size handles visual size)
+        p.style.setProperty('--scale', Math.random() * 0.5 + 0.8);
+
+        p.style.animationDuration = (durationIsSeconds * 0.8 + Math.random() * durationIsSeconds * 0.4) + 's';
+        p.style.opacity = Math.random() * 0.5 + 0.6;
+
+        container.appendChild(p);
 
         // Self cleanup
         setTimeout(() => {
             p.remove();
-        }, (durationIsSeconds + 2) * 1000);
+        }, (durationIsSeconds + 1) * 1000);
     }, interval);
 }
 
@@ -124,29 +153,20 @@ function handleSwipe(start, end) {
     }
 }
 
-// Click interactions
-interactiveElements.forEach(el => {
+// Interaction for specific elements
+const sun = document.getElementById('sun-element');
+const rainbow = document.getElementById('rainbow-element');
+
+[sun, rainbow].forEach(el => {
+    if (!el) return;
     el.addEventListener('click', (e) => {
-        e.stopPropagation(); // Prevent swipe confusion if overlapping
+        e.stopPropagation(); // prevent swipe triggers if dragged
         playSound('click');
 
-        // Remove animation class reset trick
-        el.classList.remove('active-feedback');
-        void el.offsetWidth; // trigger reflow
-        el.classList.add('active-feedback');
-
-        // Random visual effect
-        const effects = ['bounce', 'shake', 'pulse'];
-        const randomEffect = effects[Math.floor(Math.random() * effects.length)];
-        el.style.animation = 'none'; // reset specific animation
-        setTimeout(() => {
-            el.style.animation = `${randomEffect} 0.5s ease`;
-        }, 10);
-
-        // Restore default animation after interaction
-        setTimeout(() => {
-            el.style.animation = '';
-        }, 600);
+        // Visual feedback
+        el.classList.remove('feedback-bounce');
+        void el.offsetWidth;
+        el.classList.add('feedback-bounce');
     });
 });
 

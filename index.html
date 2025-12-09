@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-    <title>Mini Game Hub</title>
+    <title>Kids Game Arcade</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <style>
         body,
         html {
@@ -80,6 +81,18 @@
         ];
         let unplayedGameBgms = [];
         let isPlaying = false;
+        // Persist user toggle so navigation between games does not force music back on
+        const MUSIC_PREF_KEY = 'bgmEnabled';
+        let musicEnabled = true;
+
+        try {
+            const storedPref = localStorage.getItem(MUSIC_PREF_KEY);
+            if (storedPref !== null) {
+                musicEnabled = storedPref === 'true';
+            }
+        } catch (e) {
+            console.log('Cannot read music preference, defaulting to on');
+        }
 
         // Prevent multiple BGM instances if this page is loaded inside an iframe
         if (window.self !== window.top) {
@@ -94,14 +107,18 @@
 
         if (bgm) {
             bgm.volume = 0.2;
+            bgm.autoplay = musicEnabled;
+            if (!musicEnabled) {
+                bgm.pause();
+            }
         }
 
         function updateIcon() {
             if (!toggleBtn) return;
-            if (isPlaying) {
+            if (musicEnabled) {
                 toggleBtn.textContent = '🎵';
                 toggleBtn.classList.remove('off');
-                toggleBtn.style.animation = 'pulse 2s infinite';
+                toggleBtn.style.animation = isPlaying ? 'pulse 2s infinite' : 'none';
             } else {
                 toggleBtn.textContent = '🔇';
                 toggleBtn.classList.add('off');
@@ -111,6 +128,11 @@
 
         function tryPlay() {
             if (!bgm || window.self !== window.top) return;
+            if (!musicEnabled) {
+                isPlaying = false;
+                updateIcon();
+                return;
+            }
             if (!bgm.paused) {
                 isPlaying = true;
                 updateIcon();
@@ -206,7 +228,9 @@
             bgm.setAttribute('data-mode', 'home');
         }
 
-        // Try to auto-play immediately
+        updateIcon();
+
+        // Try to auto-play immediately if allowed by the toggle
         tryPlay();
 
         // Listeners
@@ -216,13 +240,22 @@
         if (toggleBtn) {
             toggleBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                if (isPlaying) {
+                musicEnabled = !musicEnabled;
+                bgm.autoplay = musicEnabled;
+                try {
+                    localStorage.setItem(MUSIC_PREF_KEY, musicEnabled);
+                } catch (err) {
+                    console.log('Cannot store music preference');
+                }
+
+                if (!musicEnabled) {
                     if (bgm) bgm.pause();
                     isPlaying = false;
-                } else {
-                    if (bgm) bgm.play().catch(console.error);
-                    isPlaying = true;
+                    updateIcon();
+                    return;
                 }
+
+                tryPlay();
                 updateIcon();
             });
         }

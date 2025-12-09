@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Mini Game Hub</title>
+    <title>Kids Game Arcade</title>
     <style>
         @font-face {
             font-family: 'Fredoka One';
@@ -13,8 +13,7 @@
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
 <body class="arcade-hub">
@@ -133,6 +132,20 @@
                 </div>
             </a>
 
+            <!-- Game 10: Magic Doodle -->
+            <a href="games/magic_doodle/index.html" class="game-card card-magic-doodle">
+                <div class="card-image-header">
+                    <img src="upload/img/card_magic_doodle_small.png" alt="Magic Doodle">
+                </div>
+                <div class="card-content">
+                    <div class="card-info">
+                        <div class="card-title">Magic Doodle</div>
+                        <div class="card-desc">Draw freely with magic neon lights!</div>
+                    </div>
+                    <div class="play-tag">PLAY</div>
+                </div>
+            </a>
+
             <!-- Game 9: Puzzle Game (Coming Soon) -->
             <div class="game-card card-puzzle coming-soon">
                 <div class="card-image-header">
@@ -148,6 +161,43 @@
             </div>
         </div>
     </div>
+    <script>
+        (function () {
+            const SCROLL_KEY = 'home_scroll_pos';
+
+            function getScrollTop() {
+                return document.body.scrollTop || document.documentElement.scrollTop || window.scrollY || 0;
+            }
+
+            // Restore scroll position
+            function restoreScroll() {
+                const savedPos = sessionStorage.getItem(SCROLL_KEY);
+                if (savedPos !== null) {
+                    const pos = parseInt(savedPos, 10);
+                    // Try setting on body first as it's the likely container
+                    document.body.scrollTop = pos;
+                    // Fallbacks
+                    document.documentElement.scrollTop = pos;
+                    window.scrollTo(0, pos);
+                }
+            }
+
+            window.addEventListener('DOMContentLoaded', restoreScroll);
+            window.addEventListener('load', restoreScroll);
+
+            // Save scroll position
+            function saveScroll() {
+                sessionStorage.setItem(SCROLL_KEY, getScrollTop());
+            }
+
+            window.addEventListener('beforeunload', saveScroll);
+
+            // Also save on specific link clicks just to be sure
+            document.querySelectorAll('.game-card').forEach(card => {
+                card.addEventListener('click', saveScroll);
+            });
+        })();
+    </script>
 </body>
 
 </html>

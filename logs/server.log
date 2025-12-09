@@ -5217,3 +5217,622 @@ BrokenPipeError: [Errno 32] Broken pipe
 127.0.0.1 - - [09/Dec/2025 13:03:06] "GET /games/fruit_slice/slice.mp3 HTTP/1.1" 304 -
 127.0.0.1 - - [09/Dec/2025 13:03:06] "GET /sw.js HTTP/1.1" 304 -
 127.0.0.1 - - [09/Dec/2025 13:03:07] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:13:34] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:13:34] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:00] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:02] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:02] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 13:36:02] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 13:36:05] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:05] "GET /games/time_magic/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:05] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:07] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:12] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:13] "GET /games/monster_transform/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:13] "GET /games/monster_transform/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:14] "GET /games/monster_transform/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:14] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:15] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:48] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:49] "GET /games/animal_tap/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:50] "GET /games/animal_tap/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:36:50] "GET /games/animal_tap/game.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:36:52] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:37:28] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:37:29] "GET /games/feed_ants/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:37:29] "GET /games/feed_ants/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:37:29] "GET /games/feed_ants/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:37:31] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:38:53] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:53] "GET /style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:38:53] "GET /upload/img/card_fruit_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:53] "GET /upload/img/card_monster_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:54] "GET /upload/img/card_time_magic_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:54] "GET /upload/img/card_puzzle_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:55] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:38:57] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:38:57] "GET /upload/img/card_cat_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:57] "GET /upload/img/card_ants_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:57] "GET /upload/img/card_balloon_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:57] "GET /upload/img/bubble_pop_thumbnail_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:57] "GET /upload/img/card_animal_tap_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:38:59] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:39:03] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 13:39:03] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 13:39:03] "GET /games/balloon_pop/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:39:03] "GET /games/balloon_pop/game.js?v=2 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:39:05] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:39:51] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:40:03] "GET /games/feed_animal/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:40:03] "GET /games/feed_animal/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:40:05] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:41:06] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 13:59:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 13:59:16] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 13:59:16] "GET /css/support_parent.css HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 13:59:16] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 13:59:16] "GET /js/lkk_ch.js HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 13:59:16] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 13:59:16] "GET /js/twint_ch.js HTTP/1.1" 404 -
+62.60.135.165 - - [09/Dec/2025 14:07:18] code 400, message Bad HTTP/0.9 request type ('\\x03\\x00\\x00/*à\\x00\\x00\\x00\\x00\\x00Cookie:')
+62.60.135.165 - - [09/Dec/2025 14:07:18] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" 400 -
+127.0.0.1 - - [09/Dec/2025 14:19:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:19:58] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:19:58] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:19:58] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:19:58] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:19:59] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:20:05] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:20:05] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:20:06] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:21:07] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:21:08] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:21:08] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:21:09] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:21:11] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:21:13] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:24:21] "GET /games/monster_transform/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:24:22] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:24:23] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:25:01] "GET /style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:25:01] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:25:03] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:25:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:25:25] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:25:25] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:25:25] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:25:25] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:25:26] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:25:33] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:25:33] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:37:02] "GET /.git/config HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:44:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:44:12] "GET /home.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:44:12] "GET /style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:44:12] "GET /games/fruit_slice/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:44:12] "GET /games/fruit_slice/game.js?v=4 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:44:12] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:44:13] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:44:13] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:44:13] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:44:13] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:44:14] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:44:15] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:44:17] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:45:17] "GET /upload/audio/bgm_piano3.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:48:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:48:01] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:48:01] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:48:01] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:48:03] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:48:18] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:48:30] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:48:57] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:49:02] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:49:02] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:49:06] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:49:06] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:49:10] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:49:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:49:36] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:49:36] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:49:36] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:49:37] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:49:37] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:49:38] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:49:39] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:49:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:49:40] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:51:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:51:37] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 14:51:37] "GET /wordpress/ HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /upload/img/card_fruit_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /upload/img/card_animal_tap_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /upload/img/card_balloon_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /upload/img/bubble_pop_thumbnail_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /upload/img/card_cat_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /upload/img/card_ants_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:42] "GET /upload/img/card_monster_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:43] "GET /upload/img/card_time_magic_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:43] "GET /upload/img/card_puzzle_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:43] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:55] "GET /games/fruit_slice/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:55] "GET /games/fruit_slice/game.js?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:56] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:52:56] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:53:59] "GET /upload/audio/bgm_piano3.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:54:42] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:54:44] "GET /games/feed_ants/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:54:44] "GET /games/feed_ants/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:54:44] "GET /games/feed_ants/game.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:54:45] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:54:45] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:55:33] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:55:35] "GET /games/feed_animal/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:55:35] "GET /games/feed_animal/game.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:55:36] "GET /upload/img/trash_can.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:55:36] "GET /upload/audio/trash.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:55:36] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:57:08] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:57:15] "GET /games/time_magic/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:57:16] "GET /games/time_magic/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:57:16] "GET /games/time_magic/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:57:16] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:57:31] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:57:34] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:58:01] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:58:04] "GET /games/balloon_pop/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:58:04] "GET /games/balloon_pop/game.js?v=2 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:58:05] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:58:45] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:58:54] "GET /games/animal_tap/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:58:54] "GET /games/animal_tap/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:58:55] "GET /games/animal_tap/game.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:58:55] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 14:59:23] "GET /style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 14:59:24] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 15:06:07] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 15:09:50] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 15:12:11] "GET / HTTP/1.1" 200 -
+194.0.234.12 - - [09/Dec/2025 15:17:18] code 400, message Bad HTTP/0.9 request type ('\\x03\\x00\\x00/*à\\x00\\x00\\x00\\x00\\x00Cookie:')
+194.0.234.12 - - [09/Dec/2025 15:17:18] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" 400 -
+127.0.0.1 - - [09/Dec/2025 15:22:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 15:22:10] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 15:22:10] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 15:22:12] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 15:22:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 15:22:12] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 15:22:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 15:22:15] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 15:22:15] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 15:32:23] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 15:36:06] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 15:38:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 15:38:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 15:38:40] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 15:38:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 15:42:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 15:42:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 15:42:39] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 15:42:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 16:18:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:18:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:18:44] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 16:18:44] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 16:20:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:56] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:56] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:56] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:57] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:58] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 16:26:58] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 16:26:58] "GET /games/feed_animal/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 16:26:58] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 16:26:58] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 16:26:58] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 16:26:58] "GET /games/feed_animal/game.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:58] "GET /upload/img/trash_can.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:58] "GET /upload/audio/trash.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 16:26:59] "GET /upload/audio/bgm_piano3.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 16:27:00] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 16:28:37] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 16:29:40] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:03:41] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:09:03] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:16:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:21] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:21] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:21] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:22] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:16:28] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:28] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:28] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:29] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:29] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:29] "GET /games/feed_animal/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:16:31] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:16:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:35] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:35] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:35] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:35] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:36] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:36] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:36] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:36] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:37] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:16:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:38] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:38] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:38] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:39] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:39] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:40] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:41] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:16:43] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:16:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:44] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:44] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:44] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:44] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:45] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:45] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:46] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:46] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:46] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:46] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:47] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:16:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:58] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:58] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:58] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:58] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:16:59] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:59] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:59] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:16:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:16:59] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:17:01] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:22:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:35] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:35] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:35] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:35] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:36] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:22:36] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:22:36] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:22:36] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:22:36] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:22:37] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:22:37] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:22:38] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:22:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:39] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:39] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:39] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:39] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:22:40] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:22:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:22:40] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:22:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:22:40] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:22:43] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:23:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:23:57] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:23:57] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:23:57] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:23:58] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:23:58] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:23:59] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:23:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:23:59] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:23:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:23:59] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:24:01] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:25:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:46] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:46] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:46] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:47] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:48] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:48] "GET /games/feed_animal/game.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:48] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:25:48] "GET /upload/img/trash_can.png?v=2 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:48] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:25:49] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:25:49] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:25:49] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:26:13] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:26:14] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:26:14] "GET /games/time_magic/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:26:14] "GET /games/time_magic/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:26:16] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:33:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:33:30] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:33:30] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:33:30] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:33:31] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:33:32] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:33:32] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:33:32] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:33:33] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:33:33] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:33:34] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:33:34] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:33:35] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:33:51] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:38:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:43] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:43] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:44] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:45] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:38:46] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:47] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:38:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:38:48] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:38:48] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:38:48] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:38:49] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:38:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:57] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:57] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:57] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:58] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:38:58] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:38:58] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:38:59] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:38:59] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:38:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:38:59] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:38:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:39:00] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:39:00] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:39:01] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:42:07] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:42:07] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:42:09] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:42:09] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:42:09] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:42:11] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:42:11] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:42:11] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:42:11] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:42:11] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:42:12] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:42:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:42:13] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:42:13] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:42:13] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:42:13] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:42:13] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:42:13] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:42:13] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:42:14] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:55:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:12] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:55:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:13] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:13] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:13] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:14] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:55:17] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:18] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:55:18] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:55:18] "GET /games/time_magic/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:18] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 17:55:18] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 17:55:19] "GET /games/time_magic/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:19] "GET /games/time_magic/assets/rainbow.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:19] "GET /games/time_magic/assets/sun.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:19] "GET /games/time_magic/assets/bg_sunny.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:21] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 17:55:21] "GET /games/time_magic/assets/bg_rainy.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:23] "GET /games/time_magic/assets/bg_snowy.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 17:55:24] "GET /games/time_magic/assets/bg_rainbow.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:44] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:44] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:44] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:45] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:45] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 18:00:45] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 18:00:46] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:00:47] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:00:47] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 18:00:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 18:00:49] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:00:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:52] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:53] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:53] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:53] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:53] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 18:00:53] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 18:00:54] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:00:55] "GET /games/time_magic/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:00:55] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 18:00:55] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 18:00:56] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:02:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:02:59] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:02:59] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:03:00] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:03:00] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:03:01] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 18:03:01] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 18:03:01] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:03:04] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:03:04] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 18:03:04] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 18:03:04] "GET /games/time_magic/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:03:04] "GET /upload/audio/bgm_piano3.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:03:06] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:03:30] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:11:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:11:31] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:11:31] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:11:31] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:11:32] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:11:33] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 18:11:33] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 18:11:33] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:11:33] "GET /games/monster_transform/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:11:33] code 404, message File not found
+127.0.0.1 - - [09/Dec/2025 18:11:33] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [09/Dec/2025 18:11:33] "GET /games/monster_transform/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:11:33] "GET /games/monster_transform/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:11:36] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:14:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:33] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:34] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:35] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:14:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:55] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:55] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:55] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:56] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:57] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:14:58] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:17:11] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:18:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:18:56] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:18:56] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:18:56] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:18:56] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:18:57] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:18:58] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:18:58] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:27:02] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:27:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:27:02] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:27:02] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:27:02] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:27:03] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:27:04] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:27:04] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:27:14] "GET /favicon.png HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:27:14] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:27:14] "GET /games/time_magic/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:27:16] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:32:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:32:26] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:32:26] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:32:26] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:32:27] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:32:28] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:32:28] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:32:29] "GET /games/time_magic/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:32:29] "GET /games/time_magic/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:32:31] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:35:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:35:46] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:35:46] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:35:47] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:35:48] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:35:48] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:35:49] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:35:49] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:35:49] "GET /games/time_magic/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:35:51] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:36:33] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:36:33] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:36:33] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:36:34] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:36:34] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:36:35] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:36:35] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:36:36] "GET /games/time_magic/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:36:37] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:36:54] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:36:57] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:36:59] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:37:02] "GET /games/feed_ants/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:37:02] "GET /games/feed_ants/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:37:02] "GET /games/feed_ants/game.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:37:04] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:37:15] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:39:58] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:39:58] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:39:58] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:39:58] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:40:02] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:40:03] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:40:03] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:40:03] "GET /games/time_magic/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:40:03] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:40:05] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:40:08] "GET /games/time_magic/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:41:20] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:20] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:20] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:20] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:21] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:22] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:22] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:41:23] "GET /games/time_magic/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:24] "GET /games/time_magic/style.css?v=2 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:24] "GET /games/time_magic/game.js?v=2 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:41:25] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:41:40] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:44:33] "GET /upload/audio/bgm_piano4.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:46:56] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:46:56] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:46:56] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:46:56] "GET /upload/img/card_magic_doodle_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:46:56] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:46:58] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:46:59] "GET /games/magic_doodle/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:46:59] "GET /games/magic_doodle/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:46:59] "GET /games/magic_doodle/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:47:01] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:47:10] "GET /home.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:47:12] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:47:23] "GET /games/magic_doodle/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:47:24] "GET /games/magic_doodle/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:47:24] "GET /games/magic_doodle/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:47:25] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:14] "GET /home.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:16] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:17] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:17] "GET /games/time_magic/style.css?v=2 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:17] "GET /games/time_magic/game.js?v=2 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:18] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:23] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:34] "GET /games/magic_doodle/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:35] "GET /games/magic_doodle/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:35] "GET /games/magic_doodle/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:48:36] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:49:06] "GET /home.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:49:08] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:55:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 18:58:47] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:58:47] "GET /home.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:58:49] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:58:52] "GET /games/time_magic/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:58:52] "GET /games/time_magic/style.css?v=2 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:58:52] "GET /games/time_magic/game.js?v=2 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:58:54] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:59:21] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:59:24] "GET /games/magic_doodle/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:59:25] "GET /games/magic_doodle/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:59:25] "GET /games/magic_doodle/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:59:25] "GET /upload/audio/bgm_piano2.mp3 HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 18:59:26] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 19:00:29] "GET /home.html HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 19:00:31] "GET /sw.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Dec/2025 19:05:43] "GET /.git/config HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 19:07:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 19:07:57] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 19:07:57] "GET /home.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 19:07:58] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 19:08:01] "GET /upload/audio/bgm_piano.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 19:08:01] "GET /favicon.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Dec/2025 19:08:02] "GET /sw.js HTTP/1.1" 304 -

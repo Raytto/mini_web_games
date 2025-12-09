@@ -15,7 +15,8 @@ const imageSources = {
     cat_happy: '../../upload/img/cat_happy.png',
     cat_disgust: '../../upload/img/cat_disgust.png',
     bowl: '../../upload/img/empty_pet_bowl.png',
-    kraft_paper: '../../upload/img/kraft_paper_texture.png'
+    kraft_paper: '../../upload/img/kraft_paper_texture.png',
+    trash: '../../upload/img/trash_can.png?v=2'
 };
 
 // Audio (BGM in Shell)
@@ -27,6 +28,9 @@ const sfx = {
     ],
     disgust: [
         new Audio('../../upload/audio/cat-meow-3.mp3')
+    ],
+    trash: [
+        new Audio('../../upload/audio/trash.mp3')
     ]
 };
 // Sound Effect Volume
@@ -39,6 +43,14 @@ const totalImages = Object.keys(imageSources).length;
 let catState = 'neutral'; // neutral, happy, disgust
 let catStateTimer = 0;
 const CAT_REACTION_TIME = 300; // frames (approx 5 seconds)
+
+let trayHeight = 0;
+const trashBin = {
+    x: 0,
+    y: 0,
+    radius: 0,
+    isHighlighted: false
+};
 
 // Food
 // Food Preferences and Data
@@ -91,9 +103,46 @@ function resize() {
     canvas.width = width;
     canvas.height = height;
     scale = Math.min(width / 800, height / 600); // Base scale on 800x600 reference
+    trayHeight = height * 0.25;
+    updateTrashBinPosition();
+    repositionFoods();
 }
 
 window.addEventListener('resize', resize);
+
+function updateTrashBinPosition() {
+    trashBin.radius = 60 * scale;
+    trashBin.x = 80 * scale; // Fixed distance from left
+    trashBin.y = height - (trayHeight * 0.5);
+}
+
+
+function repositionFoods() {
+    const tableTop = height - trayHeight;
+    const padding = 50 * scale;
+
+    foods.forEach(food => {
+        food.size = 100 * scale;
+
+        // Strict clamp to valid area
+        const minX = padding;
+        const maxX = width - padding;
+        const minY = tableTop + padding; // Top of tray area
+        const maxY = height - padding;    // Bottom of screen
+
+        // X Axis
+        if (food.x < minX) food.x = minX;
+        if (food.x > maxX) food.x = maxX;
+
+        // Y Axis
+        if (food.y < minY) food.y = minY;
+        if (food.y > maxY) food.y = maxY;
+
+        // Final sanity check if window is VERY small
+        if (food.y < tableTop) food.y = tableTop + trayHeight / 2;
+    });
+}
+
 
 function initGame() {
     resize();
@@ -123,9 +172,9 @@ function spawnFoodItem() {
 
     const type = foodEmojis[Math.floor(Math.random() * foodEmojis.length)];
     // Random position in the bottom tray area
-    const trayHeight = height * 0.25;
-    const x = Math.random() * (width - 100) + 50;
-    const y = height - (Math.random() * (trayHeight - 80) + 40);
+    const trayAreaHeight = trayHeight || height * 0.25;
+    const x = Math.random() * (width - 100 * scale) + 50 * scale;
+    const y = height - (Math.random() * Math.max(60 * scale, trayAreaHeight - 80 * scale) + 40 * scale);
 
     foods.push({
         x: x,
@@ -185,8 +234,8 @@ function draw() {
     }
 
     // Constants for layout
-    const trayHeight = height * 0.25;
-    const playAreaHeight = height - trayHeight;
+    const trayAreaHeight = trayHeight || height * 0.25;
+    const playAreaHeight = height - trayAreaHeight;
     const shortEdge = Math.min(width, playAreaHeight); // Use play area for sizing
 
     // 2. Cat
@@ -201,7 +250,7 @@ function draw() {
     const bowlSize = catSize * 0.5;
     const bowlX = width / 2;
     // Position bowl near the bottom of the play area
-    const bowlY = (height - trayHeight) - bowlSize * 0.1;
+    const bowlY = (height - trayAreaHeight) - bowlSize * 0.1;
 
     // Position cat closer to the plate
     let catY = bowlY - catSize * 0.82;
@@ -224,23 +273,23 @@ function draw() {
     drawBowl(bowlX, bowlY, bowlSize);
 
     // 4. Tray Area (Kraft Paper Table)
-    const trayY = height - trayHeight;
+    const trayY = height - trayAreaHeight;
 
     if (images.kraft_paper) {
         // Draw kraft paper texture clipping to tray area
         ctx.save();
         ctx.beginPath();
-        ctx.rect(0, trayY, width, trayHeight);
+        ctx.rect(0, trayY, width, trayAreaHeight);
         ctx.clip();
 
         // Draw image covering the area
         // We can just stretch it for now as it's a texture
-        ctx.drawImage(images.kraft_paper, 0, trayY, width, trayHeight);
+        ctx.drawImage(images.kraft_paper, 0, trayY, width, trayAreaHeight);
         ctx.restore();
     } else {
         // Fallback
         ctx.fillStyle = '#d2b48c'; // Tan color
-        ctx.fillRect(0, trayY, width, trayHeight);
+        ctx.fillRect(0, trayY, width, trayAreaHeight);
     }
 
     // Shadow/Edge for the table
@@ -259,6 +308,10 @@ function draw() {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'alphabetic';
     ctx.fillText("Delicious Food for Kitty!", width / 2, trayY + 40 * scale);
+    ctx.font = `bold ${16 * scale}px "Fredoka One"`;
+    ctx.fillText("Drop unwanted snacks into the trash bin.", width / 2, trayY + 70 * scale);
+
+    drawTrashBin();
 
     // 5. Foods
     ctx.textAlign = 'center';
@@ -272,6 +325,65 @@ function draw() {
     });
 
     ctx.shadowBlur = 0; // Reset
+}
+
+function drawTrashBin() {
+    const { x, y, radius, isHighlighted } = trashBin;
+
+    // Draw Trash Can Image if available and valid
+    if (images.trash && images.trash.complete && images.trash.naturalWidth > 0) {
+        const img = images.trash;
+        // Calculate aspect ratio to fit within radius * 2.5
+        const targetSize = radius * 2.5;
+        const scaleFactor = Math.min(targetSize / img.width, targetSize / img.height);
+        const w = img.width * scaleFactor;
+        const h = img.height * scaleFactor;
+
+        ctx.save();
+        if (isHighlighted) {
+            ctx.shadowColor = 'rgba(255, 100, 100, 0.8)';
+            ctx.shadowBlur = 20;
+            // Pop effect
+            ctx.translate(x, y);
+            ctx.scale(1.1, 1.1);
+            ctx.translate(-x, -y);
+        } else {
+            ctx.shadowColor = 'rgba(0,0,0,0.25)';
+            ctx.shadowBlur = 10;
+        }
+
+        // Draw image opaque
+        ctx.globalAlpha = 1.0;
+        ctx.drawImage(img, x - w / 2, y - h / 2, w, h);
+
+        ctx.restore();
+    } else {
+        // Fallback to emoji
+        ctx.save();
+        ctx.shadowColor = 'rgba(0,0,0,0.25)';
+        ctx.shadowBlur = isHighlighted ? 18 : 10;
+        ctx.fillStyle = isHighlighted ? 'rgba(255,140,140,0.9)' : 'rgba(255,255,255,0.85)';
+        ctx.beginPath();
+        ctx.ellipse(x, y, radius * 0.95, radius * 0.65, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.lineWidth = 3 * scale;
+        ctx.strokeStyle = isHighlighted ? '#c23b3b' : '#c0c0c0';
+        ctx.stroke();
+
+        ctx.font = `${radius * 0.9}px Arial`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('🗑️', x, y);
+        ctx.restore();
+    }
+
+    // Label
+    ctx.save();
+    ctx.fillStyle = '#5c4033';
+    ctx.font = `bold ${14 * scale}px "Fredoka One"`;
+    ctx.textAlign = 'center';
+    ctx.fillText('Trash Bin', x, y + radius * 1.2);
+    ctx.restore();
 }
 
 function drawBowl(x, y, size) {
@@ -322,7 +434,8 @@ let catMouthRect = { x: 0, y: 0, w: 0, h: 0 };
 
 function getTouchPos(e) {
     const rect = canvas.getBoundingClientRect();
-    const touch = e.touches ? e.touches[0] : e;
+    const touch = (e.touches && e.touches[0]) || (e.changedTouches && e.changedTouches[0]) || e;
+    if (!touch) return { x: 0, y: 0 };
     return {
         x: touch.clientX - rect.left,
         y: touch.clientY - rect.top
@@ -332,6 +445,13 @@ function getTouchPos(e) {
 function isInside(pos, food) {
     const r = food.size / 2;
     return pos.x > food.x - r && pos.x < food.x + r && pos.y > food.y - r && pos.y < food.y + r;
+}
+
+function isInTrash(pos) {
+    const dx = pos.x - trashBin.x;
+    const dy = pos.y - trashBin.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    return distance <= trashBin.radius * 1.05;
 }
 
 function handleStart(e) {
@@ -349,6 +469,7 @@ function handleStart(e) {
             break;
         }
     }
+    trashBin.isHighlighted = false;
 }
 
 function handleMove(e) {
@@ -357,28 +478,33 @@ function handleMove(e) {
     const pos = getTouchPos(e);
     draggedFood.x = pos.x;
     draggedFood.y = pos.y;
+    trashBin.isHighlighted = isInTrash(pos);
 }
 
 function handleEnd(e) {
     if (!draggedFood) return;
 
-    // Check collision: ANYWHERE above the tray (height * 0.75) is valid
-    if (draggedFood.y < height * 0.75) {
+    const trayTop = height - (trayHeight || height * 0.25);
+    const dropPos = { x: draggedFood.x, y: draggedFood.y };
 
+    if (isInTrash(dropPos)) {
+        discardFood(draggedFood);
+    } else if (dropPos.y < trayTop) {
         // EAT!
         eatFood(draggedFood);
     } else {
         // Drop back to original pos or stay? Let's drop back to tray random pos
         // Animate back would be nice, but instant snap is easier for MVP. 
         // Let's just drop it there? No, it might clutter the face. Snap back to tray.
-        if (draggedFood.y < height * 0.70) {
+        if (dropPos.y < trayTop - 0.05 * height) {
             // If dropped in play area but not mouth, fall back down
-            draggedFood.y = height - 100;
+            draggedFood.y = height - 100 * scale;
         }
     }
 
     draggedFood.isDragging = false;
     draggedFood = null;
+    trashBin.isHighlighted = false;
 }
 
 function eatFood(food) {
@@ -418,6 +544,22 @@ function eatFood(food) {
 
     // Spawn replacement in tray immediately? Or wait?
     setTimeout(spawnFoodItem, 500);
+}
+
+function discardFood(food) {
+    const index = foods.indexOf(food);
+    if (index > -1) foods.splice(index, 1);
+
+    // Play Sound
+    if (sfx.trash) {
+        const sounds = sfx.trash;
+        const sound = sounds[Math.floor(Math.random() * sounds.length)];
+        sound.currentTime = 0;
+        sound.play().catch(e => console.warn('SFX Error:', e));
+    }
+
+    // Replace discarded food shortly so the tray stays stocked
+    setTimeout(spawnFoodItem, 350);
 }
 
 function pickRandom(arr) {

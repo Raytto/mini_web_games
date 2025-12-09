@@ -85,8 +85,9 @@ canvas {
 #score-board {
     position: absolute;
     top: 20px;
-    right: 20px;
-    left: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
     font-size: 48px;
     color: var(--text-color);
     text-shadow: 3px 3px 0px var(--shadow-color);
@@ -563,4 +564,27 @@ canvas.playing {
 
 .card-time-magic .play-tag {
     background: #87CEEB;
+}
+
+/* Magic Doodle - Neon/Dark */
+.card-magic-doodle {
+    border-color: #f1c40f;
+    box-shadow: 0 10px 0 #d4ac0d, 0 20px 40px rgba(241, 196, 15, 0.3);
+}
+
+.card-magic-doodle:hover {
+    box-shadow: 0 15px 0 #d4ac0d, 0 30px 60px rgba(241, 196, 15, 0.4);
+}
+
+.card-magic-doodle:active {
+    box-shadow: 0 5px 0 #d4ac0d;
+}
+
+.card-magic-doodle .card-title {
+    color: #f39c12;
+}
+
+.card-magic-doodle .play-tag {
+    background: #f1c40f;
+    color: #333;
 }
