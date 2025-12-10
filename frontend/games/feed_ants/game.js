@@ -174,6 +174,18 @@ function generateBackground() {
 }
 
 // Classes
+function getOffScreenPoint() {
+    const margin = 100;
+    const side = Math.floor(Math.random() * 4);
+    switch (side) {
+        case 0: return { x: Math.random() * width, y: -margin }; // Top
+        case 1: return { x: width + margin, y: Math.random() * height }; // Right
+        case 2: return { x: Math.random() * width, y: height + margin }; // Bottom
+        case 3: return { x: -margin, y: Math.random() * height }; // Left
+    }
+    return { x: -margin, y: -margin };
+}
+
 class Ant {
     constructor(x, y) {
         this.x = x;
@@ -181,20 +193,37 @@ class Ant {
         this.vx = (Math.random() - 0.5) * 2;
         this.vy = (Math.random() - 0.5) * 2;
         this.angle = Math.atan2(this.vy, this.vx);
-        this.speed = 1.5 + Math.random();
+        this.speed = (1.5 + Math.random()) * 0.5; // Halved speed
         this.state = 'wander';
         this.targetFood = null;
-        this.size = 12 + Math.random() * 5; // Adjusted size for sprite (was 6-9)
+        this.size = (12 + Math.random() * 5) * 0.5; // Halved size
         this.wobble = Math.random() * 100;
 
         // Animation
         this.totalFrames = 8;
         this.currentFrame = Math.floor(Math.random() * this.totalFrames);
         this.animTimer = 0;
-        this.animSpeed = 0.2; // Speed of animation
+        this.animSpeed = 0.1;
+
+        // New Properties
+        this.stuckOffsetX = 0;
+        this.stuckOffsetY = 0;
+        this.shouldRemove = false;
     }
 
     updateAndWrap(targetAnts, currentAntCount) {
+        if (this.shouldRemove) return;
+
+        // Stuck/Carry State
+        if (this.state === 'carry') {
+            // Logic handled by Food (position sync)
+            // Stop animation to prevent jitter relative to food
+            this.vx = 0;
+            this.vy = 0;
+            this.currentFrame = 0; // Force to first frame (standing/stable) to avoid frozen mid-walk jitter look
+            return;
+        }
+
         let currentSpeed = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
 
         // Update Animation
@@ -229,7 +258,27 @@ class Ant {
 
             // Stop distance: interaction radius of food + ant size
             if (minDist < nearestFood.radius + this.size * 0.5 + 2) {
-                this.state = 'eat';
+                if (nearestFood.category === 'carriable') {
+                    // Stick to it
+                    this.state = 'carry';
+                    this.targetFood = nearestFood;
+
+                    // Prevent duplicates
+                    if (!nearestFood.carriers.includes(this)) {
+                        nearestFood.carriers.push(this);
+                    }
+
+                    // Calculate offset
+                    this.stuckOffsetX = this.x - nearestFood.x;
+                    this.stuckOffsetY = this.y - nearestFood.y;
+
+                    // Face sticky point
+                    let dx = nearestFood.x - this.x;
+                    let dy = nearestFood.y - this.y;
+                    this.angle = Math.atan2(dy, dx);
+                } else {
+                    this.state = 'eat';
+                }
             }
         } else {
             this.state = 'wander';
@@ -249,8 +298,8 @@ class Ant {
             this.vy = 0;
 
             // Damage food
-            if (Math.random() < 0.1) { // Faster eating rate
-                this.targetFood.health -= 3.0;
+            if (Math.random() < 0.1) {
+                this.targetFood.health -= 1.5;
             }
 
         } else if (this.state === 'seek' && this.targetFood && this.targetFood.health > 0) {
@@ -309,23 +358,28 @@ class Ant {
         // Assuming sprite faces RIGHT (0 rad).
         ctx.rotate(this.angle);
 
+        // Fix perspective for left-facing ants (flip vertically)
+        if (Math.abs(this.angle) > Math.PI / 2) {
+            ctx.scale(1, -1);
+        }
+
         // Draw Sprite
         // Assuming 4x4 Grid (Standard DALL-E Square Sprite Sheet)
         // Cols: 4, Rows: 4. Frame size 256x256.
         // We use first 8 frames (Run 0..7).
 
         const cols = 4;
-        const rows = 4; // 1024 / 256 = 4
+        const rows = 4;
         const col = this.currentFrame % cols;
         const row = Math.floor(this.currentFrame / cols);
 
         const sheetW = 1024;
         const sheetH = 1024;
-        const frameW = sheetW / cols; // 256
-        const frameH = sheetH / rows; // 256
+        const frameW = sheetW / cols;
+        const frameH = sheetH / rows;
 
         // Draw centered
-        const drawSize = this.size * 6; // slightly larger to account for whitespace in sprite
+        const drawSize = this.size * 6;
 
         if (antSprite.complete) {
             ctx.drawImage(
@@ -352,9 +406,18 @@ class Food {
         this.type = type;
         this.maxHealth = 400;
         this.health = this.maxHealth;
-        this.baseRadius = 40; // Increased base size (was 25)
+        this.baseRadius = 40;
         this.radius = this.baseRadius;
         this.dragging = false;
+
+        // Random logic: Eatable or Carriable
+        // 50% chance
+        this.category = Math.random() < 0.5 ? 'eatable' : 'carriable';
+        this.carriers = [];
+        this.targetHill = null;
+        if (this.category === 'carriable') {
+            this.targetHill = getOffScreenPoint();
+        }
 
         // Determine color/emoji
         this.emoji = '';
@@ -367,9 +430,61 @@ class Food {
     }
 
     update() {
-        // Shrink based on health
-        let healthPct = Math.max(0, this.health / this.maxHealth);
-        this.radius = this.baseRadius * (0.4 + 0.6 * healthPct);
+        if (this.category === 'eatable') {
+            // Shrink based on health
+            let healthPct = Math.max(0, this.health / this.maxHealth);
+            this.radius = this.baseRadius * (0.4 + 0.6 * healthPct);
+        } else {
+            // Carriable logic
+            if (this.health <= 0) return; // Already dead
+
+            // Filter out ants that are no longer in the world (e.g. dragged off-screen and removed)
+            this.carriers = this.carriers.filter(ant => ants.includes(ant));
+
+            // Move if enough carriers
+            if (!this.dragging && this.carriers.length > 2) {
+                const dx = this.targetHill.x - this.x;
+                const dy = this.targetHill.y - this.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < 10) {
+                    // Reached hill
+                    this.health = 0; // Mark for cleanup
+                    this.carriers.forEach(a => a.shouldRemove = true);
+                } else {
+                    // Calculate speed logic
+                    // Max speed = 0.5 (was 1.0)
+                    // 3 ants = 1/15 of max
+                    // 15 ants = 100% of max
+                    const MAX_SPEED = 0.5;
+                    const count = this.carriers.length;
+
+                    // Linear interpolation: y = mx + c
+                    // x=3, y=1/15. x=15, y=1.
+                    // slope = (1 - 1/15) / (15 - 3) = (14/15) / 12 = 14/180 = 7/90
+                    let ratio = (1 / 15) + (count - 3) * (7 / 90);
+
+                    // Clamping
+                    ratio = Math.min(1.0, Math.max(1 / 15, ratio));
+
+                    const speed = MAX_SPEED * ratio;
+
+                    const vx = (dx / dist) * speed;
+                    const vy = (dy / dist) * speed;
+
+                    this.x += vx;
+                    this.y += vy;
+                }
+            }
+
+            // Sync carriers
+            for (let a of this.carriers) {
+                if (!a.dragging) {
+                    a.x = Math.round(this.x + a.stuckOffsetX);
+                    a.y = Math.round(this.y + a.stuckOffsetY);
+                }
+            }
+        }
     }
 
     draw(ctx) {
@@ -383,7 +498,6 @@ class Food {
         ctx.fill();
 
         // Emoji
-        // RESET styles to ensure emoji isn't transparent
         ctx.fillStyle = '#000000';
         ctx.font = `${this.radius * 2}px Arial`;
         ctx.textAlign = 'center';
@@ -588,6 +702,11 @@ function loop() {
     // we iterate backwards or use filter to safely remove
     for (let i = ants.length - 1; i >= 0; i--) {
         let ant = ants[i];
+
+        if (ant.shouldRemove) {
+            ants.splice(i, 1);
+            continue;
+        }
 
         // Custom update with external logic for wrapping
         ant.updateAndWrap(targetAnts, ants.length);

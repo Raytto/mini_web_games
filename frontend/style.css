@@ -614,3 +614,25 @@ canvas.playing {
 .card-car-track .play-tag {
     background: #FF4757;
 }
+
+/* Feed Fish - Ocean Blue */
+.card-feed-fish {
+    border-color: #43BEEB;
+    box-shadow: 0 10px 0 #2E8AB0, 0 20px 40px rgba(67, 190, 235, 0.3);
+}
+
+.card-feed-fish:hover {
+    box-shadow: 0 15px 0 #2E8AB0, 0 30px 60px rgba(67, 190, 235, 0.4);
+}
+
+.card-feed-fish:active {
+    box-shadow: 0 5px 0 #2E8AB0;
+}
+
+.card-feed-fish .card-title {
+    color: #43BEEB;
+}
+
+.card-feed-fish .play-tag {
+    background: #43BEEB;
+}

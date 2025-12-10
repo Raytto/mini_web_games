@@ -3,7 +3,7 @@
   const COOKIE_KEY = "mini_web_games_client_id";
   const SESSION_STORAGE_KEY = "mini_web_games_session_start";
   const DEFAULT_HEARTBEAT_MS = 20000;
-  const DEFAULT_BANKEND_BASE_URL = "https://xiaoxiao.cool/bankend";
+  const DEFAULT_BANKEND_BASE_URL = "https://yourserver/bankend";
 
   const normalizeBaseUrl = (url) => {
     if (!url) return "";
