@@ -9,6 +9,7 @@ html {
     /* Very dark blue/black for contrast */
     touch-action: none;
     /* Prevent Pull-to-refresh */
+    overscroll-behavior: none;
 }
 
 #game-container {

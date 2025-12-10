@@ -1,0 +1,32 @@
+name: mini_web_games
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - uvicorn
+  - fastapi
+  - sqlalchemy
+  - aiosqlite
+  - pip:
+      - pydantic
+      - pydantic-settings
+      - python-dotenv
+      - orjson
+      - loguru
+      - httpx
+      - prometheus-client
+variables:
+  APP_ENV: dev
+  HOST: 0.0.0.0
+  PORT: "8004"
+  DATABASE_URL: sqlite:///./data/events.db
+  API_KEY: ""
+  ALLOWED_ORIGINS: ""
+  MAX_BATCH_EVENTS: "100"
+  METADATA_MAX_BYTES: "4096"
+  SESSION_IDLE_MINUTES: "30"
+  RETENTION_DAYS: "90"
+  IP_RETENTION_DAYS: "30"
+  LOG_LEVEL: info
+  LOG_JSON: "0"

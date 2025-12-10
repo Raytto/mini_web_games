@@ -2,6 +2,7 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 let width, height;
+const MAX_PARTICLES = 600; // Limit maximum number of particles
 let particles = [];
 let hue = 0;
 let isDrawing = false;
@@ -226,6 +227,11 @@ function animate() {
     // Let's try full clear + particles. It looks cleaner and more magical ("glittery").
 
     ctx.clearRect(0, 0, width, height);
+
+    // Enforce particle limit
+    while (particles.length > MAX_PARTICLES) {
+        particles.shift(); // Use shift() to remove from the start (oldest)
+    }
 
     for (let i = 0; i < particles.length; i++) {
         particles[i].update();

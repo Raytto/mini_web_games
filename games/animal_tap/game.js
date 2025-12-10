@@ -40,43 +40,43 @@ const animalSoundConfig = {
         synth: { type: 'triangle', freqStart: 400, freqEnd: 600, duration: 0.3 }
     },
     'Bear': {
-        src: null,
+        src: '../../upload/audio/baby_bear_cub_soft.mp3',
         synth: { type: 'triangle', freqStart: 150, freqEnd: 100, duration: 0.3, vol: 0.5 } // Softer growl
     },
     'Bunny': {
-        src: null,
+        src: '../../upload/audio/bunny_sound.mp3',
         synth: { type: 'sine', freqStart: 600, freqEnd: 900, duration: 0.15, vol: 0.3 } // High jump squeak
     },
     'Chick': {
-        src: null,
+        src: '../../upload/audio/short-chick.mp3',
         synth: { type: 'triangle', freqStart: 800, freqEnd: 700, duration: 0.1, vol: 0.3 } // Peep
     },
     'Frog': {
-        src: null,
+        src: '../../upload/audio/cartoon-frog.mp3',
         synth: { type: 'triangle', freqStart: 250, freqEnd: 150, duration: 0.2, vol: 0.4 } // Soft Croak
     },
     'Dog': {
-        src: null, // Placeholder for future dog-bark.mp3
+        src: 'assets/dog-bark.mp3',
         synth: { type: 'triangle', freqStart: 300, freqEnd: 150, duration: 0.15, vol: 0.4 } // Bark
     },
     'Piggy': {
-        src: null,
+        src: '../../upload/audio/pig-oink.mp3',
         synth: { type: 'triangle', freqStart: 350, freqEnd: 250, duration: 0.2, vol: 0.4 } // Cute oink
     },
     'Panda': {
-        src: null,
+        src: '../../upload/audio/panda_bear.mp3',
         synth: { type: 'triangle', freqStart: 250, freqEnd: 350, duration: 0.3, vol: 0.8 } // Louder chuff
     },
     'Lion': {
-        src: null,
+        src: '../../upload/audio/lion-roaring.mp3',
         synth: { type: 'triangle', freqStart: 120, freqEnd: 80, duration: 0.6, vol: 1.0 } // Soft deep roar
     },
     'Tiger': {
-        src: null,
+        src: '../../upload/audio/tiger.mp3',
         synth: { type: 'sawtooth', freqStart: 200, freqEnd: 150, duration: 0.6, vol: 0.5 } // Growl
     },
     'Koala': {
-        src: null,
+        src: '../../upload/audio/koala_sound,_short.mp3',
         synth: { type: 'triangle', freqStart: 200, freqEnd: 150, duration: 0.4, vol: 0.4 } // Grunt
     },
     'Fox': {
@@ -84,23 +84,23 @@ const animalSoundConfig = {
         synth: { type: 'sawtooth', freqStart: 600, freqEnd: 400, duration: 0.2, vol: 0.4 } // Yip
     },
     'Cow': {
-        src: null,
+        src: '../../upload/audio/cow-mooing.mp3',
         synth: { type: 'sawtooth', freqStart: 150, freqEnd: 100, duration: 1.0, vol: 0.5 } // Moo
     },
     'Mouse': {
-        src: null,
+        src: '../../upload/audio/mouse_squeak.mp3',
         synth: { type: 'sine', freqStart: 800, freqEnd: 1000, duration: 0.1, vol: 0.3 } // Squeak
     },
     'Monkey': {
-        src: null,
+        src: '../../upload/audio/monkey_sound,_short.mp3',
         synth: { type: 'triangle', freqStart: 400, freqEnd: 500, duration: 0.3, vol: 0.4 } // Ooh aah
     },
     'Penguin': {
-        src: null,
+        src: '../../upload/audio/pinguin.mp3',
         synth: { type: 'square', freqStart: 300, freqEnd: 200, duration: 0.2, vol: 0.4 } // Honk
     },
     'Elephant': {
-        src: null,
+        src: '../../upload/audio/elephant-trumpets-growls.mp3',
         synth: { type: 'sawtooth', freqStart: 400, freqEnd: 600, duration: 0.6, vol: 0.6 } // Trumpet
     }
 };

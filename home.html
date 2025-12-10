@@ -146,6 +146,20 @@
                 </div>
             </a>
 
+            <!-- Game 11: Car Track -->
+            <a href="games/car_track/index.html" class="game-card card-car-track">
+                <div class="card-image-header">
+                    <img src="upload/img/car_track_small.png" alt="Car Track">
+                </div>
+                <div class="card-content">
+                    <div class="card-info">
+                        <div class="card-title">Car DiDiDi</div>
+                        <div class="card-desc">Follow the path with your car!</div>
+                    </div>
+                    <div class="play-tag">PLAY</div>
+                </div>
+            </a>
+
             <!-- Game 9: Puzzle Game (Coming Soon) -->
             <div class="game-card card-puzzle coming-soon">
                 <div class="card-image-header">
@@ -196,8 +210,55 @@
             document.querySelectorAll('.game-card').forEach(card => {
                 card.addEventListener('click', saveScroll);
             });
+
+            // --- Image Retry Logic ---
+            const MAX_RETRIES = 3;
+
+            function retryImage(img) {
+                let count = parseInt(img.getAttribute('data-retry-count') || '0');
+                if (count >= MAX_RETRIES) return;
+
+                count++;
+                img.setAttribute('data-retry-count', count);
+
+                // Dynamic delay: 2s for 1st retry (2nd attempt), 4s for others
+                let delay = (count === 1) ? 2000 : 4000;
+
+                console.log(`Retrying image: ${img.src} (Attempt ${count}/${MAX_RETRIES}) in ${delay}ms`);
+
+                setTimeout(() => {
+                    try {
+                        const currentSrc = img.src;
+                        // Append or update timestamp to force reload
+                        const url = new URL(currentSrc);
+                        url.searchParams.set('retry', Date.now());
+                        img.src = url.toString();
+                    } catch (err) {
+                        console.error("Failed to retry image:", img.src, err);
+                    }
+                }, delay);
+            }
+
+            // Capture error events on images (useCapture=true to catch non-bubbling error events)
+            window.addEventListener('error', function (e) {
+                if (e.target && e.target.tagName === 'IMG') {
+                    retryImage(e.target);
+                }
+            }, true);
+
+            // Check for initially broken images on load
+            window.addEventListener('load', () => {
+                document.querySelectorAll('img').forEach(img => {
+                    // unexpected error state or empty image
+                    if (!img.complete || img.naturalWidth === 0) {
+                        retryImage(img);
+                    }
+                });
+            });
         })();
     </script>
+    <script src="scripts/bankend-config.js"></script>
+    <script src="scripts/tracking.js"></script>
 </body>
 
 </html>

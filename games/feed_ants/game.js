@@ -7,6 +7,7 @@ let ants = [];
 let foods = [];
 let bgElements = [];
 let draggingFood = null;
+let originSlot = null; // Track which slot the food came from
 let spawnTimer = 0;
 const MAX_ANTS = 200;
 const SPAWN_RATE = 60;
@@ -85,7 +86,20 @@ const FOOD_TYPES = [
     { type: 'cookie', emoji: '🍪' },
     { type: 'cake', emoji: '🍰' },
     { type: 'pizza', emoji: '🍕' },
-    { type: 'donut', emoji: '🍩' }
+    { type: 'donut', emoji: '🍩' },
+    // New Types
+    { type: 'burger', emoji: '🍔' },
+    { type: 'hotdog', emoji: '🌭' },
+    { type: 'fries', emoji: '🍟' },
+    { type: 'sandwich', emoji: '🥪' },
+    { type: 'sushi', emoji: '🍣' },
+    { type: 'bento', emoji: '🍱' },
+    { type: 'icecream', emoji: '🍦' },
+    { type: 'chocolate', emoji: '🍫' },
+    { type: 'candy', emoji: '🍬' },
+    { type: 'lollipop', emoji: '🍭' },
+    { type: 'honey', emoji: '🍯' },
+    { type: 'bread', emoji: '🍞' }
 ];
 
 // Dimensions
@@ -394,6 +408,9 @@ function getPos(e) {
 function handleStart(e) {
     const pos = getPos(e);
 
+    // Clear originSlot because we are interacting with the canvas (existing objects), not the UI slots
+    originSlot = null;
+
     // Check if touching existing food (Game world)
     for (let i = foods.length - 1; i >= 0; i--) {
         let f = foods[i];
@@ -427,6 +444,24 @@ function handleEnd(e) {
         draggingFood.dragging = false;
         draggingFood = null;
         playDropSound();
+
+        // Refill slot if applicable
+        if (originSlot) {
+            const slot = originSlot;
+            originSlot = null;
+
+            // Randomly brush a new one
+            const type = pickRandomFoodType();
+            slot.dataset.type = type.type;
+            slot.innerText = type.emoji;
+            slot.style.opacity = '1';
+
+            // Add a small pop animation
+            slot.style.transform = 'scale(0)';
+            setTimeout(() => {
+                slot.style.transform = '';
+            }, 50);
+        }
     }
 }
 
@@ -578,13 +613,32 @@ canvas.addEventListener('touchstart', handleStart, { passive: false });
 window.addEventListener('touchmove', handleMove, { passive: false });
 window.addEventListener('touchend', handleEnd);
 
+// Helper
+function pickRandomFoodType() {
+    return FOOD_TYPES[Math.floor(Math.random() * FOOD_TYPES.length)];
+}
+
 // UI Handling
 function setupUI() {
-    const items = document.querySelectorAll('.food-item');
-    items.forEach(item => {
+    const list = document.querySelector('.food-list');
+    list.innerHTML = ''; // Clear layout
+
+    const SLOT_COUNT = 4;
+
+    for (let i = 0; i < SLOT_COUNT; i++) {
+        const slot = document.createElement('div');
+        slot.className = 'food-item';
+
+        // Initial random food
+        const type = pickRandomFoodType();
+        slot.dataset.type = type.type;
+        slot.innerText = type.emoji;
+
         const startDrag = (e) => {
-            e.preventDefault(); // Prevent text selection / scrolling
-            const type = item.getAttribute('data-type');
+            e.preventDefault();
+            if (slot.style.opacity === '0') return; // Already empty
+
+            const typeName = slot.dataset.type;
 
             // Get position
             let pos = { x: 0, y: 0 };
@@ -597,16 +651,23 @@ function setupUI() {
             }
 
             // Create new food
-            const newFood = new Food(pos.x, pos.y, type);
+            const newFood = new Food(pos.x, pos.y, typeName);
             newFood.dragging = true;
             foods.push(newFood);
             draggingFood = newFood;
+
+            // Hide slot content
+            slot.style.opacity = '0';
+            originSlot = slot;
+
             playSpawnSound();
         };
 
-        item.addEventListener('mousedown', startDrag);
-        item.addEventListener('touchstart', startDrag, { passive: false });
-    });
+        slot.addEventListener('mousedown', startDrag);
+        slot.addEventListener('touchstart', startDrag, { passive: false });
+
+        list.appendChild(slot);
+    }
 }
 
 setupUI();
