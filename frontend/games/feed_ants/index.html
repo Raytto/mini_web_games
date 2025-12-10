@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Feed the Ants</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css"> <!-- Base styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐜</text></svg>">
+</head>
+
+<body>
+
+    <a href="../../home.html" class="back-btn" aria-label="Back to Home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+    </a>
+
+    <div id="game-container">
+        <canvas id="ant-world"></canvas>
+
+        <div id="ui-layer">
+            <div id="food-panel">
+                <div class="panel-title">DRAG FOOD!</div>
+                <div class="food-list">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.MINI_GAME = { id: "feed_ants", name: "Feed the Ants" };
+    </script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>

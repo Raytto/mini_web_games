@@ -28,6 +28,10 @@ class Event(Base):
     duration_ms = Column(Integer, nullable=True)
     ip = Column(String(64), nullable=True)
     user_agent = Column(Text, nullable=True)
+    device_os = Column(String(64), nullable=True)
+    device_os_version = Column(String(64), nullable=True)
+    browser_name = Column(String(64), nullable=True)
+    browser_version = Column(String(64), nullable=True)
     # Stored as "metadata" column; attribute name avoids SQLAlchemy reserved word.
     meta = Column("metadata", JSON, nullable=True)
 

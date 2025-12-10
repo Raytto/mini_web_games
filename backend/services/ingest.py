@@ -11,6 +11,7 @@ from backend.config import get_settings
 from backend.models import Event
 from backend.schemas import EventBatchResponse, EventError, EventIn
 from backend.services.session import bump_session_stats, resolve_session
+from backend.services.user_agent import parse_user_agent
 
 settings = get_settings()
 
@@ -59,6 +60,8 @@ def process_batch(db: Session, events: Iterable[EventIn], request: Request) -> E
                 session = resolve_session(db, payload.client_id, occurred_at)
                 duration_ms = payload.duration_ms
 
+                ua_raw = request.headers.get("user-agent")
+                ua_info = parse_user_agent(ua_raw)
                 event = Event(
                     event_id=payload.event_id,
                     client_id=payload.client_id,
@@ -72,9 +75,13 @@ def process_batch(db: Session, events: Iterable[EventIn], request: Request) -> E
                     game_name=payload.game_name,
                     duration_ms=duration_ms,
                     ip=request.client.host if request.client else None,
-                    user_agent=request.headers.get("user-agent"),
-                meta=payload.metadata,
-            )
+                    user_agent=ua_raw,
+                    device_os=ua_info.device_os,
+                    device_os_version=ua_info.device_os_version,
+                    browser_name=ua_info.browser_name,
+                    browser_version=ua_info.browser_version,
+                    meta=payload.metadata,
+                )
 
                 db.add(event)
                 bump_session_stats(session, payload.event_type, duration_ms)

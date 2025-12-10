@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Fruit Slice for Kids!</title>
+    <style>
+        /* Fallback font definition directly in head to avoid request */
+        @font-face {
+            font-family: 'Fredoka One';
+            src: local('Fredoka One'), local('Verdana'), sans-serif;
+            /* We'll use system fonts that look roundish */
+        }
+
+        #game-container {
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #resource-loader {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            pointer-events: none;
+            transition: opacity 0.5s;
+            z-index: 100;
+        }
+
+        #resource-loader.hidden {
+            opacity: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍉</text></svg>">
+</head>
+
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <a href="../../home.html" class="back-btn">⬅</a>
+            <div id="score-board">
+                <span class="score-icon">🍎</span>
+                <span id="score">0</span>
+            </div>
+
+            <div id="resource-loader">资源加载中...</div>
+
+            <div id="game-over-screen" class="hidden">
+                <h1>Great Job!</h1>
+                <p>Score: <span id="final-score">0</span></p>
+                <button id="restart-btn">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.MINI_GAME = { id: "fruit_slice", name: "Fruit Slice" };
+    </script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="game.js?v=4"></script>
+</body>
+
+</html>

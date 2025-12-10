@@ -11,7 +11,11 @@ class Settings(BaseSettings):
     port: int = Field(8000, env="PORT")
     database_url: str = Field("sqlite:///./data/events.db", env="DATABASE_URL")
     api_key: Optional[str] = Field(None, env="API_KEY")
-    allowed_origins: str = Field("", env="ALLOWED_ORIGINS")
+    # Default to allow local frontend (8003) and deployed domain; override via ALLOWED_ORIGINS.
+    allowed_origins: str = Field(
+        "http://localhost:8003,http://127.0.0.1:8003,https://xiaoxiao.cool",
+        env="ALLOWED_ORIGINS",
+    )
     max_batch_events: int = Field(100, env="MAX_BATCH_EVENTS")
     metadata_max_bytes: int = Field(4096, env="METADATA_MAX_BYTES")
     session_idle_minutes: int = Field(30, env="SESSION_IDLE_MINUTES")

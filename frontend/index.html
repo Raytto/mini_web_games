@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Kids Game Arcade</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            touch-action: none;
+            overscroll-behavior: none;
+            background: #222;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        #music-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #music-toggle:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        #music-toggle.off {
+            opacity: 0.6;
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="bgm" loop autoplay>
+        <source src="upload/audio/bgm_piano.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="music-toggle" class="off" title="Toggle Music">🎵</div>
+
+    <!-- Load the original menu page -->
+    <iframe id="content-frame" src="home.html"></iframe>
+
+    <script>
+        const bgm = document.getElementById('bgm');
+        const toggleBtn = document.getElementById('music-toggle');
+        const iframe = document.getElementById('content-frame');
+
+        // BGM Configuration
+        const HOME_BGM = 'upload/audio/bgm_piano.mp3';
+        const GAME_BGMS = [
+            'upload/audio/bgm_piano2.mp3',
+            'upload/audio/bgm_piano3.mp3',
+            'upload/audio/bgm_piano4.mp3'
+        ];
+        let unplayedGameBgms = [];
+        let isPlaying = false;
+        // Persist user toggle so navigation between games does not force music back on
+        const MUSIC_PREF_KEY = 'bgmEnabled';
+        let musicEnabled = true;
+
+        try {
+            const storedPref = localStorage.getItem(MUSIC_PREF_KEY);
+            if (storedPref !== null) {
+                musicEnabled = storedPref === 'true';
+            }
+        } catch (e) {
+            console.log('Cannot read music preference, defaulting to on');
+        }
+
+        // Prevent multiple BGM instances if this page is loaded inside an iframe
+        if (window.self !== window.top) {
+            if (bgm) {
+                bgm.pause();
+                bgm.remove();
+            }
+            if (toggleBtn) {
+                toggleBtn.style.display = 'none';
+            }
+        }
+
+        if (bgm) {
+            bgm.volume = 0.2;
+            bgm.autoplay = musicEnabled;
+            if (!musicEnabled) {
+                bgm.pause();
+            }
+        }
+
+        function updateIcon() {
+            if (!toggleBtn) return;
+            if (musicEnabled) {
+                toggleBtn.textContent = '🎵';
+                toggleBtn.classList.remove('off');
+                toggleBtn.style.animation = isPlaying ? 'pulse 2s infinite' : 'none';
+            } else {
+                toggleBtn.textContent = '🔇';
+                toggleBtn.classList.add('off');
+                toggleBtn.style.animation = 'none';
+            }
+        }
+
+        function tryPlay() {
+            if (!bgm || window.self !== window.top) return;
+            if (!musicEnabled) {
+                isPlaying = false;
+                updateIcon();
+                return;
+            }
+            if (!bgm.paused) {
+                isPlaying = true;
+                updateIcon();
+                return;
+            }
+
+            bgm.play().then(() => {
+                isPlaying = true;
+                updateIcon();
+                // Remove the global listeners if we succeed
+                document.removeEventListener('click', tryPlay);
+                document.removeEventListener('touchstart', tryPlay);
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                if (iframeDoc) {
+                    iframeDoc.removeEventListener('click', tryPlay);
+                    iframeDoc.removeEventListener('touchstart', tryPlay);
+                }
+            }).catch(e => {
+                console.log("Autoplay prevented, waiting for interaction");
+                isPlaying = false;
+                updateIcon();
+            });
+        }
+
+        // --- New BGM Logic ---
+
+        function getNextGameTrack() {
+            if (unplayedGameBgms.length === 0) {
+                unplayedGameBgms = [...GAME_BGMS];
+            }
+            const randomIndex = Math.floor(Math.random() * unplayedGameBgms.length);
+            return unplayedGameBgms.splice(randomIndex, 1)[0];
+        }
+
+        function playHomeBgm() {
+            if (bgm.getAttribute('data-mode') === 'home') return;
+
+            // If checking absolute path is tricky, triggering based on mode switch is safer 
+            // provided we handle the initial load correctly.
+
+            bgm.setAttribute('data-mode', 'home');
+            bgm.onended = null;
+            bgm.loop = true;
+
+            // Avoid reloading if already correct (e.g. initial load)
+            if (!bgm.src.endsWith(HOME_BGM)) {
+                bgm.src = HOME_BGM;
+                if (isPlaying) bgm.play().catch(console.error);
+            }
+        }
+
+        function playGameBgm() {
+            if (bgm.getAttribute('data-mode') === 'game') return;
+
+            bgm.setAttribute('data-mode', 'game');
+            bgm.loop = false;
+
+            const playNext = () => {
+                // Ensure we are still in game mode (in case user switched to home while waiting)
+                if (bgm.getAttribute('data-mode') !== 'game') return;
+
+                const track = getNextGameTrack();
+                bgm.src = track;
+                if (isPlaying) bgm.play().catch(console.error);
+            };
+
+            bgm.onended = playNext;
+            playNext();
+        }
+
+        function checkGameState() {
+            try {
+                const href = iframe.contentWindow.location.href;
+                // Determine mode based on URL
+                if (href.includes('home.html') || href.endsWith('/')) {
+                    playHomeBgm();
+                } else {
+                    playGameBgm();
+                }
+
+                // Attach interaction listeners to new frame content
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                iframeDoc.addEventListener('click', tryPlay);
+                iframeDoc.addEventListener('touchstart', tryPlay);
+            } catch (e) {
+                console.log("Cannot access iframe content");
+            }
+        }
+
+        // Initialize state
+        // Set initial mode to 'home' implicitly matching the HTML defaults
+        if (bgm.src.endsWith(HOME_BGM)) {
+            bgm.setAttribute('data-mode', 'home');
+        }
+
+        updateIcon();
+
+        // Try to auto-play immediately if allowed by the toggle
+        tryPlay();
+
+        // Listeners
+        document.addEventListener('click', tryPlay);
+        document.addEventListener('touchstart', tryPlay);
+
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                musicEnabled = !musicEnabled;
+                bgm.autoplay = musicEnabled;
+                try {
+                    localStorage.setItem(MUSIC_PREF_KEY, musicEnabled);
+                } catch (err) {
+                    console.log('Cannot store music preference');
+                }
+
+                if (!musicEnabled) {
+                    if (bgm) bgm.pause();
+                    isPlaying = false;
+                    updateIcon();
+                    return;
+                }
+
+                tryPlay();
+                updateIcon();
+            });
+        }
+
+        // Monitor Iframe Navigation
+        iframe.onload = checkGameState;
+
+        // Add pulse animation
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+                100% { transform: scale(1); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Register Service Worker for caching
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
+    <script src="scripts/bankend-config.js?v=2"></script>
+    <script src="scripts/tracking.js?v=2"></script>
+</body>
+
+</html>
