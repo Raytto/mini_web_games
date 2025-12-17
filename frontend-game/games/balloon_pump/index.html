@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>气球打气筒</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <!-- Back Button -->
+        <a href="../../home.html" class="back-btn">
+            <svg viewBox="0 0 24 24" fill="none" class="arrow-icon">
+                <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+
+        <!-- Game Area -->
+        <div id="scene">
+            <div id="confetti-container"></div>
+
+            <div id="balloon-anchor">
+                <div id="balloon">
+                    <div class="reflection"></div>
+                    <div class="knot"></div>
+                    <div class="string"></div>
+                </div>
+            </div>
+
+            <div id="pump-container">
+                <div id="pump-handle">
+                    <div class="handle-bar"></div>
+                    <div class="handle-stem"></div>
+                </div>
+                <div id="pump-body">
+                    <div class="pump-hose"></div>
+                </div>
+                <div id="pump-base"></div>
+            </div>
+
+            <div id="instruction-text">按住给气球打气</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

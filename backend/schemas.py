@@ -47,3 +47,13 @@ class StatsSummary(BaseModel):
     window_hours: int = 24
     totals: List[StatsBucket]
     per_game: List[Dict[str, Any]]
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Optional[str] = None
+

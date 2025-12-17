@@ -14,7 +14,7 @@ image_files = [
     "card_puzzle.png"
 ]
 
-base_dir = Path(__file__).resolve().parent / "frontend/upload/img"
+base_dir = Path(__file__).resolve().parent / "../../frontend-game/upload/img"
 
 for filename in image_files:
     path = base_dir / filename

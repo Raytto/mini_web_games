@@ -59,6 +59,15 @@ class Session(Base):
     __table_args__ = (Index("idx_sessions_client_time", "client_id", "started_at"),)
 
 
+class User(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True)
+    username = Column(String(32), unique=True, nullable=False)
+    password_hash = Column(String(128), nullable=False)
+    created_at = Column(DateTime, default=utcnow)
+
+
 def new_session_id(client_id: str) -> str:
     suffix = uuid.uuid4().hex[:8]
     return f"{client_id}-{suffix}"

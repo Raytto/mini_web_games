@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     api_key: Optional[str] = Field(None, env="API_KEY")
     # Default to allow local frontend (8003) and deployed domain; override via ALLOWED_ORIGINS.
     allowed_origins: str = Field(
-        "http://localhost:8003,http://127.0.0.1:8003,https://xiaoxiao.cool",
+        "http://localhost:8003,http://127.0.0.1:8003,http://localhost:8006,http://127.0.0.1:8006,https://xiaoxiao.cool",
         env="ALLOWED_ORIGINS",
     )
     max_batch_events: int = Field(100, env="MAX_BATCH_EVENTS")
@@ -23,6 +23,9 @@ class Settings(BaseSettings):
     ip_retention_days: int = Field(30, env="IP_RETENTION_DAYS")
     log_level: str = Field("info", env="LOG_LEVEL")
     log_json: bool = Field(False, env="LOG_JSON")
+    jwt_secret: str = Field("supersecretkey123", env="JWT_SECRET")
+    jwt_algorithm: str = Field("HS256", env="JWT_ALGORITHM")
+    access_token_expire_minutes: int = Field(30, env="ACCESS_TOKEN_EXPIRE_MINUTES")
 
     @validator("allowed_origins", pre=True)
     def strip_spaces(cls, v: str) -> str:

@@ -4,7 +4,7 @@ set -euo pipefail
 SESSION_NAME="mini_web_games_frontend"
 PORT="${PORT:-8003}"
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-FRONTEND_DIR="${ROOT_DIR}/frontend"
+FRONTEND_DIR="${ROOT_DIR}/frontend-game"
 
 # Stop any existing session so we can restart cleanly.
 screen -S "${SESSION_NAME}" -X quit >/dev/null 2>&1 || true

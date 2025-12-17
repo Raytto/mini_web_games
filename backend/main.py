@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.config import get_settings
 from backend.database import engine
 from backend.models import Base
-from backend.routes import events, health, stats
+from backend.routes import events, health, stats, auth, admin_stats
 
 settings = get_settings()
 
@@ -31,6 +31,8 @@ def on_startup():
 app.include_router(health.router)
 app.include_router(events.router)
 app.include_router(stats.router)
+app.include_router(auth.router)
+app.include_router(admin_stats.router)
 
 
 @app.get("/")

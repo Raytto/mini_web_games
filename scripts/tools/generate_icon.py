@@ -60,6 +60,6 @@ def create_game_icon(car_path, output_path):
 
 if __name__ == "__main__":
     project_root = Path(__file__).resolve().parent
-    car_sprite = project_root / "frontend/games/car_track/assets/car.png"
-    output_image = project_root / "frontend/upload/img/card_car_track_scene.png"
+    car_sprite = project_root / "../../frontend-game/games/car_track/assets/car.png"
+    output_image = project_root / "../../frontend-game/upload/img/card_car_track_scene.png"
     create_game_icon(car_sprite, output_image)
