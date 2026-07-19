@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#bdf5f2">
+  <title>洗澡澡</title>
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+  <main class="game-shell" id="gameShell">
+    <header class="topbar">
+    <a class="round-button back-button" href="../../home.html" aria-label="返回游戏首页">‹</a>
+      <div class="title-block">
+        <h1>洗澡澡</h1>
+        <p id="stageHint" aria-live="polite">先用香皂搓出好多泡泡</p>
+      </div>
+      <button class="round-button reset-button" id="resetButton" type="button" aria-label="重新洗这只小动物">↻</button>
+    </header>
+
+    <section class="bathroom" id="bathroom" aria-label="给小动物洗澡的浴室">
+      <div class="status-row">
+        <span class="status-pill" id="guestBadge">今天的第 1 位</span>
+        <span class="status-pill collection-pill" id="collectionBadge">洗澡图鉴 0/6</span>
+      </div>
+      <div class="animal-stage" id="animalDropZone">
+        <div class="stage-glow"></div>
+        <img id="animalImage" class="animal-image" alt="等待洗澡的小动物" draggable="false">
+        <div class="wash-effects" id="washEffects" aria-hidden="true"></div>
+        <div class="animal-name" id="animalName">小熊</div>
+      </div>
+      <div class="praise" id="praise" aria-live="polite"></div>
+    </section>
+
+    <section class="tool-dock" aria-label="洗澡工具">
+      <div class="progress-wrap" id="progressWrap">
+        <span class="progress-step active" data-progress="0"><b>1</b>抹香皂</span>
+        <span class="progress-line"></span>
+        <span class="progress-step" data-progress="1"><b>2</b>冲泡泡</span>
+        <span class="progress-line"></span>
+        <span class="progress-step" data-progress="2"><b>3</b>擦干净</span>
+      </div>
+      <div class="tools" id="tools">
+        <button class="tool-card" type="button" data-tool="soap" aria-label="使用香皂">
+          <img src="../shared/generated_assets/bath_time_item_soap.png" alt="粉色香皂" draggable="false">
+          <span>搓香皂</span>
+        </button>
+        <button class="tool-card" type="button" data-tool="rinse" aria-label="使用花洒">
+          <img src="../shared/generated_assets/bath_time_item_shower.png" alt="蓝色花洒" draggable="false">
+          <span>冲泡泡</span>
+        </button>
+        <button class="tool-card" type="button" data-tool="towel" aria-label="使用毛巾">
+          <img src="../shared/generated_assets/bath_time_item_towel.png" alt="橙色毛巾" draggable="false">
+          <span>擦干净</span>
+        </button>
+      </div>
+      <div class="next-panel" id="nextPanel" hidden>
+        <div class="finished-copy"><strong id="finishedTitle">洗得香喷喷！</strong><span>看看下一位是谁吧</span></div>
+        <button class="next-button" id="nextButton" type="button">洗下一位 <span>→</span></button>
+      </div>
+    </section>
+  </main>
+  <div class="drag-ghost" id="dragGhost" aria-hidden="true"></div>
+  <script>window.MINI_GAME = { id: "bath_time", name: "洗澡澡" };</script>
+  <script src="../../scripts/bankend-config.js?v=2"></script>
+  <script src="../../scripts/tracking.js?v=2"></script>
+  <script src="../shared/game_juice.js?v=1"></script>
+  <script src="game.js?v=4"></script>
+</body>
+</html>

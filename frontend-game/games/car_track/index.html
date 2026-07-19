@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>小车嘀嘀嘀</title>
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body>
@@ -17,13 +17,10 @@
             <div class="hand-icon">👆</div>
             <p>拖动小车沿路走哦~</p>
         </div>
-        <div id="celebration-overlay" class="hidden">
+        <div id="celebration-overlay" class="hidden" aria-live="polite">
             <div class="stars">⭐⭐⭐</div>
-            <h1>到终点啦!</h1>
-            <button id="next-level-btn" class="nav-btn"
-                style="position: relative; top: 0; left: 0; width: auto; height: auto; padding: 10px 30px; border-radius: 30px; margin-top: 20px;">
-                下一关 ->
-            </button>
+            <div class="finish-copy"><h1>到终点啦！</h1><p>小车开得真稳</p></div>
+            <button id="next-level-btn" type="button">下一关 →</button>
         </div>
     </div>
     <script>
@@ -31,7 +28,7 @@
     </script>
     <script src="../../scripts/bankend-config.js?v=2"></script>
     <script src="../../scripts/tracking.js?v=2"></script>
-    <script src="game.js"></script>
+    <script src="game.js?v=2"></script>
 </body>
 
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>种花花</title>
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+
+<body>
+    <div id="game" class="garden-game">
+        <header class="game-header">
+            <a class="round-btn back-btn" href="../../home.html" aria-label="返回">←</a>
+            <div class="title-wrap">
+                <h1>种花花</h1>
+                <p><strong id="flower-name">向日葵</strong><span aria-hidden="true"> · </span><span id="hint">先把泥土松一松</span></p>
+            </div>
+            <button id="reset-btn" class="round-btn reset-btn" type="button" aria-label="重新开始">↻</button>
+        </header>
+
+        <main id="garden-scene" class="garden-scene">
+            <img class="scene-background" src="../shared/generated_assets/garden_grow_bg.png" alt="" draggable="false">
+            <div id="sunshine" class="sunshine" aria-hidden="true"></div>
+            <div id="collection-badge" class="collection-badge" aria-live="polite">花园图鉴 0/6</div>
+            <div id="plant-zone" class="plant-zone" aria-label="花盆">
+                <div id="plant-halo" class="plant-halo"></div>
+                <img id="plant-stage" src="../shared/generated_assets/garden_grow_zone_soil.png" alt="装着泥土的花盆" draggable="false">
+                <div id="growth-effect" class="growth-effect" aria-hidden="true"></div>
+            </div>
+
+            <div id="step-progress" class="step-progress" aria-label="种花步骤"></div>
+            <section id="tool-tray" class="tool-tray" aria-label="种花工具"></section>
+
+            <button id="next-flower-btn" class="next-flower-btn" type="button" hidden>
+                <span>种下一种</span><b aria-hidden="true">→</b>
+            </button>
+
+            <div id="celebration" class="celebration" aria-live="polite"></div>
+        </main>
+    </div>
+
+    <script>
+        window.MINI_GAME = { id: "garden_grow", name: "种花花" };
+    </script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/game_juice.js?v=1"></script>
+    <script src="game.js?v=5"></script>
+</body>
+
+</html>

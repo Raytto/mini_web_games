@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>修小路</title>
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+    <div id="game" class="road-game">
+        <header class="game-header">
+            <a class="round-btn" href="../../home.html" aria-label="返回">←</a>
+            <div class="title-wrap">
+                <h1>修小路</h1>
+                <p id="hint">先把碎石填进路坑</p>
+            </div>
+            <button id="reset-btn" class="round-btn" type="button" aria-label="重新开始">↻</button>
+        </header>
+
+        <main class="game-main">
+            <section id="road-scene" class="road-scene" aria-label="需要修理的小路">
+                <img id="road-stage" class="road-stage" src="../shared/generated_assets/road_helper_stage_broken_v2.png" alt="前方道路有一个宽宽的破损路坑" draggable="false">
+                <div id="repair-target" class="repair-target" aria-hidden="true"></div>
+                <img id="action-prop" class="action-prop" alt="" draggable="false" hidden>
+                <img id="drive-car" class="drive-car" src="../shared/generated_assets/road_helper_item_car.png" alt="红色小车从修好的路上安全通过" draggable="false" hidden>
+
+                <div id="step-strip" class="step-strip" aria-label="修路进度"></div>
+
+            </section>
+
+            <section id="tool-tray" class="tool-tray" aria-label="修路工具"></section>
+            <section id="success" class="success" aria-live="polite" hidden>
+                <div class="success-panel">
+                    <span class="success-stars" aria-hidden="true">✨🚗✨</span>
+                    <div class="success-copy"><strong>小路修好啦！</strong><p>小车安全通过了</p></div>
+                    <button id="again-btn" type="button">再修一条</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        window.MINI_GAME = { id: "road_helper", name: "修小路" };
+    </script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/game_juice.js?v=1"></script>
+    <script src="game.js?v=3"></script>
+</body>
+
+</html>

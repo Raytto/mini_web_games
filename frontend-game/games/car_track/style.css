@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     overflow: hidden;
     background-color: #a8e6cf;
     /* Soft green */
-    font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
     touch-action: none;
     /* Prevent scrolling */
     overscroll-behavior: none;
@@ -82,16 +86,21 @@ canvas {
 
 #celebration-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
+    left: 50%;
+    bottom: max(18px, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    width: min(620px, 92vw);
+    min-height: 112px;
+    padding: 14px 22px;
+    border: 4px solid rgba(255,255,255,.92);
+    border-radius: 28px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
-    justify-content: center;
-    color: white;
+    gap: 20px;
+    color: #34465d;
+    background: rgba(255, 250, 218, .94);
+    box-shadow: 0 9px 0 rgba(70, 91, 108, .2), 0 15px 30px rgba(34, 48, 57, .24);
     z-index: 200;
     animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -101,24 +110,36 @@ canvas {
 }
 
 .stars {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: clamp(30px, 5vw, 46px);
 }
 
 h1 {
-    font-size: 40px;
+    font-size: clamp(27px, 4vw, 38px);
     margin: 0;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 3px 0 rgba(255,255,255,.8);
 }
+
+.finish-copy p { margin: 2px 0 0; color: #617285; font-size: 16px; font-weight: 800; }
+
+#next-level-btn { padding: 13px 25px; border: 3px solid #fff; border-radius: 999px; background: #ff7f50; color: #fff; box-shadow: 0 6px 0 #c55332; font-family: inherit; font-size: 21px; font-weight: 900; cursor: pointer; }
+#next-level-btn:active { transform: translateY(4px); box-shadow: 0 2px 0 #c55332; }
 
 @keyframes popIn {
     from {
-        transform: scale(0.5);
+        transform: translateX(-50%) translateY(28px);
         opacity: 0;
     }
 
     to {
-        transform: scale(1);
+        transform: translateX(-50%) translateY(0);
         opacity: 1;
     }
+}
+
+@media (max-width: 600px) {
+    #celebration-overlay { width: 94vw; min-height: 94px; padding: 10px 12px; gap: 9px; border-width: 3px; border-radius: 22px; }
+    #celebration-overlay .stars { display: none; }
+    .finish-copy h1 { font-size: 22px; }
+    .finish-copy p { font-size: 12px; }
+    #next-level-btn { padding: 11px 15px; font-size: 18px; }
 }

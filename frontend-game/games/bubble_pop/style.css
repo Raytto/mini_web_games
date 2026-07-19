@@ -4,7 +4,7 @@ body {
     background-color: #87CEEB;
     background-image: none;
     /* Fallback */
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
 }
 
 #game-container {
@@ -16,6 +16,18 @@ body {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    #game-container {
+        background-position: 42% center;
+    }
+
+    #score-board {
+        top: 16px;
+        padding: 8px 16px;
+        font-size: 22px;
+    }
 }
 
 #gameCanvas {

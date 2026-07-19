@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>动物早餐</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+
+<body>
+    <div id="game" class="breakfast-game">
+        <img class="scene-background" src="../shared/generated_assets/animal_breakfast_bg.png" alt="森林里的动物早餐桌" draggable="false">
+
+        <header class="game-header">
+            <a class="round-btn" href="../../home.html" aria-label="返回">←</a>
+            <div class="title-wrap">
+                <h1>动物早餐</h1>
+                <p id="hint" aria-live="polite">把早餐送给喜欢它的动物</p>
+            </div>
+            <button id="reset-btn" class="round-btn" type="button" aria-label="重新摆放这一桌">↻</button>
+        </header>
+
+        <div class="status-row" aria-live="polite">
+            <span id="round-badge">第 1 桌</span>
+            <span id="collection-badge">动物图鉴 0/12</span>
+        </div>
+
+        <main class="play-area">
+            <section id="animal-row" class="animal-row" aria-label="等待早餐的动物"></section>
+
+            <section class="food-dock" aria-label="早餐托盘">
+                <div class="dock-title"><span aria-hidden="true">🍽</span> 今天的早餐</div>
+                <div id="food-row" class="food-row"></div>
+            </section>
+        </main>
+
+        <div id="success-panel" class="success-panel" hidden>
+            <div class="success-card">
+                <div class="success-stars" aria-hidden="true">✦ ❤ ✦</div>
+                <div class="success-copy-wrap">
+                    <h2>大家都吃饱啦！</h2>
+                    <p id="success-copy">真会照顾小动物</p>
+                </div>
+                <button id="next-round-btn" type="button">换一桌 <b aria-hidden="true">→</b></button>
+            </div>
+        </div>
+        <div id="celebration" class="celebration" aria-hidden="true"></div>
+    </div>
+
+    <script>window.MINI_GAME = { id: "animal_breakfast", name: "动物早餐" };</script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/game_juice.js?v=1"></script>
+    <script src="game.js?v=5"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#ffe7f0">
+  <title>小乐队</title>
+  <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+    <a class="round-button back-button" href="../../home.html" aria-label="返回游戏首页">‹</a>
+      <div class="title-block">
+        <h1>小乐队</h1>
+        <p id="gameHint" aria-live="polite">看看黑色形状，把一样的乐器送过去</p>
+      </div>
+      <button class="round-button reset-button" id="resetButton" type="button" aria-label="重新开始这一组">↻</button>
+    </header>
+
+    <section class="band-stage" aria-label="小乐队舞台">
+      <div class="status-row">
+        <span class="status-pill" id="roundBadge">本组完成 0/3</span>
+        <span class="status-pill collection-pill" id="collectionBadge">乐器图鉴 0/10</span>
+      </div>
+      <div class="success-banner" id="successBanner" hidden>
+        <span>🎉</span><strong>小乐队合奏成功！</strong><span>🎉</span>
+      </div>
+      <div class="musician-grid" id="musicianGrid"></div>
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+    </section>
+
+    <section class="instrument-dock" aria-label="等待配对的乐器">
+      <div class="dock-tip" id="dockTip"><span>👀</span> 找到和黑色形状一样的乐器</div>
+      <div class="instrument-cards" id="instrumentCards"></div>
+      <div class="next-panel" id="nextPanel" hidden>
+        <div class="next-copy"><strong>真好听！</strong><span>让乐手留在舞台上，再请三位新朋友</span></div>
+        <button class="next-button" id="nextButton" type="button">下一组 <span>→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="drag-ghost" id="dragGhost" aria-hidden="true"></div>
+  <script>window.MINI_GAME = { id: "little_band", name: "小乐队" };</script>
+  <script src="../../scripts/bankend-config.js?v=2"></script>
+  <script src="../../scripts/tracking.js?v=2"></script>
+  <script src="game.js?v=7"></script>
+</body>
+</html>

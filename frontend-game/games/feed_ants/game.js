@@ -9,8 +9,8 @@ let bgElements = [];
 let draggingFood = null;
 let originSlot = null; // Track which slot the food came from
 let spawnTimer = 0;
-const MAX_ANTS = 200;
-const SPAWN_RATE = 60;
+const MAX_ANTS = 80;
+const SPAWN_RATE = 90;
 
 // Assets
 const antSprite = new Image();
@@ -20,10 +20,19 @@ antSprite.src = 'ant_walk_sheet_transparent.png';
 
 // Audio System
 const AudioContext = window.AudioContext || window.webkitAudioContext;
-const audioCtx = new AudioContext();
+let audioCtx = null;
+
+function initAudio() {
+    if (!audioCtx) {
+        audioCtx = new AudioContext();
+    }
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+}
 
 function playSpawnSound() {
-    if (audioCtx.state === 'suspended') audioCtx.resume();
+    initAudio();
     const t = audioCtx.currentTime;
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
@@ -42,7 +51,7 @@ function playSpawnSound() {
 }
 
 function playDropSound() {
-    if (audioCtx.state === 'suspended') audioCtx.resume();
+    initAudio();
     const t = audioCtx.currentTime;
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
@@ -61,7 +70,7 @@ function playDropSound() {
 }
 
 function playFinishSound() {
-    if (audioCtx.state === 'suspended') audioCtx.resume();
+    initAudio();
     const t = audioCtx.currentTime;
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
@@ -82,24 +91,11 @@ function playFinishSound() {
 // Food Types
 const FOOD_TYPES = [
     { type: 'apple', emoji: '🍎' },
-    { type: 'strawberry', emoji: '🍓' },
     { type: 'cookie', emoji: '🍪' },
     { type: 'cake', emoji: '🍰' },
-    { type: 'pizza', emoji: '🍕' },
-    { type: 'donut', emoji: '🍩' },
-    // New Types
-    { type: 'burger', emoji: '🍔' },
-    { type: 'hotdog', emoji: '🌭' },
     { type: 'fries', emoji: '🍟' },
     { type: 'sandwich', emoji: '🥪' },
-    { type: 'sushi', emoji: '🍣' },
-    { type: 'bento', emoji: '🍱' },
-    { type: 'icecream', emoji: '🍦' },
-    { type: 'chocolate', emoji: '🍫' },
-    { type: 'candy', emoji: '🍬' },
-    { type: 'lollipop', emoji: '🍭' },
-    { type: 'honey', emoji: '🍯' },
-    { type: 'bread', emoji: '🍞' }
+    { type: 'lollipop', emoji: '🍭' }
 ];
 
 // Dimensions
@@ -404,9 +400,9 @@ class Food {
         this.x = x;
         this.y = y;
         this.type = type;
-        this.maxHealth = 400;
+        this.maxHealth = 320;
         this.health = this.maxHealth;
-        this.baseRadius = 40;
+        this.baseRadius = 48;
         this.radius = this.baseRadius;
         this.dragging = false;
 
@@ -685,7 +681,7 @@ function loop() {
     const ambientAnts = Math.floor(Math.abs(Math.sin(time)) * 6);
 
     // Positive correlation: 0 food = 0 ants. 1 food unit (~400 health) approx 15-20 ants.
-    let targetAnts = Math.floor(totalFoodHealth / 20) + ambientAnts;
+    let targetAnts = Math.floor(totalFoodHealth / 35) + ambientAnts;
     if (targetAnts > MAX_ANTS) targetAnts = MAX_ANTS;
 
     // Spawn Logic
@@ -742,7 +738,7 @@ function setupUI() {
     const list = document.querySelector('.food-list');
     list.innerHTML = ''; // Clear layout
 
-    const SLOT_COUNT = 4;
+    const SLOT_COUNT = 3;
 
     for (let i = 0; i < SLOT_COUNT; i++) {
         const slot = document.createElement('div');
@@ -793,5 +789,5 @@ setupUI();
 
 resize();
 // Spawn initial food
-for (let i = 0; i < 3; i++) spawnRandomFood();
+for (let i = 0; i < 1; i++) spawnRandomFood();
 loop();

@@ -2,16 +2,17 @@ const container = document.getElementById('game-container');
 const foodSource = document.getElementById('food-source');
 
 const fishTypes = [
-    { name: 'clownfish', img: 'clownfish.png?v=10', width: 100, height: 60, baseSpeed: 0.33, maxSpeed: 0.83 },
-    { name: 'whale', img: 'whale.png?v=9', width: 1100, height: 650, baseSpeed: 0.33, maxSpeed: 1.0 },
-    { name: 'shark', img: 'shark.png?v=9', width: 480, height: 270, baseSpeed: 0.5, maxSpeed: 1.33 },
-    { name: 'turtle', img: 'turtle.png?v=2', width: 140, height: 85, baseSpeed: 0.2, maxSpeed: 0.5 },
-    { name: 'manta', img: 'manta.png?v=1', width: 180, height: 128, baseSpeed: 0.25, maxSpeed: 0.6 },
-    { name: 'pufferfish', img: 'pufferfish.png?v=2', width: 100, height: 85, baseSpeed: 0.3, maxSpeed: 0.7 }
+    { name: 'clownfish', img: 'clownfish.png?v=10', width: 96, height: 58, baseSpeed: 0.28, maxSpeed: 0.72 },
+    { name: 'whale', img: 'whale.png?v=9', width: 360, height: 150, fitWidth: true, baseSpeed: 0.22, maxSpeed: 0.58 },
+    { name: 'shark', img: 'shark.png?v=9', width: 230, height: 130, fitWidth: true, baseSpeed: 0.34, maxSpeed: 0.88 },
+    { name: 'turtle', img: 'turtle.png?v=2', width: 130, height: 79, baseSpeed: 0.18, maxSpeed: 0.46 },
+    { name: 'manta', img: 'manta.png?v=1', width: 160, height: 114, baseSpeed: 0.22, maxSpeed: 0.52 },
+    { name: 'pufferfish', img: 'pufferfish.png?v=2', width: 96, height: 82, baseSpeed: 0.25, maxSpeed: 0.62 }
 ];
 
 let fishes = [];
 let foods = [];
+let draggedFood = null;
 // Fish Class
 class Fish {
     constructor(type, startOnScreen = false) {
@@ -55,7 +56,9 @@ class Fish {
         this.inner.style.width = '100%';
         this.inner.style.height = '100%';
         this.inner.style.backgroundImage = `url(${type.img})`;
-        this.inner.style.backgroundSize = 'contain';
+        // Whale and shark assets use square canvases with wide transparent margins.
+        // Fit them by width so the visible animal matches its gameplay dimensions.
+        this.inner.style.backgroundSize = type.fitWidth ? '100% auto' : 'contain';
         this.inner.style.backgroundRepeat = 'no-repeat';
         this.inner.style.backgroundPosition = 'center';
 
@@ -293,6 +296,7 @@ class Food {
         this.x = x;
         this.y = y;
         this.vy = 0.11; // Initial fall speed (reduced again)
+        this.dragging = false;
         this.element = document.createElement('div');
         this.element.className = 'food';
         this.element.style.left = `${x}px`;
@@ -302,6 +306,12 @@ class Food {
     }
 
     update() {
+        if (this.dragging) {
+            this.element.style.left = `${this.x}px`;
+            this.element.style.top = `${this.y}px`;
+            return true;
+        }
+
         this.vy += 0.005; // Gravity (approx 1/3 of 0.016)
         if (this.vy > 0.33) this.vy = 0.33; // Terminal velocity (1/3 of 1)
 
@@ -324,10 +334,14 @@ function updateFoods(dt) {
 }
 
 // Interaction
-// Interaction: Tap to Feed
-// Hide the old food source icon
+// Interaction: tap to drop, or drag from the food source.
 if (foodSource) {
-    foodSource.style.display = 'none';
+    foodSource.style.display = 'block';
+}
+
+function getClientPoint(e) {
+    const touch = (e.touches && e.touches[0]) || (e.changedTouches && e.changedTouches[0]) || e;
+    return { clientX: touch.clientX, clientY: touch.clientY };
 }
 
 function spawnFood(e) {
@@ -336,20 +350,39 @@ function spawnFood(e) {
 
     const rect = container.getBoundingClientRect();
     // Handle both mouse and touch events
-    let clientX = e.clientX;
-    let clientY = e.clientY;
-
-    // If it's a touch event, use the first touch point
-    if (e.changedTouches && e.changedTouches.length > 0) {
-        clientX = e.changedTouches[0].clientX;
-        clientY = e.changedTouches[0].clientY;
-    }
+    let { clientX, clientY } = getClientPoint(e);
 
     const x = clientX - rect.left - 10; // Center food roughly on tap
     const y = clientY - rect.top - 10;
 
     const food = new Food(x, y);
     foods.push(food);
+}
+
+function startDragFood(e) {
+    if (!foodSource) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const rect = container.getBoundingClientRect();
+    const { clientX, clientY } = getClientPoint(e);
+    draggedFood = new Food(clientX - rect.left - 10, clientY - rect.top - 10);
+    draggedFood.dragging = true;
+    foods.push(draggedFood);
+}
+
+function moveDragFood(e) {
+    if (!draggedFood) return;
+    e.preventDefault();
+    const rect = container.getBoundingClientRect();
+    const { clientX, clientY } = getClientPoint(e);
+    draggedFood.x = clientX - rect.left - 10;
+    draggedFood.y = clientY - rect.top - 10;
+}
+
+function endDragFood() {
+    if (!draggedFood) return;
+    draggedFood.dragging = false;
+    draggedFood = null;
 }
 
 // Bind click/tap to container
@@ -362,18 +395,27 @@ container.addEventListener('touchstart', (e) => {
     spawnFood(e);
 }, { passive: false });
 
+if (foodSource) {
+    foodSource.addEventListener('mousedown', startDragFood);
+    foodSource.addEventListener('touchstart', startDragFood, { passive: false });
+    window.addEventListener('mousemove', moveDragFood);
+    window.addEventListener('touchmove', moveDragFood, { passive: false });
+    window.addEventListener('mouseup', endDragFood);
+    window.addEventListener('touchend', endDragFood);
+}
+
 
 
 
 // Spawner
 function spawnFish(startOnScreen = false) {
     const targets = {
-        'clownfish': 6,
+        'clownfish': 3,
         'whale': 1,
-        'shark': 3,
-        'turtle': 3,
-        'manta': 2,
-        'pufferfish': 4
+        'shark': 1,
+        'turtle': 2,
+        'manta': 1,
+        'pufferfish': 2
     };
     const currentCounts = { 'clownfish': 0, 'whale': 0, 'shark': 0, 'turtle': 0, 'manta': 0, 'pufferfish': 0 };
 
@@ -393,8 +435,8 @@ function spawnFish(startOnScreen = false) {
 }
 
 // Initialize some fish
-for (let i = 0; i < 25; i++) {
-    if (fishes.length >= 19) break;
+for (let i = 0; i < 10; i++) {
+    if (fishes.length >= 7) break;
     spawnFish(true);
 }
 
@@ -409,7 +451,7 @@ function gameLoop(timestamp) {
     updateFoods(deltaTime);
 
     // Spawner
-    if (Math.random() < 0.01 && fishes.length < 19) { // Increased limit
+    if (Math.random() < 0.006 && fishes.length < 8) {
         spawnFish();
     }
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>孵小蛋</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <a href="../../home.html" class="back-btn">⬅</a>
+
+        <div id="collection-badge" aria-live="polite">动物图鉴 0/50</div>
+
+        <div id="warmth-meter" aria-hidden="true">
+            <span>暖暖</span>
+            <div id="meter-track">
+                <div id="meter-fill"></div>
+            </div>
+        </div>
+
+        <div id="stage">
+            <div id="nest">
+                <button id="egg-button" class="needs-guide" type="button" aria-label="点一点孵小蛋">
+                    <span id="egg">🥚</span>
+                    <span id="crack-line"></span>
+                </button>
+            </div>
+
+            <div id="baby" class="hidden" aria-live="polite"></div>
+        </div>
+
+        <div id="game-footer">
+            <div id="hint">点一点敲一敲，也可以拖着摸摸</div>
+            <div id="result-copy" class="hidden" aria-live="polite">
+                <div id="result-title">
+                    <strong id="baby-name"></strong>
+                    <span id="baby-rarity"></span>
+                </div>
+                <div id="baby-line"></div>
+            </div>
+            <button id="again-btn" class="hidden" type="button">再孵一颗</button>
+        </div>
+
+        <div id="confetti-layer" aria-hidden="true"></div>
+    </div>
+
+    <script>
+        window.MINI_GAME = { id: "egg_hatch", name: "Egg Hatch" };
+    </script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/game_juice.js?v=1"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

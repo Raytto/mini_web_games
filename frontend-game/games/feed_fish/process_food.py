@@ -1,6 +1,7 @@
 from PIL import Image
 import sys
 import collections
+from pathlib import Path
 
 def process_image(path):
     try:
@@ -65,4 +66,4 @@ def process_image(path):
         sys.exit(1)
 
 if __name__ == "__main__":
-    process_image('/root/dev/mini_web_games/frontend/games/feed_fish/food.png')
+    process_image(Path(__file__).with_name("food.png"))

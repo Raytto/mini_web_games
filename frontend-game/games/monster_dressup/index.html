@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, viewport-fit=cover">
+    <title>怪兽换装</title>
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+    <div id="game" class="dressup-game">
+        <header class="game-header">
+            <a class="round-btn back-btn" href="../../home.html" aria-label="返回">←</a>
+            <div class="title-wrap">
+                <h1>怪兽换装</h1>
+                <p id="hint">选一个部件，帮怪兽装扮起来</p>
+            </div>
+            <button id="reset-btn" class="round-btn reset-btn" type="button" aria-label="重新开始">↻</button>
+        </header>
+
+        <main class="dressup-scene">
+            <img class="scene-background" src="../shared/generated_assets/monster_dressup_bg.png" alt="" draggable="false">
+
+            <div class="collection-badge" aria-live="polite">
+                <span>怪兽图鉴</span>
+                <strong id="collection-count">0/5</strong>
+            </div>
+
+            <div id="monster-stage" class="monster-stage" aria-label="等待换装的空白脸小怪兽">
+                <div class="monster-shadow"></div>
+                <img id="monster-base" class="monster-base" alt="没有眼睛、鼻子和嘴巴的小怪兽" draggable="false">
+                <div id="slots-layer" class="slots-layer" aria-hidden="true"></div>
+                <div id="placed-layer" class="placed-layer" aria-hidden="true"></div>
+            </div>
+
+            <div id="celebration" class="celebration" aria-live="polite">
+                <span class="celebration-stars">✦ ✨ ✦</span>
+                <strong>装扮完成啦！</strong>
+            </div>
+
+            <section id="parts-tray" class="parts-tray" aria-label="怪兽换装部件"></section>
+
+            <section id="next-panel" class="next-panel" aria-live="polite" hidden>
+                <div>
+                    <strong id="monster-name">新朋友</strong>
+                    <span>已经变漂亮啦！</span>
+                </div>
+                <button id="next-btn" type="button">换一个怪兽 <span>➜</span></button>
+            </section>
+        </main>
+    </div>
+
+    <script>window.MINI_GAME = { id: "monster_dressup", name: "怪兽换装" };</script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/game_juice.js?v=1"></script>
+    <script src="game.js?v=5"></script>
+</body>
+</html>

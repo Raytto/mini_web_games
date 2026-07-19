@@ -34,7 +34,7 @@ canvas {
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.6);
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
     font-size: 1.5rem;
     pointer-events: none;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);

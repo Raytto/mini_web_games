@@ -60,14 +60,13 @@ body {
     transform: translateX(-50%);
     background: #FFCA28;
     color: #3E2723;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 1.2em;
     white-space: nowrap;
     box-shadow: 0 4px 0 #F57F17;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .food-list {
@@ -90,4 +89,26 @@ body {
 .food-item:active {
     transform: scale(0.9);
     cursor: grabbing;
+}
+
+@media (max-width: 640px) {
+    #ui-layer {
+        padding-bottom: 14px;
+    }
+
+    #food-panel {
+        width: calc(100% - 44px);
+        max-width: 340px;
+        padding: 20px 12px 10px;
+        border-radius: 18px;
+    }
+
+    .panel-title {
+        font-size: 1em;
+        padding: 7px 18px;
+    }
+
+    .food-item {
+        font-size: 2.55em;
+    }
 }

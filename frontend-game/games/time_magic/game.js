@@ -4,14 +4,15 @@ const rainContainer = document.getElementById('rain-container');
 const snowContainer = document.getElementById('snow-container');
 
 const states = [
-    { name: 'sunny', text: 'Sunny Day ☀️' },
-    { name: 'rainy', text: 'Rainy Day 🌧️' },
-    { name: 'snowy', text: 'Snowy Day ❄️' },
-    { name: 'rainbow', text: 'Rainbow! 🌈' }
+    { name: 'sunny', text: '晴天 ☀️' },
+    { name: 'rainy', text: '下雨 🌧️' },
+    { name: 'snowy', text: '下雪 ❄️' },
+    { name: 'rainbow', text: '彩虹 🌈' }
 ];
 
 let currentStateIndex = 0;
 let particleInterval = null;
+let lastSwipeAt = 0;
 
 // Preload images to avoid flashing
 const imageUrls = [
@@ -26,11 +27,22 @@ imageUrls.forEach(url => {
 });
 
 // Audio Context for synthetic sounds
-const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-function playSound(type) {
+let audioCtx = null;
+let audioReady = false;
+
+function initAudio() {
+    if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    audioReady = true;
     if (audioCtx.state === 'suspended') {
         audioCtx.resume();
     }
+}
+
+function playSound(type) {
+    if (!audioReady) return;
+    initAudio();
     const osc = audioCtx.createOscillator();
     const gainNode = audioCtx.createGain();
 
@@ -142,6 +154,7 @@ document.addEventListener('mouseup', e => {
 function handleSwipe(start, end) {
     const diff = start - end;
     if (Math.abs(diff) > threshold) {
+        initAudio();
         if (diff > 0) {
             // Swipe Up -> Next
             currentStateIndex = (currentStateIndex + 1) % states.length;
@@ -150,7 +163,14 @@ function handleSwipe(start, end) {
             currentStateIndex = (currentStateIndex - 1 + states.length) % states.length;
         }
         updateState();
+        lastSwipeAt = Date.now();
     }
+}
+
+function nextWeather() {
+    initAudio();
+    currentStateIndex = (currentStateIndex + 1) % states.length;
+    updateState();
 }
 
 // Interaction for specific elements
@@ -161,6 +181,7 @@ const rainbow = document.getElementById('rainbow-element');
     if (!el) return;
     el.addEventListener('click', (e) => {
         e.stopPropagation(); // prevent swipe triggers if dragged
+        nextWeather();
         playSound('click');
 
         // Visual feedback
@@ -168,6 +189,12 @@ const rainbow = document.getElementById('rainbow-element');
         void el.offsetWidth;
         el.classList.add('feedback-bounce');
     });
+});
+
+scene.addEventListener('click', (e) => {
+    if (e.target.closest('.back-btn')) return;
+    if (Date.now() - lastSwipeAt < 350) return;
+    nextWeather();
 });
 
 // Initialize

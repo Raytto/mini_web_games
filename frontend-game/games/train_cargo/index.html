@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>小火车装货</title>
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+
+<body>
+    <div id="game" class="cargo-game">
+        <img class="scene-background" src="../shared/generated_assets/train_cargo_bg_v2.png" alt="阳光下的火车站空站台" draggable="false">
+
+        <header class="game-header">
+            <a class="round-btn" href="../../home.html" aria-label="返回">←</a>
+            <div class="title-wrap">
+                <h1>小火车装货</h1>
+                <p id="hint" aria-live="polite">按颜色把玩具装进车厢</p>
+            </div>
+            <button id="reset-btn" class="round-btn" type="button" aria-label="重新装这一列火车">↻</button>
+        </header>
+
+        <div class="status-row" aria-live="polite">
+            <span id="round-badge">第 1 列</span>
+            <span id="collection-badge">玩具图鉴 0/12</span>
+        </div>
+
+        <main class="play-area">
+            <section id="train-stage" class="train-stage entering" aria-label="等待装货的小火车">
+                <div class="steam-cloud" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div id="train" class="train"></div>
+                <div class="speed-lines" aria-hidden="true"></div>
+            </section>
+
+            <section id="toy-dock" class="toy-dock" aria-label="待装车的玩具">
+                <div class="dock-title"><span aria-hidden="true">🧸</span> 待装玩具</div>
+                <div id="toy-row" class="toy-row"></div>
+            </section>
+        </main>
+
+        <div id="travel-message" class="travel-message" aria-live="polite" hidden>
+            <span aria-hidden="true">🚂</span>
+            <b>装满啦，出发！</b>
+        </div>
+    </div>
+
+    <script>window.MINI_GAME = { id: "train_cargo", name: "小火车装货" };</script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/game_juice.js?v=1"></script>
+    <script src="game.js?v=5"></script>
+</body>
+
+</html>

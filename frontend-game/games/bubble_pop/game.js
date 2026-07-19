@@ -23,7 +23,7 @@ resize();
 
 // Game Configuration
 const GRAVITY = 0.2; // For particles
-const BUBBLE_SPAWN_Rate = 300; // ms
+const BUBBLE_SPAWN_Rate = 420; // ms
 let lastSpawnTime = 0;
 
 class Bubble {
@@ -207,7 +207,7 @@ function checkCollision() {
     for (let i = bubbles.length - 1; i >= 0; i--) {
         const b = bubbles[i];
         const dist = Math.hypot(b.x - pointerX, b.y - pointerY);
-        if (dist < b.r + 10) { // Slight buffer for easier popping
+        if (dist < b.r + 28) { // generous toddler-friendly touch buffer
             popBubble(b);
             bubbles.splice(i, 1);
         }
@@ -325,7 +325,6 @@ function animate(timestamp) {
 }
 
 function startGame() {
-    initAudio();
     isPlaying = true;
     score = 0;
     scoreEl.innerText = score;

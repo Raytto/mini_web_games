@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#fff0c9">
+  <title>小小厨房</title>
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+    <a class="round-button back-button" href="../../home.html" aria-label="返回游戏首页">‹</a>
+      <div class="title-block">
+        <h1>小小厨房</h1>
+        <p id="stageHint" aria-live="polite">今天做什么好吃的呢？</p>
+      </div>
+      <button class="round-button reset-button" id="resetButton" type="button" aria-label="重新做一遍">↻</button>
+    </header>
+
+    <section class="kitchen" aria-label="制作不同食物的小小厨房">
+      <div class="recipe-badge">今天做：<strong id="recipeName">香香小蛋糕</strong></div>
+      <div class="step-badge" id="stepBadge">准备中</div>
+      <div class="cook-stage" id="cookDropZone">
+        <div class="stage-halo"></div>
+        <img class="stage-image" id="stageImage" alt="一个空的黄色大碗" draggable="false">
+        <div class="cook-effects" id="cookEffects" aria-hidden="true"></div>
+        <div class="baking-badge" id="bakingBadge" hidden>
+          <span id="waitingText">烘烤中</span>
+          <i><b></b></i>
+        </div>
+      </div>
+      <div class="praise" id="praise" aria-live="polite"></div>
+    </section>
+
+    <section class="tool-dock" aria-label="今天要用的材料和工具">
+      <div class="progress-dots" id="progressDots"></div>
+      <div class="tools" id="tools"></div>
+      <div class="finish-panel" id="finishPanel" hidden>
+        <div class="finish-copy"><strong id="finishTitle">做好啦！</strong><span id="finishCopy">今天的小菜完成啦</span></div>
+        <button class="again-button" id="againButton" type="button">换一道菜 <span>→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="drag-ghost" id="dragGhost" aria-hidden="true"></div>
+  <script>window.MINI_GAME = { id: "little_chef", name: "小小厨房" };</script>
+  <script src="../../scripts/bankend-config.js?v=2"></script>
+  <script src="../../scripts/tracking.js?v=2"></script>
+  <script src="../shared/game_juice.js?v=1"></script>
+  <script src="game.js?v=6"></script>
+</body>
+</html>

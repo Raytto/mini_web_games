@@ -11,13 +11,14 @@ const restartBtn = document.getElementById('restart-btn');
 const resourceLoader = document.getElementById('resource-loader');
 
 // Audio - Procedural + Sample
-const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+let audioCtx = null;
 const sliceSample = new Audio('slice.mp3');
 sliceSample.preload = 'auto';
 
 // Prepare Noise Buffer for Swoosh (better than oscillator)
 let noiseBuffer = null;
 function createNoiseBuffer() {
+    if (!audioCtx) return;
     if (noiseBuffer) return;
     const bufferSize = audioCtx.sampleRate * 2.0; // 2 seconds
     noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
@@ -28,11 +29,15 @@ function createNoiseBuffer() {
 }
 
 function initAudio() {
+    if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
     if (audioCtx.state === 'suspended') audioCtx.resume();
     createNoiseBuffer();
 }
 
 function unlockAudio() {
+    initAudio();
     if (audioCtx.state === 'suspended') {
         audioCtx.resume().then(() => {
             if (resourceLoader) resourceLoader.classList.add('hidden');
@@ -46,15 +51,9 @@ function unlockAudio() {
     }
 }
 
-// Check immediately (in case already running)
-if (audioCtx.state === 'running') {
-    if (resourceLoader) resourceLoader.classList.add('hidden');
-} else {
-    // Bind to all interaction events to ensure immediate unlock
-    ['touchstart', 'touchend', 'mousedown', 'keydown', 'click'].forEach(evt => {
-        window.addEventListener(evt, unlockAudio, { passive: true });
-    });
-}
+['touchstart', 'touchend', 'mousedown', 'keydown', 'click'].forEach(evt => {
+    window.addEventListener(evt, unlockAudio, { passive: true });
+});
 
 // 1. Swoosh Sound (Movement)
 let lastSwooshTime = 0;
@@ -128,17 +127,8 @@ function playSliceSound() {
     const t = audioCtx.currentTime;
 
     // 1. The "Chua" (Noise Burst)
-    // Create random noise buffer per hit for variety or reuse a short buffer
-    // Reusing the noiseBuffer is fine if we filter it differently, but new noise is fresher.
-    const bufferSize = audioCtx.sampleRate * 0.2; // 0.2s duration
-    const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
-    const data = buffer.getChannelData(0);
-    for (let i = 0; i < bufferSize; i++) {
-        data[i] = Math.random() * 2 - 1;
-    }
-
     const noise = audioCtx.createBufferSource();
-    noise.buffer = buffer;
+    noise.buffer = noiseBuffer;
 
     const noiseFilter = audioCtx.createBiquadFilter();
     noiseFilter.type = 'lowpass';
@@ -153,7 +143,8 @@ function playSliceSound() {
     noise.connect(noiseFilter);
     noiseFilter.connect(noiseGain);
     noiseGain.connect(audioCtx.destination);
-    noise.start(t);
+    const noiseOffset = Math.random() * 1.7;
+    noise.start(t, noiseOffset, 0.2);
 
 
     // 2. The "Squish" (Liquid Tones)
@@ -184,10 +175,17 @@ let isPlaying = false;
 let score = 0;
 let animationId;
 let fruits = [];
-let particles = [];
+let juiceParticles = [];
+let slicedParts = [];
 let trail = [];
 let spawnTimer = 0;
-let spawnInterval = 30; // Spawns faster (was 60)
+let spawnInterval = 42; // Slower and easier for toddler play
+
+const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+const JUICE_PARTICLE_LIMIT = isTouchDevice ? 56 : 72;
+const JUICE_PARTICLE_MAX_AGE_MS = 1200;
+const SLICED_PART_LIMIT = isTouchDevice ? 16 : 24;
+const TRAIL_POINT_LIMIT = 18;
 
 // Fruit Configuration
 const FRUIT_TYPES = [
@@ -232,6 +230,9 @@ function handleInput(x, y) {
 
     // Add to trail
     trail.push({ x, y, life: 10 });
+    if (trail.length > TRAIL_POINT_LIMIT) {
+        trail.splice(0, trail.length - TRAIL_POINT_LIMIT);
+    }
 
     // Check for swoosh sound
     updateSwoosh(x, y);
@@ -242,8 +243,13 @@ function handleInput(x, y) {
 }
 
 window.addEventListener('mousemove', e => handleInput(e.clientX, e.clientY));
+window.addEventListener('mousedown', e => handleInput(e.clientX, e.clientY));
 window.addEventListener('touchmove', e => {
     e.preventDefault(); // Stop scrolling
+    handleInput(e.touches[0].clientX, e.touches[0].clientY);
+}, { passive: false });
+window.addEventListener('touchstart', e => {
+    e.preventDefault();
     handleInput(e.touches[0].clientX, e.touches[0].clientY);
 }, { passive: false });
 
@@ -308,6 +314,7 @@ class Particle {
         this.vy = Math.sin(angle) * velocity;
         this.life = 1.0;
         this.decay = Math.random() * 0.02 + 0.01;
+        this.createdAt = performance.now();
     }
 
     update() {
@@ -402,23 +409,21 @@ function checkCollisions() {
         if (!fruit.active) continue;
 
         const dist = distToSegment(fruit, p1, p2);
-        if (dist < fruit.type.radius * 0.9) {
+        if (dist < fruit.type.radius * 1.25) {
             sliceFruit(i);
         }
     }
 
     // Check Sliceable Parts (Slicing slices!)
-    for (let i = particles.length - 1; i >= 0; i--) {
-        const part = particles[i];
-        if (part instanceof SlicedPart && part.isSliceable) {
-            // Prevent slicing immediately after spawning
-            if (part.sliceCooldown > 0) continue;
+    for (let i = slicedParts.length - 1; i >= 0; i--) {
+        const part = slicedParts[i];
+        // Prevent slicing immediately after spawning
+        if (!part.isSliceable || part.sliceCooldown > 0) continue;
 
-            const dist = distToSegment(part, p1, p2);
-            // Slightly smaller hit box for parts
-            if (dist < part.type.radius * 0.8) {
-                slicePart(i);
-            }
+        const dist = distToSegment(part, p1, p2);
+        // Slightly smaller hit box for parts
+        if (dist < part.type.radius * 1.05) {
+            slicePart(i);
         }
     }
 }
@@ -440,7 +445,21 @@ function createSplash(x, y, color, amount = 15, speedMult = 1.0) {
         const speed = (Math.random() * 8 + 4) * speedMult;
         // Increased size: was random * 8 + 3, now random * 12 + 6
         const size = Math.random() * 12 + 6;
-        particles.push(new Particle(x, y, color, speed, size));
+        juiceParticles.push(new Particle(x, y, color, speed, size));
+    }
+
+    // Remove the oldest droplets in one operation before they can burden a frame.
+    const overflow = juiceParticles.length - JUICE_PARTICLE_LIMIT;
+    if (overflow > 0) {
+        juiceParticles.splice(0, overflow);
+    }
+}
+
+function addSlicedPart(part) {
+    slicedParts.push(part);
+    const overflow = slicedParts.length - SLICED_PART_LIMIT;
+    if (overflow > 0) {
+        slicedParts.splice(0, overflow);
     }
 }
 
@@ -462,16 +481,16 @@ function sliceFruit(index) {
     // Right Half: x from 0 to rawSize
     const rightRect = { x: 0, y: -rawSize, w: rawSize, h: fullHeight };
 
-    particles.push(new SlicedPart(fruit, leftRect, 0));
-    particles.push(new SlicedPart(fruit, rightRect, 0));
+    addSlicedPart(new SlicedPart(fruit, leftRect, 0));
+    addSlicedPart(new SlicedPart(fruit, rightRect, 0));
 
     // HUGE Splash for main fruit
     createSplash(fruit.x, fruit.y, fruit.type.color, 25, 1.5);
 }
 
 function slicePart(index) {
-    const part = particles[index];
-    particles.splice(index, 1); // Remove parent part
+    const part = slicedParts[index];
+    slicedParts.splice(index, 1); // Remove parent part
     playSliceSound();
 
     score += 5;
@@ -497,15 +516,15 @@ function slicePart(index) {
     };
 
     const nextGen = part.generation + 1;
-    particles.push(new SlicedPart(part, topRect, nextGen));
-    particles.push(new SlicedPart(part, bottomRect, nextGen));
+    addSlicedPart(new SlicedPart(part, topRect, nextGen));
+    addSlicedPart(new SlicedPart(part, bottomRect, nextGen));
 
     // Splash for part slice
     createSplash(part.x, part.y, part.type.color, 12, 1.0);
 }
 
 // Main Loop
-function loop() {
+function loop(now = performance.now()) {
     if (!isPlaying) return;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -530,20 +549,27 @@ function loop() {
         }
     }
 
-    // Update & Draw Particles (Juice & Slices)
-    // Limit particle count to avoid overload
-    while (particles.length > 100) {
-        particles.shift(); // Remove oldest
+    // Keep short-lived juice separate from the more expensive clipped fruit pieces.
+    for (let i = juiceParticles.length - 1; i >= 0; i--) {
+        const p = juiceParticles[i];
+        p.update();
+        const expired = p.life <= 0 || now - p.createdAt > JUICE_PARTICLE_MAX_AGE_MS;
+        const offscreen = p.x < -80 || p.x > canvas.width + 80 || p.y < -80 || p.y > canvas.height + 80;
+        if (expired || offscreen) {
+            juiceParticles.splice(i, 1);
+            continue;
+        }
+        p.draw();
     }
 
-    for (let i = particles.length - 1; i >= 0; i--) {
-        const p = particles[i];
-        p.update();
-        p.draw();
-        // Remove offscreen or dead particles
-        if (p.life <= 0 || p.y > canvas.height + 100) {
-            particles.splice(i, 1);
+    for (let i = slicedParts.length - 1; i >= 0; i--) {
+        const part = slicedParts[i];
+        part.update();
+        if (part.x < -300 || part.x > canvas.width + 300 || part.y > canvas.height + 200) {
+            slicedParts.splice(i, 1);
+            continue;
         }
+        part.draw();
     }
 
     // Draw Trail
@@ -600,7 +626,8 @@ function drawTrail() {
 function startGame() {
     score = 0;
     fruits = [];
-    particles = [];
+    juiceParticles = [];
+    slicedParts = [];
     trail = [];
     isPlaying = true;
     canvas.classList.add('playing');

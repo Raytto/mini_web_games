@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#e9ffd7">
+  <title>找同伴</title>
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+    <a class="round-button back-button" href="../../home.html" aria-label="返回游戏首页">‹</a>
+      <div class="title-block">
+        <h1>找同伴</h1>
+        <p id="gameHint" aria-live="polite">把小动物送到它生活的地方</p>
+      </div>
+      <button class="round-button reset-button" id="resetButton" type="button" aria-label="重新开始这一组">↻</button>
+    </header>
+
+    <section class="habitat-stage" aria-label="三个动物栖息地">
+      <div class="status-row">
+        <span class="status-pill" id="roundBadge">本组回家 0/3</span>
+        <span class="status-pill collection-pill" id="collectionBadge">动物图鉴 0/18</span>
+      </div>
+      <div class="success-banner" id="successBanner" hidden>
+        <span>🎉</span><strong>小动物都回家啦！</strong><span>🎉</span>
+      </div>
+      <div class="habitat-grid" id="habitatGrid"></div>
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+    </section>
+
+    <section class="animal-dock" aria-label="等待回家的小动物">
+      <div class="animal-cards" id="animalCards"></div>
+      <div class="next-panel" id="nextPanel" hidden>
+        <div class="next-copy"><strong>三个家都找对啦！</strong><span>换一组新朋友继续玩</span></div>
+        <button class="next-button" id="nextButton" type="button">下一组 <span>→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="drag-ghost" id="dragGhost" aria-hidden="true"></div>
+  <script>window.MINI_GAME = { id: "find_friends", name: "找同伴" };</script>
+  <script src="../../scripts/bankend-config.js?v=2"></script>
+  <script src="../../scripts/tracking.js?v=2"></script>
+  <script src="game.js?v=5"></script>
+</body>
+</html>

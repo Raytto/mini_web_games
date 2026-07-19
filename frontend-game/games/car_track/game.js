@@ -21,9 +21,9 @@ let roadWidth, borderWidth, magnetDistance;
 const SNAP_SEARCH_RANGE = 50; // How many points ahead to search (prevents jumping)
 let scale = 1;
 
-const BASE_WIDTH = 140;
-const BASE_BORDER = 170;
-const BASE_MAGNET = 100;
+const BASE_WIDTH = 158;
+const BASE_BORDER = 190;
+const BASE_MAGNET = 150;
 const BASE_CAR_WIDTH = 135;
 const BASE_HIT_RADIUS = 120;
 
@@ -123,23 +123,6 @@ function playHonk() {
 
     source.start(0);
 }
-// Start loading immediately so it's ready
-try {
-    window.addEventListener('load', () => {
-        // Create context on user interaction usually, but we can setup the fetch
-        // We can't decode without context.
-        // Let's wait for first interaction for full init, or just fetch raw data now?
-        // Simpler: Just rely on initAudio called on mousedown/touchstart.
-        // But delay might be noticeable on first honk.
-        // Let's try to init audio context (suspended) and load data on script execution if possible, 
-        // but 'new AudioContext' is allowed.
-        if (!audioCtx) {
-            audioCtx = new AudioContext();
-            loadAudioBuffer();
-        }
-    });
-} catch (e) { console.log(e); }
-
 function startHonkingOp() {
     if (honkInterval) return;
     initAudio();

@@ -1,0 +1,270 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    touch-action: none;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
+}
+
+#game-container {
+    width: 100%;
+    height: 100%;
+    background: url('assets/room_bg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Match other games style if possible, but emoji is fine for now */
+    background: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #4facfe;
+    display: block;
+}
+
+#game-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#box-zone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(42vmin, 300px);
+    height: min(42vmin, 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#box-img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.box-shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(1.1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.1) rotate(-5deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    75% {
+        transform: scale(1.1) rotate(-5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+#toys-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    pointer-events: none;
+    /* Let clicks pass through to toys */
+}
+
+.toy {
+    position: absolute;
+    font-size: 72px;
+    /* For emojis */
+    cursor: grab;
+    user-select: none;
+    pointer-events: auto;
+    transition: transform 0.1s;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+    /* If using images, remove font-size and set width */
+}
+
+.toy:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+}
+
+.toy.captured {
+    transition: all 0.5s ease-in;
+    transform: scale(0.1) rotate(360deg);
+    opacity: 0;
+}
+
+#win-overlay {
+    position: absolute;
+    left: 50%;
+    bottom: max(18px, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    width: min(620px, 92vw);
+    z-index: 1000;
+    pointer-events: none;
+    animation: fadeIn 0.5s;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.win-content {
+    min-height: 112px;
+    padding: 14px 22px;
+    border-radius: 28px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 252, 231, .94);
+    box-shadow: 0 9px 0 rgba(156, 111, 31, .2), 0 15px 28px rgba(74, 56, 31, .22);
+    border: 4px solid #FFD75C;
+    pointer-events: auto;
+}
+
+.win-content h1 {
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
+    color: #ff6b6b;
+    margin: 0;
+    font-size: clamp(27px, 4vw, 38px);
+}
+
+.stars {
+    font-size: clamp(29px, 5vw, 45px);
+    animation: bounce 1s infinite alternate;
+}
+
+.win-copy p { margin: 2px 0 0; color: #7d693b; font-size: 16px; font-weight: 800; }
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0 4px #2E7D32;
+}
+
+@media (max-width: 640px) {
+    #box-zone {
+        width: min(58vw, 230px);
+        height: min(58vw, 230px);
+    }
+
+    #back-button {
+        top: 14px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 30px;
+    }
+
+    .win-content {
+        min-height: 96px;
+        padding: 10px 12px;
+        gap: 9px;
+        border-width: 3px;
+        border-radius: 22px;
+    }
+
+    .win-content h1 {
+        font-size: 22px;
+    }
+
+    .stars { display: none; }
+    .win-copy p { font-size: 12px; }
+    .win-content button { padding: 12px 16px; font-size: 18px; }
+}
+
+button:active {
+    box-shadow: 0 1px #2E7D32;
+    transform: translateY(3px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+/* Star particle effect */
+.particle {
+    position: absolute;
+    pointer-events: none;
+    font-size: 30px;
+    animation: popAndFade 0.8s forwards;
+}
+
+@keyframes popAndFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}

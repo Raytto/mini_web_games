@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, viewport-fit=cover">
+    <title>收快递</title>
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <div id="game" class="parcel-game">
+        <header class="game-header">
+            <a class="round-btn" href="../../home.html" aria-label="返回">←</a>
+            <div class="title-wrap">
+                <h1>收快递</h1>
+                <p id="hint">看形状，把包裹送进一样的洞洞</p>
+            </div>
+            <button id="reset-btn" class="round-btn" type="button" aria-label="重新开始">↻</button>
+        </header>
+
+        <main class="sort-scene">
+            <img class="scene-background" src="../shared/generated_assets/parcel_sort_bg.png" alt="" draggable="false">
+            <div class="scene-tint"></div>
+
+            <div id="combo-badge" class="score-badge combo-badge" aria-live="polite">
+                <span>🔥 COMBO</span><strong id="combo-count">×0</strong>
+            </div>
+            <div class="score-badge total-badge">
+                <span>已收快递</span><strong id="delivery-count">0 件</strong>
+            </div>
+
+            <div id="encouragement" class="encouragement" aria-live="polite">准备好了吗？</div>
+
+            <section id="bins" class="bins" aria-label="快递投递洞洞">
+                <button class="bin" type="button" data-shape="circle" aria-label="圆洞洞">
+                    <img src="../shared/generated_assets/parcel_sort_zone_circle.png" alt="圆洞洞" draggable="false">
+                    <span>圆洞洞</span>
+                </button>
+                <button class="bin" type="button" data-shape="square" aria-label="方洞洞">
+                    <img src="../shared/generated_assets/parcel_sort_zone_square.png" alt="方洞洞" draggable="false">
+                    <span>方洞洞</span>
+                </button>
+                <button class="bin" type="button" data-shape="triangle" aria-label="三角洞洞">
+                    <img src="../shared/generated_assets/parcel_sort_zone_triangle.png" alt="三角洞洞" draggable="false">
+                    <span>三角洞洞</span>
+                </button>
+            </section>
+
+            <section class="queue-panel" aria-label="排队等待投递的快递">
+                <div class="queue-heading"><span>快递排队中</span><i>➜</i></div>
+                <div id="parcel-queue" class="parcel-queue"></div>
+            </section>
+        </main>
+    </div>
+
+    <script>window.MINI_GAME = { id: "parcel_sort", name: "收快递" };</script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/game_juice.js?v=1"></script>
+    <script src="game.js?v=2"></script>
+</body>
+</html>

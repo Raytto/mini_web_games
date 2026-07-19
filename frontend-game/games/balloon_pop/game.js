@@ -295,10 +295,20 @@ class Particle {
 // BGM handled by shell
 
 // Sound Effects using Web Audio API
-const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+let audioCtx = null;
 const resourceLoader = document.getElementById('resource-loader');
 
+function initAudio() {
+    if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+}
+
 function unlockAudio() {
+    initAudio();
     if (audioCtx.state === 'suspended') {
         audioCtx.resume().then(() => {
             if (resourceLoader) resourceLoader.classList.add('hidden');
@@ -414,7 +424,7 @@ const soundTypes = [
 ];
 
 function playPopSound() {
-    if (audioCtx.state === 'suspended') audioCtx.resume();
+    initAudio();
 
     // Pick a random sound generator
     const soundGen = soundTypes[Math.floor(Math.random() * soundTypes.length)];
@@ -472,7 +482,7 @@ function popBalloon(x, y) {
         const dx = x - b.x;
         const dy = y - (b.y + b.radius * 0.1); // center correction for oval
         // Approximate collision check
-        if (dx * dx + dy * dy < (b.radius + 10) * (b.radius + 10)) {
+        if (dx * dx + dy * dy < (b.radius + 32) * (b.radius + 32)) {
             // Pop!
             playPopSound();
             createExplosion(b.x, b.y, b.color);
@@ -553,7 +563,6 @@ function startGame() {
     if (startScreen) startScreen.classList.add('hidden');
     document.getElementById('game-over-screen').classList.add('hidden');
 
-    if (audioCtx.state === 'suspended') audioCtx.resume();
     // bgm handled by shell
 
     spawnBalloon();

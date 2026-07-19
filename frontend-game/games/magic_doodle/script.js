@@ -8,6 +8,8 @@ let hue = 0;
 let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
+let goalTargets = [];
+const GOAL_TARGET_COUNT = 4;
 
 // Resize handling
 function resize() {
@@ -15,6 +17,7 @@ function resize() {
     height = window.innerHeight;
     canvas.width = width;
     canvas.height = height;
+    createGoalTargets();
 }
 
 window.addEventListener('resize', resize);
@@ -176,6 +179,7 @@ function draw(e) {
 
     if (distance > 2) {
         createParticles(x, y);
+        checkGoalTargets(x, y);
         // Add interpolated particles for smooth lines
         const steps = Math.min(distance / 5, 20); // Cap steps
         for (let i = 1; i < steps; i++) {
@@ -204,6 +208,98 @@ function createParticles(x, y, count = 3) {
     }
 }
 
+function createGoalTargets() {
+    if (!width || !height) return;
+    goalTargets = [];
+    const marginX = Math.max(70, width * 0.15);
+    const marginY = Math.max(90, height * 0.18);
+    const minDistance = Math.min(130, Math.max(92, Math.min(width, height) * 0.24));
+    for (let i = 0; i < GOAL_TARGET_COUNT; i++) {
+        let x;
+        let y;
+        let attempts = 0;
+        do {
+            x = marginX + Math.random() * Math.max(1, width - marginX * 2);
+            y = marginY + Math.random() * Math.max(1, height - marginY * 2);
+            attempts++;
+        } while (
+            attempts < 80 &&
+            goalTargets.some(target => Math.hypot(target.x - x, target.y - y) < minDistance)
+        );
+
+        goalTargets.push({
+            x,
+            y,
+            phase: Math.random() * Math.PI * 2,
+            done: false
+        });
+    }
+}
+
+function checkGoalTargets(x, y) {
+    let completed = 0;
+    goalTargets.forEach(target => {
+        if (!target.done && Math.hypot(target.x - x, target.y - y) < 58) {
+            target.done = true;
+            particles.push(new StarBurst(target.x, target.y, hue + 60));
+        }
+        if (target.done) completed++;
+    });
+    if (completed === goalTargets.length) {
+        setTimeout(createGoalTargets, 650);
+    }
+}
+
+function drawGoalTargets() {
+    const now = performance.now();
+    goalTargets.forEach(target => {
+        const pulse = Math.sin(now / 420 + target.phase);
+        const starRadius = target.done ? 27 : 23 + pulse * 1.5;
+
+        ctx.save();
+        ctx.translate(target.x, target.y);
+
+        // A soft ring makes untouched targets visible even near the screen edges.
+        ctx.globalAlpha = target.done ? 0.25 : 0.42 + pulse * 0.08;
+        ctx.strokeStyle = target.done ? '#fff59d' : '#80d8ff';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(0, 0, starRadius + 12 + pulse * 2, 0, Math.PI * 2);
+        ctx.stroke();
+
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = target.done ? '#ffd740' : '#fff4a8';
+        ctx.strokeStyle = target.done ? '#fff59d' : '#ffca45';
+        ctx.lineWidth = 3;
+        ctx.shadowBlur = target.done ? 28 : 22 + pulse * 4;
+        ctx.shadowColor = target.done ? '#fff176' : '#ffd54f';
+        drawTargetStar(starRadius);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.shadowBlur = 0;
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
+        ctx.beginPath();
+        ctx.arc(-starRadius * 0.22, -starRadius * 0.27, 3.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+    });
+}
+
+function drawTargetStar(outerRadius) {
+    const innerRadius = outerRadius * 0.46;
+    ctx.beginPath();
+    for (let point = 0; point < 10; point++) {
+        const radius = point % 2 === 0 ? outerRadius : innerRadius;
+        const angle = -Math.PI / 2 + point * Math.PI / 5;
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+        if (point === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+}
+
 // Event Listeners
 canvas.addEventListener('mousedown', startDrawing);
 canvas.addEventListener('mousemove', draw);
@@ -227,6 +323,7 @@ function animate() {
     // Let's try full clear + particles. It looks cleaner and more magical ("glittery").
 
     ctx.clearRect(0, 0, width, height);
+    drawGoalTargets();
 
     // Enforce particle limit
     while (particles.length > MAX_PARTICLES) {

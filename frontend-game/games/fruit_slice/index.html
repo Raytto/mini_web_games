@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Fruit Slice for Kids!</title>
+    <title>切水果</title>
     <style>
-        /* Fallback font definition directly in head to avoid request */
-        @font-face {
-            font-family: 'Fredoka One';
-            src: local('Fredoka One'), local('Verdana'), sans-serif;
-            /* We'll use system fonts that look roundish */
-        }
-
         #game-container {
             background-image: url('background.png');
             background-size: cover;
@@ -53,12 +46,12 @@
                 <span id="score">0</span>
             </div>
 
-            <div id="resource-loader">资源加载中...</div>
+            <div id="resource-loader">轻点画面，开始玩</div>
 
             <div id="game-over-screen" class="hidden">
-                <h1>Great Job!</h1>
-                <p>Score: <span id="final-score">0</span></p>
-                <button id="restart-btn">PLAY AGAIN</button>
+                <h1>真棒！</h1>
+                <p>分数：<span id="final-score">0</span></p>
+                <button id="restart-btn">再来</button>
             </div>
         </div>
     </div>
@@ -67,7 +60,7 @@
     </script>
     <script src="../../scripts/bankend-config.js?v=2"></script>
     <script src="../../scripts/tracking.js?v=2"></script>
-    <script src="game.js?v=4"></script>
+    <script src="game.js?v=5"></script>
 </body>
 
 </html>

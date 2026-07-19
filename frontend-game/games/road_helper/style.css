@@ -1,0 +1,569 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+:root {
+    --ink: #273043;
+    --green: #67a91d;
+    --green-dark: #467b10;
+    --cream: #f5ffd9;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+    color: var(--ink);
+    background: #d9f99d;
+}
+
+button {
+    font: inherit;
+}
+
+.road-game {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: clamp(7px, 1.2vh, 12px);
+    padding: max(10px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+    background:
+        radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.55), transparent 22%),
+        linear-gradient(180deg, #d8ff91, #c7f180);
+}
+
+.game-header {
+    min-height: 62px;
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr) 56px;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 30;
+}
+
+.round-btn {
+    width: 54px;
+    height: 54px;
+    border: 3px solid rgba(39, 48, 67, 0.13);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: 900;
+    line-height: 1;
+    box-shadow: 0 6px 0 rgba(39, 48, 67, 0.12), 0 8px 20px rgba(39, 48, 67, 0.12);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+}
+
+.round-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 rgba(39, 48, 67, 0.12);
+}
+
+.title-wrap {
+    justify-self: center;
+    min-width: 0;
+    text-align: center;
+    padding: 1px 20px 5px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(6px);
+}
+
+.title-wrap h1 {
+    margin: 0;
+    font-size: clamp(28px, 4.2vw, 44px);
+    line-height: 1.05;
+    letter-spacing: 0;
+    text-shadow: 0 3px 0 rgba(255, 255, 255, 0.76);
+}
+
+.title-wrap p {
+    margin: 2px 0 0;
+    color: rgba(39, 48, 67, 0.72);
+    font-size: clamp(14px, 2vw, 19px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.game-main {
+    width: min(1240px, 100%);
+    min-height: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    gap: clamp(8px, 1.2vh, 12px);
+}
+
+.road-scene {
+    position: relative;
+    min-height: 0;
+    overflow: hidden;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 27px;
+    background: #b9e479;
+    box-shadow: 0 13px 28px rgba(47, 80, 31, 0.18), inset 0 -7px 0 rgba(39, 48, 67, 0.05);
+}
+
+.road-stage {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 63%;
+    pointer-events: none;
+    transition: opacity 0.24s ease, transform 0.4s ease;
+}
+
+.road-stage.changing {
+    animation: roadChange 0.62s ease-out;
+}
+
+.repair-target {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 67%;
+    width: 72%;
+    height: 34%;
+    transform: translate(-50%, -50%);
+    border: 5px dashed transparent;
+    border-radius: 46% 46% 38% 38%;
+    pointer-events: none;
+    transition: border-color 0.14s ease, background 0.14s ease, box-shadow 0.14s ease;
+}
+
+.road-scene.ready .repair-target {
+    border-color: rgba(255, 241, 105, 0.96);
+    background: rgba(255, 248, 160, 0.18);
+    box-shadow: 0 0 28px rgba(255, 240, 84, 0.75);
+}
+
+.action-prop {
+    position: absolute;
+    z-index: 11;
+    width: clamp(100px, 19vw, 220px);
+    height: clamp(100px, 19vw, 220px);
+    object-fit: contain;
+    pointer-events: none;
+    filter: drop-shadow(0 15px 13px rgba(39, 48, 67, 0.26));
+}
+
+.action-prop[hidden],
+.drive-car[hidden],
+.success[hidden] {
+    display: none;
+}
+
+.action-prop.pouring {
+    left: 50%;
+    top: 54%;
+    animation: pourGravel 0.72s ease-in-out both;
+}
+
+.action-prop.rolling {
+    left: 12%;
+    top: 60%;
+    animation: rollRoad 0.9s ease-in-out both;
+}
+
+.drive-car {
+    position: absolute;
+    z-index: 12;
+    left: -18%;
+    top: 66%;
+    width: clamp(110px, 18vw, 220px);
+    height: auto;
+    pointer-events: none;
+    filter: drop-shadow(0 14px 10px rgba(39, 48, 67, 0.28));
+}
+
+.drive-car.driving {
+    animation: carDrive 1.8s cubic-bezier(0.28, 0.7, 0.3, 1) both;
+}
+
+.step-strip {
+    position: absolute;
+    z-index: 15;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 7px 10px;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.67);
+    box-shadow: 0 5px 16px rgba(39, 48, 67, 0.14);
+    backdrop-filter: blur(7px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.road-scene.testing .step-strip {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+}
+
+.step-chip {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 9px;
+    border-radius: 999px;
+    color: rgba(39, 48, 67, 0.56);
+    font-size: clamp(12px, 1.7vw, 16px);
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.step-chip::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.74);
+}
+
+.step-chip.current {
+    color: #7b5800;
+    background: #fff3a5;
+}
+
+.step-chip.done {
+    color: #316b16;
+    background: #dff7bd;
+}
+
+.step-chip.done::before {
+    background: #70b82a;
+    border-color: #70b82a;
+}
+
+.tool-tray {
+    min-height: clamp(112px, 17vh, 145px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(12px, 3vw, 32px);
+    padding: 8px 18px 13px;
+    border: 4px solid rgba(255, 255, 255, 0.78);
+    border-radius: 27px;
+    background: rgba(255, 255, 255, 0.48);
+    box-shadow: 0 10px 22px rgba(47, 80, 31, 0.13), inset 0 -5px 0 rgba(39, 48, 67, 0.04);
+    backdrop-filter: blur(7px);
+}
+
+.tool-tray[hidden] {
+    display: none;
+}
+
+.tool-card {
+    position: relative;
+    width: clamp(94px, 12vw, 132px);
+    height: clamp(96px, 13vw, 138px);
+    border: 3px solid rgba(39, 48, 67, 0.1);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding: 4px 5px 7px;
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 7px 0 rgba(39, 48, 67, 0.13), 0 10px 18px rgba(39, 48, 67, 0.11);
+    cursor: grab;
+    touch-action: none;
+    transition: opacity 0.18s ease, filter 0.18s ease, transform 0.14s ease, background 0.14s ease;
+}
+
+.tool-card img {
+    width: min(78%, 88px);
+    height: min(78%, 88px);
+    object-fit: contain;
+    pointer-events: none;
+    filter: drop-shadow(0 9px 7px rgba(39, 48, 67, 0.2));
+}
+
+.tool-card span {
+    color: var(--ink);
+    font-size: clamp(13px, 1.7vw, 17px);
+    font-weight: 900;
+    line-height: 1.1;
+    pointer-events: none;
+}
+
+.tool-card.next {
+    border-color: #f0c936;
+    background: #fff8bd;
+    animation: nextTool 1.15s ease-in-out infinite;
+    filter: drop-shadow(0 0 11px rgba(255, 227, 70, 0.88));
+}
+
+.tool-card.locked {
+    opacity: 0.48;
+    filter: saturate(0.55);
+}
+
+.tool-card.used {
+    opacity: 0.16;
+    transform: scale(0.86);
+    pointer-events: none;
+}
+
+.tool-card.wrong {
+    animation: wrongTool 0.34s ease;
+}
+
+.tool-card.dragging {
+    position: fixed;
+    z-index: 1000;
+    margin: 0;
+    transform: translate(-50%, -50%) scale(1.08);
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.tool-card.dragging span {
+    display: none;
+}
+
+.tool-card.dragging img {
+    width: 100%;
+    height: 100%;
+}
+
+.success {
+    min-height: 118px;
+    border: 4px solid rgba(255, 255, 255, 0.82);
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(249, 255, 224, 0.88);
+    box-shadow: 0 10px 22px rgba(47, 80, 31, 0.15);
+}
+
+.success-panel {
+    width: min(720px, 94%);
+    padding: 12px 18px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+    animation: successPop 0.48s cubic-bezier(0.2, 0.9, 0.3, 1.25);
+}
+
+.success-stars {
+    display: block;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1;
+}
+
+.success-panel strong {
+    display: block;
+    font-size: clamp(23px, 3vw, 32px);
+}
+
+.success-panel p {
+    margin: 3px 0 0;
+    color: rgba(39, 48, 67, 0.72);
+    font-size: clamp(16px, 2.3vw, 21px);
+    font-weight: 800;
+}
+
+.success-panel button {
+    min-width: 165px;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    border-radius: 999px;
+    padding: 11px 24px;
+    background: linear-gradient(180deg, #8fca3d, #65a31c);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+    box-shadow: 0 6px 0 #477713;
+    cursor: pointer;
+}
+
+.success-panel button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #477713;
+}
+
+@keyframes roadChange {
+    0% { opacity: 0.4; transform: scale(1.025); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes nextTool {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-5px) scale(1.04); }
+}
+
+@keyframes wrongTool {
+    0%, 100% { transform: translateX(0); }
+    30% { transform: translateX(-8px) rotate(-4deg); }
+    70% { transform: translateX(8px) rotate(4deg); }
+}
+
+@keyframes pourGravel {
+    0% { transform: translate(-50%, -50%) rotate(0deg) scale(0.78); opacity: 0; }
+    22% { opacity: 1; }
+    62% { transform: translate(-50%, -50%) rotate(-24deg) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -42%) rotate(-30deg) scale(0.9); opacity: 0; }
+}
+
+@keyframes rollRoad {
+    0% { transform: translate(-30%, -50%) scale(0.7); opacity: 0; }
+    18% { opacity: 1; }
+    78% { opacity: 1; }
+    100% { left: 72%; transform: translate(-50%, -50%) scale(0.72); opacity: 0; }
+}
+
+@keyframes carDrive {
+    0% { left: -16%; top: 58%; transform: scale(0.76); opacity: 0; }
+    12% { opacity: 1; }
+    58% { left: 38%; top: 36%; transform: scale(0.52); opacity: 1; }
+    92% { opacity: 1; }
+    100% { left: 70%; top: 20%; transform: scale(0.28); opacity: 0; }
+}
+
+@keyframes successPop {
+    from { transform: translateY(24px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    .road-game {
+        gap: 6px;
+        padding: max(7px, env(safe-area-inset-top)) max(7px, env(safe-area-inset-right)) max(7px, env(safe-area-inset-bottom)) max(7px, env(safe-area-inset-left));
+    }
+
+    .game-header {
+        min-height: 50px;
+        grid-template-columns: 46px minmax(0, 1fr) 46px;
+        gap: 5px;
+    }
+
+    .round-btn {
+        width: 44px;
+        height: 44px;
+        border-width: 2px;
+        font-size: 24px;
+    }
+
+    .title-wrap {
+        padding: 0 7px 3px;
+    }
+
+    .title-wrap h1 {
+        font-size: clamp(24px, 8vw, 31px);
+    }
+
+    .title-wrap p {
+        font-size: clamp(12px, 3.5vw, 15px);
+        white-space: nowrap;
+    }
+
+    .game-main {
+        gap: 6px;
+    }
+
+    .road-scene {
+        border-width: 4px;
+        border-radius: 21px;
+    }
+
+    .road-stage {
+        object-position: center 62%;
+    }
+
+    .repair-target {
+        top: 66%;
+        width: 94%;
+        height: 28%;
+    }
+
+    .step-strip {
+        bottom: 7px;
+        gap: 2px;
+        padding: 5px 6px;
+    }
+
+    .step-chip {
+        gap: 3px;
+        padding: 3px 6px;
+        font-size: 11px;
+    }
+
+    .step-chip::before {
+        width: 8px;
+        height: 8px;
+    }
+
+    .tool-tray {
+        min-height: 99px;
+        gap: 6px;
+        padding: 5px 5px 9px;
+        border-width: 3px;
+        border-radius: 21px;
+    }
+
+    .tool-card {
+        width: min(29vw, 102px);
+        height: min(28vw, 106px);
+        min-height: 88px;
+        border-width: 2px;
+        border-radius: 19px;
+        padding: 3px 2px 5px;
+    }
+
+    .tool-card img {
+        width: 72%;
+        height: 72%;
+    }
+
+    .tool-card span {
+        font-size: clamp(12px, 3.5vw, 15px);
+    }
+
+    .action-prop {
+        width: 120px;
+        height: 120px;
+    }
+
+    .drive-car {
+        width: 120px;
+    }
+
+    .success-panel {
+        padding: 8px 10px;
+        gap: 9px;
+    }
+
+    .success { min-height: 99px; border-width: 3px; border-radius: 21px; }
+    .success-stars { display: none; }
+    .success-panel strong { font-size: 20px; }
+    .success-panel p { font-size: 13px; }
+    .success-panel button { min-width: 130px; padding: 10px 14px; font-size: 18px; }
+}

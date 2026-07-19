@@ -8,8 +8,8 @@ const confettiContainer = document.getElementById('confetti-container');
 // Game State
 let currentScale = 0.5;
 const startScale = 0.5;
-const maxScale = 5.0; // Explosion threshold
-const flyThreshold = 1.5; // Minimum size to fly
+const maxScale = 4.2; // Explosion threshold
+const flyThreshold = 1.25; // Minimum size to fly
 let isInflating = false;
 let inflationInterval = null;
 let pumpAnimationInterval = null;
@@ -17,9 +17,12 @@ let isAnimating = false; // Is flying or popping
 
 // Audio Context
 const AudioContext = window.AudioContext || window.webkitAudioContext;
-const audioCtx = new AudioContext();
+let audioCtx = null;
 
 function resumeAudio() {
+    if (!audioCtx) {
+        audioCtx = new AudioContext();
+    }
     if (audioCtx.state === 'suspended') {
         audioCtx.resume();
     }
@@ -116,11 +119,13 @@ function randomizeBalloon() {
     balloon.style.opacity = '1';
     balloon.querySelector('.string').style.opacity = '0';
     balloon.classList.remove('flying');
+    instructionText.textContent = '按住打气，松手飞走';
+    instructionText.style.opacity = '0.86';
 }
 
 // Interaction Handlers
 function startInflating(e) {
-    if (isAnimating) return;
+    if (isAnimating || isInflating) return;
     if (e.cancelable) e.preventDefault(); // Prevent text selection/scrolling
 
     isInflating = true;
@@ -166,6 +171,12 @@ function growBalloon() {
 
     if (currentScale >= maxScale) {
         popBalloon();
+    } else if (currentScale >= 3) {
+        instructionText.textContent = '超大啦！可以松手';
+        instructionText.style.opacity = '0.9';
+    } else if (currentScale >= flyThreshold) {
+        instructionText.textContent = '可以飞啦，再打会更大';
+        instructionText.style.opacity = '0.9';
     }
 }
 

@@ -9,7 +9,7 @@ body {
     background-color: var(--bg-color);
     margin: 0;
     overflow: hidden;
-    font-family: 'Fredoka One', cursive, sans-serif;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
     touch-action: none;
     /* Prevent default touch actions like scroll */
 }
@@ -203,6 +203,8 @@ body {
     pointer-events: none;
     text-shadow: 2px 2px 0px white;
     user-select: none;
+    text-align: center;
+    max-width: 86vw;
 }
 
 /* Confetti */

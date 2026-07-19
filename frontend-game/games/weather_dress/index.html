@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#dff5ff">
+  <title>天气穿衣</title>
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+    <a class="round-button back-button" href="../../home.html" aria-label="返回游戏首页">‹</a>
+      <div class="title-block">
+        <h1>天气穿衣</h1>
+        <p id="gameHint">看看周围的天气，补上两样东西</p>
+      </div>
+      <button class="round-button reset-button" id="resetButton" type="button" aria-label="重新开始这个天气">↻</button>
+    </header>
+
+    <section class="weather-stage" id="weatherStage" aria-label="天气场景">
+      <div class="status-row">
+        <span class="status-pill" id="roundBadge">准备好 0/2</span>
+        <span class="status-pill collection-pill" id="collectionBadge">天气图鉴 0/5</span>
+      </div>
+      <div class="success-banner" id="successBanner" hidden>
+        <span>✨</span><strong>穿好啦，可以出门啦！</strong><span>✨</span>
+      </div>
+      <div class="weather-effects" id="weatherEffects" aria-hidden="true"></div>
+      <button class="child-target" id="childTarget" type="button" aria-label="把合适的物品送给小朋友">
+        <span class="weather-reveal" id="weatherReveal" hidden></span>
+        <img id="childImage" alt="有两件东西没有穿好的小朋友" draggable="false">
+      </button>
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+      <div class="celebration" id="celebration" aria-hidden="true"></div>
+    </section>
+
+    <section class="item-dock" aria-label="可以选择的穿戴物品">
+      <div class="dock-tip" id="dockTip"><span>👀</span> 找到和黑色形状一样的东西</div>
+      <div class="item-cards" id="itemCards"></div>
+      <div class="next-panel" id="nextPanel" hidden>
+        <div class="next-copy"><strong id="completeWeatherName">准备好啦！</strong><span>看看下一个天气需要穿什么</span></div>
+        <button class="next-button" id="nextButton" type="button">下一个天气 <span>→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="drag-ghost" id="dragGhost" aria-hidden="true"></div>
+  <script>window.MINI_GAME = { id: "weather_dress", name: "天气穿衣" };</script>
+  <script src="../../scripts/bankend-config.js?v=2"></script>
+  <script src="../../scripts/tracking.js?v=2"></script>
+  <script src="game.js?v=5"></script>
+</body>
+</html>

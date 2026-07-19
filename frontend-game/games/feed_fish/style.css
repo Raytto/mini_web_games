@@ -87,8 +87,8 @@ body {
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
+    width: 68px;
+    height: 68px;
     background-image: url('food.png?v=2');
     background-size: contain;
     background-repeat: no-repeat;
@@ -97,6 +97,9 @@ body {
     cursor: grab;
     filter: drop-shadow(0 0 10px gold);
     animation: float 3s ease-in-out infinite;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 3px solid rgba(255, 255, 255, 0.85);
 }
 
 .food-source:active {
@@ -106,14 +109,23 @@ body {
 
 .food {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     background-image: url('food.png?v=2');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 50;
     pointer-events: none;
+}
+
+@media (max-width: 640px) {
+    .food-source {
+        right: 18px;
+        top: 58%;
+        width: 74px;
+        height: 74px;
+    }
 }
 
 @keyframes float {

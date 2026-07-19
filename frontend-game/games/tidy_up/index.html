@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>收玩具</title>
+    <link rel="stylesheet" href="style.css?v=20260720-1">
+</head>
+
+<body>
+    <div id="game-container">
+        <a id="back-button" href="../../home.html" aria-label="返回">⬅</a>
+
+        <div id="game-area">
+            <div id="box-zone">
+                <img id="box-img" src="assets/box_open_clean.png" alt="打开的玩具箱" draggable="false">
+            </div>
+            <div id="toys-layer">
+                <!-- Toys will be spawned here -->
+            </div>
+        </div>
+
+        <div id="win-overlay" class="hidden" aria-live="polite">
+            <div class="win-content">
+                <div class="stars">⭐⭐⭐</div>
+                <div class="win-copy"><h1>收好啦！</h1><p>玩具箱变整齐啦</p></div>
+                <button id="again-button" type="button">再收一次</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.MINI_GAME = { id: "tidy_up", name: "Tidy Up" };
+    </script>
+    <script src="../../scripts/bankend-config.js?v=2"></script>
+    <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="script.js?v=20260720-1"></script>
+</body>
+
+</html>

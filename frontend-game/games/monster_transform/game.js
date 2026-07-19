@@ -8,11 +8,13 @@ const gameContainer = document.getElementById('game-container');
 // Sound
 const AudioContext = window.AudioContext || window.webkitAudioContext;
 let audioCtx;
+let audioReady = false;
 
 function initAudio() {
     if (!audioCtx) {
         audioCtx = new AudioContext();
     }
+    audioReady = true;
     if (audioCtx.state === 'suspended') {
         audioCtx.resume();
     }
@@ -114,6 +116,7 @@ const soundTypes = [
 ];
 
 function playSound() {
+    if (!audioReady) return;
     initAudio();
     if (!audioCtx) return;
 
@@ -386,6 +389,7 @@ window.addEventListener('DOMContentLoaded', () => {
 document.body.addEventListener('click', (e) => {
     // Don't transform if clicking the back button
     if (e.target.closest('.back-btn')) return;
+    initAudio();
     transformMonster();
 });
 document.body.addEventListener('touchstart', (e) => {
@@ -393,6 +397,7 @@ document.body.addEventListener('touchstart', (e) => {
     if (e.target.closest('.back-btn')) return;
 
     e.preventDefault(); // Prevent double tap zoom
+    initAudio();
     transformMonster();
 }, { passive: false });
 

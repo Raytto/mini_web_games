@@ -1,25 +1,25 @@
 const animals = [
-    { emoji: '🐻', name: 'Bear', color: '#8B4513' },
-    { emoji: '🐰', name: 'Bunny', color: '#FFB6C1' },
-    { emoji: '🐥', name: 'Chick', color: '#FFD700' },
-    { emoji: '🐸', name: 'Frog', color: '#90EE90' },
-    { emoji: '🐱', name: 'Cat', color: '#FFA07A' },
-    { emoji: '🐶', name: 'Dog', color: '#D2B48C' },
-    { emoji: '🐷', name: 'Piggy', color: '#FFC0CB' },
-    { emoji: '🐼', name: 'Panda', color: '#FFFFFF' },
-    { emoji: '🦁', name: 'Lion', color: '#CD853F' },
-    { emoji: '🐯', name: 'Tiger', color: '#FF8C00' },
-    { emoji: '🐨', name: 'Koala', color: '#808080' },
-    { emoji: '🦊', name: 'Fox', color: '#FF4500' },
-    { emoji: '🐮', name: 'Cow', color: '#F5F5DC' },
-    { emoji: '🐭', name: 'Mouse', color: '#D3D3D3' },
-    { emoji: '🐵', name: 'Monkey', color: '#D2691E' },
-    { emoji: '🐧', name: 'Penguin', color: '#000000' },
-    { emoji: '🐘', name: 'Elephant', color: '#A9A9A9' }
+    { emoji: '🐻', name: 'Bear', label: '小熊', color: '#8B4513' },
+    { emoji: '🐰', name: 'Bunny', label: '兔兔', color: '#FFB6C1' },
+    { emoji: '🐥', name: 'Chick', label: '小鸡', color: '#FFD700' },
+    { emoji: '🐸', name: 'Frog', label: '青蛙', color: '#90EE90' },
+    { emoji: '🐱', name: 'Cat', label: '小猫', color: '#FFA07A' },
+    { emoji: '🐶', name: 'Dog', label: '小狗', color: '#D2B48C' },
+    { emoji: '🐷', name: 'Piggy', label: '小猪', color: '#FFC0CB' },
+    { emoji: '🐼', name: 'Panda', label: '熊猫', color: '#FFFFFF' },
+    { emoji: '🦁', name: 'Lion', label: '狮子', color: '#CD853F' },
+    { emoji: '🐯', name: 'Tiger', label: '老虎', color: '#FF8C00' },
+    { emoji: '🐨', name: 'Koala', label: '考拉', color: '#808080' },
+    { emoji: '🦊', name: 'Fox', label: '狐狸', color: '#FF4500' },
+    { emoji: '🐮', name: 'Cow', label: '奶牛', color: '#F5F5DC' },
+    { emoji: '🐭', name: 'Mouse', label: '老鼠', color: '#D3D3D3' },
+    { emoji: '🐵', name: 'Monkey', label: '猴子', color: '#D2691E' },
+    { emoji: '🐧', name: 'Penguin', label: '企鹅', color: '#000000' },
+    { emoji: '🐘', name: 'Elephant', label: '大象', color: '#A9A9A9' }
 ];
 
 const reactions = ['JUMP', 'SHAKE', 'ROTATE', 'WOBBLE', 'SWAY'];
-const feedbackWords = ['Yay!', 'Cute!', 'Wow!', 'Hello!', 'Haha!'];
+const feedbackWords = ['你好！', '真可爱！', '再点点！', '跳一下！', '听声音！'];
 
 let currentAnimal = null;
 let tapCount = 0;
@@ -31,7 +31,18 @@ const feedbackEl = document.getElementById('feedback-text');
 const instructionEl = document.querySelector('.instruction');
 
 // Sound Setup
-const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+let audioCtx = null;
+let audioUnlocked = false;
+
+function initAudio() {
+    if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    audioUnlocked = true;
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+}
 
 // Animal Audio Configuration
 const animalSoundConfig = {
@@ -144,9 +155,10 @@ function playSynthSound(config, now) {
 }
 
 function playSound(type, animalName = null) {
-    if (audioCtx.state === 'suspended') {
-        audioCtx.resume();
+    if (!audioUnlocked && type === 'appear') {
+        return;
     }
+    initAudio();
 
     const now = audioCtx.currentTime;
 
@@ -238,7 +250,7 @@ function handleTap() {
     // Taps 1-4: Normal reaction
     // Tap 5: Special reaction -> Refresh animal
 
-    if (tapCount >= 5) {
+    if (tapCount >= 3) {
         // Special Action
         isAnimating = true;
         playSound('special');
@@ -246,7 +258,7 @@ function handleTap() {
         setTimeout(() => playSound('animal', currentAnimal.name), 200);
 
         animalEl.className = 'anim-special';
-        showFeedback("Super " + currentAnimal.name + "!");
+        showFeedback(currentAnimal.label + "来啦！");
 
         // Wait for animation then spawn new
         setTimeout(() => {

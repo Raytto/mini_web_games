@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', 'Segoe UI', Arial, sans-serif;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
