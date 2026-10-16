@@ -12,7 +12,13 @@ const breakfastPairs = [
     { id: 'cow', animal: '小奶牛', foodId: 'grass', food: '青草', good: '小奶牛吃到了嫩青草', animalAsset: 'animal_breakfast_animal_cow.png', foodAsset: 'animal_breakfast_food_grass.png' },
     { id: 'sheep', animal: '小绵羊', foodId: 'clover', food: '四叶草', good: '小绵羊吃到了幸运草', animalAsset: 'animal_breakfast_animal_sheep.png', foodAsset: 'animal_breakfast_food_clover.png' },
     { id: 'elephant', animal: '小象', foodId: 'watermelon', food: '西瓜', good: '小象吃到了多汁西瓜', animalAsset: 'animal_breakfast_animal_elephant.png', foodAsset: 'animal_breakfast_food_watermelon.png' },
-    { id: 'giraffe', animal: '长颈鹿', foodId: 'leaves', food: '嫩树叶', good: '长颈鹿吃到了嫩树叶', animalAsset: 'animal_breakfast_animal_giraffe.png', foodAsset: 'animal_breakfast_food_leaves.png' }
+    { id: 'giraffe', animal: '长颈鹿', foodId: 'leaves', food: '嫩树叶', good: '长颈鹿吃到了嫩树叶', animalAsset: 'animal_breakfast_animal_giraffe.png', foodAsset: 'animal_breakfast_food_leaves.png' },
+    { id: 'squirrel', animal: '小松鼠', foodId: 'acorn', food: '橡果', good: '小松鼠抱着橡果开心地吃起来', animalAsset: 'animal_breakfast_animal_squirrel.png', foodAsset: 'animal_breakfast_food_acorn.png' },
+    { id: 'penguin', animal: '小企鹅', foodId: 'shrimp', food: '小虾', good: '小企鹅一口吃掉鲜鲜的小虾', animalAsset: 'animal_breakfast_animal_penguin.png', foodAsset: 'animal_breakfast_food_shrimp.png' },
+    { id: 'koala', animal: '小考拉', foodId: 'eucalyptus', food: '桉树叶', good: '小考拉嚼起香香的桉树叶', animalAsset: 'animal_breakfast_animal_koala.png', foodAsset: 'animal_breakfast_food_eucalyptus.png' },
+    { id: 'hedgehog', animal: '小刺猬', foodId: 'strawberry', food: '草莓', good: '小刺猬吃到了甜甜的草莓', animalAsset: 'animal_breakfast_animal_hedgehog.png', foodAsset: 'animal_breakfast_food_strawberry.png' },
+    { id: 'chick', animal: '小鸡', foodId: 'corn', food: '玉米粒', good: '小鸡啄起金黄的玉米粒', animalAsset: 'animal_breakfast_animal_chick.png', foodAsset: 'animal_breakfast_food_corn.png' },
+    { id: 'deer', animal: '小鹿', foodId: 'mushroom', food: '蘑菇', good: '小鹿尝到了嫩嫩的小蘑菇', animalAsset: 'animal_breakfast_animal_deer.png', foodAsset: 'animal_breakfast_food_mushroom.png' }
 ];
 
 const animalRow = document.getElementById('animal-row');
@@ -42,7 +48,7 @@ nextRoundButton.addEventListener('click', startNextRound);
 resetButton.addEventListener('click', resetCurrentRound);
 
 function asset(filename) {
-    return `${ASSET_ROOT}/${filename}`;
+    return `${ASSET_ROOT}/${filename.replace(/\.(?:png|jpe?g)$/i, '_optimized.webp')}`;
 }
 
 function shuffle(items) {
@@ -84,7 +90,15 @@ function resetCurrentRound() {
     hint.textContent = '这一桌重新摆好啦';
 }
 
+
+function guideNext() {
+    const next = currentPairs.find(item => !fedAnimalIds.has(item.id));
+    if (next) window.GameVoice?.guide('request', next.id);
+    else window.GameVoice?.clearGuide();
+}
+
 function renderRound() {
+    window.GameVoice?.begin('intro');
     if (activeDrag) clearDrag(false);
     fedAnimalIds = new Set();
     selectedFoodId = null;
@@ -96,6 +110,7 @@ function renderRound() {
     updateCollectionBadge();
     renderAnimals();
     renderFoods();
+    guideNext();
 }
 
 function renderAnimals() {
@@ -148,9 +163,11 @@ function selectFood(foodId) {
     selectedFoodId = selectedFoodId === foodId ? null : foodId;
     foodRow.querySelectorAll('.food-card').forEach((card) => card.classList.toggle('selected', card.dataset.foodId === selectedFoodId));
     if (selectedFoodId) {
+    window.GameVoice?.cue('food', selectedFoodId);
         window.GameJuice?.sound('pick');
         window.GameJuice?.vibrate(10);
         const pair = breakfastPairs.find((item) => item.foodId === selectedFoodId);
+        window.GameVoice?.guide('request', pair.id, {announce:false});
         hint.textContent = `把${pair.food}送给喜欢它的动物`;
     } else {
         hint.textContent = '选一份早餐，再点一只动物';
@@ -158,7 +175,9 @@ function selectFood(foodId) {
 }
 
 function handleAnimalTap(animalId) {
-    if (!selectedFoodId || fedAnimalIds.has(animalId)) return;
+    if (fedAnimalIds.has(animalId)) return;
+    if (!selectedFoodId) { window.GameVoice?.cue('animal', animalId);
+    window.GameVoice?.guide('request', animalId, {announce:false}); return; }
     tryFeed(selectedFoodId, animalId);
 }
 
@@ -169,6 +188,8 @@ function tryFeed(foodId, animalId) {
     if (!pair || !foodButton || foodButton.classList.contains('used') || fedAnimalIds.has(animalId)) return;
 
     if (pair.foodId !== foodId) {
+    window.GameVoice?.cue('wrong', animalId);
+    window.GameVoice?.guide('request', animalId, {announce:false});
         window.GameJuice?.sound('wrong');
         window.GameJuice?.vibrate([18, 32, 18]);
         window.GameJuice?.shake(foodButton);
@@ -187,6 +208,8 @@ function tryFeed(foodId, animalId) {
     }
 
     fedAnimalIds.add(animalId);
+    window.GameVoice?.cue('fed', animalId);
+    guideNext();
     window.GameJuice?.sound('correct');
     window.GameJuice?.vibrate(22);
     window.GameJuice?.burst(animalButton, { symbols: ['❤', '★', '✦'] });
@@ -206,8 +229,9 @@ function tryFeed(foodId, animalId) {
 }
 
 function completeRound() {
+    window.GameVoice?.cue('complete');
     const remaining = breakfastPairs.length - discoveredAnimalIds.size;
-    successCopy.textContent = remaining === 0 ? '十二位动物朋友全都认识啦！' : `再认识 ${remaining} 位朋友就集齐图鉴啦`;
+    successCopy.textContent = remaining === 0 ? '所有动物朋友全都认识啦！' : `再认识 ${remaining} 位朋友就集齐图鉴啦`;
     foodDock.hidden = true;
     successPanel.hidden = false;
     window.GameJuice?.sound('complete');
@@ -225,6 +249,7 @@ function startDrag(event) {
     const source = event.currentTarget;
     if (source.classList.contains('used') || event.button > 0) return;
     event.preventDefault();
+    window.GameVoice?.cue('food', source.dataset.foodId);
     window.GameJuice?.sound('pick');
     window.GameJuice?.vibrate(10);
     const ghost = source.querySelector('img').cloneNode(true);
