@@ -3,17 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="../../scripts/i18n-messages.js?v=20260924b"></script>
+    <script src="../../scripts/i18n.js?v=20260924e2"></script>
+    <link rel="stylesheet" href="../../scripts/i18n.css?v=20260924b">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <title>动物早餐</title>
     <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="../shared/game-voice.css?v=20260930gv1">
+<link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+<script defer src="../../scripts/game-home.js?v=20261003home2"></script>
 </head>
 
 <body>
     <div id="game" class="breakfast-game">
-        <img class="scene-background" src="../shared/generated_assets/animal_breakfast_bg.png" alt="森林里的动物早餐桌" draggable="false">
+        <img class="scene-background" src="../shared/generated_assets/animal_breakfast_bg_preview.webp" data-full-src="../shared/generated_assets/animal_breakfast_bg_optimized.webp" alt="森林里的动物早餐桌" draggable="false">
 
         <header class="game-header">
-            <a class="round-btn" href="../../home.html" aria-label="返回">←</a>
+            <a class="round-btn" href="../../home.html" aria-label="返回游戏首页">←</a>
             <div class="title-wrap">
                 <h1>动物早餐</h1>
                 <p id="hint" aria-live="polite">把早餐送给喜欢它的动物</p>
@@ -23,7 +29,7 @@
 
         <div class="status-row" aria-live="polite">
             <span id="round-badge">第 1 桌</span>
-            <span id="collection-badge">动物图鉴 0/12</span>
+            <span id="collection-badge">动物图鉴 0/18</span>
         </div>
 
         <main class="play-area">
@@ -51,8 +57,11 @@
     <script>window.MINI_GAME = { id: "animal_breakfast", name: "动物早餐" };</script>
     <script src="../../scripts/bankend-config.js?v=2"></script>
     <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/progressive-images.js?v=2"></script>
     <script src="../shared/game_juice.js?v=1"></script>
-    <script src="game.js?v=5"></script>
+    <script src="../shared/voice-catalog.js?v=20260930lf1"></script>
+    <script src="../shared/game-voice.js?v=20260930lf1"></script>
+    <script src="game.js?v=20260930lf1"></script>
 </body>
 
 </html>
