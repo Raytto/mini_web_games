@@ -3,21 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="scripts/i18n-messages.js?v=20260924b"></script>
+    <script src="scripts/english-home.js?v=20261001tickle2"></script>
+    <script src="scripts/playful-home.js?v=20261002play1"></script>
+    <script src="scripts/clinic-home.js?v=20261013clinic1"></script>
+    <script src="scripts/dig-home.js?v=20261013dig8"></script>
+    <script src="scripts/draw-swim-home.js?v=20261013swim1"></script>
+    <script src="scripts/piano-home.js?v=20261014piano1"></script>
+    <script src="scripts/drums-home.js?v=20261014drums1"></script>
+    <script src="scripts/i18n.js?v=20260924e2"></script>
+    <link rel="stylesheet" href="scripts/i18n.css?v=20260924b">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>XIAOXIAO GAMES</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scripts/game-guidance.css?v=20261001guidance1">
     <link rel="icon" href="favicon.png" type="image/png">
-</head>
+<style>.card-english{border-color:#e5efde}.card-english .play-tag{background:#5a947b}</style></head>
 
 <body class="arcade-hub">
+    <button id="language-toggle" type="button" data-i18n-ignore lang="zh-CN" aria-label="切换为中文">中文</button>
     <div class="hub-container">
         <h1 class="hub-title">XIAOXIAO GAMES</h1>
 
-        <div class="games-grid">
-            <!-- Game 1: Fruit Slice -->
-            <a href="games/fruit_slice/index.html" class="game-card card-fruit">
+<div class="games-grid">
+<!-- Game 12: Feed Fish -->
+            <a href="games/draw_swim/index.html" class="game-card card-english" data-min-age="3"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 3 years">Ages 3+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：3 岁起">3 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/draw-swim-v1.webp" alt="我画的小鱼活了" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">我画的小鱼活了</div><div class="card-desc">画好头、身体和尾巴，让自己的小鱼摆尾游起来。</div></div><div class="play-tag">玩</div></div></a><a href="games/feed_fish/index.html" class="game-card card-feed-fish" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_fruit_small.png" alt="Fruit Slice">
+                    <img src="assets/thumbnails/feed_fish.webp" alt="喂小鱼" width="720" height="450" loading="lazy" decoding="async">
+                </div>
+                <div class="card-content">
+                    <div class="card-info">
+                        <div class="card-title">喂小鱼</div>
+                        <div class="card-desc">拖鱼食到水里，小鱼会追过来。</div>
+                    </div>
+                    <div class="play-tag">玩</div>
+                </div>
+            </a>
+
+<!-- Game 1: Fruit Slice -->
+            <a href="games/fruit_slice/index.html" class="game-card card-fruit" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/fruit_slice.webp" alt="切水果" width="720" height="450" fetchpriority="high" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -28,10 +54,42 @@
                 </div>
             </a>
 
-            <!-- Game 2: Balloon Pop -->
-            <a href="games/balloon_pop/index.html" class="game-card card-balloon">
+<!-- Game 4: Feed Ants -->
+            <a href="games/feed_ants/index.html" class="game-card card-ants" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_balloon_small.png" alt="Balloon Pop">
+                    <img src="assets/thumbnails/feed_ants.webp" alt="喂蚂蚁" width="720" height="450" loading="lazy" decoding="async">
+                </div>
+                <div class="card-content">
+                    <div class="card-info">
+                        <div class="card-title">喂蚂蚁</div>
+                        <div class="card-desc">拖一块食物，看蚂蚁搬回家。</div>
+                    </div>
+                    <div class="play-tag">玩</div>
+                </div>
+            </a>
+
+<a href="games/little_detective/index.html" class="game-card card-english" data-min-age="3"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 3 years">Ages 3+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：3 岁起">3 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/little-detective-cover-v2.webp" alt="Little Detective" width="720" height="450" fetchpriority="high" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">Little Detective</div><div class="card-desc">Spot a clue. Find a friend. Forty little mysteries!</div></div><div class="play-tag">Play</div></div></a>
+
+<a href="games/dino_dig/index.html" class="game-card card-english" data-min-age="3"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 3 years">Ages 3+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：3 岁起">3 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/dino-dig-v1.webp" alt="小恐龙考古队" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">小恐龙考古队</div><div class="card-desc">轻轻刷出化石，随机发现二十种恐龙。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/little_piano/index.html" class="game-card card-english" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/little-piano-v1.webp" alt="小钢琴" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">小钢琴</div><div class="card-desc">弹一弹真钢琴，跟着亮光慢慢学一首歌。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/little_drums/index.html" class="game-card card-english" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/little-drums-v1.webp" alt="小鼓手" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">小鼓手</div><div class="card-desc">敲鼓、打镲，两只小手一起找节奏。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/animal_clinic/index.html" class="game-card card-english" data-min-age="3"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 3 years">Ages 3+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：3 岁起">3 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/animal-clinic-v1.webp" alt="动物小诊所" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">动物小诊所</div><div class="card-desc">轻轻翻身、擦干净、贴绷带，照顾十二位小伙伴。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/silly_hair_salon/index.html" class="game-card card-english" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/silly_hair_salon-v1.webp" alt="怪兽理发店" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">怪兽理发店</div><div class="card-desc">剪短、梳顺、长回来，帮怪兽做个新发型。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/goodnight_hotel/index.html" class="game-card card-english" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/goodnight_hotel-v1.webp" alt="晚安动物旅馆" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">晚安动物旅馆</div><div class="card-desc">关灯、拉窗帘，陪三位小伙伴说晚安。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/snip_picnic/index.html" class="game-card card-english" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/snip_picnic-v1.webp" alt="剪绳野餐队" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">剪绳野餐队</div><div class="card-desc">剪断绳子，看水果滚进朋友的野餐篮。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/living_stickers/index.html" class="game-card card-english" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/living_stickers-v1.webp" alt="会动的贴纸书" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">会动的贴纸书</div><div class="card-desc">搬动小伙伴，桌上桌下都能发生新故事。</div></div><div class="play-tag">玩</div></div></a>
+
+<a href="games/tickly_teddy/index.html" class="game-card card-english" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/tickly-teddy-cover-v2.webp" alt="阿嚏！痒痒熊" width="720" height="450" fetchpriority="high" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">阿嚏！痒痒熊</div><div class="card-desc">摸摸小熊，听听英语，发现身体的小秘密。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/duck_boat/index.html" class="game-card card-english" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/duck-boat-cover-v2.webp" alt="小鸭子上船" width="720" height="450" fetchpriority="high" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">小鸭子上船</div><div class="card-desc">一只只上船，边玩边用英语数到十二。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/peekaboo_house/index.html" class="game-card card-english" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/peekaboo-house-cover-v3.webp" alt="谁在窗后" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">谁在窗后</div><div class="card-desc">掀开小窗，认识 100 种动物。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/jelly_colors/index.html" class="game-card card-english" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/jelly-colors-cover-v3.webp" alt="彩虹果冻工坊" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">彩虹果冻工坊</div><div class="card-desc">30 种模具，做出彩色果冻。</div></div><div class="play-tag">玩</div></div></a>
+<a href="games/hello_teddy/index.html" class="game-card card-english" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span><div class="card-image-header"><img src="assets/thumbnails/hello-teddy-cover-v3.webp" alt="小熊电话屋" width="720" height="450" loading="lazy" decoding="async"></div><div class="card-content"><div class="card-info"><div class="card-title">小熊电话屋</div><div class="card-desc">100 种小物品，和小熊分享和感谢。</div></div><div class="play-tag">玩</div></div></a>
+
+
+            <!-- Game 2: Balloon Pop -->
+            <a href="games/balloon_pop/index.html" class="game-card card-balloon" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/balloon_pop.webp" alt="戳气球" width="720" height="450" fetchpriority="high" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -43,9 +101,9 @@
             </a>
 
             <!-- Game 3: Feed the Cat -->
-            <a href="games/feed_animal/index.html" class="game-card card-cat">
+            <a href="games/feed_animal/index.html" class="game-card card-cat" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_cat_small.png" alt="Feed the Cat">
+                    <img src="assets/thumbnails/feed_animal.webp" alt="喂小猫" width="720" height="450" fetchpriority="high" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -56,24 +114,12 @@
                 </div>
             </a>
 
-            <!-- Game 4: Feed Ants -->
-            <a href="games/feed_ants/index.html" class="game-card card-ants">
-                <div class="card-image-header">
-                    <img src="upload/img/card_ants_small.png" alt="Feed Ants">
-                </div>
-                <div class="card-content">
-                    <div class="card-info">
-                        <div class="card-title">喂蚂蚁</div>
-                        <div class="card-desc">拖一块食物，看蚂蚁搬回家。</div>
-                    </div>
-                    <div class="play-tag">玩</div>
-                </div>
-            </a>
+
 
             <!-- Game 5: Bubble Pop -->
-            <a href="games/bubble_pop/index.html" class="game-card card-bubble">
+            <a href="games/bubble_pop/index.html" class="game-card card-bubble" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/bubble_pop_thumbnail_small.png" alt="Bubble Pop">
+                    <img src="assets/thumbnails/bubble_pop.webp" alt="戳泡泡" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -85,9 +131,9 @@
             </a>
 
             <!-- Game 6: Little Animal Tap -->
-            <a href="games/animal_tap/index.html" class="game-card card-animal-tap">
+            <a href="games/animal_tap/index.html" class="game-card card-animal-tap" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_animal_tap_small.png" alt="Little Animal Tap">
+                    <img src="assets/thumbnails/animal_tap.webp" alt="拍拍动物" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -98,9 +144,9 @@
                 </div>
             </a>
             <!-- Game 7: Little Monster Transform -->
-            <a href="games/monster_transform/index.html" class="game-card card-monster">
+            <a href="games/monster_transform/index.html" class="game-card card-monster" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_monster_small.png" alt="Monster Transform">
+                    <img src="assets/thumbnails/monster_transform.webp" alt="怪兽变脸" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -112,9 +158,9 @@
             </a>
 
             <!-- Game 8: Time Magic -->
-            <a href="games/time_magic/index.html" class="game-card card-time-magic">
+            <a href="games/time_magic/index.html" class="game-card card-time-magic" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_time_magic_small.png" alt="Time Magic">
+                    <img src="assets/thumbnails/time_magic.webp" alt="天气魔法" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -126,9 +172,9 @@
             </a>
 
             <!-- Game 10: Magic Doodle -->
-            <a href="games/magic_doodle/index.html" class="game-card card-magic-doodle">
+            <a href="games/magic_doodle/index.html" class="game-card card-magic-doodle" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_magic_doodle_small.png" alt="Magic Doodle">
+                    <img src="assets/thumbnails/magic_doodle.webp" alt="魔法画画" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -140,9 +186,9 @@
             </a>
 
             <!-- Game 11: Car Track -->
-            <a href="games/car_track/index.html" class="game-card card-car-track">
+            <a href="games/car_track/index.html" class="game-card card-car-track" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/car_track_small.png" alt="Car Track">
+                    <img src="assets/thumbnails/car_track.webp" alt="小车嘀嘀" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -154,9 +200,9 @@
             </a>
 
             <!-- Game 13: Balloon Pump -->
-            <a href="games/balloon_pump/index.html" class="game-card card-balloon-pump">
+            <a href="games/balloon_pump/index.html" class="game-card card-balloon-pump" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_balloon_pump_small.png" alt="Balloon Pump">
+                    <img src="assets/thumbnails/balloon_pump.webp" alt="打气球" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -167,24 +213,12 @@
                 </div>
             </a>
 
-            <!-- Game 12: Feed Fish -->
-            <a href="games/feed_fish/index.html" class="game-card card-feed-fish">
-                <div class="card-image-header">
-                    <img src="upload/img/card_feed_fish_small.png" alt="Feed Fish">
-                </div>
-                <div class="card-content">
-                    <div class="card-info">
-                        <div class="card-title">喂小鱼</div>
-                        <div class="card-desc">拖鱼食到水里，小鱼会追过来。</div>
-                    </div>
-                    <div class="play-tag">玩</div>
-                </div>
-            </a>
+
 
             <!-- Game 14: Tidy Up -->
-            <a href="games/tidy_up/index.html" class="game-card card-tidy-up">
+            <a href="games/tidy_up/index.html" class="game-card card-tidy-up" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
                 <div class="card-image-header">
-                    <img src="upload/img/card_tidy_up_small.png" alt="Tidy Up">
+                    <img src="assets/thumbnails/tidy_up.webp" alt="收玩具" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -196,7 +230,7 @@
             </a>
 
             <!-- Game 15: Egg Hatch -->
-            <a href="games/egg_hatch/index.html" class="game-card card-egg-hatch">
+            <a href="games/egg_hatch/index.html" class="game-card card-egg-hatch" data-min-age="1"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 1 years">Ages 1+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：1 岁起">1 岁起</span></span>
                 <div class="card-image-header emoji-card-header" aria-hidden="true">
                     <div class="emoji-card-art">🥚</div>
                 </div>
@@ -209,9 +243,9 @@
                 </div>
             </a>
 
-            <a href="games/animal_breakfast/index.html" class="game-card card-activity" style="--card-accent:#f9844a; --card-shadow:#c75b1f; --card-bg-a:#fff5d6; --card-bg-b:#ffd5a5; --card-img:url('games/shared/generated_assets/animal_breakfast_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🐵🍌</div>
+            <a href="games/animal_breakfast/index.html" class="game-card card-activity" style="--card-accent:#f9844a; --card-shadow:#c75b1f; --card-bg-a:#fff5d6; --card-bg-b:#ffd5a5;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/animal_breakfast.webp" alt="动物早餐" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -222,9 +256,9 @@
                 </div>
             </a>
 
-            <a href="games/train_cargo/index.html" class="game-card card-activity" style="--card-accent:#00a6fb; --card-shadow:#0077b6; --card-bg-a:#dcf7ff; --card-bg-b:#b9e6ff; --card-img:url('games/shared/generated_assets/train_cargo_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🚂🔴</div>
+            <a href="games/train_cargo/index.html" class="game-card card-activity" style="--card-accent:#00a6fb; --card-shadow:#0077b6; --card-bg-a:#dcf7ff; --card-bg-b:#b9e6ff;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/train_cargo.webp" alt="小火车装货" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -235,9 +269,9 @@
                 </div>
             </a>
 
-            <a href="games/bath_time/index.html" class="game-card card-activity" style="--card-accent:#2ec4b6; --card-shadow:#168b82; --card-bg-a:#e1fffc; --card-bg-b:#c4f2ef; --card-img:url('games/shared/generated_assets/bath_time_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🧼🧸</div>
+            <a href="games/bath_time/index.html" class="game-card card-activity" style="--card-accent:#2ec4b6; --card-shadow:#168b82; --card-bg-a:#e1fffc; --card-bg-b:#c4f2ef;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/bath_time.webp" alt="洗澡澡" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -248,9 +282,9 @@
                 </div>
             </a>
 
-            <a href="games/little_chef/index.html" class="game-card card-activity" style="--card-accent:#f77f00; --card-shadow:#bf5f00; --card-bg-a:#fff7d7; --card-bg-b:#ffd6a5; --card-img:url('games/shared/generated_assets/little_chef_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🍞🍳🥣</div>
+            <a href="games/little_chef/index.html" class="game-card card-activity" style="--card-accent:#f77f00; --card-shadow:#bf5f00; --card-bg-a:#fff7d7; --card-bg-b:#ffd6a5;" data-min-age="3"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 3 years">Ages 3+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：3 岁起">3 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/little_chef.webp" alt="小小厨房" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -261,9 +295,9 @@
                 </div>
             </a>
 
-            <a href="games/road_helper/index.html" class="game-card card-activity" style="--card-accent:#65a30d; --card-shadow:#4d7c0f; --card-bg-a:#f1ffd0; --card-bg-b:#c9f6a4; --card-img:url('games/shared/generated_assets/road_helper_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🛣️🚗</div>
+            <a href="games/road_helper/index.html" class="game-card card-activity" style="--card-accent:#65a30d; --card-shadow:#4d7c0f; --card-bg-a:#f1ffd0; --card-bg-b:#c9f6a4;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/road_helper.webp" alt="修小路" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -274,9 +308,9 @@
                 </div>
             </a>
 
-            <a href="games/garden_grow/index.html" class="game-card card-activity" style="--card-accent:#43aa8b; --card-shadow:#277c65; --card-bg-a:#edffe4; --card-bg-b:#caf7c7; --card-img:url('games/shared/generated_assets/garden_grow_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🌱🌼</div>
+            <a href="games/garden_grow/index.html" class="game-card card-activity" style="--card-accent:#43aa8b; --card-shadow:#277c65; --card-bg-a:#edffe4; --card-bg-b:#caf7c7;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/garden_grow.webp" alt="种花花" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -287,9 +321,9 @@
                 </div>
             </a>
 
-            <a href="games/shadow_match/index.html" class="game-card card-activity" style="--card-accent:#7c3aed; --card-shadow:#5b21b6; --card-bg-a:#f5efff; --card-bg-b:#ddd6fe; --card-img:url('games/shared/generated_assets/shadow_match_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🐱◼️</div>
+            <a href="games/shadow_match/index.html" class="game-card card-activity" style="--card-accent:#7c3aed; --card-shadow:#5b21b6; --card-bg-a:#f5efff; --card-bg-b:#ddd6fe;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/shadow_match.webp" alt="影子配对" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -300,9 +334,9 @@
                 </div>
             </a>
 
-            <a href="games/little_band/index.html" class="game-card card-activity" style="--card-accent:#e84a7a; --card-shadow:#b8325e; --card-bg-a:#fff0f5; --card-bg-b:#ffd1df; --card-img:url('games/shared/generated_assets/little_band_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🥁🎺</div>
+            <a href="games/little_band/index.html" class="game-card card-activity" style="--card-accent:#e84a7a; --card-shadow:#b8325e; --card-bg-a:#fff0f5; --card-bg-b:#ffd1df;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/little_band.webp" alt="小乐队" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -313,9 +347,9 @@
                 </div>
             </a>
 
-            <a href="games/weather_dress/index.html" class="game-card card-activity" style="--card-accent:#168aad; --card-shadow:#0f5f7a; --card-bg-a:#e9f9ff; --card-bg-b:#bfecff; --card-img:url('games/shared/generated_assets/weather_dress_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🌧️☂️</div>
+            <a href="games/weather_dress/index.html" class="game-card card-activity" style="--card-accent:#168aad; --card-shadow:#0f5f7a; --card-bg-a:#e9f9ff; --card-bg-b:#bfecff;" data-min-age="3"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 3 years">Ages 3+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：3 岁起">3 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/weather_dress.webp" alt="天气穿衣" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -326,22 +360,22 @@
                 </div>
             </a>
 
-            <a href="games/find_friends/index.html" class="game-card card-activity" style="--card-accent:#84cc16; --card-shadow:#4d7c0f; --card-bg-a:#f8ffd8; --card-bg-b:#d9f99d; --card-img:url('games/shared/generated_assets/find_friends_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">🏠🍎</div>
+            <a href="games/find_friends/index.html" class="game-card card-activity" style="--card-accent:#84cc16; --card-shadow:#4d7c0f; --card-bg-a:#f8ffd8; --card-bg-b:#d9f99d;" data-min-age="3"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 3 years">Ages 3+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：3 岁起">3 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/find_friends.webp" alt="找同伴" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
                         <div class="card-title">找同伴</div>
-                        <div class="card-desc">把红色、蓝色、绿色小伙伴送回家。</div>
+                        <div class="card-desc localized-copy" data-i18n-ignore><span class="age-en" lang="en">Match animal friends to trees, grassland, or water.</span><span class="age-zh" lang="zh-CN">把动物伙伴送回树梢、草原和水里。</span></div>
                     </div>
                     <div class="play-tag">玩</div>
                 </div>
             </a>
 
-            <a href="games/monster_dressup/index.html" class="game-card card-activity" style="--card-accent:#a855f7; --card-shadow:#7e22ce; --card-bg-a:#faf0ff; --card-bg-b:#e9d5ff; --card-img:url('games/shared/generated_assets/monster_dressup_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">👾🎩</div>
+            <a href="games/monster_dressup/index.html" class="game-card card-activity" style="--card-accent:#a855f7; --card-shadow:#7e22ce; --card-bg-a:#faf0ff; --card-bg-b:#e9d5ff;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/monster_dressup.webp" alt="怪兽换装" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -352,9 +386,9 @@
                 </div>
             </a>
 
-            <a href="games/parcel_sort/index.html" class="game-card card-activity" style="--card-accent:#fb7185; --card-shadow:#be123c; --card-bg-a:#fff1f2; --card-bg-b:#fecdd3; --card-img:url('games/shared/generated_assets/parcel_sort_bg.png');">
-                <div class="card-image-header emoji-card-header" aria-hidden="true">
-                    <div class="emoji-card-art">📦🔺</div>
+            <a href="games/parcel_sort/index.html" class="game-card card-activity" style="--card-accent:#fb7185; --card-shadow:#be123c; --card-bg-a:#fff1f2; --card-bg-b:#fecdd3;" data-min-age="2"><span class="age-badge" data-i18n-ignore><span class="age-en" lang="en" aria-label="Suggested starting age: 2 years">Ages 2+</span><span class="age-zh" lang="zh-CN" aria-label="建议起玩年龄：2 岁起">2 岁起</span></span>
+                <div class="card-image-header">
+                    <img src="assets/thumbnails/parcel_sort.webp" alt="收快递" width="720" height="450" loading="lazy" decoding="async">
                 </div>
                 <div class="card-content">
                     <div class="card-info">
@@ -376,7 +410,8 @@
 
             // Restore scroll position
             function restoreScroll() {
-                const savedPos = sessionStorage.getItem(SCROLL_KEY);
+                let savedPos = null;
+                try { savedPos = sessionStorage.getItem(SCROLL_KEY); } catch (_) { return; }
                 if (savedPos !== null) {
                     const pos = parseInt(savedPos, 10);
                     // Try setting on body first as it's the likely container
@@ -392,7 +427,7 @@
 
             // Save scroll position
             function saveScroll() {
-                sessionStorage.setItem(SCROLL_KEY, getScrollTop());
+                try { sessionStorage.setItem(SCROLL_KEY, getScrollTop()); } catch (_) { /* Optional scroll memory. */ }
             }
 
             window.addEventListener('beforeunload', saveScroll);
@@ -441,7 +476,7 @@
             window.addEventListener('load', () => {
                 document.querySelectorAll('img').forEach(img => {
                     // unexpected error state or empty image
-                    if (!img.complete || img.naturalWidth === 0) {
+                    if (img.complete && img.naturalWidth === 0 && img.currentSrc) {
                         retryImage(img);
                     }
                 });

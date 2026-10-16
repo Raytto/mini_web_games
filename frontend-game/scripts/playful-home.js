@@ -1,0 +1,2 @@
+// Translations for the four new playful English worlds.
+Object.assign(window.XiaoxiaoMessages.en,{"怪兽理发店": "Silly Hair Salon", "剪短、梳顺、长回来，帮怪兽做个新发型。": "Snip, brush and grow. Make a silly new hairstyle.", "晚安动物旅馆": "Goodnight Hotel", "关灯、拉窗帘，陪三位小伙伴说晚安。": "Lights off, curtains closed. Say goodnight to three friends.", "剪绳野餐队": "Snip & Picnic", "剪断绳子，看水果滚进朋友的野餐篮。": "Snip a rope and send fruit rolling to a picnic.", "会动的贴纸书": "Living Sticker Book", "搬动小伙伴，桌上桌下都能发生新故事。": "Move a friend. Make a story with in, on and under."});

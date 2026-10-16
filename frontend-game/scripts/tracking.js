@@ -114,7 +114,7 @@
   const startGameSession = (gameInfo) => {
     currentGame = gameInfo;
     gameStartMs = Date.now();
-    sessionStorage.setItem(SESSION_STORAGE_KEY, gameStartMs.toString());
+    try { sessionStorage.setItem(SESSION_STORAGE_KEY, gameStartMs.toString()); } catch (_) { /* In-memory sessions still work when storage is disabled. */ }
     sendPayload([makeEvent("game_start")]);
     startHeartbeat();
   };
@@ -127,7 +127,7 @@
     stopHeartbeat();
     currentGame = null;
     gameStartMs = null;
-    sessionStorage.removeItem(SESSION_STORAGE_KEY);
+    try { sessionStorage.removeItem(SESSION_STORAGE_KEY); } catch (_) { /* Session has already ended in memory. */ }
   };
 
   const heartbeat = (useBeacon = false) => {

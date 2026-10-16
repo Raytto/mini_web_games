@@ -1,0 +1,68 @@
+/* One collection-wide home control, including headers created at runtime.
+   Preserve each anchor and its layout position so game cleanup and navigation
+   handlers keep working. Text links on completion screens remain text links. */
+body a[href="../../home.html"]:not(.complete-home):not(.home-link) {
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    align-self: flex-start !important;
+    justify-content: center !important;
+    flex: 0 0 48px !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    max-width: 48px !important;
+    max-height: 48px !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    border: 2px solid #e8ede6 !important;
+    border-radius: 50% !important;
+    background: #fffdf4 !important;
+    box-shadow: 0 3px 0 rgba(43, 66, 55, .16) !important;
+    color: #4d6d63 !important;
+    text-decoration: none !important;
+    text-shadow: none !important;
+    text-indent: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    letter-spacing: 0 !important;
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .12s, box-shadow .12s !important;
+}
+body a[href="../../home.html"]:not(.complete-home):not(.home-link)::before {
+    content: "" !important;
+    display: block !important;
+    position: static !important;
+    flex: 0 0 26px !important;
+    width: 26px !important;
+    height: 26px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: url("game-home.svg?v=20261002home1") center / 26px 26px no-repeat !important;
+    transform: none !important;
+    pointer-events: none !important;
+}
+body a[href="../../home.html"]:not(.complete-home):not(.home-link) > *,
+body a[href="../../home.html"]:not(.complete-home):not(.home-link)::after {
+    display: none !important;
+}
+body a[href="../../home.html"]:not(.complete-home):not(.home-link):active {
+    transform: translateY(2px) !important;
+    box-shadow: 0 1px 0 rgba(43, 66, 55, .16) !important;
+}
+body a[href="../../home.html"]:not(.complete-home):not(.home-link):focus-visible {
+    outline: 3px solid #d09c37 !important;
+    outline-offset: 3px !important;
+}
+@media (prefers-reduced-motion: reduce) {
+    body a[href="../../home.html"]:not(.complete-home):not(.home-link) { transition: none !important; }
+}

@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="scripts/i18n-messages.js?v=20260924b"></script>
+    <script src="scripts/i18n.js?v=20260924e2"></script>
+    <link rel="stylesheet" href="scripts/i18n.css?v=20260924b">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <title>XIAOXIAO GAMES</title>
     <link rel="icon" href="favicon.png" type="image/png">
@@ -60,14 +63,14 @@
 </head>
 
 <body>
-    <audio id="bgm" loop autoplay>
+    <audio id="bgm" loop preload="none">
         <source src="upload/audio/bgm_piano.mp3" type="audio/mpeg">
     </audio>
 
     <div id="music-toggle" class="off" title="音乐开关">🎵</div>
 
     <!-- Load the original menu page -->
-    <iframe id="content-frame" src="home.html"></iframe>
+    <iframe id="content-frame" src="home.html" allow="autoplay"></iframe>
 
     <script>
         const bgm = document.getElementById('bgm');
@@ -86,6 +89,10 @@
         // Persist user toggle so navigation between games does not force music back on
         const MUSIC_PREF_KEY = 'bgmEnabled';
         let musicEnabled = true;
+        let pageIsActive = !document.hidden;
+        let resumeAfterPageReturn = false;
+        let lessonMode = false;
+        const ENGLISH_GAMES = new Set(["little_drums", "little_piano", "draw_swim", "dino_dig", "animal_clinic", "living_stickers", "snip_picnic", "goodnight_hotel", "silly_hair_salon", "peekaboo_house", "jelly_colors", "hello_teddy", "duck_boat", "tickly_teddy", "little_detective"]);
 
         try {
             const storedPref = localStorage.getItem(MUSIC_PREF_KEY);
@@ -108,8 +115,9 @@
         }
 
         if (bgm) {
-            bgm.volume = 0.1;
-            bgm.autoplay = musicEnabled;
+            // Keep the piano behind the English narration by default.
+            bgm.volume = 0.04;
+            bgm.autoplay = musicEnabled && pageIsActive && !lessonMode;
             if (!musicEnabled) {
                 bgm.pause();
             }
@@ -130,6 +138,12 @@
 
         function tryPlay() {
             if (!bgm || window.self !== window.top) return;
+            if (lessonMode || !pageIsActive || document.hidden) {
+                bgm.pause();
+                isPlaying = false;
+                updateIcon();
+                return;
+            }
             if (!musicEnabled) {
                 isPlaying = false;
                 updateIcon();
@@ -142,6 +156,12 @@
             }
 
             bgm.play().then(() => {
+                if (lessonMode || !pageIsActive || document.hidden || !musicEnabled) {
+                    bgm.pause();
+                    isPlaying = false;
+                    updateIcon();
+                    return;
+                }
                 isPlaying = true;
                 updateIcon();
                 // Remove the global listeners if we succeed
@@ -156,8 +176,48 @@
                 console.log("Autoplay prevented, waiting for interaction");
                 isPlaying = false;
                 updateIcon();
+                document.addEventListener('click', tryPlay);
+                document.addEventListener('touchstart', tryPlay);
+                try {
+                    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                    iframeDoc.addEventListener('click', tryPlay);
+                    iframeDoc.addEventListener('touchstart', tryPlay);
+                } catch (frameError) {
+                    // The next iframe load will attach the interaction listeners.
+                }
             });
         }
+
+        function pauseForPageInactivity() {
+            if (!bgm || window.self !== window.top) return;
+            resumeAfterPageReturn = resumeAfterPageReturn || (musicEnabled && (isPlaying || !bgm.paused));
+            pageIsActive = false;
+            bgm.autoplay = false;
+            bgm.pause();
+            isPlaying = false;
+            updateIcon();
+        }
+
+        function resumeAfterPageActivity() {
+            if (!bgm || window.self !== window.top || document.hidden) return;
+            pageIsActive = true;
+            bgm.autoplay = musicEnabled && !lessonMode;
+            const shouldResume = resumeAfterPageReturn && musicEnabled;
+            resumeAfterPageReturn = false;
+            if (shouldResume) tryPlay();
+            else updateIcon();
+        }
+
+        // Page Visibility covers background tabs, minimized browsers and OS lock
+        // screens. pagehide/pageshow provide the Safari/iPad lifecycle fallback.
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) pauseForPageInactivity();
+            else resumeAfterPageActivity();
+        });
+        window.addEventListener('pagehide', pauseForPageInactivity);
+        window.addEventListener('pageshow', resumeAfterPageActivity);
+        document.addEventListener('freeze', pauseForPageInactivity);
+        document.addEventListener('resume', resumeAfterPageActivity);
 
         // --- New BGM Logic ---
 
@@ -205,9 +265,57 @@
             playNext();
         }
 
+        function enterLessonMode() {
+            lessonMode = true;
+            bgm.autoplay = false;
+            bgm.pause();
+            isPlaying = false;
+            bgm.onended = null;
+            bgm.setAttribute('data-mode', 'lesson');
+            // Release an in-flight media request before iframe navigation.
+            // Restoring home/game music assigns its normal source again.
+            bgm.removeAttribute('src');
+            bgm.querySelectorAll('source').forEach(source => source.remove());
+            bgm.load();
+            toggleBtn.style.display = 'none';
+            updateIcon();
+        }
+
+        // Unlock in the game-card click itself, before the iframe navigates.
+        // The new game borrows this context so touch browsers need no second tap.
+        let peekabooContext = null, speechGameId = null;
+        window.gameSpeechContext = id => id === speechGameId ? peekabooContext : null;
+        window.peekabooAudioContext = () => peekabooContext;
+        function preparePeekabooAudio(id) {
+            if (speechGameId !== id) releasePeekabooAudio();
+            speechGameId = id;
+            try {
+                const Audio = window.AudioContext || window.webkitAudioContext;
+                if (!Audio) return;
+                if (!peekabooContext || peekabooContext.state === 'closed') {
+                    peekabooContext = new Audio();
+                }
+                void peekabooContext.resume().catch(() => {});
+            } catch { /* The game retains its normal sound controls. */ }
+        }
+        function releasePeekabooAudio() {
+            const previous = peekabooContext;
+            peekabooContext = null; speechGameId = null;
+            if (previous && previous.state !== 'closed') void previous.close().catch(() => {});
+        }
+
         function checkGameState() {
             try {
                 const href = iframe.contentWindow.location.href;
+                const wasLesson = lessonMode;
+                const gameId = new URL(href).pathname.match(/\/games\/([^/]+)\//)?.[1];
+                if (gameId !== speechGameId) releasePeekabooAudio();
+                lessonMode = ENGLISH_GAMES.has(gameId);
+                toggleBtn.style.display = lessonMode ? 'none' : 'flex';
+                if (lessonMode) {
+                    enterLessonMode();
+                    return;
+                }
                 // Determine mode based on URL
                 if (href.includes('home.html') || href.endsWith('/')) {
                     playHomeBgm();
@@ -217,8 +325,22 @@
 
                 // Attach interaction listeners to new frame content
                 const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                iframeDoc.addEventListener('click', event => {
+                    const link = event.target.closest?.('a[href]');
+                    if (!link) return;
+                    const destination = new URL(link.href, iframeDoc.baseURI);
+                    const id = destination.pathname.match(/\/games\/([^/]+)\//)?.[1];
+                    if (destination.origin === location.origin && id &&
+                        event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey &&
+                        (!link.target || link.target === '_self')) {
+                        preparePeekabooAudio(id);
+                        // Pause the old media before entering a lesson.
+                        if (ENGLISH_GAMES.has(id)) enterLessonMode();
+                    }
+                }, { capture: true });
                 iframeDoc.addEventListener('click', tryPlay);
                 iframeDoc.addEventListener('touchstart', tryPlay);
+                if (wasLesson && musicEnabled) tryPlay();
             } catch (e) {
                 console.log("Cannot access iframe content");
             }
@@ -232,10 +354,8 @@
 
         updateIcon();
 
-        // Try to auto-play immediately if allowed by the toggle
-        tryPlay();
-
-        // Listeners
+        // Defer the audio request until the first user interaction so it does
+        // not compete with the visible game-card artwork on initial load.
         document.addEventListener('click', tryPlay);
         document.addEventListener('touchstart', tryPlay);
 
@@ -243,7 +363,7 @@
             toggleBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 musicEnabled = !musicEnabled;
-                bgm.autoplay = musicEnabled;
+                bgm.autoplay = musicEnabled && pageIsActive && !lessonMode;
                 try {
                     localStorage.setItem(MUSIC_PREF_KEY, musicEnabled);
                 } catch (err) {
@@ -252,6 +372,7 @@
 
                 if (!musicEnabled) {
                     if (bgm) bgm.pause();
+                    resumeAfterPageReturn = false;
                     isPlaying = false;
                     updateIcon();
                     return;

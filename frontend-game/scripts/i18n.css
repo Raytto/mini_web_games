@@ -1,0 +1,65 @@
+#language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 84px;
+    z-index: 1001;
+    min-width: 86px;
+    height: 50px;
+    padding: 0 16px;
+    border: 2px solid rgba(255, 255, 255, .8);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .94);
+    color: #275574;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .12);
+    font: 700 16px/1 system-ui, sans-serif;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: transform .15s, background .15s;
+}
+#language-toggle:hover { background: #fff; transform: translateY(-2px); }
+#language-toggle:active { transform: translateY(1px); }
+#language-toggle:focus-visible { outline: 3px solid #2459a7; outline-offset: 3px; }
+html[lang="en"] .musician-card.is-target::before { content: "Drop here"; }
+html[lang="en"] .child-target.is-target::before { content: "Give it to me"; }
+html[lang="en"] .card-title { font-size: clamp(23px, 2.5vw, 30px); }
+html[lang="en"] .card-desc { line-height: 1.45; }
+html[lang="en"] .status-row { gap: 8px; }
+html[lang="en"] .game-header h1,
+html[lang="en"] .topbar h1 { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+    body.arcade-hub .hub-container { padding-top: 82px; }
+    body.arcade-hub .hub-title { margin: 12px 0 24px; font-size: clamp(24px, 7vw, 32px); }
+    html[lang="en"] .card-title { font-size: 27px; }
+}
+html[lang="en"] .game-parcel_sort .tray::after { content: "Shape scanner conveyor"; }
+html[lang="en"] .recipe-badge strong { margin-left: .3em; }
+@media (max-width: 760px) {
+    html[lang="en"] .topbar .title-block {
+        min-width: 0;
+        max-width: min(100%, calc(100vw - 128px));
+    }
+    html[lang="en"] .topbar h1,
+    html[lang="en"] .game-header h1 {
+        font-size: clamp(20px, 5.8vw, 26px);
+        line-height: 1.1;
+        letter-spacing: 0;
+    }
+    html[lang="en"] .topbar .title-block p {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: 3px;
+    }
+}
+html[lang="en"] .feedback,
+html[lang="en"] .praise {
+    max-width: calc(100vw - 40px);
+    white-space: normal;
+    text-align: center;
+    box-sizing: border-box;
+}
+@media (max-width: 760px) {
+    html[lang="en"] .next-panel,
+    html[lang="en"] .finish-panel { gap: 12px; flex-wrap: wrap; align-content: center; }
+    html[lang="en"] .next-copy strong,
+    html[lang="en"] .finish-copy strong { font-size: clamp(18px, 4.5vw, 24px); }
+}

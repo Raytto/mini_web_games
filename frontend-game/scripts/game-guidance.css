@@ -1,0 +1,7 @@
+/* Home-only starting-age labels. Full cards remain the touch targets. */
+.arcade-hub .age-badge{position:absolute;top:12px;left:12px;z-index:2;display:inline-flex;align-items:center;min-height:31px;padding:5px 12px;border:1px solid #ffffffeb;border-radius:999px;background:#fffcf3f2;color:#4d6655;box-shadow:0 2px 9px #263e3321;font-size:14px;font-weight:750;line-height:1.15;letter-spacing:.15px;pointer-events:none;white-space:nowrap}
+.arcade-hub .age-en{display:none}
+.arcade-hub .age-zh{display:inline}
+html[lang="en"] .arcade-hub .age-en{display:inline}
+html[lang="en"] .arcade-hub .age-zh{display:none}
+@media(max-width:600px){.arcade-hub .age-badge{top:10px;left:10px;min-height:29px;padding:5px 10px;font-size:13px}}
