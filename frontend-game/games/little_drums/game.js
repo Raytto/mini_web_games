@@ -23,6 +23,7 @@ function localize(){document.documentElement.lang=lang==='zh'?'zh-CN':'en';docum
 window.XiaoxiaoI18n={get language(){return lang;},applyLanguage(value){lang=value==='zh'?'zh':'en';localize();}};
 function renderPatterns(){ $('patterns').replaceChildren();for(const [i,r]of RHYTHMS.entries()){const b=document.createElement('button');b.type='button';b.dataset.rhythm=r.id;b.className='pattern'+(r===rhythm?' selected':'');b.setAttribute('aria-pressed',r===rhythm);b.innerHTML=`<span class="pattern-num">0${i+1}</span><span><strong>${r[lang]}</strong><small>${r[lang==='zh'?'tagZh':'tagEn']}</small></span>`;b.onclick=()=>{stopEverything();rhythm=r;cursor=0;finished=false;everStarted=false;renderPatterns();render();if(mode==='listen')startAuto();if(mode==='guide')speak(current().hits.length===2?'together':'guide');};$('patterns').append(b);} }
 function render(){
+ document.body.dataset.playMode=mode;
  document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===mode));$('tempo-wrap').hidden=mode!=='listen';$('restart').hidden=mode==='free';
  let hint,sub,action;const e=current();
  pads.forEach(b=>{b.classList.remove('expected','matched');b.removeAttribute('aria-current');});

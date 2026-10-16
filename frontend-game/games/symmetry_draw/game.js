@@ -33,7 +33,7 @@ const words = {
   voiceOn: ['英语语音已开启，点击关闭', 'English voice on. Tap to mute'], voiceOff: ['英语语音已关闭，点击开启', 'English voice off. Tap to enable'],
   modeChanged: ['接下来画 {n} 等分，已经画好的会保留。', 'New lines mirror into {n} parts. Your earlier drawing stays.'],
   restored: ['接着上次的画，继续创作吧。', 'Welcome back. Your picture is right where you left it.'],
-  parts: ['{n} 等分对称', '{n} mirror parts']
+  parts: ['{n} 等分对称', '{n} mirror parts'], moreTools: ['更多工具', 'More tools'], settings: ['工具 · {n}', 'Tools · {n}']
 };
 let lang = 'en';
 try { lang = parent.XiaoxiaoI18n?.language || (localStorage.getItem('xiaoxiaoLanguage') === 'zh' ? 'zh' : 'en'); } catch {}
@@ -95,6 +95,7 @@ function renderUI() {
     button.setAttribute('aria-label', label); button.title = label; button.setAttribute('aria-pressed', selected);
     if (selected) $('color-name').textContent = label;
   }
+  $('settings-label').textContent = t('settings').replace('{n}', parts);
   $('pen').setAttribute('aria-pressed', tool === 'pen'); $('eraser').setAttribute('aria-pressed', tool === 'eraser');
   document.documentElement.style.setProperty('--color', tool === 'eraser' ? '#9aa598' : color);
   document.querySelectorAll('[data-size]').forEach(b => b.setAttribute('aria-pressed', Number(b.dataset.size) === size));
@@ -218,10 +219,17 @@ $('voice').onclick = () => {
   try { localStorage.setItem('xiaoxiaoEnglishVoiceEnabled', voice.enabled); } catch {}
   renderUI(); if (voice.enabled) { voice.welcomed = true; void voice.say('welcome'); }
 };
+const settingsDialog = $('settings-dialog');
+$('settings').onclick = () => { finish(); settingsDialog.showModal(); $('settings').setAttribute('aria-expanded', 'true'); };
+$('close-settings').onclick = () => settingsDialog.close();
+settingsDialog.addEventListener('close', () => { $('settings').setAttribute('aria-expanded', 'false'); $('settings').focus({ preventScroll: true }); });
+let backdropStart = false;
+settingsDialog.addEventListener('pointerdown', event => { const r = settingsDialog.getBoundingClientRect(); backdropStart = event.target === settingsDialog && (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom); });
+settingsDialog.addEventListener('click', event => { const r = settingsDialog.getBoundingClientRect(); if (backdropStart && event.target === settingsDialog && (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom)) settingsDialog.close(); backdropStart = false; });
 $('new').onclick = () => { finish(); $('new-dialog').showModal(); };
 $('cancel-new').onclick = () => $('new-dialog').close();
 $('confirm-new').onclick = () => {
-  finish(); actions.push({ type: 'clear' }); redo = []; restored = false; $('new-dialog').close(); repaint(); remember();
+  finish(); actions.push({ type: 'clear' }); redo = []; restored = false; $('new-dialog').close(); settingsDialog.close(); repaint(); remember();
 };
 
 function dropPreview() { if (imageURL) URL.revokeObjectURL(imageURL); imageURL = ''; imageFile = null; $('preview').removeAttribute('src'); }
@@ -256,7 +264,7 @@ $('close-save').onclick = () => $('save-dialog').close();
 // Keep the blob alive after closing so an in-flight browser download can finish.
 // It is released on the next export or when this document is destroyed.
 window.addEventListener('keydown', event => {
-  if ($('save-dialog').open || $('new-dialog').open || event.altKey) return;
+  if ($('save-dialog').open || $('new-dialog').open || settingsDialog.open || event.altKey) return;
   if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'z') {
     event.preventDefault(); event.shiftKey ? redoStroke() : undoStroke();
   }

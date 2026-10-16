@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f7f5ef">
   <title>Symmetry Draw · Xiaoxiao</title>
   <link rel="icon" href="../../favicon.png">
-  <link rel="stylesheet" href="style.css?v=20261016sym2">
+  <link rel="stylesheet" href="style.css?v=20261017ux2">
   <link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
   <script defer src="../../scripts/game-home.js?v=20261003home2"></script>
 </head>
@@ -32,23 +32,12 @@
       <div class="header-actions"><button id="voice" class="icon-button" data-label="voiceOn" aria-pressed="true"><svg class="icon"><use href="#i-sound"/></svg></button><button id="save" class="primary" disabled><svg class="icon"><use href="#i-image"/></svg><span data-t="save">Save picture</span></button></div>
     </header>
     <div class="workspace">
-      <section class="panel modes-panel" aria-labelledby="mode-title">
-        <h2 id="mode-title"><span class="step-dot">1</span><span data-t="mirror">Make it mirror</span></h2>
-        <div id="modes" class="modes" role="group" data-label="mirror"></div>
-        <p class="mode-note" data-t="modeNote">Try any slice. Every line has a friend.</p>
-      </section>
-      <section class="panel palette-panel" aria-labelledby="palette-title">
-        <h2 id="palette-title"><span class="step-dot">2</span><span data-t="colors">Pick a color</span><span id="color-name"></span></h2>
-        <div id="palette" class="palette" role="group" data-label="colors"></div>
-      </section>
-      <section class="panel tools-panel" aria-labelledby="tools-title">
-        <h2 id="tools-title"><span class="step-dot">3</span><span data-t="create">Make your mark</span></h2>
+      <aside class="drawing-tools">
+        <div class="palette-panel"><h2><span data-t="colors">Pick a color</span><span id="color-name"></span></h2><div id="palette" class="palette" role="group" data-label="colors"></div></div>
         <div class="tool-row" role="group" data-label="tools"><button id="pen" class="tool" aria-pressed="true"><svg class="icon"><use href="#i-pen"/></svg><span data-t="pen">Brush</span></button><button id="eraser" class="tool" aria-pressed="false"><svg class="icon"><use href="#i-eraser"/></svg><span data-t="eraser">Eraser</span></button></div>
-        <div class="sizes" role="group" data-label="size"><button data-size="0" data-label="thin" aria-pressed="false"><i style="--size:5px"></i></button><button data-size="1" data-label="medium" aria-pressed="true"><i style="--size:11px"></i></button><button data-size="2" data-label="thick" aria-pressed="false"><i style="--size:19px"></i></button></div>
-        <p class="tool-note" data-t="eraseNote">The eraser mirrors, too.</p>
-      </section>
+      </aside>
       <section class="art-area" data-label="drawingArea">
-        <div class="art-toolbar"><div class="history-tools"><button id="undo" class="icon-button" data-label="undo" disabled><svg class="icon"><use href="#i-undo"/></svg></button><button id="redo" class="icon-button" data-label="redo" disabled><svg class="icon"><use href="#i-redo"/></svg></button></div><button id="axes" class="subtle" aria-pressed="true"><svg class="icon"><use href="#i-axis"/></svg><span data-t="guides">Guides</span></button><button id="new" class="subtle" disabled><svg class="icon"><use href="#i-new"/></svg><span data-t="new">New</span></button></div>
+        <div class="art-toolbar"><div class="history-tools"><button id="undo" class="icon-button" data-label="undo" disabled><svg class="icon"><use href="#i-undo"/></svg></button><button id="redo" class="icon-button" data-label="redo" disabled><svg class="icon"><use href="#i-redo"/></svg></button></div><button id="settings" class="subtle" aria-haspopup="dialog" aria-controls="settings-dialog" aria-expanded="false"><svg class="icon"><use href="#i-axis"/></svg><span id="settings-label">Tools · 6</span></button></div>
         <div class="paper-wrap"><div class="paper" id="paper">
           <canvas id="drawing" width="1200" height="1200" data-label="canvas" aria-label="Draw here with your finger, mouse or pen"></canvas>
           <svg id="guides" viewBox="0 0 1200 1200" aria-hidden="true"><g id="guide-lines"></g><circle cx="600" cy="600" r="5" fill="#9eafa8"/></svg>
@@ -60,12 +49,17 @@
     </div>
     <footer><span id="draft-status" role="status" aria-live="polite"></span><span class="studio-signature">XIAOXIAO <i>little art club</i></span></footer>
   </main>
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><div class="dialog-header"><h2 id="settings-title" data-t="moreTools">More tools</h2><button id="close-settings" class="icon-button" data-label="close" autofocus><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <section class="setting-group"><h3 data-t="mirror">Make it mirror</h3><div id="modes" class="modes" role="group" data-label="mirror"></div></section>
+    <section class="setting-group"><h3 data-t="size">Brush size</h3><div class="sizes" role="group" data-label="size"><button data-size="0" data-label="thin" aria-pressed="false"><i style="--size:5px"></i></button><button data-size="1" data-label="medium" aria-pressed="true"><i style="--size:11px"></i></button><button data-size="2" data-label="thick" aria-pressed="false"><i style="--size:19px"></i></button></div></section>
+    <div class="settings-actions"><button id="axes" class="secondary" aria-pressed="true"><svg class="icon"><use href="#i-axis"/></svg><span data-t="guides">Guides</span></button><button id="new" class="secondary" disabled><svg class="icon"><use href="#i-new"/></svg><span data-t="new">New</span></button></div>
+  </dialog>
   <dialog id="save-dialog" aria-labelledby="save-title"><div class="dialog-header"><div><span class="eyebrow" data-t="madeByYou">MADE BY YOU</span><h2 id="save-title" data-t="pictureReady">Your little masterpiece</h2></div><button id="close-save" class="icon-button" data-label="close"><svg class="icon"><use href="#i-close"/></svg></button></div><img id="preview" data-label="preview" alt="Your picture"><p class="save-note" data-t="cleanPicture">Just your art. No guide lines.</p><div class="dialog-actions"><button id="download" class="primary"><svg class="icon"><use href="#i-download"/></svg><span data-t="download">Download PNG</span></button><button id="share" class="secondary" hidden><svg class="icon"><use href="#i-share"/></svg><span data-t="share">Share / Save image</span></button></div><p id="save-help" class="save-help" data-t="saveHelp">On a phone, you can also press and hold the picture to save it.</p><p id="save-status" role="status" aria-live="polite"></p></dialog>
   <dialog id="new-dialog" class="new-dialog" aria-labelledby="new-title"><div class="new-art" aria-hidden="true">✳</div><h2 id="new-title" data-t="newTitle">A fresh piece of paper?</h2><p data-t="newHelp">Save your picture first if you like. You can also undo a fresh start.</p><div class="dialog-actions"><button id="cancel-new" class="secondary" data-t="keepDrawing" autofocus>Keep drawing</button><button id="confirm-new" class="primary" data-t="freshStart">Start a new picture</button></div></dialog>
   <div id="toast" role="status" aria-live="polite" hidden></div>
   <script>window.MINI_GAME={id:'symmetry_draw',name:'Symmetry Draw'};</script>
   <script defer src="../../scripts/bankend-config.js?v=2"></script>
   <script defer src="../../scripts/tracking.js?v=20261002play1"></script>
-  <script type="module" src="game.js?v=20261016sym1"></script>
+  <script type="module" src="game.js?v=20261017ux2"></script>
 </body>
 </html>

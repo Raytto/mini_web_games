@@ -44,6 +44,7 @@ async function prepare(){
 function welcome(){if(!welcomed && audio.ready && audio.ctx.state==='running' && mode==='free'){welcomed=true;speak('welcome');}}
 function clearVisual(){keys.forEach(k=>k.classList.remove('sounding'));}
 function render(){
+ document.body.dataset.playMode=mode;
  $('song-name').textContent=song[lang];$('song-icon').textContent=song.icon;$('kind').textContent=t(song.kind);$('tempo-wrap').hidden=mode!=='listen';
  document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===mode));
  $('restart').hidden=mode==='free';$('progress').style.width=(mode==='free'?0:cursor/song.notes.length*100)+'%';

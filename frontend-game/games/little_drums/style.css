@@ -5,3 +5,29 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 
 .pad .status{right:auto;left:50%;top:3%;transform:translateX(-50%)}
+
+/* Free play shows the instrument first; lessons appear only in lesson modes. */
+.app{min-height:0}
+body[data-play-mode="free"] .lesson{min-height:32px;margin:0;justify-content:center;text-align:center}
+body[data-play-mode="free"] .lesson h2{font-size:16px;font-weight:500;color:#6c7e70}
+body[data-play-mode="free"] #subhint,body[data-play-mode="free"] .transport{display:none}
+@media(max-width:600px){body[data-play-mode="free"] .lesson h2{font-size:14px}}
+
+body[data-play-mode="free"] .desk{padding:0;border:0;background:none;box-shadow:none}
+body[data-play-mode="free"] .pattern-row,body[data-play-mode="free"] .phrase-row,body[data-play-mode="free"] #beat-strip{display:none}
+@media(orientation:landscape) and (max-height:650px){.app{min-height:0;gap:6px;padding-top:6px;padding-bottom:10px}.stage,.kit{min-height:0}}
+@media(orientation:landscape) and (max-height:500px){
+ .app{display:grid;grid-template-columns:minmax(240px,.85fr) minmax(0,1fr);grid-template-rows:48px auto minmax(0,1fr);gap:6px 12px;padding:6px max(12px,env(safe-area-inset-right)) 10px max(12px,env(safe-area-inset-left))}
+ header{height:48px;gap:10px;min-width:0}.brand{gap:4px}.brand-mark,.brand p{display:none}h1{font-size:21px}.header-tools{gap:5px}.round{width:44px;height:44px}
+ .modes{width:100%;margin:0;align-self:center;padding:2px;border-radius:14px}.modes button{min-height:44px;font-size:12px;gap:5px}.modes b{font-size:20px}
+ .desk{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:0 16px;padding:4px 10px;border-radius:14px}
+ .pattern-row{gap:7px;min-width:0}#patterns{gap:5px}.pattern{min-height:44px;padding:3px 6px;gap:5px}.pattern-num{font-size:18px}.pattern strong{font-size:11px}.pattern small{display:none}.pattern-row label>span{display:none}.pattern-row select{height:44px;padding:0 4px;font-size:11px;max-width:76px}
+ .lesson{min-height:44px;margin:0;gap:6px}.lesson h2{font-size:14px}#subhint{font-size:10px;margin-top:2px;line-height:1.3}.transport{gap:5px}.primary,.secondary{height:44px;padding:0 9px;font-size:11px;min-width:0}.secondary{font-size:22px}
+ .phrase-row{height:25px;gap:7px;font-size:9px}.bars{gap:3px}.bars span{height:20px;min-width:20px;padding:0 4px}.bars i{font-size:9px}#beat-strip{height:25px;gap:3px}.beat-step{height:19px;gap:2px}.beat-dot{width:5px;height:5px}.beat-step .beat-count{font-size:8px}
+ body[data-play-mode="free"] .desk{display:block}body[data-play-mode="free"] .lesson{min-height:24px}body[data-play-mode="free"] .lesson h2{font-size:13px}
+ .stage{grid-column:1/-1;min-height:0;padding:3px 8px 6px;border-radius:18px;box-shadow:inset 0 -5px 0 #d9e3ca,0 4px 0 #ccd8be}.kit{min-height:0}.stage-top{min-height:17px;font-size:8px}.stage-bottom{min-height:18px;font-size:9px}.studio-name{font-size:7px}.pad .label{font-size:9px;padding:2px 6px}.pad .label kbd{display:none}.pad .status{width:20px;height:20px;font-size:12px}footer{display:none}
+}
+
+@media(orientation:landscape) and (max-height:500px){.stage{align-self:stretch;height:100%}}
+
+.modes button{min-height:44px}

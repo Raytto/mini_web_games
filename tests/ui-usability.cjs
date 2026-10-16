@@ -1,0 +1,50 @@
+/* Player-facing layout and modal regressions; run browsers serially. */
+process.env.TMPDIR='/tmp';
+const {chromium,webkit}=require('/root/.npm/_npx/e41f203b7505f1fb/node_modules/playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const base=process.env.UX_BASE||'https://xiaoxiao.cool',engine=process.env.UX_ENGINE||'chromium',out=process.env.CWW_JOB_RUNTIME;
+const followup=process.env.UX_FOLLOWUP==='1';
+const report={engine,checks:0,geometry:[],errors:[]};
+const check=(condition,message)=>{assert.ok(condition,message);report.checks++};
+(async()=>{
+ const b=await({chromium,webkit}[engine]).launch({headless:true,executablePath:engine==='chromium'?'/root/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome':'/root/.cache/ms-playwright/webkit-2311/pw_run.sh',args:engine==='chromium'?['--no-sandbox']:[]});
+ try{
+ const ctx=await b.newContext({hasTouch:true,isMobile:true});await ctx.route(/\/(api|bankend)\//,r=>r.fulfill({status:204}));const p=await ctx.newPage();p.on('pageerror',e=>{report.errors.push(e.message);console.error('PAGEERROR',p.url(),e.message)});
+ for(const game of (followup?[]:['little_piano','little_drums']))for(const [width,height]of [[390,844],[1024,768],[844,390],[667,375]]){
+  await p.setViewportSize({width,height});await p.goto(`${base}/games/${game}/index.html`);await p.waitForFunction(game=>game==='little_piano'?window.pianoDebug?.().ready:window.drumDebug?.().ready,game);
+  for(const mode of ['free','listen','guide']){
+   await p.locator(`[data-mode="${mode}"]`).click();const geometry=await p.evaluate(({game,mode})=>{const visible=e=>e.getBoundingClientRect().width>0&&e.getBoundingClientRect().height>0,box=e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height,b:r.bottom,right:r.right}},notes=game==='little_piano'?'.key':'.pad';return{game,mode,width:innerWidth,height:innerHeight,main:box(document.querySelector(game==='little_piano'?'.instrument':'.stage')),extra:[...document.querySelectorAll('button,a,select')].filter(e=>visible(e)&&!e.matches(notes)).map(box),targets:[...document.querySelectorAll(notes)].map(box),scroll:document.documentElement.scrollHeight}}, {game,mode});report.geometry.push(geometry);
+   check(geometry.scroll<=height+1,`${game} ${width} ${mode}: no page scroll`);check(geometry.main.b<=height+1,`${game} instrument fits`);check(geometry.targets.length===(game==='little_piano'?25:7)&&geometry.targets.every(r=>r.w>0&&r.h>20&&r.y>=0&&r.b<=height+1),`${game} every instrument target visible`);
+   check(geometry.extra.every(r=>r.y>=0&&r.b<=height+1&&r.right<=width+1),`${game} course controls fit`);
+   if(mode==='free'){check(geometry.extra.length===6,`${game} six controls beyond instrument`);check(geometry.main.y<=height*.28,`${game} instrument starts early`);check(!await p.locator('.transport').isVisible(),`${game} no duplicate teaching action`);}
+  }
+  await p.locator('[data-mode="free"]').click();
+  if(game==='little_piano')for(const k of await p.locator('.key').all()){const r=await k.boundingBox(),black=await k.evaluate(e=>e.classList.contains('black')),label=await k.getAttribute('aria-label');await p.touchscreen.tap(r.x+r.width/2,r.y+r.height*(black?.45:.82));check((await p.locator('#playing-note').innerText()).startsWith(label+' ·'),`${width} key ${label} hit`);}
+  else for(const pad of await p.locator('.pad').all()){const r=await pad.boundingBox(),id=await pad.getAttribute('data-pad');await p.touchscreen.tap(r.x+r.width/2,r.y+r.height/2);check(await p.evaluate(id=>drumDebug().recent.at(-1)?.id===id,id),`${width} drum ${id} hit`);}
+  if(height<400){await p.locator('[data-mode="guide"]').click();await p.screenshot({path:path.join(out,`ux-${game}-${width}-${engine}.png`)});}
+ }
+ for(const [width,height]of [[320,568],[390,844],[1024,768],[844,390]]){
+  await p.setViewportSize({width,height});await p.goto(base+'/games/symmetry_draw/index.html');await p.waitForSelector('#settings');
+  const metrics=await p.evaluate(()=>{const q=document.querySelector('#paper').getBoundingClientRect(),buttons=[...document.querySelectorAll('button,a')].filter(e=>e.getBoundingClientRect().width>0);return{paper:q.width,controls:buttons.length,targets:buttons.map(e=>{const r=e.getBoundingClientRect();return[r.width,r.height,r.bottom]})}});
+  check(metrics.controls===18,'Symmetry has 18 direct controls');check(metrics.paper>=200,'Usable drawing area');if(width===390)check(metrics.paper>=354,'Phone canvas keeps its original size');check(metrics.targets.every(r=>r[0]>=44&&r[1]>=44&&r[2]<=height+1),'All direct tools have visible finger-sized targets');
+  const before=await p.locator('#drawing').evaluate(c=>c.toDataURL());await p.locator('#settings').click();check(await p.locator('#settings-dialog').isVisible(),'Settings open');check(await p.locator('[data-parts]').count()===4&&await p.locator('[data-size]').count()===3,'All settings in one panel');
+  await p.locator('[data-parts="4"]').click();await p.keyboard.press('Escape');check(await p.evaluate(()=>document.activeElement.id==='settings'),'Escape returns focus');check((await p.locator('#settings-label').innerText()).endsWith('4'),'Current mirror count shown');
+  await p.locator('#settings').click();await p.mouse.click(2,2);check(!await p.locator('#settings-dialog').isVisible(),'Backdrop closes settings');check(await p.evaluate(()=>document.activeElement.id==='settings'),'Backdrop restores focus');check(await p.locator('#drawing').evaluate(c=>c.toDataURL())===before,'Modal interactions do not draw on paper');
+  await p.locator('#settings').click();await p.locator('#close-settings').click();check(await p.evaluate(()=>document.activeElement.id==='settings'),'Close restores focus');await p.screenshot({path:path.join(out,`ux-symmetry-${width}-${engine}.png`)});
+  const canvas=await p.locator('#drawing').boundingBox();await p.mouse.move(canvas.x+canvas.width*.62,canvas.y+canvas.height*.28);await p.mouse.down();await p.mouse.move(canvas.x+canvas.width*.7,canvas.y+canvas.height*.4);await p.mouse.up();const art=await p.locator('#drawing').evaluate(c=>c.toDataURL());
+  await p.locator('#settings').click();await p.screenshot({path:path.join(out,`ux-settings-${width}-${engine}.png`)});await p.locator('#new').click();await p.screenshot({path:path.join(out,`ux-new-confirm-${width}-${engine}.png`)});await p.locator('#cancel-new').click();check(await p.locator('#settings-dialog').isVisible(),'Cancel new paper returns to settings');
+  await p.locator('#new').click();await p.locator('#confirm-new').click();check(!await p.locator('#settings-dialog').isVisible()&&!await p.locator('#new-dialog').isVisible(),'Confirm new paper returns directly to drawing');check(await p.evaluate(()=>document.activeElement.id==='settings'),'New paper focus remains visible');await p.locator('#undo').click();check(await p.locator('#drawing').evaluate(c=>c.toDataURL())===art,'Undo new paper restores complete art');
+ }
+ for(const lang of ['en','zh'])for(const [width,height]of [[320,568],[390,844],[1024,768],[844,390],[667,375]]){
+  await p.setViewportSize({width,height});await p.goto(base+'/games/animal_breakfast/index.html');await p.evaluate(lang=>window.XiaoxiaoI18n.applyLanguage(lang),lang);await p.waitForTimeout(100);
+  const m=await p.evaluate(()=>{const box=id=>{const r=document.querySelector(id).getBoundingClientRect();return{y:r.y,b:r.bottom,x:r.x,right:r.right}};return{hint:box('#hint'),status:box('.status-row'),food:box('.food-dock'),animals:[...document.querySelectorAll('.animal-card,.animal-name')].map(e=>{const r=e.getBoundingClientRect();return{y:r.y,b:r.bottom}})}});check(m.status.y>=m.hint.b+4,`${lang} ${width} breakfast hint/status separate`);check(m.food.b<=height&&m.food.x>=0&&m.food.right<=width,`${lang} ${width} breakfast food visible`);check(m.animals.every(r=>r.y>=m.status.b&&r.b<=m.food.y-15),`${lang} ${width} animals and names do not overlap the status or tray`);
+  await p.waitForTimeout(550);await p.screenshot({path:path.join(out,`ux-breakfast-${lang}-${width}-${engine}.png`)});const food=p.locator('.food-card').first(),target=await food.getAttribute('data-target-id');await food.tap();await p.locator(`[data-animal-id="${target}"]`).tap();check(await p.locator(`[data-animal-id="${target}"].fed`).count()===1,`${lang} ${width} breakfast target remains playable`);
+ }
+ if(followup){
+  await p.setViewportSize({width:844,height:390});for(const game of ['little_piano','little_drums']){await p.goto(base+'/games/'+game+'/index.html');await p.locator('[data-mode="listen"]').click();await p.waitForTimeout(150);await p.screenshot({path:path.join(out,`ux-listen-${game}-${engine}.png`)});}
+  await p.route('**/samples/C4.mp3*',r=>r.fulfill({status:503,body:'test unavailable'}));await p.goto(base+'/games/little_piano/index.html');await p.locator('#sound-retry').waitFor({state:'visible'});const retry=await p.locator('#sound-retry').boundingBox();check(retry.y>=0&&retry.y+retry.height<=390,'Short landscape audio retry stays visible');await p.unroute('**/samples/C4.mp3*');await p.locator('#sound-retry').click();await p.waitForFunction(()=>pianoDebug().ready);check(!await p.locator('#sound-retry').isVisible(),'Retry recovers piano sound');
+ }
+ for(const lang of ['en','zh']){await p.goto(base+'/home.html');await p.evaluate(lang=>window.XiaoxiaoI18n.applyLanguage(lang),lang);const cards=p.locator('.game-card');check(await cards.count()===42,'Catalogue keeps 42 games');const card=p.locator('a[href="games/goodnight_hotel/index.html"]');check((await card.locator('.card-desc').innerText())===(lang==='zh'?'陪小动物刷牙、听故事，安心入睡。':'Brush teeth, share a story, and tuck little friends in.'),'Hotel description translated');}
+ check(!report.errors.length,'No uncaught errors');report.passed=true;fs.writeFileSync(path.join(out,`ux-${followup?'followup':'regression'}-${engine}.json`),JSON.stringify(report,null,2));console.log(JSON.stringify({engine,checks:report.checks,passed:true}));
+ }finally{await b.close()}
+})().catch(e=>{fs.writeFileSync(path.join(out,`ux-failure-${engine}.json`),JSON.stringify(report,null,2));console.error(e);process.exit(1)});

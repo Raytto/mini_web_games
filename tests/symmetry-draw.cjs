@@ -23,7 +23,8 @@ async function page(options = {}, audible = false) {
   await p.addInitScript(audible => { localStorage.setItem('xiaoxiaoEnglishVoiceEnabled', audible ? 'true' : 'false'); }, audible);
   return p;
 }
-async function start(p) { await p.goto(url); await p.waitForSelector('[data-parts="6"]'); await p.waitForFunction(() => document.getElementById('draft-status').textContent.length > 0); }
+async function start(p) { await p.goto(url); await p.waitForSelector('#settings'); await p.waitForFunction(() => document.getElementById('draft-status').textContent.length > 0); }
+async function setting(p, selector) { await p.click('#settings'); await p.click(selector); if (selector !== '#new') await p.click('#close-settings'); }
 async function draw(p, points, tap = false) {
   const r = await p.locator('#drawing').boundingBox();
   const at = ([x, y]) => [r.x + x / 1200 * r.width, r.y + y / 1200 * r.height];
@@ -52,7 +53,7 @@ function mirrors([x, y], n) {
 }
 async function symmetry() {
   for (const n of [2,4,6,8]) {
-    const p = await page(); await start(p); await p.click(`[data-parts="${n}"]`);
+    const p = await page(); await start(p); await setting(p, `[data-parts="${n}"]`);
     await draw(p, [[720,250],[770,295],[740,340]]);
     for (const point of [[720,250],[770,295],[740,340]]) {
       const values = await pixels(p, mirrors(point,n));
@@ -62,9 +63,9 @@ async function symmetry() {
     const wrong=[600+Math.cos(angle)*r,600+Math.sin(angle)*r];
     check(`${n} parts are mirrored, not rotation-only`, (await pixels(p,[wrong]))[0][3]===0);
     check(`${n} dashed guide rays`, await p.locator('#guide-lines path').count()===n);
-    const before = await snapshot(p); await p.click('#axes');
+    const before = await snapshot(p); await setting(p, '#axes');
     check(`${n} guide toggle leaves artwork intact`, await snapshot(p)===before && await p.locator('#guides.off').count()===1);
-    await p.click('#eraser'); await p.click('[data-size="2"]'); await draw(p,[[770,295]],true);
+    await p.click('#eraser'); await setting(p, '[data-size="2"]'); await draw(p,[[770,295]],true);
     check(`${n} eraser removes every reflected copy`, (await pixels(p,mirrors([770,295],n))).every(v=>v[3]===0));
     await p.click('#undo'); check(`${n} undo restores erased art`, await snapshot(p)===before);
     await p.click('#redo'); check(`${n} redo restores erasure`, (await pixels(p,mirrors([770,295],n))).every(v=>v[3]===0));
@@ -73,7 +74,7 @@ async function symmetry() {
   const p=await page();await start(p);
   await draw(p,[[270,730],[300,760]]);
   check('Drawing starts in any sector', (await pixels(p,mirrors([270,730],6))).every(v=>v[3]>240));
-  await p.click('#new');await p.click('#confirm-new');
+  await setting(p, '#new');await p.click('#confirm-new');
   await draw(p,[[600,600]],true);
   check('A center tap makes a solid dot', (await pixels(p,[[600,600]]))[0][3]===255);
   await close(p);
@@ -81,15 +82,15 @@ async function symmetry() {
 async function editing() {
   const p = await page(); await start(p); await draw(p,[[720,250],[770,295],[740,340]]);
   const first = await snapshot(p);
-  await p.click('[data-parts="8"]'); check('Mode change preserves previous art', await snapshot(p)===first);
-  await p.click('[data-color="blue"]'); await p.click('[data-size="2"]'); await draw(p,[[680,440],[720,470]]);
+  await setting(p, '[data-parts="8"]'); check('Mode change preserves previous art', await snapshot(p)===first);
+  await p.click('[data-color="blue"]'); await setting(p, '[data-size="2"]'); await draw(p,[[680,440],[720,470]]);
   check('Selected color is drawn', (await pixels(p,[[680,440]]))[0][2]>150);
   const doc=await stored(p);check('Each stroke retains its own mode and color',doc.actions[0].parts===6&&doc.actions[1].parts===8&&doc.actions[1].color==='#648fbe');
-  const second=await snapshot(p);await p.reload();await p.waitForSelector('[data-parts="8"][aria-pressed="true"]');
+  const second=await snapshot(p);await p.reload();await p.waitForSelector('[data-parts="8"][aria-pressed="true"]',{state:'attached'});
   check('Reload restores exactly the same drawing',await snapshot(p)===second);
   check('Reload restores brush settings',await p.locator('[data-color="blue"][aria-pressed="true"]').count()===1&&await p.locator('[data-size="2"][aria-pressed="true"]').count()===1);
-  await p.click('#new');await p.click('#cancel-new');check('Cancel new paper preserves art',await snapshot(p)===second);
-  await p.click('#new');await p.click('#confirm-new');check('New paper is empty and save is disabled',await p.locator('#save').isDisabled());
+  await setting(p, '#new');await p.click('#cancel-new');await p.click('#close-settings');check('Cancel new paper preserves art',await snapshot(p)===second);
+  await setting(p, '#new');await p.click('#confirm-new');check('New paper is empty and save is disabled',await p.locator('#save').isDisabled());
   await p.click('#undo');check('Undo new paper restores the whole drawing',await snapshot(p)===second);
   await p.keyboard.press('Control+z');check('Keyboard undo removes the last stroke',await snapshot(p)===first);
   await p.keyboard.press('Control+Shift+z');check('Keyboard redo restores the last stroke',await snapshot(p)===second);

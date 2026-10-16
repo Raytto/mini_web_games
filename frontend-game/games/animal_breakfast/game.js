@@ -248,7 +248,8 @@ function updateCollectionBadge() {
 function startDrag(event) {
     const source = event.currentTarget;
     if (source.classList.contains('used') || event.button > 0) return;
-    event.preventDefault();
+    // Touch scrolling is already disabled in CSS; preserve WebKit's tap click.
+    if (event.pointerType === 'mouse') event.preventDefault();
     window.GameVoice?.cue('food', source.dataset.foodId);
     window.GameJuice?.sound('pick');
     window.GameJuice?.vibrate(10);
