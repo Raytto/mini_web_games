@@ -1,0 +1,31 @@
+{
+  "model": "cosyvoice-v3.5-plus",
+  "provider": "Alibaba Cloud Model Studio",
+  "language": "en",
+  "profiles": {
+    "guide": {
+      "prefix": "xxguide35",
+      "name": "Sunny — word discovery",
+      "voice_prompt": "A bright, friendly girl cartoon voice, childlike and about eight years old, speaking native General American English. Clear round vowels and crisp consonants, a smiling light mid-high register, curious and inviting. Playful rising and falling intonation with expressive noun emphasis, unhurried and very easy for preschoolers to imitate. Natural child speech with correct pronunciation, no lisp, no baby babble, no whisper or shrill shouting.",
+      "preview_text": "A tree! A strawberry! A bear! A tiger! Great! You found it!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "pip": {
+      "prefix": "xxpip35",
+      "name": "Pip — colors and playful actions",
+      "voice_prompt": "A lively little boy cartoon penguin voice, childlike and about seven years old, native General American English. A clear bright springy tone with a smile and joyful curiosity. Playful rhythmic delivery, colorful pitch movement and rounded fully spoken words. Celebrate discoveries with delighted surprise and friendly energy. Clearly understandable to preschool children; never mumbled, shrieked, mechanically squeaky or baby babbled.",
+      "preview_text": "Blue! Yellow! Green! Your jelly is ready! Great! Let us play!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "teddy": {
+      "prefix": "xxteddy35",
+      "name": "Teddy — requests and kindness",
+      "voice_prompt": "A cuddly young teddy bear cartoon boy, childlike and about six years old, speaking native General American English. Soft rounded warm mid-high voice, slightly mellow and plush, clearly distinct from a bright girl narrator. Gently eager requests with expressive emphasis on the object. Delighted grateful thanks, and kind reassuring playful mistakes. Clear slow-enough diction with smiling pitch variation; no adult bass, growling, baby babble, lisp or shouting.",
+      "preview_text": "A strawberry, please! A tree, please! Thank you! Oops! Try again.",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxteddy35-64e02de3a7e44a47937486064e86194d",
+      "target_model": "cosyvoice-v3.5-plus"
+    }
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "provider": "Alibaba Cloud Model Studio",
+  "model": "cosyvoice-v3.5-plus",
+  "language": "English",
+  "synthetic": true,
+  "processing": "mono 24kHz MP3, 80kbps, -18 LUFS, -2dBTP; original pitch and timing",
+  "clips": [
+    {
+      "id": "sd1_welcome",
+      "text": "Pick a color. Draw anywhere, and watch it mirror!",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: welcome",
+      "focus": "draw",
+      "stress": [
+        "draw"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161000,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_welcome.mp3",
+      "fingerprint": "a99195ac31073d783bb945503d730e386c10dd0e9994de4a87a053d21d84ee0b",
+      "duration": 3.744,
+      "rms_dbfs": -19.0,
+      "peak_dbfs": -3.95,
+      "sha256": "2777780304f29d5f30524ed2dbe75b46ad292966be32161b675e61112d431822"
+    },
+    {
+      "id": "sd1_mode2",
+      "text": "Two parts. Draw a mirror picture!",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: mode2",
+      "focus": "Two",
+      "stress": [
+        "Two"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161001,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_mode2.mp3",
+      "fingerprint": "8582ed35bce4d5caf2b33e8e01a8cc7daf3003c0a16ef42fdc36ce41990f6a39",
+      "duration": 2.592,
+      "rms_dbfs": -20.62,
+      "peak_dbfs": -5.93,
+      "sha256": "966b45bd0e265f9beee9a16cb2011018cd7b8988293731ec1cc7961ff174e285"
+    },
+    {
+      "id": "sd1_mode4",
+      "text": "Four parts. Watch your lines mirror!",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: mode4",
+      "focus": "Four",
+      "stress": [
+        "Four"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161002,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_mode4.mp3",
+      "fingerprint": "2613d7813c3c310e73fe7e65aae4b3381e8d98637eeda474ac7e1e4c70128611",
+      "duration": 3.336,
+      "rms_dbfs": -18.94,
+      "peak_dbfs": -3.22,
+      "sha256": "6233e6a1561f86e3661a2f1d2ca22f1d616b5c19bf5fd14c1462b95581cafe95"
+    },
+    {
+      "id": "sd1_mode6",
+      "text": "Six parts. Watch your lines mirror!",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: mode6",
+      "focus": "Six",
+      "stress": [
+        "Six"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161003,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_mode6.mp3",
+      "fingerprint": "318f994e112c6545da3a8ee051cbb77a09a02f00dddc1549df2b0159242cbbbc",
+      "duration": 2.688,
+      "rms_dbfs": -19.9,
+      "peak_dbfs": -3.92,
+      "sha256": "ee5ae8a1561dc947e86ed51d88b7dc0eb2e2e2c4f8550ccab27e51a33734cb20"
+    },
+    {
+      "id": "sd1_mode8",
+      "text": "Eight parts. Watch your lines mirror!",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: mode8",
+      "focus": "Eight",
+      "stress": [
+        "Eight"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161004,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_mode8.mp3",
+      "fingerprint": "6328859bd64e71cca7c9f6794bb6fe56451c52770eed6678061fb20c70c7d576",
+      "duration": 3.0,
+      "rms_dbfs": -20.7,
+      "peak_dbfs": -4.93,
+      "sha256": "86d52d9231541177cbac31a7e411d2086ee1371cd23c3402d74510d74073fd7e"
+    },
+    {
+      "id": "sd1_pen",
+      "text": "Let's draw!",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: pen",
+      "focus": "draw",
+      "stress": [
+        "draw"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161005,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_pen.mp3",
+      "fingerprint": "da2e117bc9c1dbffc5c4f9e68102402676cd760836422da554581dec343fa28e",
+      "duration": 1.032,
+      "rms_dbfs": -20.49,
+      "peak_dbfs": -5.35,
+      "sha256": "dfc6eb25fc95b61cea973106e493b0afb7e75bc47bd9c487617772846d38027f"
+    },
+    {
+      "id": "sd1_eraser",
+      "text": "Rub a little bit away.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: eraser",
+      "focus": "Rub",
+      "stress": [
+        "Rub"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161006,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_eraser.mp3",
+      "fingerprint": "95fb9f363bafc17308ca4e912bede71b7110c95fd66539b5c40b8b00ce009e54",
+      "duration": 1.704,
+      "rms_dbfs": -19.42,
+      "peak_dbfs": -5.16,
+      "sha256": "63048ab2cbdf90a41dca3c01c68893ee37656a0a3267d633aa74e23c9a1225d5"
+    },
+    {
+      "id": "sd1_picture",
+      "text": "Your picture is ready!",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: picture",
+      "focus": "picture",
+      "stress": [
+        "picture"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161007,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_picture.mp3",
+      "fingerprint": "622d0e34fe736d048b1187b97eb08f959b2700d052c9d4e19c5c662ec05cd1cd",
+      "duration": 1.704,
+      "rms_dbfs": -20.06,
+      "peak_dbfs": -4.5,
+      "sha256": "c7eb1757f99b7e05c3b750ca56ff3ebc2f840536727e5b4bf5a249585f759ecb"
+    },
+    {
+      "id": "sd1_color_red",
+      "text": "Red! Let's draw.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_red",
+      "focus": "red",
+      "stress": [
+        "red"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161008,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_red.mp3",
+      "fingerprint": "4a89d78d4b52f9478f3b1f3791cb9fbf6b4ac45556538563f0b9f888bd22a7e9",
+      "duration": 1.872,
+      "rms_dbfs": -20.43,
+      "peak_dbfs": -6.14,
+      "sha256": "9a5546bf0166a6c2a3f6fdc07f5df758e4f0880448b41d5198c8206fbefa9f12"
+    },
+    {
+      "id": "sd1_color_orange",
+      "text": "Orange! Let's draw.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_orange",
+      "focus": "orange",
+      "stress": [
+        "orange"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161009,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_orange.mp3",
+      "fingerprint": "62d81708bfb013b42d95505b7716e25a8b1f093d48ba9ee1d3690e02a99d3f6a",
+      "duration": 1.608,
+      "rms_dbfs": -20.0,
+      "peak_dbfs": -7.33,
+      "sha256": "7f889b822617001ae87eff180692dfd1bf98bc4c9933191506a4d62edc99de97"
+    },
+    {
+      "id": "sd1_color_yellow",
+      "text": "Yellow! Let's draw.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_yellow",
+      "focus": "yellow",
+      "stress": [
+        "yellow"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161010,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_yellow.mp3",
+      "fingerprint": "063c985674c7fed843ed6b12d70bb4b1a2e5710116e94fe6e131a1f355950c82",
+      "duration": 1.536,
+      "rms_dbfs": -19.73,
+      "peak_dbfs": -6.96,
+      "sha256": "e7e33b8897cae6fdd9fd08f8a1a77db1aacb5699c425297d58bd0bed452ecea7"
+    },
+    {
+      "id": "sd1_color_green",
+      "text": "Green! Let's draw.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_green",
+      "focus": "green",
+      "stress": [
+        "green"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161011,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_green.mp3",
+      "fingerprint": "a4a7b474fb13203f07939346d45540962fea6f29479c823ace84c05c36f211ea",
+      "duration": 1.296,
+      "rms_dbfs": -19.94,
+      "peak_dbfs": -5.86,
+      "sha256": "03a920ed5e1259c7e53ae4be3362469c5916e97a488e3f47b56bd8a5a2b3f293"
+    },
+    {
+      "id": "sd1_color_teal",
+      "text": "Let's draw with teal.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_teal",
+      "focus": "teal",
+      "stress": [
+        "teal"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161112,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_teal.mp3",
+      "fingerprint": "2e4c5b39d4cde91b9ba49914da8367fed9635383d67573880f68958f10fa84d1",
+      "duration": 1.368,
+      "rms_dbfs": -19.61,
+      "peak_dbfs": -4.96,
+      "sha256": "5c4a25a43e9ecb59efb11848a9e7c6cd8474574f7dc29611b98b2dee8890a5b9"
+    },
+    {
+      "id": "sd1_color_blue",
+      "text": "Blue! Let's draw.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_blue",
+      "focus": "blue",
+      "stress": [
+        "blue"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161013,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_blue.mp3",
+      "fingerprint": "f640f32da74a19afd61fa3d4ac1e5ede4e9cca565c92fa2fdaa028bcbcd82dea",
+      "duration": 1.872,
+      "rms_dbfs": -19.83,
+      "peak_dbfs": -6.31,
+      "sha256": "4f1751f178c2fea39db0172946e71335098f5e205e4d293a982788de7413b3ef"
+    },
+    {
+      "id": "sd1_color_purple",
+      "text": "Purple! Let's draw.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_purple",
+      "focus": "purple",
+      "stress": [
+        "purple"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161014,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_purple.mp3",
+      "fingerprint": "c16367710de44f761f89904363ecaa1c4008326aa4bf976d8c78f4a4f6c99631",
+      "duration": 1.464,
+      "rms_dbfs": -20.43,
+      "peak_dbfs": -5.66,
+      "sha256": "f259e7786053832a47a1326499cb5b15487e0c9848b910d3b4e212f9e3093da3"
+    },
+    {
+      "id": "sd1_color_pink",
+      "text": "Pink! Let's draw.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_pink",
+      "focus": "pink",
+      "stress": [
+        "pink"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161015,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_pink.mp3",
+      "fingerprint": "4a2a525ac19353da6fc6e9772ced417a5b1096f730f34848303e3ee9b64a8053",
+      "duration": 1.128,
+      "rms_dbfs": -19.85,
+      "peak_dbfs": -4.41,
+      "sha256": "0f65fa9c126de25b7567a4acc840dc6634a1810273e6fecf035f8d9e386dfa2d"
+    },
+    {
+      "id": "sd1_color_brown",
+      "text": "Let's draw with brown.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_brown",
+      "focus": "brown",
+      "stress": [
+        "brown"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161116,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_brown.mp3",
+      "fingerprint": "e12a7d3edaabd335ba8286010d132041f495017fc58a36cf5b0387bc7d964aa9",
+      "duration": 1.368,
+      "rms_dbfs": -20.03,
+      "peak_dbfs": -5.07,
+      "sha256": "a3a1a532355436e727f8c80665681b4ee7e028882449586e1b4d02997843c9e1"
+    },
+    {
+      "id": "sd1_color_black",
+      "text": "Black! Let's draw.",
+      "voice_profile": "pip",
+      "scene": "Symmetry Draw: color_black",
+      "focus": "black",
+      "stress": [
+        "black"
+      ],
+      "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
+      "rate": 0.96,
+      "seed": 161017,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "sd1_color_black.mp3",
+      "fingerprint": "17b773290ff39ea7788df2b90204569b3f2cca07ce9f7e71b6d58a06fb6bf964",
+      "duration": 1.536,
+      "rms_dbfs": -19.42,
+      "peak_dbfs": -5.98,
+      "sha256": "954941ccacd75b56e0a99520994643d826fab037caa0a2f091038f905ca901e4"
+    }
+  ]
+}

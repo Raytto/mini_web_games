@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-16",
+  "all_matched": true,
+  "clips": [
+    {
+      "id": "sd1_welcome",
+      "sha256": "2777780304f29d5f30524ed2dbe75b46ad292966be32161b675e61112d431822",
+      "expected": "Pick a color. Draw anywhere, and watch it mirror!",
+      "transcript": "Pick a color, draw anywhere, and watch it mirror.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_mode2",
+      "sha256": "966b45bd0e265f9beee9a16cb2011018cd7b8988293731ec1cc7961ff174e285",
+      "expected": "Two parts. Draw a mirror picture!",
+      "transcript": "Two parts. Draw a mirror picture.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_mode4",
+      "sha256": "6233e6a1561f86e3661a2f1d2ca22f1d616b5c19bf5fd14c1462b95581cafe95",
+      "expected": "Four parts. Watch your lines mirror!",
+      "transcript": "Four parts. Watch your lines, mirror.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_mode6",
+      "sha256": "ee5ae8a1561dc947e86ed51d88b7dc0eb2e2e2c4f8550ccab27e51a33734cb20",
+      "expected": "Six parts. Watch your lines mirror!",
+      "transcript": "Six parts. Watch your lines. Mirror.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_mode8",
+      "sha256": "86d52d9231541177cbac31a7e411d2086ee1371cd23c3402d74510d74073fd7e",
+      "expected": "Eight parts. Watch your lines mirror!",
+      "transcript": "Eight parts. Watch your lines, mirror.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_pen",
+      "sha256": "dfc6eb25fc95b61cea973106e493b0afb7e75bc47bd9c487617772846d38027f",
+      "expected": "Let's draw!",
+      "transcript": "Let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_eraser",
+      "sha256": "63048ab2cbdf90a41dca3c01c68893ee37656a0a3267d633aa74e23c9a1225d5",
+      "expected": "Rub a little bit away.",
+      "transcript": "Rub a little bit away.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_picture",
+      "sha256": "c7eb1757f99b7e05c3b750ca56ff3ebc2f840536727e5b4bf5a249585f759ecb",
+      "expected": "Your picture is ready!",
+      "transcript": "Your picture is ready.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_red",
+      "sha256": "9a5546bf0166a6c2a3f6fdc07f5df758e4f0880448b41d5198c8206fbefa9f12",
+      "expected": "Red! Let's draw.",
+      "transcript": "Red. Let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_orange",
+      "sha256": "7f889b822617001ae87eff180692dfd1bf98bc4c9933191506a4d62edc99de97",
+      "expected": "Orange! Let's draw.",
+      "transcript": "Orange. Let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_yellow",
+      "sha256": "e7e33b8897cae6fdd9fd08f8a1a77db1aacb5699c425297d58bd0bed452ecea7",
+      "expected": "Yellow! Let's draw.",
+      "transcript": "Yellow. Let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_green",
+      "sha256": "03a920ed5e1259c7e53ae4be3362469c5916e97a488e3f47b56bd8a5a2b3f293",
+      "expected": "Green! Let's draw.",
+      "transcript": "Green. Let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_teal",
+      "sha256": "5c4a25a43e9ecb59efb11848a9e7c6cd8474574f7dc29611b98b2dee8890a5b9",
+      "expected": "Let's draw with teal.",
+      "transcript": "Let's draw with teal.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_blue",
+      "sha256": "4f1751f178c2fea39db0172946e71335098f5e205e4d293a982788de7413b3ef",
+      "expected": "Blue! Let's draw.",
+      "transcript": "Blue, let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_purple",
+      "sha256": "f259e7786053832a47a1326499cb5b15487e0c9848b910d3b4e212f9e3093da3",
+      "expected": "Purple! Let's draw.",
+      "transcript": "Purple. Let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_pink",
+      "sha256": "0f65fa9c126de25b7567a4acc840dc6634a1810273e6fecf035f8d9e386dfa2d",
+      "expected": "Pink! Let's draw.",
+      "transcript": "Pink, let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_brown",
+      "sha256": "a3a1a532355436e727f8c80665681b4ee7e028882449586e1b4d02997843c9e1",
+      "expected": "Let's draw with brown.",
+      "transcript": "Let's draw with brown.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "sd1_color_black",
+      "sha256": "954941ccacd75b56e0a99520994643d826fab037caa0a2f091038f905ca901e4",
+      "expected": "Black! Let's draw.",
+      "transcript": "Black. Let's draw.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    }
+  ]
+}
