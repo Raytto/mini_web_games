@@ -1,11 +1,12 @@
-import {SONGS} from './songs.js?v=20261017songs1';
+import {SONGS} from './songs.js?v=20261017piano3';
 import {PianoAudio} from './audio.js?v=20261014piano1';
 const $=id=>document.getElementById(id), audio=new PianoAudio();
 const words={
- title:['小钢琴','Little Piano'],subtitle:['小小的手，也能弹出美妙音乐。','A little touch. A little music.'],free:['自由弹','Free play'],listen:['听一听','Listen'],guide:['跟着亮光弹','Follow the light'],choose:['选一首歌','Choose a song'],tempo:['速度','Speed'],slow:['慢慢来','Slow'],gentle:['轻轻弹','Gentle'],normal:['正常','Normal'],two:['两个八度 · 三角钢琴','TWO OCTAVES · GRAND PIANO'],low:['低音','LOWER'],high:['高音','HIGHER'],footer:['让小手，弹出自己的音乐。','Little hands, wonderful music.'],retry:['重新加载声音','Retry sound'],about:['关于小钢琴','About this piano'],help:['可以用几个手指一起按，弹出和弦。跟着亮光弹会逐个音等你，不催时间。把 iPad 横过来，就能看到一整排琴键。','Touch several keys together to play a chord. Follow the light waits for you, one note at a time. Turn your iPad sideways for one long keyboard.'],sound:['三角钢琴音色','Grand piano sound'],scores:['曲目与来源','Music & credits'],songnote:['15 首白键旋律，另有黑键小练习。向下滑动选更多歌曲。跟弹不用赶拍子。','15 white-key melodies and a black-key exercise. Scroll for more songs. Follow the light waits for you.'],excerptNote:['《天空之城》和《采蘑菇的小姑娘》选取开头乐句；《蓝精灵》为白键简化主题，原曲的临时变化音已简化。鲨鱼宝宝保留熟悉的主题，不连续升调。','Castle in the Sky and The Mushroom Girl use opening phrases. The Smurfs is a white-key adaptation with simplified chromatic notes. Baby Shark keeps its familiar theme without repeated key changes.'],make:['来弹自己的音乐','Make your own music'],try:['白键、黑键都可以试试。','Try the white keys and the black keys.'],tap:['点亮着的琴键','Tap the glowing key'],time:['不用着急，我会等你。','Take your time. I will wait for you.'],lift:['抬起手，再点一次','Lift your finger, then tap again'],great:['弹完啦，真棒！','You did it!'],again:['还想弹？再来一次吧。','Ready for another go?'],listenHint:['听听这首歌','Listen to the melody'],listenSub:['亮起的琴键，就是正在弹的音。','The glowing keys show each note.'],paused:['准备好了就继续','Continue when you are ready'],pausedSub:['音乐停在这里，等你回来。','Your place is saved right here.'],ready:['想先听一听吗？','Shall we listen first?'],readySub:['按播放，看看旋律怎样走。','Press play and watch the melody.'],hearNote:['听这个音','Hear note'],play:['播放','Play'],pause:['暂停','Pause'],continue:['继续','Resume'],teach:['教我弹','Teach me'],replay:['再来一次','Again'],white:['只用白键','White keys'],black:['黑键练习','Black-key practice'],whiteTheme:['白键简化主题','White-key theme'],song:['完整旋律','Full melody'],chorus:['副歌','Chorus'],theme:['主题','Theme'],excerpt:['开头乐句','Opening phrase'],loading:['琴音准备中','Loading piano'],loaded:['琴音已就绪','Ready to play'],failed:['琴音加载失败','Sound unavailable'],unlock:['点琴键开始','Tap a key'],voiceOn:['英语语音开启','English voice on'],voiceOff:['英语语音关闭','English voice off'],home:['回首页','Home'],close:['关闭','Close'],count:['个音','notes']
+ songs:['歌曲','Songs'],rounds:['遍','rounds'],minutes:['分钟','min'],title:['小钢琴','Little Piano'],subtitle:['小小的手，也能弹出美妙音乐。','A little touch. A little music.'],free:['自由弹','Free play'],listen:['听一听','Listen'],guide:['跟着亮光弹','Follow the light'],choose:['选一首歌','Choose a song'],tempo:['速度','Speed'],slow:['慢慢来','Slow'],gentle:['轻轻弹','Gentle'],normal:['正常','Normal'],two:['两个八度 · 三角钢琴','TWO OCTAVES · GRAND PIANO'],low:['低音','LOWER'],high:['高音','HIGHER'],footer:['让小手，弹出自己的音乐。','Little hands, wonderful music.'],retry:['重新加载声音','Retry sound'],about:['关于小钢琴','About this piano'],help:['可以用几个手指一起按，弹出和弦。跟着亮光弹会逐个音等你，不催时间。把 iPad 横过来，就能看到一整排琴键。','Touch several keys together to play a chord. Follow the light waits for you, one note at a time. Turn your iPad sideways for one long keyboard.'],sound:['三角钢琴音色','Grand piano sound'],scores:['曲目与来源','Music & credits'],songnote:['15 首白键旋律，另有黑键小练习。向下滑动选更多歌曲。跟弹不用赶拍子。','15 white-key melodies and a black-key exercise. Scroll for more songs. Follow the light waits for you.'],excerptNote:['每首安排 2—4 遍自然重复。《蓝精灵》包含主歌和副歌；《天空之城》加长开头主题，两首的临时变化音简化为白键。《采蘑菇的小姑娘》重复开头乐句；鲨鱼宝宝保持同调。','Each arrangement repeats 2–4 times. The Smurfs includes its verse and refrain; Castle in the Sky has a longer opening theme. Both simplify chromatic notes to white keys. The Mushroom Girl repeats its opening phrases; Baby Shark stays in one key.'],make:['来弹自己的音乐','Make your own music'],try:['白键、黑键都可以试试。','Try the white keys and the black keys.'],tap:['点亮着的琴键','Tap the glowing key'],time:['不用着急，我会等你。','Take your time. I will wait for you.'],lift:['抬起手，再点一次','Lift your finger, then tap again'],great:['弹完啦，真棒！','You did it!'],again:['还想弹？再来一次吧。','Ready for another go?'],listenHint:['听听这首歌','Listen to the melody'],listenSub:['亮起的琴键，就是正在弹的音。','The glowing keys show each note.'],paused:['准备好了就继续','Continue when you are ready'],pausedSub:['音乐停在这里，等你回来。','Your place is saved right here.'],ready:['想先听一听吗？','Shall we listen first?'],readySub:['按播放，看看旋律怎样走。','Press play and watch the melody.'],hearNote:['听这个音','Hear note'],play:['播放','Play'],pause:['暂停','Pause'],continue:['继续','Resume'],teach:['教我弹','Teach me'],replay:['再来一次','Again'],white:['只用白键','White keys'],black:['黑键练习','Black-key practice'],whiteTheme:['白键简化主题','White-key theme'],song:['完整旋律','Full melody'],chorus:['副歌','Chorus'],theme:['主题','Theme'],excerpt:['开头乐句','Opening phrase'],loading:['琴音准备中','Loading piano'],loaded:['琴音已就绪','Ready to play'],failed:['琴音加载失败','Sound unavailable'],unlock:['点琴键开始','Tap a key'],voiceOn:['英语语音开启','English voice on'],voiceOff:['英语语音关闭','English voice off'],home:['回首页','Home'],close:['关闭','Close'],count:['个音','notes']
 };
 let lang='en';try{lang=window.parent.XiaoxiaoI18n?.language || (localStorage.getItem('xiaoxiaoLanguage')==='zh'?'zh':'en');}catch{}
 const t=key=>words[key]?.[lang==='zh'?0:1] || key;
+let songMode='listen';
 let song=SONGS[0],mode='free',cursor=0,finished=false,running=false,everStarted=false,speed=.85;
 let scheduled=[],scheduleIndex=0,nextTime=0,endTime=0,timer=null,raf=null,voicesOn=true,welcomed=false,loadFailed=false;
 let currentAuto=-1,pointers=new Map(),computer=new Map(),lastAdvance=0,completionTimer=null;
@@ -46,7 +47,8 @@ function clearVisual(){keys.forEach(k=>k.classList.remove('sounding'));}
 function render(){
  document.body.dataset.playMode=mode;
  $('song-name').textContent=song[lang];$('song-icon').textContent=song.icon;$('kind').textContent=t(song.kind);$('tempo-wrap').hidden=mode!=='listen';
- document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===mode));
+ document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===(mode==='free'&&b.closest('.song-mode')?songMode:mode)));
+ document.querySelectorAll('[data-panel]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.panel===(mode==='free'?'free':'songs')));
  $('restart').hidden=mode==='free';$('progress').style.width=(mode==='free'?0:cursor/song.notes.length*100)+'%';
  $('progress-label').textContent=mode==='free'?'':`${Math.min(cursor,song.notes.length)} / ${song.notes.length}`;
  keys.forEach(k=>{k.classList.remove('expected','lift');k.removeAttribute('aria-current');});
@@ -69,8 +71,8 @@ function renderSongs(){
  $('song-list').replaceChildren();$('credits').replaceChildren();
  for(const s of SONGS){
   const b=document.createElement('button');b.type='button';b.className='song-option'+(s===song?' selected':'');b.dataset.song=s.id;b.setAttribute('aria-pressed',s===song);
-  b.innerHTML=`<span class="symbol" aria-hidden="true">${s.icon}</span><span><strong>${s[lang]}</strong><small>${t(s.kind)} · ${t(s.whiteKeys?'white':'black')} · ${s.notes.length} ${t('count')}</small></span>`;
-  b.onclick=()=>{stopEverything();song=s;cursor=0;finished=false;everStarted=false;$('songs').close();renderSongs();render();if(mode==='guide')speak('guide');if(mode==='listen')startAuto();};$('song-list').append(b);
+  b.innerHTML=`<span class="symbol" aria-hidden="true">${s.icon}</span><span><strong>${s[lang]}</strong><small>${t(s.kind)} · ${t(s.whiteKeys?'white':'black')} · ${s.notes.length} ${t('count')} · ${s.repeats} ${t('rounds')}</small></span>`;
+  b.onclick=()=>{stopEverything();song=s;cursor=0;finished=false;everStarted=false;$('songs').close();renderSongs();render();if(mode==='guide')speak('guide');};$('song-list').append(b);
   const li=document.createElement('li');li.textContent=s.credit+' ';if(s.source){const a=document.createElement('a');a.href=s.source;a.target='_blank';a.rel='noopener';a.textContent=lang==='zh'?'曲谱参考':'Score reference';li.append(a);}$('credits').append(li);
  }
 }
@@ -91,7 +93,7 @@ function pause(){
 function schedule(){
  if(!running)return;const ctx=audio.ctx;
  while(scheduleIndex<song.notes.length && nextTime<ctx.currentTime+.14){
-  const n=song.notes[scheduleIndex],duration=n.beats*60/song.bpm/speed,sounding=Math.max(.06,(n.soundBeats??n.beats)*60/song.bpm/speed*.88);
+  const n=song.notes[scheduleIndex],duration=n.beats*60/song.bpm/speed,gap=Math.min(.12,Math.max(.06,duration*.18)),sounding=Math.max(.035,Math.min((n.soundBeats??n.beats)*60/song.bpm/speed*.9,duration-gap));
   audio.note(n.midi,nextTime,sounding);scheduled.push({index:scheduleIndex,at:nextTime,off:nextTime+sounding,midi:n.midi});nextTime+=duration;scheduleIndex++;
  }
  endTime=nextTime;
@@ -109,9 +111,12 @@ function startAuto(){
  render();schedule();timer=setInterval(schedule,35);raf=requestAnimationFrame(animate);
 }
 function modeChange(next){
- stopEverything();mode=next;cursor=0;finished=false;everStarted=false;lastAdvance=0;welcomed=true;audio.unlock().catch(()=>{});render();
- if(mode==='listen')startAuto();if(mode==='guide')speak('guide');
+ if(next===mode)return;
+ if(running)pause();stopEverything();mode=next;if(next!=='free')songMode=next;
+ lastAdvance=0;welcomed=true;audio.unlock().catch(()=>{});render();
+ if(mode==='guide'&&!finished)speak('guide');
 }
+
 function press(midi,id,collection){
  if(!audio.ready || collection.has(id))return;
  if(mode==='listen' && running)pause();
@@ -138,6 +143,7 @@ window.addEventListener('keydown',e=>{if(e.repeat || $('songs').open || $('about
 window.addEventListener('keyup',e=>release(e.code,computer));
 $('keyboard').addEventListener('click',e=>{if(e.detail===0&&e.target.closest('.key')&&!e.isTrusted){const midi=Number(e.target.closest('.key').dataset.note);press(midi,'accessible',computer);release('accessible',computer);}});
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>modeChange(b.dataset.mode));
+ document.querySelector('[data-panel="songs"]').onclick=()=>modeChange(songMode);
 $('play').onclick=()=>{if(mode==='free')modeChange('guide');else if(mode==='guide'){if(finished){stopEverything();cursor=0;finished=false;lastAdvance=0;render();speak('guide');}else{audio.unlock().catch(()=>{});audio.stopSpeech();audio.note(song.notes[cursor].midi,audio.ctx.currentTime,.7);}}else if(running)pause();else startAuto();};
 $('restart').onclick=()=>{const wasRunning=running;stopEverything();cursor=0;finished=false;everStarted=false;lastAdvance=0;render();if(wasRunning)startAuto();};
 $('tempo').onchange=()=>{const wasRunning=running;if(running)pause();speed=Number($('tempo').value);if(wasRunning)startAuto();};

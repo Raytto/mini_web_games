@@ -36,3 +36,14 @@ body[data-play-mode="free"] .song-bar,body[data-play-mode="free"] .score-line,bo
 /* Keep longer song titles inside the lesson strip and the expanded chooser. */
 #choose{min-width:0;flex:1}#choose>span:nth-child(2){min-width:0}#song-name{display:block;overflow-wrap:anywhere}#song-icon,.chevron{flex-shrink:0}.song-option>span:last-child{min-width:0}.song-option strong{overflow-wrap:anywhere}
 #songs .dialog-heading{position:sticky;top:-22px;background:#fffcf4;z-index:2;padding:10px 0}
+
+/* One song desk, with a compact choice of listening or guided playing. */
+.modes button{flex:1}.song-options{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0}
+.song-mode{display:flex;gap:4px;padding:3px;background:#eceee3;border-radius:13px}.song-mode button{min-height:44px;padding:0 14px;border-radius:10px;background:transparent;font-size:13px;font-weight:650;white-space:nowrap}.song-mode button[aria-pressed=true]{background:#fffdf5;box-shadow:0 2px 5px #3c584515;color:#426c50}
+#tempo-wrap{display:flex;align-items:center;gap:6px;font-size:11px;color:#7a8876}#tempo-wrap select{height:44px;border:1px solid #d9dfcb;border-radius:10px;background:#fffdf5;padding:0 7px;font-size:12px}
+body[data-play-mode=free] .song-options{display:none}
+@media(max-width:600px){.song-options{gap:5px}.song-mode{gap:1px}.song-mode button{padding:0 9px;font-size:12px}#tempo-wrap>span{display:none}#tempo-wrap select{max-width:78px;padding:0 4px}}
+@media(orientation:portrait) and (max-height:700px){.app{gap:5px}.instrument{min-height:210px}.octave,.octave+.octave{min-height:80px}.music-desk{padding-top:4px}.lesson{min-height:48px}.score-line{height:28px}.keyboard{gap:8px}footer{display:none}}
+@media(orientation:landscape) and (max-height:500px){.song-bar{grid-column:1;grid-row:1}.song-options{grid-column:2;grid-row:1;margin:0;gap:5px}.song-mode button{padding:0 8px;font-size:12px}#tempo-wrap>span{display:none}.lesson{grid-column:2;grid-row:2}.score-line{grid-column:1;grid-row:2}.progress-track{grid-row:3}}
+
+@media(max-width:360px){.song-mode button{font-size:11px;padding:0 6px}#tempo-wrap select{font-size:11px;max-width:66px}}

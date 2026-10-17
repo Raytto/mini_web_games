@@ -28,6 +28,25 @@ export const SONGS = [
   {id:'bingo',zh:'小狗宾果',en:'B-I-N-G-O',icon:'🐶',bpm:108,kind:'song',credit:'Traditional English-language nursery song, B-I-N-G-O. One verse, original single-note arrangement in C.',source:'https://en.wikipedia.org/wiki/Bingo_(folk_song)',notes:score('G4 | C5 C5 C5 G4 | A4 A4 G4 G4 | C5 C5 D5 D5 | E5:2 C5:2 | E5 E5 F5:2 | E5 E5 D5:2 | D5 D5 E5:2 | D5 D5 C5:2 | C5 C5 D5:2 | C5 C5 B4:2 | G4 A4 B4 C5 | D5 C5 C5:3')},
   {id:'raindrops',zh:'黑键小雨滴',en:'Black-key Raindrops',icon:'•',bpm:80,kind:'song',credit:'Original pentatonic exercise for Xiaoxiao Little Piano, 2026. Five black keys.',source:null,notes:score('C#4 D#4 F#4:2 D#4 C#4:2 F#4 G#4 A#4:2 G#4 F#4:2 D#4 F#4 G#4 D#4 C#4:3')}
 ];
+// Phrase-complete practice arrangements, including natural repeated verses.
+const byId = id => SONGS.find(s => s.id === id);
+const smurfs = byId('smurfs');
+smurfs.notes.at(-1).beats=4;smurfs.notes.at(-1).soundBeats=3.5;
+smurfs.notes.push(...score('C5 G4 | G4 E5:0.5 E5:0.5 | C5 G4 | E4:3 G4 | F4 D5:0.5 D5:0.5 | B4 F4 | D4:3.5 E4:0.25 F4:0.25 | G4:0.5 F4:0.5 E4:0.5 F4:0.5 | G4:0.5 F4:0.5 E4:0.5 F4:0.5 | G4:0.5 G4:0.25 F4:0.25 G4:0.5 C5:0.5 | E5:1.5 D4:0.25 E4:0.25 | F4:0.5 E4:0.5 F4:0.5 D5:0.5 | C5:0.5 B4:0.5 A4:0.5 B4:0.5 | C5:4:3.5'));
+smurfs.credit='郑秋枫 / Zheng Qiufeng, 蓝精灵之歌. Sung verse and refrain, repeated twice; white-key teaching adaptation in C. F-sharp passing tones simplified to F natural. Instrumental introduction omitted; no lyrics.';
+const castle=byId('castle');
+castle.notes.push(...score('E4:0.5 E4:0.5 F4:1.5 E4:0.5 F4:0.5 C5:1.5 | E4:2 E4:0.5 C5:0.5 C5:0.5 C5:0.5 | B4:1.5 F4:0.5 F4 B4 | B4:4:3.5'));
+castle.kind='whiteTheme';castle.credit='Joe Hisaishi, Kimi wo Nosete. Extended opening theme, repeated for practice. White-key adaptation in A minor: chromatic passing F-sharp simplified to F natural; not a complete score.';
+// Preserve traditional verse structures; repeating a verse keeps short nursery
+// melodies playable for about a minute without inventing unrelated extra notes.
+const repetitions={twinkle:2,mary:3,frere:3,jingle:2,joy:3,castle:3,smurfs:2,mushroom:3,'baby-shark':4,'old-macdonald':2,clementine:3,'row-boat':3,'london-bridge':3,birthday:3,bingo:2,raindrops:3};
+for(const song of SONGS){
+ const verse=song.notes.map(n=>({...n}));song.sectionNotes=verse.length;song.repeats=repetitions[song.id];
+ song.notes=Array.from({length:song.repeats},()=>verse.map(n=>({...n}))).flat();
+ song.credit+=` Practice arrangement: ${song.repeats} rounds, ${song.notes.length} notes in total.`;
+ song.durationSeconds=song.notes.reduce((sum,n)=>sum+n.beats,0)*60/song.bpm;
+}
+
 const order = ['twinkle','smurfs','mushroom','baby-shark','old-macdonald','clementine'];
 SONGS.sort((a,b)=>(order.includes(a.id)?order.indexOf(a.id):order.length)-(order.includes(b.id)?order.indexOf(b.id):order.length));
 const whitePitchClasses = new Set([0, 2, 4, 5, 7, 9, 11]);
