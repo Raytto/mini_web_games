@@ -1,5 +1,5 @@
 import { SIZE, MODES, COLORS, PEN_SIZES, ERASER_SIZES, segment, action, hasInk, validateDocument } from './engine.js?v=20261016sym1';
-import { Voice } from './voice.js?v=20261016sym1';
+import { Voice } from './voice.js?v=20261017warm1';
 
 const $ = id => document.getElementById(id);
 const canvas = $('drawing'), ctx = canvas.getContext('2d'), base = document.createElement('canvas');

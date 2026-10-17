@@ -13,21 +13,23 @@
     "id": "where_cat",
     "text": "Where's the cat?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "cat",
-    "instruction": "Curious playful question; strongly stress cat; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_cat",
     "text": "Hello, cat!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "greeting",
     "focus": "cat",
-    "instruction": "Delighted greeting; warmly stretch Hello and strongly stress cat; clear diction.",
-    "rate": 0.96
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dog",
@@ -43,11 +45,12 @@
     "id": "where_dog",
     "text": "Where's the dog?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "dog",
-    "instruction": "Curious playful question; strongly stress dog; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_dog",
@@ -73,12 +76,12 @@
     "id": "where_duck",
     "text": "Where is the duck?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "duck",
-    "instruction": "好奇清亮的童声，准确读原文，重读 duck，duck 押韵 luck，每个单词清晰，不加词。",
-    "rate": 1.0,
-    "seed": 2036
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_duck",
@@ -104,11 +107,12 @@
     "id": "where_bear",
     "text": "Where's the bear?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "bear",
-    "instruction": "Curious playful question; strongly stress bear; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_bear",
@@ -501,11 +505,12 @@
     "id": "where_rabbit",
     "text": "Where's the rabbit?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "rabbit",
-    "instruction": "Curious playful question; strongly stress rabbit; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_rabbit",
@@ -562,11 +567,12 @@
     "id": "where_cow",
     "text": "Where's the cow?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "cow",
-    "instruction": "Curious playful question; strongly stress cow; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_cow",
@@ -602,11 +608,12 @@
     "id": "where_pig",
     "text": "Where's the pig?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "pig",
-    "instruction": "Curious playful question; strongly stress pig; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_pig",
@@ -643,11 +650,12 @@
     "id": "where_sheep",
     "text": "Where's the sheep?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "sheep",
-    "instruction": "Curious playful question; strongly stress sheep; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_sheep",
@@ -684,12 +692,12 @@
     "id": "where_chick",
     "text": "Where is the chick?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "chick",
-    "instruction": "好奇明亮的童声，准确读原文，重读 chick，chick 押韵 stick，每词清晰，不加词。",
-    "rate": 1.0,
-    "seed": 2036
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_chick",
@@ -725,12 +733,12 @@
     "id": "where_hippo",
     "text": "Where is the hippo?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "hippo",
-    "instruction": "好奇的童声，用提问语气，逐字清晰读 Where is the hippo，重读 HIPPO，不加词。",
-    "rate": 1.0,
-    "seed": 2036
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_hippo",
@@ -766,11 +774,12 @@
     "id": "where_elephant",
     "text": "Where's the elephant?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "elephant",
-    "instruction": "Curious playful question; strongly stress elephant; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_elephant",
@@ -806,11 +815,12 @@
     "id": "where_lion",
     "text": "Where's the lion?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "lion",
-    "instruction": "Curious playful question; strongly stress lion; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_lion",
@@ -848,11 +858,12 @@
     "id": "where_tiger",
     "text": "Where's the tiger?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "tiger",
-    "instruction": "Curious playful question; strongly stress tiger; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_tiger",
@@ -888,11 +899,12 @@
     "id": "where_giraffe",
     "text": "Where is the giraffe?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "giraffe",
-    "instruction": "Curious playful question; strongly stress giraffe; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_giraffe",
@@ -928,11 +940,12 @@
     "id": "where_zebra",
     "text": "Where's the zebra?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "zebra",
-    "instruction": "Curious playful question; strongly stress zebra; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_zebra",
@@ -968,11 +981,12 @@
     "id": "where_panda",
     "text": "Where's the panda?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "panda",
-    "instruction": "Curious playful question; strongly stress panda; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_panda",
@@ -1008,11 +1022,12 @@
     "id": "where_monkey",
     "text": "Where's the monkey?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "monkey",
-    "instruction": "Curious playful question; strongly stress monkey; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_monkey",
@@ -1048,11 +1063,12 @@
     "id": "where_koala",
     "text": "Where's the koala?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "koala",
-    "instruction": "Curious playful question; strongly stress koala; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_koala",
@@ -1088,11 +1104,12 @@
     "id": "where_fox",
     "text": "Where's the fox?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "fox",
-    "instruction": "Curious playful question; strongly stress fox; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_fox",
@@ -1128,11 +1145,12 @@
     "id": "where_squirrel",
     "text": "Where's the squirrel?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "squirrel",
-    "instruction": "Curious playful question; strongly stress squirrel; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_squirrel",
@@ -1169,11 +1187,12 @@
     "id": "where_penguin",
     "text": "Where's the penguin?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "penguin",
-    "instruction": "Curious playful question; strongly stress penguin; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_penguin",
@@ -1209,11 +1228,12 @@
     "id": "where_owl",
     "text": "Where's the owl?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "owl",
-    "instruction": "Curious playful question; strongly stress owl; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_owl",
@@ -1249,11 +1269,12 @@
     "id": "where_parrot",
     "text": "Where's the parrot?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "parrot",
-    "instruction": "Curious playful question; strongly stress parrot; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_parrot",
@@ -1289,11 +1310,12 @@
     "id": "where_frog",
     "text": "Where's the frog?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "frog",
-    "instruction": "Curious playful question; strongly stress frog; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_frog",
@@ -1329,11 +1351,12 @@
     "id": "where_turtle",
     "text": "Where's the turtle?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "turtle",
-    "instruction": "Curious playful question; strongly stress turtle; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_turtle",
@@ -1369,11 +1392,12 @@
     "id": "where_deer",
     "text": "Where is the deer?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "deer",
-    "instruction": "Curious playful question; strongly stress deer; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_deer",
@@ -1409,12 +1433,12 @@
     "id": "where_hedgehog",
     "text": "Where's the hedgehog?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "hedgehog",
-    "instruction": "Read exact text only. Smiling child; clearly stress HEDGEHOG. No added words or sounds.",
-    "rate": 0.95,
-    "seed": 2028
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_hedgehog",
@@ -1450,11 +1474,12 @@
     "id": "where_dolphin",
     "text": "Where's the dolphin?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "dolphin",
-    "instruction": "Curious playful question; strongly stress dolphin; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_dolphin",
@@ -1490,11 +1515,12 @@
     "id": "where_octopus",
     "text": "Where's the octopus?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "octopus",
-    "instruction": "Curious playful question; strongly stress octopus; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_octopus",
@@ -1530,11 +1556,12 @@
     "id": "where_fish",
     "text": "Where's the fish?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question",
     "focus": "fish",
-    "instruction": "Curious playful question; strongly stress fish; clear vowels; smiling rising intonation.",
-    "rate": 0.94
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "hello_fish",
@@ -3216,671 +3243,672 @@
     "id": "great",
     "text": "Great!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration",
     "focus": "Great",
-    "instruction": "A delighted child cheering GREAT! Big happy pitch rise and fall; clear, compact, no shouting.",
-    "rate": 0.98
+    "instruction": "Quiet warm appreciation. Rounded mellow voice and a small smile. No shouting or high-pitched cheer.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_cat",
     "text": "This is a cat.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 57586
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_cat",
     "text": "Yes! It is a cat!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 25328
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_dog",
     "text": "This is a dog.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 3026
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_dog",
     "text": "Yes! It is a dog!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 10328
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_rabbit",
     "text": "This is a rabbit.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 27520
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_rabbit",
     "text": "Yes! It is a rabbit!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 52088
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_bear",
     "text": "This is a bear.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 37985
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_bear",
     "text": "Yes! It is a bear!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 60184
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_duck",
     "text": "This is a duck.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 33966
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_duck",
     "text": "Yes! It is a duck!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 3896
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_cow",
     "text": "This is a cow.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 26232
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_cow",
     "text": "Yes! It is a cow!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 21435
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_pig",
     "text": "This is a pig.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 40407
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_pig",
     "text": "Yes! It is a pig!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 43608
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_sheep",
     "text": "This is a sheep.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 36979
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_sheep",
     "text": "Yes! It is a sheep!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 7640
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_chick",
     "text": "This is a chick.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 50618
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_chick",
     "text": "Yes! It is a chick!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 13064
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "lf_p_this_hippo",
     "text": "This is a hippo.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 48172
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_hippo",
     "text": "Yes! It is a hippo!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 56640
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_elephant",
     "text": "This is an elephant.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 8000
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_elephant",
     "text": "Yes! It is an elephant!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 173
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_lion",
     "text": "This is a lion.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 20182
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_lion",
     "text": "Yes! It is a lion!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 4221
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_tiger",
     "text": "This is a tiger.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 5247
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_tiger",
     "text": "Yes! It is a tiger!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 8560
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_giraffe",
     "text": "This is a giraffe.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 32854
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_giraffe",
     "text": "Yes! It is a giraffe!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 64129
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_zebra",
     "text": "This is a zebra.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 20594
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_zebra",
     "text": "Yes! It is a zebra!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 23138
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_panda",
     "text": "This is a panda.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 17290
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_panda",
     "text": "Yes! It is a panda!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 45222
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_monkey",
     "text": "This is a monkey.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 55164
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_monkey",
     "text": "Yes! It is a monkey!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 14179
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_koala",
     "text": "This is a koala.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 60843
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_koala",
     "text": "Yes! It is a koala!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 38714
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_fox",
     "text": "This is a fox.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 34177
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_fox",
     "text": "Yes! It is a fox!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 35104
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_squirrel",
     "text": "This is a squirrel.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 12473
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_squirrel",
     "text": "Yes! It is a squirrel!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 18730
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_penguin",
     "text": "This is a penguin.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 62634
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_penguin",
     "text": "Yes! It is a penguin!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 56292
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_owl",
     "text": "This is an owl.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 26564
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_owl",
     "text": "Yes! It is an owl!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 52185
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_parrot",
     "text": "This is a parrot.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 39513
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_parrot",
     "text": "Yes! It is a parrot!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 58464
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_frog",
     "text": "This is a frog.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 15035
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_frog",
     "text": "Yes! It is a frog!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 47143
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_turtle",
     "text": "This is a turtle.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 29617
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_turtle",
     "text": "Yes! It is a turtle!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 5075
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_deer",
     "text": "This is a deer.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 65150
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_deer",
     "text": "Yes! It is a deer!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 5506
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_hedgehog",
     "text": "This is a hedgehog.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 26428
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_hedgehog",
     "text": "Yes! It is a hedgehog!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 12956
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_dolphin",
     "text": "This is a dolphin.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 48034
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_dolphin",
     "text": "Yes! It is a dolphin!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 58025
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_octopus",
     "text": "This is an octopus.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 58398
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_octopus",
     "text": "Yes! It is an octopus!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 38103
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_fish",
     "text": "This is a fish.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 57338
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_fish",
     "text": "Yes! It is a fish!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "亲切好奇的童声，关键名词重读，短句清楚舒缓；只读英文原文。",
-    "rate": 0.94,
-    "seed": 59605
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_circle",
@@ -3897,12 +3925,12 @@
     "id": "lf_j_shape_circle",
     "text": "This is a circle. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 5253
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_square",
@@ -3919,12 +3947,12 @@
     "id": "lf_j_shape_square",
     "text": "This is a square. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 16779
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_triangle",
@@ -3941,12 +3969,12 @@
     "id": "lf_j_shape_triangle",
     "text": "This is a triangle. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 53657
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_star",
@@ -3963,12 +3991,12 @@
     "id": "lf_j_shape_star",
     "text": "This is a star. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 37245
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_heart",
@@ -3985,12 +4013,12 @@
     "id": "lf_j_shape_heart",
     "text": "This is a heart. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 34461
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_diamond",
@@ -4007,12 +4035,12 @@
     "id": "lf_j_shape_diamond",
     "text": "This is a diamond. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 46567
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_apple",
@@ -4029,12 +4057,12 @@
     "id": "lf_j_shape_apple",
     "text": "This is an apple. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 57936
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_pear",
@@ -4051,12 +4079,12 @@
     "id": "lf_j_shape_pear",
     "text": "This is a pear. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 33056
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_banana",
@@ -4073,12 +4101,12 @@
     "id": "lf_j_shape_banana",
     "text": "This is a banana. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 30142
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_strawberry",
@@ -4095,12 +4123,12 @@
     "id": "lf_j_shape_strawberry",
     "text": "This is a strawberry. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 47224
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_carrot",
@@ -4117,12 +4145,12 @@
     "id": "lf_j_shape_carrot",
     "text": "This is a carrot. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 26283
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_lemon",
@@ -4139,12 +4167,12 @@
     "id": "lf_j_shape_lemon",
     "text": "This is a lemon. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 14071
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_car",
@@ -4161,12 +4189,12 @@
     "id": "lf_j_shape_car",
     "text": "This is a car. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 52099
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_bus",
@@ -4183,12 +4211,12 @@
     "id": "lf_j_shape_bus",
     "text": "This is a bus. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 21052
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_train",
@@ -4205,12 +4233,12 @@
     "id": "lf_j_shape_train",
     "text": "This is a train. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 32692
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_boat",
@@ -4227,12 +4255,12 @@
     "id": "lf_j_shape_boat",
     "text": "This is a boat. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 54460
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_plane",
@@ -4249,12 +4277,12 @@
     "id": "lf_j_shape_plane",
     "text": "This is a plane. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 20344
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_rocket",
@@ -4271,12 +4299,12 @@
     "id": "lf_j_shape_rocket",
     "text": "This is a rocket. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 57144
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_ball",
@@ -4293,12 +4321,12 @@
     "id": "lf_j_shape_ball",
     "text": "This is a ball. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 14426
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_book",
@@ -4315,12 +4343,12 @@
     "id": "lf_j_shape_book",
     "text": "This is a book. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 3706
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_cup",
@@ -4337,12 +4365,12 @@
     "id": "lf_j_shape_cup",
     "text": "This is a cup. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 49387
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_hat",
@@ -4359,12 +4387,12 @@
     "id": "lf_j_shape_hat",
     "text": "This is a hat. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 47854
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_umbrella",
@@ -4381,12 +4409,12 @@
     "id": "lf_j_shape_umbrella",
     "text": "This is an umbrella. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 1813
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_drum",
@@ -4403,12 +4431,12 @@
     "id": "lf_j_shape_drum",
     "text": "This is a drum. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 60541
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_flower",
@@ -4425,12 +4453,12 @@
     "id": "lf_j_shape_flower",
     "text": "This is a flower. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 30459
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_leaf",
@@ -4447,12 +4475,12 @@
     "id": "lf_j_shape_leaf",
     "text": "This is a leaf. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 13783
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_tree",
@@ -4469,12 +4497,12 @@
     "id": "lf_j_shape_tree",
     "text": "This is a tree. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 19787
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_moon",
@@ -4491,12 +4519,12 @@
     "id": "lf_j_shape_moon",
     "text": "This is a moon. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 31481
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_sun",
@@ -4513,12 +4541,12 @@
     "id": "lf_j_shape_sun",
     "text": "This is a sun. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 29412
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_t_got_cloud",
@@ -4535,2399 +4563,2399 @@
     "id": "lf_j_shape_cloud",
     "text": "This is a cloud. Choose a color!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 1601
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_color_red",
     "text": "This paint is red.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 29249
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_color_yellow",
     "text": "This paint is yellow.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 47280
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_color_blue",
     "text": "This paint is blue.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 56970
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "lf_j_color_green",
     "text": "This paint is green.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 47141
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_color_orange",
     "text": "This paint is orange.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 8240
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_color_purple",
     "text": "This paint is purple.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 19766
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_color_white",
     "text": "This paint is white.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 44583
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "lf_j_color_black",
     "text": "This paint is black.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 33403
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_intro",
     "text": "Let us mix colors! Choose a paint and pour it in.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 30131
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_clear",
     "text": "All clean! Choose a color and start again!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 18169
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_shape",
     "text": "Choose a shape. What would you like to paint?",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 25800
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_more",
     "text": "Choose another color. Let us mix!",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 56331
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_j_full",
     "text": "Look at your colors! Clear the dish to start again.",
     "role": "pip",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "listening: picture discovery",
     "focus": "key nouns",
-    "instruction": "活泼童声，语调起伏丰富，关键名词重读，清晰不尖叫；只读英文原文。",
-    "rate": 0.94,
-    "seed": 62443
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_horse",
     "text": "Where's the horse?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "horse",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 18806
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_horse",
     "text": "This is a horse.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "horse",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 15335
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_horse",
     "text": "Yes! It is a horse!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "horse",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 31502
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_goat",
     "text": "Where's the goat?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "goat",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 65205
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_goat",
     "text": "This is a goat.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "goat",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 2504
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_goat",
     "text": "Yes! It is a goat!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "goat",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 24179
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_hamster",
     "text": "Where's the hamster?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "hamster",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 35070
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_hamster",
     "text": "This is a hamster.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "hamster",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 7666
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_hamster",
     "text": "Yes! It is a hamster!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "hamster",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 44517
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_guinea_pig",
     "text": "Where's the guinea pig?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "guinea pig",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 59806
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_guinea_pig",
     "text": "This is a guinea pig.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "guinea pig",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 24910
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_guinea_pig",
     "text": "Yes! It is a guinea pig!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "guinea pig",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 56090
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_mouse",
     "text": "Where's the mouse?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "mouse",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 27807
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_mouse",
     "text": "This is a mouse.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "mouse",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 60643
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_mouse",
     "text": "Yes! It is a mouse!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "mouse",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 64242
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_raccoon",
     "text": "Where's the raccoon?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "raccoon",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 32163
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_raccoon",
     "text": "This is a raccoon.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "raccoon",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 45596
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_raccoon",
     "text": "Yes! It is a raccoon!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "raccoon",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 30600
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_skunk",
     "text": "Where's the skunk?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "skunk",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 64476
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_skunk",
     "text": "This is a skunk.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "skunk",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 50263
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_skunk",
     "text": "Yes! It is a skunk!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "skunk",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 63098
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_badger",
     "text": "Where's the badger?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "badger",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 25151
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_badger",
     "text": "This is a badger.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "badger",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 47214
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_badger",
     "text": "Yes! It is a badger!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "badger",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 35109
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_beaver",
     "text": "Where's the beaver?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "beaver",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 18125
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_beaver",
     "text": "This is a beaver.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "beaver",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 24635
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_beaver",
     "text": "Yes! It is a beaver!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "beaver",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 24668
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_otter",
     "text": "Where's the otter?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "otter",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 4934
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_otter",
     "text": "This is an otter.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "otter",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 49600
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_otter",
     "text": "Yes! It is an otter!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "otter",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 52218
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_sloth",
     "text": "Where's the sloth?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "sloth",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 21616
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_sloth",
     "text": "This is a sloth.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "sloth",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 50302
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_sloth",
     "text": "Yes! It is a sloth!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "sloth",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 52357
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_armadillo",
     "text": "Where's the armadillo?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "armadillo",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 40756
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_armadillo",
     "text": "This is an armadillo.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "armadillo",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 57373
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_armadillo",
     "text": "Yes! It is an armadillo!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "armadillo",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 43640
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_anteater",
     "text": "Where's the anteater?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "anteater",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 16032
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_anteater",
     "text": "This is an anteater.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "anteater",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 62611
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_anteater",
     "text": "Yes! It is an anteater!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "anteater",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 65061
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_porcupine",
     "text": "Where's the porcupine?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "porcupine",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 32030
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_porcupine",
     "text": "This is a porcupine.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "porcupine",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 40000
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_porcupine",
     "text": "Yes! It is a porcupine!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "porcupine",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 8923
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_platypus",
     "text": "Where's the platypus?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "platypus",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 9245
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_platypus",
     "text": "This is a platypus.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "platypus",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 3235
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_platypus",
     "text": "Yes! It is a platypus!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "platypus",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 4160
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_opossum",
     "text": "Where's the opossum?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "opossum",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 56915
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_opossum",
     "text": "This is an opossum.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "opossum",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 24877
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_opossum",
     "text": "Yes! It is an opossum!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "opossum",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 23200
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_wombat",
     "text": "Where's the wombat?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "wombat",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 5369
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_wombat",
     "text": "This is a wombat.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "wombat",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 3924
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_wombat",
     "text": "Yes! It is a wombat!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "wombat",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 35271
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_kangaroo",
     "text": "Where's the kangaroo?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "kangaroo",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 12821
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_kangaroo",
     "text": "This is a kangaroo.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "kangaroo",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 10426
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_kangaroo",
     "text": "Yes! It is a kangaroo!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "kangaroo",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 4877
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_camel",
     "text": "Where's the camel?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "camel",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 41127
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_camel",
     "text": "This is a camel.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "camel",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 45207
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_camel",
     "text": "Yes! It is a camel!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "camel",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 52132
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_llama",
     "text": "Where's the llama?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "llama",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 30464
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_llama",
     "text": "This is a llama.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "llama",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 12075
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_llama",
     "text": "Yes! It is a llama!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "llama",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 954
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_bison",
     "text": "Where's the bison?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "bison",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 55685
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_bison",
     "text": "This is a bison.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "bison",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 23033
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_bison",
     "text": "Yes! It is a bison!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "bison",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 27240
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_moose",
     "text": "Where's the moose?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "moose",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 55811
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_moose",
     "text": "This is a moose.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "moose",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 51369
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_moose",
     "text": "Yes! It is a moose!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "moose",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 14395
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_rhinoceros",
     "text": "Where's the rhinoceros?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "rhinoceros",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 62539
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_rhinoceros",
     "text": "This is a rhinoceros.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "rhinoceros",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 13791
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_rhinoceros",
     "text": "Yes! It is a rhinoceros!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "rhinoceros",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 10052
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_hyena",
     "text": "Where's the hyena?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "hyena",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 25751
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_hyena",
     "text": "This is a hyena.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "hyena",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 58809
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_hyena",
     "text": "Yes! It is a hyena!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "hyena",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 51096
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_wolf",
     "text": "Where's the wolf?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "wolf",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 42750
+    "instruction": "Warm rounded voice. Read every word exactly and clearly. No skipped articles or added words.",
+    "rate": 0.92,
+    "seed": 10172226
   },
   {
     "id": "lf_p_this_wolf",
     "text": "This is a wolf.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "wolf",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 27533
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_wolf",
     "text": "Yes! It is a wolf!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "wolf",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 28563
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_cheetah",
     "text": "Where's the cheetah?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "cheetah",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 40357
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_cheetah",
     "text": "This is a cheetah.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "cheetah",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 26623
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_cheetah",
     "text": "Yes! It is a cheetah!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "cheetah",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 52805
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_gorilla",
     "text": "Where's the gorilla?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "gorilla",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 45213
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_gorilla",
     "text": "This is a gorilla.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "gorilla",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 36234
+    "instruction": "Warm rounded voice. Read every word exactly and clearly. No skipped articles or added words.",
+    "rate": 0.92,
+    "seed": 10172226
   },
   {
     "id": "lf_p_yes_gorilla",
     "text": "Yes! It is a gorilla!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "gorilla",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 25997
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_orangutan",
     "text": "Where's the orangutan?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "orangutan",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 19429
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_orangutan",
     "text": "This is an orangutan.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "orangutan",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 19237
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_orangutan",
     "text": "Yes! It is an orangutan!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "orangutan",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 4092
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_meerkat",
     "text": "Where's the meerkat?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "meerkat",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 8788
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_meerkat",
     "text": "This is a meerkat.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "meerkat",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 24647
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_meerkat",
     "text": "Yes! It is a meerkat!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "meerkat",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 49423
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_lemur",
     "text": "Where's the lemur?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "lemur",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 1925
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_lemur",
     "text": "This is a lemur.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "lemur",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 22545
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_lemur",
     "text": "Yes! It is a lemur!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "lemur",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 20905
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_bat",
     "text": "Where's the bat?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "bat",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 3197
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_bat",
     "text": "This is a bat.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "bat",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 6268
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "lf_p_yes_bat",
     "text": "Yes! It is a bat!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "bat",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 14027
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_seal",
     "text": "Where's the seal?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "seal",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 45881
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_seal",
     "text": "This is a seal.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "seal",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 62190
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_seal",
     "text": "Yes! It is a seal!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "seal",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 2729
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_walrus",
     "text": "Where's the walrus?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "walrus",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 16230
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_walrus",
     "text": "This is a walrus.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "walrus",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 19646
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_walrus",
     "text": "Yes! It is a walrus!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "walrus",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 26517
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_manatee",
     "text": "Where's the manatee?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "manatee",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 41878
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_manatee",
     "text": "This is a manatee.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "manatee",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 1995
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_manatee",
     "text": "Yes! It is a manatee!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "manatee",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 8288
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_whale",
     "text": "Where's the whale?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "whale",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 5294
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_whale",
     "text": "This is a whale.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "whale",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 30550
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_whale",
     "text": "Yes! It is a whale!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "whale",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 5287
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_shark",
     "text": "Where's the shark?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "shark",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 25791
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_shark",
     "text": "This is a shark.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "shark",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 49289
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_shark",
     "text": "Yes! It is a shark!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "shark",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 54241
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_stingray",
     "text": "Where's the stingray?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "stingray",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 28830
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_stingray",
     "text": "This is a stingray.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "stingray",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 46086
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_stingray",
     "text": "Yes! It is a stingray!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "stingray",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 40514
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_seahorse",
     "text": "Where's the seahorse?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "seahorse",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 44419
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_seahorse",
     "text": "This is a seahorse.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "seahorse",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 63041
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_seahorse",
     "text": "Yes! It is a seahorse!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "seahorse",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 60553
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_jellyfish",
     "text": "Where's the jellyfish?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "jellyfish",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 13127
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_jellyfish",
     "text": "This is a jellyfish.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "jellyfish",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 64320
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_jellyfish",
     "text": "Yes! It is a jellyfish!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "jellyfish",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 13200
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_starfish",
     "text": "Where's the starfish?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "starfish",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 20536
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_starfish",
     "text": "This is a starfish.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "starfish",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 35271
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_starfish",
     "text": "Yes! It is a starfish!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "starfish",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 55305
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_crab",
     "text": "Where's the crab?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "crab",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 7582
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_crab",
     "text": "This is a crab.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "crab",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 51605
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_crab",
     "text": "Yes! It is a crab!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "crab",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 33547
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_lobster",
     "text": "Where's the lobster?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "lobster",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 20752
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_lobster",
     "text": "This is a lobster.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "lobster",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 54579
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_lobster",
     "text": "Yes! It is a lobster!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "lobster",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 38255
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_shrimp",
     "text": "Where's the shrimp?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "shrimp",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 44354
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_shrimp",
     "text": "This is a shrimp.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "shrimp",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 27396
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_shrimp",
     "text": "Yes! It is a shrimp!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "shrimp",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 51760
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_snail",
     "text": "Where's the snail?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "snail",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 47493
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_snail",
     "text": "This is a snail.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "snail",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 65459
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "lf_p_yes_snail",
     "text": "Yes! It is a snail!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "snail",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 46104
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_squid",
     "text": "Where's the squid?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "squid",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 26856
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_squid",
     "text": "This is a squid.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "squid",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 16255
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_squid",
     "text": "Yes! It is a squid!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "squid",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 15020
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_crocodile",
     "text": "Where's the crocodile?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "crocodile",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 4697
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_crocodile",
     "text": "This is a crocodile.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "crocodile",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 6130
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_crocodile",
     "text": "Yes! It is a crocodile!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "crocodile",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 5002
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_snake",
     "text": "Where's the snake?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "snake",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 63281
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_snake",
     "text": "This is a snake.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "snake",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 186
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_snake",
     "text": "Yes! It is a snake!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "snake",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 43438
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_chameleon",
     "text": "Where's the chameleon?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "chameleon",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 48946
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_chameleon",
     "text": "This is a chameleon.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "chameleon",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 25656
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_chameleon",
     "text": "Yes! It is a chameleon!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "chameleon",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 42538
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_iguana",
     "text": "Where's the iguana?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "iguana",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 33304
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_iguana",
     "text": "This is an iguana.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "iguana",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 11881
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_iguana",
     "text": "Yes! It is an iguana!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "iguana",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 27928
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_flamingo",
     "text": "Where's the flamingo?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "flamingo",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 26124
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_flamingo",
     "text": "This is a flamingo.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "flamingo",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 4075
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_flamingo",
     "text": "Yes! It is a flamingo!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "flamingo",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 46963
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_peacock",
     "text": "Where's the peacock?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "peacock",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 42983
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_peacock",
     "text": "This is a peacock.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "peacock",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 31977
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_peacock",
     "text": "Yes! It is a peacock!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "peacock",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 19373
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_ostrich",
     "text": "Where's the ostrich?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "ostrich",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 15640
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_ostrich",
     "text": "This is an ostrich.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "ostrich",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 22238
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_ostrich",
     "text": "Yes! It is an ostrich!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "ostrich",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 24997
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_eagle",
     "text": "Where's the eagle?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "eagle",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 7556
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_eagle",
     "text": "This is an eagle.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "eagle",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 23998
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_eagle",
     "text": "Yes! It is an eagle!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "eagle",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 25281
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_toucan",
     "text": "Where's the toucan?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "toucan",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 29978
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_toucan",
     "text": "This is a toucan.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "toucan",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 9587
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_toucan",
     "text": "Yes! It is a toucan!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "toucan",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 39165
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_woodpecker",
     "text": "Where's the woodpecker?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "woodpecker",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 26527
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_woodpecker",
     "text": "This is a woodpecker.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "woodpecker",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 50989
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_woodpecker",
     "text": "Yes! It is a woodpecker!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "woodpecker",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 51702
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_pelican",
     "text": "Where's the pelican?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "pelican",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 19249
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_pelican",
     "text": "This is a pelican.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "pelican",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 4834
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_pelican",
     "text": "Yes! It is a pelican!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "pelican",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 51439
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_swan",
     "text": "Where's the swan?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "swan",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 45114
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_swan",
     "text": "This is a swan.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "swan",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 50559
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_swan",
     "text": "Yes! It is a swan!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "swan",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 14893
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_goose",
     "text": "Where's the goose?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "goose",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 62868
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_goose",
     "text": "This is a goose.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "goose",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 1261
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_goose",
     "text": "Yes! It is a goose!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "goose",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 57836
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_turkey",
     "text": "Where's the turkey?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "turkey",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 7910
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_turkey",
     "text": "This is a turkey.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "turkey",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 14763
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_turkey",
     "text": "Yes! It is a turkey!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "turkey",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 2297
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_hummingbird",
     "text": "Where's the hummingbird?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "hummingbird",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 26466
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_hummingbird",
     "text": "This is a hummingbird.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "hummingbird",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 57666
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_hummingbird",
     "text": "Yes! It is a hummingbird!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "hummingbird",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 51156
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_butterfly",
     "text": "Where's the butterfly?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "butterfly",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 39166
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_butterfly",
     "text": "This is a butterfly.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "butterfly",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 13970
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_butterfly",
     "text": "Yes! It is a butterfly!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "butterfly",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 61332
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_bee",
     "text": "Where's the bee?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "bee",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 41078
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_bee",
     "text": "This is a bee.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "bee",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 61436
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_bee",
     "text": "Yes! It is a bee!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "bee",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 44396
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_ladybug",
     "text": "Where's the ladybug?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "ladybug",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 12846
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_ladybug",
     "text": "This is a ladybug.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "ladybug",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 25235
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_ladybug",
     "text": "Yes! It is a ladybug!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "ladybug",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 63433
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_dragonfly",
     "text": "Where's the dragonfly?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "dragonfly",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 11125
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_dragonfly",
     "text": "This is a dragonfly.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "dragonfly",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 43923
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_dragonfly",
     "text": "Yes! It is a dragonfly!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "dragonfly",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 2125
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_ant",
     "text": "Where's the ant?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "ant",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 58346
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_ant",
     "text": "This is an ant.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "ant",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 2145
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_ant",
     "text": "Yes! It is an ant!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "ant",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 53434
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_spider",
     "text": "Where's the spider?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "spider",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 22423
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_spider",
     "text": "This is a spider.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "spider",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 11815
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_spider",
     "text": "Yes! It is a spider!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "spider",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 50115
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_grasshopper",
     "text": "Where's the grasshopper?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "grasshopper",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 56272
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_grasshopper",
     "text": "This is a grasshopper.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "grasshopper",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 51631
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_grasshopper",
     "text": "Yes! It is a grasshopper!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "grasshopper",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 32611
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_praying_mantis",
     "text": "Where's the praying mantis?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "praying mantis",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 21573
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_praying_mantis",
     "text": "This is a praying mantis.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "praying mantis",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 63569
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_praying_mantis",
     "text": "Yes! It is a praying mantis!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "praying mantis",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 48116
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "t_ask_orange",
@@ -8473,66 +8501,66 @@
     "id": "where_tapir",
     "text": "Where's the tapir?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "tapir",
-    "instruction": "Bright clear voice. Say TAPIR as TAY-per, one word, clear p. Stress the animal name. Text only.",
-    "rate": 0.96,
-    "seed": 56822
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_tapir",
     "text": "This is a tapir.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "tapir",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 56822
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_tapir",
     "text": "Yes! It is a tapir!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "tapir",
-    "instruction": "Bright clear voice. Say TAPIR as TAY-per, one word, clear p. Stress the animal name. Text only.",
-    "rate": 0.96,
-    "seed": 56822
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "where_puffin",
     "text": "Where's the puffin?",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "question: find a hidden friend",
     "focus": "puffin",
-    "instruction": "好奇活泼的童声，动物名称清晰重读，词间稍停顿，问句有期待感；只读英文。",
-    "rate": 0.94,
-    "seed": 16509
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_this_puffin",
     "text": "This is a puffin.",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "discovery: identify the other animal",
     "focus": "puffin",
-    "instruction": "亲切好奇的童声，动物名称清晰重读，慢一点帮助听懂，温柔不责备；只读英文。",
-    "rate": 0.94,
-    "seed": 8061
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "lf_p_yes_puffin",
     "text": "Yes! It is a puffin!",
     "role": "guide",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "celebration: found the animal",
     "focus": "puffin",
-    "instruction": "开心惊喜的童声，Yes雀跃上扬，动物名称突出重读，清晰舒缓；只读英文。",
-    "rate": 0.94,
-    "seed": 56351
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

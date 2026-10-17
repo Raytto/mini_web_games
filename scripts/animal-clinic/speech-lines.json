@@ -13,13 +13,13 @@
   {
     "id": "ac1_next",
     "text": "Here comes another little friend!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_next",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131021
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_done",
@@ -79,184 +79,184 @@
   {
     "id": "ac1_tool_hand",
     "text": "A gentle helping hand.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_tool_hand",
     "focus": "Helping hand",
     "stress": [
       "Helping hand"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131027
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_choose_hand",
     "text": "Use your gentle helping hand.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_choose_hand",
     "focus": "Helping hand",
     "stress": [
       "Helping hand"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131028
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_tool_sponge",
     "text": "This is a soft sponge.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_tool_sponge",
     "focus": "Soft sponge",
     "stress": [
       "Soft sponge"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131029
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_choose_sponge",
     "text": "Find the soft sponge.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_choose_sponge",
     "focus": "Soft sponge",
     "stress": [
       "Soft sponge"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131030
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "ac1_tool_towel",
     "text": "This is a fluffy towel.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_tool_towel",
     "focus": "Fluffy towel",
     "stress": [
       "Fluffy towel"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131031
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_choose_towel",
     "text": "Find the fluffy towel.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_choose_towel",
     "focus": "Fluffy towel",
     "stress": [
       "Fluffy towel"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131032
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_tool_cotton",
     "text": "This is soft cotton.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_tool_cotton",
     "focus": "Soft cotton",
     "stress": [
       "Soft cotton"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131033
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_choose_cotton",
     "text": "Find the soft cotton.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_choose_cotton",
     "focus": "Soft cotton",
     "stress": [
       "Soft cotton"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131034
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_tool_bandage",
     "text": "This is a little bandage.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_tool_bandage",
     "focus": "Little bandage",
     "stress": [
       "Little bandage"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131035
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_choose_bandage",
     "text": "Find the little bandage.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_choose_bandage",
     "focus": "Little bandage",
     "stress": [
       "Little bandage"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131036
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_tool_brush",
     "text": "This is a soft brush.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_tool_brush",
     "focus": "Soft brush",
     "stress": [
       "Soft brush"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131037
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_choose_brush",
     "text": "Find the soft brush.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_choose_brush",
     "focus": "Soft brush",
     "stress": [
       "Soft brush"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131038
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "ac1_tool_coldpack",
     "text": "This is a cool pack.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_tool_coldpack",
     "focus": "Cool pack",
     "stress": [
       "Cool pack"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131039
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_choose_coldpack",
     "text": "Find the cool pack.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_choose_coldpack",
     "focus": "Cool pack",
     "stress": [
       "Cool pack"
     ],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131040
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_ask_roll",
@@ -437,13 +437,13 @@
   {
     "id": "ac1_intro_turtle",
     "text": "Turtle rolled onto its back. Let us help.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_turtle",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131057
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_turtle",
@@ -459,13 +459,13 @@
   {
     "id": "ac1_intro_rabbit",
     "text": "Bunny splashed in a muddy puddle.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_rabbit",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131059
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_rabbit",
@@ -481,13 +481,13 @@
   {
     "id": "ac1_intro_cat",
     "text": "Kitty has a little scratch on its paw.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_cat",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131061
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_cat",
@@ -503,13 +503,13 @@
   {
     "id": "ac1_intro_hedgehog",
     "text": "Hedgehog has leaves stuck in its coat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_hedgehog",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131063
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_hedgehog",
@@ -525,13 +525,13 @@
   {
     "id": "ac1_intro_bear",
     "text": "Bear has a little bump. Let us be gentle.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_bear",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131065
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_bear",
@@ -547,13 +547,13 @@
   {
     "id": "ac1_intro_duck",
     "text": "Duck is wet and chilly after the rain.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_duck",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131067
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_duck",
@@ -569,13 +569,13 @@
   {
     "id": "ac1_intro_ladybug",
     "text": "Ladybug rolled onto its back. Let us help.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_ladybug",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131069
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_ladybug",
@@ -591,13 +591,13 @@
   {
     "id": "ac1_intro_fox",
     "text": "Fox has muddy paws after a forest walk.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_fox",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131071
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_fox",
@@ -613,13 +613,13 @@
   {
     "id": "ac1_intro_dog",
     "text": "Puppy has a little scratch on its paw.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_dog",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131073
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_dog",
@@ -635,13 +635,13 @@
   {
     "id": "ac1_intro_squirrel",
     "text": "Squirrel has leaves stuck in its fluffy tail.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_squirrel",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131075
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_squirrel",
@@ -657,13 +657,13 @@
   {
     "id": "ac1_intro_panda",
     "text": "Panda has a little bump. Let us help.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_panda",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131077
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_panda",
@@ -679,13 +679,13 @@
   {
     "id": "ac1_intro_penguin",
     "text": "Penguin is wet and chilly after the rain.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Animal Clinic: ac1_intro_penguin",
     "focus": "",
     "stress": [],
-    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
-    "rate": 0.94,
-    "seed": 131079
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ac1_thanks_penguin",

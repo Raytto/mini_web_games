@@ -1,5 +1,9 @@
 # 小游戏配音维护
 
+## Default guide voice (2026-10-17)
+
+Default guidance now uses the approved warm_guide profile (CosyVoice 3.5 Plus). Character profiles remain unchanged. The exact library/ID policy lives in `scripts/warm-guide/policy.json` and is applied by `scripts/warm_guide_policy.py` in content builders. When changing approved text, deliberately update its policy entry and regenerate/review that clip. Do not replace old guide, pip, teddy or fish profile IDs globally. Generation and SHA-bound independent ASR provenance: `/srv/data/mini_web_games/voice-refresh/20261017-warm-guide/`.
+
 本工程现有和后续新增的语言配音统一使用阿里云百炼 **CosyVoice 3.5 Plus**，模型 ID 为 `cosyvoice-v3.5-plus`（2026-09-30 用户指定）。不要退回旧 Qwen TTS、浏览器系统语音或默认成人朗读。背景音乐、动物叫声和操作音效各按原素材用途维护。
 
 本页维护共用合成工具、三种音色和最新三款英语游戏的 799 段共用库（316 段原录音＋133 段听力场景短句＋350 段百词库配音）。其余 26 款游戏的 826 段英语语音、交互映射及独立播放器见 [全合集配音接入](../game-voices/README.md)；两套清单使用同一个模型与音色配置。

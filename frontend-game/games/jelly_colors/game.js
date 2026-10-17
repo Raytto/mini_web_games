@@ -1,6 +1,6 @@
-import {Game, ui} from '../english_shared/core.js?v=20260930lf1';
+import {Game, ui} from '../english_shared/core.js?v=20261017warm1';
 import {objects, shapeArt} from '../english_shared/catalog.js?v=20260924e2';
-import {Library} from '../english_shared/library.js?v=20260930lf1';
+import {Library} from '../english_shared/library.js?v=20261017warm1';
 import {pigments, mixPigments} from './paint-mix.js?v=20260925j1';
 
 const g = new Game({

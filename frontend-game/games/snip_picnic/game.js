@@ -1,4 +1,4 @@
-import {Playground,$,svg,button,icon,accessible,Bag,distSegment,crossed,LINES} from '../playful_shared/core.js?v=20261002play1';
+import {Playground,$,svg,button,icon,accessible,Bag,distSegment,crossed,LINES} from '../playful_shared/core.js?v=20261017warm1';
 import {GARDENS,HARVEST_LINES,VERSION} from './content.js?v=20261003harvest1';
 Object.assign(LINES,HARVEST_LINES);
 const app=new Playground({id:'snip_picnic',title:'Snip & Picnic',zh:'剪绳野餐队',theme:'sky',eyebrow:'PICK · ROLL · SHARE'});

@@ -1,5 +1,5 @@
 import {BoatRound,CapacityBag,textFor} from './model.js?v=20260930duck1';
-import {DuckVoice} from './voice.js?v=20260930duck1';
+import {DuckVoice} from './voice.js?v=20261017warm1';
 
 const $=id=>document.getElementById(id);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');

@@ -46,7 +46,7 @@ export class PianoAudio {
   async say(id){
     this.stopSpeech();const token=this.speechToken;
     try{
-      if(!this.speechBuffers.has(id))this.speechBuffers.set(id,this.getBuffer(`audio/p1_${id}.mp3?v=20261014piano1`).catch(e=>{this.speechBuffers.delete(id);throw e;}));
+      if(!this.speechBuffers.has(id))this.speechBuffers.set(id,this.getBuffer(`audio/p1_${id}.mp3?v=${['welcome','guide','phrase','done'].includes(id)?'20261017warm1':'20261014piano1'}`).catch(e=>{this.speechBuffers.delete(id);throw e;}));
       const buffer=await this.speechBuffers.get(id);if(token!==this.speechToken || this.ctx.state!=='running' || document.hidden)return;
       const s=this.ctx.createBufferSource();s.buffer=buffer;s.connect(this.voiceGain);this.speech=s;s.start();s.onended=()=>{s.disconnect();if(this.speech===s)this.speech=null;};
     }catch{/* Optional narration must never prevent playing. */}

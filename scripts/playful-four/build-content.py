@@ -1,4 +1,8 @@
 from pathlib import Path
+from pathlib import Path as _WarmPath
+import sys as _warm_sys
+_warm_sys.path.insert(0, str(_WarmPath(__file__).resolve().parents[1]))
+from warm_guide_policy import apply_lines
 import os,json
 S=Path(__file__).resolve().parents[2]
 V='20261002play1'
@@ -55,7 +59,7 @@ for row in lines:
   if row['id'] in ['sp_cut','sp_red','sp_blue_other']:
    row['instruction']='Clear child English. Emphasize CUT and ROPE. No fillers. Speak the exact sentence.'
   row['text']=row['text'].replace('You’re','You are').replace('I’m','I am')
-p=S/'scripts/playful-four/speech-lines.json';p.write_text(json.dumps(lines,ensure_ascii=False,indent=2))
+p=S/'scripts/playful-four/speech-lines.json';p.write_text(json.dumps(apply_lines('frontend-game/games/playful_shared/audio', lines),ensure_ascii=False,indent=2))
 config={x['id']:x['text'] for x in lines}
 (S/'frontend-game/games/playful_shared/lines.js').write_text('export const VERSION='+json.dumps(V)+';\nexport const LINES='+json.dumps(config,ensure_ascii=False)+';\n')
 reviews=S/'scripts/playful-four/reviewed-clips.json'

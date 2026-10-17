@@ -2,6 +2,10 @@
 """Build the 100-word banks and missing speech lines from the reviewed expansion."""
 import argparse, hashlib, json, re
 from pathlib import Path
+from pathlib import Path as _WarmPath
+import sys as _warm_sys
+_warm_sys.path.insert(0, str(_WarmPath(__file__).resolve().parents[1]))
+from warm_guide_policy import apply_lines
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = Path(__file__).with_name('vocabulary-expansion.json')
 MODULE = ROOT / 'frontend-game/games/english_shared/vocabulary-100.js'
@@ -56,6 +60,7 @@ def build():
         assert set(settings) <= {'instruction', 'rate', 'seed'}
         x.update(settings)
         assert sum(1 if ord(c) < 128 else 2 for c in x['instruction']) <= 100
+    new_lines = apply_lines('frontend-game/games/english_shared/audio', new_lines)
     existing = json.loads(LINES.read_text())
     generated = {x['id']: x for x in new_lines}
     old_ids = {x['id'] for x in existing}

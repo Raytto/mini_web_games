@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Authoritative fruit garden -> browser content and scene-directed speech."""
 from pathlib import Path
+from pathlib import Path as _WarmPath
+import sys as _warm_sys
+_warm_sys.path.insert(0, str(_WarmPath(__file__).resolve().parents[1]))
+from warm_guide_policy import apply_lines
 import json
 ROOT=Path(__file__).resolve().parents[2]
 HERE=Path(__file__).parent
@@ -21,7 +25,7 @@ for g in gardens:
 say('rope','Cut the rope to drop this fruit.','guide')
 say('pick','Touch the fruit to pick it.','guide')
 say('mixed','Cut a rope, or touch the fruit.','guide')
-(HERE/'speech-lines.json').write_text(json.dumps(lines,ensure_ascii=False,indent=2)+'\n')
+(HERE/'speech-lines.json').write_text(json.dumps(apply_lines('frontend-game/games/playful_shared/audio', lines),ensure_ascii=False,indent=2)+'\n')
 if not (HERE/'reviewed-clips.json').exists():(HERE/'reviewed-clips.json').write_text('{}\n')
 (ROOT/'frontend-game/games/snip_picnic/content.js').write_text('export const VERSION='+json.dumps(VERSION)+';\nexport const GARDENS='+json.dumps(gardens,ensure_ascii=False)+';\nexport const HARVEST_LINES='+json.dumps({line['id']:line['text'] for line in lines},ensure_ascii=False)+';\n')
 print('Prepared',len(gardens),'gardens and',len(lines),'speech clips')

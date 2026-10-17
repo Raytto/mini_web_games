@@ -1,4 +1,4 @@
-import {Playground,$,svg,attr,picture,button,icon,accessible,Bag,clamp} from '../playful_shared/core.js?v=20261002play1';
+import {Playground,$,svg,attr,picture,button,icon,accessible,Bag,clamp} from '../playful_shared/core.js?v=20261017warm1';
 import {ANIMALS,SCENES,hitZone,placeSticker} from './model.js?v=20261002play1';
 const app=new Playground({id:'living_stickers',title:'Living Sticker Book',zh:'会动的贴纸书',theme:'mint',eyebrow:'MOVE A FRIEND · MAKE A STORY'});
 let sceneIndex=0,page=0,selected='cat',mode='free',placements=[],layers,spots,ghost=null,drag=null,story=0,goal=null,goalBag=new Bag([0,1,2]),solved=0,action=0,suppressClickUntil=0;

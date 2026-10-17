@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 from pathlib import Path
+from pathlib import Path as _WarmPath
+import sys as _warm_sys
+_warm_sys.path.insert(0, str(_WarmPath(__file__).resolve().parents[1]))
+from warm_guide_policy import apply_lines
 import json
 ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).parent;OUT=ROOT/'frontend-game/games/dino_dig';V='20261014dig11'
 dinosaurs=[
@@ -82,10 +86,10 @@ for line in lines:
 for line in lines:
  if line['id'].endswith(('microraptor','dilophosaurus')):
   line['instruction']='Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.';line['rate']=.9
-(HERE/'speech-distinct.json').write_text(json.dumps([r for r in lines if r['id'].endswith(('microraptor','dilophosaurus'))],ensure_ascii=False,indent=2))
+(HERE/'speech-distinct.json').write_text(json.dumps(apply_lines('frontend-game/games/dino_dig/audio', [r for r in lines if r['id'].endswith(('microraptor','dilophosaurus'))]),ensure_ascii=False,indent=2))
 content={'DINOSAURS':rows,'LAYERS':layers,'DIG_LINES':{r['id']:r['text'] for r in lines},'TOOLS':{'finebrush':{'en':'Fine brush','zh':'细毛刷'},'shovel':{'en':'Little shovel','zh':'小铲子'},'pick':{'en':'Small pick','zh':'小挖镐'},'brush':{'en':'Soft brush','zh':'软毛刷'}}}
 OUT.mkdir(parents=True,exist_ok=True)
 (OUT/'content.js').write_text('export const VERSION='+json.dumps(V)+';\n'+''.join('export const '+k+'='+json.dumps(v,ensure_ascii=False)+';\n' for k,v in content.items()))
-(HERE/'speech-lines.json').write_text(json.dumps(lines,ensure_ascii=False,indent=2))
+(HERE/'speech-lines.json').write_text(json.dumps(apply_lines('frontend-game/games/dino_dig/audio', lines),ensure_ascii=False,indent=2))
 if not(HERE/'reviewed-clips.json').exists():(HERE/'reviewed-clips.json').write_text('{}\n')
 print('Prepared',len(rows),'dinosaurs,',len(lines),'speech clips.')

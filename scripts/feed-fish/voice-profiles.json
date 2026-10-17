@@ -306,6 +306,14 @@
       "preview_text": "Hello! I'm an oarfish. What a lovely snack! Thank you, friend! I'm full now. Thank you!",
       "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v14-72edbe6df79748a384de26e2514dc5e7",
       "target_model": "cosyvoice-v3.5-plus"
+    },
+    "warm_guide": {
+      "prefix": "xxsoftc17",
+      "name": "Warm companion — approved default guide",
+      "voice_prompt": "An adult man in his thirties, warm rounded medium-low baritone, softly resonant and comforting without booming bass. A kind playful companion with a relaxed smile, like a friendly storybook bear or a father playing together. Gentle, softly spoken but fully voiced, never stern or authoritative. Native General American English. Clear accurate diction for preschool children. Soft conversational delivery, no shrillness, squeaks, shouting or commanding cadence.",
+      "preview_text": "Hello, little friend. Let's play together. Can you find the red balloon?",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxsoftc17-11ec3a487c0f49c6a0540bb87ca73751",
+      "target_model": "cosyvoice-v3.5-plus"
     }
   }
 }

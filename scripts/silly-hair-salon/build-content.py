@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Build the salon's own lines; never rewrite another game's speech library."""
 from pathlib import Path
+from pathlib import Path as _WarmPath
+import sys as _warm_sys
+_warm_sys.path.insert(0, str(_WarmPath(__file__).resolve().parents[1]))
+from warm_guide_policy import apply_lines
 import json
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -32,7 +36,7 @@ for i, (key, text) in enumerate(TEXT.items()):
                       rate=.92 if key in ('spikes','wave') else .97, seed=(81200 if key in ('spikes','wave') else 71200)+i))
 out = ROOT/'scripts/silly-hair-salon'
 out.mkdir(parents=True,exist_ok=True)
-(out/'speech-lines.json').write_text(json.dumps(lines,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(out/'speech-lines.json').write_text(json.dumps(apply_lines('frontend-game/games/playful_shared/audio', lines),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (ROOT/'frontend-game/games/silly_hair_salon/lines.js').write_text(
     'export const SALON_LINES = '+json.dumps({x['id']:x['text'] for x in lines},ensure_ascii=False)+';\n',
     encoding='utf-8')

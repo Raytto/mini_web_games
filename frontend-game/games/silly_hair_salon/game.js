@@ -1,4 +1,4 @@
-import {Playground,$,svg,attr,picture,button,icon,accessible,Bag,clamp,shuffle,LINES} from '../playful_shared/core.js?v=20261002play1';
+import {Playground,$,svg,attr,picture,button,icon,accessible,Bag,clamp,shuffle,LINES} from '../playful_shared/core.js?v=20261017warm1';
 import {STYLES,STRAND_COUNT,ROOT_Y,HAIR_LEFT,HAIR_RIGHT,makeHair,finished,needsCut,needsGrow,cutHair,growHair,assess,guidePath} from './model.js?v=20261002salon2';
 import {SALON_LINES} from './lines.js?v=20261002salon2';
 // The shared player stays unchanged. This page contributes only its own IDs.

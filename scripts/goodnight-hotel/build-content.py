@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 from pathlib import Path
+from pathlib import Path as _WarmPath
+import sys as _warm_sys
+_warm_sys.path.insert(0, str(_WarmPath(__file__).resolve().parents[1]))
+from warm_guide_policy import apply_lines
 import json
 ROOT=Path(__file__).resolve().parents[2]
 DIR=Path(__file__).parent
@@ -30,7 +34,7 @@ say('next','Here comes another sleepy friend.','guide')
 # Wrong taps repeat the current request directly, without a generic preamble.
 say('brush_more','Brush, brush, brush!','teddy')
 lines.extend(json.loads((DIR/'story-speech-lines.json').read_text()))
-(DIR/'speech-lines.json').write_text(json.dumps(lines,ensure_ascii=False,indent=2)+'\n')
+(DIR/'speech-lines.json').write_text(json.dumps(apply_lines('frontend-game/games/playful_shared/audio', lines),ensure_ascii=False,indent=2)+'\n')
 (DIR/'reviewed-clips.json').write_text('{}\n') if not (DIR/'reviewed-clips.json').exists() else None
 out=ROOT/'frontend-game/games/goodnight_hotel/content.js'
 out.write_text('export const VERSION="20261011night3";\nexport const ANIMALS='+json.dumps(animals,ensure_ascii=False)+';\nexport const STEPS='+json.dumps(steps,ensure_ascii=False)+';\nexport const NIGHT_LINES='+json.dumps({a['id']:a['text'] for a in lines},ensure_ascii=False)+';\n')

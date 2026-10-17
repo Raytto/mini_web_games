@@ -1,4 +1,4 @@
-import {Game, ui} from '../english_shared/core.js?v=20260930v100';
+import {Game, ui} from '../english_shared/core.js?v=20261017warm1';
 import {animals, animalImage} from '../english_shared/vocabulary-100.js?v=20260930v100';
 
 const g = new Game({

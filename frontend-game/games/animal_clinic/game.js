@@ -1,6 +1,6 @@
-import {Playground,$,svg,attr,button,accessible,shuffle,clamp,LINES,icon,distSegment} from '../playful_shared/core.js?v=20261002play1';
+import {Playground,$,svg,attr,button,accessible,shuffle,clamp,LINES,icon,distSegment} from '../playful_shared/core.js?v=20261017warm1';
 import {PATIENTS,TOOLS,STEPS,PROBLEMS,CLINIC_LINES,VERSION} from './content.js?v=20261013clinic3';
-import {ClinicVoice} from './voice.js?v=20261013clinic3';
+import {ClinicVoice} from './voice.js?v=20261017warm1';
 Object.assign(LINES,CLINIC_LINES);
 const app=new Playground({id:'animal_clinic',title:'Animal Clinic',zh:'动物小诊所',theme:'mint',eyebrow:'LITTLE HANDS · BIG KINDNESS'});
 app.voice.stop();app.voice=new ClinicVoice('animal_clinic',s=>app.voiceState(s));app.voiceState({enabled:app.voice.enabled});

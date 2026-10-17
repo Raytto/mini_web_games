@@ -2,53 +2,53 @@
   {
     "id": "dd1_name_microraptor",
     "text": "Microraptor!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_microraptor",
     "focus": "Microraptor",
     "stress": [
       "Microraptor"
     ],
-    "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
-    "rate": 0.9,
-    "seed": 131080
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_microraptor",
     "text": "Microraptor has feathers on its arms and legs.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_microraptor",
     "focus": "Microraptor",
     "stress": [
       "Microraptor"
     ],
-    "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
-    "rate": 0.9,
-    "seed": 131081
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_dilophosaurus",
     "text": "Dilophosaurus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_dilophosaurus",
     "focus": "Dilophosaurus",
     "stress": [
       "Dilophosaurus"
     ],
-    "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
-    "rate": 0.9,
-    "seed": 131090
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_dilophosaurus",
     "text": "Dilophosaurus has two crests on its head.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_dilophosaurus",
     "focus": "Dilophosaurus",
     "stress": [
       "Dilophosaurus"
     ],
-    "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
-    "rate": 0.9,
-    "seed": 131091
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

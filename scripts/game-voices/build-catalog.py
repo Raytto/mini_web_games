@@ -27,7 +27,7 @@ def main():
         for key in ['text', 'voice_profile', 'instruction', 'rate', 'seed']:
             assert recorded[key] == line[key], (line['id'], key, 'regenerate this clip')
         plan['clips'][line['id']] = {
-            'src': f'./voice/audio/{line["id"]}.mp3?v={plan["version"]}',
+            'src': f'./voice/audio/{line["id"]}.mp3?v={plan["version"] if line["voice_profile"] == "warm_guide" else "20260930lf1"}',
             'text': line['text'], 'profile': line['voice_profile']}
     used = set()
     variants = 0

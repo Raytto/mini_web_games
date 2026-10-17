@@ -12,12 +12,12 @@
   {
     "id": "pf_nice",
     "text": "You did it!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: pf_nice",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6811
+    "instruction": "Quiet warm appreciation. Rounded mellow voice and a small smile. No shouting or high-pitched cheer.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "pf_try",
@@ -372,32 +372,32 @@
   {
     "id": "ls_intro",
     "text": "Pick a friend. Let’s make a story!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_intro",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6847
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_play",
     "text": "Let’s watch our little story.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_play",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6848
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_finish",
     "text": "What a lovely story!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_finish",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6849
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_new",
@@ -592,62 +592,62 @@
   {
     "id": "ls_cat",
     "text": "Here’s the cat!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_cat",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6869
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_rabbit",
     "text": "Here’s the rabbit!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_rabbit",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6870
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_bear",
     "text": "Here’s the bear!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_bear",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6871
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_duck",
     "text": "Here’s the duck!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_duck",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6872
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_fox",
     "text": "Here’s the fox!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_fox",
     "stress": [],
-    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
-    "rate": 0.91,
-    "seed": 26873
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_owl",
     "text": "Here’s the owl!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_owl",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6874
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_on_table",
@@ -662,12 +662,12 @@
   {
     "id": "ls_at_on_table",
     "text": "You’re on the table!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_on_table",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6876
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_under_table",
@@ -682,12 +682,12 @@
   {
     "id": "ls_at_under_table",
     "text": "You’re under the table!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_under_table",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6878
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_in_box",
@@ -702,12 +702,12 @@
   {
     "id": "ls_at_in_box",
     "text": "You are in the box!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_in_box",
     "stress": [],
-    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
-    "rate": 0.91,
-    "seed": 26880
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_on_bench",
@@ -722,12 +722,12 @@
   {
     "id": "ls_at_on_bench",
     "text": "You’re on the bench!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_on_bench",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6882
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_under_bench",
@@ -742,12 +742,12 @@
   {
     "id": "ls_at_under_bench",
     "text": "You’re under the bench!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_under_bench",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6884
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_in_basket",
@@ -762,12 +762,12 @@
   {
     "id": "ls_at_in_basket",
     "text": "You are in the basket!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_in_basket",
     "stress": [],
-    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
-    "rate": 0.91,
-    "seed": 26886
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_on_log",
@@ -782,12 +782,12 @@
   {
     "id": "ls_at_on_log",
     "text": "You’re on the log!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_on_log",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6888
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_under_bridge",
@@ -802,12 +802,12 @@
   {
     "id": "ls_at_under_bridge",
     "text": "You’re under the bridge!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_under_bridge",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6890
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_ask_in_tent",
@@ -822,12 +822,12 @@
   {
     "id": "ls_at_in_tent",
     "text": "You’re in the tent!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Preschool play: ls_at_in_tent",
     "stress": [],
-    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
-    "rate": 0.94,
-    "seed": 6892
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ls_under_hint",

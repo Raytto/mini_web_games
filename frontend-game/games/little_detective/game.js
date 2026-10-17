@@ -2,7 +2,7 @@ import {SceneView} from './scene-view.js?v=20261001inline1';
 import {CASES,VERSION} from './cases.js?v=20261003kite1';
 import {LINES} from './lines.js?v=20261001feather1';
 import {DetectiveSession,WrongReplyBag} from './model.js?v=20261003kite1';
-import {DetectiveVoice} from './voice.js?v=20261003kite1';
+import {DetectiveVoice} from './voice.js?v=20261017warm1';
 const $=id=>document.getElementById(id),reduced=matchMedia('(prefers-reduced-motion: reduce)');
 class LittleDetective{
  constructor(){

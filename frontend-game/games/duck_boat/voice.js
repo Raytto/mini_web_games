@@ -1,4 +1,5 @@
 import {VERSION} from './model.js?v=20260930duck1';
+const WARM_GUIDE_AUDIO_IDS = new Set(["db_arrival","db_count_1","db_count_10","db_count_11","db_count_12","db_count_2","db_count_3","db_count_4","db_count_5","db_count_6","db_count_7","db_count_8","db_count_9","db_full_10","db_full_11","db_full_12","db_full_2","db_full_3","db_full_4","db_full_5","db_full_6","db_full_7","db_full_8","db_full_9","db_guide","db_intro_10","db_intro_11","db_intro_12","db_intro_2","db_intro_3","db_intro_4","db_intro_5","db_intro_6","db_intro_7","db_intro_8","db_intro_9","db_return"]);
 
 // Only the current word and one look-ahead word load. Counting order belongs to
 // the boarding sequence, so rapid tapping cannot replace or skip number words.
@@ -27,7 +28,7 @@ export class DuckVoice {
     const task=(async()=>{
       const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),4000);
       try{
-        const response=await fetch(new URL(`audio/${id}.mp3?v=${VERSION}`,import.meta.url),{signal:controller.signal});
+        const response=await fetch(new URL(`audio/${id}.mp3?v=${WARM_GUIDE_AUDIO_IDS.has(id) ? '20261017warm1' : VERSION}`,import.meta.url),{signal:controller.signal});
         if(!response.ok)throw new Error('Audio download failed');
         const buffer=await this.context().decodeAudioData(await response.arrayBuffer());
         this.buffers.set(id,buffer);while(this.buffers.size>24)this.buffers.delete(this.buffers.keys().next().value);

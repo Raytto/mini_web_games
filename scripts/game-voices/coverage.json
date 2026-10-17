@@ -1,11 +1,11 @@
 {
-  "version": "20260930lf1",
+  "version": "20261017warm1",
   "model": "cosyvoice-v3.5-plus",
   "clips": {
     "great": {
-      "src": "../english_shared/audio/great.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/great.mp3?v=20261017warm1",
       "text": "Great!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "apple": {
       "src": "../english_shared/audio/apple.mp3?v=20260930cv1",
@@ -38,9 +38,9 @@
       "profile": "guide"
     },
     "hello_cat": {
-      "src": "../english_shared/audio/hello_cat.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/hello_cat.mp3?v=20261017warm1",
       "text": "Hello, cat!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "bear": {
       "src": "../english_shared/audio/bear.mp3?v=20260930cv1",
@@ -318,104 +318,104 @@
       "profile": "guide"
     },
     "where_cat": {
-      "src": "../english_shared/audio/where_cat.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_cat.mp3?v=20261017warm1",
       "text": "Where's the cat?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_dog": {
-      "src": "../english_shared/audio/where_dog.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_dog.mp3?v=20261017warm1",
       "text": "Where's the dog?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_bear": {
-      "src": "../english_shared/audio/where_bear.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_bear.mp3?v=20261017warm1",
       "text": "Where's the bear?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_rabbit": {
-      "src": "../english_shared/audio/where_rabbit.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_rabbit.mp3?v=20261017warm1",
       "text": "Where's the rabbit?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_panda": {
-      "src": "../english_shared/audio/where_panda.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_panda.mp3?v=20261017warm1",
       "text": "Where's the panda?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_fox": {
-      "src": "../english_shared/audio/where_fox.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_fox.mp3?v=20261017warm1",
       "text": "Where's the fox?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_pig": {
-      "src": "../english_shared/audio/where_pig.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_pig.mp3?v=20261017warm1",
       "text": "Where's the pig?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_elephant": {
-      "src": "../english_shared/audio/where_elephant.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_elephant.mp3?v=20261017warm1",
       "text": "Where's the elephant?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_lion": {
-      "src": "../english_shared/audio/where_lion.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_lion.mp3?v=20261017warm1",
       "text": "Where's the lion?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_monkey": {
-      "src": "../english_shared/audio/where_monkey.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_monkey.mp3?v=20261017warm1",
       "text": "Where's the monkey?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_cow": {
-      "src": "../english_shared/audio/where_cow.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_cow.mp3?v=20261017warm1",
       "text": "Where's the cow?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_sheep": {
-      "src": "../english_shared/audio/where_sheep.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_sheep.mp3?v=20261017warm1",
       "text": "Where's the sheep?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_giraffe": {
-      "src": "../english_shared/audio/where_giraffe.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_giraffe.mp3?v=20261017warm1",
       "text": "Where is the giraffe?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_koala": {
-      "src": "../english_shared/audio/where_koala.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_koala.mp3?v=20261017warm1",
       "text": "Where's the koala?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_penguin": {
-      "src": "../english_shared/audio/where_penguin.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_penguin.mp3?v=20261017warm1",
       "text": "Where's the penguin?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_owl": {
-      "src": "../english_shared/audio/where_owl.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_owl.mp3?v=20261017warm1",
       "text": "Where's the owl?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_duck": {
-      "src": "../english_shared/audio/where_duck.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_duck.mp3?v=20261017warm1",
       "text": "Where is the duck?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_frog": {
-      "src": "../english_shared/audio/where_frog.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_frog.mp3?v=20261017warm1",
       "text": "Where's the frog?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_tiger": {
-      "src": "../english_shared/audio/where_tiger.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_tiger.mp3?v=20261017warm1",
       "text": "Where's the tiger?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "where_hippo": {
-      "src": "../english_shared/audio/where_hippo.mp3?v=20260930cv1",
+      "src": "../english_shared/audio/where_hippo.mp3?v=20261017warm1",
       "text": "Where is the hippo?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "circle": {
       "src": "../english_shared/audio/circle.mp3?v=20260930cv1",
@@ -433,59 +433,59 @@
       "profile": "guide"
     },
     "gv_fruit_slice_intro": {
-      "src": "./voice/audio/gv_fruit_slice_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_intro.mp3?v=20261017warm1",
       "text": "Swipe across the fruit. Slice, slice!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_intro": {
-      "src": "./voice/audio/gv_balloon_pop_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_intro.mp3?v=20261017warm1",
       "text": "Tap a balloon. Pop! What can you find?",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_feed_animal_intro": {
-      "src": "./voice/audio/gv_feed_animal_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_feed_animal_intro.mp3?v=20261017warm1",
       "text": "Our cat is hungry! Choose some food for the cat.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_feed_ants_intro": {
-      "src": "./voice/audio/gv_feed_ants_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_feed_ants_intro.mp3?v=20261017warm1",
       "text": "Little ants! Drag some food over for them.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_bubble_pop_intro": {
-      "src": "./voice/audio/gv_bubble_pop_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_bubble_pop_intro.mp3?v=20261017warm1",
       "text": "Bubbles! Tap them and make them pop!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_animal_tap_intro": {
-      "src": "./voice/audio/gv_animal_tap_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_tap_intro.mp3?v=20261017warm1",
       "text": "Hello, animal friend! Tap to say hello.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_monster_transform_intro": {
-      "src": "./voice/audio/gv_monster_transform_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_monster_transform_intro.mp3?v=20261017warm1",
       "text": "Tap the monster! Look at its funny new face!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_time_magic_intro": {
-      "src": "./voice/audio/gv_time_magic_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_time_magic_intro.mp3?v=20261017warm1",
       "text": "Tap or swipe to change the weather!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_magic_doodle_intro": {
-      "src": "./voice/audio/gv_magic_doodle_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_magic_doodle_intro.mp3?v=20261017warm1",
       "text": "Draw with your finger. Can you join the stars?",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_car_track_intro": {
-      "src": "./voice/audio/gv_car_track_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_car_track_intro.mp3?v=20261017warm1",
       "text": "Hold the little car. Follow the road!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pump_intro": {
-      "src": "./voice/audio/gv_balloon_pump_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pump_intro.mp3?v=20261017warm1",
       "text": "Hold the pump. Make a big balloon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_feed_fish_intro": {
       "src": "./voice/audio/gv_feed_fish_intro.mp3?v=20260930gv1",
@@ -493,89 +493,89 @@
       "profile": "guide"
     },
     "gv_tidy_up_intro": {
-      "src": "./voice/audio/gv_tidy_up_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_tidy_up_intro.mp3?v=20261017warm1",
       "text": "Time to tidy up! Put the toys in the box.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_egg_hatch_intro": {
-      "src": "./voice/audio/gv_egg_hatch_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_egg_hatch_intro.mp3?v=20261017warm1",
       "text": "Tap the egg gently. Who is hiding inside?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_intro": {
-      "src": "./voice/audio/gv_animal_breakfast_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_intro.mp3?v=20261017warm1",
       "text": "Breakfast time! Find the food for each animal.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_intro": {
-      "src": "./voice/audio/gv_train_cargo_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_intro.mp3?v=20261017warm1",
       "text": "Load the train! Match each toy to its wagon color.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_bath_time_intro": {
-      "src": "./voice/audio/gv_bath_time_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_bath_time_intro.mp3?v=20261017warm1",
       "text": "Bath time! Soap, water, and a soft towel.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_little_chef_intro": {
-      "src": "./voice/audio/gv_little_chef_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_intro.mp3?v=20261017warm1",
       "text": "Hello, little chef! Let us make something yummy.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_road_helper_intro": {
-      "src": "./voice/audio/gv_road_helper_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_road_helper_intro.mp3?v=20261017warm1",
       "text": "Let us fix the road! First, fill the hole.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_intro": {
-      "src": "./voice/audio/gv_garden_grow_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_intro.mp3?v=20261017warm1",
       "text": "Let us grow a garden! Start with the soil.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_shadow_match_intro": {
-      "src": "./voice/audio/gv_shadow_match_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_shadow_match_intro.mp3?v=20261017warm1",
       "text": "Look at the shadows. Find the matching animal!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_band_intro": {
-      "src": "./voice/audio/gv_little_band_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_band_intro.mp3?v=20261017warm1",
       "text": "Let us make music! Find the matching instrument.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_weather_dress_intro": {
-      "src": "./voice/audio/gv_weather_dress_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_weather_dress_intro.mp3?v=20261017warm1",
       "text": "Look at the weather. What should our friend wear?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_intro": {
-      "src": "./voice/audio/gv_find_friends_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_intro.mp3?v=20261017warm1",
       "text": "Help each animal find its home!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_monster_dressup_intro": {
-      "src": "./voice/audio/gv_monster_dressup_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_monster_dressup_intro.mp3?v=20261017warm1",
       "text": "Dress up a funny monster! Choose your favorite pieces.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_parcel_sort_intro": {
-      "src": "./voice/audio/gv_parcel_sort_intro.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_parcel_sort_intro.mp3?v=20261017warm1",
       "text": "Deliver the parcels! Match each parcel to its shape.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_well_done": {
-      "src": "./voice/audio/gv_well_done.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_well_done.mp3?v=20261017warm1",
       "text": "Well done!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_nice_match": {
-      "src": "./voice/audio/gv_nice_match.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_nice_match.mp3?v=20261017warm1",
       "text": "A perfect match!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_try_again": {
-      "src": "./voice/audio/gv_try_again.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_try_again.mp3?v=20261017warm1",
       "text": "Oops! Let us try again.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_yummy": {
       "src": "./voice/audio/gv_yummy.mp3?v=20260930gv1",
@@ -583,9 +583,9 @@
       "profile": "teddy"
     },
     "gv_all_done": {
-      "src": "./voice/audio/gv_all_done.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_all_done.mp3?v=20261017warm1",
       "text": "All done! You did it!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_guide_watermelon": {
       "src": "./voice/audio/gv_guide_watermelon.mp3?v=20260930gv1",
@@ -753,24 +753,24 @@
       "profile": "guide"
     },
     "gv_feed_animal_sorted": {
-      "src": "./voice/audio/gv_feed_animal_sorted.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_feed_animal_sorted.mp3?v=20261017warm1",
       "text": "In the basket! Good sorting!",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_feed_animal_wrong_basket": {
-      "src": "./voice/audio/gv_feed_animal_wrong_basket.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_feed_animal_wrong_basket.mp3?v=20261017warm1",
       "text": "The cat would like that! Try the cat.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_feed_animal_wrong_cat": {
-      "src": "./voice/audio/gv_feed_animal_wrong_cat.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_feed_animal_wrong_cat.mp3?v=20261017warm1",
       "text": "Oops! Try the little basket.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_feed_animal_complete": {
-      "src": "./voice/audio/gv_feed_animal_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_feed_animal_complete.mp3?v=20261017warm1",
       "text": "Our cat is full! Thank you for the yummy food.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_guide_cookie": {
       "src": "./voice/audio/gv_guide_cookie.mp3?v=20260930gv1",
@@ -798,14 +798,14 @@
       "profile": "guide"
     },
     "gv_feed_ants_drop": {
-      "src": "./voice/audio/gv_feed_ants_drop.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_feed_ants_drop.mp3?v=20261017warm1",
       "text": "Here you go, little ants!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_feed_ants_complete": {
-      "src": "./voice/audio/gv_feed_ants_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_feed_ants_complete.mp3?v=20261017warm1",
       "text": "All gone! The ants say thank you!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_guide_mouse": {
       "src": "./voice/audio/gv_guide_mouse.mp3?v=20260930gv1",
@@ -848,39 +848,39 @@
       "profile": "pip"
     },
     "gv_monster_transform_face_eyes": {
-      "src": "./voice/audio/gv_monster_transform_face_eyes.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_monster_transform_face_eyes.mp3?v=20261017warm1",
       "text": "Look! New eyes!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_monster_transform_face_nose": {
-      "src": "./voice/audio/gv_monster_transform_face_nose.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_monster_transform_face_nose.mp3?v=20261017warm1",
       "text": "Look! New nose!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_monster_transform_face_mouth": {
-      "src": "./voice/audio/gv_monster_transform_face_mouth.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_monster_transform_face_mouth.mp3?v=20261017warm1",
       "text": "Look! New mouth!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_time_magic_sunny": {
-      "src": "./voice/audio/gv_time_magic_sunny.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_time_magic_sunny.mp3?v=20261017warm1",
       "text": "It is sunny! Hello, sun!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_time_magic_rainy": {
-      "src": "./voice/audio/gv_time_magic_rainy.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_time_magic_rainy.mp3?v=20261017warm1",
       "text": "It is raining! Listen to the raindrops.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_time_magic_snowy": {
-      "src": "./voice/audio/gv_time_magic_snowy.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_time_magic_snowy.mp3?v=20261017warm1",
       "text": "It is snowing! Soft, white snow.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_time_magic_rainbow": {
-      "src": "./voice/audio/gv_time_magic_rainbow.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_time_magic_rainbow.mp3?v=20261017warm1",
       "text": "A rainbow! Look at all the colors!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_pip_star": {
       "src": "./voice/audio/gv_pip_star.mp3?v=20260930gv1",
@@ -888,29 +888,29 @@
       "profile": "pip"
     },
     "gv_magic_doodle_draw": {
-      "src": "./voice/audio/gv_magic_doodle_draw.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_magic_doodle_draw.mp3?v=20261017warm1",
       "text": "Draw, draw! Make a trail of light!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_magic_doodle_complete": {
-      "src": "./voice/audio/gv_magic_doodle_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_magic_doodle_complete.mp3?v=20261017warm1",
       "text": "You joined the stars! Magical!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_car_track_drive": {
-      "src": "./voice/audio/gv_car_track_drive.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_car_track_drive.mp3?v=20261017warm1",
       "text": "Little car, let us go!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_car_track_complete": {
-      "src": "./voice/audio/gv_car_track_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_car_track_complete.mp3?v=20261017warm1",
       "text": "The finish line! Great driving!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_car_track_next": {
-      "src": "./voice/audio/gv_car_track_next.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_car_track_next.mp3?v=20261017warm1",
       "text": "A new road! Ready, steady, go!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pump_color_0": {
       "src": "./voice/audio/gv_balloon_pump_color_0.mp3?v=20260930gv1",
@@ -933,14 +933,14 @@
       "profile": "pip"
     },
     "gv_balloon_pump_pump": {
-      "src": "./voice/audio/gv_balloon_pump_pump.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pump_pump.mp3?v=20261017warm1",
       "text": "Pump, pump! Bigger and bigger!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pump_ready": {
-      "src": "./voice/audio/gv_balloon_pump_ready.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pump_ready.mp3?v=20261017warm1",
       "text": "A big balloon! Let go to make it fly!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pump_fly": {
       "src": "./voice/audio/gv_balloon_pump_fly.mp3?v=20260930gv1",
@@ -948,9 +948,9 @@
       "profile": "pip"
     },
     "gv_balloon_pump_pop": {
-      "src": "./voice/audio/gv_balloon_pump_pop.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pump_pop.mp3?v=20261017warm1",
       "text": "Wow! The balloon went pop!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_guide_goldfish": {
       "src": "./voice/audio/gv_guide_goldfish.mp3?v=20260930gv1",
@@ -1008,19 +1008,19 @@
       "profile": "guide"
     },
     "gv_tidy_up_put": {
-      "src": "./voice/audio/gv_tidy_up_put.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_tidy_up_put.mp3?v=20261017warm1",
       "text": "In the box! Nice and tidy.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_tidy_up_wrong": {
-      "src": "./voice/audio/gv_tidy_up_wrong.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_tidy_up_wrong.mp3?v=20261017warm1",
       "text": "Try putting it in the toy box.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_tidy_up_complete": {
-      "src": "./voice/audio/gv_tidy_up_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_tidy_up_complete.mp3?v=20261017warm1",
       "text": "All tidy! You are a great helper!",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_egg_hatch_hello_0": {
       "src": "./voice/audio/gv_egg_hatch_hello_0.mp3?v=20260930gv1",
@@ -1148,19 +1148,19 @@
       "profile": "guide"
     },
     "gv_egg_hatch_tap": {
-      "src": "./voice/audio/gv_egg_hatch_tap.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_egg_hatch_tap.mp3?v=20261017warm1",
       "text": "Tap, tap! A little egg!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_egg_hatch_crack": {
-      "src": "./voice/audio/gv_egg_hatch_crack.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_egg_hatch_crack.mp3?v=20261017warm1",
       "text": "A crack! Who is coming out?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_egg_hatch_almost": {
-      "src": "./voice/audio/gv_egg_hatch_almost.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_egg_hatch_almost.mp3?v=20261017warm1",
       "text": "Almost there! Keep going!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_guide_biscuit": {
       "src": "./voice/audio/gv_guide_biscuit.mp3?v=20260930gv1",
@@ -1218,99 +1218,99 @@
       "profile": "guide"
     },
     "gv_animal_breakfast_request_monkey": {
-      "src": "./voice/audio/gv_animal_breakfast_request_monkey.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_monkey.mp3?v=20261017warm1",
       "text": "The monkey would like a banana.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_rabbit": {
-      "src": "./voice/audio/gv_animal_breakfast_request_rabbit.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_rabbit.mp3?v=20261017warm1",
       "text": "The rabbit would like a carrot.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_cat": {
-      "src": "./voice/audio/gv_animal_breakfast_request_cat.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_cat.mp3?v=20261017warm1",
       "text": "The cat would like fish.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_dog": {
-      "src": "./voice/audio/gv_animal_breakfast_request_dog.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_dog.mp3?v=20261017warm1",
       "text": "The dog would like a biscuit.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_panda": {
-      "src": "./voice/audio/gv_animal_breakfast_request_panda.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_panda.mp3?v=20261017warm1",
       "text": "The panda would like bamboo.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_bear": {
-      "src": "./voice/audio/gv_animal_breakfast_request_bear.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_bear.mp3?v=20261017warm1",
       "text": "The bear would like honey.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_fox": {
-      "src": "./voice/audio/gv_animal_breakfast_request_fox.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_fox.mp3?v=20261017warm1",
       "text": "The fox would like a chicken drumstick.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_pig": {
-      "src": "./voice/audio/gv_animal_breakfast_request_pig.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_pig.mp3?v=20261017warm1",
       "text": "The pig would like an apple.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_cow": {
-      "src": "./voice/audio/gv_animal_breakfast_request_cow.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_cow.mp3?v=20261017warm1",
       "text": "The cow would like grass.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_sheep": {
-      "src": "./voice/audio/gv_animal_breakfast_request_sheep.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_sheep.mp3?v=20261017warm1",
       "text": "The sheep would like clover.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_elephant": {
-      "src": "./voice/audio/gv_animal_breakfast_request_elephant.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_elephant.mp3?v=20261017warm1",
       "text": "The elephant would like watermelon.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_giraffe": {
-      "src": "./voice/audio/gv_animal_breakfast_request_giraffe.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_giraffe.mp3?v=20261017warm1",
       "text": "The giraffe would like leaves.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_squirrel": {
-      "src": "./voice/audio/gv_animal_breakfast_request_squirrel.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_squirrel.mp3?v=20261017warm1",
       "text": "The squirrel would like an acorn.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_penguin": {
-      "src": "./voice/audio/gv_animal_breakfast_request_penguin.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_penguin.mp3?v=20261017warm1",
       "text": "The penguin would like shrimp.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_koala": {
-      "src": "./voice/audio/gv_animal_breakfast_request_koala.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_koala.mp3?v=20261017warm1",
       "text": "The koala would like eucalyptus leaves.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_hedgehog": {
-      "src": "./voice/audio/gv_animal_breakfast_request_hedgehog.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_hedgehog.mp3?v=20261017warm1",
       "text": "The hedgehog would like a strawberry.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_chick": {
-      "src": "./voice/audio/gv_animal_breakfast_request_chick.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_chick.mp3?v=20261017warm1",
       "text": "The chick would like corn.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_request_deer": {
-      "src": "./voice/audio/gv_animal_breakfast_request_deer.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_request_deer.mp3?v=20261017warm1",
       "text": "The deer would like a mushroom.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_animal_breakfast_complete": {
-      "src": "./voice/audio/gv_animal_breakfast_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_animal_breakfast_complete.mp3?v=20261017warm1",
       "text": "Everybody has breakfast! Thank you, little helper!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_toy_red": {
       "src": "./voice/audio/gv_train_cargo_toy_red.mp3?v=20260930gv1",
@@ -1373,144 +1373,144 @@
       "profile": "pip"
     },
     "gv_train_cargo_wagon_red": {
-      "src": "./voice/audio/gv_train_cargo_wagon_red.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_red.mp3?v=20261017warm1",
       "text": "The red wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_blue": {
-      "src": "./voice/audio/gv_train_cargo_wagon_blue.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_blue.mp3?v=20261017warm1",
       "text": "The blue wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_yellow": {
-      "src": "./voice/audio/gv_train_cargo_wagon_yellow.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_yellow.mp3?v=20261017warm1",
       "text": "The yellow wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_green": {
-      "src": "./voice/audio/gv_train_cargo_wagon_green.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_green.mp3?v=20261017warm1",
       "text": "The green wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_orange": {
-      "src": "./voice/audio/gv_train_cargo_wagon_orange.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_orange.mp3?v=20261017warm1",
       "text": "The orange wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_purple": {
-      "src": "./voice/audio/gv_train_cargo_wagon_purple.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_purple.mp3?v=20261017warm1",
       "text": "The purple wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_pink": {
-      "src": "./voice/audio/gv_train_cargo_wagon_pink.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_pink.mp3?v=20261017warm1",
       "text": "The pink wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_brown": {
-      "src": "./voice/audio/gv_train_cargo_wagon_brown.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_brown.mp3?v=20261017warm1",
       "text": "The brown wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_cyan": {
-      "src": "./voice/audio/gv_train_cargo_wagon_cyan.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_cyan.mp3?v=20261017warm1",
       "text": "The cyan wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_lime": {
-      "src": "./voice/audio/gv_train_cargo_wagon_lime.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_lime.mp3?v=20261017warm1",
       "text": "The lime green wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_teal": {
-      "src": "./voice/audio/gv_train_cargo_wagon_teal.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_teal.mp3?v=20261017warm1",
       "text": "The teal wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_wagon_indigo": {
-      "src": "./voice/audio/gv_train_cargo_wagon_indigo.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_wagon_indigo.mp3?v=20261017warm1",
       "text": "The indigo wagon!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_red": {
-      "src": "./voice/audio/gv_train_cargo_request_red.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_red.mp3?v=20261017warm1",
       "text": "Find the red wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_blue": {
-      "src": "./voice/audio/gv_train_cargo_request_blue.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_blue.mp3?v=20261017warm1",
       "text": "Find the blue wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_yellow": {
-      "src": "./voice/audio/gv_train_cargo_request_yellow.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_yellow.mp3?v=20261017warm1",
       "text": "Find the yellow wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_green": {
-      "src": "./voice/audio/gv_train_cargo_request_green.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_green.mp3?v=20261017warm1",
       "text": "Find the green wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_orange": {
-      "src": "./voice/audio/gv_train_cargo_request_orange.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_orange.mp3?v=20261017warm1",
       "text": "Find the orange wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_purple": {
-      "src": "./voice/audio/gv_train_cargo_request_purple.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_purple.mp3?v=20261017warm1",
       "text": "Find the purple wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_pink": {
-      "src": "./voice/audio/gv_train_cargo_request_pink.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_pink.mp3?v=20261017warm1",
       "text": "Find the pink wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_brown": {
-      "src": "./voice/audio/gv_train_cargo_request_brown.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_brown.mp3?v=20261017warm1",
       "text": "Find the brown wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_cyan": {
-      "src": "./voice/audio/gv_train_cargo_request_cyan.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_cyan.mp3?v=20261017warm1",
       "text": "Find the cyan wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_lime": {
-      "src": "./voice/audio/gv_train_cargo_request_lime.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_lime.mp3?v=20261017warm1",
       "text": "Find the lime green wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_teal": {
-      "src": "./voice/audio/gv_train_cargo_request_teal.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_teal.mp3?v=20261017warm1",
       "text": "Find the teal wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_request_indigo": {
-      "src": "./voice/audio/gv_train_cargo_request_indigo.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_request_indigo.mp3?v=20261017warm1",
       "text": "Find the indigo wagon.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_train_cargo_complete": {
-      "src": "./voice/audio/gv_train_cargo_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_train_cargo_complete.mp3?v=20261017warm1",
       "text": "All aboard! The train is ready to go!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_bath_time_tool_soap": {
-      "src": "./voice/audio/gv_bath_time_tool_soap.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_bath_time_tool_soap.mp3?v=20261017warm1",
       "text": "A bar of soap! Rub, rub! So many bubbles!",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_bath_time_tool_rinse": {
-      "src": "./voice/audio/gv_bath_time_tool_rinse.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_bath_time_tool_rinse.mp3?v=20261017warm1",
       "text": "Water! Bye-bye, bubbles!",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_bath_time_tool_towel": {
-      "src": "./voice/audio/gv_bath_time_tool_towel.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_bath_time_tool_towel.mp3?v=20261017warm1",
       "text": "A towel! Soft and dry.",
-      "profile": "teddy"
+      "profile": "warm_guide"
     },
     "gv_bath_time_complete": {
       "src": "./voice/audio/gv_bath_time_complete.mp3?v=20260930gv1",
@@ -1518,264 +1518,264 @@
       "profile": "teddy"
     },
     "gv_little_chef_recipe_cake": {
-      "src": "./voice/audio/gv_little_chef_recipe_cake.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_recipe_cake.mp3?v=20261017warm1",
       "text": "Let us make little cakes!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_recipe_bread": {
-      "src": "./voice/audio/gv_little_chef_recipe_bread.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_recipe_bread.mp3?v=20261017warm1",
       "text": "Let us make bread!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_recipe_fried_egg": {
-      "src": "./voice/audio/gv_little_chef_recipe_fried_egg.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_recipe_fried_egg.mp3?v=20261017warm1",
       "text": "Let us make a fried egg!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_recipe_tomato_eggs": {
-      "src": "./voice/audio/gv_little_chef_recipe_tomato_eggs.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_recipe_tomato_eggs.mp3?v=20261017warm1",
       "text": "Let us make tomato and eggs!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_recipe_vegetable_soup": {
-      "src": "./voice/audio/gv_little_chef_recipe_vegetable_soup.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_recipe_vegetable_soup.mp3?v=20261017warm1",
       "text": "Let us make vegetable soup!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_milk": {
-      "src": "./voice/audio/gv_little_chef_tool_milk.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_milk.mp3?v=20261017warm1",
       "text": "Milk! Pour it in.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_egg": {
-      "src": "./voice/audio/gv_little_chef_tool_egg.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_egg.mp3?v=20261017warm1",
       "text": "An egg! Crack it gently.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_flour": {
-      "src": "./voice/audio/gv_little_chef_tool_flour.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_flour.mp3?v=20261017warm1",
       "text": "Flour! Tip it into the bowl.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_whisk": {
-      "src": "./voice/audio/gv_little_chef_tool_whisk.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_whisk.mp3?v=20261017warm1",
       "text": "This is a whisk. Mix, mix, mix!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_bake": {
-      "src": "./voice/audio/gv_little_chef_tool_bake.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_bake.mp3?v=20261017warm1",
       "text": "A baking tray! Into the oven.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_rollingpin": {
-      "src": "./voice/audio/gv_little_chef_tool_rollingpin.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_rollingpin.mp3?v=20261017warm1",
       "text": "A rolling pin! Roll the dough.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_oil": {
-      "src": "./voice/audio/gv_little_chef_tool_oil.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_oil.mp3?v=20261017warm1",
       "text": "Oil! A little in the pan.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_tomato": {
-      "src": "./voice/audio/gv_little_chef_tool_tomato.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_tomato.mp3?v=20261017warm1",
       "text": "Tomato! Into the pan.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_spatula": {
-      "src": "./voice/audio/gv_little_chef_tool_spatula.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_spatula.mp3?v=20261017warm1",
       "text": "A spatula! Stir and turn.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_water": {
-      "src": "./voice/audio/gv_little_chef_tool_water.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_water.mp3?v=20261017warm1",
       "text": "Water! Pour it into the pot.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_vegetables": {
-      "src": "./voice/audio/gv_little_chef_tool_vegetables.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_vegetables.mp3?v=20261017warm1",
       "text": "Vegetables! Into the soup.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_tool_ladle": {
-      "src": "./voice/audio/gv_little_chef_tool_ladle.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_tool_ladle.mp3?v=20261017warm1",
       "text": "A ladle! Give it a gentle stir.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_complete_cake": {
-      "src": "./voice/audio/gv_little_chef_complete_cake.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_complete_cake.mp3?v=20261017warm1",
       "text": "Little cakes! You made it. Delicious!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_complete_bread": {
-      "src": "./voice/audio/gv_little_chef_complete_bread.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_complete_bread.mp3?v=20261017warm1",
       "text": "Bread! You made it. Delicious!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_complete_fried_egg": {
-      "src": "./voice/audio/gv_little_chef_complete_fried_egg.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_complete_fried_egg.mp3?v=20261017warm1",
       "text": "A fried egg! You made it. Delicious!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_complete_tomato_eggs": {
-      "src": "./voice/audio/gv_little_chef_complete_tomato_eggs.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_complete_tomato_eggs.mp3?v=20261017warm1",
       "text": "Tomato and eggs! You made it. Delicious!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_complete_vegetable_soup": {
-      "src": "./voice/audio/gv_little_chef_complete_vegetable_soup.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_complete_vegetable_soup.mp3?v=20261017warm1",
       "text": "Vegetable soup! You made it. Delicious!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_little_chef_cooking": {
-      "src": "./voice/audio/gv_little_chef_cooking.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_chef_cooking.mp3?v=20261017warm1",
       "text": "Cooking time! It will be ready soon.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_road_helper_tool_gravel": {
-      "src": "./voice/audio/gv_road_helper_tool_gravel.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_road_helper_tool_gravel.mp3?v=20261017warm1",
       "text": "Gravel! Fill the hole in the road.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_road_helper_tool_roller": {
-      "src": "./voice/audio/gv_road_helper_tool_roller.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_road_helper_tool_roller.mp3?v=20261017warm1",
       "text": "A road roller! Roll the road flat.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_road_helper_tool_car": {
-      "src": "./voice/audio/gv_road_helper_tool_car.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_road_helper_tool_car.mp3?v=20261017warm1",
       "text": "A car! Try the new road.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_road_helper_complete": {
-      "src": "./voice/audio/gv_road_helper_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_road_helper_complete.mp3?v=20261017warm1",
       "text": "The road is fixed! Great teamwork!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_plant_sunflower": {
-      "src": "./voice/audio/gv_garden_grow_plant_sunflower.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_plant_sunflower.mp3?v=20261017warm1",
       "text": "Let us grow a sunflower!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_plant_rose": {
-      "src": "./voice/audio/gv_garden_grow_plant_rose.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_plant_rose.mp3?v=20261017warm1",
       "text": "Let us grow a rose!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_plant_tulip": {
-      "src": "./voice/audio/gv_garden_grow_plant_tulip.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_plant_tulip.mp3?v=20261017warm1",
       "text": "Let us grow a tulip!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_plant_lavender": {
-      "src": "./voice/audio/gv_garden_grow_plant_lavender.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_plant_lavender.mp3?v=20261017warm1",
       "text": "Let us grow some lavender!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_plant_daisy": {
-      "src": "./voice/audio/gv_garden_grow_plant_daisy.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_plant_daisy.mp3?v=20261017warm1",
       "text": "Let us grow a daisy!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_plant_grape": {
-      "src": "./voice/audio/gv_garden_grow_plant_grape.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_plant_grape.mp3?v=20261017warm1",
       "text": "Let us grow some grapes!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_loosen": {
-      "src": "./voice/audio/gv_garden_grow_tool_loosen.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_loosen.mp3?v=20261017warm1",
       "text": "Soil! Loosen the soil gently.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_seed": {
-      "src": "./voice/audio/gv_garden_grow_tool_seed.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_seed.mp3?v=20261017warm1",
       "text": "Seeds! Plant the little seeds.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_bulb": {
-      "src": "./voice/audio/gv_garden_grow_tool_bulb.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_bulb.mp3?v=20261017warm1",
       "text": "A bulb! Put it in the soil.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_cover": {
-      "src": "./voice/audio/gv_garden_grow_tool_cover.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_cover.mp3?v=20261017warm1",
       "text": "Cover it with soft soil.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_water": {
-      "src": "./voice/audio/gv_garden_grow_tool_water.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_water.mp3?v=20261017warm1",
       "text": "Water! Give the plant a drink.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_mist": {
-      "src": "./voice/audio/gv_garden_grow_tool_mist.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_mist.mp3?v=20261017warm1",
       "text": "A soft mist! Spray a little water.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_sun": {
-      "src": "./voice/audio/gv_garden_grow_tool_sun.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_sun.mp3?v=20261017warm1",
       "text": "Sunshine! Help our plant grow.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_feed": {
-      "src": "./voice/audio/gv_garden_grow_tool_feed.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_feed.mp3?v=20261017warm1",
       "text": "Plant food! A little boost for our plant.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_prune": {
-      "src": "./voice/audio/gv_garden_grow_tool_prune.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_prune.mp3?v=20261017warm1",
       "text": "Snip, snip! Trim the little branches.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_weed": {
-      "src": "./voice/audio/gv_garden_grow_tool_weed.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_weed.mp3?v=20261017warm1",
       "text": "Pull out the weeds. More room to grow!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_tool_support": {
-      "src": "./voice/audio/gv_garden_grow_tool_support.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_tool_support.mp3?v=20261017warm1",
       "text": "A little trellis! Help the vine climb.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_complete_sunflower": {
-      "src": "./voice/audio/gv_garden_grow_complete_sunflower.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_complete_sunflower.mp3?v=20261017warm1",
       "text": "Sunflower! Look at our beautiful flowers!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_complete_rose": {
-      "src": "./voice/audio/gv_garden_grow_complete_rose.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_complete_rose.mp3?v=20261017warm1",
       "text": "Rose! Look at our beautiful flowers!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_complete_tulip": {
-      "src": "./voice/audio/gv_garden_grow_complete_tulip.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_complete_tulip.mp3?v=20261017warm1",
       "text": "Tulip! Look at our beautiful flowers!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_complete_lavender": {
-      "src": "./voice/audio/gv_garden_grow_complete_lavender.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_complete_lavender.mp3?v=20261017warm1",
       "text": "Lavender! Look at our beautiful flowers!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_complete_daisy": {
-      "src": "./voice/audio/gv_garden_grow_complete_daisy.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_complete_daisy.mp3?v=20261017warm1",
       "text": "Daisy! Look at our beautiful flowers!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_garden_grow_complete_grape": {
-      "src": "./voice/audio/gv_garden_grow_complete_grape.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_garden_grow_complete_grape.mp3?v=20261017warm1",
       "text": "Grapes! Look at those lovely grapes!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_shadow_match_shape_hint": {
-      "src": "./voice/audio/gv_shadow_match_shape_hint.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_shadow_match_shape_hint.mp3?v=20261017warm1",
       "text": "Look at the shape of the shadow.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_shadow_match_complete": {
-      "src": "./voice/audio/gv_shadow_match_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_shadow_match_complete.mp3?v=20261017warm1",
       "text": "All the animals match! Fantastic!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_pip_drum": {
       "src": "./voice/audio/gv_pip_drum.mp3?v=20260930gv1",
@@ -1828,39 +1828,39 @@
       "profile": "pip"
     },
     "gv_little_band_shape_hint": {
-      "src": "./voice/audio/gv_little_band_shape_hint.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_band_shape_hint.mp3?v=20261017warm1",
       "text": "Find the same instrument shape.",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_little_band_complete": {
-      "src": "./voice/audio/gv_little_band_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_little_band_complete.mp3?v=20261017warm1",
       "text": "Our band is ready! What lovely music!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_weather_dress_weather_sun": {
-      "src": "./voice/audio/gv_weather_dress_weather_sun.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_weather_dress_weather_sun.mp3?v=20261017warm1",
       "text": "It is sunny! A sun hat and sunglasses.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_weather_dress_weather_rain": {
-      "src": "./voice/audio/gv_weather_dress_weather_rain.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_weather_dress_weather_rain.mp3?v=20261017warm1",
       "text": "It is raining! A raincoat and rain boots.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_weather_dress_weather_snow": {
-      "src": "./voice/audio/gv_weather_dress_weather_snow.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_weather_dress_weather_snow.mp3?v=20261017warm1",
       "text": "It is snowing! A warm coat and a scarf.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_weather_dress_weather_wind": {
-      "src": "./voice/audio/gv_weather_dress_weather_wind.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_weather_dress_weather_wind.mp3?v=20261017warm1",
       "text": "It is windy! A windbreaker and a cap.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_weather_dress_weather_autumn": {
-      "src": "./voice/audio/gv_weather_dress_weather_autumn.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_weather_dress_weather_autumn.mp3?v=20261017warm1",
       "text": "A cool autumn day! A sweater and a woolly hat.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_guide_sun_hat": {
       "src": "./voice/audio/gv_guide_sun_hat.mp3?v=20260930gv1",
@@ -1913,9 +1913,9 @@
       "profile": "guide"
     },
     "gv_weather_dress_complete": {
-      "src": "./voice/audio/gv_weather_dress_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_weather_dress_complete.mp3?v=20261017warm1",
       "text": "Dressed and ready! Let us go outside!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_guide_woodpecker": {
       "src": "./voice/audio/gv_guide_woodpecker.mp3?v=20260930gv1",
@@ -1948,129 +1948,129 @@
       "profile": "guide"
     },
     "gv_find_friends_home_tree": {
-      "src": "./voice/audio/gv_find_friends_home_tree.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_home_tree.mp3?v=20261017warm1",
       "text": "Who lives up in the tree?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_home_grassland": {
-      "src": "./voice/audio/gv_find_friends_home_grassland.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_home_grassland.mp3?v=20261017warm1",
       "text": "Who lives on the grassland?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_home_water": {
-      "src": "./voice/audio/gv_find_friends_home_water.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_home_water.mp3?v=20261017warm1",
       "text": "Who lives in the water?",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_placed_tree": {
-      "src": "./voice/audio/gv_find_friends_placed_tree.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_placed_tree.mp3?v=20261017warm1",
       "text": "Up in the tree!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_placed_grassland": {
-      "src": "./voice/audio/gv_find_friends_placed_grassland.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_placed_grassland.mp3?v=20261017warm1",
       "text": "On the grassland!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_placed_water": {
-      "src": "./voice/audio/gv_find_friends_placed_water.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_placed_water.mp3?v=20261017warm1",
       "text": "In the water!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_squirrel": {
-      "src": "./voice/audio/gv_find_friends_hint_squirrel.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_squirrel.mp3?v=20261017warm1",
       "text": "Help the squirrel find the tree.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_owl": {
-      "src": "./voice/audio/gv_find_friends_hint_owl.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_owl.mp3?v=20261017warm1",
       "text": "Help the owl find the tree.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_woodpecker": {
-      "src": "./voice/audio/gv_find_friends_hint_woodpecker.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_woodpecker.mp3?v=20261017warm1",
       "text": "Help the woodpecker find the tree.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_monkey": {
-      "src": "./voice/audio/gv_find_friends_hint_monkey.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_monkey.mp3?v=20261017warm1",
       "text": "Help the monkey find the tree.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_parrot": {
-      "src": "./voice/audio/gv_find_friends_hint_parrot.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_parrot.mp3?v=20261017warm1",
       "text": "Help the parrot find the tree.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_koala": {
-      "src": "./voice/audio/gv_find_friends_hint_koala.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_koala.mp3?v=20261017warm1",
       "text": "Help the koala find the tree.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_lion": {
-      "src": "./voice/audio/gv_find_friends_hint_lion.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_lion.mp3?v=20261017warm1",
       "text": "Help the lion find the grassland.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_zebra": {
-      "src": "./voice/audio/gv_find_friends_hint_zebra.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_zebra.mp3?v=20261017warm1",
       "text": "Help the zebra find the grassland.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_giraffe": {
-      "src": "./voice/audio/gv_find_friends_hint_giraffe.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_giraffe.mp3?v=20261017warm1",
       "text": "Help the giraffe find the grassland.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_elephant": {
-      "src": "./voice/audio/gv_find_friends_hint_elephant.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_elephant.mp3?v=20261017warm1",
       "text": "Help the elephant find the grassland.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_antelope": {
-      "src": "./voice/audio/gv_find_friends_hint_antelope.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_antelope.mp3?v=20261017warm1",
       "text": "Help the antelope find the grassland.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_ostrich": {
-      "src": "./voice/audio/gv_find_friends_hint_ostrich.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_ostrich.mp3?v=20261017warm1",
       "text": "Help the ostrich find the grassland.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_clownfish": {
-      "src": "./voice/audio/gv_find_friends_hint_clownfish.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_clownfish.mp3?v=20261017warm1",
       "text": "Help the clownfish find the water.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_bluefish": {
-      "src": "./voice/audio/gv_find_friends_hint_bluefish.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_bluefish.mp3?v=20261017warm1",
       "text": "Help the blue fish find the water.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_seahorse": {
-      "src": "./voice/audio/gv_find_friends_hint_seahorse.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_seahorse.mp3?v=20261017warm1",
       "text": "Help the seahorse find the water.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_turtle": {
-      "src": "./voice/audio/gv_find_friends_hint_turtle.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_turtle.mp3?v=20261017warm1",
       "text": "Help the turtle find the water.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_octopus": {
-      "src": "./voice/audio/gv_find_friends_hint_octopus.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_octopus.mp3?v=20261017warm1",
       "text": "Help the octopus find the water.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_hint_dolphin": {
-      "src": "./voice/audio/gv_find_friends_hint_dolphin.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_hint_dolphin.mp3?v=20261017warm1",
       "text": "Help the dolphin find the water.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_find_friends_complete": {
-      "src": "./voice/audio/gv_find_friends_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_find_friends_complete.mp3?v=20261017warm1",
       "text": "All our friends are home! Well done!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_monster_dressup_part_hat_top": {
       "src": "./voice/audio/gv_monster_dressup_part_hat_top.mp3?v=20260930gv1",
@@ -2223,14 +2223,14 @@
       "profile": "pip"
     },
     "gv_monster_dressup_returned": {
-      "src": "./voice/audio/gv_monster_dressup_returned.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_monster_dressup_returned.mp3?v=20261017warm1",
       "text": "Let us try another piece!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_monster_dressup_complete": {
-      "src": "./voice/audio/gv_monster_dressup_complete.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_monster_dressup_complete.mp3?v=20261017warm1",
       "text": "Wow! What a funny monster! You made it!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_parcel_sort_parcel_circle_star": {
       "src": "./voice/audio/gv_parcel_sort_parcel_circle_star.mp3?v=20260930gv1",
@@ -2323,19 +2323,19 @@
       "profile": "guide"
     },
     "gv_parcel_sort_slot_circle": {
-      "src": "./voice/audio/gv_parcel_sort_slot_circle.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_parcel_sort_slot_circle.mp3?v=20261017warm1",
       "text": "Find the circle slot.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_parcel_sort_slot_square": {
-      "src": "./voice/audio/gv_parcel_sort_slot_square.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_parcel_sort_slot_square.mp3?v=20261017warm1",
       "text": "Find the square slot.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_parcel_sort_slot_triangle": {
-      "src": "./voice/audio/gv_parcel_sort_slot_triangle.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_parcel_sort_slot_triangle.mp3?v=20261017warm1",
       "text": "Find the triangle slot.",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_parcel_sort_fits_circle": {
       "src": "./voice/audio/gv_parcel_sort_fits_circle.mp3?v=20260930gv1",
@@ -2353,9 +2353,9 @@
       "profile": "guide"
     },
     "gv_parcel_sort_praise": {
-      "src": "./voice/audio/gv_parcel_sort_praise.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_parcel_sort_praise.mp3?v=20261017warm1",
       "text": "Great deliveries! You are a super helper!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_balloon_pump_color_4": {
       "src": "./voice/audio/gv_balloon_pump_color_4.mp3?v=20260930gv1",
@@ -2368,84 +2368,84 @@
       "profile": "pip"
     },
     "gv_fruit_slice_combo_3": {
-      "src": "./voice/audio/gv_fruit_slice_combo_3.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_combo_3.mp3?v=20261017warm1",
       "text": "Great!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_fruit_slice_combo_5": {
-      "src": "./voice/audio/gv_fruit_slice_combo_5.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_combo_5.mp3?v=20261017warm1",
       "text": "Amazing!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_fruit_slice_combo_10": {
-      "src": "./voice/audio/gv_fruit_slice_combo_10.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_combo_10.mp3?v=20261017warm1",
       "text": "Ten in a row! Perfect!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_fruit_slice_combo_20": {
-      "src": "./voice/audio/gv_fruit_slice_combo_20.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_combo_20.mp3?v=20261017warm1",
       "text": "Twenty in a row! Fantastic!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_fruit_slice_combo_30": {
-      "src": "./voice/audio/gv_fruit_slice_combo_30.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_combo_30.mp3?v=20261017warm1",
       "text": "Thirty in a row! Brilliant!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_fruit_slice_combo_40": {
-      "src": "./voice/audio/gv_fruit_slice_combo_40.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_combo_40.mp3?v=20261017warm1",
       "text": "Forty in a row! Incredible!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_fruit_slice_combo_50": {
-      "src": "./voice/audio/gv_fruit_slice_combo_50.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_combo_50.mp3?v=20261017warm1",
       "text": "Fifty in a row! Superstar!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_fruit_slice_combo_more": {
-      "src": "./voice/audio/gv_fruit_slice_combo_more.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_fruit_slice_combo_more.mp3?v=20261017warm1",
       "text": "Awesome! Keep it going!",
-      "profile": "guide"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_combo_3": {
-      "src": "./voice/audio/gv_balloon_pop_combo_3.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_combo_3.mp3?v=20261017warm1",
       "text": "Great!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_combo_5": {
-      "src": "./voice/audio/gv_balloon_pop_combo_5.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_combo_5.mp3?v=20261017warm1",
       "text": "Amazing!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_combo_10": {
-      "src": "./voice/audio/gv_balloon_pop_combo_10.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_combo_10.mp3?v=20261017warm1",
       "text": "Ten in a row! Perfect!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_combo_20": {
-      "src": "./voice/audio/gv_balloon_pop_combo_20.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_combo_20.mp3?v=20261017warm1",
       "text": "Twenty in a row! Fantastic!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_combo_30": {
-      "src": "./voice/audio/gv_balloon_pop_combo_30.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_combo_30.mp3?v=20261017warm1",
       "text": "Thirty in a row! Brilliant!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_combo_40": {
-      "src": "./voice/audio/gv_balloon_pop_combo_40.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_combo_40.mp3?v=20261017warm1",
       "text": "Forty in a row! Incredible!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_combo_50": {
-      "src": "./voice/audio/gv_balloon_pop_combo_50.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_combo_50.mp3?v=20261017warm1",
       "text": "Fifty in a row! Superstar!",
-      "profile": "pip"
+      "profile": "warm_guide"
     },
     "gv_balloon_pop_combo_more": {
-      "src": "./voice/audio/gv_balloon_pop_combo_more.mp3?v=20260930gv1",
+      "src": "./voice/audio/gv_balloon_pop_combo_more.mp3?v=20261017warm1",
       "text": "Awesome! Keep it going!",
-      "profile": "pip"
+      "profile": "warm_guide"
     }
   },
   "games": {

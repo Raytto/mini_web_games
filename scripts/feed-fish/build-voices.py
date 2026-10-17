@@ -15,7 +15,7 @@ for line in lines:
  ident=line['id'];item=recorded[ident];audio=game/'audio'/item['file'];profile=profiles['profiles'][line['voice_profile']]
  assert item['text']==line['text'] and item['voice']==profile['voice_id'] and item['model']==manifest['model']
  assert hashlib.sha256(audio.read_bytes()).hexdigest()==item['sha256'],ident
- clips[ident]={'src':'audio/'+item['file']+('?v=20261002reef4' if ident.startswith('reef4_') else '?v=20261001reef3'),'text':line['text']}
+ clips[ident]={'src':'audio/'+item['file']+('?v=20261017warm1' if ident == 'reef3_intro' else '?v=20261002reef4' if ident.startswith('reef4_') else '?v=20261001reef3'),'text':line['text']}
  if 'species' in line:
   assert line['species'] in {s['name'] for s in species}
   clips[ident].update(species=line['species'],event=line['event'])
@@ -25,7 +25,7 @@ for line in lines:
    assert 'this is' not in line['text'].lower(),ident
    reactions[line['species']+'_'+line['event']]=[ident]
 assert len(inspect)==len(species) and len(reactions)==3*len(species)
-config={'version':'20261002reef4','clips':clips,'games':{'feed_fish':{'cues':{
+config={'version':'20261017warm1','clips':clips,'games':{'feed_fish':{'cues':{
  'intro':{'clips':['reef3_intro'],'priority':0,'cooldown':0},
  'inspect':{'by':inspect,'priority':3,'cooldown':0},
  'fish':{'by':reactions,'priority':1,'cooldown':1500}

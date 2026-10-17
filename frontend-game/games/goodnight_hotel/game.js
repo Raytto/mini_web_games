@@ -1,4 +1,4 @@
-import {Playground,$,svg,attr,button,accessible,Bag,clamp,LINES} from '../playful_shared/core.js?v=20261002play1';
+import {Playground,$,svg,attr,button,accessible,Bag,clamp,LINES} from '../playful_shared/core.js?v=20261017warm1';
 import {ANIMALS,STEPS,NIGHT_LINES,VERSION} from './content.js?v=20261011night3';
 Object.assign(LINES,NIGHT_LINES);
 const app=new Playground({id:'goodnight_hotel',title:'Goodnight Hotel',zh:'晚安动物旅馆',theme:'night',eyebrow:'ONE LITTLE STEP · ONE SWEET DREAM'});

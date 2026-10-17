@@ -1,5 +1,9 @@
 # 旧款游戏的英语配音维护
 
+## Default guide voice (2026-10-17)
+
+Default guidance now uses the approved warm_guide profile (CosyVoice 3.5 Plus). Character profiles remain unchanged. The exact library/ID policy lives in `scripts/warm-guide/policy.json` and is applied by `scripts/warm_guide_policy.py` in content builders. When changing approved text, deliberately update its policy entry and regenerate/review that clip. Do not replace old guide, pip, teddy or fish profile IDs globally. Generation and SHA-bound independent ASR provenance: `/srv/data/mini_web_games/voice-refresh/20261017-warm-guide/`.
+
 当前两库保留 1,679 段 CosyVoice 3.5 Plus 语言录音（本库 880、三款共用库 799，含历史录音；音乐与音效不计入）。共享目录保留原 26 款的映射，引用 690 个音频 ID、覆盖 899 个事件／内容组合。Teddy 与 Peekaboo 为百词库版；小鱼喂喂喂当前使用独立库、22 种伙伴／132 帧动画，旧映射保留为历史，详见[喂鱼维护](../feed-fish/README.md)。未来继续使用阿里云 `cosyvoice-v3.5-plus`，按场景选择已确认的儿童角色。
 
 2026-09-30 听力优先版 `20260930lf1` 首次发布时：全站 29 款游戏以英语语音引导，文字仅作辅助；两库保留 1,275 段（本库 826、三款共用库 449）。该次新增 556 段场景短句，旧 719 段字节保留。当时目录实际引用 663 个音频 ID、覆盖 845 个事件／内容组合。下文有明确版本的数量保留为历史记录。

@@ -2,12 +2,12 @@
   {
     "id": "sp2_intro_apple",
     "text": "Apples grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_apple",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94500
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_apple",
@@ -22,12 +22,12 @@
   {
     "id": "sp2_intro_pear",
     "text": "Pears grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_pear",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94502
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_pear",
@@ -42,12 +42,12 @@
   {
     "id": "sp2_intro_orange",
     "text": "Oranges grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_orange",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94504
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_orange",
@@ -62,12 +62,12 @@
   {
     "id": "sp2_intro_peach",
     "text": "Peaches grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_peach",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94506
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_peach",
@@ -82,12 +82,12 @@
   {
     "id": "sp2_intro_plum",
     "text": "Plums grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_plum",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94508
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_plum",
@@ -102,12 +102,12 @@
   {
     "id": "sp2_intro_cherry",
     "text": "Cherries grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_cherry",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94510
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_cherry",
@@ -122,12 +122,12 @@
   {
     "id": "sp2_intro_mango",
     "text": "Mangoes grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_mango",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94512
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_mango",
@@ -142,12 +142,12 @@
   {
     "id": "sp2_intro_lemon",
     "text": "Lemons grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_lemon",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94514
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_lemon",
@@ -162,12 +162,12 @@
   {
     "id": "sp2_intro_lychee",
     "text": "Lychees grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_lychee",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94516
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_lychee",
@@ -182,12 +182,12 @@
   {
     "id": "sp2_intro_persimmon",
     "text": "Persimmons grow on trees. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_persimmon",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94518
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_persimmon",
@@ -202,12 +202,12 @@
   {
     "id": "sp2_intro_grape",
     "text": "Grapes grow on climbing vines. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_grape",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94520
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_grape",
@@ -222,12 +222,12 @@
   {
     "id": "sp2_intro_kiwi",
     "text": "Kiwifruit grow on climbing vines. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_kiwi",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94522
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_kiwi",
@@ -242,12 +242,12 @@
   {
     "id": "sp2_intro_passion_fruit",
     "text": "Passion fruit grows on climbing vines. Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_passion_fruit",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94524
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_passion_fruit",
@@ -262,12 +262,12 @@
   {
     "id": "sp2_intro_watermelon",
     "text": "Watermelons grow on vines along the ground. Touch the fruit to pick it.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_watermelon",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94526
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_watermelon",
@@ -282,12 +282,12 @@
   {
     "id": "sp2_intro_cantaloupe",
     "text": "Cantaloupes grow on vines along the ground. Touch the fruit to pick it.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_cantaloupe",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94528
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_cantaloupe",
@@ -302,12 +302,12 @@
   {
     "id": "sp2_intro_strawberry",
     "text": "Strawberries grow on low plants near the ground. Touch the fruit to pick it.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_strawberry",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94530
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_strawberry",
@@ -322,12 +322,12 @@
   {
     "id": "sp2_intro_pineapple",
     "text": "Pineapples grow in the middle of leafy plants. Touch the fruit to pick it.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_pineapple",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94532
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_pineapple",
@@ -342,12 +342,12 @@
   {
     "id": "sp2_intro_banana",
     "text": "Bananas grow in bunches on tall plants. Touch the fruit to pick it.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_banana",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94534
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_banana",
@@ -362,12 +362,12 @@
   {
     "id": "sp2_intro_blueberry",
     "text": "Blueberries grow on bushes. Touch the fruit to pick it.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_blueberry",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94536
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_blueberry",
@@ -382,12 +382,12 @@
   {
     "id": "sp2_intro_raspberry",
     "text": "Raspberries grow on bushes. Touch the fruit to pick it.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: intro_raspberry",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94538
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_share_raspberry",
@@ -402,31 +402,31 @@
   {
     "id": "sp2_rope",
     "text": "Cut the rope to drop this fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: rope",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94540
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_pick",
     "text": "Touch the fruit to pick it.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: pick",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94541
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sp2_mixed",
     "text": "Cut a rope, or touch the fruit.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Fruit garden: mixed",
     "stress": [],
-    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
-    "rate": 0.98,
-    "seed": 94542
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

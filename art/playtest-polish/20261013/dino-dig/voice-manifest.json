@@ -8,21 +8,23 @@
     {
       "id": "dd1_over_here",
       "text": "Try digging over here!",
-      "voice_profile": "guide",
+      "voice_profile": "warm_guide",
       "scene": "Dino Dig: dd1_over_here",
       "focus": "",
       "stress": [],
-      "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-      "rate": 0.94,
-      "seed": 131066,
+      "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+      "rate": 0.92,
+      "seed": 10172026,
       "model": "cosyvoice-v3.5-plus",
-      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "voice": "cosyvoice-v3.5-plus-vd-xxsoftc17-11ec3a487c0f49c6a0540bb87ca73751",
       "file": "dd1_over_here.mp3",
-      "fingerprint": "e1c18f9e7544c031e7d623ffc5efa01fe05d4348c42f24fc8731a31e15f39b83",
-      "duration": 1.464,
-      "rms_dbfs": -20.26,
-      "peak_dbfs": -4.67,
-      "sha256": "ae48ed7a5fbf464cdc7d89eb27438070dfcd003b80c0308c127e0d51b74f47e9"
+      "fingerprint": "df7550d412251cd114dad12db7c8c2c4ed2122b969bb6b60ad6b2fedcb0dad3f",
+      "duration": 1.488,
+      "rms_dbfs": -19.19,
+      "peak_dbfs": -2.45,
+      "sha256": "187563b174b7a4e7351ba68744b37d536ff8041fa6df8df869adba86bc8ae70f",
+      "raw_sha256": "9db0d33990e76118803213dca4b1a6576edc213a75719b0c2379d0118319d094",
+      "generation_id": "wg_80010797fd128cfe8b20"
     }
   ]
 }

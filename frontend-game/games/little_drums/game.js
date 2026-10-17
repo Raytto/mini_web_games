@@ -1,5 +1,5 @@
 import {PARTS,RHYTHMS} from './rhythms.js?v=20261014drums1';
-import {DrumAudio} from './audio.js?v=20261014drums1';
+import {DrumAudio} from './audio.js?v=20261017warm1';
 import {instrument,installDefs} from './kit.js?v=20261014drums1';
 const $=id=>document.getElementById(id),audio=new DrumAudio(),partById=new Map(PARTS.map(p=>[p.id,p]));
 const words={

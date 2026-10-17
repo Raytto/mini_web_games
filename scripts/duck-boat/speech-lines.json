@@ -2,504 +2,504 @@
   {
     "id": "db_intro_2",
     "text": "We can take two ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "two",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress TWO DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4132
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_3",
     "text": "We can take three ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "three",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress THREE DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4133
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_4",
     "text": "We can take four ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "four",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress FOUR DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4134
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_5",
     "text": "We can take five ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "five",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress FIVE DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4135
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_6",
     "text": "We can take six ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "six",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress SIX DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4136
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_7",
     "text": "We can take seven ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "seven",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress SEVEN DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4137
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_8",
     "text": "We can take eight ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "eight",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress EIGHT DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4138
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_9",
     "text": "We can take nine ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "nine",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress NINE DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4139
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_10",
     "text": "We can take ten ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "ten",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress TEN DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4140
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_11",
     "text": "We can take eleven ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "eleven",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress ELEVEN DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4141
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_intro_12",
     "text": "We can take twelve ducks on the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "The empty boat arrives; introduce its exact capacity.",
     "stress": [
       "twelve",
       "ducks",
       "boat"
     ],
-    "instruction": "Smiling child guide. Stress TWELVE DUCKS. Curious, clear and inviting English.",
-    "rate": 0.96,
-    "seed": 4142
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_1",
     "text": "One duck!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "one",
       "duck"
     ],
-    "instruction": "Bright child voice. Stress ONE. Crisp DUCK, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5231
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_2",
     "text": "Two ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "two",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress TWO. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5232
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_3",
     "text": "Three ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "three",
       "ducks"
     ],
-    "instruction": "Say exactly THREE DUCKS, two words only. Clear initial TH sound; no extra words or lead-in.",
-    "rate": 0.94,
-    "seed": 6399
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_4",
     "text": "Four ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "four",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress FOUR. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5234
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_5",
     "text": "Five ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "five",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress FIVE. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5235
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_6",
     "text": "Six ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "six",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress SIX. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5236
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_7",
     "text": "Seven ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "seven",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress SEVEN. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5237
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_8",
     "text": "Eight ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "eight",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress EIGHT. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5238
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_9",
     "text": "Nine ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "nine",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress NINE. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5239
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_10",
     "text": "Ten ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "ten",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress TEN. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5240
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_11",
     "text": "Eleven ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "eleven",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress ELEVEN. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5241
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_count_12",
     "text": "Twelve ducks!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "One duck has just landed in its seat. Count the new total, never skip a number.",
     "stress": [
       "twelve",
       "ducks"
     ],
-    "instruction": "Bright child voice. Stress TWELVE. Crisp DUCKS, short joyful rhythmic counting.",
-    "rate": 0.97,
-    "seed": 5242
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_2",
     "text": "We have two ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "two",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress TWO DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6332
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_3",
     "text": "We have three ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "three",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress THREE DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6333
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_4",
     "text": "We have four ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "four",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress FOUR DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6334
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_5",
     "text": "We have five ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "five",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress FIVE DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6335
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_6",
     "text": "We have six ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "six",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress SIX DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6336
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_7",
     "text": "We have seven ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "seven",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress SEVEN DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6337
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_8",
     "text": "We have eight ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "eight",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress EIGHT DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6338
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_9",
     "text": "We have nine ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "nine",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress NINE DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6339
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_10",
     "text": "We have ten ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "ten",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress TEN DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6340
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_11",
     "text": "We have eleven ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "eleven",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress ELEVEN DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6341
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_full_12",
     "text": "We have twelve ducks on the boat. Let's go!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Every visible seat is occupied; celebrate the exact total before sailing.",
     "stress": [
       "twelve",
       "ducks",
       "Let's go"
     ],
-    "instruction": "Excited child captain. Stress TWELVE DUCKS. Cheerful clear words, big joyful LET'S GO!",
-    "rate": 1.0,
-    "seed": 6342
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_guide",
     "text": "Tap a duck, or drag it to the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Friendly action or transition cue.",
     "stress": [
       "duck",
       "boat"
     ],
-    "instruction": "Friendly child guide. Clear DUCK and BOAT. Warm and inviting, never rushed.",
-    "rate": 0.96,
-    "seed": 7434
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_return",
     "text": "Bring the duck to the boat.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Friendly action or transition cue.",
     "stress": [
       "duck",
       "boat"
     ],
-    "instruction": "Gentle child guide. Stress DUCK and BOAT. Encouraging and clear, never scolding.",
-    "rate": 0.96,
-    "seed": 7435
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "db_arrival",
     "text": "Here comes another boat!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Friendly action or transition cue.",
     "stress": [
       "duck",
       "boat"
     ],
-    "instruction": "Excited child voice. A delightful surprise. Clearly emphasize ANOTHER BOAT.",
-    "rate": 0.96,
-    "seed": 7436
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

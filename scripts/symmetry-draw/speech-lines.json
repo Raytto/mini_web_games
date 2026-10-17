@@ -2,235 +2,235 @@
   {
     "id": "sd1_welcome",
     "text": "Pick a color. Draw anywhere, and watch it mirror!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: welcome",
     "focus": "draw",
     "stress": [
       "draw"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161000
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_mode2",
     "text": "Two parts. Draw a mirror picture!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: mode2",
     "focus": "Two",
     "stress": [
       "Two"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161001
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_mode4",
     "text": "Four parts. Watch your lines mirror!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: mode4",
     "focus": "Four",
     "stress": [
       "Four"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161002
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_mode6",
     "text": "Six parts. Watch your lines mirror!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: mode6",
     "focus": "Six",
     "stress": [
       "Six"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161003
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_mode8",
     "text": "Eight parts. Watch your lines mirror!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: mode8",
     "focus": "Eight",
     "stress": [
       "Eight"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161004
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_pen",
     "text": "Let's draw!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: pen",
     "focus": "draw",
     "stress": [
       "draw"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161005
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_eraser",
     "text": "Rub a little bit away.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: eraser",
     "focus": "Rub",
     "stress": [
       "Rub"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161006
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_picture",
     "text": "Your picture is ready!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: picture",
     "focus": "picture",
     "stress": [
       "picture"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161007
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_color_red",
     "text": "Red! Let's draw.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_red",
     "focus": "red",
     "stress": [
       "red"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161008
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "sd1_color_orange",
     "text": "Orange! Let's draw.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_orange",
     "focus": "orange",
     "stress": [
       "orange"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161009
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_color_yellow",
     "text": "Yellow! Let's draw.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_yellow",
     "focus": "yellow",
     "stress": [
       "yellow"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161010
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_color_green",
     "text": "Green! Let's draw.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_green",
     "focus": "green",
     "stress": [
       "green"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161011
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_color_teal",
     "text": "Let's draw with teal.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_teal",
     "focus": "teal",
     "stress": [
       "teal"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161112
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_color_blue",
     "text": "Blue! Let's draw.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_blue",
     "focus": "blue",
     "stress": [
       "blue"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161013
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "sd1_color_purple",
     "text": "Purple! Let's draw.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_purple",
     "focus": "purple",
     "stress": [
       "purple"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161014
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_color_pink",
     "text": "Pink! Let's draw.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_pink",
     "focus": "pink",
     "stress": [
       "pink"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161015
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_color_brown",
     "text": "Let's draw with brown.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_brown",
     "focus": "brown",
     "stress": [
       "brown"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161116
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "sd1_color_black",
     "text": "Black! Let's draw.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Symmetry Draw: color_black",
     "focus": "black",
     "stress": [
       "black"
     ],
-    "instruction": "Warm playful child voice; gentle encouragement, clear key words. No extra words.",
-    "rate": 0.96,
-    "seed": 161017
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

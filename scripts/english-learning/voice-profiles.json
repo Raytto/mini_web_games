@@ -26,6 +26,14 @@
       "preview_text": "A strawberry, please! A tree, please! Thank you! Oops! Try again.",
       "voice_id": "cosyvoice-v3.5-plus-vd-xxteddy35-64e02de3a7e44a47937486064e86194d",
       "target_model": "cosyvoice-v3.5-plus"
+    },
+    "warm_guide": {
+      "prefix": "xxsoftc17",
+      "name": "Warm companion — approved default guide",
+      "voice_prompt": "An adult man in his thirties, warm rounded medium-low baritone, softly resonant and comforting without booming bass. A kind playful companion with a relaxed smile, like a friendly storybook bear or a father playing together. Gentle, softly spoken but fully voiced, never stern or authoritative. Native General American English. Clear accurate diction for preschool children. Soft conversational delivery, no shrillness, squeaks, shouting or commanding cadence.",
+      "preview_text": "Hello, little friend. Let's play together. Can you find the red balloon?",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxsoftc17-11ec3a487c0f49c6a0540bb87ca73751",
+      "target_model": "cosyvoice-v3.5-plus"
     }
   }
 }

@@ -1,4 +1,4 @@
-import {PlayVoice} from './voice.js?v=20261002play1';
+import {PlayVoice} from './voice.js?v=20261017warm1';
 import {LINES,VERSION} from './lines.js?v=20261002play1';
 export {VERSION,LINES};
 export const NS='http://www.w3.org/2000/svg';

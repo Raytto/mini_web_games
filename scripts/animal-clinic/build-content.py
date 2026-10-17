@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Authoritative clinic content and CosyVoice lines. No credentials belong here."""
 from pathlib import Path
+from pathlib import Path as _WarmPath
+import sys as _warm_sys
+_warm_sys.path.insert(0, str(_WarmPath(__file__).resolve().parents[1]))
+from warm_guide_policy import apply_lines
 import json
 ROOT=Path(__file__).resolve().parents[2];V='20261013clinic3'
 OUT=ROOT/'frontend-game/games/animal_clinic';ART=ROOT/'art/animal-clinic/20261013';HERE=Path(__file__).parent
@@ -70,6 +74,6 @@ for id,name,zh,problem,room,intro in patients:
 content={'PATIENTS':actors,'TOOLS':tools,'STEPS':steps,'PROBLEMS':problems,'CLINIC_LINES':{r['id']:r['text'] for r in lines}}
 OUT.mkdir(parents=True,exist_ok=True);ART.mkdir(parents=True,exist_ok=True)
 (OUT/'content.js').write_text('export const VERSION='+json.dumps(V)+';\n'+''.join('export const '+k+'='+json.dumps(v,ensure_ascii=False)+';\n' for k,v in content.items()),encoding='utf-8')
-(HERE/'speech-lines.json').write_text(json.dumps(lines,ensure_ascii=False,indent=2),encoding='utf-8')
+(HERE/'speech-lines.json').write_text(json.dumps(apply_lines('frontend-game/games/animal_clinic/audio', lines),ensure_ascii=False,indent=2),encoding='utf-8')
 if not (HERE/'reviewed-clips.json').exists():(HERE/'reviewed-clips.json').write_text('{}\n')
 print('Prepared',len(actors),'patients,',len(problems),'problems,',len(lines),'speech clips.')

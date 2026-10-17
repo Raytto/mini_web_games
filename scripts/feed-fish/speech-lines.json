@@ -2,10 +2,10 @@
   {
     "id": "reef3_intro",
     "text": "Welcome, ocean friends! Tap the water to feed. Tap a friend to say hello.",
-    "voice_profile": "guide",
-    "instruction": "Friendly invitation. Clear English. Warm emphasis on feed and say hello.",
-    "rate": 0.96,
-    "seed": 30301
+    "voice_profile": "warm_guide",
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "reef3_clownfish_hello",

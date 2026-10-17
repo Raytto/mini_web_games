@@ -24,23 +24,23 @@
   {
     "id": "dd3_fine",
     "text": "Use the fine brush. Gently sweep the last dust away.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd3_fine",
     "focus": "",
     "stress": [],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131072
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd3_finebrush",
     "text": "This is a fine brush.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd3_finebrush",
     "focus": "",
     "stress": [],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131073
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

@@ -27,7 +27,7 @@ export class Voice {
         const request = (async () => {
           const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 12000);
           try {
-            const response = await fetch(`audio/sd1_${id}.mp3?v=20261016sym1`, { signal: controller.signal });
+            const response = await fetch(`audio/sd1_${id}.mp3?v=20261017warm1`, { signal: controller.signal });
             if (!response.ok) throw new Error('Voice unavailable');
             return await ctx.decodeAudioData(await response.arrayBuffer());
           } finally { clearTimeout(timer); }

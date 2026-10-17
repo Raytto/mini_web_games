@@ -2,184 +2,184 @@
   {
     "id": "dd1_name_diplodocus",
     "text": "Diplodocus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_diplodocus",
     "focus": "Diplodocus",
     "stress": [
       "Diplodocus"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131066
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_diplodocus",
     "text": "Diplodocus has a very long tail.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_diplodocus",
     "focus": "Diplodocus",
     "stress": [
       "Diplodocus"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131067
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_spinosaurus",
     "text": "Spinosaurus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_spinosaurus",
     "focus": "Spinosaurus",
     "stress": [
       "Spinosaurus"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131068
+    "instruction": "Warm rounded voice. Pronounce Spinosaurus as SPY-no-SORE-us. Say only the name, clearly.",
+    "rate": 0.92,
+    "seed": 10172226
   },
   {
     "id": "dd1_fact_spinosaurus",
     "text": "Spinosaurus has a tall sail on its back.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_spinosaurus",
     "focus": "Spinosaurus",
     "stress": [
       "Spinosaurus"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131069
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_velociraptor",
     "text": "Velociraptor!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_velociraptor",
     "focus": "Velociraptor",
     "stress": [
       "Velociraptor"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131070
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_velociraptor",
     "text": "Velociraptor has feathers.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_velociraptor",
     "focus": "Velociraptor",
     "stress": [
       "Velociraptor"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131071
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_iguanodon",
     "text": "Iguanodon!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_iguanodon",
     "focus": "Iguanodon",
     "stress": [
       "Iguanodon"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131072
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_iguanodon",
     "text": "Iguanodon has a spike on each thumb.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_iguanodon",
     "focus": "Iguanodon",
     "stress": [
       "Iguanodon"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131073
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_allosaurus",
     "text": "Allosaurus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_allosaurus",
     "focus": "Allosaurus",
     "stress": [
       "Allosaurus"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131074
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_allosaurus",
     "text": "Allosaurus has three fingers on each hand.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_allosaurus",
     "focus": "Allosaurus",
     "stress": [
       "Allosaurus"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131075
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_carnotaurus",
     "text": "Carnotaurus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_carnotaurus",
     "focus": "Carnotaurus",
     "stress": [
       "Carnotaurus"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131076
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_carnotaurus",
     "text": "Carnotaurus has two horns on its head.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_carnotaurus",
     "focus": "Carnotaurus",
     "stress": [
       "Carnotaurus"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131077
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_pachycephalosaurus",
     "text": "Pachycephalosaurus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_pachycephalosaurus",
     "focus": "Pachycephalosaurus",
     "stress": [
       "Pachycephalosaurus"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131078
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_pachycephalosaurus",
     "text": "Pachycephalosaurus has a thick, round skull.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_pachycephalosaurus",
     "focus": "Pachycephalosaurus",
     "stress": [
       "Pachycephalosaurus"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131079
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_styracosaurus",
@@ -210,106 +210,106 @@
   {
     "id": "dd1_name_therizinosaurus",
     "text": "Therizinosaurus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_therizinosaurus",
     "focus": "Therizinosaurus",
     "stress": [
       "Therizinosaurus"
     ],
-    "instruction": "Warm clear child voice. Pronounce theh-riz-in-oh-SORE-us. Speak exact words.",
-    "rate": 0.88,
-    "seed": 131173
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_therizinosaurus",
     "text": "Therizinosaurus has very long claws.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_therizinosaurus",
     "focus": "Therizinosaurus",
     "stress": [
       "Therizinosaurus"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131083
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_gallimimus",
     "text": "Gallimimus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_gallimimus",
     "focus": "Gallimimus",
     "stress": [
       "Gallimimus"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131084
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_gallimimus",
     "text": "Gallimimus has long legs for running.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_gallimimus",
     "focus": "Gallimimus",
     "stress": [
       "Gallimimus"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131085
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_oviraptor",
     "text": "Oviraptor!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_oviraptor",
     "focus": "Oviraptor",
     "stress": [
       "Oviraptor"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131086
+    "instruction": "Warm rounded low voice. Say the dinosaur name in four clear syllables: OH-vih-RAP-ter. Stress RAP.",
+    "rate": 0.92,
+    "seed": 10172526
   },
   {
     "id": "dd1_fact_oviraptor",
     "text": "Oviraptor has a beak with no teeth.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_oviraptor",
     "focus": "Oviraptor",
     "stress": [
       "Oviraptor"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131087
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_corythosaurus",
     "text": "Corythosaurus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_corythosaurus",
     "focus": "Corythosaurus",
     "stress": [
       "Corythosaurus"
     ],
-    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
-    "rate": 0.94,
-    "seed": 131088
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_corythosaurus",
     "text": "Corythosaurus eats plants.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_corythosaurus",
     "focus": "Corythosaurus",
     "stress": [
       "Corythosaurus"
     ],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131089
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_name_centrosaurus",
@@ -340,38 +340,38 @@
   {
     "id": "dd1_name_apatosaurus",
     "text": "Apatosaurus!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_name_apatosaurus",
     "focus": "Apatosaurus",
     "stress": [
       "Apatosaurus"
     ],
-    "instruction": "Warm clear child voice. Pronounce uh-PAT-oh-SORE-us. Speak exact words.",
-    "rate": 0.88,
-    "seed": 131183
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd1_fact_apatosaurus",
     "text": "Apatosaurus has a long neck.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd1_fact_apatosaurus",
     "focus": "Apatosaurus",
     "stress": [
       "Apatosaurus"
     ],
-    "instruction": "Warm clear child voice. Pronounce uh-PAT-oh-SORE-us. Speak exact words.",
-    "rate": 0.88,
-    "seed": 131184
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "dd5_next_button",
     "text": "Ready for another dinosaur? Tap the big arrow!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig: dd5_next_button",
     "focus": "",
     "stress": [],
-    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
-    "rate": 0.94,
-    "seed": 131105
+    "instruction": "Warm gentle invitation. Clear key words, relaxed low rounded voice. No sharp rising pitch.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

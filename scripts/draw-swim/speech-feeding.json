@@ -2,24 +2,24 @@
   {
     "id": "ds4_feed",
     "text": "Touch the water to give your friends a little food.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, feeding: feed",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.94,
-    "seed": 132700
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds4_food",
     "text": "You can drag a little food into the water.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, feeding: food",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.94,
-    "seed": 132701
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds4_yummy",

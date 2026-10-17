@@ -2,26 +2,26 @@
   {
     "id": "p1_welcome",
     "text": "Let's play the piano!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Little Piano: welcome",
     "focus": "piano",
     "stress": [
       "piano"
     ],
-    "instruction": "Warm, gentle child voice. Speak exact words clearly and encouragingly.",
-    "rate": 0.94,
-    "seed": 141450
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "p1_guide",
     "text": "Tap the glowing key. Take your time.",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Little Piano: guide",
     "focus": "piano",
     "stress": [],
-    "instruction": "Warm, gentle child voice. Speak exact words clearly and encouragingly.",
-    "rate": 0.94,
-    "seed": 141451
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "p1_listen",
@@ -39,23 +39,23 @@
   {
     "id": "p1_done",
     "text": "You played the whole song! Well done!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Little Piano: done",
     "focus": "piano",
     "stress": [],
-    "instruction": "Warm, gentle child voice. Speak exact words clearly and encouragingly.",
-    "rate": 0.94,
-    "seed": 141453
+    "instruction": "Quiet warm appreciation. Rounded mellow voice and a small smile. No shouting or high-pitched cheer.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "p1_phrase",
     "text": "You played the whole tune! Well done!",
-    "voice_profile": "pip",
+    "voice_profile": "warm_guide",
     "scene": "Little Piano: phrase",
     "focus": "piano",
     "stress": [],
-    "instruction": "Warm, gentle child voice. Speak exact words clearly and encouragingly.",
-    "rate": 0.94,
-    "seed": 141454
+    "instruction": "Quiet warm appreciation. Rounded mellow voice and a small smile. No shouting or high-pitched cheer.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

@@ -2,34 +2,34 @@
   {
     "id": "dd5_pick_start",
     "text": "Let's tap the rocks with our little pick.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig gentle rock tapping",
     "focus": "rocks",
     "stress": [],
-    "instruction": "Warm, gentle young playmate. Soft and unhurried. No shouting. Speak exact English words.",
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
     "rate": 0.92,
-    "seed": 171017
+    "seed": 10172026
   },
   {
     "id": "dd5_rock_tap",
     "text": "Tap a rock, and watch a big piece come away!",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig gentle rock tapping",
     "focus": "rocks",
     "stress": [],
-    "instruction": "Warm, gentle young playmate. Soft and unhurried. No shouting. Speak exact English words.",
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
     "rate": 0.92,
-    "seed": 171018
+    "seed": 10172026
   },
   {
     "id": "dd5_rock_done",
     "text": "The rocks are gone. Now we can use our little shovel.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Dino Dig gentle rock tapping",
     "focus": "rocks",
     "stress": [],
-    "instruction": "Warm, gentle young playmate. Soft and unhurried. No shouting. Speak exact English words.",
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
     "rate": 0.92,
-    "seed": 171019
+    "seed": 10172026
   }
 ]

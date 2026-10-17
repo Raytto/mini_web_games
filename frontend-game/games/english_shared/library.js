@@ -1,4 +1,4 @@
-import {ui,icons} from './core.js?v=20260930lf1';
+import {ui,icons} from './core.js?v=20261017warm1';
 import {itemArt} from './catalog.js?v=20260924e2';
 
 // Six large choices at a time. Every item remains directly reachable in five pages.

@@ -1,4 +1,8 @@
 from pathlib import Path
+from pathlib import Path as _WarmPath
+import sys as _warm_sys
+_warm_sys.path.insert(0, str(_WarmPath(__file__).resolve().parents[1]))
+from warm_guide_policy import apply_lines
 import json,subprocess
 ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).parent;OUT=ROOT/'frontend-game/games/draw_swim'
 lines=[]
@@ -71,7 +75,7 @@ for i,(id,text) in enumerate([
  ('full','My tummy is full. Thank you.')]):
  feeding.append(dict(id='ds4_'+id,text=text,voice_profile='guide',scene='Draw and Swim, feeding: '+id,focus='',stress=[],instruction='Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.',rate=.94,seed=132700+i))
 lines.extend(feeding)
-(HERE/'speech-feeding.json').write_text(json.dumps(feeding,ensure_ascii=False,indent=2))
+(HERE/'speech-feeding.json').write_text(json.dumps(apply_lines('frontend-game/games/draw_swim/audio', feeding),ensure_ascii=False,indent=2))
 content={'PARTS':[{'id':'head','en':'Head','zh':'头'},{'id':'body','en':'Body','zh':'身体'},{'id':'tail','en':'Tail','zh':'尾巴'}], 'COLORS':[{'id':'coral','hex':'#e96359','en':'Red','zh':'红色'},{'id':'gold','hex':'#bd8508','en':'Yellow','zh':'黄色'},{'id':'teal','hex':'#138775','en':'Green','zh':'绿色'},{'id':'blue','hex':'#3472bd','en':'Blue','zh':'蓝色'},{'id':'purple','hex':'#9253aa','en':'Purple','zh':'紫色'}], 'DRAW_LINES':{r['id']:r['text'] for r in lines}}
 catalog=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import('./frontend-game/games/draw_swim/templates.js').then(m=>console.log(JSON.stringify(m.TEMPLATES.map(({id,en,zh,speech})=>({id,en,zh,speech})))))"],cwd=ROOT,text=True))
 extra_colors=[('orange','#e79431','Orange','橙色'),('pink','#dc82a5','Pink','粉色'),('cyan','#24a7bb','Light blue','浅蓝'),('lime','#87af43','Light green','浅绿'),('brown','#8c654b','Brown','棕色'),('gray','#7a858e','Gray','灰色'),('black','#334754','Black','黑色')]
@@ -84,11 +88,11 @@ new_text=[(id,repairs.get(id,text)) for id,text in new_text]
 new_text += [('erase','You can gently rub out a little part.'),('shuffle','Here are some more sea friends.'),('library','Here are your drawings. You can bring a friend into the sea.'),('stored','Your oldest friend is resting in your book.'),('return','Your little friend is back in the sea.')]
 expanded=[dict(id='ds5_'+id,text=text,voice_profile='guide',scene='Draw and Swim, collection: '+id,focus='',stress=[],instruction='Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.',rate=.9,seed=133100+i) for i,(id,text) in enumerate(new_text)]
 lines.extend(expanded);content['DRAW_LINES'].update({r['id']:r['text'] for r in expanded})
-(HERE/'speech-collection.json').write_text(json.dumps(expanded,ensure_ascii=False,indent=2))
+(HERE/'speech-collection.json').write_text(json.dumps(apply_lines('frontend-game/games/draw_swim/audio', expanded),ensure_ascii=False,indent=2))
 content['GREETINGS']=['ds3_hello','ds3_wave','ds3_explore','ds3_together','ds3_coming']
 OUT.mkdir(parents=True,exist_ok=True);(OUT/'content.js').write_text('export const VERSION="20261013swim8";\n'+''.join('export const '+k+'='+json.dumps(v,ensure_ascii=False)+';\n' for k,v in content.items()))
-(HERE/'speech-lines.json').write_text(json.dumps(lines,ensure_ascii=False,indent=2));(HERE/'reviewed-clips.json').write_text('{}\n');print('Prepared',len(lines),'speech clips.')
+(HERE/'speech-lines.json').write_text(json.dumps(apply_lines('frontend-game/games/draw_swim/audio', lines),ensure_ascii=False,indent=2));(HERE/'reviewed-clips.json').write_text('{}\n');print('Prepared',len(lines),'speech clips.')
 
-(HERE/'speech-new-species.json').write_text(json.dumps([r for r in lines if r['id'].startswith('ds2_')],ensure_ascii=False,indent=2))
+(HERE/'speech-new-species.json').write_text(json.dumps(apply_lines('frontend-game/games/draw_swim/audio', [r for r in lines if r['id'].startswith('ds2_')]),ensure_ascii=False,indent=2))
 
-(HERE/'speech-gentle.json').write_text(json.dumps(soft,ensure_ascii=False,indent=2))
+(HERE/'speech-gentle.json').write_text(json.dumps(apply_lines('frontend-game/games/draw_swim/audio', soft),ensure_ascii=False,indent=2))

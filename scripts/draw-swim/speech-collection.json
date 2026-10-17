@@ -2,397 +2,397 @@
   {
     "id": "ds5_shark",
     "text": "A shark. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: shark",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133100
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_hammerhead",
     "text": "A hammerhead shark. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: hammerhead",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133101
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_whale_shark",
     "text": "A whale shark. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: whale_shark",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133102
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_dolphin",
     "text": "A dolphin. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: dolphin",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133103
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_whale",
     "text": "A whale. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: whale",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133104
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_orca",
     "text": "An orca. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: orca",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133105
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "ds5_clownfish",
     "text": "A clownfish. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: clownfish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133106
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_blue_tang",
     "text": "This is a blue tang.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: blue_tang",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133107
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_butterflyfish",
     "text": "A butterflyfish. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: butterflyfish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133108
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_lionfish",
     "text": "Meet a lionfish. You can draw your own.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: lionfish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133109
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_swordfish",
     "text": "A swordfish. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: swordfish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133110
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_flying_fish",
     "text": "A flying fish. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: flying_fish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133111
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_eel",
     "text": "This is an eel.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: eel",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133112
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_catfish",
     "text": "A catfish. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: catfish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133113
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_koi",
     "text": "A koi. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: koi",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133114
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_tuna",
     "text": "Meet a tuna. You can draw your own.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: tuna",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133115
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_salmon",
     "text": "A salmon. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: salmon",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133116
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_sunfish",
     "text": "A sunfish. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: sunfish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133117
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_sea_turtle",
     "text": "A sea turtle. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: sea_turtle",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133118
+    "instruction": "Warm rounded low voice. Read every word exactly, including articles. No extras or sharp pitch rise.",
+    "rate": 0.92,
+    "seed": 10172126
   },
   {
     "id": "ds5_octopus",
     "text": "An octopus. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: octopus",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133119
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_squid",
     "text": "A squid. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: squid",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133120
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_jellyfish",
     "text": "A jellyfish. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: jellyfish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133121
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_seal",
     "text": "A seal. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: seal",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133122
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_starfish",
     "text": "A starfish. You can draw it your way.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: starfish",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133123
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_orange",
     "text": "Orange.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: orange",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133124
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_pink",
     "text": "This one is pink.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: pink",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133125
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_cyan",
     "text": "Light blue.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: cyan",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133126
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_lime",
     "text": "This one is light green.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: lime",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133127
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_brown",
     "text": "Brown.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: brown",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133128
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_gray",
     "text": "This one is gray.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: gray",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133129
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_black",
     "text": "Black.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: black",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133130
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_erase",
     "text": "You can gently rub out a little part.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: erase",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133131
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_shuffle",
     "text": "Here are some more sea friends.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: shuffle",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133132
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_library",
     "text": "Here are your drawings. You can bring a friend into the sea.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: library",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133133
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_stored",
     "text": "Your oldest friend is resting in your book.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: stored",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133134
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   },
   {
     "id": "ds5_return",
     "text": "Your little friend is back in the sea.",
-    "voice_profile": "guide",
+    "voice_profile": "warm_guide",
     "scene": "Draw and Swim, collection: return",
     "focus": "",
     "stress": [],
-    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
-    "rate": 0.9,
-    "seed": 133135
+    "instruction": "Warm relaxed conversation. Rounded mellow voice, clear words, gentle smile. No sharp pitch rises.",
+    "rate": 0.92,
+    "seed": 10172026
   }
 ]

@@ -13,7 +13,7 @@ for row in lines:
  for key in ['text','voice_profile','instruction','rate','seed']:assert record[key]==row[key],(row['id'],key)
  audio=ROOT/'frontend-game/games/balloon_pump/audio'/(row['id']+'.mp3')
  assert hashlib.sha256(audio.read_bytes()).hexdigest()==record['sha256']
- clips[row['id']]=dict(src='../balloon_pump/audio/'+row['id']+'.mp3?v=20261014pump1',text=row['text'],profile=row['voice_profile'])
+ clips[row['id']]=dict(src='../balloon_pump/audio/'+row['id']+'.mp3?v=20261017warm1',text=row['text'],profile=row['voice_profile'])
 assert len(clips)==12 and len(colors)==6
 cues={event:dict(by={c['hex']:[f"bp1_{kind}_{c['name']}"] for c in colors},priority=priority,cooldown=0) for event,kind,priority in [('color','appear',1),('fly','fly',3)]}
 result='// Per-page extension; shared catalog and other games remain unchanged.\n(()=>{const c=window.GameVoiceCatalog;if(!c?.games?.balloon_pump)return;\nObject.assign(c.clips,'+json.dumps(clips,separators=(',',':'))+');\nObject.assign(c.games.balloon_pump.cues,'+json.dumps(cues,separators=(',',':'))+');\n})();\n'
