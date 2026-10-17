@@ -1,0 +1,35 @@
+[
+  {
+    "id": "dd2_sand",
+    "text": "Some bones are showing. Gently brush away the sandy soil.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd2_sand",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131067
+  },
+  {
+    "id": "dd2_first_glimpse",
+    "text": "Look! Some bones are showing. Let us use a soft brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd2_first_glimpse",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131068
+  },
+  {
+    "id": "dd2_sand_done",
+    "text": "Almost there! Gently sweep away the fine dust.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd2_sand_done",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131069
+  }
+]

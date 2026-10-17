@@ -1,0 +1,72 @@
+{
+  "provider": "Alibaba Cloud Model Studio",
+  "model": "cosyvoice-v3.5-plus",
+  "language": "English",
+  "synthetic": true,
+  "processing": "mono 24kHz MP3, 80kbps, -18 LUFS, -2dBTP; original pitch and timing",
+  "clips": [
+    {
+      "id": "dd1_name_therizinosaurus",
+      "text": "Therizinosaurus!",
+      "voice_profile": "guide",
+      "scene": "Dino Dig: dd1_name_therizinosaurus",
+      "focus": "Therizinosaurus",
+      "stress": [
+        "Therizinosaurus"
+      ],
+      "instruction": "Warm clear child voice. Pronounce theh-riz-in-oh-SORE-us. Speak exact words.",
+      "rate": 0.88,
+      "seed": 131173,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "file": "dd1_name_therizinosaurus.mp3",
+      "fingerprint": "202def5d22cc2c33da25bc22aef66cacf8f797b3cb2d9013a94cae4f129e698e",
+      "duration": 1.704,
+      "rms_dbfs": -20.5,
+      "peak_dbfs": -5.7,
+      "sha256": "68207c6b90943b0ec36e5bfccd5a7c9bee5d5f8f236add2f4e0ae79ce5aeea4e"
+    },
+    {
+      "id": "dd1_name_apatosaurus",
+      "text": "Apatosaurus!",
+      "voice_profile": "guide",
+      "scene": "Dino Dig: dd1_name_apatosaurus",
+      "focus": "Apatosaurus",
+      "stress": [
+        "Apatosaurus"
+      ],
+      "instruction": "Warm clear child voice. Pronounce uh-PAT-oh-SORE-us. Speak exact words.",
+      "rate": 0.88,
+      "seed": 131183,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "file": "dd1_name_apatosaurus.mp3",
+      "fingerprint": "dd1a2aac1d32c555e37e3472e7d137e1afff2e251afbc338d1614500e0b03ae6",
+      "duration": 1.44,
+      "rms_dbfs": -20.27,
+      "peak_dbfs": -3.94,
+      "sha256": "d26eedfcee23bec7261ea69eada2397a764b2e285be434b6144d3963b119e318"
+    },
+    {
+      "id": "dd1_fact_apatosaurus",
+      "text": "Apatosaurus has a long neck.",
+      "voice_profile": "guide",
+      "scene": "Dino Dig: dd1_fact_apatosaurus",
+      "focus": "Apatosaurus",
+      "stress": [
+        "Apatosaurus"
+      ],
+      "instruction": "Warm clear child voice. Pronounce uh-PAT-oh-SORE-us. Speak exact words.",
+      "rate": 0.88,
+      "seed": 131184,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "file": "dd1_fact_apatosaurus.mp3",
+      "fingerprint": "cd640d50a97a5d119f7906b43915bdd9b62842a2c5e51046723b0d064cbb0d16",
+      "duration": 2.304,
+      "rms_dbfs": -20.01,
+      "peak_dbfs": -4.81,
+      "sha256": "3f561e3558d415731f9d6b527bfa45b56eb4057a8655261a52d6d7dad52c6994"
+    }
+  ]
+}

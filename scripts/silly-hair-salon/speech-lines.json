@@ -1,0 +1,142 @@
+[
+  {
+    "id": "hs2_short",
+    "text": "Short hair, please.",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: short",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71200
+  },
+  {
+    "id": "hs2_triangle",
+    "text": "A triangle, please.",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: triangle",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71201
+  },
+  {
+    "id": "hs2_middle",
+    "text": "Part my hair in the middle, please.",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: middle",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71202
+  },
+  {
+    "id": "hs2_round",
+    "text": "A round haircut, please.",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: round",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71203
+  },
+  {
+    "id": "hs2_side",
+    "text": "A slanting haircut, please.",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: side",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71204
+  },
+  {
+    "id": "hs2_spikes",
+    "text": "I want spiky hair, please!",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: spikes",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.92,
+    "seed": 81205
+  },
+  {
+    "id": "hs2_long",
+    "text": "Keep my hair long, please.",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: long",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71206
+  },
+  {
+    "id": "hs2_wave",
+    "text": "I want wavy hair, please.",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: wave",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.92,
+    "seed": 81207
+  },
+  {
+    "id": "hs2_hint",
+    "text": "Follow the dotted line.",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: hint",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71208
+  },
+  {
+    "id": "hs2_repair",
+    "text": "A little too short? Let’s grow it back!",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: repair",
+    "stress": [],
+    "instruction": "Reassuring playful child English. Warm, smiling, no disappointment. Exact words only.",
+    "rate": 0.97,
+    "seed": 71209
+  },
+  {
+    "id": "hs2_grown",
+    "text": "All grown back! Lovely!",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: grown",
+    "stress": [],
+    "instruction": "Reassuring playful child English. Warm, smiling, no disappointment. Exact words only.",
+    "rate": 0.97,
+    "seed": 71210
+  },
+  {
+    "id": "hs2_complete",
+    "text": "Complete! I love my new hair!",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: complete",
+    "stress": [],
+    "instruction": "Delighted child English! Celebrate COMPLETE, then thank the hairdresser with a big smile.",
+    "rate": 0.97,
+    "seed": 71211
+  },
+  {
+    "id": "hs2_coming",
+    "text": "A new customer is coming!",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: coming",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71212
+  },
+  {
+    "id": "hs2_cut",
+    "text": "Snip, snip! Keep going!",
+    "voice_profile": "pip",
+    "scene": "Silly Hair Salon: cut",
+    "stress": [],
+    "instruction": "Playful child English. Clear key words, friendly and unhurried. Exact words only.",
+    "rate": 0.97,
+    "seed": 71213
+  }
+]

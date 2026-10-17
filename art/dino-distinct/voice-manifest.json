@@ -1,0 +1,93 @@
+{
+  "provider": "Alibaba Cloud Model Studio",
+  "model": "cosyvoice-v3.5-plus",
+  "language": "English",
+  "synthetic": true,
+  "processing": "mono 24kHz MP3, 80kbps, -18 LUFS, -2dBTP; original pitch and timing",
+  "clips": [
+    {
+      "id": "dd1_name_microraptor",
+      "text": "Microraptor!",
+      "voice_profile": "guide",
+      "scene": "Dino Dig: dd1_name_microraptor",
+      "focus": "Microraptor",
+      "stress": [
+        "Microraptor"
+      ],
+      "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
+      "rate": 0.9,
+      "seed": 131080,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "file": "dd1_name_microraptor.mp3",
+      "fingerprint": "2d498cdebd107ef67d5088f243fc11d5dc1a074126ec0299b512347e1e03c458",
+      "duration": 1.344,
+      "rms_dbfs": -20.3,
+      "peak_dbfs": -2.97,
+      "sha256": "b2a8d72f2582621e77d20c2080572f2bdcbfc989c1da466bf6d91c962b89df97"
+    },
+    {
+      "id": "dd1_fact_microraptor",
+      "text": "Microraptor has feathers on its arms and legs.",
+      "voice_profile": "guide",
+      "scene": "Dino Dig: dd1_fact_microraptor",
+      "focus": "Microraptor",
+      "stress": [
+        "Microraptor"
+      ],
+      "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
+      "rate": 0.9,
+      "seed": 131081,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "file": "dd1_fact_microraptor.mp3",
+      "fingerprint": "9e1f38a19baa45b07f8aaa7d1d49069006f11e32acdf14f5a9cbdd2c23816838",
+      "duration": 4.32,
+      "rms_dbfs": -20.33,
+      "peak_dbfs": -4.85,
+      "sha256": "06b2b540653aa4f48d72e47ec79358a4373313fe799605722f17f3313ba436ac"
+    },
+    {
+      "id": "dd1_name_dilophosaurus",
+      "text": "Dilophosaurus!",
+      "voice_profile": "guide",
+      "scene": "Dino Dig: dd1_name_dilophosaurus",
+      "focus": "Dilophosaurus",
+      "stress": [
+        "Dilophosaurus"
+      ],
+      "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
+      "rate": 0.9,
+      "seed": 131090,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "file": "dd1_name_dilophosaurus.mp3",
+      "fingerprint": "81d422e303da7c40d89b4e1de84dc988bdd34bf33e2a217abc9caae88a31733e",
+      "duration": 2.112,
+      "rms_dbfs": -20.59,
+      "peak_dbfs": -5.95,
+      "sha256": "821d778e6c3849ddaf97a8bdb0704a0a008f6b7f11458949e9c1195dc6f36990"
+    },
+    {
+      "id": "dd1_fact_dilophosaurus",
+      "text": "Dilophosaurus has two crests on its head.",
+      "voice_profile": "guide",
+      "scene": "Dino Dig: dd1_fact_dilophosaurus",
+      "focus": "Dilophosaurus",
+      "stress": [
+        "Dilophosaurus"
+      ],
+      "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
+      "rate": 0.9,
+      "seed": 131091,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "file": "dd1_fact_dilophosaurus.mp3",
+      "fingerprint": "c1c3c55101849f551ee0477e7a3eaaff196f63f2c39aaff60f66811ff4fb1475",
+      "duration": 3.288,
+      "rms_dbfs": -19.58,
+      "peak_dbfs": -3.26,
+      "sha256": "91163c112df839a593ae288f716244c4be8e93bd83a44bdd91f7a211fd604c7d"
+    }
+  ]
+}

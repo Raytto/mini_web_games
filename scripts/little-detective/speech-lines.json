@@ -1,0 +1,2188 @@
+[
+  {
+    "id": "ld_hello",
+    "text": "Hello, little detective! Let's find a clue!",
+    "voice_profile": "guide",
+    "scene": "Welcoming young detective narrator.",
+    "stress": [
+      "detective",
+      "clue"
+    ],
+    "instruction": "Warm curious young child. Clear American English, playful smile, welcoming. No shouting.",
+    "rate": 0.94,
+    "seed": 9610
+  },
+  {
+    "id": "ld_next",
+    "text": "Great detective! Let's find another clue!",
+    "voice_profile": "guide",
+    "scene": "After a correct clue match.",
+    "stress": [
+      "great",
+      "clue"
+    ],
+    "instruction": "Delighted young detective. Expressive GREAT, warm playful encouragement, clear words.",
+    "rate": 0.94,
+    "seed": 9611
+  },
+  {
+    "id": "ld_replay",
+    "text": "Let's play again!",
+    "voice_profile": "guide",
+    "scene": "Start a fresh shuffled run.",
+    "stress": [
+      "play"
+    ],
+    "instruction": "Happy curious young child. Warm clear invitation.",
+    "rate": 0.94,
+    "seed": 9613
+  },
+  {
+    "id": "ld_question_sock",
+    "text": "Whose sock is this?",
+    "voice_profile": "guide",
+    "scene": "Ask one simple observation question, without revealing the answer.",
+    "stress": [
+      "red"
+    ],
+    "instruction": "Curious young detective. Clear American English, warm question, slow key nouns, brief pauses.",
+    "rate": 0.93,
+    "seed": 9614
+  },
+  {
+    "id": "ld_hint_sock",
+    "text": "Look for the same red and white stripes.",
+    "voice_profile": "guide",
+    "scene": "Gently guide the child toward the visible matching clue.",
+    "stress": [
+      "red"
+    ],
+    "instruction": "Kind young detective. Emphasize clue words, inviting and clear, no disappointment.",
+    "rate": 0.92,
+    "seed": 9615
+  },
+  {
+    "id": "ld_yes_sock",
+    "text": "Yes! The rabbit has the matching sock!",
+    "voice_profile": "guide",
+    "scene": "Explain why the selected character fits the physical clue.",
+    "stress": [
+      "Rabbit",
+      "red"
+    ],
+    "instruction": "Delighted young detective. Bright YES, clear animal name and clue. Smile, no extra words.",
+    "rate": 0.94,
+    "seed": 9616
+  },
+  {
+    "id": "ld_question_cookie",
+    "text": "Who left these crumbs?",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Curious young guide, warm natural question. Clear American English, no answer revealed.",
+    "rate": 0.93,
+    "seed": 140617
+  },
+  {
+    "id": "ld_hint_cookie",
+    "text": "Look at the crumbs on the plate. Check each friend's mouth.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.92,
+    "seed": 140618
+  },
+  {
+    "id": "ld_yes_cookie",
+    "text": "The panda! The crumbs on its mouth match the crumbs on the plate!",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.91,
+    "seed": 142510
+  },
+  {
+    "id": "ld_question_footprints",
+    "text": "Who made these footprints?",
+    "voice_profile": "guide",
+    "scene": "Ask one simple observation question, without revealing the answer.",
+    "stress": [
+      "bright"
+    ],
+    "instruction": "Curious young detective. Clear American English, warm question, slow key nouns, brief pauses.",
+    "rate": 0.93,
+    "seed": 9620
+  },
+  {
+    "id": "ld_hint_footprints",
+    "text": "Look for blue paws.",
+    "voice_profile": "guide",
+    "scene": "Gently guide the child toward the visible matching clue.",
+    "stress": [
+      "bright"
+    ],
+    "instruction": "Kind young detective. Emphasize clue words, inviting and clear, no disappointment.",
+    "rate": 0.92,
+    "seed": 9621
+  },
+  {
+    "id": "ld_yes_footprints",
+    "text": "Yes! The fox has blue paws!",
+    "voice_profile": "guide",
+    "scene": "Explain why the selected character fits the physical clue.",
+    "stress": [
+      "Fox",
+      "bright"
+    ],
+    "instruction": "Delighted young detective. Bright YES, clear animal name and clue. Smile, no extra words.",
+    "rate": 0.94,
+    "seed": 9622
+  },
+  {
+    "id": "ld_question_puddle",
+    "text": "Who splashed in the puddle?",
+    "voice_profile": "guide",
+    "scene": "Ask one simple observation question, without revealing the answer.",
+    "stress": [
+      "blue"
+    ],
+    "instruction": "Curious young detective. Clear American English, warm question, slow key nouns, brief pauses.",
+    "rate": 0.93,
+    "seed": 9623
+  },
+  {
+    "id": "ld_hint_puddle",
+    "text": "Look for wet boots.",
+    "voice_profile": "guide",
+    "scene": "Gently guide the child toward the visible matching clue.",
+    "stress": [
+      "blue"
+    ],
+    "instruction": "Kind young detective. Emphasize clue words, inviting and clear, no disappointment.",
+    "rate": 0.92,
+    "seed": 9624
+  },
+  {
+    "id": "ld_yes_puddle",
+    "text": "Yes! The dog has wet boots!",
+    "voice_profile": "guide",
+    "scene": "Explain why the selected character fits the physical clue.",
+    "stress": [
+      "Dog",
+      "blue"
+    ],
+    "instruction": "Delighted young detective. Bright YES, clear animal name and clue. Smile, no extra words.",
+    "rate": 0.94,
+    "seed": 9625
+  },
+  {
+    "id": "ld_question_button",
+    "text": "Whose button fell off?",
+    "voice_profile": "guide",
+    "scene": "Ask one simple observation question, without revealing the answer.",
+    "stress": [
+      "round"
+    ],
+    "instruction": "Curious young detective. Clear American English, warm question, slow key nouns, brief pauses.",
+    "rate": 0.93,
+    "seed": 9626
+  },
+  {
+    "id": "ld_hint_button",
+    "text": "Look for a missing yellow button.",
+    "voice_profile": "guide",
+    "scene": "Gently guide the child toward the visible matching clue.",
+    "stress": [
+      "round"
+    ],
+    "instruction": "Kind young detective. Emphasize clue words, inviting and clear, no disappointment.",
+    "rate": 0.92,
+    "seed": 9627
+  },
+  {
+    "id": "ld_yes_button",
+    "text": "Yes! The tiger is missing a yellow button!",
+    "voice_profile": "guide",
+    "scene": "Explain why the selected character fits the physical clue.",
+    "stress": [
+      "Tiger",
+      "round"
+    ],
+    "instruction": "Delighted young detective. Bright YES, clear animal name and clue. Smile, no extra words.",
+    "rate": 0.94,
+    "seed": 9628
+  },
+  {
+    "id": "ld_question_strawberry",
+    "text": "Who tasted the fruit in this bowl?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.93,
+    "seed": 50629
+  },
+  {
+    "id": "ld_hint_strawberry",
+    "text": "Look in the bowl, then check the juice on each face.",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.91,
+    "seed": 51049
+  },
+  {
+    "id": "ld_yes_strawberry",
+    "text": "The cat! The juice on its mouth matches these strawberries!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 50631
+  },
+  {
+    "id": "ld_question_scarf",
+    "text": "Whose scarf is this?",
+    "voice_profile": "guide",
+    "scene": "Ask one simple observation question, without revealing the answer.",
+    "stress": [
+      "purple"
+    ],
+    "instruction": "Curious young detective. Clear American English, warm question, slow key nouns, brief pauses.",
+    "rate": 0.93,
+    "seed": 9632
+  },
+  {
+    "id": "ld_hint_scarf",
+    "text": "Look for the matching purple hat.",
+    "voice_profile": "guide",
+    "scene": "Gently guide the child toward the visible matching clue.",
+    "stress": [
+      "purple"
+    ],
+    "instruction": "Kind young detective. Emphasize clue words, inviting and clear, no disappointment.",
+    "rate": 0.92,
+    "seed": 9633
+  },
+  {
+    "id": "ld_yes_scarf",
+    "text": "Yes! The purple hat and scarf match!",
+    "voice_profile": "guide",
+    "scene": "Explain why the selected character fits the physical clue.",
+    "stress": [
+      "Giraffe",
+      "purple"
+    ],
+    "instruction": "Clear young American voice. Say exact words. Crisp consonants, gentle pauses. No extra words.",
+    "rate": 0.91,
+    "seed": 10053
+  },
+  {
+    "id": "ld_question_feather",
+    "text": "Whose feather is this?",
+    "voice_profile": "guide",
+    "scene": "Ask one simple observation question, without revealing the answer.",
+    "stress": [
+      "soft"
+    ],
+    "instruction": "Curious young detective. Clear American English, warm question, slow key nouns, brief pauses.",
+    "rate": 0.93,
+    "seed": 9635
+  },
+  {
+    "id": "ld_hint_feather",
+    "text": "Look for yellow feathers.",
+    "voice_profile": "guide",
+    "scene": "Gently guide the child toward the visible matching clue.",
+    "stress": [
+      "soft"
+    ],
+    "instruction": "Kind young detective. Emphasize clue words, inviting and clear, no disappointment.",
+    "rate": 0.92,
+    "seed": 9636
+  },
+  {
+    "id": "ld_yes_feather",
+    "text": "Yes! The duck! Yellow feathers!",
+    "voice_profile": "guide",
+    "scene": "Explain why the selected character fits the physical clue.",
+    "stress": [
+      "Duck",
+      "soft"
+    ],
+    "instruction": "Clear young American voice. Say exact words. Crisp consonants, gentle pauses. No extra words.",
+    "rate": 0.91,
+    "seed": 10056
+  },
+  {
+    "id": "ld_question_paint",
+    "text": "Who left this mark on the fence?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.93,
+    "seed": 50638
+  },
+  {
+    "id": "ld_hint_paint",
+    "text": "Look at the paint on the fence. Now compare the tails.",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.92,
+    "seed": 50639
+  },
+  {
+    "id": "ld_yes_paint",
+    "text": "The rhino! Its tail has the same paint as the fence!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 50640
+  },
+  {
+    "id": "ld_question_mud",
+    "text": "Which vehicle left these tracks?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.93,
+    "seed": 50641
+  },
+  {
+    "id": "ld_hint_mud",
+    "text": "Look at the muddy track. Which wheels have mud on them?",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.92,
+    "seed": 50642
+  },
+  {
+    "id": "ld_yes_mud",
+    "text": "The red car! Its muddy wheels match this muddy road.",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 50643
+  },
+  {
+    "id": "ld_question_banana",
+    "text": "Who left this fruit peel?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53642
+  },
+  {
+    "id": "ld_hint_banana",
+    "text": "Look at the peel. Then look for soft yellow food near a mouth.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 143643
+  },
+  {
+    "id": "ld_yes_banana",
+    "text": "The dog! There is soft banana on its mouth and chin.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.91,
+    "seed": 144822
+  },
+  {
+    "id": "ld_question_apple",
+    "text": "Who tasted fruit from this tree?",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Curious young guide, warm natural question. Clear American English, no answer revealed.",
+    "rate": 0.94,
+    "seed": 102645
+  },
+  {
+    "id": "ld_hint_apple",
+    "text": "Look at the fruit. Check for little bits of peel near a mouth.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 102646
+  },
+  {
+    "id": "ld_yes_apple",
+    "text": "The fox! Little bits of apple peel are on its chin.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.94,
+    "seed": 143647
+  },
+  {
+    "id": "ld_question_blue_cup",
+    "text": "Who drank from this cup?",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Curious young guide, warm natural question. Clear American English, no answer revealed.",
+    "rate": 0.94,
+    "seed": 143648
+  },
+  {
+    "id": "ld_hint_blue_cup",
+    "text": "Look inside the cup. Then check around each mouth.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 143649
+  },
+  {
+    "id": "ld_yes_blue_cup",
+    "text": "The rhino! It has milk on its mouth, just like the milk in the cup!",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.94,
+    "seed": 143650
+  },
+  {
+    "id": "ld_question_green_tracks",
+    "text": "Who left footprints between the plant pots?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53651
+  },
+  {
+    "id": "ld_hint_green_tracks",
+    "text": "Follow the green paw prints behind the pots.",
+    "voice_profile": "guide",
+    "scene": "The Greenhouse Prints",
+    "stress": [
+      "green paw prints between plant pots"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 12652
+  },
+  {
+    "id": "ld_yes_green_tracks",
+    "text": "The dog! Its paws have the same paint as these footprints!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 53653
+  },
+  {
+    "id": "ld_question_orange_tracks",
+    "text": "Who left footprints by the stool?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53654
+  },
+  {
+    "id": "ld_hint_orange_tracks",
+    "text": "Look beside the stool. Compare the prints with each friend's feet.",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.94,
+    "seed": 53655
+  },
+  {
+    "id": "ld_yes_orange_tracks",
+    "text": "The rhino! Its feet have the same paint as these footprints!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.9,
+    "seed": 53833
+  },
+  {
+    "id": "ld_question_green_boots",
+    "text": "Who left these footprints?",
+    "voice_profile": "guide",
+    "scene": "A pond mystery: infer who walked here by comparing star and heel marks in muddy footprints with boot soles.",
+    "stress": [
+      "footprints"
+    ],
+    "instruction": "Curious young guide. Warm natural question, clear American English. Do not reveal the answer.",
+    "rate": 0.94,
+    "seed": 150013
+  },
+  {
+    "id": "ld_hint_green_boots",
+    "text": "Look at the marks on the boots. Do they match the footprints?",
+    "voice_profile": "guide",
+    "scene": "A pond mystery: infer who walked here by comparing star and heel marks in muddy footprints with boot soles.",
+    "stress": [
+      "marks",
+      "match"
+    ],
+    "instruction": "Gentle young guide. Invite comparing boots and footprints. Clear, warm, unhurried English.",
+    "rate": 0.94,
+    "seed": 150014
+  },
+  {
+    "id": "ld_yes_green_boots",
+    "text": "The rhino! A star and two lines match the footprints!",
+    "voice_profile": "guide",
+    "scene": "A pond mystery: infer who walked here by comparing star and heel marks in muddy footprints with boot soles.",
+    "stress": [
+      "rhino",
+      "star",
+      "two lines"
+    ],
+    "instruction": "Delighted young guide. Bright RHINO, then explain the matching clues warmly and clearly.",
+    "rate": 0.91,
+    "seed": 150015
+  },
+  {
+    "id": "ld_question_yellow_boots",
+    "text": "Whose boots are by the umbrella?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53663
+  },
+  {
+    "id": "ld_hint_yellow_boots",
+    "text": "Two yellow boots are behind the umbrella.",
+    "voice_profile": "guide",
+    "scene": "The Umbrella Stand",
+    "stress": [
+      "yellow boots behind lavender umbrella"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 12664
+  },
+  {
+    "id": "ld_yes_yellow_boots",
+    "text": "Yes! The rabbit has boots like the ones by the umbrella!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young girl. Clear American English; crisp animal names and clue words. Warm explanation.",
+    "rate": 0.91,
+    "seed": 54666
+  },
+  {
+    "id": "ld_question_white_buttons",
+    "text": "Whose coat is on the table?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53666
+  },
+  {
+    "id": "ld_hint_white_buttons",
+    "text": "Look at the cloth and the buttons. Which coat matches?",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.94,
+    "seed": 53667
+  },
+  {
+    "id": "ld_yes_white_buttons",
+    "text": "The rabbit! Its coat matches the cloth and buttons here.",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 53668
+  },
+  {
+    "id": "ld_question_blue_buttons",
+    "text": "Whose coat is this?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [
+      "coat"
+    ],
+    "instruction": "Curious young girl. Clear English. Crisp consonants; gently stress COAT. Warm unhurried question.",
+    "rate": 0.9,
+    "seed": 54850
+  },
+  {
+    "id": "ld_hint_blue_buttons",
+    "text": "Look at the coat beside the stage. Compare its buttons.",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.94,
+    "seed": 53673
+  },
+  {
+    "id": "ld_yes_blue_buttons",
+    "text": "The fox! Its coat has the same color and buttons!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.9,
+    "seed": 53851
+  },
+  {
+    "id": "ld_question_orange_snack",
+    "text": "Who had a snack at this counter?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53675
+  },
+  {
+    "id": "ld_hint_orange_snack",
+    "text": "Look at the juice beside the peel. Compare the marks around the mouths.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 143676
+  },
+  {
+    "id": "ld_yes_orange_snack",
+    "text": "The bear! The juice on its mouth matches the juice here!",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.91,
+    "seed": 144678
+  },
+  {
+    "id": "ld_question_grapes",
+    "text": "Who ate fruit from this bowl?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53678
+  },
+  {
+    "id": "ld_hint_grapes",
+    "text": "Look under the leaf. Then compare the juice on each face.",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.94,
+    "seed": 53679
+  },
+  {
+    "id": "ld_yes_grapes",
+    "text": "The rhino! The juice on its face matches the fruit here!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.9,
+    "seed": 53857
+  },
+  {
+    "id": "ld_question_striped_hat",
+    "text": "Whose mittens are these?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53681
+  },
+  {
+    "id": "ld_hint_striped_hat",
+    "text": "Look under the sled. Compare the stripes with each friend's hat.",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.94,
+    "seed": 53682
+  },
+  {
+    "id": "ld_yes_striped_hat",
+    "text": "The rabbit! Its hat has the same stripes as these mittens!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 53683
+  },
+  {
+    "id": "ld_question_blue_feather",
+    "text": "Who left this feather?",
+    "voice_profile": "guide",
+    "scene": "A feather lies beside a fountain. Invite the child to infer which bird left it, without naming its color.",
+    "stress": [
+      "left",
+      "feather"
+    ],
+    "instruction": "Curious young guide. Warm natural English question; clearly say feather, not father.",
+    "rate": 0.94,
+    "seed": 150016
+  },
+  {
+    "id": "ld_hint_blue_feather",
+    "text": "Look by the fountain. A blue feather!",
+    "voice_profile": "guide",
+    "scene": "The Fountain Feather",
+    "stress": [
+      "blue feather tucked behind fountain flowerpot"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 12694
+  },
+  {
+    "id": "ld_yes_blue_feather",
+    "text": "The blue bird! Its feathers match the one by the fountain!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 53695
+  },
+  {
+    "id": "ld_question_penguin_shadow",
+    "text": "Whose shadow is on the ice?",
+    "voice_profile": "guide",
+    "scene": "The Icy Shadow",
+    "stress": [
+      "clear penguin silhouette on pale ice"
+    ],
+    "instruction": "Curious playful child. Clear American English, rising question, emphasize clue nouns.",
+    "rate": 0.94,
+    "seed": 12696
+  },
+  {
+    "id": "ld_hint_penguin_shadow",
+    "text": "Look for a round body and two little flippers.",
+    "voice_profile": "guide",
+    "scene": "The Icy Shadow",
+    "stress": [
+      "clear penguin silhouette on pale ice"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 12697
+  },
+  {
+    "id": "ld_yes_penguin_shadow",
+    "text": "Yes! That round shadow belongs to the penguin!",
+    "voice_profile": "guide",
+    "scene": "The Icy Shadow",
+    "stress": [
+      "clear penguin silhouette on pale ice"
+    ],
+    "instruction": "Delighted young child. Smile brightly, celebrate discovery, clear animal and clue words.",
+    "rate": 0.94,
+    "seed": 12698
+  },
+  {
+    "id": "ld_question_red_tail",
+    "text": "Who left this mark on the fence?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53699
+  },
+  {
+    "id": "ld_hint_red_tail",
+    "text": "A wide red swish matches a red tail.",
+    "voice_profile": "guide",
+    "scene": "The Red Ribbon Mark",
+    "stress": [
+      "wide red brushlike swish on toy fence"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 12700
+  },
+  {
+    "id": "ld_yes_red_tail",
+    "text": "The fox! Its tail has the same paint as this mark!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 53701
+  },
+  {
+    "id": "ld_question_blue_tail",
+    "text": "Who left paint behind the toy box?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53702
+  },
+  {
+    "id": "ld_hint_blue_tail",
+    "text": "Look behind the toy box for a blue swish.",
+    "voice_profile": "guide",
+    "scene": "The Blue Curve",
+    "stress": [
+      "thin blue curved paint line behind toy chest"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 12703
+  },
+  {
+    "id": "ld_yes_blue_tail",
+    "text": "The cat! Its tail has the same paint as the wall!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 53704
+  },
+  {
+    "id": "ld_question_blue_car",
+    "text": "Which car is hiding in the garage?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 104705
+  },
+  {
+    "id": "ld_hint_blue_car",
+    "text": "Peek under the door. Compare the color and the shape of the lights.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 194706
+  },
+  {
+    "id": "ld_yes_blue_car",
+    "text": "The blue car with round lights! Both clues match!",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.94,
+    "seed": 194707
+  },
+  {
+    "id": "ld_question_yellow_van",
+    "text": "Which vehicle is hiding behind the boxes?",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Curious young guide, warm natural question. Clear American English, no answer revealed.",
+    "rate": 0.94,
+    "seed": 102708
+  },
+  {
+    "id": "ld_hint_yellow_van",
+    "text": "Look around the boxes. Compare the tall back and the wheel.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 102709
+  },
+  {
+    "id": "ld_yes_yellow_van",
+    "text": "The yellow van! Its tall back matches the part behind the boxes!",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.94,
+    "seed": 102710
+  },
+  {
+    "id": "ld_question_green_bus",
+    "text": "Which vehicle is hiding in the tunnel?",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Curious young guide, warm natural question. Clear American English, no answer revealed.",
+    "rate": 0.94,
+    "seed": 102711
+  },
+  {
+    "id": "ld_hint_green_bus",
+    "text": "Peek through the leaves. Compare the row of little windows.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 102712
+  },
+  {
+    "id": "ld_yes_green_bus",
+    "text": "The green bus! The row of windows matches its side!",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.94,
+    "seed": 102713
+  },
+  {
+    "id": "ld_question_polka_dots",
+    "text": "Whose blanket is under the cushion?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53714
+  },
+  {
+    "id": "ld_hint_polka_dots",
+    "text": "Look under the cushion. Then compare the patterns on the hats.",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.94,
+    "seed": 53715
+  },
+  {
+    "id": "ld_yes_polka_dots",
+    "text": "The giraffe! Its hat matches the blanket under the cushion!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 53716
+  },
+  {
+    "id": "ld_question_crumb_trail",
+    "text": "Who left these crumbs on the table?",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Curious young guide, warm natural question. Clear American English, no answer revealed.",
+    "rate": 0.94,
+    "seed": 143717
+  },
+  {
+    "id": "ld_hint_crumb_trail",
+    "text": "Follow the crumbs by the napkin. Check around each mouth.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 102718
+  },
+  {
+    "id": "ld_yes_crumb_trail",
+    "text": "The panda! Its cookie crumbs match the crumbs on this table!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young detective. Clear English, smile and explain the matching clue warmly.",
+    "rate": 0.94,
+    "seed": 53719
+  },
+  {
+    "id": "ld_question_rainbow_gate",
+    "text": "Who left this mark on the gate?",
+    "voice_profile": "guide",
+    "scene": "Ask about the visible scene without naming the distinguishing color, food or answer.",
+    "stress": [],
+    "instruction": "Curious young detective. Clear American English, warm question, unhurried and natural.",
+    "rate": 0.94,
+    "seed": 53720
+  },
+  {
+    "id": "ld_hint_rainbow_gate",
+    "text": "Look at the mark behind the flowers. Then compare the tails.",
+    "voice_profile": "guide",
+    "scene": "Guide attention to the pictured evidence and compare it with the candidates.",
+    "stress": [],
+    "instruction": "Kind young detective. Clear English, gently guide attention to the clue, no disappointment.",
+    "rate": 0.94,
+    "seed": 53721
+  },
+  {
+    "id": "ld_yes_rainbow_gate",
+    "text": "Yes! The rhino has green paint, just like the mark on the gate!",
+    "voice_profile": "guide",
+    "scene": "Warmly connect the pictured evidence to the chosen friend.",
+    "stress": [],
+    "instruction": "Happy young girl. Clear American English; crisp animal names and clue words. Warm explanation.",
+    "rate": 0.91,
+    "seed": 54723
+  },
+  {
+    "id": "ld_complete_v2",
+    "text": "You found all forty clues! Wonderful detective!",
+    "voice_profile": "guide",
+    "scene": "Completed the entire shuffled pool.",
+    "stress": [
+      "forty",
+      "wonderful"
+    ],
+    "instruction": "Delighted young child, warm celebration, clear FORTY, joyful without shouting.",
+    "rate": 0.94,
+    "seed": 12723
+  },
+  {
+    "id": "ld_wrong_rabbit_0",
+    "text": "A rabbit? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "rabbit"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12724
+  },
+  {
+    "id": "ld_wrong_rabbit_1",
+    "text": "Oh, that's a rabbit! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "rabbit"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12725
+  },
+  {
+    "id": "ld_wrong_rabbit_2",
+    "text": "The rabbit? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "rabbit"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12726
+  },
+  {
+    "id": "ld_wrong_rabbit_3",
+    "text": "A rabbit, you say? Let's take another look!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "rabbit"
+    ],
+    "instruction": "Playful kind child. Clear precise American English, articulate every noun. Gentle, never harsh.",
+    "rate": 0.9,
+    "seed": 12904
+  },
+  {
+    "id": "ld_wrong_fox_0",
+    "text": "A fox? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "fox"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12728
+  },
+  {
+    "id": "ld_wrong_fox_1",
+    "text": "Oh, that's a fox! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "fox"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12729
+  },
+  {
+    "id": "ld_wrong_fox_2",
+    "text": "The fox? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "fox"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12730
+  },
+  {
+    "id": "ld_wrong_fox_3",
+    "text": "A fox, you say? Let's take another look!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "fox"
+    ],
+    "instruction": "Playful kind child. Clear precise American English, articulate every noun. Gentle, never harsh.",
+    "rate": 0.9,
+    "seed": 12908
+  },
+  {
+    "id": "ld_wrong_rhino_0",
+    "text": "A rhino? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "rhino"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12732
+  },
+  {
+    "id": "ld_wrong_rhino_1",
+    "text": "Oh, that's a rhino! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "rhino"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12733
+  },
+  {
+    "id": "ld_wrong_rhino_2",
+    "text": "The rhino? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "rhino"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12734
+  },
+  {
+    "id": "ld_wrong_rhino_3",
+    "text": "You picked the rhino. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "rhino"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12735
+  },
+  {
+    "id": "ld_wrong_dog_0",
+    "text": "A dog? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "dog"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12736
+  },
+  {
+    "id": "ld_wrong_dog_1",
+    "text": "Oh, that's a dog! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "dog"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12737
+  },
+  {
+    "id": "ld_wrong_dog_2",
+    "text": "The dog? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "dog"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12738
+  },
+  {
+    "id": "ld_wrong_dog_3",
+    "text": "You picked the dog. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "dog"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12739
+  },
+  {
+    "id": "ld_wrong_panda_0",
+    "text": "A panda? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "panda"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12740
+  },
+  {
+    "id": "ld_wrong_panda_1",
+    "text": "Oh, that's a panda! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "panda"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12741
+  },
+  {
+    "id": "ld_wrong_panda_2",
+    "text": "The panda? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "panda"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12742
+  },
+  {
+    "id": "ld_wrong_panda_3",
+    "text": "You picked the panda. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "panda"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12743
+  },
+  {
+    "id": "ld_wrong_tiger_0",
+    "text": "A tiger? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "tiger"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12744
+  },
+  {
+    "id": "ld_wrong_tiger_1",
+    "text": "Oh, that's a tiger! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "tiger"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12745
+  },
+  {
+    "id": "ld_wrong_tiger_2",
+    "text": "The tiger? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "tiger"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12746
+  },
+  {
+    "id": "ld_wrong_tiger_3",
+    "text": "A tiger, you say? Let's take another look!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "tiger"
+    ],
+    "instruction": "Playful kind child. Clear precise American English, articulate every noun. Gentle, never harsh.",
+    "rate": 0.9,
+    "seed": 12924
+  },
+  {
+    "id": "ld_wrong_cat_0",
+    "text": "A cat? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "cat"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12748
+  },
+  {
+    "id": "ld_wrong_cat_1",
+    "text": "Oh, that's a cat! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "cat"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12749
+  },
+  {
+    "id": "ld_wrong_cat_2",
+    "text": "The cat? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "cat"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12750
+  },
+  {
+    "id": "ld_wrong_cat_3",
+    "text": "You picked the cat. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "cat"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12751
+  },
+  {
+    "id": "ld_wrong_bear_0",
+    "text": "A bear? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "bear"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12752
+  },
+  {
+    "id": "ld_wrong_bear_1",
+    "text": "Oh, that's a bear! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "bear"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12753
+  },
+  {
+    "id": "ld_wrong_bear_2",
+    "text": "The bear? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "bear"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12754
+  },
+  {
+    "id": "ld_wrong_bear_3",
+    "text": "You picked the bear. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "bear"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12755
+  },
+  {
+    "id": "ld_wrong_giraffe_0",
+    "text": "A giraffe? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "giraffe"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12756
+  },
+  {
+    "id": "ld_wrong_giraffe_1",
+    "text": "Oh, that's a giraffe! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "giraffe"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12757
+  },
+  {
+    "id": "ld_wrong_giraffe_2",
+    "text": "The giraffe? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "giraffe"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12758
+  },
+  {
+    "id": "ld_wrong_giraffe_3",
+    "text": "You picked the giraffe. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "giraffe"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12759
+  },
+  {
+    "id": "ld_wrong_duck_0",
+    "text": "A duck? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "duck"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12760
+  },
+  {
+    "id": "ld_wrong_duck_1",
+    "text": "Oh, that's a duck! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "duck"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12761
+  },
+  {
+    "id": "ld_wrong_duck_2",
+    "text": "The duck? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "duck"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12762
+  },
+  {
+    "id": "ld_wrong_duck_3",
+    "text": "You picked the duck. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "duck"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12763
+  },
+  {
+    "id": "ld_wrong_owl_0",
+    "text": "An owl? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "owl"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12764
+  },
+  {
+    "id": "ld_wrong_owl_1",
+    "text": "Oh, that's an owl! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "owl"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12765
+  },
+  {
+    "id": "ld_wrong_owl_2",
+    "text": "The owl? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "owl"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12766
+  },
+  {
+    "id": "ld_wrong_owl_3",
+    "text": "You picked the owl. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "owl"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12767
+  },
+  {
+    "id": "ld_wrong_blue_bird_0",
+    "text": "A blue bird? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "blue bird"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12768
+  },
+  {
+    "id": "ld_wrong_blue_bird_1",
+    "text": "Oh, that's a blue bird! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "blue bird"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12769
+  },
+  {
+    "id": "ld_wrong_blue_bird_2",
+    "text": "The blue bird? Not this time. Keep looking!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "blue bird"
+    ],
+    "instruction": "Playful kind child. Clear precise American English, articulate every noun. Gentle, never harsh.",
+    "rate": 0.9,
+    "seed": 12947
+  },
+  {
+    "id": "ld_wrong_blue_bird_3",
+    "text": "You picked the blue bird. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "blue bird"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12771
+  },
+  {
+    "id": "ld_wrong_penguin_0",
+    "text": "A penguin? Hmm, not this time. Try another friend!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "penguin"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12772
+  },
+  {
+    "id": "ld_wrong_penguin_1",
+    "text": "Oh, that's a penguin! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "penguin"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12773
+  },
+  {
+    "id": "ld_wrong_penguin_2",
+    "text": "The penguin? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "penguin"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12774
+  },
+  {
+    "id": "ld_wrong_penguin_3",
+    "text": "You picked the penguin. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "penguin"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12775
+  },
+  {
+    "id": "ld_wrong_red_car_0",
+    "text": "The red car? Not this one. Try again!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "red car"
+    ],
+    "instruction": "Playful kind child. Clear precise American English, articulate every noun. Gentle, never harsh.",
+    "rate": 0.9,
+    "seed": 12953
+  },
+  {
+    "id": "ld_wrong_red_car_1",
+    "text": "Oh, that's a red car! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "red car"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12777
+  },
+  {
+    "id": "ld_wrong_red_car_2",
+    "text": "The red car? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "red car"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12778
+  },
+  {
+    "id": "ld_wrong_red_car_3",
+    "text": "You picked the red car. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "red car"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12779
+  },
+  {
+    "id": "ld_wrong_blue_car_0",
+    "text": "The blue car? Hmm, not this one. Try again!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "blue car"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12780
+  },
+  {
+    "id": "ld_wrong_blue_car_1",
+    "text": "Oh, that's a blue car! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "blue car"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12781
+  },
+  {
+    "id": "ld_wrong_blue_car_2",
+    "text": "A blue car? No, no! Try another one!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "blue car"
+    ],
+    "instruction": "Playful kind child. Clear precise American English, articulate every noun. Gentle, never harsh.",
+    "rate": 0.9,
+    "seed": 12959
+  },
+  {
+    "id": "ld_wrong_blue_car_3",
+    "text": "You picked the blue car. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "blue car"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12783
+  },
+  {
+    "id": "ld_wrong_yellow_van_0",
+    "text": "The yellow van? Hmm, not this one. Try again!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "yellow van"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12784
+  },
+  {
+    "id": "ld_wrong_yellow_van_1",
+    "text": "Oh, that's a yellow van! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "yellow van"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12785
+  },
+  {
+    "id": "ld_wrong_yellow_van_2",
+    "text": "The yellow van? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "yellow van"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12786
+  },
+  {
+    "id": "ld_wrong_yellow_van_3",
+    "text": "You picked the yellow van. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "yellow van"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12787
+  },
+  {
+    "id": "ld_wrong_green_bus_0",
+    "text": "The green bus? Hmm, not this one. Try again!",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "green bus"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12788
+  },
+  {
+    "id": "ld_wrong_green_bus_1",
+    "text": "Oh, that's a green bus! Let's look again.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "green bus"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12789
+  },
+  {
+    "id": "ld_wrong_green_bus_2",
+    "text": "The green bus? No, no! Keep looking for the clue.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "green bus"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12790
+  },
+  {
+    "id": "ld_wrong_green_bus_3",
+    "text": "You picked the green bus. Not quite! Take another look.",
+    "voice_profile": "guide",
+    "scene": "Playful gentle response to a wrong candidate. Correctly name the actual pictured choice.",
+    "stress": [
+      "green bus"
+    ],
+    "instruction": "Smiling playful child. Gentle curious correction, NO NO light and kind, never harsh.",
+    "rate": 0.94,
+    "seed": 12791
+  },
+  {
+    "id": "ld_question_bus_window",
+    "text": "Who is doing something unsafe?",
+    "voice_profile": "guide",
+    "scene": "A bus safety puzzle. Name the unsafe behavior, not a bad animal.",
+    "stress": [],
+    "instruction": "Curious warm child. Clear American English. Ask naturally; pronounce unsafe clearly.",
+    "rate": 0.94,
+    "seed": 125268
+  },
+  {
+    "id": "ld_hint_bus_window",
+    "text": "Look at each window. Are all heads and paws inside?",
+    "voice_profile": "guide",
+    "scene": "A bus safety puzzle. Name the unsafe behavior, not a bad animal.",
+    "stress": [],
+    "instruction": "Friendly young guide. Gently invite the child to compare all four windows. No scolding.",
+    "rate": 0.94,
+    "seed": 84270
+  },
+  {
+    "id": "ld_yes_bus_window",
+    "text": "The fox is leaning out! Keep your head and paws inside the bus.",
+    "voice_profile": "guide",
+    "scene": "A bus safety puzzle. Name the unsafe behavior, not a bad animal.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain clearly and kindly, with a calm safety reminder.",
+    "rate": 0.94,
+    "seed": 84270
+  },
+  {
+    "id": "ld_question_beach_swimmer",
+    "text": "Who went for a swim?",
+    "voice_profile": "guide",
+    "scene": "The Beach Clue",
+    "stress": [
+      "blue white striped hat left beside water"
+    ],
+    "instruction": "Curious playful child. Clear American English, rising question, emphasize clue nouns.",
+    "rate": 0.94,
+    "seed": 14271
+  },
+  {
+    "id": "ld_hint_beach_swimmer",
+    "text": "Look at the hat on the sand. Blue and white stripes!",
+    "voice_profile": "guide",
+    "scene": "The Beach Clue",
+    "stress": [
+      "blue white striped hat left beside water"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 14272
+  },
+  {
+    "id": "ld_yes_beach_swimmer",
+    "text": "Yes! The rabbit left a blue and white striped hat!",
+    "voice_profile": "guide",
+    "scene": "The Beach Clue",
+    "stress": [
+      "blue white striped hat left beside water"
+    ],
+    "instruction": "Delighted young child. Smile brightly, celebrate discovery, clear animal and clue words.",
+    "rate": 0.94,
+    "seed": 14273
+  },
+  {
+    "id": "ld_question_reeds",
+    "text": "Who is hiding in the reeds?",
+    "voice_profile": "guide",
+    "scene": "The Rustling Reeds",
+    "stress": [
+      "webbed prints and yellow feather at reeds"
+    ],
+    "instruction": "Curious playful child. Clear American English, rising question, emphasize clue nouns.",
+    "rate": 0.94,
+    "seed": 14274
+  },
+  {
+    "id": "ld_hint_reeds",
+    "text": "Follow the webbed footprints. A yellow feather too!",
+    "voice_profile": "guide",
+    "scene": "The Rustling Reeds",
+    "stress": [
+      "webbed prints and yellow feather at reeds"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 14275
+  },
+  {
+    "id": "ld_yes_reeds",
+    "text": "Yes! The duck left webbed prints and a yellow feather!",
+    "voice_profile": "guide",
+    "scene": "The Rustling Reeds",
+    "stress": [
+      "webbed prints and yellow feather at reeds"
+    ],
+    "instruction": "Delighted young child. Smile brightly, celebrate discovery, clear animal and clue words.",
+    "rate": 0.94,
+    "seed": 14276
+  },
+  {
+    "id": "ld_question_kite_string",
+    "text": "Who is holding the kite string?",
+    "voice_profile": "guide",
+    "scene": "The Tangled Kite",
+    "stress": [
+      "unbroken kite string leading to dog paw"
+    ],
+    "instruction": "Curious playful child. Clear American English, rising question, emphasize clue nouns.",
+    "rate": 0.94,
+    "seed": 14277
+  },
+  {
+    "id": "ld_hint_kite_string",
+    "text": "Follow the string all the way down.",
+    "voice_profile": "guide",
+    "scene": "The Tangled Kite",
+    "stress": [
+      "unbroken kite string leading to dog paw"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 14278
+  },
+  {
+    "id": "ld_yes_kite_string",
+    "text": "Yes! The kite string leads to the dog!",
+    "voice_profile": "guide",
+    "scene": "The Tangled Kite",
+    "stress": [
+      "unbroken kite string leading to dog paw"
+    ],
+    "instruction": "Delighted young child. Smile brightly, celebrate discovery, clear animal and clue words.",
+    "rate": 0.94,
+    "seed": 14279
+  },
+  {
+    "id": "ld_question_high_shelf",
+    "text": "Who can reach the books on the top shelf?",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Curious young guide, warm natural question. Clear American English, no answer revealed.",
+    "rate": 0.94,
+    "seed": 145280
+  },
+  {
+    "id": "ld_hint_high_shelf",
+    "text": "Compare how tall the friends are. Look up at the books.",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Gentle young guide. Invite careful looking and comparing, clear and unhurried.",
+    "rate": 0.94,
+    "seed": 145281
+  },
+  {
+    "id": "ld_yes_high_shelf",
+    "text": "The giraffe! Its long neck can reach the high shelf!",
+    "voice_profile": "guide",
+    "scene": "A visual detective puzzle. Compare visible traces, partial shapes or relationships.",
+    "stress": [],
+    "instruction": "Warm young guide. Explain the visible evidence happily and clearly, never scolding.",
+    "rate": 0.94,
+    "seed": 145282
+  },
+  {
+    "id": "ld_question_rain_visitor",
+    "text": "Whose coat and boots are these?",
+    "voice_profile": "guide",
+    "scene": "An empty rainy entryway. Identify the owner by combining the color of a hanging coat and a pair of boots.",
+    "stress": [
+      "coat",
+      "boots"
+    ],
+    "instruction": "Curious young guide. Warm natural question. Clear American English; do not name colors.",
+    "rate": 0.94,
+    "seed": 150015
+  },
+  {
+    "id": "ld_hint_rain_visitor",
+    "text": "Look at the coat and the boots. Which friend matches both?",
+    "voice_profile": "guide",
+    "scene": "An empty rainy entryway. Identify the owner by combining the color of a hanging coat and a pair of boots.",
+    "stress": [
+      "coat",
+      "boots",
+      "both"
+    ],
+    "instruction": "Gentle young guide. Invite comparison of both belongings; warm and unhurried.",
+    "rate": 0.9,
+    "seed": 150016
+  },
+  {
+    "id": "ld_yes_rain_visitor",
+    "text": "It's the dog! A yellow coat and red boots. Both match!",
+    "voice_profile": "guide",
+    "scene": "An empty rainy entryway. Identify the owner by combining the color of a hanging coat and a pair of boots.",
+    "stress": [
+      "dog",
+      "yellow",
+      "red",
+      "both"
+    ],
+    "instruction": "Warm young guide. Say the whole opening clearly, then explain both matching colors.",
+    "rate": 0.94,
+    "seed": 150031
+  },
+  {
+    "id": "ld_question_garden_help",
+    "text": "Who is helping the rhino?",
+    "voice_profile": "guide",
+    "scene": "The Helpful Friend",
+    "stress": [
+      "dog and rhino carrying opposite basket handles"
+    ],
+    "instruction": "Curious playful child. Clear American English, rising question, emphasize clue nouns.",
+    "rate": 0.94,
+    "seed": 14286
+  },
+  {
+    "id": "ld_hint_garden_help",
+    "text": "Look for the friend holding the other handle.",
+    "voice_profile": "guide",
+    "scene": "The Helpful Friend",
+    "stress": [
+      "dog and rhino carrying opposite basket handles"
+    ],
+    "instruction": "Warm helpful child, gentle secret clue, clear key color and object, never scolding.",
+    "rate": 0.94,
+    "seed": 14287
+  },
+  {
+    "id": "ld_yes_garden_help",
+    "text": "Yes! The dog is helping the rhino carry the basket!",
+    "voice_profile": "guide",
+    "scene": "The Helpful Friend",
+    "stress": [
+      "dog and rhino carrying opposite basket handles"
+    ],
+    "instruction": "Delighted young child. Smile brightly, celebrate discovery, clear animal and clue words.",
+    "rate": 0.94,
+    "seed": 14288
+  },
+  {
+    "id": "ld_question_night_reader",
+    "text": "Who is reading behind the curtain?",
+    "voice_profile": "guide",
+    "scene": "A hidden bedtime reader is identified from its shadow on a closed fabric curtain.",
+    "stress": [
+      "reading",
+      "curtain"
+    ],
+    "instruction": "Curious young guide. Warm natural question, clear English. Do not reveal the animal.",
+    "rate": 0.94,
+    "seed": 151014
+  },
+  {
+    "id": "ld_hint_night_reader",
+    "text": "Look at the shadow. Compare the ears and nose.",
+    "voice_profile": "guide",
+    "scene": "A hidden bedtime reader is identified from its shadow on a closed fabric curtain.",
+    "stress": [
+      "shadow",
+      "ears",
+      "nose"
+    ],
+    "instruction": "Gentle young guide. Invite observing a shadow and comparing shapes. Clear, warm English.",
+    "rate": 0.94,
+    "seed": 151015
+  },
+  {
+    "id": "ld_yes_night_reader",
+    "text": "The dog! Its ear hangs down beside its face!",
+    "voice_profile": "guide",
+    "scene": "A hidden bedtime reader is identified from its shadow on a closed fabric curtain.",
+    "stress": [
+      "dog",
+      "ear",
+      "beside"
+    ],
+    "instruction": "Delighted young guide. Emphasize DOG and FLOPPY EAR with a smile. Clear, kind English.",
+    "rate": 0.94,
+    "seed": 151016
+  }
+]

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#e8f3ed">
+ <title>Little Detective · Xiaoxiao Games</title>
+ <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E🔎%3C/text%3E%3C/svg%3E">
+ <link rel="stylesheet" href="style.css?v=20261003kite1">
+<link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+<script defer src="../../scripts/game-home.js?v=20261003home2"></script>
+</head>
+<body>
+ <div class="ambient" aria-hidden="true"></div>
+ <header class="topbar">
+  <a class="round-button home" href="../../home.html" aria-label="返回游戏首页"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8M6 9v12h12V9M10 21v-7h4v7"/></svg></a>
+  <div class="brand"><span class="eyebrow">LOOK · LISTEN · DISCOVER</span><h1>Little Detective</h1></div>
+  <div id="progress" class="progress" aria-label="Case progress"><span id="case-number">1</span><span class="slash">/</span><span id="case-total">40</span><div class="progress-track" aria-hidden="true"><i id="progress-fill"></i></div></div>
+  <button id="replay" class="round-button" type="button" aria-label="Listen again"><svg viewBox="0 0 24 24"><path d="M3 9h5l5-5v16l-5-5H3zM17 8q5 4 0 8M20 4q9 8 0 16"/></svg></button>
+  <button id="mute" class="round-button quiet" type="button" aria-label="Mute English voices" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M3 9h5l5-5v16l-5-5H3zM17 8q5 4 0 8"/><path class="mute-line" d="m3 3 18 18"/></svg></button>
+ </header>
+ <main id="play-board" class="play-board">
+  <section id="scene-panel" class="scene-panel" aria-labelledby="question">
+   <div id="scene-frame" class="scene-frame">
+    <button id="scene-repeat" class="scene-media" type="button" aria-label="Hear the question again"><span id="scene-content" class="scene-content"><img id="scene-image" alt="" draggable="false"><span id="clue-ring" class="clue-ring" aria-hidden="true"></span></span><span class="question-row"><span class="case-heading"><span id="case-title" class="case-title"></span><span id="case-difficulty" class="case-difficulty" role="img" aria-label="Difficulty: 1 of 3 stars"><span class="filled" aria-hidden="true">★</span><span class="empty" aria-hidden="true">☆☆</span></span></span><span id="question" role="heading" aria-level="2"></span></span><span class="listen-note" aria-hidden="true">Tap to listen ↻</span></button>
+    <span id="case-stamp" class="case-stamp" hidden>Case solved! <b>✓</b></span>
+    <div class="scene-tools"><button id="hint" class="hint-button" type="button" aria-label="Hear a clue"><svg viewBox="0 0 28 28"><path d="M10 19v-2a8 8 0 1 1 8 0v2M10 22h8M12 25h4"/></svg><span>Clue</span></button><div class="zoom-controls" role="group" aria-label="Picture zoom"><button id="zoom-out" type="button" aria-label="Zoom out">−</button><button id="zoom-reset" type="button" aria-label="Show the whole picture">1×</button><button id="zoom-in" type="button" aria-label="Zoom in">+</button></div></div>
+   </div>
+  </section>
+  <section class="answer-panel" aria-label="Choose one friend"><div class="answer-heading"><span>Who could it be?</span><span class="tiny-stars" aria-hidden="true">✧ ✧ ✧</span></div><div id="choices" class="choices"></div></section>
+ </main>
+ <footer class="bottom-bar"><div id="spoken" class="spoken" role="status" aria-live="polite"><span class="voice-dots" aria-hidden="true"><i></i><i></i><i></i></span><span id="caption">Look for a clue. Tap a friend.</span></div><button id="next" type="button" class="next-button" hidden><span id="next-label">Next case</span><span id="next-countdown" class="next-countdown" role="timer" aria-live="off" hidden></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></footer>
+ <div id="loading" class="loading" role="status"><span class="spinner" aria-hidden="true"></span><strong id="loading-title">Getting the case ready…</strong><div class="load-track"><span id="load-bar"></span></div><span id="loading-count">0 / 5 pictures</span><button id="retry" type="button" hidden>Try again</button></div>
+ <button id="sound-note" class="sound-note" type="button" hidden>Tap 🔊 to hear the clue.</button>
+ <div id="complete" class="complete" hidden><div class="detective-badge" aria-hidden="true"><svg viewBox="0 0 90 90"><circle cx="36" cy="36" r="24"/><path d="m54 54 23 23M25 36l8 8 17-18"/></svg></div><p class="eyebrow">FORTY LITTLE DISCOVERIES</p><h2>Great detective!</h2><p>You found every clue.</p><div class="complete-stars" aria-hidden="true">★ ★ ★ ★ ★</div><button id="play-again" class="next-button" type="button">Play again <span aria-hidden="true">↻</span></button><a href="../../home.html" class="complete-home">Back to games</a></div>
+ <div id="celebration" class="celebration" aria-hidden="true"></div>
+ <script>window.MINI_GAME={id:'little_detective',name:'Little Detective'};</script>
+ <script type="module" src="game.js?v=20261003kite1" onerror="document.getElementById('loading-title').textContent='The case needs another try.';document.getElementById('retry').hidden=false;document.getElementById('retry').onclick=()=>location.reload();"></script>
+ <script defer src="../../scripts/bankend-config.js?v=2"></script><script defer src="../../scripts/tracking.js?v=2"></script>
+</body>
+</html>

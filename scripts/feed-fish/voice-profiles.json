@@ -1,0 +1,311 @@
+{
+  "model": "cosyvoice-v3.5-plus",
+  "provider": "Alibaba Cloud Model Studio",
+  "language": "en",
+  "profiles": {
+    "guide": {
+      "prefix": "xxguide35",
+      "name": "Sunny — word discovery",
+      "voice_prompt": "A bright, friendly girl cartoon voice, childlike and about eight years old, speaking native General American English. Clear round vowels and crisp consonants, a smiling light mid-high register, curious and inviting. Playful rising and falling intonation with expressive noun emphasis, unhurried and very easy for preschoolers to imitate. Natural child speech with correct pronunciation, no lisp, no baby babble, no whisper or shrill shouting.",
+      "preview_text": "A tree! A strawberry! A bear! A tiger! Great! You found it!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "clownfish": {
+      "prefix": "xxreef3v00",
+      "name": "clownfish — 活泼小男孩",
+      "voice_prompt": "A cheerful eight-year-old cartoon boy with a bright upper-middle voice, round open vowels, playful little leaps in pitch, confident and sociable. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hi! I'm a clownfish! Yummy! That is tasty! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v00-1f3beac7660e4078a48a8a8f060fb6b0",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "whale": {
+      "prefix": "xxreef3v01",
+      "name": "whale — 沉稳温厚的大叔",
+      "voice_prompt": "A kind adult male giant with a deep smooth resonant bass-baritone voice, large relaxed chest resonance and rounded vowels, slow reassuring phrases, a gentle smile without a rasp. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a whale. Oh, lovely! What a nice snack! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v01-c4a74b258e824718a68156b6bfa41083",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "shark": {
+      "prefix": "xreef3bass",
+      "name": "shark — 浑厚慈祥的爷爷",
+      "voice_prompt": "A seventy-year-old man, a warm grandfather with a very low natural male bass speaking voice. Strong relaxed chest resonance, dark rounded vowels, lightly weathered texture, slow deliberate clear articulation. Speak in a steady low register, including happy reactions. Kind, reassuring, mildly amused. Native General American English. Adult male bass, never a child, squeaky cartoon voice or falsetto. No whispering, growling, sound effects or music.",
+      "preview_text": "Hello. I'm a shark. Yummy, thank you. Ah, delicious. I'm full now. Thank you.",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xreef3bass-e8d560da45174706abb08b114e00e501",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "turtle": {
+      "prefix": "xxreef3v03",
+      "name": "turtle — 温柔从容的奶奶",
+      "voice_prompt": "An elderly grandmother character with a warm low-mid female voice, soft lightly weathered texture, patient flowing phrasing and a reassuring rounded smile, clearly articulated and never whispery. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a turtle. How lovely! Thank you, dear! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v03-7a22715ff41c4279b8863555335090a9",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "manta": {
+      "prefix": "xxreef3v04",
+      "name": "manta — 轻柔舒展的姐姐",
+      "voice_prompt": "A calm young adult woman with a velvety low contralto voice, smooth airy-edged but fully voiced resonance, graceful connected phrases and gentle downward melodic endings. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a manta ray. Lovely, thank you! Such a nice snack! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v04-5253fbbda0714fee8acd0bee0c88ddda",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "pufferfish": {
+      "prefix": "xxreef3v05",
+      "name": "pufferfish — 软糯圆滚滚的小男孩",
+      "voice_prompt": "A cuddly five-year-old cartoon boy with a round plush mid-high voice, gently puffy rounded vowels and buoyant bouncy timing, sweet and eager without a lisp or squeaks. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a pufferfish. Yum, yum! So yummy! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v05-17d6dba1590b47a3b54d65ec85b8e684",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "blue_tang": {
+      "prefix": "xxreef3v06",
+      "name": "blue_tang — 清亮好奇的小女孩",
+      "voice_prompt": "A curious ten-year-old cartoon girl with a clear sparkling high-middle voice, quick light diction, expressive questioning inflections and lively confident energy. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a blue tang. Ooh, tasty! Yummy, thanks! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v06-a532b6edd3184751aaa5f472d43b7daf",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "butterflyfish": {
+      "prefix": "xxreef3v07",
+      "name": "butterflyfish — 轻声甜甜的小女孩",
+      "voice_prompt": "A gentle seven-year-old cartoon girl with a sweet soft high voice, delicate lilting melodies, relaxed light consonants and a shy little smile, fully audible and clearly spoken. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a butterflyfish. Oh, yummy! So sweet of you! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v07-73b9f3bfaeb549c993f693dadca3fb52",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "angelfish": {
+      "prefix": "xxreef3v08",
+      "name": "angelfish — 优雅亲切的阿姨",
+      "voice_prompt": "A poised adult woman with a clear warm lyrical soprano voice, elegant deliberate diction, gently sustained vowels and composed friendly upward warmth. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm an angelfish. Delicious! How delicious! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v08-7fe78264e0c641049f85c069da5db760",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "seahorse": {
+      "prefix": "xxreef3v09",
+      "name": "seahorse — 害羞细声的小男孩",
+      "voice_prompt": "A shy six-year-old cartoon boy with a small light high voice, soft forward resonance, hesitant little starts followed by clear curious words, tender and gentle, no whispering. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a seahorse. Oh! Thank you! A little snack! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v09-cfc0182adf0544fabc3f4d07a03e803e",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "lionfish": {
+      "prefix": "xxreef3v10",
+      "name": "lionfish — 温暖有戏剧感的叔叔",
+      "voice_prompt": "A friendly middle-aged male character with a rich textured theatrical baritone, slightly rolled warm vowels, proud rounded enunciation and a restrained playful flourish, never growling. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a lionfish. Wonderful! A fine snack! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v10-08e18ea391444311b6d9147f9a1fed80",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "parrotfish": {
+      "prefix": "xxreef3v11",
+      "name": "parrotfish — 开朗爽快的少年",
+      "voice_prompt": "An upbeat teenage boy with a bright slightly husky mid-range voice, rhythmic springy stress and a sociable grin, enthusiastic clear diction and relaxed confidence. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a parrotfish. Tasty, tasty! That is great! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v11-1f57a1048f0f42499eb29f7a95fb349b",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "yellow_tang": {
+      "prefix": "xxreef3v12",
+      "name": "yellow_tang — 阳光清脆的小女孩",
+      "voice_prompt": "A sunny five-year-old cartoon girl with a very bright clear youthful high voice, bell-like forward resonance, short bouncing phrases and delighted musical rises, not shrill. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hi! I'm a yellow tang! Yay, yummy! Thank you so much! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v12-c5f63bc4570148949d472bf297c51c4c",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "royal_gramma": {
+      "prefix": "xxreef3v13",
+      "name": "royal_gramma — 礼貌的小绅士",
+      "voice_prompt": "A polite eleven-year-old cartoon boy with a smooth compact mid voice, crisp precise consonants, small formal-sounding melodic bows, quietly pleased and friendly. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a royal gramma. Very tasty! Many thanks! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v13-e3412aa6e54f484fb12ac32ae226b01b",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "mandarinfish": {
+      "prefix": "xxreef3v14",
+      "name": "mandarinfish — 轻快灵动的少女",
+      "voice_prompt": "An imaginative fourteen-year-old girl with a light silvery mezzo-soprano voice, smoothly flowing vowels, lilting musical emphasis and gentle delighted surprise. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a mandarinfish. Ooh, lovely! A lovely little snack! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v14-a5b51c5bb880460bb357aa8297cbdf1a",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "moorish_idol": {
+      "prefix": "xxreef3v15",
+      "name": "moorish_idol — 清晰稳重的女老师",
+      "voice_prompt": "A friendly mature woman with a clear centered mid-low speaking voice, focused forward resonance and neat evenly paced consonants, thoughtful calm and a subtle smile. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a Moorish idol. Lovely! Thank you kindly! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v15-a34f3ad8eb9c4b8a8283e9dbc9730420",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "banggai_cardinalfish": {
+      "prefix": "xxreef3v16",
+      "name": "banggai_cardinalfish — 安静认真的少年",
+      "voice_prompt": "A reserved twelve-year-old boy with a soft clean middle-high voice, slightly breathy onset but solid readable vowels, careful earnest pacing and tender gratitude. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a Banggai cardinalfish. Oh, that is nice! Thank you, friend! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v16-f583f92bcd3a4b03ad31f7e850a39f2e",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "longhorn_cowfish": {
+      "prefix": "xxreef3v17",
+      "name": "longhorn_cowfish — 憨厚风趣的大叔",
+      "voice_prompt": "A good-natured middle-aged cartoon man with a rounded mid-low voice, a mild warm nasal color, slightly goofy lilting ends and an easy friendly grin, comfortable unhurried diction. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a longhorn cowfish. Yum! Good stuff! That hits the spot! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v17-19f6704d8d384e46a488fb039237db20",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "blue_chromis": {
+      "prefix": "xxreef3v18",
+      "name": "blue_chromis — 机灵小男孩",
+      "voice_prompt": "An energetic six-year-old cartoon boy with a thin clear bright high voice, quick springy staccato articulation and keen eager enthusiasm, distinct from a plush teddy voice, never shouted. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hi! I'm a blue chromis! Yippee! Yummy! Tasty! Thanks! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v18-c6824e765206467981032914a23f0114",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "squirrelfish": {
+      "prefix": "xxreef3v19",
+      "name": "squirrelfish — 好奇的邻家女孩",
+      "voice_prompt": "An alert eleven-year-old cartoon girl with a warm slightly husky middle voice, inquisitive rising inflections and lively crisp syllables, friendly and delighted by discoveries. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a squirrelfish. Oh, a snack! That tastes good! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v19-e770a0e530814a9e8a266e49b34cda0d",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "ocean_sunfish": {
+      "prefix": "xxreef3v20",
+      "name": "ocean_sunfish — 慢悠悠的温暖大叔",
+      "voice_prompt": "A drowsy but kind adult male gentle giant with a soft broad low-middle baritone, relaxed unhurried syllables, rounded mellow vowels and sleepy smiling downward inflections, no growl or mumble. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm an ocean sunfish. Oh, yummy. So nice. Thank you. I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v20-385a9479ab9d4f24ac823ca43d03c1e9",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "sailfish": {
+      "prefix": "xxreef3v21",
+      "name": "sailfish — 自信利落的大哥哥",
+      "voice_prompt": "An athletic young adult man with a bright clear tenor voice, firm clean forward resonance, brisk upbeat rhythmic articulation and encouraging good humor, never forceful or shouted. Native General American English. Clear intelligible whole words for young children. No lisp, mumbling, baby babble, music, effects or impersonation. Keep this distinct character identity across short phrases.",
+      "preview_text": "Hello! I'm a sailfish. Great snack! Ready to swim! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef3v21-f91aa20659b64cd29ef0c99277452e4e",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "hammerhead_shark": {
+      "prefix": "xxreef4v00",
+      "name": "hammerhead shark — 爽朗可靠的大哥哥",
+      "voice_prompt": "A friendly young adult man with a mellow mid-low baritone, easy confident rhythm and gently amused rounded phrases. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a hammerhead shark. Yummy, thank you! So tasty! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v00-3eeb73ace8b24dea992f9f90eaf61c94",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "whale_shark": {
+      "prefix": "xxreef4v01",
+      "name": "whale shark — 温厚悠闲的巨人叔叔",
+      "voice_prompt": "A kind middle-aged man with a very deep soft rounded bass, broad gentle resonance, relaxed unhurried syllables and a warm smile. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a whale shark. Oh, delicious! That is lovely! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v01-4e2a2e28c42c41f2a5b81d72ef1d0f8c",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "leafy_seadragon": {
+      "prefix": "xxreef4v02",
+      "name": "leafy sea dragon — 轻盈梦幻的小姑娘",
+      "voice_prompt": "A gentle nine-year-old girl with a clear airy-edged but fully voiced soprano, flowing musical intonation and softly delighted vowels. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a leafy sea dragon. What a lovely snack! Thank you, friend! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v02-5ef7c2bb407d44d58d7e03cc2fbf6375",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "flying_fish": {
+      "prefix": "xxreef4v03",
+      "name": "flying fish — 爱冒险的清亮少年",
+      "voice_prompt": "An adventurous twelve-year-old boy with a bright forward mid-high voice, brisk springy stress and crisp excited articulation. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a flying fish. Yummy, thank you! So tasty! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v03-be6d01f4b933403793eefe9c3fd14b17",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "green_moray": {
+      "prefix": "xxreef4v04",
+      "name": "green moray eel — 有点憨厚的叔叔",
+      "voice_prompt": "A friendly adult man with a slightly nasal rounded low-mid voice, lazy elastic vowels, charming good-natured timing and clear consonants. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a green moray eel. Oh, delicious! That is lovely! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v04-a1483370fb2948c39d443859e9f1a1e6",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "clown_triggerfish": {
+      "prefix": "xxreef4v05",
+      "name": "clown triggerfish — 俏皮有节奏的小男孩",
+      "voice_prompt": "A cheeky seven-year-old cartoon boy with a round bright mid-high voice, rhythmic bouncy phrasing and playful clear little emphases. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a clown triggerfish. What a lovely snack! Thank you, friend! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v05-9f38c5f07ad94ae59a0105081c7367e7",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "foxface": {
+      "prefix": "xxreef4v06",
+      "name": "foxface rabbitfish — 机灵爽快的小女孩",
+      "voice_prompt": "A quick-witted ten-year-old girl with a focused bright mezzo voice, precise consonants and friendly buoyant speech. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a foxface rabbitfish. Yummy, thank you! So tasty! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v06-48d0bc97b2244ab4a965f8415d06f585",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "longnose_hawkfish": {
+      "prefix": "xxreef4v07",
+      "name": "longnose hawkfish — 礼貌好奇的小男孩",
+      "voice_prompt": "A polite eight-year-old boy with a fine light tenor-like child voice, inquisitive upward inflection and carefully spaced intelligible words. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a longnose hawkfish. Oh, delicious! That is lovely! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v07-d026c96599014a1da29c5d2de7548718",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "flying_gurnard": {
+      "prefix": "xxreef4v08",
+      "name": "flying gurnard — 热情开朗的姐姐",
+      "voice_prompt": "A cheerful young woman with a warm resonant mid voice, open rounded vowels and enthusiastic but gentle sweeping intonation. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a flying gurnard. What a lovely snack! Thank you, friend! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v08-78143bd89e8c4132ae839e414a12d2d9",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "yellow_goatfish": {
+      "prefix": "xxreef4v09",
+      "name": "yellow goatfish — 开朗亲切的小叔叔",
+      "voice_prompt": "An upbeat young adult man with a lightly textured mid-range voice, clear speech and a relaxed friendly grin. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a yellow goatfish. Yummy, thank you! So tasty! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v09-a564ad02373846e0a7827b2390cb2007",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "humphead_wrasse": {
+      "prefix": "xxreef4v10",
+      "name": "humphead wrasse — 慢条斯理的老先生",
+      "voice_prompt": "A friendly mature man with a mellow low baritone, deliberate measured diction, rounded rich vowels and patient gentle delight. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a humphead wrasse. Oh, delicious! That is lovely! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v10-7c6c08a237724dd98780e8f9a665853f",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "orange_spotted_filefish": {
+      "prefix": "xxreef4v11",
+      "name": "orange-spotted filefish — 清脆细腻的小姑娘",
+      "voice_prompt": "A lively six-year-old girl with a delicate bell-like high voice, tiny buoyant phrasing and very clear natural English without a lisp. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm an orange-spotted filefish. What a lovely snack! Thank you, friend! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v11-1e454130306c4be1a44620c4c8f21a0d",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "pinnate_batfish": {
+      "prefix": "xxreef4v12",
+      "name": "pinnate batfish — 安静优雅的少年",
+      "voice_prompt": "A gentle teenage boy with a smooth low tenor voice, soft measured phrasing, clean airy resonance and a quietly happy smile. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a pinnate batfish. Yummy, thank you! So tasty! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v12-677c9e47179c4d3da6cee35d39e98d6e",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "remora": {
+      "prefix": "xxreef4v13",
+      "name": "remora — 乐于助人的小男孩",
+      "voice_prompt": "A friendly eleven-year-old boy with a clear compact middle voice, lightly nasal forward focus, crisp consonants and eager helpful phrasing. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm a remora. Oh, delicious! That is lovely! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v13-53928abf9a104f8eb619d26c03d9fbb0",
+      "target_model": "cosyvoice-v3.5-plus"
+    },
+    "oarfish": {
+      "prefix": "xxreef4v14",
+      "name": "oarfish — 温柔悠扬的阿姨",
+      "voice_prompt": "A graceful adult woman with a warm low mezzo voice, long smooth connected vowels, serene melodic cadence and clear consonants. Native General American English. Clear complete words for preschool children. No whispering, mumbling, lisp, music, effects or impersonation. Keep this distinct character voice across phrases.",
+      "preview_text": "Hello! I'm an oarfish. What a lovely snack! Thank you, friend! I'm full now. Thank you!",
+      "voice_id": "cosyvoice-v3.5-plus-vd-xxreef4v14-72edbe6df79748a384de26e2514dc5e7",
+      "target_model": "cosyvoice-v3.5-plus"
+    }
+  }
+}

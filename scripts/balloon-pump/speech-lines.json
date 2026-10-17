@@ -1,0 +1,158 @@
+[
+  {
+    "id": "bp1_appear_red",
+    "text": "Look! A red balloon! Let's pump it up together!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: appear, red",
+    "focus": "red",
+    "stress": [
+      "red"
+    ],
+    "instruction": "Cheerful curious child voice. Stress red. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141400
+  },
+  {
+    "id": "bp1_fly_red",
+    "text": "The red balloon is flying away!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: fly, red",
+    "focus": "red",
+    "stress": [
+      "red"
+    ],
+    "instruction": "Cheerful curious child voice. Stress red. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141401
+  },
+  {
+    "id": "bp1_appear_green",
+    "text": "Look! A green balloon! Let's pump it up together!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: appear, green",
+    "focus": "green",
+    "stress": [
+      "green"
+    ],
+    "instruction": "Cheerful curious child voice. Stress green. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141402
+  },
+  {
+    "id": "bp1_fly_green",
+    "text": "The green balloon is flying away!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: fly, green",
+    "focus": "green",
+    "stress": [
+      "green"
+    ],
+    "instruction": "Cheerful curious child voice. Stress green. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141403
+  },
+  {
+    "id": "bp1_appear_blue",
+    "text": "Look! A blue balloon! Let's pump it up together!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: appear, blue",
+    "focus": "blue",
+    "stress": [
+      "blue"
+    ],
+    "instruction": "Cheerful curious child voice. Stress blue. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141404
+  },
+  {
+    "id": "bp1_fly_blue",
+    "text": "The blue balloon is flying away!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: fly, blue",
+    "focus": "blue",
+    "stress": [
+      "blue"
+    ],
+    "instruction": "Cheerful curious child voice. Stress blue. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141405
+  },
+  {
+    "id": "bp1_appear_orange",
+    "text": "Look! An orange balloon! Let's pump it up together!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: appear, orange",
+    "focus": "orange",
+    "stress": [
+      "orange"
+    ],
+    "instruction": "Cheerful curious child voice. Stress orange. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141406
+  },
+  {
+    "id": "bp1_fly_orange",
+    "text": "The orange balloon is flying away!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: fly, orange",
+    "focus": "orange",
+    "stress": [
+      "orange"
+    ],
+    "instruction": "Cheerful curious child voice. Stress orange. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141407
+  },
+  {
+    "id": "bp1_appear_purple",
+    "text": "Look! A purple balloon! Let's pump it up together!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: appear, purple",
+    "focus": "purple",
+    "stress": [
+      "purple"
+    ],
+    "instruction": "Cheerful curious child voice. Stress purple. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141408
+  },
+  {
+    "id": "bp1_fly_purple",
+    "text": "The purple balloon is flying away!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: fly, purple",
+    "focus": "purple",
+    "stress": [
+      "purple"
+    ],
+    "instruction": "Cheerful curious child voice. Stress purple. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141409
+  },
+  {
+    "id": "bp1_appear_pink",
+    "text": "Look! A pink balloon! Let's pump it up together!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: appear, pink",
+    "focus": "pink",
+    "stress": [
+      "pink"
+    ],
+    "instruction": "Cheerful curious child voice. Stress pink. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141410
+  },
+  {
+    "id": "bp1_fly_pink",
+    "text": "The pink balloon is flying away!",
+    "voice_profile": "pip",
+    "scene": "Balloon Pump: fly, pink",
+    "focus": "pink",
+    "stress": [
+      "pink"
+    ],
+    "instruction": "Cheerful curious child voice. Stress pink. Speak exact words, warmly and clearly.",
+    "rate": 0.98,
+    "seed": 141411
+  }
+]

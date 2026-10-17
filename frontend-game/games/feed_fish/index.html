@@ -1,25 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>小鱼喂喂喂</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08749a">
+  <title>小鱼喂喂喂</title>
+  <script src="../../scripts/i18n-messages.js?v=20260924b"></script>
+  <script src="../../scripts/i18n.js?v=20260924e2"></script>
+  <link rel="stylesheet" href="style.css?v=20261001reef3">
+  <link rel="stylesheet" href="../shared/game-voice.css?v=20260930gv1">
+<link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+<script defer src="../../scripts/game-home.js?v=20261003home2"></script>
 </head>
-
-<body>
-    <a href="../../home.html" class="back-btn">⬅</a>
-    <div id="game-container">
-        <!-- Fish and Food will be added here dynamically -->
-        <div id="food-source" class="food-source"></div>
-    </div>
-    <script>
-        window.MINI_GAME = { id: "feed_fish", name: "Feed Fish" };
-    </script>
-    <script src="../../scripts/bankend-config.js?v=2"></script>
-    <script src="../../scripts/tracking.js?v=2"></script>
-    <script src="script.js?v=2"></script>
+<body data-i18n-ignore>
+  <main id="game-container" aria-label="Little Ocean">
+    <div class="ocean-light" aria-hidden="true"></div>
+    <div class="ocean-bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <header class="ocean-heading">
+      <p class="eyebrow" lang="en">FEED · LISTEN · DISCOVER</p>
+      <h1 data-zh="小鱼喂喂喂" data-en="Little Ocean">Little Ocean</h1>
+      <p data-zh="点水面喂食，点朋友听英语" data-en="Tap the water to feed. Tap a friend to listen.">Tap the water to feed. Tap a friend to listen.</p>
+    </header>
+    <a href="../../home.html" class="back-btn" aria-label="返回游戏首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m20 7-9 9 9 9M11 16h15"/></svg></a>
+    <div id="fish-layer"></div>
+    <div id="food-layer" aria-hidden="true"></div>
+    <div id="ocean-announcement" class="sr-only" aria-live="polite" lang="en"></div>
+    <button id="new-friends" class="ocean-button new-friends" type="button" aria-label="Meet more ocean friends"><span aria-hidden="true">🐟 ↻</span><small data-zh="新朋友" data-en="More friends">More friends</small></button>
+    <button id="food-source" class="ocean-button food-source" type="button" aria-label="Drag food into the water, or press to feed"><span class="food-picture" aria-hidden="true"></span><small data-zh="喂一点" data-en="A little snack">A little snack</small></button>
+    <p id="loading-note" class="loading-note" data-zh="朋友游来啦…" data-en="Here come our friends…">Here come our friends…</p>
+    <button id="retry-friends" class="retry-friends" type="button" hidden data-zh="轻点，再找找朋友" data-en="Tap to bring our friends back">Tap to bring our friends back</button>
+  </main>
+  <script>window.MINI_GAME={id:"feed_fish",name:"Feed Fish"};</script>
+  <script src="../../scripts/bankend-config.js?v=2"></script>
+  <script src="../../scripts/tracking.js?v=2"></script>
+  <script src="fish-catalog.js?v=20261002reef4"></script>
+  <script src="fish-simulation.js?v=20261002reef4"></script>
+  <script src="voice-catalog.js?v=20261002reef4"></script>
+  <script src="ocean-voice.js?v=20261001reef3"></script>
+  <script src="script.js?v=20261002reef4"></script>
 </body>
-
 </html>

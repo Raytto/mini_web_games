@@ -1,0 +1,6221 @@
+{
+  "version": "20260930lf1",
+  "model": "cosyvoice-v3.5-plus",
+  "clips": {
+    "great": {
+      "src": "../english_shared/audio/great.mp3?v=20260930cv1",
+      "text": "Great!",
+      "profile": "guide"
+    },
+    "apple": {
+      "src": "../english_shared/audio/apple.mp3?v=20260930cv1",
+      "text": "Apple.",
+      "profile": "guide"
+    },
+    "banana": {
+      "src": "../english_shared/audio/banana.mp3?v=20260930cv1",
+      "text": "Look, a banana!",
+      "profile": "guide"
+    },
+    "strawberry": {
+      "src": "../english_shared/audio/strawberry.mp3?v=20260930cv1",
+      "text": "Strawberry.",
+      "profile": "guide"
+    },
+    "pear": {
+      "src": "../english_shared/audio/pear.mp3?v=20260930cv1",
+      "text": "Pear.",
+      "profile": "guide"
+    },
+    "lemon": {
+      "src": "../english_shared/audio/lemon.mp3?v=20260930cv1",
+      "text": "Lemon.",
+      "profile": "guide"
+    },
+    "fish": {
+      "src": "../english_shared/audio/fish.mp3?v=20260930cv1",
+      "text": "Fish.",
+      "profile": "guide"
+    },
+    "hello_cat": {
+      "src": "../english_shared/audio/hello_cat.mp3?v=20260930cv1",
+      "text": "Hello, cat!",
+      "profile": "guide"
+    },
+    "bear": {
+      "src": "../english_shared/audio/bear.mp3?v=20260930cv1",
+      "text": "Bear.",
+      "profile": "guide"
+    },
+    "rabbit": {
+      "src": "../english_shared/audio/rabbit.mp3?v=20260930cv1",
+      "text": "A rabbit.",
+      "profile": "guide"
+    },
+    "chick": {
+      "src": "../english_shared/audio/chick.mp3?v=20260930cv1",
+      "text": "A chick!",
+      "profile": "guide"
+    },
+    "frog": {
+      "src": "../english_shared/audio/frog.mp3?v=20260930cv1",
+      "text": "Frog.",
+      "profile": "guide"
+    },
+    "cat": {
+      "src": "../english_shared/audio/cat.mp3?v=20260930cv1",
+      "text": "Cat.",
+      "profile": "guide"
+    },
+    "dog": {
+      "src": "../english_shared/audio/dog.mp3?v=20260930cv1",
+      "text": "Dog.",
+      "profile": "guide"
+    },
+    "pig": {
+      "src": "../english_shared/audio/pig.mp3?v=20260930cv1",
+      "text": "Pig.",
+      "profile": "guide"
+    },
+    "panda": {
+      "src": "../english_shared/audio/panda.mp3?v=20260930cv1",
+      "text": "Panda.",
+      "profile": "guide"
+    },
+    "lion": {
+      "src": "../english_shared/audio/lion.mp3?v=20260930cv1",
+      "text": "Lion.",
+      "profile": "guide"
+    },
+    "tiger": {
+      "src": "../english_shared/audio/tiger.mp3?v=20260930cv1",
+      "text": "Tiger.",
+      "profile": "guide"
+    },
+    "koala": {
+      "src": "../english_shared/audio/koala.mp3?v=20260930cv1",
+      "text": "Koala.",
+      "profile": "guide"
+    },
+    "fox": {
+      "src": "../english_shared/audio/fox.mp3?v=20260930cv1",
+      "text": "Fox.",
+      "profile": "guide"
+    },
+    "cow": {
+      "src": "../english_shared/audio/cow.mp3?v=20260930cv1",
+      "text": "Cow!",
+      "profile": "guide"
+    },
+    "monkey": {
+      "src": "../english_shared/audio/monkey.mp3?v=20260930cv1",
+      "text": "Monkey.",
+      "profile": "guide"
+    },
+    "penguin": {
+      "src": "../english_shared/audio/penguin.mp3?v=20260930cv1",
+      "text": "Penguin.",
+      "profile": "guide"
+    },
+    "elephant": {
+      "src": "../english_shared/audio/elephant.mp3?v=20260930cv1",
+      "text": "Elephant.",
+      "profile": "guide"
+    },
+    "hello_bear": {
+      "src": "../english_shared/audio/hello_bear.mp3?v=20260930cv1",
+      "text": "Hello, bear!",
+      "profile": "guide"
+    },
+    "hello_rabbit": {
+      "src": "../english_shared/audio/hello_rabbit.mp3?v=20260930cv1",
+      "text": "Hello, rabbit!",
+      "profile": "guide"
+    },
+    "hello_chick": {
+      "src": "../english_shared/audio/hello_chick.mp3?v=20260930cv1",
+      "text": "Hello, chick!",
+      "profile": "guide"
+    },
+    "hello_frog": {
+      "src": "../english_shared/audio/hello_frog.mp3?v=20260930cv1",
+      "text": "Hello, frog!",
+      "profile": "guide"
+    },
+    "hello_dog": {
+      "src": "../english_shared/audio/hello_dog.mp3?v=20260930cv1",
+      "text": "Hello, dog!",
+      "profile": "guide"
+    },
+    "hello_pig": {
+      "src": "../english_shared/audio/hello_pig.mp3?v=20260930cv1",
+      "text": "Hello, pig!",
+      "profile": "guide"
+    },
+    "hello_panda": {
+      "src": "../english_shared/audio/hello_panda.mp3?v=20260930cv1",
+      "text": "Hello, panda!",
+      "profile": "guide"
+    },
+    "hello_lion": {
+      "src": "../english_shared/audio/hello_lion.mp3?v=20260930cv1",
+      "text": "Hello! Lion!",
+      "profile": "guide"
+    },
+    "hello_tiger": {
+      "src": "../english_shared/audio/hello_tiger.mp3?v=20260930cv1",
+      "text": "Hello, tiger!",
+      "profile": "guide"
+    },
+    "hello_koala": {
+      "src": "../english_shared/audio/hello_koala.mp3?v=20260930cv1",
+      "text": "Hello, koala!",
+      "profile": "guide"
+    },
+    "hello_fox": {
+      "src": "../english_shared/audio/hello_fox.mp3?v=20260930cv1",
+      "text": "Hello, fox!",
+      "profile": "guide"
+    },
+    "hello_cow": {
+      "src": "../english_shared/audio/hello_cow.mp3?v=20260930cv1",
+      "text": "Hello, cow!",
+      "profile": "guide"
+    },
+    "hello": {
+      "src": "../english_shared/audio/hello.mp3?v=20260930cv1",
+      "text": "Hello!",
+      "profile": "guide"
+    },
+    "hello_monkey": {
+      "src": "../english_shared/audio/hello_monkey.mp3?v=20260930cv1",
+      "text": "Hello, monkey!",
+      "profile": "guide"
+    },
+    "hello_penguin": {
+      "src": "../english_shared/audio/hello_penguin.mp3?v=20260930cv1",
+      "text": "Hello, penguin!",
+      "profile": "guide"
+    },
+    "hello_elephant": {
+      "src": "../english_shared/audio/hello_elephant.mp3?v=20260930cv1",
+      "text": "Hello, elephant!",
+      "profile": "guide"
+    },
+    "red": {
+      "src": "../english_shared/audio/red.mp3?v=20260930cv1",
+      "text": "Red!",
+      "profile": "pip"
+    },
+    "blue": {
+      "src": "../english_shared/audio/blue.mp3?v=20260930cv1",
+      "text": "Blue!",
+      "profile": "pip"
+    },
+    "green": {
+      "src": "../english_shared/audio/green.mp3?v=20260930cv1",
+      "text": "Green!",
+      "profile": "pip"
+    },
+    "yellow": {
+      "src": "../english_shared/audio/yellow.mp3?v=20260930cv1",
+      "text": "Yellow!",
+      "profile": "pip"
+    },
+    "purple": {
+      "src": "../english_shared/audio/purple.mp3?v=20260930cv1",
+      "text": "Purple.",
+      "profile": "pip"
+    },
+    "turtle": {
+      "src": "../english_shared/audio/turtle.mp3?v=20260930cv1",
+      "text": "Turtle.",
+      "profile": "guide"
+    },
+    "ball": {
+      "src": "../english_shared/audio/ball.mp3?v=20260930cv1",
+      "text": "Ball.",
+      "profile": "guide"
+    },
+    "car": {
+      "src": "../english_shared/audio/car.mp3?v=20260930cv1",
+      "text": "Car.",
+      "profile": "guide"
+    },
+    "train": {
+      "src": "../english_shared/audio/train.mp3?v=20260930cv1",
+      "text": "Train.",
+      "profile": "guide"
+    },
+    "drum": {
+      "src": "../english_shared/audio/drum.mp3?v=20260930cv1",
+      "text": "Drum.",
+      "profile": "guide"
+    },
+    "duck": {
+      "src": "../english_shared/audio/duck.mp3?v=20260930cv1",
+      "text": "Duck.",
+      "profile": "guide"
+    },
+    "hedgehog": {
+      "src": "../english_shared/audio/hedgehog.mp3?v=20260930cv1",
+      "text": "Hedgehog.",
+      "profile": "guide"
+    },
+    "squirrel": {
+      "src": "../english_shared/audio/squirrel.mp3?v=20260930cv1",
+      "text": "Squirrel.",
+      "profile": "guide"
+    },
+    "octopus": {
+      "src": "../english_shared/audio/octopus.mp3?v=20260930cv1",
+      "text": "Octopus.",
+      "profile": "guide"
+    },
+    "dolphin": {
+      "src": "../english_shared/audio/dolphin.mp3?v=20260930cv1",
+      "text": "Dolphin.",
+      "profile": "guide"
+    },
+    "parrot": {
+      "src": "../english_shared/audio/parrot.mp3?v=20260930cv1",
+      "text": "Parrot.",
+      "profile": "guide"
+    },
+    "owl": {
+      "src": "../english_shared/audio/owl.mp3?v=20260930cv1",
+      "text": "Owl.",
+      "profile": "guide"
+    },
+    "giraffe": {
+      "src": "../english_shared/audio/giraffe.mp3?v=20260930cv1",
+      "text": "A giraffe.",
+      "profile": "guide"
+    },
+    "hippo": {
+      "src": "../english_shared/audio/hippo.mp3?v=20260930cv1",
+      "text": "Hippo.",
+      "profile": "guide"
+    },
+    "zebra": {
+      "src": "../english_shared/audio/zebra.mp3?v=20260930cv1",
+      "text": "Zebra.",
+      "profile": "guide"
+    },
+    "carrot": {
+      "src": "../english_shared/audio/carrot.mp3?v=20260930cv1",
+      "text": "Carrot.",
+      "profile": "guide"
+    },
+    "sheep": {
+      "src": "../english_shared/audio/sheep.mp3?v=20260930cv1",
+      "text": "Sheep.",
+      "profile": "guide"
+    },
+    "deer": {
+      "src": "../english_shared/audio/deer.mp3?v=20260930cv1",
+      "text": "Deer.",
+      "profile": "guide"
+    },
+    "where_cat": {
+      "src": "../english_shared/audio/where_cat.mp3?v=20260930cv1",
+      "text": "Where's the cat?",
+      "profile": "guide"
+    },
+    "where_dog": {
+      "src": "../english_shared/audio/where_dog.mp3?v=20260930cv1",
+      "text": "Where's the dog?",
+      "profile": "guide"
+    },
+    "where_bear": {
+      "src": "../english_shared/audio/where_bear.mp3?v=20260930cv1",
+      "text": "Where's the bear?",
+      "profile": "guide"
+    },
+    "where_rabbit": {
+      "src": "../english_shared/audio/where_rabbit.mp3?v=20260930cv1",
+      "text": "Where's the rabbit?",
+      "profile": "guide"
+    },
+    "where_panda": {
+      "src": "../english_shared/audio/where_panda.mp3?v=20260930cv1",
+      "text": "Where's the panda?",
+      "profile": "guide"
+    },
+    "where_fox": {
+      "src": "../english_shared/audio/where_fox.mp3?v=20260930cv1",
+      "text": "Where's the fox?",
+      "profile": "guide"
+    },
+    "where_pig": {
+      "src": "../english_shared/audio/where_pig.mp3?v=20260930cv1",
+      "text": "Where's the pig?",
+      "profile": "guide"
+    },
+    "where_elephant": {
+      "src": "../english_shared/audio/where_elephant.mp3?v=20260930cv1",
+      "text": "Where's the elephant?",
+      "profile": "guide"
+    },
+    "where_lion": {
+      "src": "../english_shared/audio/where_lion.mp3?v=20260930cv1",
+      "text": "Where's the lion?",
+      "profile": "guide"
+    },
+    "where_monkey": {
+      "src": "../english_shared/audio/where_monkey.mp3?v=20260930cv1",
+      "text": "Where's the monkey?",
+      "profile": "guide"
+    },
+    "where_cow": {
+      "src": "../english_shared/audio/where_cow.mp3?v=20260930cv1",
+      "text": "Where's the cow?",
+      "profile": "guide"
+    },
+    "where_sheep": {
+      "src": "../english_shared/audio/where_sheep.mp3?v=20260930cv1",
+      "text": "Where's the sheep?",
+      "profile": "guide"
+    },
+    "where_giraffe": {
+      "src": "../english_shared/audio/where_giraffe.mp3?v=20260930cv1",
+      "text": "Where is the giraffe?",
+      "profile": "guide"
+    },
+    "where_koala": {
+      "src": "../english_shared/audio/where_koala.mp3?v=20260930cv1",
+      "text": "Where's the koala?",
+      "profile": "guide"
+    },
+    "where_penguin": {
+      "src": "../english_shared/audio/where_penguin.mp3?v=20260930cv1",
+      "text": "Where's the penguin?",
+      "profile": "guide"
+    },
+    "where_owl": {
+      "src": "../english_shared/audio/where_owl.mp3?v=20260930cv1",
+      "text": "Where's the owl?",
+      "profile": "guide"
+    },
+    "where_duck": {
+      "src": "../english_shared/audio/where_duck.mp3?v=20260930cv1",
+      "text": "Where is the duck?",
+      "profile": "guide"
+    },
+    "where_frog": {
+      "src": "../english_shared/audio/where_frog.mp3?v=20260930cv1",
+      "text": "Where's the frog?",
+      "profile": "guide"
+    },
+    "where_tiger": {
+      "src": "../english_shared/audio/where_tiger.mp3?v=20260930cv1",
+      "text": "Where's the tiger?",
+      "profile": "guide"
+    },
+    "where_hippo": {
+      "src": "../english_shared/audio/where_hippo.mp3?v=20260930cv1",
+      "text": "Where is the hippo?",
+      "profile": "guide"
+    },
+    "circle": {
+      "src": "../english_shared/audio/circle.mp3?v=20260930cv1",
+      "text": "Circle.",
+      "profile": "guide"
+    },
+    "square": {
+      "src": "../english_shared/audio/square.mp3?v=20260930cv1",
+      "text": "Square.",
+      "profile": "guide"
+    },
+    "triangle": {
+      "src": "../english_shared/audio/triangle.mp3?v=20260930cv1",
+      "text": "Triangle.",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_intro": {
+      "src": "./voice/audio/gv_fruit_slice_intro.mp3?v=20260930gv1",
+      "text": "Swipe across the fruit. Slice, slice!",
+      "profile": "guide"
+    },
+    "gv_balloon_pop_intro": {
+      "src": "./voice/audio/gv_balloon_pop_intro.mp3?v=20260930gv1",
+      "text": "Tap a balloon. Pop! What can you find?",
+      "profile": "pip"
+    },
+    "gv_feed_animal_intro": {
+      "src": "./voice/audio/gv_feed_animal_intro.mp3?v=20260930gv1",
+      "text": "Our cat is hungry! Choose some food for the cat.",
+      "profile": "teddy"
+    },
+    "gv_feed_ants_intro": {
+      "src": "./voice/audio/gv_feed_ants_intro.mp3?v=20260930gv1",
+      "text": "Little ants! Drag some food over for them.",
+      "profile": "guide"
+    },
+    "gv_bubble_pop_intro": {
+      "src": "./voice/audio/gv_bubble_pop_intro.mp3?v=20260930gv1",
+      "text": "Bubbles! Tap them and make them pop!",
+      "profile": "pip"
+    },
+    "gv_animal_tap_intro": {
+      "src": "./voice/audio/gv_animal_tap_intro.mp3?v=20260930gv1",
+      "text": "Hello, animal friend! Tap to say hello.",
+      "profile": "guide"
+    },
+    "gv_monster_transform_intro": {
+      "src": "./voice/audio/gv_monster_transform_intro.mp3?v=20260930gv1",
+      "text": "Tap the monster! Look at its funny new face!",
+      "profile": "pip"
+    },
+    "gv_time_magic_intro": {
+      "src": "./voice/audio/gv_time_magic_intro.mp3?v=20260930gv1",
+      "text": "Tap or swipe to change the weather!",
+      "profile": "guide"
+    },
+    "gv_magic_doodle_intro": {
+      "src": "./voice/audio/gv_magic_doodle_intro.mp3?v=20260930gv1",
+      "text": "Draw with your finger. Can you join the stars?",
+      "profile": "pip"
+    },
+    "gv_car_track_intro": {
+      "src": "./voice/audio/gv_car_track_intro.mp3?v=20260930gv1",
+      "text": "Hold the little car. Follow the road!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_intro": {
+      "src": "./voice/audio/gv_balloon_pump_intro.mp3?v=20260930gv1",
+      "text": "Hold the pump. Make a big balloon!",
+      "profile": "pip"
+    },
+    "gv_feed_fish_intro": {
+      "src": "./voice/audio/gv_feed_fish_intro.mp3?v=20260930gv1",
+      "text": "Drag some fish food into the water!",
+      "profile": "guide"
+    },
+    "gv_tidy_up_intro": {
+      "src": "./voice/audio/gv_tidy_up_intro.mp3?v=20260930gv1",
+      "text": "Time to tidy up! Put the toys in the box.",
+      "profile": "teddy"
+    },
+    "gv_egg_hatch_intro": {
+      "src": "./voice/audio/gv_egg_hatch_intro.mp3?v=20260930gv1",
+      "text": "Tap the egg gently. Who is hiding inside?",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_intro": {
+      "src": "./voice/audio/gv_animal_breakfast_intro.mp3?v=20260930gv1",
+      "text": "Breakfast time! Find the food for each animal.",
+      "profile": "guide"
+    },
+    "gv_train_cargo_intro": {
+      "src": "./voice/audio/gv_train_cargo_intro.mp3?v=20260930gv1",
+      "text": "Load the train! Match each toy to its wagon color.",
+      "profile": "pip"
+    },
+    "gv_bath_time_intro": {
+      "src": "./voice/audio/gv_bath_time_intro.mp3?v=20260930gv1",
+      "text": "Bath time! Soap, water, and a soft towel.",
+      "profile": "teddy"
+    },
+    "gv_little_chef_intro": {
+      "src": "./voice/audio/gv_little_chef_intro.mp3?v=20260930gv1",
+      "text": "Hello, little chef! Let us make something yummy.",
+      "profile": "guide"
+    },
+    "gv_road_helper_intro": {
+      "src": "./voice/audio/gv_road_helper_intro.mp3?v=20260930gv1",
+      "text": "Let us fix the road! First, fill the hole.",
+      "profile": "pip"
+    },
+    "gv_garden_grow_intro": {
+      "src": "./voice/audio/gv_garden_grow_intro.mp3?v=20260930gv1",
+      "text": "Let us grow a garden! Start with the soil.",
+      "profile": "guide"
+    },
+    "gv_shadow_match_intro": {
+      "src": "./voice/audio/gv_shadow_match_intro.mp3?v=20260930gv1",
+      "text": "Look at the shadows. Find the matching animal!",
+      "profile": "guide"
+    },
+    "gv_little_band_intro": {
+      "src": "./voice/audio/gv_little_band_intro.mp3?v=20260930gv1",
+      "text": "Let us make music! Find the matching instrument.",
+      "profile": "pip"
+    },
+    "gv_weather_dress_intro": {
+      "src": "./voice/audio/gv_weather_dress_intro.mp3?v=20260930gv1",
+      "text": "Look at the weather. What should our friend wear?",
+      "profile": "guide"
+    },
+    "gv_find_friends_intro": {
+      "src": "./voice/audio/gv_find_friends_intro.mp3?v=20260930gv1",
+      "text": "Help each animal find its home!",
+      "profile": "guide"
+    },
+    "gv_monster_dressup_intro": {
+      "src": "./voice/audio/gv_monster_dressup_intro.mp3?v=20260930gv1",
+      "text": "Dress up a funny monster! Choose your favorite pieces.",
+      "profile": "pip"
+    },
+    "gv_parcel_sort_intro": {
+      "src": "./voice/audio/gv_parcel_sort_intro.mp3?v=20260930gv1",
+      "text": "Deliver the parcels! Match each parcel to its shape.",
+      "profile": "guide"
+    },
+    "gv_well_done": {
+      "src": "./voice/audio/gv_well_done.mp3?v=20260930gv1",
+      "text": "Well done!",
+      "profile": "pip"
+    },
+    "gv_nice_match": {
+      "src": "./voice/audio/gv_nice_match.mp3?v=20260930gv1",
+      "text": "A perfect match!",
+      "profile": "guide"
+    },
+    "gv_try_again": {
+      "src": "./voice/audio/gv_try_again.mp3?v=20260930gv1",
+      "text": "Oops! Let us try again.",
+      "profile": "teddy"
+    },
+    "gv_yummy": {
+      "src": "./voice/audio/gv_yummy.mp3?v=20260930gv1",
+      "text": "Yummy! Thank you!",
+      "profile": "teddy"
+    },
+    "gv_all_done": {
+      "src": "./voice/audio/gv_all_done.mp3?v=20260930gv1",
+      "text": "All done! You did it!",
+      "profile": "pip"
+    },
+    "gv_guide_watermelon": {
+      "src": "./voice/audio/gv_guide_watermelon.mp3?v=20260930gv1",
+      "text": "A watermelon!",
+      "profile": "guide"
+    },
+    "gv_guide_fruit_orange": {
+      "src": "./voice/audio/gv_guide_fruit_orange.mp3?v=20260930gv1",
+      "text": "An orange!",
+      "profile": "guide"
+    },
+    "gv_guide_pineapple": {
+      "src": "./voice/audio/gv_guide_pineapple.mp3?v=20260930gv1",
+      "text": "A pineapple!",
+      "profile": "guide"
+    },
+    "gv_guide_mango": {
+      "src": "./voice/audio/gv_guide_mango.mp3?v=20260930gv1",
+      "text": "A mango!",
+      "profile": "guide"
+    },
+    "gv_guide_grapes": {
+      "src": "./voice/audio/gv_guide_grapes.mp3?v=20260930gv1",
+      "text": "Grapes!",
+      "profile": "guide"
+    },
+    "gv_guide_peach": {
+      "src": "./voice/audio/gv_guide_peach.mp3?v=20260930gv1",
+      "text": "A peach!",
+      "profile": "guide"
+    },
+    "gv_guide_cherries": {
+      "src": "./voice/audio/gv_guide_cherries.mp3?v=20260930gv1",
+      "text": "Cherries!",
+      "profile": "guide"
+    },
+    "gv_guide_kiwi": {
+      "src": "./voice/audio/gv_guide_kiwi.mp3?v=20260930gv1",
+      "text": "A kiwi!",
+      "profile": "guide"
+    },
+    "gv_guide_coconut": {
+      "src": "./voice/audio/gv_guide_coconut.mp3?v=20260930gv1",
+      "text": "A coconut!",
+      "profile": "guide"
+    },
+    "gv_guide_avocado": {
+      "src": "./voice/audio/gv_guide_avocado.mp3?v=20260930gv1",
+      "text": "An avocado!",
+      "profile": "guide"
+    },
+    "gv_guide_melon": {
+      "src": "./voice/audio/gv_guide_melon.mp3?v=20260930gv1",
+      "text": "A melon!",
+      "profile": "guide"
+    },
+    "gv_guide_tangerine": {
+      "src": "./voice/audio/gv_guide_tangerine.mp3?v=20260930gv1",
+      "text": "A tangerine!",
+      "profile": "guide"
+    },
+    "gv_guide_green_apple": {
+      "src": "./voice/audio/gv_guide_green_apple.mp3?v=20260930gv1",
+      "text": "A green apple!",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_praise": {
+      "src": "./voice/audio/gv_fruit_slice_praise.mp3?v=20260930gv1",
+      "text": "Wow! What a lovely fruit salad!",
+      "profile": "guide"
+    },
+    "gv_balloon_pop_shape_heart": {
+      "src": "./voice/audio/gv_balloon_pop_shape_heart.mp3?v=20260930gv1",
+      "text": "Pop! A heart balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_shape_star": {
+      "src": "./voice/audio/gv_balloon_pop_shape_star.mp3?v=20260930gv1",
+      "text": "Pop! A star balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_shape_duck": {
+      "src": "./voice/audio/gv_balloon_pop_shape_duck.mp3?v=20260930gv1",
+      "text": "Pop! A duck balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_shape_bear": {
+      "src": "./voice/audio/gv_balloon_pop_shape_bear.mp3?v=20260930gv1",
+      "text": "Pop! A bear balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_color_0": {
+      "src": "./voice/audio/gv_balloon_pop_color_0.mp3?v=20260930gv1",
+      "text": "Red balloon! Pop!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_color_1": {
+      "src": "./voice/audio/gv_balloon_pop_color_1.mp3?v=20260930gv1",
+      "text": "Teal balloon! Pop!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_color_2": {
+      "src": "./voice/audio/gv_balloon_pop_color_2.mp3?v=20260930gv1",
+      "text": "Yellow balloon! Pop!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_color_3": {
+      "src": "./voice/audio/gv_balloon_pop_color_3.mp3?v=20260930gv1",
+      "text": "Orange balloon! Pop!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_color_4": {
+      "src": "./voice/audio/gv_balloon_pop_color_4.mp3?v=20260930gv1",
+      "text": "Light blue balloon! Pop!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_color_5": {
+      "src": "./voice/audio/gv_balloon_pop_color_5.mp3?v=20260930gv1",
+      "text": "Purple balloon! Pop!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_color_6": {
+      "src": "./voice/audio/gv_balloon_pop_color_6.mp3?v=20260930gv1",
+      "text": "Pink balloon! Pop!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_color_7": {
+      "src": "./voice/audio/gv_balloon_pop_color_7.mp3?v=20260930gv1",
+      "text": "Pale yellow balloon! Pop!",
+      "profile": "pip"
+    },
+    "gv_bubble_pop_big": {
+      "src": "./voice/audio/gv_bubble_pop_big.mp3?v=20260930gv1",
+      "text": "Big bubble! Pop!",
+      "profile": "pip"
+    },
+    "gv_bubble_pop_little": {
+      "src": "./voice/audio/gv_bubble_pop_little.mp3?v=20260930gv1",
+      "text": "Little bubble! Pop!",
+      "profile": "pip"
+    },
+    "gv_bubble_pop_praise": {
+      "src": "./voice/audio/gv_bubble_pop_praise.mp3?v=20260930gv1",
+      "text": "So many bubbles! Great popping!",
+      "profile": "pip"
+    },
+    "gv_guide_chicken": {
+      "src": "./voice/audio/gv_guide_chicken.mp3?v=20260930gv1",
+      "text": "Chicken!",
+      "profile": "guide"
+    },
+    "gv_guide_shrimp": {
+      "src": "./voice/audio/gv_guide_shrimp.mp3?v=20260930gv1",
+      "text": "Shrimp!",
+      "profile": "guide"
+    },
+    "gv_guide_kibble": {
+      "src": "./voice/audio/gv_guide_kibble.mp3?v=20260930gv1",
+      "text": "Cat food!",
+      "profile": "guide"
+    },
+    "gv_guide_broccoli": {
+      "src": "./voice/audio/gv_guide_broccoli.mp3?v=20260930gv1",
+      "text": "A broccoli!",
+      "profile": "guide"
+    },
+    "gv_feed_animal_sorted": {
+      "src": "./voice/audio/gv_feed_animal_sorted.mp3?v=20260930gv1",
+      "text": "In the basket! Good sorting!",
+      "profile": "teddy"
+    },
+    "gv_feed_animal_wrong_basket": {
+      "src": "./voice/audio/gv_feed_animal_wrong_basket.mp3?v=20260930gv1",
+      "text": "The cat would like that! Try the cat.",
+      "profile": "teddy"
+    },
+    "gv_feed_animal_wrong_cat": {
+      "src": "./voice/audio/gv_feed_animal_wrong_cat.mp3?v=20260930gv1",
+      "text": "Oops! Try the little basket.",
+      "profile": "teddy"
+    },
+    "gv_feed_animal_complete": {
+      "src": "./voice/audio/gv_feed_animal_complete.mp3?v=20260930gv1",
+      "text": "Our cat is full! Thank you for the yummy food.",
+      "profile": "teddy"
+    },
+    "gv_guide_cookie": {
+      "src": "./voice/audio/gv_guide_cookie.mp3?v=20260930gv1",
+      "text": "A cookie!",
+      "profile": "guide"
+    },
+    "gv_guide_cake": {
+      "src": "./voice/audio/gv_guide_cake.mp3?v=20260930gv1",
+      "text": "A cake!",
+      "profile": "guide"
+    },
+    "gv_guide_fries": {
+      "src": "./voice/audio/gv_guide_fries.mp3?v=20260930gv1",
+      "text": "French fries!",
+      "profile": "guide"
+    },
+    "gv_guide_sandwich": {
+      "src": "./voice/audio/gv_guide_sandwich.mp3?v=20260930gv1",
+      "text": "A sandwich!",
+      "profile": "guide"
+    },
+    "gv_guide_lollipop": {
+      "src": "./voice/audio/gv_guide_lollipop.mp3?v=20260930gv1",
+      "text": "A lollipop!",
+      "profile": "guide"
+    },
+    "gv_feed_ants_drop": {
+      "src": "./voice/audio/gv_feed_ants_drop.mp3?v=20260930gv1",
+      "text": "Here you go, little ants!",
+      "profile": "guide"
+    },
+    "gv_feed_ants_complete": {
+      "src": "./voice/audio/gv_feed_ants_complete.mp3?v=20260930gv1",
+      "text": "All gone! The ants say thank you!",
+      "profile": "guide"
+    },
+    "gv_guide_mouse": {
+      "src": "./voice/audio/gv_guide_mouse.mp3?v=20260930gv1",
+      "text": "A mouse!",
+      "profile": "guide"
+    },
+    "gv_pip_teal": {
+      "src": "./voice/audio/gv_pip_teal.mp3?v=20260930gv1",
+      "text": "The color teal!",
+      "profile": "pip"
+    },
+    "gv_pip_pink": {
+      "src": "./voice/audio/gv_pip_pink.mp3?v=20260930gv1",
+      "text": "Pink!",
+      "profile": "pip"
+    },
+    "gv_pip_orange": {
+      "src": "./voice/audio/gv_pip_orange.mp3?v=20260930gv1",
+      "text": "Orange!",
+      "profile": "pip"
+    },
+    "gv_pip_dark_blue": {
+      "src": "./voice/audio/gv_pip_dark_blue.mp3?v=20260930gv1",
+      "text": "Dark blue!",
+      "profile": "pip"
+    },
+    "gv_pip_lime_green": {
+      "src": "./voice/audio/gv_pip_lime_green.mp3?v=20260930gv1",
+      "text": "Lime green!",
+      "profile": "pip"
+    },
+    "gv_pip_light_blue": {
+      "src": "./voice/audio/gv_pip_light_blue.mp3?v=20260930gv1",
+      "text": "Light blue!",
+      "profile": "pip"
+    },
+    "gv_pip_peach": {
+      "src": "./voice/audio/gv_pip_peach.mp3?v=20260930gv1",
+      "text": "Peach!",
+      "profile": "pip"
+    },
+    "gv_monster_transform_face_eyes": {
+      "src": "./voice/audio/gv_monster_transform_face_eyes.mp3?v=20260930gv1",
+      "text": "Look! New eyes!",
+      "profile": "pip"
+    },
+    "gv_monster_transform_face_nose": {
+      "src": "./voice/audio/gv_monster_transform_face_nose.mp3?v=20260930gv1",
+      "text": "Look! New nose!",
+      "profile": "pip"
+    },
+    "gv_monster_transform_face_mouth": {
+      "src": "./voice/audio/gv_monster_transform_face_mouth.mp3?v=20260930gv1",
+      "text": "Look! New mouth!",
+      "profile": "pip"
+    },
+    "gv_time_magic_sunny": {
+      "src": "./voice/audio/gv_time_magic_sunny.mp3?v=20260930gv1",
+      "text": "It is sunny! Hello, sun!",
+      "profile": "guide"
+    },
+    "gv_time_magic_rainy": {
+      "src": "./voice/audio/gv_time_magic_rainy.mp3?v=20260930gv1",
+      "text": "It is raining! Listen to the raindrops.",
+      "profile": "guide"
+    },
+    "gv_time_magic_snowy": {
+      "src": "./voice/audio/gv_time_magic_snowy.mp3?v=20260930gv1",
+      "text": "It is snowing! Soft, white snow.",
+      "profile": "guide"
+    },
+    "gv_time_magic_rainbow": {
+      "src": "./voice/audio/gv_time_magic_rainbow.mp3?v=20260930gv1",
+      "text": "A rainbow! Look at all the colors!",
+      "profile": "guide"
+    },
+    "gv_pip_star": {
+      "src": "./voice/audio/gv_pip_star.mp3?v=20260930gv1",
+      "text": "A star!",
+      "profile": "pip"
+    },
+    "gv_magic_doodle_draw": {
+      "src": "./voice/audio/gv_magic_doodle_draw.mp3?v=20260930gv1",
+      "text": "Draw, draw! Make a trail of light!",
+      "profile": "pip"
+    },
+    "gv_magic_doodle_complete": {
+      "src": "./voice/audio/gv_magic_doodle_complete.mp3?v=20260930gv1",
+      "text": "You joined the stars! Magical!",
+      "profile": "pip"
+    },
+    "gv_car_track_drive": {
+      "src": "./voice/audio/gv_car_track_drive.mp3?v=20260930gv1",
+      "text": "Little car, let us go!",
+      "profile": "pip"
+    },
+    "gv_car_track_complete": {
+      "src": "./voice/audio/gv_car_track_complete.mp3?v=20260930gv1",
+      "text": "The finish line! Great driving!",
+      "profile": "pip"
+    },
+    "gv_car_track_next": {
+      "src": "./voice/audio/gv_car_track_next.mp3?v=20260930gv1",
+      "text": "A new road! Ready, steady, go!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_color_0": {
+      "src": "./voice/audio/gv_balloon_pump_color_0.mp3?v=20260930gv1",
+      "text": "A red balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_color_1": {
+      "src": "./voice/audio/gv_balloon_pump_color_1.mp3?v=20260930gv1",
+      "text": "A green balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_color_2": {
+      "src": "./voice/audio/gv_balloon_pump_color_2.mp3?v=20260930gv1",
+      "text": "Blue balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_color_3": {
+      "src": "./voice/audio/gv_balloon_pump_color_3.mp3?v=20260930gv1",
+      "text": "An orange balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_pump": {
+      "src": "./voice/audio/gv_balloon_pump_pump.mp3?v=20260930gv1",
+      "text": "Pump, pump! Bigger and bigger!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_ready": {
+      "src": "./voice/audio/gv_balloon_pump_ready.mp3?v=20260930gv1",
+      "text": "A big balloon! Let go to make it fly!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_fly": {
+      "src": "./voice/audio/gv_balloon_pump_fly.mp3?v=20260930gv1",
+      "text": "Up goes the balloon! Bye-bye!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_pop": {
+      "src": "./voice/audio/gv_balloon_pump_pop.mp3?v=20260930gv1",
+      "text": "Wow! The balloon went pop!",
+      "profile": "pip"
+    },
+    "gv_guide_goldfish": {
+      "src": "./voice/audio/gv_guide_goldfish.mp3?v=20260930gv1",
+      "text": "A goldfish!",
+      "profile": "guide"
+    },
+    "gv_guide_whale": {
+      "src": "./voice/audio/gv_guide_whale.mp3?v=20260930gv1",
+      "text": "A whale!",
+      "profile": "guide"
+    },
+    "gv_guide_shark": {
+      "src": "./voice/audio/gv_guide_shark.mp3?v=20260930gv1",
+      "text": "A shark!",
+      "profile": "guide"
+    },
+    "gv_guide_manta": {
+      "src": "./voice/audio/gv_guide_manta.mp3?v=20260930gv1",
+      "text": "A manta ray!",
+      "profile": "guide"
+    },
+    "gv_guide_pufferfish": {
+      "src": "./voice/audio/gv_guide_pufferfish.mp3?v=20260930gv1",
+      "text": "A pufferfish!",
+      "profile": "guide"
+    },
+    "gv_feed_fish_food": {
+      "src": "./voice/audio/gv_feed_fish_food.mp3?v=20260930gv1",
+      "text": "Fish food! A little snack.",
+      "profile": "guide"
+    },
+    "gv_guide_teddy_bear": {
+      "src": "./voice/audio/gv_guide_teddy_bear.mp3?v=20260930gv1",
+      "text": "A teddy bear!",
+      "profile": "guide"
+    },
+    "gv_guide_block": {
+      "src": "./voice/audio/gv_guide_block.mp3?v=20260930gv1",
+      "text": "A block!",
+      "profile": "guide"
+    },
+    "gv_guide_puzzle": {
+      "src": "./voice/audio/gv_guide_puzzle.mp3?v=20260930gv1",
+      "text": "A puzzle!",
+      "profile": "guide"
+    },
+    "gv_guide_dinosaur": {
+      "src": "./voice/audio/gv_guide_dinosaur.mp3?v=20260930gv1",
+      "text": "A dinosaur!",
+      "profile": "guide"
+    },
+    "gv_guide_robot": {
+      "src": "./voice/audio/gv_guide_robot.mp3?v=20260930gv1",
+      "text": "A robot!",
+      "profile": "guide"
+    },
+    "gv_tidy_up_put": {
+      "src": "./voice/audio/gv_tidy_up_put.mp3?v=20260930gv1",
+      "text": "In the box! Nice and tidy.",
+      "profile": "teddy"
+    },
+    "gv_tidy_up_wrong": {
+      "src": "./voice/audio/gv_tidy_up_wrong.mp3?v=20260930gv1",
+      "text": "Try putting it in the toy box.",
+      "profile": "teddy"
+    },
+    "gv_tidy_up_complete": {
+      "src": "./voice/audio/gv_tidy_up_complete.mp3?v=20260930gv1",
+      "text": "All tidy! You are a great helper!",
+      "profile": "teddy"
+    },
+    "gv_egg_hatch_hello_0": {
+      "src": "./voice/audio/gv_egg_hatch_hello_0.mp3?v=20260930gv1",
+      "text": "Hello, little friend!",
+      "profile": "guide"
+    },
+    "gv_guide_duckling": {
+      "src": "./voice/audio/gv_guide_duckling.mp3?v=20260930gv1",
+      "text": "A duckling!",
+      "profile": "guide"
+    },
+    "gv_guide_puppy": {
+      "src": "./voice/audio/gv_guide_puppy.mp3?v=20260930gv1",
+      "text": "A puppy!",
+      "profile": "guide"
+    },
+    "gv_guide_kitten": {
+      "src": "./voice/audio/gv_guide_kitten.mp3?v=20260930gv1",
+      "text": "A kitten!",
+      "profile": "guide"
+    },
+    "gv_guide_hamster": {
+      "src": "./voice/audio/gv_guide_hamster.mp3?v=20260930gv1",
+      "text": "A little hamster!",
+      "profile": "guide"
+    },
+    "gv_guide_piglet": {
+      "src": "./voice/audio/gv_guide_piglet.mp3?v=20260930gv1",
+      "text": "A piglet!",
+      "profile": "guide"
+    },
+    "gv_guide_calf": {
+      "src": "./voice/audio/gv_guide_calf.mp3?v=20260930gv1",
+      "text": "A calf!",
+      "profile": "guide"
+    },
+    "gv_guide_otter": {
+      "src": "./voice/audio/gv_guide_otter.mp3?v=20260930gv1",
+      "text": "An otter!",
+      "profile": "guide"
+    },
+    "gv_guide_sloth": {
+      "src": "./voice/audio/gv_guide_sloth.mp3?v=20260930gv1",
+      "text": "A sloth!",
+      "profile": "guide"
+    },
+    "gv_guide_raccoon": {
+      "src": "./voice/audio/gv_guide_raccoon.mp3?v=20260930gv1",
+      "text": "A raccoon!",
+      "profile": "guide"
+    },
+    "gv_guide_seal": {
+      "src": "./voice/audio/gv_guide_seal.mp3?v=20260930gv1",
+      "text": "A seal!",
+      "profile": "guide"
+    },
+    "gv_guide_crab": {
+      "src": "./voice/audio/gv_guide_crab.mp3?v=20260930gv1",
+      "text": "A crab!",
+      "profile": "guide"
+    },
+    "gv_guide_flamingo": {
+      "src": "./voice/audio/gv_guide_flamingo.mp3?v=20260930gv1",
+      "text": "A flamingo!",
+      "profile": "guide"
+    },
+    "gv_guide_peacock": {
+      "src": "./voice/audio/gv_guide_peacock.mp3?v=20260930gv1",
+      "text": "A peacock!",
+      "profile": "guide"
+    },
+    "gv_guide_butterfly": {
+      "src": "./voice/audio/gv_guide_butterfly.mp3?v=20260930gv1",
+      "text": "A butterfly!",
+      "profile": "guide"
+    },
+    "gv_guide_snail": {
+      "src": "./voice/audio/gv_guide_snail.mp3?v=20260930gv1",
+      "text": "A snail!",
+      "profile": "guide"
+    },
+    "gv_guide_bat": {
+      "src": "./voice/audio/gv_guide_bat.mp3?v=20260930gv1",
+      "text": "A bat!",
+      "profile": "guide"
+    },
+    "gv_guide_kangaroo": {
+      "src": "./voice/audio/gv_guide_kangaroo.mp3?v=20260930gv1",
+      "text": "A kangaroo!",
+      "profile": "guide"
+    },
+    "gv_guide_alpaca": {
+      "src": "./voice/audio/gv_guide_alpaca.mp3?v=20260930gv1",
+      "text": "An alpaca!",
+      "profile": "guide"
+    },
+    "gv_guide_rhino": {
+      "src": "./voice/audio/gv_guide_rhino.mp3?v=20260930gv1",
+      "text": "A rhino!",
+      "profile": "guide"
+    },
+    "gv_guide_t_rex": {
+      "src": "./voice/audio/gv_guide_t_rex.mp3?v=20260930gv1",
+      "text": "A T. rex!",
+      "profile": "guide"
+    },
+    "gv_guide_unicorn": {
+      "src": "./voice/audio/gv_guide_unicorn.mp3?v=20260930gv1",
+      "text": "An unicorn!",
+      "profile": "guide"
+    },
+    "gv_guide_dragon": {
+      "src": "./voice/audio/gv_guide_dragon.mp3?v=20260930gv1",
+      "text": "A dragon!",
+      "profile": "guide"
+    },
+    "gv_guide_cat_dog": {
+      "src": "./voice/audio/gv_guide_cat_dog.mp3?v=20260930gv1",
+      "text": "A cat-dog friend!",
+      "profile": "guide"
+    },
+    "gv_guide_capybara": {
+      "src": "./voice/audio/gv_guide_capybara.mp3?v=20260930gv1",
+      "text": "A capybara!",
+      "profile": "guide"
+    },
+    "gv_egg_hatch_tap": {
+      "src": "./voice/audio/gv_egg_hatch_tap.mp3?v=20260930gv1",
+      "text": "Tap, tap! A little egg!",
+      "profile": "guide"
+    },
+    "gv_egg_hatch_crack": {
+      "src": "./voice/audio/gv_egg_hatch_crack.mp3?v=20260930gv1",
+      "text": "A crack! Who is coming out?",
+      "profile": "guide"
+    },
+    "gv_egg_hatch_almost": {
+      "src": "./voice/audio/gv_egg_hatch_almost.mp3?v=20260930gv1",
+      "text": "Almost there! Keep going!",
+      "profile": "guide"
+    },
+    "gv_guide_biscuit": {
+      "src": "./voice/audio/gv_guide_biscuit.mp3?v=20260930gv1",
+      "text": "A dog biscuit!",
+      "profile": "guide"
+    },
+    "gv_guide_bamboo": {
+      "src": "./voice/audio/gv_guide_bamboo.mp3?v=20260930gv1",
+      "text": "Bamboo leaves!",
+      "profile": "guide"
+    },
+    "gv_guide_honey": {
+      "src": "./voice/audio/gv_guide_honey.mp3?v=20260930gv1",
+      "text": "Honey!",
+      "profile": "guide"
+    },
+    "gv_guide_drumstick": {
+      "src": "./voice/audio/gv_guide_drumstick.mp3?v=20260930gv1",
+      "text": "A chicken drumstick!",
+      "profile": "guide"
+    },
+    "gv_guide_grass": {
+      "src": "./voice/audio/gv_guide_grass.mp3?v=20260930gv1",
+      "text": "Green grass!",
+      "profile": "guide"
+    },
+    "gv_guide_clover": {
+      "src": "./voice/audio/gv_guide_clover.mp3?v=20260930gv1",
+      "text": "Clover!",
+      "profile": "guide"
+    },
+    "gv_guide_leaves": {
+      "src": "./voice/audio/gv_guide_leaves.mp3?v=20260930gv1",
+      "text": "Leaves!",
+      "profile": "guide"
+    },
+    "gv_guide_acorn": {
+      "src": "./voice/audio/gv_guide_acorn.mp3?v=20260930gv1",
+      "text": "An acorn!",
+      "profile": "guide"
+    },
+    "gv_guide_eucalyptus": {
+      "src": "./voice/audio/gv_guide_eucalyptus.mp3?v=20260930gv1",
+      "text": "Eucalyptus leaves!",
+      "profile": "guide"
+    },
+    "gv_guide_corn": {
+      "src": "./voice/audio/gv_guide_corn.mp3?v=20260930gv1",
+      "text": "Corn!",
+      "profile": "guide"
+    },
+    "gv_guide_mushroom": {
+      "src": "./voice/audio/gv_guide_mushroom.mp3?v=20260930gv1",
+      "text": "A mushroom!",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_monkey": {
+      "src": "./voice/audio/gv_animal_breakfast_request_monkey.mp3?v=20260930gv1",
+      "text": "The monkey would like a banana.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_rabbit": {
+      "src": "./voice/audio/gv_animal_breakfast_request_rabbit.mp3?v=20260930gv1",
+      "text": "The rabbit would like a carrot.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_cat": {
+      "src": "./voice/audio/gv_animal_breakfast_request_cat.mp3?v=20260930gv1",
+      "text": "The cat would like fish.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_dog": {
+      "src": "./voice/audio/gv_animal_breakfast_request_dog.mp3?v=20260930gv1",
+      "text": "The dog would like a biscuit.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_panda": {
+      "src": "./voice/audio/gv_animal_breakfast_request_panda.mp3?v=20260930gv1",
+      "text": "The panda would like bamboo.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_bear": {
+      "src": "./voice/audio/gv_animal_breakfast_request_bear.mp3?v=20260930gv1",
+      "text": "The bear would like honey.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_fox": {
+      "src": "./voice/audio/gv_animal_breakfast_request_fox.mp3?v=20260930gv1",
+      "text": "The fox would like a chicken drumstick.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_pig": {
+      "src": "./voice/audio/gv_animal_breakfast_request_pig.mp3?v=20260930gv1",
+      "text": "The pig would like an apple.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_cow": {
+      "src": "./voice/audio/gv_animal_breakfast_request_cow.mp3?v=20260930gv1",
+      "text": "The cow would like grass.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_sheep": {
+      "src": "./voice/audio/gv_animal_breakfast_request_sheep.mp3?v=20260930gv1",
+      "text": "The sheep would like clover.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_elephant": {
+      "src": "./voice/audio/gv_animal_breakfast_request_elephant.mp3?v=20260930gv1",
+      "text": "The elephant would like watermelon.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_giraffe": {
+      "src": "./voice/audio/gv_animal_breakfast_request_giraffe.mp3?v=20260930gv1",
+      "text": "The giraffe would like leaves.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_squirrel": {
+      "src": "./voice/audio/gv_animal_breakfast_request_squirrel.mp3?v=20260930gv1",
+      "text": "The squirrel would like an acorn.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_penguin": {
+      "src": "./voice/audio/gv_animal_breakfast_request_penguin.mp3?v=20260930gv1",
+      "text": "The penguin would like shrimp.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_koala": {
+      "src": "./voice/audio/gv_animal_breakfast_request_koala.mp3?v=20260930gv1",
+      "text": "The koala would like eucalyptus leaves.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_hedgehog": {
+      "src": "./voice/audio/gv_animal_breakfast_request_hedgehog.mp3?v=20260930gv1",
+      "text": "The hedgehog would like a strawberry.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_chick": {
+      "src": "./voice/audio/gv_animal_breakfast_request_chick.mp3?v=20260930gv1",
+      "text": "The chick would like corn.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_request_deer": {
+      "src": "./voice/audio/gv_animal_breakfast_request_deer.mp3?v=20260930gv1",
+      "text": "The deer would like a mushroom.",
+      "profile": "guide"
+    },
+    "gv_animal_breakfast_complete": {
+      "src": "./voice/audio/gv_animal_breakfast_complete.mp3?v=20260930gv1",
+      "text": "Everybody has breakfast! Thank you, little helper!",
+      "profile": "guide"
+    },
+    "gv_train_cargo_toy_red": {
+      "src": "./voice/audio/gv_train_cargo_toy_red.mp3?v=20260930gv1",
+      "text": "A red ball!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_blue": {
+      "src": "./voice/audio/gv_train_cargo_toy_blue.mp3?v=20260930gv1",
+      "text": "A blue block!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_yellow": {
+      "src": "./voice/audio/gv_train_cargo_toy_yellow.mp3?v=20260930gv1",
+      "text": "A yellow star!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_green": {
+      "src": "./voice/audio/gv_train_cargo_toy_green.mp3?v=20260930gv1",
+      "text": "A green dinosaur!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_orange": {
+      "src": "./voice/audio/gv_train_cargo_toy_orange.mp3?v=20260930gv1",
+      "text": "A orange basketball!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_purple": {
+      "src": "./voice/audio/gv_train_cargo_toy_purple.mp3?v=20260930gv1",
+      "text": "A purple gift!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_pink": {
+      "src": "./voice/audio/gv_train_cargo_toy_pink.mp3?v=20260930gv1",
+      "text": "A pink drum!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_brown": {
+      "src": "./voice/audio/gv_train_cargo_toy_brown.mp3?v=20260930gv1",
+      "text": "A brown teddy bear!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_cyan": {
+      "src": "./voice/audio/gv_train_cargo_toy_cyan.mp3?v=20260930gv1",
+      "text": "A cyan robot!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_lime": {
+      "src": "./voice/audio/gv_train_cargo_toy_lime.mp3?v=20260930gv1",
+      "text": "A lime green kite!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_teal": {
+      "src": "./voice/audio/gv_train_cargo_toy_teal.mp3?v=20260930gv1",
+      "text": "A teal boat!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_toy_indigo": {
+      "src": "./voice/audio/gv_train_cargo_toy_indigo.mp3?v=20260930gv1",
+      "text": "An indigo rocket!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_red": {
+      "src": "./voice/audio/gv_train_cargo_wagon_red.mp3?v=20260930gv1",
+      "text": "The red wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_blue": {
+      "src": "./voice/audio/gv_train_cargo_wagon_blue.mp3?v=20260930gv1",
+      "text": "The blue wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_yellow": {
+      "src": "./voice/audio/gv_train_cargo_wagon_yellow.mp3?v=20260930gv1",
+      "text": "The yellow wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_green": {
+      "src": "./voice/audio/gv_train_cargo_wagon_green.mp3?v=20260930gv1",
+      "text": "The green wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_orange": {
+      "src": "./voice/audio/gv_train_cargo_wagon_orange.mp3?v=20260930gv1",
+      "text": "The orange wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_purple": {
+      "src": "./voice/audio/gv_train_cargo_wagon_purple.mp3?v=20260930gv1",
+      "text": "The purple wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_pink": {
+      "src": "./voice/audio/gv_train_cargo_wagon_pink.mp3?v=20260930gv1",
+      "text": "The pink wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_brown": {
+      "src": "./voice/audio/gv_train_cargo_wagon_brown.mp3?v=20260930gv1",
+      "text": "The brown wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_cyan": {
+      "src": "./voice/audio/gv_train_cargo_wagon_cyan.mp3?v=20260930gv1",
+      "text": "The cyan wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_lime": {
+      "src": "./voice/audio/gv_train_cargo_wagon_lime.mp3?v=20260930gv1",
+      "text": "The lime green wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_teal": {
+      "src": "./voice/audio/gv_train_cargo_wagon_teal.mp3?v=20260930gv1",
+      "text": "The teal wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_wagon_indigo": {
+      "src": "./voice/audio/gv_train_cargo_wagon_indigo.mp3?v=20260930gv1",
+      "text": "The indigo wagon!",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_red": {
+      "src": "./voice/audio/gv_train_cargo_request_red.mp3?v=20260930gv1",
+      "text": "Find the red wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_blue": {
+      "src": "./voice/audio/gv_train_cargo_request_blue.mp3?v=20260930gv1",
+      "text": "Find the blue wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_yellow": {
+      "src": "./voice/audio/gv_train_cargo_request_yellow.mp3?v=20260930gv1",
+      "text": "Find the yellow wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_green": {
+      "src": "./voice/audio/gv_train_cargo_request_green.mp3?v=20260930gv1",
+      "text": "Find the green wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_orange": {
+      "src": "./voice/audio/gv_train_cargo_request_orange.mp3?v=20260930gv1",
+      "text": "Find the orange wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_purple": {
+      "src": "./voice/audio/gv_train_cargo_request_purple.mp3?v=20260930gv1",
+      "text": "Find the purple wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_pink": {
+      "src": "./voice/audio/gv_train_cargo_request_pink.mp3?v=20260930gv1",
+      "text": "Find the pink wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_brown": {
+      "src": "./voice/audio/gv_train_cargo_request_brown.mp3?v=20260930gv1",
+      "text": "Find the brown wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_cyan": {
+      "src": "./voice/audio/gv_train_cargo_request_cyan.mp3?v=20260930gv1",
+      "text": "Find the cyan wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_lime": {
+      "src": "./voice/audio/gv_train_cargo_request_lime.mp3?v=20260930gv1",
+      "text": "Find the lime green wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_teal": {
+      "src": "./voice/audio/gv_train_cargo_request_teal.mp3?v=20260930gv1",
+      "text": "Find the teal wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_request_indigo": {
+      "src": "./voice/audio/gv_train_cargo_request_indigo.mp3?v=20260930gv1",
+      "text": "Find the indigo wagon.",
+      "profile": "pip"
+    },
+    "gv_train_cargo_complete": {
+      "src": "./voice/audio/gv_train_cargo_complete.mp3?v=20260930gv1",
+      "text": "All aboard! The train is ready to go!",
+      "profile": "pip"
+    },
+    "gv_bath_time_tool_soap": {
+      "src": "./voice/audio/gv_bath_time_tool_soap.mp3?v=20260930gv1",
+      "text": "A bar of soap! Rub, rub! So many bubbles!",
+      "profile": "teddy"
+    },
+    "gv_bath_time_tool_rinse": {
+      "src": "./voice/audio/gv_bath_time_tool_rinse.mp3?v=20260930gv1",
+      "text": "Water! Bye-bye, bubbles!",
+      "profile": "teddy"
+    },
+    "gv_bath_time_tool_towel": {
+      "src": "./voice/audio/gv_bath_time_tool_towel.mp3?v=20260930gv1",
+      "text": "A towel! Soft and dry.",
+      "profile": "teddy"
+    },
+    "gv_bath_time_complete": {
+      "src": "./voice/audio/gv_bath_time_complete.mp3?v=20260930gv1",
+      "text": "All clean! Thank you for my bath!",
+      "profile": "teddy"
+    },
+    "gv_little_chef_recipe_cake": {
+      "src": "./voice/audio/gv_little_chef_recipe_cake.mp3?v=20260930gv1",
+      "text": "Let us make little cakes!",
+      "profile": "guide"
+    },
+    "gv_little_chef_recipe_bread": {
+      "src": "./voice/audio/gv_little_chef_recipe_bread.mp3?v=20260930gv1",
+      "text": "Let us make bread!",
+      "profile": "guide"
+    },
+    "gv_little_chef_recipe_fried_egg": {
+      "src": "./voice/audio/gv_little_chef_recipe_fried_egg.mp3?v=20260930gv1",
+      "text": "Let us make a fried egg!",
+      "profile": "guide"
+    },
+    "gv_little_chef_recipe_tomato_eggs": {
+      "src": "./voice/audio/gv_little_chef_recipe_tomato_eggs.mp3?v=20260930gv1",
+      "text": "Let us make tomato and eggs!",
+      "profile": "guide"
+    },
+    "gv_little_chef_recipe_vegetable_soup": {
+      "src": "./voice/audio/gv_little_chef_recipe_vegetable_soup.mp3?v=20260930gv1",
+      "text": "Let us make vegetable soup!",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_milk": {
+      "src": "./voice/audio/gv_little_chef_tool_milk.mp3?v=20260930gv1",
+      "text": "Milk! Pour it in.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_egg": {
+      "src": "./voice/audio/gv_little_chef_tool_egg.mp3?v=20260930gv1",
+      "text": "An egg! Crack it gently.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_flour": {
+      "src": "./voice/audio/gv_little_chef_tool_flour.mp3?v=20260930gv1",
+      "text": "Flour! Tip it into the bowl.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_whisk": {
+      "src": "./voice/audio/gv_little_chef_tool_whisk.mp3?v=20260930gv1",
+      "text": "This is a whisk. Mix, mix, mix!",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_bake": {
+      "src": "./voice/audio/gv_little_chef_tool_bake.mp3?v=20260930gv1",
+      "text": "A baking tray! Into the oven.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_rollingpin": {
+      "src": "./voice/audio/gv_little_chef_tool_rollingpin.mp3?v=20260930gv1",
+      "text": "A rolling pin! Roll the dough.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_oil": {
+      "src": "./voice/audio/gv_little_chef_tool_oil.mp3?v=20260930gv1",
+      "text": "Oil! A little in the pan.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_tomato": {
+      "src": "./voice/audio/gv_little_chef_tool_tomato.mp3?v=20260930gv1",
+      "text": "Tomato! Into the pan.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_spatula": {
+      "src": "./voice/audio/gv_little_chef_tool_spatula.mp3?v=20260930gv1",
+      "text": "A spatula! Stir and turn.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_water": {
+      "src": "./voice/audio/gv_little_chef_tool_water.mp3?v=20260930gv1",
+      "text": "Water! Pour it into the pot.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_vegetables": {
+      "src": "./voice/audio/gv_little_chef_tool_vegetables.mp3?v=20260930gv1",
+      "text": "Vegetables! Into the soup.",
+      "profile": "guide"
+    },
+    "gv_little_chef_tool_ladle": {
+      "src": "./voice/audio/gv_little_chef_tool_ladle.mp3?v=20260930gv1",
+      "text": "A ladle! Give it a gentle stir.",
+      "profile": "guide"
+    },
+    "gv_little_chef_complete_cake": {
+      "src": "./voice/audio/gv_little_chef_complete_cake.mp3?v=20260930gv1",
+      "text": "Little cakes! You made it. Delicious!",
+      "profile": "guide"
+    },
+    "gv_little_chef_complete_bread": {
+      "src": "./voice/audio/gv_little_chef_complete_bread.mp3?v=20260930gv1",
+      "text": "Bread! You made it. Delicious!",
+      "profile": "guide"
+    },
+    "gv_little_chef_complete_fried_egg": {
+      "src": "./voice/audio/gv_little_chef_complete_fried_egg.mp3?v=20260930gv1",
+      "text": "A fried egg! You made it. Delicious!",
+      "profile": "guide"
+    },
+    "gv_little_chef_complete_tomato_eggs": {
+      "src": "./voice/audio/gv_little_chef_complete_tomato_eggs.mp3?v=20260930gv1",
+      "text": "Tomato and eggs! You made it. Delicious!",
+      "profile": "guide"
+    },
+    "gv_little_chef_complete_vegetable_soup": {
+      "src": "./voice/audio/gv_little_chef_complete_vegetable_soup.mp3?v=20260930gv1",
+      "text": "Vegetable soup! You made it. Delicious!",
+      "profile": "guide"
+    },
+    "gv_little_chef_cooking": {
+      "src": "./voice/audio/gv_little_chef_cooking.mp3?v=20260930gv1",
+      "text": "Cooking time! It will be ready soon.",
+      "profile": "guide"
+    },
+    "gv_road_helper_tool_gravel": {
+      "src": "./voice/audio/gv_road_helper_tool_gravel.mp3?v=20260930gv1",
+      "text": "Gravel! Fill the hole in the road.",
+      "profile": "pip"
+    },
+    "gv_road_helper_tool_roller": {
+      "src": "./voice/audio/gv_road_helper_tool_roller.mp3?v=20260930gv1",
+      "text": "A road roller! Roll the road flat.",
+      "profile": "pip"
+    },
+    "gv_road_helper_tool_car": {
+      "src": "./voice/audio/gv_road_helper_tool_car.mp3?v=20260930gv1",
+      "text": "A car! Try the new road.",
+      "profile": "pip"
+    },
+    "gv_road_helper_complete": {
+      "src": "./voice/audio/gv_road_helper_complete.mp3?v=20260930gv1",
+      "text": "The road is fixed! Great teamwork!",
+      "profile": "pip"
+    },
+    "gv_garden_grow_plant_sunflower": {
+      "src": "./voice/audio/gv_garden_grow_plant_sunflower.mp3?v=20260930gv1",
+      "text": "Let us grow a sunflower!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_plant_rose": {
+      "src": "./voice/audio/gv_garden_grow_plant_rose.mp3?v=20260930gv1",
+      "text": "Let us grow a rose!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_plant_tulip": {
+      "src": "./voice/audio/gv_garden_grow_plant_tulip.mp3?v=20260930gv1",
+      "text": "Let us grow a tulip!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_plant_lavender": {
+      "src": "./voice/audio/gv_garden_grow_plant_lavender.mp3?v=20260930gv1",
+      "text": "Let us grow some lavender!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_plant_daisy": {
+      "src": "./voice/audio/gv_garden_grow_plant_daisy.mp3?v=20260930gv1",
+      "text": "Let us grow a daisy!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_plant_grape": {
+      "src": "./voice/audio/gv_garden_grow_plant_grape.mp3?v=20260930gv1",
+      "text": "Let us grow some grapes!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_loosen": {
+      "src": "./voice/audio/gv_garden_grow_tool_loosen.mp3?v=20260930gv1",
+      "text": "Soil! Loosen the soil gently.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_seed": {
+      "src": "./voice/audio/gv_garden_grow_tool_seed.mp3?v=20260930gv1",
+      "text": "Seeds! Plant the little seeds.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_bulb": {
+      "src": "./voice/audio/gv_garden_grow_tool_bulb.mp3?v=20260930gv1",
+      "text": "A bulb! Put it in the soil.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_cover": {
+      "src": "./voice/audio/gv_garden_grow_tool_cover.mp3?v=20260930gv1",
+      "text": "Cover it with soft soil.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_water": {
+      "src": "./voice/audio/gv_garden_grow_tool_water.mp3?v=20260930gv1",
+      "text": "Water! Give the plant a drink.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_mist": {
+      "src": "./voice/audio/gv_garden_grow_tool_mist.mp3?v=20260930gv1",
+      "text": "A soft mist! Spray a little water.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_sun": {
+      "src": "./voice/audio/gv_garden_grow_tool_sun.mp3?v=20260930gv1",
+      "text": "Sunshine! Help our plant grow.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_feed": {
+      "src": "./voice/audio/gv_garden_grow_tool_feed.mp3?v=20260930gv1",
+      "text": "Plant food! A little boost for our plant.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_prune": {
+      "src": "./voice/audio/gv_garden_grow_tool_prune.mp3?v=20260930gv1",
+      "text": "Snip, snip! Trim the little branches.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_weed": {
+      "src": "./voice/audio/gv_garden_grow_tool_weed.mp3?v=20260930gv1",
+      "text": "Pull out the weeds. More room to grow!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_tool_support": {
+      "src": "./voice/audio/gv_garden_grow_tool_support.mp3?v=20260930gv1",
+      "text": "A little trellis! Help the vine climb.",
+      "profile": "guide"
+    },
+    "gv_garden_grow_complete_sunflower": {
+      "src": "./voice/audio/gv_garden_grow_complete_sunflower.mp3?v=20260930gv1",
+      "text": "Sunflower! Look at our beautiful flowers!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_complete_rose": {
+      "src": "./voice/audio/gv_garden_grow_complete_rose.mp3?v=20260930gv1",
+      "text": "Rose! Look at our beautiful flowers!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_complete_tulip": {
+      "src": "./voice/audio/gv_garden_grow_complete_tulip.mp3?v=20260930gv1",
+      "text": "Tulip! Look at our beautiful flowers!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_complete_lavender": {
+      "src": "./voice/audio/gv_garden_grow_complete_lavender.mp3?v=20260930gv1",
+      "text": "Lavender! Look at our beautiful flowers!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_complete_daisy": {
+      "src": "./voice/audio/gv_garden_grow_complete_daisy.mp3?v=20260930gv1",
+      "text": "Daisy! Look at our beautiful flowers!",
+      "profile": "guide"
+    },
+    "gv_garden_grow_complete_grape": {
+      "src": "./voice/audio/gv_garden_grow_complete_grape.mp3?v=20260930gv1",
+      "text": "Grapes! Look at those lovely grapes!",
+      "profile": "guide"
+    },
+    "gv_shadow_match_shape_hint": {
+      "src": "./voice/audio/gv_shadow_match_shape_hint.mp3?v=20260930gv1",
+      "text": "Look at the shape of the shadow.",
+      "profile": "guide"
+    },
+    "gv_shadow_match_complete": {
+      "src": "./voice/audio/gv_shadow_match_complete.mp3?v=20260930gv1",
+      "text": "All the animals match! Fantastic!",
+      "profile": "guide"
+    },
+    "gv_pip_drum": {
+      "src": "./voice/audio/gv_pip_drum.mp3?v=20260930gv1",
+      "text": "This is a drum. Drum!",
+      "profile": "pip"
+    },
+    "gv_pip_guitar": {
+      "src": "./voice/audio/gv_pip_guitar.mp3?v=20260930gv1",
+      "text": "Guitar!",
+      "profile": "pip"
+    },
+    "gv_pip_trumpet": {
+      "src": "./voice/audio/gv_pip_trumpet.mp3?v=20260930gv1",
+      "text": "A trumpet!",
+      "profile": "pip"
+    },
+    "gv_pip_violin": {
+      "src": "./voice/audio/gv_pip_violin.mp3?v=20260930gv1",
+      "text": "Violin!",
+      "profile": "pip"
+    },
+    "gv_pip_saxophone": {
+      "src": "./voice/audio/gv_pip_saxophone.mp3?v=20260930gv1",
+      "text": "Saxophone!",
+      "profile": "pip"
+    },
+    "gv_pip_accordion": {
+      "src": "./voice/audio/gv_pip_accordion.mp3?v=20260930gv1",
+      "text": "An accordion!",
+      "profile": "pip"
+    },
+    "gv_pip_flute": {
+      "src": "./voice/audio/gv_pip_flute.mp3?v=20260930gv1",
+      "text": "A flute!",
+      "profile": "pip"
+    },
+    "gv_pip_tambourine": {
+      "src": "./voice/audio/gv_pip_tambourine.mp3?v=20260930gv1",
+      "text": "Tambourine!",
+      "profile": "pip"
+    },
+    "gv_pip_maracas": {
+      "src": "./voice/audio/gv_pip_maracas.mp3?v=20260930gv1",
+      "text": "Maracas!",
+      "profile": "pip"
+    },
+    "gv_pip_keyboard": {
+      "src": "./voice/audio/gv_pip_keyboard.mp3?v=20260930gv1",
+      "text": "A keyboard!",
+      "profile": "pip"
+    },
+    "gv_little_band_shape_hint": {
+      "src": "./voice/audio/gv_little_band_shape_hint.mp3?v=20260930gv1",
+      "text": "Find the same instrument shape.",
+      "profile": "pip"
+    },
+    "gv_little_band_complete": {
+      "src": "./voice/audio/gv_little_band_complete.mp3?v=20260930gv1",
+      "text": "Our band is ready! What lovely music!",
+      "profile": "pip"
+    },
+    "gv_weather_dress_weather_sun": {
+      "src": "./voice/audio/gv_weather_dress_weather_sun.mp3?v=20260930gv1",
+      "text": "It is sunny! A sun hat and sunglasses.",
+      "profile": "guide"
+    },
+    "gv_weather_dress_weather_rain": {
+      "src": "./voice/audio/gv_weather_dress_weather_rain.mp3?v=20260930gv1",
+      "text": "It is raining! A raincoat and rain boots.",
+      "profile": "guide"
+    },
+    "gv_weather_dress_weather_snow": {
+      "src": "./voice/audio/gv_weather_dress_weather_snow.mp3?v=20260930gv1",
+      "text": "It is snowing! A warm coat and a scarf.",
+      "profile": "guide"
+    },
+    "gv_weather_dress_weather_wind": {
+      "src": "./voice/audio/gv_weather_dress_weather_wind.mp3?v=20260930gv1",
+      "text": "It is windy! A windbreaker and a cap.",
+      "profile": "guide"
+    },
+    "gv_weather_dress_weather_autumn": {
+      "src": "./voice/audio/gv_weather_dress_weather_autumn.mp3?v=20260930gv1",
+      "text": "A cool autumn day! A sweater and a woolly hat.",
+      "profile": "guide"
+    },
+    "gv_guide_sun_hat": {
+      "src": "./voice/audio/gv_guide_sun_hat.mp3?v=20260930gv1",
+      "text": "A sun hat!",
+      "profile": "guide"
+    },
+    "gv_guide_sunglasses": {
+      "src": "./voice/audio/gv_guide_sunglasses.mp3?v=20260930gv1",
+      "text": "Sunglasses!",
+      "profile": "guide"
+    },
+    "gv_guide_raincoat": {
+      "src": "./voice/audio/gv_guide_raincoat.mp3?v=20260930gv1",
+      "text": "A raincoat!",
+      "profile": "guide"
+    },
+    "gv_guide_rain_boots": {
+      "src": "./voice/audio/gv_guide_rain_boots.mp3?v=20260930gv1",
+      "text": "Put on your rain boots!",
+      "profile": "guide"
+    },
+    "gv_guide_puffer": {
+      "src": "./voice/audio/gv_guide_puffer.mp3?v=20260930gv1",
+      "text": "A warm coat!",
+      "profile": "guide"
+    },
+    "gv_guide_scarf": {
+      "src": "./voice/audio/gv_guide_scarf.mp3?v=20260930gv1",
+      "text": "A scarf!",
+      "profile": "guide"
+    },
+    "gv_guide_windbreaker": {
+      "src": "./voice/audio/gv_guide_windbreaker.mp3?v=20260930gv1",
+      "text": "A windbreaker!",
+      "profile": "guide"
+    },
+    "gv_guide_cap": {
+      "src": "./voice/audio/gv_guide_cap.mp3?v=20260930gv1",
+      "text": "A cap!",
+      "profile": "guide"
+    },
+    "gv_guide_sweater": {
+      "src": "./voice/audio/gv_guide_sweater.mp3?v=20260930gv1",
+      "text": "A sweater!",
+      "profile": "guide"
+    },
+    "gv_guide_beanie": {
+      "src": "./voice/audio/gv_guide_beanie.mp3?v=20260930gv1",
+      "text": "A woolly hat!",
+      "profile": "guide"
+    },
+    "gv_weather_dress_complete": {
+      "src": "./voice/audio/gv_weather_dress_complete.mp3?v=20260930gv1",
+      "text": "Dressed and ready! Let us go outside!",
+      "profile": "guide"
+    },
+    "gv_guide_woodpecker": {
+      "src": "./voice/audio/gv_guide_woodpecker.mp3?v=20260930gv1",
+      "text": "A woodpecker!",
+      "profile": "guide"
+    },
+    "gv_guide_antelope": {
+      "src": "./voice/audio/gv_guide_antelope.mp3?v=20260930gv1",
+      "text": "An antelope!",
+      "profile": "guide"
+    },
+    "gv_guide_ostrich": {
+      "src": "./voice/audio/gv_guide_ostrich.mp3?v=20260930gv1",
+      "text": "An ostrich!",
+      "profile": "guide"
+    },
+    "gv_guide_clownfish": {
+      "src": "./voice/audio/gv_guide_clownfish.mp3?v=20260930gv1",
+      "text": "A clownfish!",
+      "profile": "guide"
+    },
+    "gv_guide_bluefish": {
+      "src": "./voice/audio/gv_guide_bluefish.mp3?v=20260930gv1",
+      "text": "A blue fish!",
+      "profile": "guide"
+    },
+    "gv_guide_seahorse": {
+      "src": "./voice/audio/gv_guide_seahorse.mp3?v=20260930gv1",
+      "text": "A seahorse!",
+      "profile": "guide"
+    },
+    "gv_find_friends_home_tree": {
+      "src": "./voice/audio/gv_find_friends_home_tree.mp3?v=20260930gv1",
+      "text": "Who lives up in the tree?",
+      "profile": "guide"
+    },
+    "gv_find_friends_home_grassland": {
+      "src": "./voice/audio/gv_find_friends_home_grassland.mp3?v=20260930gv1",
+      "text": "Who lives on the grassland?",
+      "profile": "guide"
+    },
+    "gv_find_friends_home_water": {
+      "src": "./voice/audio/gv_find_friends_home_water.mp3?v=20260930gv1",
+      "text": "Who lives in the water?",
+      "profile": "guide"
+    },
+    "gv_find_friends_placed_tree": {
+      "src": "./voice/audio/gv_find_friends_placed_tree.mp3?v=20260930gv1",
+      "text": "Up in the tree!",
+      "profile": "guide"
+    },
+    "gv_find_friends_placed_grassland": {
+      "src": "./voice/audio/gv_find_friends_placed_grassland.mp3?v=20260930gv1",
+      "text": "On the grassland!",
+      "profile": "guide"
+    },
+    "gv_find_friends_placed_water": {
+      "src": "./voice/audio/gv_find_friends_placed_water.mp3?v=20260930gv1",
+      "text": "In the water!",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_squirrel": {
+      "src": "./voice/audio/gv_find_friends_hint_squirrel.mp3?v=20260930gv1",
+      "text": "Help the squirrel find the tree.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_owl": {
+      "src": "./voice/audio/gv_find_friends_hint_owl.mp3?v=20260930gv1",
+      "text": "Help the owl find the tree.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_woodpecker": {
+      "src": "./voice/audio/gv_find_friends_hint_woodpecker.mp3?v=20260930gv1",
+      "text": "Help the woodpecker find the tree.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_monkey": {
+      "src": "./voice/audio/gv_find_friends_hint_monkey.mp3?v=20260930gv1",
+      "text": "Help the monkey find the tree.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_parrot": {
+      "src": "./voice/audio/gv_find_friends_hint_parrot.mp3?v=20260930gv1",
+      "text": "Help the parrot find the tree.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_koala": {
+      "src": "./voice/audio/gv_find_friends_hint_koala.mp3?v=20260930gv1",
+      "text": "Help the koala find the tree.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_lion": {
+      "src": "./voice/audio/gv_find_friends_hint_lion.mp3?v=20260930gv1",
+      "text": "Help the lion find the grassland.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_zebra": {
+      "src": "./voice/audio/gv_find_friends_hint_zebra.mp3?v=20260930gv1",
+      "text": "Help the zebra find the grassland.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_giraffe": {
+      "src": "./voice/audio/gv_find_friends_hint_giraffe.mp3?v=20260930gv1",
+      "text": "Help the giraffe find the grassland.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_elephant": {
+      "src": "./voice/audio/gv_find_friends_hint_elephant.mp3?v=20260930gv1",
+      "text": "Help the elephant find the grassland.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_antelope": {
+      "src": "./voice/audio/gv_find_friends_hint_antelope.mp3?v=20260930gv1",
+      "text": "Help the antelope find the grassland.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_ostrich": {
+      "src": "./voice/audio/gv_find_friends_hint_ostrich.mp3?v=20260930gv1",
+      "text": "Help the ostrich find the grassland.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_clownfish": {
+      "src": "./voice/audio/gv_find_friends_hint_clownfish.mp3?v=20260930gv1",
+      "text": "Help the clownfish find the water.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_bluefish": {
+      "src": "./voice/audio/gv_find_friends_hint_bluefish.mp3?v=20260930gv1",
+      "text": "Help the blue fish find the water.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_seahorse": {
+      "src": "./voice/audio/gv_find_friends_hint_seahorse.mp3?v=20260930gv1",
+      "text": "Help the seahorse find the water.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_turtle": {
+      "src": "./voice/audio/gv_find_friends_hint_turtle.mp3?v=20260930gv1",
+      "text": "Help the turtle find the water.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_octopus": {
+      "src": "./voice/audio/gv_find_friends_hint_octopus.mp3?v=20260930gv1",
+      "text": "Help the octopus find the water.",
+      "profile": "guide"
+    },
+    "gv_find_friends_hint_dolphin": {
+      "src": "./voice/audio/gv_find_friends_hint_dolphin.mp3?v=20260930gv1",
+      "text": "Help the dolphin find the water.",
+      "profile": "guide"
+    },
+    "gv_find_friends_complete": {
+      "src": "./voice/audio/gv_find_friends_complete.mp3?v=20260930gv1",
+      "text": "All our friends are home! Well done!",
+      "profile": "guide"
+    },
+    "gv_monster_dressup_part_hat_top": {
+      "src": "./voice/audio/gv_monster_dressup_part_hat_top.mp3?v=20260930gv1",
+      "text": "A top hat!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_hat_crown": {
+      "src": "./voice/audio/gv_monster_dressup_part_hat_crown.mp3?v=20260930gv1",
+      "text": "A crown!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_hat_wizard": {
+      "src": "./voice/audio/gv_monster_dressup_part_hat_wizard.mp3?v=20260930gv1",
+      "text": "A wizard hat!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_hat_cap": {
+      "src": "./voice/audio/gv_monster_dressup_part_hat_cap.mp3?v=20260930gv1",
+      "text": "A cap!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_hat_party": {
+      "src": "./voice/audio/gv_monster_dressup_part_hat_party.mp3?v=20260930gv1",
+      "text": "A party hat!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_hat_flowers": {
+      "src": "./voice/audio/gv_monster_dressup_part_hat_flowers.mp3?v=20260930gv1",
+      "text": "A flower crown!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_eyes_green": {
+      "src": "./voice/audio/gv_monster_dressup_part_eyes_green.mp3?v=20260930gv1",
+      "text": "Green eyes!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_eyes_cyclops": {
+      "src": "./voice/audio/gv_monster_dressup_part_eyes_cyclops.mp3?v=20260930gv1",
+      "text": "One big eye!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_eyes_triple": {
+      "src": "./voice/audio/gv_monster_dressup_part_eyes_triple.mp3?v=20260930gv1",
+      "text": "Three eyes!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_eyes_sleepy": {
+      "src": "./voice/audio/gv_monster_dressup_part_eyes_sleepy.mp3?v=20260930gv1",
+      "text": "Sleepy eyes!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_eyes_star": {
+      "src": "./voice/audio/gv_monster_dressup_part_eyes_star.mp3?v=20260930gv1",
+      "text": "Star eyes!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_eyes_silly": {
+      "src": "./voice/audio/gv_monster_dressup_part_eyes_silly.mp3?v=20260930gv1",
+      "text": "Silly eyes!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_nose_pig": {
+      "src": "./voice/audio/gv_monster_dressup_part_nose_pig.mp3?v=20260930gv1",
+      "text": "A pig nose!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_nose_clown": {
+      "src": "./voice/audio/gv_monster_dressup_part_nose_clown.mp3?v=20260930gv1",
+      "text": "A clown nose!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_nose_triangle": {
+      "src": "./voice/audio/gv_monster_dressup_part_nose_triangle.mp3?v=20260930gv1",
+      "text": "A triangle nose!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_nose_cat": {
+      "src": "./voice/audio/gv_monster_dressup_part_nose_cat.mp3?v=20260930gv1",
+      "text": "A cat nose!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_nose_heart": {
+      "src": "./voice/audio/gv_monster_dressup_part_nose_heart.mp3?v=20260930gv1",
+      "text": "A heart-shaped nose!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_nose_button": {
+      "src": "./voice/audio/gv_monster_dressup_part_nose_button.mp3?v=20260930gv1",
+      "text": "A button nose!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_mouth_smile": {
+      "src": "./voice/audio/gv_monster_dressup_part_mouth_smile.mp3?v=20260930gv1",
+      "text": "A big smile!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_mouth_surprise": {
+      "src": "./voice/audio/gv_monster_dressup_part_mouth_surprise.mp3?v=20260930gv1",
+      "text": "An open mouth!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_mouth_fangs": {
+      "src": "./voice/audio/gv_monster_dressup_part_mouth_fangs.mp3?v=20260930gv1",
+      "text": "Two pointy fangs!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_mouth_tongue": {
+      "src": "./voice/audio/gv_monster_dressup_part_mouth_tongue.mp3?v=20260930gv1",
+      "text": "A little tongue!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_mouth_gentle": {
+      "src": "./voice/audio/gv_monster_dressup_part_mouth_gentle.mp3?v=20260930gv1",
+      "text": "A gentle smile!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_mouth_zipper": {
+      "src": "./voice/audio/gv_monster_dressup_part_mouth_zipper.mp3?v=20260930gv1",
+      "text": "A zipper mouth!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_chest_bow_red": {
+      "src": "./voice/audio/gv_monster_dressup_part_chest_bow_red.mp3?v=20260930gv1",
+      "text": "A red bow tie!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_chest_tie_blue": {
+      "src": "./voice/audio/gv_monster_dressup_part_chest_tie_blue.mp3?v=20260930gv1",
+      "text": "A blue tie!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_chest_star": {
+      "src": "./voice/audio/gv_monster_dressup_part_chest_star.mp3?v=20260930gv1",
+      "text": "A star badge!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_chest_scarf": {
+      "src": "./voice/audio/gv_monster_dressup_part_chest_scarf.mp3?v=20260930gv1",
+      "text": "A scarf!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_chest_gem": {
+      "src": "./voice/audio/gv_monster_dressup_part_chest_gem.mp3?v=20260930gv1",
+      "text": "A shiny gem!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_part_chest_bow_orange": {
+      "src": "./voice/audio/gv_monster_dressup_part_chest_bow_orange.mp3?v=20260930gv1",
+      "text": "An orange bow tie!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_returned": {
+      "src": "./voice/audio/gv_monster_dressup_returned.mp3?v=20260930gv1",
+      "text": "Let us try another piece!",
+      "profile": "pip"
+    },
+    "gv_monster_dressup_complete": {
+      "src": "./voice/audio/gv_monster_dressup_complete.mp3?v=20260930gv1",
+      "text": "Wow! What a funny monster! You made it!",
+      "profile": "pip"
+    },
+    "gv_parcel_sort_parcel_circle_star": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_circle_star.mp3?v=20260930gv1",
+      "text": "A circle! A star on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_circle_stripe": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_circle_stripe.mp3?v=20260930gv1",
+      "text": "A circle! A stripe on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_circle_dot": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_circle_dot.mp3?v=20260930gv1",
+      "text": "A circle parcel with a dot!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_circle_heart": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_circle_heart.mp3?v=20260930gv1",
+      "text": "A circle! A heart on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_circle_globe": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_circle_globe.mp3?v=20260930gv1",
+      "text": "A circle! A globe on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_circle_moon": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_circle_moon.mp3?v=20260930gv1",
+      "text": "A circle! A moon on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_square_rocket": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_square_rocket.mp3?v=20260930gv1",
+      "text": "A square! A rocket on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_square_paw": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_square_paw.mp3?v=20260930gv1",
+      "text": "A square! A paw print on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_square_music": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_square_music.mp3?v=20260930gv1",
+      "text": "A square! A music note on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_square_bear": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_square_bear.mp3?v=20260930gv1",
+      "text": "A square! A bear on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_square_truck": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_square_truck.mp3?v=20260930gv1",
+      "text": "A square! A truck on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_square_flower": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_square_flower.mp3?v=20260930gv1",
+      "text": "A square! A flower on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_triangle_dino": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_triangle_dino.mp3?v=20260930gv1",
+      "text": "A triangle! A dinosaur on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_triangle_bee": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_triangle_bee.mp3?v=20260930gv1",
+      "text": "A triangle! A bee on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_triangle_wave": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_triangle_wave.mp3?v=20260930gv1",
+      "text": "A triangle! A wave on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_triangle_fox": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_triangle_fox.mp3?v=20260930gv1",
+      "text": "A triangle! A fox on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_triangle_constellation": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_triangle_constellation.mp3?v=20260930gv1",
+      "text": "A triangle! Stars on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_parcel_triangle_shell": {
+      "src": "./voice/audio/gv_parcel_sort_parcel_triangle_shell.mp3?v=20260930gv1",
+      "text": "A triangle! A shell on the parcel!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_slot_circle": {
+      "src": "./voice/audio/gv_parcel_sort_slot_circle.mp3?v=20260930gv1",
+      "text": "Find the circle slot.",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_slot_square": {
+      "src": "./voice/audio/gv_parcel_sort_slot_square.mp3?v=20260930gv1",
+      "text": "Find the square slot.",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_slot_triangle": {
+      "src": "./voice/audio/gv_parcel_sort_slot_triangle.mp3?v=20260930gv1",
+      "text": "Find the triangle slot.",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_fits_circle": {
+      "src": "./voice/audio/gv_parcel_sort_fits_circle.mp3?v=20260930gv1",
+      "text": "It fits! Delivered!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_fits_square": {
+      "src": "./voice/audio/gv_parcel_sort_fits_square.mp3?v=20260930gv1",
+      "text": "It fits! Delivered!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_fits_triangle": {
+      "src": "./voice/audio/gv_parcel_sort_fits_triangle.mp3?v=20260930gv1",
+      "text": "It fits! Delivered!",
+      "profile": "guide"
+    },
+    "gv_parcel_sort_praise": {
+      "src": "./voice/audio/gv_parcel_sort_praise.mp3?v=20260930gv1",
+      "text": "Great deliveries! You are a super helper!",
+      "profile": "guide"
+    },
+    "gv_balloon_pump_color_4": {
+      "src": "./voice/audio/gv_balloon_pump_color_4.mp3?v=20260930gv1",
+      "text": "A purple balloon!",
+      "profile": "pip"
+    },
+    "gv_balloon_pump_color_5": {
+      "src": "./voice/audio/gv_balloon_pump_color_5.mp3?v=20260930gv1",
+      "text": "A pink balloon!",
+      "profile": "pip"
+    },
+    "gv_fruit_slice_combo_3": {
+      "src": "./voice/audio/gv_fruit_slice_combo_3.mp3?v=20260930gv1",
+      "text": "Great!",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_combo_5": {
+      "src": "./voice/audio/gv_fruit_slice_combo_5.mp3?v=20260930gv1",
+      "text": "Amazing!",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_combo_10": {
+      "src": "./voice/audio/gv_fruit_slice_combo_10.mp3?v=20260930gv1",
+      "text": "Ten in a row! Perfect!",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_combo_20": {
+      "src": "./voice/audio/gv_fruit_slice_combo_20.mp3?v=20260930gv1",
+      "text": "Twenty in a row! Fantastic!",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_combo_30": {
+      "src": "./voice/audio/gv_fruit_slice_combo_30.mp3?v=20260930gv1",
+      "text": "Thirty in a row! Brilliant!",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_combo_40": {
+      "src": "./voice/audio/gv_fruit_slice_combo_40.mp3?v=20260930gv1",
+      "text": "Forty in a row! Incredible!",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_combo_50": {
+      "src": "./voice/audio/gv_fruit_slice_combo_50.mp3?v=20260930gv1",
+      "text": "Fifty in a row! Superstar!",
+      "profile": "guide"
+    },
+    "gv_fruit_slice_combo_more": {
+      "src": "./voice/audio/gv_fruit_slice_combo_more.mp3?v=20260930gv1",
+      "text": "Awesome! Keep it going!",
+      "profile": "guide"
+    },
+    "gv_balloon_pop_combo_3": {
+      "src": "./voice/audio/gv_balloon_pop_combo_3.mp3?v=20260930gv1",
+      "text": "Great!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_combo_5": {
+      "src": "./voice/audio/gv_balloon_pop_combo_5.mp3?v=20260930gv1",
+      "text": "Amazing!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_combo_10": {
+      "src": "./voice/audio/gv_balloon_pop_combo_10.mp3?v=20260930gv1",
+      "text": "Ten in a row! Perfect!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_combo_20": {
+      "src": "./voice/audio/gv_balloon_pop_combo_20.mp3?v=20260930gv1",
+      "text": "Twenty in a row! Fantastic!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_combo_30": {
+      "src": "./voice/audio/gv_balloon_pop_combo_30.mp3?v=20260930gv1",
+      "text": "Thirty in a row! Brilliant!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_combo_40": {
+      "src": "./voice/audio/gv_balloon_pop_combo_40.mp3?v=20260930gv1",
+      "text": "Forty in a row! Incredible!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_combo_50": {
+      "src": "./voice/audio/gv_balloon_pop_combo_50.mp3?v=20260930gv1",
+      "text": "Fifty in a row! Superstar!",
+      "profile": "pip"
+    },
+    "gv_balloon_pop_combo_more": {
+      "src": "./voice/audio/gv_balloon_pop_combo_more.mp3?v=20260930gv1",
+      "text": "Awesome! Keep it going!",
+      "profile": "pip"
+    }
+  },
+  "games": {
+    "fruit_slice": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_fruit_slice_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "fruit": {
+          "by": {
+            "Watermelon": [
+              "arcade1_fruit_watermelon"
+            ],
+            "Orange": [
+              "arcade1_fruit_orange"
+            ],
+            "Apple": [
+              "arcade1_fruit_apple"
+            ],
+            "Banana": [
+              "arcade1_fruit_banana"
+            ],
+            "Pineapple": [
+              "arcade1_fruit_pineapple"
+            ],
+            "Mango": [
+              "arcade1_fruit_mango"
+            ],
+            "Strawberry": [
+              "arcade1_fruit_strawberry"
+            ],
+            "Grape": [
+              "arcade1_fruit_grape"
+            ],
+            "Peach": [
+              "arcade1_fruit_peach"
+            ],
+            "Cherry": [
+              "arcade1_fruit_cherry"
+            ],
+            "Pear": [
+              "arcade1_fruit_pear"
+            ],
+            "Kiwi": [
+              "arcade1_fruit_kiwi"
+            ],
+            "Lemon": [
+              "arcade1_fruit_lemon"
+            ],
+            "Coconut": [
+              "arcade1_fruit_coconut"
+            ],
+            "Avocado": [
+              "arcade1_fruit_avocado"
+            ],
+            "Melon": [
+              "arcade1_fruit_melon"
+            ],
+            "Tangerine": [
+              "arcade1_fruit_tangerine"
+            ],
+            "Green Apple": [
+              "arcade1_fruit_green_apple"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 650
+        },
+        "praise": {
+          "clips": [
+            "gv_fruit_slice_praise"
+          ],
+          "priority": 2,
+          "cooldown": 6000
+        },
+        "combo": {
+          "by": {
+            "3": [
+              "gv_fruit_slice_combo_3"
+            ],
+            "5": [
+              "gv_fruit_slice_combo_5"
+            ],
+            "10": [
+              "gv_fruit_slice_combo_10"
+            ],
+            "20": [
+              "gv_fruit_slice_combo_20"
+            ],
+            "30": [
+              "gv_fruit_slice_combo_30"
+            ],
+            "40": [
+              "gv_fruit_slice_combo_40"
+            ],
+            "50": [
+              "gv_fruit_slice_combo_50"
+            ],
+            "more": [
+              "gv_fruit_slice_combo_more"
+            ]
+          },
+          "priority": 3,
+          "cooldown": 0
+        }
+      }
+    },
+    "balloon_pop": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_balloon_pop_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "shape": {
+          "by": {
+            "heart": [
+              "arcade1_balloon_heart"
+            ],
+            "star": [
+              "arcade1_balloon_star"
+            ],
+            "duck": [
+              "arcade1_balloon_duck"
+            ],
+            "bear": [
+              "arcade1_balloon_bear"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 750
+        },
+        "color": {
+          "by": {
+            "#FF6B6B": [
+              "arcade1_balloon_red"
+            ],
+            "#4ECDC4": [
+              "arcade1_balloon_teal"
+            ],
+            "#FFE66D": [
+              "arcade1_balloon_yellow"
+            ],
+            "#FF9F43": [
+              "arcade1_balloon_orange"
+            ],
+            "#A8D8EA": [
+              "arcade1_balloon_light_blue"
+            ],
+            "#AA96DA": [
+              "arcade1_balloon_purple"
+            ],
+            "#FCBAD3": [
+              "arcade1_balloon_pink"
+            ],
+            "#FFFFD2": [
+              "arcade1_balloon_pale_yellow"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 750
+        },
+        "combo": {
+          "by": {
+            "3": [
+              "gv_balloon_pop_combo_3"
+            ],
+            "5": [
+              "gv_balloon_pop_combo_5"
+            ],
+            "10": [
+              "gv_balloon_pop_combo_10"
+            ],
+            "20": [
+              "gv_balloon_pop_combo_20"
+            ],
+            "30": [
+              "gv_balloon_pop_combo_30"
+            ],
+            "40": [
+              "gv_balloon_pop_combo_40"
+            ],
+            "50": [
+              "gv_balloon_pop_combo_50"
+            ],
+            "more": [
+              "gv_balloon_pop_combo_more"
+            ]
+          },
+          "priority": 3,
+          "cooldown": 0
+        }
+      },
+      "labels": {
+        "shape": {
+          "heart": "Heart balloon",
+          "star": "Star balloon",
+          "duck": "Duck balloon",
+          "bear": "Bear balloon"
+        },
+        "color": {
+          "#FF6B6B": "Red balloon",
+          "#4ECDC4": "Teal balloon",
+          "#FFE66D": "Yellow balloon",
+          "#FF9F43": "Orange balloon",
+          "#A8D8EA": "Light blue balloon",
+          "#AA96DA": "Purple balloon",
+          "#FCBAD3": "Pink balloon",
+          "#FFFFD2": "Pale yellow balloon"
+        }
+      }
+    },
+    "feed_animal": {
+      "profile": "teddy",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_feed_animal_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "food": {
+          "by": {
+            "fish": [
+              "lf_4387b4cf697a"
+            ],
+            "chicken": [
+              "lf_8e65cec15ce5"
+            ],
+            "shrimp": [
+              "lf_659da6afc784"
+            ],
+            "kibble": [
+              "lf_63840ee2b860"
+            ],
+            "broccoli": [
+              "lf_9604b13089ec"
+            ],
+            "lemon": [
+              "lf_c1b3034ef106"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "fed": {
+          "by": {
+            "fish": [
+              "lf_4387b4cf697a",
+              "gv_yummy"
+            ],
+            "chicken": [
+              "lf_8e65cec15ce5",
+              "gv_yummy"
+            ],
+            "shrimp": [
+              "lf_659da6afc784",
+              "gv_yummy"
+            ],
+            "kibble": [
+              "lf_63840ee2b860",
+              "gv_yummy"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "sorted": {
+          "clips": [
+            "gv_feed_animal_sorted"
+          ],
+          "priority": 2,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "basket": [
+              "gv_feed_animal_wrong_basket"
+            ],
+            "cat": [
+              "gv_feed_animal_wrong_cat"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "animal": {
+          "clips": [
+            "hello_cat"
+          ],
+          "priority": 1,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_feed_animal_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        }
+      }
+    },
+    "feed_ants": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_feed_ants_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "food": {
+          "by": {
+            "apple": [
+              "lf_84eda45fb1cb"
+            ],
+            "cookie": [
+              "lf_4201783a6258"
+            ],
+            "cake": [
+              "lf_8e147e127fc2"
+            ],
+            "fries": [
+              "lf_415d6822af0b"
+            ],
+            "sandwich": [
+              "lf_18bf2ee1bb74"
+            ],
+            "lollipop": [
+              "lf_e9e89c7ec23e"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 500
+        },
+        "drop": {
+          "clips": [
+            "gv_feed_ants_drop"
+          ],
+          "priority": 1,
+          "cooldown": 2000
+        },
+        "complete": {
+          "clips": [
+            "gv_feed_ants_complete"
+          ],
+          "priority": 2,
+          "cooldown": 2500
+        }
+      }
+    },
+    "bubble_pop": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_bubble_pop_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "bubble": {
+          "by": {
+            "big": [
+              "gv_bubble_pop_big"
+            ],
+            "little": [
+              "gv_bubble_pop_little"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 1000
+        },
+        "praise": {
+          "clips": [
+            "gv_bubble_pop_praise"
+          ],
+          "priority": 2,
+          "cooldown": 5000
+        }
+      }
+    },
+    "animal_tap": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_animal_tap_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "animal": {
+          "by": {
+            "Bear": [
+              "lf_c9aa72ee981a"
+            ],
+            "Bunny": [
+              "lf_9e2839e426db"
+            ],
+            "Chick": [
+              "lf_6aa7c7e1073f"
+            ],
+            "Frog": [
+              "lf_203a8f0bc401"
+            ],
+            "Cat": [
+              "lf_4639805bfddb"
+            ],
+            "Dog": [
+              "lf_3085f170b0d5"
+            ],
+            "Piggy": [
+              "lf_bc8002950a76"
+            ],
+            "Panda": [
+              "lf_a436749536ec"
+            ],
+            "Lion": [
+              "lf_00f824e5b499"
+            ],
+            "Tiger": [
+              "lf_fe78ab0b6567"
+            ],
+            "Koala": [
+              "lf_442e32504a5f"
+            ],
+            "Fox": [
+              "lf_51c03be89694"
+            ],
+            "Cow": [
+              "lf_e0c48c739f11"
+            ],
+            "Mouse": [
+              "lf_1d170a0cd8cd"
+            ],
+            "Monkey": [
+              "lf_fa5b3c88b48e"
+            ],
+            "Penguin": [
+              "lf_30a3d2f487fd"
+            ],
+            "Elephant": [
+              "lf_4cd1484a919b"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 900
+        },
+        "friend": {
+          "by": {
+            "Bear": [
+              "lf_59c3d175ebc2"
+            ],
+            "Bunny": [
+              "lf_cba4ca32e61b"
+            ],
+            "Chick": [
+              "lf_eedb077f94ab"
+            ],
+            "Frog": [
+              "lf_db7caae44d4e"
+            ],
+            "Cat": [
+              "lf_cb9a84aec0cf"
+            ],
+            "Dog": [
+              "lf_3dd80a5602f3"
+            ],
+            "Piggy": [
+              "lf_00624b46d0a4"
+            ],
+            "Panda": [
+              "lf_5bd2aa7238a0"
+            ],
+            "Lion": [
+              "lf_9f78e6a6d493"
+            ],
+            "Tiger": [
+              "lf_9095861d8e9c"
+            ],
+            "Koala": [
+              "lf_a198ee9514b4"
+            ],
+            "Fox": [
+              "lf_6aaf80e93f08"
+            ],
+            "Cow": [
+              "lf_0020289832c4"
+            ],
+            "Mouse": [
+              "lf_6f8e91d38d15"
+            ],
+            "Monkey": [
+              "lf_4a75ebaaf953"
+            ],
+            "Penguin": [
+              "lf_0a83e6d05d52"
+            ],
+            "Elephant": [
+              "lf_710ce9817833"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        }
+      }
+    },
+    "monster_transform": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_monster_transform_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "color": {
+          "by": {
+            "#FF6B6B": [
+              "lf_f2bbdcd096f3"
+            ],
+            "#4ECDC4": [
+              "lf_790b025f65e1"
+            ],
+            "#45B7D1": [
+              "lf_19973d998a45"
+            ],
+            "#96CEB4": [
+              "lf_1a5805ecc856"
+            ],
+            "#FFEEAD": [
+              "lf_ebd1a83cad10"
+            ],
+            "#D4A5A5": [
+              "lf_d44bcbee4e21"
+            ],
+            "#9B59B6": [
+              "lf_5077fa2d2988"
+            ],
+            "#3498DB": [
+              "lf_19973d998a45"
+            ],
+            "#E67E22": [
+              "lf_c1ae0788f42e"
+            ],
+            "#2ECC71": [
+              "lf_1a5805ecc856"
+            ],
+            "#F1C40F": [
+              "lf_ebd1a83cad10"
+            ],
+            "#E74C3C": [
+              "lf_f2bbdcd096f3"
+            ],
+            "#1ABC9C": [
+              "lf_790b025f65e1"
+            ],
+            "#34495E": [
+              "lf_bd34794082cb"
+            ],
+            "#e056fd": [
+              "lf_d44bcbee4e21"
+            ],
+            "#badc58": [
+              "lf_19103df4fe9b"
+            ],
+            "#686de0": [
+              "lf_5077fa2d2988"
+            ],
+            "#ffbe76": [
+              "lf_c1ae0788f42e"
+            ],
+            "#ff7979": [
+              "lf_f2bbdcd096f3"
+            ],
+            "#c7ecee": [
+              "lf_11bcb4a5aba4"
+            ],
+            "#fab1a0": [
+              "lf_e93a396c66cf"
+            ],
+            "#00b894": [
+              "lf_1a5805ecc856"
+            ],
+            "#fd79a8": [
+              "lf_d44bcbee4e21"
+            ],
+            "#6c5ce7": [
+              "lf_5077fa2d2988"
+            ],
+            "#0984e3": [
+              "lf_19973d998a45"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 900
+        },
+        "face": {
+          "by": {
+            "eyes": [
+              "gv_monster_transform_face_eyes"
+            ],
+            "nose": [
+              "gv_monster_transform_face_nose"
+            ],
+            "mouth": [
+              "gv_monster_transform_face_mouth"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 1800
+        }
+      }
+    },
+    "time_magic": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_time_magic_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "weather": {
+          "by": {
+            "sunny": [
+              "gv_time_magic_sunny"
+            ],
+            "rainy": [
+              "gv_time_magic_rainy"
+            ],
+            "snowy": [
+              "gv_time_magic_snowy"
+            ],
+            "rainbow": [
+              "gv_time_magic_rainbow"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        }
+      }
+    },
+    "magic_doodle": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_magic_doodle_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "star": {
+          "clips": [
+            "lf_0f9d36c1aa30"
+          ],
+          "priority": 1,
+          "cooldown": 800
+        },
+        "draw": {
+          "clips": [
+            "gv_magic_doodle_draw"
+          ],
+          "priority": 1,
+          "cooldown": 5000
+        },
+        "complete": {
+          "clips": [
+            "gv_magic_doodle_complete",
+            "gv_all_done"
+          ],
+          "priority": 3,
+          "cooldown": 1800
+        }
+      }
+    },
+    "car_track": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_car_track_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "drive": {
+          "clips": [
+            "gv_car_track_drive"
+          ],
+          "priority": 1,
+          "cooldown": 3500
+        },
+        "complete": {
+          "clips": [
+            "gv_car_track_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "next": {
+          "clips": [
+            "gv_car_track_next"
+          ],
+          "priority": 1,
+          "cooldown": 0
+        }
+      }
+    },
+    "balloon_pump": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_balloon_pump_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "color": {
+          "by": {
+            "#ff4757": [
+              "lf_8e7a848cd42a"
+            ],
+            "#2ed573": [
+              "lf_b4b3c2e1416c"
+            ],
+            "#1e90ff": [
+              "lf_ffba67a0edda"
+            ],
+            "#ffa502": [
+              "lf_e80727aaa94c"
+            ],
+            "#a55eea": [
+              "lf_537906217770"
+            ],
+            "#ff6b81": [
+              "lf_942d9b30971a"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "pump": {
+          "clips": [
+            "gv_balloon_pump_pump"
+          ],
+          "priority": 1,
+          "cooldown": 1600
+        },
+        "ready": {
+          "clips": [
+            "gv_balloon_pump_ready"
+          ],
+          "priority": 1,
+          "cooldown": 1600
+        },
+        "fly": {
+          "clips": [
+            "gv_balloon_pump_fly"
+          ],
+          "priority": 3,
+          "cooldown": 1600
+        },
+        "pop": {
+          "clips": [
+            "gv_balloon_pump_pop"
+          ],
+          "priority": 3,
+          "cooldown": 1600
+        }
+      }
+    },
+    "feed_fish": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "reef2_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "fish": {
+          "by": {
+            "clownfish": [
+              "lf_46020e06d287"
+            ],
+            "whale": [
+              "lf_4fe800b939ba"
+            ],
+            "shark": [
+              "lf_e5aaeddc3675"
+            ],
+            "turtle": [
+              "lf_6de870612f8b"
+            ],
+            "manta": [
+              "lf_f0841b444f97"
+            ],
+            "pufferfish": [
+              "lf_670dbc3dab1d"
+            ],
+            "blue_tang": [
+              "reef2_fed_blue_tang"
+            ],
+            "butterflyfish": [
+              "reef2_fed_butterflyfish"
+            ],
+            "angelfish": [
+              "reef2_fed_angelfish"
+            ],
+            "seahorse": [
+              "reef2_fed_seahorse"
+            ],
+            "lionfish": [
+              "reef2_fed_lionfish"
+            ],
+            "parrotfish": [
+              "reef2_fed_parrotfish"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 2600
+        },
+        "food": {
+          "clips": [
+            "reef2_food"
+          ],
+          "priority": 1,
+          "cooldown": 2200
+        },
+        "inspect": {
+          "by": {
+            "clownfish_hungry": [
+              "reef2_look_clownfish",
+              "reef2_hungry"
+            ],
+            "clownfish_full": [
+              "reef2_look_clownfish",
+              "reef2_full"
+            ],
+            "clownfish_happy": [
+              "reef2_look_clownfish",
+              "reef2_happy"
+            ],
+            "clownfish_content": [
+              "reef2_look_clownfish",
+              "reef2_content"
+            ],
+            "whale_hungry": [
+              "reef2_look_whale",
+              "reef2_hungry"
+            ],
+            "whale_full": [
+              "reef2_look_whale",
+              "reef2_full"
+            ],
+            "whale_happy": [
+              "reef2_look_whale",
+              "reef2_happy"
+            ],
+            "whale_content": [
+              "reef2_look_whale",
+              "reef2_content"
+            ],
+            "shark_hungry": [
+              "reef2_look_shark",
+              "reef2_hungry"
+            ],
+            "shark_full": [
+              "reef2_look_shark",
+              "reef2_full"
+            ],
+            "shark_happy": [
+              "reef2_look_shark",
+              "reef2_happy"
+            ],
+            "shark_content": [
+              "reef2_look_shark",
+              "reef2_content"
+            ],
+            "turtle_hungry": [
+              "reef2_look_turtle",
+              "reef2_hungry"
+            ],
+            "turtle_full": [
+              "reef2_look_turtle",
+              "reef2_full"
+            ],
+            "turtle_happy": [
+              "reef2_look_turtle",
+              "reef2_happy"
+            ],
+            "turtle_content": [
+              "reef2_look_turtle",
+              "reef2_content"
+            ],
+            "manta_hungry": [
+              "reef2_look_manta",
+              "reef2_hungry"
+            ],
+            "manta_full": [
+              "reef2_look_manta",
+              "reef2_full"
+            ],
+            "manta_happy": [
+              "reef2_look_manta",
+              "reef2_happy"
+            ],
+            "manta_content": [
+              "reef2_look_manta",
+              "reef2_content"
+            ],
+            "pufferfish_hungry": [
+              "reef2_look_pufferfish",
+              "reef2_hungry"
+            ],
+            "pufferfish_full": [
+              "reef2_look_pufferfish",
+              "reef2_full"
+            ],
+            "pufferfish_happy": [
+              "reef2_look_pufferfish",
+              "reef2_happy"
+            ],
+            "pufferfish_content": [
+              "reef2_look_pufferfish",
+              "reef2_content"
+            ],
+            "blue_tang_hungry": [
+              "reef2_look_blue_tang",
+              "reef2_hungry"
+            ],
+            "blue_tang_full": [
+              "reef2_look_blue_tang",
+              "reef2_full"
+            ],
+            "blue_tang_happy": [
+              "reef2_look_blue_tang",
+              "reef2_happy"
+            ],
+            "blue_tang_content": [
+              "reef2_look_blue_tang",
+              "reef2_content"
+            ],
+            "butterflyfish_hungry": [
+              "reef2_look_butterflyfish",
+              "reef2_hungry"
+            ],
+            "butterflyfish_full": [
+              "reef2_look_butterflyfish",
+              "reef2_full"
+            ],
+            "butterflyfish_happy": [
+              "reef2_look_butterflyfish",
+              "reef2_happy"
+            ],
+            "butterflyfish_content": [
+              "reef2_look_butterflyfish",
+              "reef2_content"
+            ],
+            "angelfish_hungry": [
+              "reef2_look_angelfish",
+              "reef2_hungry"
+            ],
+            "angelfish_full": [
+              "reef2_look_angelfish",
+              "reef2_full"
+            ],
+            "angelfish_happy": [
+              "reef2_look_angelfish",
+              "reef2_happy"
+            ],
+            "angelfish_content": [
+              "reef2_look_angelfish",
+              "reef2_content"
+            ],
+            "seahorse_hungry": [
+              "reef2_look_seahorse",
+              "reef2_hungry"
+            ],
+            "seahorse_full": [
+              "reef2_look_seahorse",
+              "reef2_full"
+            ],
+            "seahorse_happy": [
+              "reef2_look_seahorse",
+              "reef2_happy"
+            ],
+            "seahorse_content": [
+              "reef2_look_seahorse",
+              "reef2_content"
+            ],
+            "lionfish_hungry": [
+              "reef2_look_lionfish",
+              "reef2_hungry"
+            ],
+            "lionfish_full": [
+              "reef2_look_lionfish",
+              "reef2_full"
+            ],
+            "lionfish_happy": [
+              "reef2_look_lionfish",
+              "reef2_happy"
+            ],
+            "lionfish_content": [
+              "reef2_look_lionfish",
+              "reef2_content"
+            ],
+            "parrotfish_hungry": [
+              "reef2_look_parrotfish",
+              "reef2_hungry"
+            ],
+            "parrotfish_full": [
+              "reef2_look_parrotfish",
+              "reef2_full"
+            ],
+            "parrotfish_happy": [
+              "reef2_look_parrotfish",
+              "reef2_happy"
+            ],
+            "parrotfish_content": [
+              "reef2_look_parrotfish",
+              "reef2_content"
+            ]
+          },
+          "priority": 3,
+          "cooldown": 350
+        }
+      }
+    },
+    "tidy_up": {
+      "profile": "teddy",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_tidy_up_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "toy": {
+          "by": {
+            "🧸": [
+              "lf_3fc00659aa6f"
+            ],
+            "⚽": [
+              "lf_cfd8f04a8281"
+            ],
+            "🧱": [
+              "lf_f0d8d001dfbf"
+            ],
+            "🚗": [
+              "lf_d8a8b94eb625"
+            ],
+            "🧩": [
+              "lf_223533e6d7df"
+            ],
+            "🦕": [
+              "lf_0de7faaab244"
+            ],
+            "🚂": [
+              "lf_3815c4f0eadb"
+            ],
+            "🥁": [
+              "lf_35847d6e8944"
+            ],
+            "🦆": [
+              "lf_34d1a1fc899f"
+            ],
+            "🤖": [
+              "lf_b3353db8428c"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "put": {
+          "clips": [
+            "gv_tidy_up_put"
+          ],
+          "priority": 2,
+          "cooldown": 0
+        },
+        "wrong": {
+          "clips": [
+            "gv_tidy_up_wrong"
+          ],
+          "priority": 1,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_tidy_up_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        }
+      }
+    },
+    "egg_hatch": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_egg_hatch_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "hatch": {
+          "by": {
+            "小鸡啾啾": [
+              "lf_dcfdf8b00e07"
+            ],
+            "软糖小鸭": [
+              "lf_19e25800d70b"
+            ],
+            "汪汪幼崽": [
+              "lf_bf379069106a"
+            ],
+            "奶盖猫猫": [
+              "lf_c16fccc4ae66"
+            ],
+            "棉花兔": [
+              "lf_0716a2f3bb50"
+            ],
+            "豆沙仓鼠": [
+              "lf_43cb18af8b8c"
+            ],
+            "草莓小猪": [
+              "lf_815ab3061bdc"
+            ],
+            "奶糖小牛": [
+              "lf_4a1eb709cb39"
+            ],
+            "呱呱蛙": [
+              "lf_c9e3c3f24f2d"
+            ],
+            "慢慢龟": [
+              "lf_327a9480b5fb"
+            ],
+            "摇摆企鹅": [
+              "lf_e30a2ecaca4e"
+            ],
+            "困困考拉": [
+              "lf_08ac2abb6e47"
+            ],
+            "芝麻团熊猫": [
+              "lf_657ebd62c4cb"
+            ],
+            "橘子狐狸": [
+              "lf_3b38d1e50f42"
+            ],
+            "蒲公英狮子": [
+              "lf_7f4964caf17a"
+            ],
+            "条纹小虎": [
+              "lf_09afdc4f22b0"
+            ],
+            "香蕉猴": [
+              "lf_f61b2309711d"
+            ],
+            "蜂蜜小熊": [
+              "lf_c30ab9f16100"
+            ],
+            "栗子刺猬": [
+              "lf_90c6e10b5feb"
+            ],
+            "松果松鼠": [
+              "lf_7834dc0716f1"
+            ],
+            "泡泡水獭": [
+              "lf_e03fcc4eeb6f"
+            ],
+            "慢动作树懒": [
+              "lf_7aba3988b924"
+            ],
+            "面具浣熊": [
+              "lf_011bd400b214"
+            ],
+            "糯米海豹": [
+              "lf_2a8c83b244eb"
+            ],
+            "八爪章鱼": [
+              "lf_33fcab88c615"
+            ],
+            "横着走螃蟹": [
+              "lf_91ee0e6eb623"
+            ],
+            "喷水小鲸": [
+              "lf_e1c6e7cb2718"
+            ],
+            "浪花海豚": [
+              "lf_7a5da775133a"
+            ],
+            "奶牙鲨鱼": [
+              "lf_b71b906008e4"
+            ],
+            "气球河豚": [
+              "lf_65966b672b8d"
+            ],
+            "彩虹鹦鹉": [
+              "lf_0b78b925ba4f"
+            ],
+            "夜班猫头鹰": [
+              "lf_1ae9861ac0df"
+            ],
+            "草莓火烈鸟": [
+              "lf_f6aa5fc8c343"
+            ],
+            "小扇子孔雀": [
+              "lf_d8f612c45fc6"
+            ],
+            "糖纸蝴蝶": [
+              "lf_611277827d2a"
+            ],
+            "房车蜗牛": [
+              "lf_f9e31369f835"
+            ],
+            "倒挂蝙蝠": [
+              "lf_01a93aef99d9"
+            ],
+            "口袋袋鼠": [
+              "lf_e50dfe944044"
+            ],
+            "云朵羊驼": [
+              "lf_e1441fdbe8a4"
+            ],
+            "长长颈鹿": [
+              "lf_dd6eaa73cc01"
+            ],
+            "喷水大象": [
+              "lf_c2f3e83322d8"
+            ],
+            "胖胖河马": [
+              "lf_03c0301c649d"
+            ],
+            "按钮犀牛": [
+              "lf_63c6cd47113d"
+            ],
+            "条码斑马": [
+              "lf_ca223769d3ce"
+            ],
+            "长脖小恐龙": [
+              "lf_01db72988691"
+            ],
+            "奶凶霸王龙": [
+              "lf_d2782cc6fce0"
+            ],
+            "彩虹独角兽": [
+              "lf_0e4357d16d0e"
+            ],
+            "云朵小龙": [
+              "lf_d9501e2afff8"
+            ],
+            "猫猫狗狗": [
+              "lf_e11a3ab21b02"
+            ],
+            "吐司水豚": [
+              "lf_f2331e86a752"
+            ]
+          },
+          "priority": 3,
+          "cooldown": 0
+        },
+        "tap": {
+          "clips": [
+            "gv_egg_hatch_tap"
+          ],
+          "priority": 1,
+          "cooldown": 2200
+        },
+        "crack": {
+          "clips": [
+            "gv_egg_hatch_crack"
+          ],
+          "priority": 1,
+          "cooldown": 2200
+        },
+        "almost": {
+          "clips": [
+            "gv_egg_hatch_almost"
+          ],
+          "priority": 1,
+          "cooldown": 2200
+        }
+      }
+    },
+    "animal_breakfast": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_animal_breakfast_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "food": {
+          "by": {
+            "banana": [
+              "lf_81ec850ac9a9"
+            ],
+            "carrot": [
+              "lf_3b6b87cbcbe1"
+            ],
+            "fish": [
+              "lf_4387b4cf697a"
+            ],
+            "biscuit": [
+              "lf_fbf5c8a061ac"
+            ],
+            "bamboo": [
+              "lf_3a221105abfc"
+            ],
+            "honey": [
+              "lf_3a6adb65a5a5"
+            ],
+            "drumstick": [
+              "lf_d3761082d9e7"
+            ],
+            "apple": [
+              "lf_84eda45fb1cb"
+            ],
+            "grass": [
+              "lf_aa9858341044"
+            ],
+            "clover": [
+              "lf_27bc138dfc27"
+            ],
+            "watermelon": [
+              "lf_8b17a1db40c1"
+            ],
+            "leaves": [
+              "lf_c787accfad7f"
+            ],
+            "acorn": [
+              "lf_cab32080e798"
+            ],
+            "shrimp": [
+              "lf_659da6afc784"
+            ],
+            "eucalyptus": [
+              "lf_8b19a8e42632"
+            ],
+            "strawberry": [
+              "lf_934bcbafaf96"
+            ],
+            "corn": [
+              "lf_90bd304de1d5"
+            ],
+            "mushroom": [
+              "lf_3c2f5dae5b80"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "animal": {
+          "by": {
+            "monkey": [
+              "gv_animal_breakfast_request_monkey"
+            ],
+            "rabbit": [
+              "gv_animal_breakfast_request_rabbit"
+            ],
+            "cat": [
+              "gv_animal_breakfast_request_cat"
+            ],
+            "dog": [
+              "gv_animal_breakfast_request_dog"
+            ],
+            "panda": [
+              "gv_animal_breakfast_request_panda"
+            ],
+            "bear": [
+              "gv_animal_breakfast_request_bear"
+            ],
+            "fox": [
+              "gv_animal_breakfast_request_fox"
+            ],
+            "pig": [
+              "gv_animal_breakfast_request_pig"
+            ],
+            "cow": [
+              "gv_animal_breakfast_request_cow"
+            ],
+            "sheep": [
+              "gv_animal_breakfast_request_sheep"
+            ],
+            "elephant": [
+              "gv_animal_breakfast_request_elephant"
+            ],
+            "giraffe": [
+              "gv_animal_breakfast_request_giraffe"
+            ],
+            "squirrel": [
+              "gv_animal_breakfast_request_squirrel"
+            ],
+            "penguin": [
+              "gv_animal_breakfast_request_penguin"
+            ],
+            "koala": [
+              "gv_animal_breakfast_request_koala"
+            ],
+            "hedgehog": [
+              "gv_animal_breakfast_request_hedgehog"
+            ],
+            "chick": [
+              "gv_animal_breakfast_request_chick"
+            ],
+            "deer": [
+              "gv_animal_breakfast_request_deer"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "monkey": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_monkey"
+            ],
+            "rabbit": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_rabbit"
+            ],
+            "cat": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_cat"
+            ],
+            "dog": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_dog"
+            ],
+            "panda": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_panda"
+            ],
+            "bear": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_bear"
+            ],
+            "fox": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_fox"
+            ],
+            "pig": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_pig"
+            ],
+            "cow": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_cow"
+            ],
+            "sheep": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_sheep"
+            ],
+            "elephant": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_elephant"
+            ],
+            "giraffe": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_giraffe"
+            ],
+            "squirrel": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_squirrel"
+            ],
+            "penguin": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_penguin"
+            ],
+            "koala": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_koala"
+            ],
+            "hedgehog": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_hedgehog"
+            ],
+            "chick": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_chick"
+            ],
+            "deer": [
+              "gv_try_again",
+              "gv_animal_breakfast_request_deer"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "fed": {
+          "by": {
+            "monkey": [
+              "lf_55b2652b59e7"
+            ],
+            "rabbit": [
+              "lf_58a68cd5b803"
+            ],
+            "cat": [
+              "lf_64945fc6dc01"
+            ],
+            "dog": [
+              "lf_d8ba30bb952c"
+            ],
+            "panda": [
+              "lf_ade3599d7580"
+            ],
+            "bear": [
+              "lf_58ed44cea586"
+            ],
+            "fox": [
+              "lf_4b7364182567"
+            ],
+            "pig": [
+              "lf_4b0e73f1a1b0"
+            ],
+            "cow": [
+              "lf_f7a696a6ca78"
+            ],
+            "sheep": [
+              "lf_c72834812b70"
+            ],
+            "elephant": [
+              "lf_fb9751a9d0f6"
+            ],
+            "giraffe": [
+              "lf_c4625fcf2f75"
+            ],
+            "squirrel": [
+              "lf_807df22a3cae"
+            ],
+            "penguin": [
+              "lf_c1b72dd43550"
+            ],
+            "koala": [
+              "lf_74e1fea9b2b7"
+            ],
+            "hedgehog": [
+              "lf_27da8907e395"
+            ],
+            "chick": [
+              "lf_b928aa01be47"
+            ],
+            "deer": [
+              "lf_968e5e29c7e0"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_animal_breakfast_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "monkey": [
+              "lf_a679177a481a"
+            ],
+            "rabbit": [
+              "lf_684b5baba508"
+            ],
+            "cat": [
+              "lf_a15ae163ebba"
+            ],
+            "dog": [
+              "lf_9802a8845966"
+            ],
+            "panda": [
+              "lf_dea519635d3a"
+            ],
+            "bear": [
+              "lf_61d6b480317d"
+            ],
+            "fox": [
+              "lf_686632e0cecf"
+            ],
+            "pig": [
+              "lf_1dbbc3184d39"
+            ],
+            "cow": [
+              "lf_c1a2bc46096f"
+            ],
+            "sheep": [
+              "lf_176d7fdcc4e0"
+            ],
+            "elephant": [
+              "lf_67e9596cb6e6"
+            ],
+            "giraffe": [
+              "lf_b4ee4651b42f"
+            ],
+            "squirrel": [
+              "lf_3ee9f4910b9b"
+            ],
+            "penguin": [
+              "lf_ed1f663337fb"
+            ],
+            "koala": [
+              "lf_b20b7c27de2e"
+            ],
+            "hedgehog": [
+              "lf_595425cc9ef3"
+            ],
+            "chick": [
+              "lf_c2d0a0303376"
+            ],
+            "deer": [
+              "lf_0bbc05d4951e"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "train_cargo": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_train_cargo_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "toy": {
+          "by": {
+            "red": [
+              "lf_ea48f6d69658"
+            ],
+            "blue": [
+              "lf_060441181df4"
+            ],
+            "yellow": [
+              "lf_e4f96764d7d0"
+            ],
+            "green": [
+              "lf_bd874ed1f393"
+            ],
+            "orange": [
+              "lf_5475139cd4bb"
+            ],
+            "purple": [
+              "lf_4b1f215e28ec"
+            ],
+            "pink": [
+              "lf_faf447c9ab26"
+            ],
+            "brown": [
+              "lf_679b1643459a"
+            ],
+            "cyan": [
+              "lf_239a2f4843a1"
+            ],
+            "lime": [
+              "lf_cea3093d4dd6"
+            ],
+            "teal": [
+              "lf_94797aa06d3c"
+            ],
+            "indigo": [
+              "lf_75f99e5d3d12"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "wagon": {
+          "by": {
+            "red": [
+              "gv_train_cargo_wagon_red"
+            ],
+            "blue": [
+              "gv_train_cargo_wagon_blue"
+            ],
+            "yellow": [
+              "gv_train_cargo_wagon_yellow"
+            ],
+            "green": [
+              "gv_train_cargo_wagon_green"
+            ],
+            "orange": [
+              "gv_train_cargo_wagon_orange"
+            ],
+            "purple": [
+              "gv_train_cargo_wagon_purple"
+            ],
+            "pink": [
+              "gv_train_cargo_wagon_pink"
+            ],
+            "brown": [
+              "gv_train_cargo_wagon_brown"
+            ],
+            "cyan": [
+              "gv_train_cargo_wagon_cyan"
+            ],
+            "lime": [
+              "gv_train_cargo_wagon_lime"
+            ],
+            "teal": [
+              "gv_train_cargo_wagon_teal"
+            ],
+            "indigo": [
+              "gv_train_cargo_wagon_indigo"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "red": [
+              "gv_try_again",
+              "gv_train_cargo_request_red"
+            ],
+            "blue": [
+              "gv_try_again",
+              "gv_train_cargo_request_blue"
+            ],
+            "yellow": [
+              "gv_try_again",
+              "gv_train_cargo_request_yellow"
+            ],
+            "green": [
+              "gv_try_again",
+              "gv_train_cargo_request_green"
+            ],
+            "orange": [
+              "gv_try_again",
+              "gv_train_cargo_request_orange"
+            ],
+            "purple": [
+              "gv_try_again",
+              "gv_train_cargo_request_purple"
+            ],
+            "pink": [
+              "gv_try_again",
+              "gv_train_cargo_request_pink"
+            ],
+            "brown": [
+              "gv_try_again",
+              "gv_train_cargo_request_brown"
+            ],
+            "cyan": [
+              "gv_try_again",
+              "gv_train_cargo_request_cyan"
+            ],
+            "lime": [
+              "gv_try_again",
+              "gv_train_cargo_request_lime"
+            ],
+            "teal": [
+              "gv_try_again",
+              "gv_train_cargo_request_teal"
+            ],
+            "indigo": [
+              "gv_try_again",
+              "gv_train_cargo_request_indigo"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "loaded": {
+          "by": {
+            "red": [
+              "lf_ea48f6d69658",
+              "gv_nice_match"
+            ],
+            "blue": [
+              "lf_060441181df4",
+              "gv_nice_match"
+            ],
+            "yellow": [
+              "lf_e4f96764d7d0",
+              "gv_nice_match"
+            ],
+            "green": [
+              "lf_bd874ed1f393",
+              "gv_nice_match"
+            ],
+            "orange": [
+              "lf_5475139cd4bb",
+              "gv_nice_match"
+            ],
+            "purple": [
+              "lf_4b1f215e28ec",
+              "gv_nice_match"
+            ],
+            "pink": [
+              "lf_faf447c9ab26",
+              "gv_nice_match"
+            ],
+            "brown": [
+              "lf_679b1643459a",
+              "gv_nice_match"
+            ],
+            "cyan": [
+              "lf_239a2f4843a1",
+              "gv_nice_match"
+            ],
+            "lime": [
+              "lf_cea3093d4dd6",
+              "gv_nice_match"
+            ],
+            "teal": [
+              "lf_94797aa06d3c",
+              "gv_nice_match"
+            ],
+            "indigo": [
+              "lf_75f99e5d3d12",
+              "gv_nice_match"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_train_cargo_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "red": [
+              "lf_63cea39a6427"
+            ],
+            "blue": [
+              "lf_c60a5bf5af83"
+            ],
+            "yellow": [
+              "lf_50752cccd5f1"
+            ],
+            "green": [
+              "lf_4184e6660d51"
+            ],
+            "orange": [
+              "lf_57f99f72bb07"
+            ],
+            "purple": [
+              "lf_3b19ca214058"
+            ],
+            "pink": [
+              "lf_d0dc8d0a82ad"
+            ],
+            "brown": [
+              "lf_0db39d844f57"
+            ],
+            "cyan": [
+              "lf_6e9e004aa183"
+            ],
+            "lime": [
+              "lf_469bc6b91c20"
+            ],
+            "teal": [
+              "lf_88903d55d4dd"
+            ],
+            "indigo": [
+              "lf_72b225c2b0f8"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "bath_time": {
+      "profile": "teddy",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_bath_time_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "friend": {
+          "by": {
+            "bear": [
+              "lf_c9aa72ee981a",
+              "gv_bath_time_intro"
+            ],
+            "dog": [
+              "lf_3085f170b0d5",
+              "gv_bath_time_intro"
+            ],
+            "cat": [
+              "lf_4639805bfddb",
+              "gv_bath_time_intro"
+            ],
+            "duck": [
+              "lf_34d1a1fc899f",
+              "gv_bath_time_intro"
+            ],
+            "chick": [
+              "lf_6aa7c7e1073f",
+              "gv_bath_time_intro"
+            ],
+            "bunny": [
+              "lf_9e2839e426db",
+              "gv_bath_time_intro"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "tool": {
+          "by": {
+            "soap": [
+              "gv_bath_time_tool_soap"
+            ],
+            "rinse": [
+              "gv_bath_time_tool_rinse"
+            ],
+            "towel": [
+              "gv_bath_time_tool_towel"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "soap": [
+              "gv_try_again",
+              "lf_0ff0b66f4a91"
+            ],
+            "rinse": [
+              "gv_try_again",
+              "lf_ada9be1f4d7c"
+            ],
+            "towel": [
+              "gv_try_again",
+              "lf_1ffc78d822e5"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_bath_time_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "soap": [
+              "lf_0ff0b66f4a91"
+            ],
+            "rinse": [
+              "lf_ada9be1f4d7c"
+            ],
+            "towel": [
+              "lf_1ffc78d822e5"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "little_chef": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_little_chef_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "recipe": {
+          "by": {
+            "bread": [
+              "gv_little_chef_recipe_bread"
+            ],
+            "fried_egg": [
+              "gv_little_chef_recipe_fried_egg"
+            ],
+            "tomato_eggs": [
+              "gv_little_chef_recipe_tomato_eggs"
+            ],
+            "vegetable_soup": [
+              "gv_little_chef_recipe_vegetable_soup"
+            ],
+            "cupcakes": [
+              "gv_little_chef_recipe_cake"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "tool": {
+          "by": {
+            "milk": [
+              "gv_little_chef_tool_milk"
+            ],
+            "egg": [
+              "gv_little_chef_tool_egg"
+            ],
+            "flour": [
+              "gv_little_chef_tool_flour"
+            ],
+            "whisk": [
+              "gv_little_chef_tool_whisk"
+            ],
+            "bake": [
+              "gv_little_chef_tool_bake"
+            ],
+            "rollingPin": [
+              "gv_little_chef_tool_rollingpin"
+            ],
+            "oil": [
+              "gv_little_chef_tool_oil"
+            ],
+            "tomato": [
+              "gv_little_chef_tool_tomato"
+            ],
+            "spatula": [
+              "gv_little_chef_tool_spatula"
+            ],
+            "water": [
+              "gv_little_chef_tool_water"
+            ],
+            "vegetables": [
+              "gv_little_chef_tool_vegetables"
+            ],
+            "ladle": [
+              "gv_little_chef_tool_ladle"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "milk": [
+              "gv_try_again",
+              "lf_75ed71333dfa"
+            ],
+            "egg": [
+              "gv_try_again",
+              "lf_25344b5222f6"
+            ],
+            "flour": [
+              "gv_try_again",
+              "lf_838270352526"
+            ],
+            "whisk": [
+              "gv_try_again",
+              "lf_c81bbc8459fc"
+            ],
+            "bake": [
+              "gv_try_again",
+              "lf_0b5dd9d1dec3"
+            ],
+            "rollingPin": [
+              "gv_try_again",
+              "lf_b88ba97224a5"
+            ],
+            "oil": [
+              "gv_try_again",
+              "lf_5843593311d5"
+            ],
+            "tomato": [
+              "gv_try_again",
+              "lf_591a9a8b0015"
+            ],
+            "spatula": [
+              "gv_try_again",
+              "lf_7dd46095b763"
+            ],
+            "water": [
+              "gv_try_again",
+              "lf_706c6714f4c6"
+            ],
+            "vegetables": [
+              "gv_try_again",
+              "lf_ffcb0e1fc9b1"
+            ],
+            "ladle": [
+              "gv_try_again",
+              "lf_b3e689f1b95f"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "by": {
+            "bread": [
+              "gv_little_chef_complete_bread"
+            ],
+            "fried_egg": [
+              "gv_little_chef_complete_fried_egg"
+            ],
+            "tomato_eggs": [
+              "gv_little_chef_complete_tomato_eggs"
+            ],
+            "vegetable_soup": [
+              "gv_little_chef_complete_vegetable_soup"
+            ],
+            "cupcakes": [
+              "gv_little_chef_complete_cake"
+            ]
+          },
+          "priority": 3,
+          "cooldown": 0
+        },
+        "cooking": {
+          "clips": [
+            "gv_little_chef_cooking"
+          ],
+          "priority": 1,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "milk": [
+              "lf_75ed71333dfa"
+            ],
+            "egg": [
+              "lf_25344b5222f6"
+            ],
+            "flour": [
+              "lf_838270352526"
+            ],
+            "whisk": [
+              "lf_c81bbc8459fc"
+            ],
+            "bake": [
+              "lf_0b5dd9d1dec3"
+            ],
+            "rollingPin": [
+              "lf_b88ba97224a5"
+            ],
+            "oil": [
+              "lf_5843593311d5"
+            ],
+            "tomato": [
+              "lf_591a9a8b0015"
+            ],
+            "spatula": [
+              "lf_7dd46095b763"
+            ],
+            "water": [
+              "lf_706c6714f4c6"
+            ],
+            "vegetables": [
+              "lf_ffcb0e1fc9b1"
+            ],
+            "ladle": [
+              "lf_b3e689f1b95f"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "road_helper": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_road_helper_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "tool": {
+          "by": {
+            "gravel": [
+              "gv_road_helper_tool_gravel"
+            ],
+            "roller": [
+              "gv_road_helper_tool_roller"
+            ],
+            "car": [
+              "gv_road_helper_tool_car"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "gravel": [
+              "gv_try_again",
+              "lf_7499c9e66d93"
+            ],
+            "roller": [
+              "gv_try_again",
+              "lf_4e33a59fb30b"
+            ],
+            "car": [
+              "gv_try_again",
+              "lf_6f9387d9e4bf"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_road_helper_complete",
+            "gv_well_done"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "gravel": [
+              "lf_7499c9e66d93"
+            ],
+            "roller": [
+              "lf_4e33a59fb30b"
+            ],
+            "car": [
+              "lf_6f9387d9e4bf"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "garden_grow": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_garden_grow_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "plant": {
+          "by": {
+            "sunflower": [
+              "gv_garden_grow_plant_sunflower"
+            ],
+            "rose": [
+              "gv_garden_grow_plant_rose"
+            ],
+            "tulip": [
+              "gv_garden_grow_plant_tulip"
+            ],
+            "lavender": [
+              "gv_garden_grow_plant_lavender"
+            ],
+            "daisy": [
+              "gv_garden_grow_plant_daisy"
+            ],
+            "grape": [
+              "gv_garden_grow_plant_grape"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "tool": {
+          "by": {
+            "loosen": [
+              "gv_garden_grow_tool_loosen"
+            ],
+            "seed": [
+              "gv_garden_grow_tool_seed"
+            ],
+            "bulb": [
+              "gv_garden_grow_tool_bulb"
+            ],
+            "cover": [
+              "gv_garden_grow_tool_cover"
+            ],
+            "water": [
+              "gv_garden_grow_tool_water"
+            ],
+            "mist": [
+              "gv_garden_grow_tool_mist"
+            ],
+            "sun": [
+              "gv_garden_grow_tool_sun"
+            ],
+            "feed": [
+              "gv_garden_grow_tool_feed"
+            ],
+            "prune": [
+              "gv_garden_grow_tool_prune"
+            ],
+            "weed": [
+              "gv_garden_grow_tool_weed"
+            ],
+            "support": [
+              "gv_garden_grow_tool_support"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "loosen": [
+              "gv_try_again",
+              "lf_dcc9d4e45739"
+            ],
+            "seed": [
+              "gv_try_again",
+              "lf_448198cbfa88"
+            ],
+            "bulb": [
+              "gv_try_again",
+              "lf_513441f1bc83"
+            ],
+            "cover": [
+              "gv_try_again",
+              "lf_fe9b3ef25221"
+            ],
+            "water": [
+              "gv_try_again",
+              "lf_1f56ad5f341d"
+            ],
+            "mist": [
+              "gv_try_again",
+              "lf_85904b753238"
+            ],
+            "sun": [
+              "gv_try_again",
+              "lf_0e9b3c087fae"
+            ],
+            "feed": [
+              "gv_try_again",
+              "lf_b89ecad57024"
+            ],
+            "prune": [
+              "gv_try_again",
+              "lf_85da2cc44133"
+            ],
+            "weed": [
+              "gv_try_again",
+              "lf_07c526d6709c"
+            ],
+            "support": [
+              "gv_try_again",
+              "lf_4d1036ddaeb0"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "by": {
+            "sunflower": [
+              "gv_garden_grow_complete_sunflower"
+            ],
+            "rose": [
+              "gv_garden_grow_complete_rose"
+            ],
+            "tulip": [
+              "gv_garden_grow_complete_tulip"
+            ],
+            "lavender": [
+              "gv_garden_grow_complete_lavender"
+            ],
+            "daisy": [
+              "gv_garden_grow_complete_daisy"
+            ],
+            "grape": [
+              "gv_garden_grow_complete_grape"
+            ]
+          },
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "loosen": [
+              "lf_dcc9d4e45739"
+            ],
+            "seed": [
+              "lf_448198cbfa88"
+            ],
+            "bulb": [
+              "lf_513441f1bc83"
+            ],
+            "cover": [
+              "lf_fe9b3ef25221"
+            ],
+            "water": [
+              "lf_1f56ad5f341d"
+            ],
+            "mist": [
+              "lf_85904b753238"
+            ],
+            "sun": [
+              "lf_0e9b3c087fae"
+            ],
+            "feed": [
+              "lf_b89ecad57024"
+            ],
+            "prune": [
+              "lf_85da2cc44133"
+            ],
+            "weed": [
+              "lf_07c526d6709c"
+            ],
+            "support": [
+              "lf_4d1036ddaeb0"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "shadow_match": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_shadow_match_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "animal": {
+          "by": {
+            "cat": [
+              "lf_4639805bfddb"
+            ],
+            "dog": [
+              "lf_3085f170b0d5"
+            ],
+            "bear": [
+              "lf_c9aa72ee981a"
+            ],
+            "bunny": [
+              "lf_9e2839e426db"
+            ],
+            "panda": [
+              "lf_a436749536ec"
+            ],
+            "fox": [
+              "lf_51c03be89694"
+            ],
+            "pig": [
+              "lf_bc8002950a76"
+            ],
+            "elephant": [
+              "lf_4cd1484a919b"
+            ],
+            "lion": [
+              "lf_00f824e5b499"
+            ],
+            "monkey": [
+              "lf_fa5b3c88b48e"
+            ],
+            "cow": [
+              "lf_e0c48c739f11"
+            ],
+            "sheep": [
+              "lf_b3254aef39d0"
+            ],
+            "giraffe": [
+              "lf_47782f8cd11d"
+            ],
+            "koala": [
+              "lf_442e32504a5f"
+            ],
+            "penguin": [
+              "lf_30a3d2f487fd"
+            ],
+            "owl": [
+              "lf_2d73022b97dc"
+            ],
+            "duck": [
+              "lf_34d1a1fc899f"
+            ],
+            "frog": [
+              "lf_203a8f0bc401"
+            ],
+            "tiger": [
+              "lf_fe78ab0b6567"
+            ],
+            "hippo": [
+              "lf_86c702396456"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "shadow": {
+          "by": {
+            "cat": [
+              "where_cat"
+            ],
+            "dog": [
+              "where_dog"
+            ],
+            "bear": [
+              "where_bear"
+            ],
+            "bunny": [
+              "where_rabbit"
+            ],
+            "panda": [
+              "where_panda"
+            ],
+            "fox": [
+              "where_fox"
+            ],
+            "pig": [
+              "where_pig"
+            ],
+            "elephant": [
+              "where_elephant"
+            ],
+            "lion": [
+              "where_lion"
+            ],
+            "monkey": [
+              "where_monkey"
+            ],
+            "cow": [
+              "where_cow"
+            ],
+            "sheep": [
+              "where_sheep"
+            ],
+            "giraffe": [
+              "where_giraffe"
+            ],
+            "koala": [
+              "where_koala"
+            ],
+            "penguin": [
+              "where_penguin"
+            ],
+            "owl": [
+              "where_owl"
+            ],
+            "duck": [
+              "where_duck"
+            ],
+            "frog": [
+              "where_frog"
+            ],
+            "tiger": [
+              "where_tiger"
+            ],
+            "hippo": [
+              "where_hippo"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "matched": {
+          "by": {
+            "cat": [
+              "lf_0ca7b34ff928",
+              "gv_nice_match"
+            ],
+            "dog": [
+              "lf_894748621a8d",
+              "gv_nice_match"
+            ],
+            "bear": [
+              "lf_4b15158321a8",
+              "gv_nice_match"
+            ],
+            "bunny": [
+              "lf_0b2f94715a92",
+              "gv_nice_match"
+            ],
+            "panda": [
+              "lf_542fa1216965",
+              "gv_nice_match"
+            ],
+            "fox": [
+              "lf_b1ddcc7d26bd",
+              "gv_nice_match"
+            ],
+            "pig": [
+              "lf_3b412f3bd656",
+              "gv_nice_match"
+            ],
+            "elephant": [
+              "lf_f8b4586eaaca",
+              "gv_nice_match"
+            ],
+            "lion": [
+              "lf_c142f18f295d",
+              "gv_nice_match"
+            ],
+            "monkey": [
+              "lf_4dc9dcd8dc4c",
+              "gv_nice_match"
+            ],
+            "cow": [
+              "lf_965adf2993cd",
+              "gv_nice_match"
+            ],
+            "sheep": [
+              "lf_340385cce699",
+              "gv_nice_match"
+            ],
+            "giraffe": [
+              "lf_ebd93c3f4175",
+              "gv_nice_match"
+            ],
+            "koala": [
+              "lf_7034e001baf2",
+              "gv_nice_match"
+            ],
+            "penguin": [
+              "lf_251e428583d4",
+              "gv_nice_match"
+            ],
+            "owl": [
+              "lf_6e66ec54b197",
+              "gv_nice_match"
+            ],
+            "duck": [
+              "lf_9a2e58feae62",
+              "gv_nice_match"
+            ],
+            "frog": [
+              "lf_6854102afb3e",
+              "gv_nice_match"
+            ],
+            "tiger": [
+              "lf_6a519df849b6",
+              "gv_nice_match"
+            ],
+            "hippo": [
+              "lf_a30b48974530",
+              "gv_nice_match"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "wrong": {
+          "clips": [
+            "gv_try_again",
+            "gv_shadow_match_shape_hint"
+          ],
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_shadow_match_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "cat": [
+              "lf_0ab63077851b"
+            ],
+            "dog": [
+              "lf_41bdf448e813"
+            ],
+            "bear": [
+              "lf_746ea4aeffa0"
+            ],
+            "bunny": [
+              "lf_4a4d8c24b888"
+            ],
+            "panda": [
+              "lf_37c87d92e8fb"
+            ],
+            "fox": [
+              "lf_fdc804e8f366"
+            ],
+            "pig": [
+              "lf_e5608db94c1a"
+            ],
+            "elephant": [
+              "lf_4d8688f2b081"
+            ],
+            "lion": [
+              "lf_da5f192ca32c"
+            ],
+            "monkey": [
+              "lf_972d60b717c8"
+            ],
+            "cow": [
+              "lf_286c58a7e85c"
+            ],
+            "sheep": [
+              "lf_02c50a03f6a9"
+            ],
+            "giraffe": [
+              "lf_4cef046820c6"
+            ],
+            "koala": [
+              "lf_e58e6d1f64ff"
+            ],
+            "penguin": [
+              "lf_137579d258d3"
+            ],
+            "owl": [
+              "lf_2bb25609e764"
+            ],
+            "duck": [
+              "lf_0946c9a5ddb3"
+            ],
+            "frog": [
+              "lf_eefe4a016d4c"
+            ],
+            "tiger": [
+              "lf_9c2f53eb22b1"
+            ],
+            "hippo": [
+              "lf_f5c1d6108c0b"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "little_band": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_little_band_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "instrument": {
+          "by": {
+            "drum": [
+              "lf_35847d6e8944"
+            ],
+            "guitar": [
+              "lf_f6582e2eec8b"
+            ],
+            "trumpet": [
+              "lf_5af17f53afb4"
+            ],
+            "violin": [
+              "lf_35a8ac9a0093"
+            ],
+            "saxophone": [
+              "lf_7924767dd079"
+            ],
+            "accordion": [
+              "lf_bf328785eee9"
+            ],
+            "flute": [
+              "lf_f51839739ba5"
+            ],
+            "tambourine": [
+              "lf_a31baa0b3d2d"
+            ],
+            "maracas": [
+              "lf_dd2ac9287110"
+            ],
+            "keyboard": [
+              "lf_b7331b0bbfbc"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "matched": {
+          "by": {
+            "drum": [
+              "lf_35847d6e8944",
+              "gv_nice_match"
+            ],
+            "guitar": [
+              "lf_f6582e2eec8b",
+              "gv_nice_match"
+            ],
+            "trumpet": [
+              "lf_5af17f53afb4",
+              "gv_nice_match"
+            ],
+            "violin": [
+              "lf_35a8ac9a0093",
+              "gv_nice_match"
+            ],
+            "saxophone": [
+              "lf_7924767dd079",
+              "gv_nice_match"
+            ],
+            "accordion": [
+              "lf_bf328785eee9",
+              "gv_nice_match"
+            ],
+            "flute": [
+              "lf_f51839739ba5",
+              "gv_nice_match"
+            ],
+            "tambourine": [
+              "lf_a31baa0b3d2d",
+              "gv_nice_match"
+            ],
+            "maracas": [
+              "lf_dd2ac9287110",
+              "gv_nice_match"
+            ],
+            "keyboard": [
+              "lf_b7331b0bbfbc",
+              "gv_nice_match"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "wrong": {
+          "clips": [
+            "gv_try_again",
+            "gv_little_band_shape_hint"
+          ],
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_little_band_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "drum": [
+              "lf_9b376aed6116"
+            ],
+            "guitar": [
+              "lf_da674a72c64c"
+            ],
+            "trumpet": [
+              "lf_15856f326da1"
+            ],
+            "violin": [
+              "lf_b929de560e0b"
+            ],
+            "saxophone": [
+              "lf_c2d4cdb29af4"
+            ],
+            "accordion": [
+              "lf_8ea1e1521f46"
+            ],
+            "flute": [
+              "lf_c09e5dcdd4db"
+            ],
+            "tambourine": [
+              "lf_b4c059d4e5c3"
+            ],
+            "maracas": [
+              "lf_f826ee7a02bb"
+            ],
+            "keyboard": [
+              "lf_521bda92d1c7"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "weather_dress": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_weather_dress_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "weather": {
+          "by": {
+            "sun": [
+              "gv_weather_dress_weather_sun"
+            ],
+            "rain": [
+              "gv_weather_dress_weather_rain"
+            ],
+            "snow": [
+              "gv_weather_dress_weather_snow"
+            ],
+            "wind": [
+              "gv_weather_dress_weather_wind"
+            ],
+            "autumn": [
+              "gv_weather_dress_weather_autumn"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "item": {
+          "by": {
+            "sun_hat": [
+              "lf_bd33b05e6de9"
+            ],
+            "sunglasses": [
+              "lf_34c0abe163a8"
+            ],
+            "raincoat": [
+              "lf_5eb96c59760d"
+            ],
+            "rain_boots": [
+              "lf_d291ff492715"
+            ],
+            "puffer": [
+              "lf_785b541a1cb5"
+            ],
+            "scarf": [
+              "lf_30f580a33b65"
+            ],
+            "windbreaker": [
+              "lf_92a0588b85a1"
+            ],
+            "cap": [
+              "lf_e04162ecfbc6"
+            ],
+            "sweater": [
+              "lf_f1c6796f1b99"
+            ],
+            "beanie": [
+              "lf_82c001b38af1"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "worn": {
+          "by": {
+            "sun_hat": [
+              "lf_bd33b05e6de9",
+              "great"
+            ],
+            "sunglasses": [
+              "lf_34c0abe163a8",
+              "great"
+            ],
+            "raincoat": [
+              "lf_5eb96c59760d",
+              "great"
+            ],
+            "rain_boots": [
+              "lf_d291ff492715",
+              "great"
+            ],
+            "puffer": [
+              "lf_785b541a1cb5",
+              "great"
+            ],
+            "scarf": [
+              "lf_30f580a33b65",
+              "great"
+            ],
+            "windbreaker": [
+              "lf_92a0588b85a1",
+              "great"
+            ],
+            "cap": [
+              "lf_e04162ecfbc6",
+              "great"
+            ],
+            "sweater": [
+              "lf_f1c6796f1b99",
+              "great"
+            ],
+            "beanie": [
+              "lf_82c001b38af1",
+              "great"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "sun": [
+              "gv_try_again",
+              "gv_weather_dress_weather_sun"
+            ],
+            "rain": [
+              "gv_try_again",
+              "gv_weather_dress_weather_rain"
+            ],
+            "snow": [
+              "gv_try_again",
+              "gv_weather_dress_weather_snow"
+            ],
+            "wind": [
+              "gv_try_again",
+              "gv_weather_dress_weather_wind"
+            ],
+            "autumn": [
+              "gv_try_again",
+              "gv_weather_dress_weather_autumn"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_weather_dress_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "sun_hat": [
+              "lf_207d4f60baa0"
+            ],
+            "sunglasses": [
+              "lf_bb6e4af4a36d"
+            ],
+            "raincoat": [
+              "lf_bd2bff4f29be"
+            ],
+            "rain_boots": [
+              "lf_0dfcee876654"
+            ],
+            "puffer": [
+              "lf_7af92d3c5c1b"
+            ],
+            "scarf": [
+              "lf_e7db04e806a3"
+            ],
+            "windbreaker": [
+              "lf_cbcb7870f7df"
+            ],
+            "cap": [
+              "lf_d7384248d889"
+            ],
+            "sweater": [
+              "lf_f32fdd089472"
+            ],
+            "beanie": [
+              "lf_c70c6d21b79f"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "find_friends": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_find_friends_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "animal": {
+          "by": {
+            "squirrel": [
+              "lf_a669e9e8fd8f"
+            ],
+            "owl": [
+              "lf_2d73022b97dc"
+            ],
+            "woodpecker": [
+              "lf_5a5c9992c037"
+            ],
+            "monkey": [
+              "lf_fa5b3c88b48e"
+            ],
+            "parrot": [
+              "lf_e8722a25a63b"
+            ],
+            "koala": [
+              "lf_442e32504a5f"
+            ],
+            "lion": [
+              "lf_00f824e5b499"
+            ],
+            "zebra": [
+              "lf_caff19d7279e"
+            ],
+            "giraffe": [
+              "lf_47782f8cd11d"
+            ],
+            "elephant": [
+              "lf_4cd1484a919b"
+            ],
+            "antelope": [
+              "lf_b61c3ce7b093"
+            ],
+            "ostrich": [
+              "lf_b697309f1f7a"
+            ],
+            "clownfish": [
+              "lf_a795bd9c90de"
+            ],
+            "bluefish": [
+              "lf_3c6abe334253"
+            ],
+            "seahorse": [
+              "lf_278559d88d66"
+            ],
+            "turtle": [
+              "lf_24174bcbdc38"
+            ],
+            "octopus": [
+              "lf_064b061354fd"
+            ],
+            "dolphin": [
+              "lf_38408573c0fd"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "home": {
+          "by": {
+            "tree": [
+              "gv_find_friends_home_tree"
+            ],
+            "grassland": [
+              "gv_find_friends_home_grassland"
+            ],
+            "water": [
+              "gv_find_friends_home_water"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "matched": {
+          "by": {
+            "squirrel": [
+              "lf_c2c84d5b9cd4",
+              "gv_find_friends_placed_tree"
+            ],
+            "owl": [
+              "lf_6e66ec54b197",
+              "gv_find_friends_placed_tree"
+            ],
+            "woodpecker": [
+              "lf_643971e71ac8",
+              "gv_find_friends_placed_tree"
+            ],
+            "monkey": [
+              "lf_4dc9dcd8dc4c",
+              "gv_find_friends_placed_tree"
+            ],
+            "parrot": [
+              "lf_9e123c874adf",
+              "gv_find_friends_placed_tree"
+            ],
+            "koala": [
+              "lf_7034e001baf2",
+              "gv_find_friends_placed_tree"
+            ],
+            "lion": [
+              "lf_c142f18f295d",
+              "gv_find_friends_placed_grassland"
+            ],
+            "zebra": [
+              "lf_ba1a2e18bb57",
+              "gv_find_friends_placed_grassland"
+            ],
+            "giraffe": [
+              "lf_ebd93c3f4175",
+              "gv_find_friends_placed_grassland"
+            ],
+            "elephant": [
+              "lf_f8b4586eaaca",
+              "gv_find_friends_placed_grassland"
+            ],
+            "antelope": [
+              "lf_ad4dcfc0bcff",
+              "gv_find_friends_placed_grassland"
+            ],
+            "ostrich": [
+              "lf_e0be32f4c0ee",
+              "gv_find_friends_placed_grassland"
+            ],
+            "clownfish": [
+              "lf_000322096310",
+              "gv_find_friends_placed_water"
+            ],
+            "bluefish": [
+              "lf_5d501b2e7162",
+              "gv_find_friends_placed_water"
+            ],
+            "seahorse": [
+              "lf_7d5987551238",
+              "gv_find_friends_placed_water"
+            ],
+            "turtle": [
+              "lf_caca3e80920a",
+              "gv_find_friends_placed_water"
+            ],
+            "octopus": [
+              "lf_726457f1e84c",
+              "gv_find_friends_placed_water"
+            ],
+            "dolphin": [
+              "lf_886c4b76dd67",
+              "gv_find_friends_placed_water"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "squirrel": [
+              "gv_try_again",
+              "gv_find_friends_hint_squirrel"
+            ],
+            "owl": [
+              "gv_try_again",
+              "gv_find_friends_hint_owl"
+            ],
+            "woodpecker": [
+              "gv_try_again",
+              "gv_find_friends_hint_woodpecker"
+            ],
+            "monkey": [
+              "gv_try_again",
+              "gv_find_friends_hint_monkey"
+            ],
+            "parrot": [
+              "gv_try_again",
+              "gv_find_friends_hint_parrot"
+            ],
+            "koala": [
+              "gv_try_again",
+              "gv_find_friends_hint_koala"
+            ],
+            "lion": [
+              "gv_try_again",
+              "gv_find_friends_hint_lion"
+            ],
+            "zebra": [
+              "gv_try_again",
+              "gv_find_friends_hint_zebra"
+            ],
+            "giraffe": [
+              "gv_try_again",
+              "gv_find_friends_hint_giraffe"
+            ],
+            "elephant": [
+              "gv_try_again",
+              "gv_find_friends_hint_elephant"
+            ],
+            "antelope": [
+              "gv_try_again",
+              "gv_find_friends_hint_antelope"
+            ],
+            "ostrich": [
+              "gv_try_again",
+              "gv_find_friends_hint_ostrich"
+            ],
+            "clownfish": [
+              "gv_try_again",
+              "gv_find_friends_hint_clownfish"
+            ],
+            "bluefish": [
+              "gv_try_again",
+              "gv_find_friends_hint_bluefish"
+            ],
+            "seahorse": [
+              "gv_try_again",
+              "gv_find_friends_hint_seahorse"
+            ],
+            "turtle": [
+              "gv_try_again",
+              "gv_find_friends_hint_turtle"
+            ],
+            "octopus": [
+              "gv_try_again",
+              "gv_find_friends_hint_octopus"
+            ],
+            "dolphin": [
+              "gv_try_again",
+              "gv_find_friends_hint_dolphin"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_find_friends_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        },
+        "request": {
+          "by": {
+            "squirrel": [
+              "lf_2d7f4474aeb2"
+            ],
+            "owl": [
+              "lf_21126c15fa6c"
+            ],
+            "woodpecker": [
+              "lf_2c5c99028963"
+            ],
+            "monkey": [
+              "lf_fad1f584ed04"
+            ],
+            "parrot": [
+              "lf_0ef0c3fde9ec"
+            ],
+            "koala": [
+              "lf_b8f9ffe8bbc3"
+            ],
+            "lion": [
+              "lf_a09d13de6145"
+            ],
+            "zebra": [
+              "lf_5afd5d4ba01b"
+            ],
+            "giraffe": [
+              "lf_929e28781442"
+            ],
+            "elephant": [
+              "lf_9ae97b8f57b9"
+            ],
+            "antelope": [
+              "lf_70b2d20b45f9"
+            ],
+            "ostrich": [
+              "lf_14aee64cb3bb"
+            ],
+            "clownfish": [
+              "lf_16c0ddb5c053"
+            ],
+            "bluefish": [
+              "lf_c69e607b17d6"
+            ],
+            "seahorse": [
+              "lf_98b8d013bcbe"
+            ],
+            "turtle": [
+              "lf_13157c085e30"
+            ],
+            "octopus": [
+              "lf_9929865f07be"
+            ],
+            "dolphin": [
+              "lf_e4fb444dbc80"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        }
+      }
+    },
+    "monster_dressup": {
+      "profile": "pip",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_monster_dressup_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "part": {
+          "by": {
+            "hat-top": [
+              "lf_1856d26b5333"
+            ],
+            "hat-crown": [
+              "lf_a658e294b398"
+            ],
+            "hat-wizard": [
+              "lf_b2301c0abd0d"
+            ],
+            "hat-cap": [
+              "lf_e04162ecfbc6"
+            ],
+            "hat-party": [
+              "lf_3c68b158b50a"
+            ],
+            "hat-flowers": [
+              "lf_31f00badbcb4"
+            ],
+            "eyes-green": [
+              "lf_7760f278abc9"
+            ],
+            "eyes-cyclops": [
+              "lf_9fe9d1d0b0c5"
+            ],
+            "eyes-triple": [
+              "lf_76f3fc55d6c9"
+            ],
+            "eyes-sleepy": [
+              "lf_69240d160b71"
+            ],
+            "eyes-star": [
+              "lf_d46ccadf2bf1"
+            ],
+            "eyes-silly": [
+              "lf_0024c684f238"
+            ],
+            "nose-pig": [
+              "lf_f4d7395ab98f"
+            ],
+            "nose-clown": [
+              "lf_7dbfb804a395"
+            ],
+            "nose-triangle": [
+              "lf_e24c22eb1883"
+            ],
+            "nose-cat": [
+              "lf_978b36f8abb8"
+            ],
+            "nose-heart": [
+              "lf_a403fbaf8321"
+            ],
+            "nose-button": [
+              "lf_8d667340a2e5"
+            ],
+            "mouth-smile": [
+              "lf_d7d568d8fbf3"
+            ],
+            "mouth-surprise": [
+              "lf_e81b04da2a25"
+            ],
+            "mouth-fangs": [
+              "lf_637165196b3f"
+            ],
+            "mouth-tongue": [
+              "lf_e75b032d7b89"
+            ],
+            "mouth-gentle": [
+              "lf_3c9b8a02f4ab"
+            ],
+            "mouth-zipper": [
+              "lf_85bfb6cea1c8"
+            ],
+            "chest-bow-red": [
+              "lf_8dab872fd1c3"
+            ],
+            "chest-tie-blue": [
+              "lf_6e6c83459255"
+            ],
+            "chest-star": [
+              "lf_38b151c66e17"
+            ],
+            "chest-scarf": [
+              "lf_30f580a33b65"
+            ],
+            "chest-gem": [
+              "lf_3c71f85d397a"
+            ],
+            "chest-bow-orange": [
+              "lf_0670f0ff0e2d"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "placed": {
+          "by": {
+            "hat-top": [
+              "lf_1856d26b5333",
+              "great"
+            ],
+            "hat-crown": [
+              "lf_a658e294b398",
+              "great"
+            ],
+            "hat-wizard": [
+              "lf_b2301c0abd0d",
+              "great"
+            ],
+            "hat-cap": [
+              "lf_e04162ecfbc6",
+              "great"
+            ],
+            "hat-party": [
+              "lf_3c68b158b50a",
+              "great"
+            ],
+            "hat-flowers": [
+              "lf_31f00badbcb4",
+              "great"
+            ],
+            "eyes-green": [
+              "lf_7760f278abc9",
+              "great"
+            ],
+            "eyes-cyclops": [
+              "lf_9fe9d1d0b0c5",
+              "great"
+            ],
+            "eyes-triple": [
+              "lf_76f3fc55d6c9",
+              "great"
+            ],
+            "eyes-sleepy": [
+              "lf_69240d160b71",
+              "great"
+            ],
+            "eyes-star": [
+              "lf_d46ccadf2bf1",
+              "great"
+            ],
+            "eyes-silly": [
+              "lf_0024c684f238",
+              "great"
+            ],
+            "nose-pig": [
+              "lf_f4d7395ab98f",
+              "great"
+            ],
+            "nose-clown": [
+              "lf_7dbfb804a395",
+              "great"
+            ],
+            "nose-triangle": [
+              "lf_e24c22eb1883",
+              "great"
+            ],
+            "nose-cat": [
+              "lf_978b36f8abb8",
+              "great"
+            ],
+            "nose-heart": [
+              "lf_a403fbaf8321",
+              "great"
+            ],
+            "nose-button": [
+              "lf_8d667340a2e5",
+              "great"
+            ],
+            "mouth-smile": [
+              "lf_d7d568d8fbf3",
+              "great"
+            ],
+            "mouth-surprise": [
+              "lf_e81b04da2a25",
+              "great"
+            ],
+            "mouth-fangs": [
+              "lf_637165196b3f",
+              "great"
+            ],
+            "mouth-tongue": [
+              "lf_e75b032d7b89",
+              "great"
+            ],
+            "mouth-gentle": [
+              "lf_3c9b8a02f4ab",
+              "great"
+            ],
+            "mouth-zipper": [
+              "lf_85bfb6cea1c8",
+              "great"
+            ],
+            "chest-bow-red": [
+              "lf_8dab872fd1c3",
+              "great"
+            ],
+            "chest-tie-blue": [
+              "lf_6e6c83459255",
+              "great"
+            ],
+            "chest-star": [
+              "lf_38b151c66e17",
+              "great"
+            ],
+            "chest-scarf": [
+              "lf_30f580a33b65",
+              "great"
+            ],
+            "chest-gem": [
+              "lf_3c71f85d397a",
+              "great"
+            ],
+            "chest-bow-orange": [
+              "lf_0670f0ff0e2d",
+              "great"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "returned": {
+          "clips": [
+            "gv_monster_dressup_returned"
+          ],
+          "priority": 1,
+          "cooldown": 0
+        },
+        "complete": {
+          "clips": [
+            "gv_monster_dressup_complete"
+          ],
+          "priority": 3,
+          "cooldown": 0
+        }
+      }
+    },
+    "parcel_sort": {
+      "profile": "guide",
+      "cues": {
+        "intro": {
+          "clips": [
+            "gv_parcel_sort_intro"
+          ],
+          "priority": 0,
+          "cooldown": 0
+        },
+        "parcel": {
+          "by": {
+            "circle-star": [
+              "lf_1b55ca936a3a"
+            ],
+            "circle-stripe": [
+              "lf_1b55ca936a3a"
+            ],
+            "circle-dot": [
+              "lf_1b55ca936a3a"
+            ],
+            "circle-heart": [
+              "lf_1b55ca936a3a"
+            ],
+            "circle-globe": [
+              "lf_1b55ca936a3a"
+            ],
+            "circle-moon": [
+              "lf_1b55ca936a3a"
+            ],
+            "square-rocket": [
+              "lf_7d899f0ff4c8"
+            ],
+            "square-paw": [
+              "lf_7d899f0ff4c8"
+            ],
+            "square-music": [
+              "lf_7d899f0ff4c8"
+            ],
+            "square-bear": [
+              "lf_7d899f0ff4c8"
+            ],
+            "square-truck": [
+              "lf_7d899f0ff4c8"
+            ],
+            "square-flower": [
+              "lf_7d899f0ff4c8"
+            ],
+            "triangle-dino": [
+              "lf_f21efd139e26"
+            ],
+            "triangle-bee": [
+              "lf_f21efd139e26"
+            ],
+            "triangle-wave": [
+              "lf_f21efd139e26"
+            ],
+            "triangle-fox": [
+              "lf_f21efd139e26"
+            ],
+            "triangle-constellation": [
+              "lf_f21efd139e26"
+            ],
+            "triangle-shell": [
+              "lf_f21efd139e26"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "shape": {
+          "by": {
+            "circle": [
+              "lf_8114a4e8fa17"
+            ],
+            "square": [
+              "lf_6f8dd165b388"
+            ],
+            "triangle": [
+              "lf_9d01de5abc47"
+            ]
+          },
+          "priority": 1,
+          "cooldown": 0
+        },
+        "wrong": {
+          "by": {
+            "circle": [
+              "gv_try_again",
+              "gv_parcel_sort_slot_circle"
+            ],
+            "square": [
+              "gv_try_again",
+              "gv_parcel_sort_slot_square"
+            ],
+            "triangle": [
+              "gv_try_again",
+              "gv_parcel_sort_slot_triangle"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "delivered": {
+          "by": {
+            "circle": [
+              "lf_747f31ebc7f1"
+            ],
+            "square": [
+              "lf_c045263801c2"
+            ],
+            "triangle": [
+              "lf_93132f1bf903"
+            ]
+          },
+          "priority": 2,
+          "cooldown": 0
+        },
+        "praise": {
+          "clips": [
+            "gv_parcel_sort_praise"
+          ],
+          "priority": 3,
+          "cooldown": 6000
+        }
+      }
+    }
+  }
+}

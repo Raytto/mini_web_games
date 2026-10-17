@@ -1,0 +1,46 @@
+[
+  {
+    "id": "dd3_take_brush",
+    "text": "Here is a soft brush! Tap it or drag it to the soil.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd3_take_brush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131070
+  },
+  {
+    "id": "dd3_take_fine",
+    "text": "Here is a fine brush! Tap it or drag it to the fossil.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd3_take_fine",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131071
+  },
+  {
+    "id": "dd3_fine",
+    "text": "Use the fine brush. Gently sweep the last dust away.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd3_fine",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131072
+  },
+  {
+    "id": "dd3_finebrush",
+    "text": "This is a fine brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd3_finebrush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131073
+  }
+]

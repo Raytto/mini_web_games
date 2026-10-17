@@ -1,0 +1,1490 @@
+[
+  {
+    "id": "reef3_intro",
+    "text": "Welcome, ocean friends! Tap the water to feed. Tap a friend to say hello.",
+    "voice_profile": "guide",
+    "instruction": "Friendly invitation. Clear English. Warm emphasis on feed and say hello.",
+    "rate": 0.96,
+    "seed": 30301
+  },
+  {
+    "id": "reef3_clownfish_hello",
+    "text": "Hi! I'm a clownfish!",
+    "voice_profile": "clownfish",
+    "species": "clownfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.97,
+    "seed": 30311
+  },
+  {
+    "id": "reef3_clownfish_eat_a",
+    "text": "Yummy!",
+    "voice_profile": "clownfish",
+    "species": "clownfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.97,
+    "seed": 30312
+  },
+  {
+    "id": "reef3_clownfish_eat_b",
+    "text": "That is tasty!",
+    "voice_profile": "clownfish",
+    "species": "clownfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.97,
+    "seed": 30313
+  },
+  {
+    "id": "reef3_clownfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "clownfish",
+    "species": "clownfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.97,
+    "seed": 30314
+  },
+  {
+    "id": "reef3_whale_hello",
+    "text": "Hello! I'm a whale.",
+    "voice_profile": "whale",
+    "species": "whale",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.9,
+    "seed": 30319
+  },
+  {
+    "id": "reef3_whale_eat_a",
+    "text": "Oh, lovely!",
+    "voice_profile": "whale",
+    "species": "whale",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.9,
+    "seed": 30320
+  },
+  {
+    "id": "reef3_whale_eat_b",
+    "text": "What a nice snack!",
+    "voice_profile": "whale",
+    "species": "whale",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.9,
+    "seed": 30321
+  },
+  {
+    "id": "reef3_whale_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "whale",
+    "species": "whale",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.9,
+    "seed": 30322
+  },
+  {
+    "id": "reef3_shark_hello",
+    "text": "Hello! I'm a shark.",
+    "voice_profile": "shark",
+    "species": "shark",
+    "event": "hello",
+    "instruction": "Warm elderly man. Natural deep bass, steady low pitch, relaxed chest voice. Clear English.",
+    "rate": 0.9,
+    "seed": 30327
+  },
+  {
+    "id": "reef3_shark_eat_a",
+    "text": "Yummy, thank you!",
+    "voice_profile": "shark",
+    "species": "shark",
+    "event": "eat_a",
+    "instruction": "Warm elderly man. Natural deep bass, steady low pitch, relaxed chest voice. Clear English.",
+    "rate": 0.9,
+    "seed": 30328
+  },
+  {
+    "id": "reef3_shark_eat_b",
+    "text": "Ah, delicious!",
+    "voice_profile": "shark",
+    "species": "shark",
+    "event": "eat_b",
+    "instruction": "Warm elderly man. Natural deep bass, steady low pitch, relaxed chest voice. Clear English.",
+    "rate": 0.9,
+    "seed": 30329
+  },
+  {
+    "id": "reef3_shark_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "shark",
+    "species": "shark",
+    "event": "full",
+    "instruction": "Warm elderly man. Natural deep bass, steady low pitch, relaxed chest voice. Clear English.",
+    "rate": 0.9,
+    "seed": 30330
+  },
+  {
+    "id": "reef3_turtle_hello",
+    "text": "Hello! I'm a turtle.",
+    "voice_profile": "turtle",
+    "species": "turtle",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.88,
+    "seed": 30335
+  },
+  {
+    "id": "reef3_turtle_eat_a",
+    "text": "How lovely!",
+    "voice_profile": "turtle",
+    "species": "turtle",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.88,
+    "seed": 30336
+  },
+  {
+    "id": "reef3_turtle_eat_b",
+    "text": "Thank you, dear!",
+    "voice_profile": "turtle",
+    "species": "turtle",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.88,
+    "seed": 30337
+  },
+  {
+    "id": "reef3_turtle_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "turtle",
+    "species": "turtle",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.88,
+    "seed": 30338
+  },
+  {
+    "id": "reef3_manta_hello",
+    "text": "Hello! I'm a manta ray.",
+    "voice_profile": "manta",
+    "species": "manta",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.94,
+    "seed": 30343
+  },
+  {
+    "id": "reef3_manta_eat_a",
+    "text": "Lovely, thank you!",
+    "voice_profile": "manta",
+    "species": "manta",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30344
+  },
+  {
+    "id": "reef3_manta_eat_b",
+    "text": "Such a nice snack!",
+    "voice_profile": "manta",
+    "species": "manta",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30345
+  },
+  {
+    "id": "reef3_manta_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "manta",
+    "species": "manta",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30346
+  },
+  {
+    "id": "reef3_pufferfish_hello",
+    "text": "Hello! I'm a pufferfish.",
+    "voice_profile": "pufferfish",
+    "species": "pufferfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.94,
+    "seed": 30351
+  },
+  {
+    "id": "reef3_pufferfish_eat_a",
+    "text": "Yum, yum!",
+    "voice_profile": "pufferfish",
+    "species": "pufferfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30352
+  },
+  {
+    "id": "reef3_pufferfish_eat_b",
+    "text": "So yummy!",
+    "voice_profile": "pufferfish",
+    "species": "pufferfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30353
+  },
+  {
+    "id": "reef3_pufferfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "pufferfish",
+    "species": "pufferfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30354
+  },
+  {
+    "id": "reef3_blue_tang_hello",
+    "text": "Hello! I'm a blue tang.",
+    "voice_profile": "blue_tang",
+    "species": "blue_tang",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 1.01,
+    "seed": 30359
+  },
+  {
+    "id": "reef3_blue_tang_eat_a",
+    "text": "Oh, so tasty!",
+    "voice_profile": "blue_tang",
+    "species": "blue_tang",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.01,
+    "seed": 31360
+  },
+  {
+    "id": "reef3_blue_tang_eat_b",
+    "text": "Yummy, thanks!",
+    "voice_profile": "blue_tang",
+    "species": "blue_tang",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.01,
+    "seed": 30361
+  },
+  {
+    "id": "reef3_blue_tang_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "blue_tang",
+    "species": "blue_tang",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.01,
+    "seed": 30362
+  },
+  {
+    "id": "reef3_butterflyfish_hello",
+    "text": "Hello! I'm a butterflyfish.",
+    "voice_profile": "butterflyfish",
+    "species": "butterflyfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.94,
+    "seed": 30367
+  },
+  {
+    "id": "reef3_butterflyfish_eat_a",
+    "text": "Oh, yummy!",
+    "voice_profile": "butterflyfish",
+    "species": "butterflyfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30368
+  },
+  {
+    "id": "reef3_butterflyfish_eat_b",
+    "text": "So sweet of you!",
+    "voice_profile": "butterflyfish",
+    "species": "butterflyfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30369
+  },
+  {
+    "id": "reef3_butterflyfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "butterflyfish",
+    "species": "butterflyfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30370
+  },
+  {
+    "id": "reef3_angelfish_hello",
+    "text": "Hello! I'm an angelfish.",
+    "voice_profile": "angelfish",
+    "species": "angelfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.93,
+    "seed": 30375
+  },
+  {
+    "id": "reef3_angelfish_eat_a",
+    "text": "Delicious!",
+    "voice_profile": "angelfish",
+    "species": "angelfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.93,
+    "seed": 30376
+  },
+  {
+    "id": "reef3_angelfish_eat_b",
+    "text": "How delicious!",
+    "voice_profile": "angelfish",
+    "species": "angelfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.93,
+    "seed": 30377
+  },
+  {
+    "id": "reef3_angelfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "angelfish",
+    "species": "angelfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.93,
+    "seed": 30378
+  },
+  {
+    "id": "reef3_seahorse_hello",
+    "text": "Hello! I'm a seahorse.",
+    "voice_profile": "seahorse",
+    "species": "seahorse",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.94,
+    "seed": 30383
+  },
+  {
+    "id": "reef3_seahorse_eat_a",
+    "text": "Oh! Thank you!",
+    "voice_profile": "seahorse",
+    "species": "seahorse",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30384
+  },
+  {
+    "id": "reef3_seahorse_eat_b",
+    "text": "A little snack!",
+    "voice_profile": "seahorse",
+    "species": "seahorse",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30385
+  },
+  {
+    "id": "reef3_seahorse_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "seahorse",
+    "species": "seahorse",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30386
+  },
+  {
+    "id": "reef3_lionfish_hello",
+    "text": "Hello! I'm a lionfish.",
+    "voice_profile": "lionfish",
+    "species": "lionfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.93,
+    "seed": 30391
+  },
+  {
+    "id": "reef3_lionfish_eat_a",
+    "text": "Wonderful!",
+    "voice_profile": "lionfish",
+    "species": "lionfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.93,
+    "seed": 30392
+  },
+  {
+    "id": "reef3_lionfish_eat_b",
+    "text": "A fine snack!",
+    "voice_profile": "lionfish",
+    "species": "lionfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.93,
+    "seed": 30393
+  },
+  {
+    "id": "reef3_lionfish_full",
+    "text": "That was delicious!",
+    "voice_profile": "lionfish",
+    "species": "lionfish",
+    "event": "full",
+    "instruction": "Clear natural English, carefully pronounce each whole word. Warm friendly character voice.",
+    "rate": 0.92,
+    "seed": 31495
+  },
+  {
+    "id": "reef3_parrotfish_hello",
+    "text": "Hello! I'm a parrotfish.",
+    "voice_profile": "parrotfish",
+    "species": "parrotfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 1.0,
+    "seed": 30399
+  },
+  {
+    "id": "reef3_parrotfish_eat_a",
+    "text": "Tasty, tasty!",
+    "voice_profile": "parrotfish",
+    "species": "parrotfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.0,
+    "seed": 30400
+  },
+  {
+    "id": "reef3_parrotfish_eat_b",
+    "text": "That is great!",
+    "voice_profile": "parrotfish",
+    "species": "parrotfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.0,
+    "seed": 30401
+  },
+  {
+    "id": "reef3_parrotfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "parrotfish",
+    "species": "parrotfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.0,
+    "seed": 30402
+  },
+  {
+    "id": "reef3_yellow_tang_hello",
+    "text": "Hi! I'm a yellow tang!",
+    "voice_profile": "yellow_tang",
+    "species": "yellow_tang",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.99,
+    "seed": 30407
+  },
+  {
+    "id": "reef3_yellow_tang_eat_a",
+    "text": "Yay, yummy!",
+    "voice_profile": "yellow_tang",
+    "species": "yellow_tang",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.99,
+    "seed": 30408
+  },
+  {
+    "id": "reef3_yellow_tang_eat_b",
+    "text": "Thank you so much!",
+    "voice_profile": "yellow_tang",
+    "species": "yellow_tang",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.99,
+    "seed": 30409
+  },
+  {
+    "id": "reef3_yellow_tang_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "yellow_tang",
+    "species": "yellow_tang",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.99,
+    "seed": 30410
+  },
+  {
+    "id": "reef3_royal_gramma_hello",
+    "text": "I'm a fairy basslet fish!",
+    "voice_profile": "royal_gramma",
+    "species": "royal_gramma",
+    "event": "hello",
+    "instruction": "Say BASS-let clearly, like bass fish then let. Two syllables. No r sound in basslet.",
+    "rate": 0.9,
+    "seed": 31849
+  },
+  {
+    "id": "reef3_royal_gramma_eat_a",
+    "text": "Very tasty!",
+    "voice_profile": "royal_gramma",
+    "species": "royal_gramma",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.96,
+    "seed": 30416
+  },
+  {
+    "id": "reef3_royal_gramma_eat_b",
+    "text": "Many thanks!",
+    "voice_profile": "royal_gramma",
+    "species": "royal_gramma",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.96,
+    "seed": 30417
+  },
+  {
+    "id": "reef3_royal_gramma_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "royal_gramma",
+    "species": "royal_gramma",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.96,
+    "seed": 30418
+  },
+  {
+    "id": "reef3_mandarinfish_hello",
+    "text": "Hello! I'm a mandarinfish.",
+    "voice_profile": "mandarinfish",
+    "species": "mandarinfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.98,
+    "seed": 30423
+  },
+  {
+    "id": "reef3_mandarinfish_eat_a",
+    "text": "Oh, lovely!",
+    "voice_profile": "mandarinfish",
+    "species": "mandarinfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.98,
+    "seed": 31424
+  },
+  {
+    "id": "reef3_mandarinfish_eat_b",
+    "text": "A lovely little snack!",
+    "voice_profile": "mandarinfish",
+    "species": "mandarinfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.98,
+    "seed": 30425
+  },
+  {
+    "id": "reef3_mandarinfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "mandarinfish",
+    "species": "mandarinfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.98,
+    "seed": 30426
+  },
+  {
+    "id": "reef3_moorish_idol_hello",
+    "text": "Hello! I'm a Moorish idol.",
+    "voice_profile": "moorish_idol",
+    "species": "moorish_idol",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.96,
+    "seed": 30431
+  },
+  {
+    "id": "reef3_moorish_idol_eat_a",
+    "text": "Lovely!",
+    "voice_profile": "moorish_idol",
+    "species": "moorish_idol",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.96,
+    "seed": 30432
+  },
+  {
+    "id": "reef3_moorish_idol_eat_b",
+    "text": "Thank you kindly!",
+    "voice_profile": "moorish_idol",
+    "species": "moorish_idol",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.96,
+    "seed": 30433
+  },
+  {
+    "id": "reef3_moorish_idol_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "moorish_idol",
+    "species": "moorish_idol",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.96,
+    "seed": 30434
+  },
+  {
+    "id": "reef3_banggai_cardinalfish_hello",
+    "text": "Hello! I'm a Banggai cardinalfish.",
+    "voice_profile": "banggai_cardinalfish",
+    "species": "banggai_cardinalfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.94,
+    "seed": 30439
+  },
+  {
+    "id": "reef3_banggai_cardinalfish_eat_a",
+    "text": "Oh, that is nice!",
+    "voice_profile": "banggai_cardinalfish",
+    "species": "banggai_cardinalfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30440
+  },
+  {
+    "id": "reef3_banggai_cardinalfish_eat_b",
+    "text": "Thank you, friend!",
+    "voice_profile": "banggai_cardinalfish",
+    "species": "banggai_cardinalfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30441
+  },
+  {
+    "id": "reef3_banggai_cardinalfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "banggai_cardinalfish",
+    "species": "banggai_cardinalfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.94,
+    "seed": 30442
+  },
+  {
+    "id": "reef3_longhorn_cowfish_hello",
+    "text": "Hello! I'm a longhorn cowfish.",
+    "voice_profile": "longhorn_cowfish",
+    "species": "longhorn_cowfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.93,
+    "seed": 30447
+  },
+  {
+    "id": "reef3_longhorn_cowfish_eat_a",
+    "text": "Yum! Good stuff!",
+    "voice_profile": "longhorn_cowfish",
+    "species": "longhorn_cowfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.93,
+    "seed": 30448
+  },
+  {
+    "id": "reef3_longhorn_cowfish_eat_b",
+    "text": "That hits the spot!",
+    "voice_profile": "longhorn_cowfish",
+    "species": "longhorn_cowfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.93,
+    "seed": 30449
+  },
+  {
+    "id": "reef3_longhorn_cowfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "longhorn_cowfish",
+    "species": "longhorn_cowfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.93,
+    "seed": 30450
+  },
+  {
+    "id": "reef3_blue_chromis_hello",
+    "text": "Hi! I'm a blue chromis!",
+    "voice_profile": "blue_chromis",
+    "species": "blue_chromis",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 1.03,
+    "seed": 30455
+  },
+  {
+    "id": "reef3_blue_chromis_eat_a",
+    "text": "Yippee! Yummy!",
+    "voice_profile": "blue_chromis",
+    "species": "blue_chromis",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.03,
+    "seed": 30456
+  },
+  {
+    "id": "reef3_blue_chromis_eat_b",
+    "text": "Tasty! Thanks!",
+    "voice_profile": "blue_chromis",
+    "species": "blue_chromis",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.03,
+    "seed": 30457
+  },
+  {
+    "id": "reef3_blue_chromis_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "blue_chromis",
+    "species": "blue_chromis",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.03,
+    "seed": 30458
+  },
+  {
+    "id": "reef3_squirrelfish_hello",
+    "text": "Hello! I'm a squirrelfish.",
+    "voice_profile": "squirrelfish",
+    "species": "squirrelfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.99,
+    "seed": 30463
+  },
+  {
+    "id": "reef3_squirrelfish_eat_a",
+    "text": "Oh, a snack!",
+    "voice_profile": "squirrelfish",
+    "species": "squirrelfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.99,
+    "seed": 30464
+  },
+  {
+    "id": "reef3_squirrelfish_eat_b",
+    "text": "That tastes good!",
+    "voice_profile": "squirrelfish",
+    "species": "squirrelfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.99,
+    "seed": 30465
+  },
+  {
+    "id": "reef3_squirrelfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "squirrelfish",
+    "species": "squirrelfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.99,
+    "seed": 30466
+  },
+  {
+    "id": "reef3_ocean_sunfish_hello",
+    "text": "Hello! I'm an ocean sunfish.",
+    "voice_profile": "ocean_sunfish",
+    "species": "ocean_sunfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 0.87,
+    "seed": 30471
+  },
+  {
+    "id": "reef3_ocean_sunfish_eat_a",
+    "text": "Oh, yummy.",
+    "voice_profile": "ocean_sunfish",
+    "species": "ocean_sunfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.87,
+    "seed": 30472
+  },
+  {
+    "id": "reef3_ocean_sunfish_eat_b",
+    "text": "So nice. Thank you.",
+    "voice_profile": "ocean_sunfish",
+    "species": "ocean_sunfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.87,
+    "seed": 30473
+  },
+  {
+    "id": "reef3_ocean_sunfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "ocean_sunfish",
+    "species": "ocean_sunfish",
+    "event": "full",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 0.87,
+    "seed": 30474
+  },
+  {
+    "id": "reef3_sailfish_hello",
+    "text": "Hello! I'm a sailfish.",
+    "voice_profile": "sailfish",
+    "species": "sailfish",
+    "event": "hello",
+    "instruction": "Warm clear self-introduction. Emphasize the complete animal name.",
+    "rate": 1.02,
+    "seed": 30479
+  },
+  {
+    "id": "reef3_sailfish_eat_a",
+    "text": "Thanks for the snack!",
+    "voice_profile": "sailfish",
+    "species": "sailfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.02,
+    "seed": 31480
+  },
+  {
+    "id": "reef3_sailfish_eat_b",
+    "text": "Ready to swim!",
+    "voice_profile": "sailfish",
+    "species": "sailfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied reaction to a snack. Keep the character voice. Clear, expressive English.",
+    "rate": 1.02,
+    "seed": 30481
+  },
+  {
+    "id": "reef3_sailfish_full",
+    "text": "Thanks! That was tasty!",
+    "voice_profile": "sailfish",
+    "species": "sailfish",
+    "event": "full",
+    "instruction": "Clear natural English, carefully pronounce each whole word. Warm friendly character voice.",
+    "rate": 0.92,
+    "seed": 31583
+  },
+  {
+    "id": "reef4_hammerhead_shark_hello",
+    "text": "Hello! I'm a hammerhead shark.",
+    "voice_profile": "hammerhead_shark",
+    "species": "hammerhead_shark",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40400
+  },
+  {
+    "id": "reef4_hammerhead_shark_eat_a",
+    "text": "Yummy, thank you!",
+    "voice_profile": "hammerhead_shark",
+    "species": "hammerhead_shark",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40401
+  },
+  {
+    "id": "reef4_hammerhead_shark_eat_b",
+    "text": "So tasty!",
+    "voice_profile": "hammerhead_shark",
+    "species": "hammerhead_shark",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40402
+  },
+  {
+    "id": "reef4_hammerhead_shark_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "hammerhead_shark",
+    "species": "hammerhead_shark",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40403
+  },
+  {
+    "id": "reef4_whale_shark_hello",
+    "text": "Hello! I'm a whale shark.",
+    "voice_profile": "whale_shark",
+    "species": "whale_shark",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.93,
+    "seed": 40410
+  },
+  {
+    "id": "reef4_whale_shark_eat_a",
+    "text": "Oh, delicious!",
+    "voice_profile": "whale_shark",
+    "species": "whale_shark",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40411
+  },
+  {
+    "id": "reef4_whale_shark_eat_b",
+    "text": "That is lovely!",
+    "voice_profile": "whale_shark",
+    "species": "whale_shark",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40412
+  },
+  {
+    "id": "reef4_whale_shark_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "whale_shark",
+    "species": "whale_shark",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40413
+  },
+  {
+    "id": "reef4_leafy_seadragon_hello",
+    "text": "Hello! I'm a leafy sea dragon.",
+    "voice_profile": "leafy_seadragon",
+    "species": "leafy_seadragon",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.93,
+    "seed": 40420
+  },
+  {
+    "id": "reef4_leafy_seadragon_eat_a",
+    "text": "What a lovely snack!",
+    "voice_profile": "leafy_seadragon",
+    "species": "leafy_seadragon",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40421
+  },
+  {
+    "id": "reef4_leafy_seadragon_eat_b",
+    "text": "Thank you, friend!",
+    "voice_profile": "leafy_seadragon",
+    "species": "leafy_seadragon",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40422
+  },
+  {
+    "id": "reef4_leafy_seadragon_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "leafy_seadragon",
+    "species": "leafy_seadragon",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40423
+  },
+  {
+    "id": "reef4_flying_fish_hello",
+    "text": "Hello! I'm a flying fish.",
+    "voice_profile": "flying_fish",
+    "species": "flying_fish",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40430
+  },
+  {
+    "id": "reef4_flying_fish_eat_a",
+    "text": "Yummy, thank you!",
+    "voice_profile": "flying_fish",
+    "species": "flying_fish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40431
+  },
+  {
+    "id": "reef4_flying_fish_eat_b",
+    "text": "So tasty!",
+    "voice_profile": "flying_fish",
+    "species": "flying_fish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40432
+  },
+  {
+    "id": "reef4_flying_fish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "flying_fish",
+    "species": "flying_fish",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40433
+  },
+  {
+    "id": "reef4_green_moray_hello",
+    "text": "Hello! I'm a green moray eel.",
+    "voice_profile": "green_moray",
+    "species": "green_moray",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40440
+  },
+  {
+    "id": "reef4_green_moray_eat_a",
+    "text": "Oh, delicious!",
+    "voice_profile": "green_moray",
+    "species": "green_moray",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40441
+  },
+  {
+    "id": "reef4_green_moray_eat_b",
+    "text": "That is lovely!",
+    "voice_profile": "green_moray",
+    "species": "green_moray",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40442
+  },
+  {
+    "id": "reef4_green_moray_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "green_moray",
+    "species": "green_moray",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40443
+  },
+  {
+    "id": "reef4_clown_triggerfish_hello",
+    "text": "Hello! I'm a clown triggerfish.",
+    "voice_profile": "clown_triggerfish",
+    "species": "clown_triggerfish",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40450
+  },
+  {
+    "id": "reef4_clown_triggerfish_eat_a",
+    "text": "What a lovely snack!",
+    "voice_profile": "clown_triggerfish",
+    "species": "clown_triggerfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40451
+  },
+  {
+    "id": "reef4_clown_triggerfish_eat_b",
+    "text": "Thank you, friend!",
+    "voice_profile": "clown_triggerfish",
+    "species": "clown_triggerfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40452
+  },
+  {
+    "id": "reef4_clown_triggerfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "clown_triggerfish",
+    "species": "clown_triggerfish",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40453
+  },
+  {
+    "id": "reef4_foxface_hello",
+    "text": "Hello! I'm a foxface rabbitfish.",
+    "voice_profile": "foxface",
+    "species": "foxface",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40460
+  },
+  {
+    "id": "reef4_foxface_eat_a",
+    "text": "Yummy, thank you!",
+    "voice_profile": "foxface",
+    "species": "foxface",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40461
+  },
+  {
+    "id": "reef4_foxface_eat_b",
+    "text": "So tasty!",
+    "voice_profile": "foxface",
+    "species": "foxface",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40462
+  },
+  {
+    "id": "reef4_foxface_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "foxface",
+    "species": "foxface",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40463
+  },
+  {
+    "id": "reef4_longnose_hawkfish_hello",
+    "text": "Hello! I'm a longnose hawkfish.",
+    "voice_profile": "longnose_hawkfish",
+    "species": "longnose_hawkfish",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40470
+  },
+  {
+    "id": "reef4_longnose_hawkfish_eat_a",
+    "text": "Oh, delicious!",
+    "voice_profile": "longnose_hawkfish",
+    "species": "longnose_hawkfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40471
+  },
+  {
+    "id": "reef4_longnose_hawkfish_eat_b",
+    "text": "That is lovely!",
+    "voice_profile": "longnose_hawkfish",
+    "species": "longnose_hawkfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40472
+  },
+  {
+    "id": "reef4_longnose_hawkfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "longnose_hawkfish",
+    "species": "longnose_hawkfish",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40473
+  },
+  {
+    "id": "reef4_flying_gurnard_hello",
+    "text": "Hello! I'm a flying gurnard.",
+    "voice_profile": "flying_gurnard",
+    "species": "flying_gurnard",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40480
+  },
+  {
+    "id": "reef4_flying_gurnard_eat_a",
+    "text": "What a lovely snack!",
+    "voice_profile": "flying_gurnard",
+    "species": "flying_gurnard",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40481
+  },
+  {
+    "id": "reef4_flying_gurnard_eat_b",
+    "text": "Thank you, friend!",
+    "voice_profile": "flying_gurnard",
+    "species": "flying_gurnard",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40482
+  },
+  {
+    "id": "reef4_flying_gurnard_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "flying_gurnard",
+    "species": "flying_gurnard",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40483
+  },
+  {
+    "id": "reef4_yellow_goatfish_hello",
+    "text": "Hello! I'm a yellow goatfish.",
+    "voice_profile": "yellow_goatfish",
+    "species": "yellow_goatfish",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40490
+  },
+  {
+    "id": "reef4_yellow_goatfish_eat_a",
+    "text": "Yummy, thank you!",
+    "voice_profile": "yellow_goatfish",
+    "species": "yellow_goatfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40491
+  },
+  {
+    "id": "reef4_yellow_goatfish_eat_b",
+    "text": "So tasty!",
+    "voice_profile": "yellow_goatfish",
+    "species": "yellow_goatfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40492
+  },
+  {
+    "id": "reef4_yellow_goatfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "yellow_goatfish",
+    "species": "yellow_goatfish",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40493
+  },
+  {
+    "id": "reef4_humphead_wrasse_hello",
+    "text": "Hello! I'm a humphead wrasse.",
+    "voice_profile": "humphead_wrasse",
+    "species": "humphead_wrasse",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.93,
+    "seed": 40500
+  },
+  {
+    "id": "reef4_humphead_wrasse_eat_a",
+    "text": "Oh, delicious!",
+    "voice_profile": "humphead_wrasse",
+    "species": "humphead_wrasse",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40501
+  },
+  {
+    "id": "reef4_humphead_wrasse_eat_b",
+    "text": "That is lovely!",
+    "voice_profile": "humphead_wrasse",
+    "species": "humphead_wrasse",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40502
+  },
+  {
+    "id": "reef4_humphead_wrasse_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "humphead_wrasse",
+    "species": "humphead_wrasse",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40503
+  },
+  {
+    "id": "reef4_orange_spotted_filefish_hello",
+    "text": "Hello! I'm an orange-spotted filefish.",
+    "voice_profile": "orange_spotted_filefish",
+    "species": "orange_spotted_filefish",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40510
+  },
+  {
+    "id": "reef4_orange_spotted_filefish_eat_a",
+    "text": "What a lovely snack!",
+    "voice_profile": "orange_spotted_filefish",
+    "species": "orange_spotted_filefish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40511
+  },
+  {
+    "id": "reef4_orange_spotted_filefish_eat_b",
+    "text": "Thank you, friend!",
+    "voice_profile": "orange_spotted_filefish",
+    "species": "orange_spotted_filefish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40512
+  },
+  {
+    "id": "reef4_orange_spotted_filefish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "orange_spotted_filefish",
+    "species": "orange_spotted_filefish",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40513
+  },
+  {
+    "id": "reef4_pinnate_batfish_hello",
+    "text": "Hello! I'm a pinnate batfish.",
+    "voice_profile": "pinnate_batfish",
+    "species": "pinnate_batfish",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.97,
+    "seed": 40520
+  },
+  {
+    "id": "reef4_pinnate_batfish_eat_a",
+    "text": "Yummy, thank you!",
+    "voice_profile": "pinnate_batfish",
+    "species": "pinnate_batfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40521
+  },
+  {
+    "id": "reef4_pinnate_batfish_eat_b",
+    "text": "So tasty!",
+    "voice_profile": "pinnate_batfish",
+    "species": "pinnate_batfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40522
+  },
+  {
+    "id": "reef4_pinnate_batfish_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "pinnate_batfish",
+    "species": "pinnate_batfish",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40523
+  },
+  {
+    "id": "reef4_remora_hello",
+    "text": "Hello! I am a remora.",
+    "voice_profile": "remora",
+    "species": "remora",
+    "event": "hello",
+    "instruction": "Clear English. Remora: REM-uh-ruh. Emphasize remora, gently separate each word.",
+    "rate": 0.88,
+    "seed": 40630
+  },
+  {
+    "id": "reef4_remora_eat_a",
+    "text": "Oh, delicious!",
+    "voice_profile": "remora",
+    "species": "remora",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40531
+  },
+  {
+    "id": "reef4_remora_eat_b",
+    "text": "That is lovely!",
+    "voice_profile": "remora",
+    "species": "remora",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40532
+  },
+  {
+    "id": "reef4_remora_full",
+    "text": "I'm full now. Thank you!",
+    "voice_profile": "remora",
+    "species": "remora",
+    "event": "full",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.97,
+    "seed": 40533
+  },
+  {
+    "id": "reef4_oarfish_hello",
+    "text": "Hello! I'm an oarfish.",
+    "voice_profile": "oarfish",
+    "species": "oarfish",
+    "event": "hello",
+    "instruction": "Clear, warm self-introduction. Emphasize the whole animal name.",
+    "rate": 0.93,
+    "seed": 40540
+  },
+  {
+    "id": "reef4_oarfish_eat_a",
+    "text": "What a lovely snack!",
+    "voice_profile": "oarfish",
+    "species": "oarfish",
+    "event": "eat_a",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40541
+  },
+  {
+    "id": "reef4_oarfish_eat_b",
+    "text": "Thank you, friend!",
+    "voice_profile": "oarfish",
+    "species": "oarfish",
+    "event": "eat_b",
+    "instruction": "A happy satisfied snack reaction. Expressive clear English. Keep the character voice.",
+    "rate": 0.93,
+    "seed": 40542
+  },
+  {
+    "id": "reef4_oarfish_full",
+    "text": "I am full now. Thank you!",
+    "voice_profile": "oarfish",
+    "species": "oarfish",
+    "event": "full",
+    "instruction": "Clearly pronounce I am full now. Warm satisfied gratitude. No extra words.",
+    "rate": 0.93,
+    "seed": 40643
+  }
+]

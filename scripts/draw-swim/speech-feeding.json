@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ds4_feed",
+    "text": "Touch the water to give your friends a little food.",
+    "voice_profile": "guide",
+    "scene": "Draw and Swim, feeding: feed",
+    "focus": "",
+    "stress": [],
+    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
+    "rate": 0.94,
+    "seed": 132700
+  },
+  {
+    "id": "ds4_food",
+    "text": "You can drag a little food into the water.",
+    "voice_profile": "guide",
+    "scene": "Draw and Swim, feeding: food",
+    "focus": "",
+    "stress": [],
+    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
+    "rate": 0.94,
+    "seed": 132701
+  },
+  {
+    "id": "ds4_yummy",
+    "text": "What a lovely little snack.",
+    "voice_profile": "guide",
+    "scene": "Draw and Swim, feeding: yummy",
+    "focus": "",
+    "stress": [],
+    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
+    "rate": 0.94,
+    "seed": 132702
+  },
+  {
+    "id": "ds4_thanks",
+    "text": "Thank you for the food.",
+    "voice_profile": "guide",
+    "scene": "Draw and Swim, feeding: thanks",
+    "focus": "",
+    "stress": [],
+    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
+    "rate": 0.94,
+    "seed": 132703
+  },
+  {
+    "id": "ds4_tasty",
+    "text": "That tastes lovely.",
+    "voice_profile": "guide",
+    "scene": "Draw and Swim, feeding: tasty",
+    "focus": "",
+    "stress": [],
+    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
+    "rate": 0.94,
+    "seed": 132704
+  },
+  {
+    "id": "ds4_full",
+    "text": "My tummy is full. Thank you.",
+    "voice_profile": "guide",
+    "scene": "Draw and Swim, feeding: full",
+    "focus": "",
+    "stress": [],
+    "instruction": "Read warmly and gently to a young child. Natural even stress, no emphatic words, no shouting.",
+    "rate": 0.94,
+    "seed": 132705
+  }
+]

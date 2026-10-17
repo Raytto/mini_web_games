@@ -1,0 +1,54 @@
+[
+  {
+    "id": "dr1_welcome",
+    "text": "Let's play the drums!",
+    "voice_profile": "pip",
+    "scene": "Little Drummer: welcome",
+    "focus": "drums",
+    "stress": [
+      "drums"
+    ],
+    "instruction": "Friendly encouraging child voice. Clearly speak the exact words, with a playful musical rhythm.",
+    "rate": 0.97,
+    "seed": 141510
+  },
+  {
+    "id": "dr1_guide",
+    "text": "Tap the glowing drums. Take your time.",
+    "voice_profile": "pip",
+    "scene": "Little Drummer: guide",
+    "focus": "drums",
+    "stress": [
+      "drums"
+    ],
+    "instruction": "Friendly encouraging child voice. Clearly speak the exact words, with a playful musical rhythm.",
+    "rate": 0.97,
+    "seed": 141511
+  },
+  {
+    "id": "dr1_together",
+    "text": "Two lights! Tap both drums together.",
+    "voice_profile": "pip",
+    "scene": "Little Drummer: together",
+    "focus": "drums",
+    "stress": [
+      "drums"
+    ],
+    "instruction": "Friendly encouraging child voice. Clearly speak the exact words, with a playful musical rhythm.",
+    "rate": 0.97,
+    "seed": 141512
+  },
+  {
+    "id": "dr1_done",
+    "text": "Great drumming! You played the whole rhythm!",
+    "voice_profile": "pip",
+    "scene": "Little Drummer: done",
+    "focus": "drums",
+    "stress": [
+      "Great"
+    ],
+    "instruction": "Friendly encouraging child voice. Clearly speak the exact words, with a playful musical rhythm.",
+    "rate": 0.97,
+    "seed": 141513
+  }
+]

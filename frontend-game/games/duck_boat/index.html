@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#c0eee9">
+  <title>Duck Boat · 小鸭子上船</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦆%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="assets/duck-poses-v1.webp" as="image">
+  <link rel="preload" href="assets/boat-v1.webp" as="image">
+  <link rel="stylesheet" href="style.css?v=20260930duck1">
+  <script defer src="../../scripts/i18n-messages.js?v=20260924b"></script>
+  <script defer src="../../scripts/english-home.js?v=20260930duck1"></script>
+  <script defer src="../../scripts/i18n.js?v=20260924e2"></script>
+<link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+<script defer src="../../scripts/game-home.js?v=20261003home2"></script>
+</head>
+<body>
+  <div id="harbor" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="round-button home" href="../../home.html" aria-label="返回游戏首页"><svg viewBox="0 0 32 32"><path d="m5 15 11-9 11 9M9 13v13h14V13M13 26v-9h6v9"/></svg></a>
+    <div class="title"><span class="eyebrow" data-i18n-ignore>ONE LITTLE DUCK AT A TIME</span><h1>小鸭子上船</h1></div>
+    <div id="counter" class="counter" data-i18n-ignore aria-label="0 ducks aboard">
+      <span class="counter-duck duck" aria-hidden="true"></span><strong id="aboard-count">0</strong><span class="slash">/</span><span id="capacity-count">…</span>
+    </div>
+    <div class="sound-controls" data-i18n-ignore>
+      <button id="replay" class="round-button" type="button" aria-label="Listen again" title="Listen again"><svg viewBox="0 0 32 32"><path d="M5 12h6l7-6v20l-7-6H5zM22 11q6 5 0 10M25 6q11 10 0 20"/></svg></button>
+      <button id="mute" class="round-button small" type="button" aria-label="Mute English voices" aria-pressed="false"><svg viewBox="0 0 32 32"><path d="M6 13h5l7-6v18l-7-6H6zM23 12v8M27 9v14"/><path class="mute-line" d="m5 5 22 22"/></svg></button>
+    </div>
+  </header>
+  <main id="play-area" data-i18n-ignore aria-label="Help the ducks board the boat">
+    <section id="dock" class="dock" aria-label="Ducks waiting on the dock">
+      <div class="dock-board"><div class="dock-sign"><span>DUCK DOCK</span><i aria-hidden="true">→</i></div><div id="queue" class="queue"></div><div class="dock-bolts" aria-hidden="true"></div></div>
+      <div class="pier-post post-one" aria-hidden="true"></div><div class="pier-post post-two" aria-hidden="true"></div>
+    </section>
+    <section id="water" class="water" aria-label="Boat boarding area">
+      <div class="water-ripple ripple-one" aria-hidden="true"></div><div class="water-ripple ripple-two" aria-hidden="true"></div>
+      <div id="boat" class="boat" role="group" aria-label="The boat">
+        <div class="wake" aria-hidden="true"></div>
+        <img class="boat-art" src="assets/boat-v1.webp" alt="" draggable="false">
+        <div id="seats" class="seats"></div>
+        <div class="boat-glow" aria-hidden="true"></div>
+      </div>
+      <div id="celebration" class="celebration" aria-hidden="true"><span>✦</span><strong>All aboard!</strong><span>✦</span></div>
+    </section>
+  </main>
+  <footer class="lesson" data-i18n-ignore>
+    <div class="spoken-card"><span id="caption">Here comes our boat!</span><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span></div>
+    <p id="hint">Tap a duck • Drag to the boat</p>
+  </footer>
+  <div id="loading" class="loading" role="status" data-i18n-ignore><span class="spinner"></span><span id="loading-text">Getting our boat ready…</span><button id="retry-assets" type="button" hidden>Try again</button></div>
+  <button id="sound-note" class="sound-note" type="button" hidden data-i18n-ignore>Tap 🔊 to hear the ducks.</button>
+  <script>window.MINI_GAME={id:'duck_boat',name:'Duck Boat'};</script>
+  <script type="module" src="game.js?v=20260930duck1" onerror="document.getElementById('loading-text').textContent='Could not load the game.';document.getElementById('retry-assets').hidden=false;document.getElementById('retry-assets').onclick=()=>location.reload();"></script>
+  <script defer src="../../scripts/bankend-config.js?v=2"></script>
+  <script defer src="../../scripts/tracking.js?v=2"></script>
+</body>
+</html>

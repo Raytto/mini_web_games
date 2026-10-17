@@ -1,0 +1,28 @@
+{
+  "provider": "Alibaba Cloud Model Studio",
+  "model": "cosyvoice-v3.5-plus",
+  "language": "English",
+  "synthetic": true,
+  "processing": "mono 24kHz MP3, 80kbps, -18 LUFS, -2dBTP; original pitch and timing",
+  "clips": [
+    {
+      "id": "dd1_over_here",
+      "text": "Try digging over here!",
+      "voice_profile": "guide",
+      "scene": "Dino Dig: dd1_over_here",
+      "focus": "",
+      "stress": [],
+      "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+      "rate": 0.94,
+      "seed": 131066,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxguide35-18a5e9a910484347afa3630c5d02bd44",
+      "file": "dd1_over_here.mp3",
+      "fingerprint": "e1c18f9e7544c031e7d623ffc5efa01fe05d4348c42f24fc8731a31e15f39b83",
+      "duration": 1.464,
+      "rms_dbfs": -20.26,
+      "peak_dbfs": -4.67,
+      "sha256": "ae48ed7a5fbf464cdc7d89eb27438070dfcd003b80c0308c127e0d51b74f47e9"
+    }
+  ]
+}

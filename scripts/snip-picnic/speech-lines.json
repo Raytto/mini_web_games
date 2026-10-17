@@ -1,0 +1,432 @@
+[
+  {
+    "id": "sp2_intro_apple",
+    "text": "Apples grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_apple",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94500
+  },
+  {
+    "id": "sp2_share_apple",
+    "text": "Apples for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_apple",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94501
+  },
+  {
+    "id": "sp2_intro_pear",
+    "text": "Pears grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_pear",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94502
+  },
+  {
+    "id": "sp2_share_pear",
+    "text": "Let's share these pears!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_pear",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94503
+  },
+  {
+    "id": "sp2_intro_orange",
+    "text": "Oranges grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_orange",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94504
+  },
+  {
+    "id": "sp2_share_orange",
+    "text": "Oranges for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_orange",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94505
+  },
+  {
+    "id": "sp2_intro_peach",
+    "text": "Peaches grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_peach",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94506
+  },
+  {
+    "id": "sp2_share_peach",
+    "text": "Peaches for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_peach",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94507
+  },
+  {
+    "id": "sp2_intro_plum",
+    "text": "Plums grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_plum",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94508
+  },
+  {
+    "id": "sp2_share_plum",
+    "text": "Plums for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_plum",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94509
+  },
+  {
+    "id": "sp2_intro_cherry",
+    "text": "Cherries grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_cherry",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94510
+  },
+  {
+    "id": "sp2_share_cherry",
+    "text": "Let's share these cherries!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_cherry",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94511
+  },
+  {
+    "id": "sp2_intro_mango",
+    "text": "Mangoes grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_mango",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94512
+  },
+  {
+    "id": "sp2_share_mango",
+    "text": "Mangoes for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_mango",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94513
+  },
+  {
+    "id": "sp2_intro_lemon",
+    "text": "Lemons grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_lemon",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94514
+  },
+  {
+    "id": "sp2_share_lemon",
+    "text": "Lemons for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_lemon",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94515
+  },
+  {
+    "id": "sp2_intro_lychee",
+    "text": "Lychees grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_lychee",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94516
+  },
+  {
+    "id": "sp2_share_lychee",
+    "text": "Lychees for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_lychee",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94517
+  },
+  {
+    "id": "sp2_intro_persimmon",
+    "text": "Persimmons grow on trees. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_persimmon",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94518
+  },
+  {
+    "id": "sp2_share_persimmon",
+    "text": "Persimmons for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_persimmon",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94519
+  },
+  {
+    "id": "sp2_intro_grape",
+    "text": "Grapes grow on climbing vines. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_grape",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94520
+  },
+  {
+    "id": "sp2_share_grape",
+    "text": "Grapes for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_grape",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94521
+  },
+  {
+    "id": "sp2_intro_kiwi",
+    "text": "Kiwifruit grow on climbing vines. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_kiwi",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94522
+  },
+  {
+    "id": "sp2_share_kiwi",
+    "text": "Kiwifruit for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_kiwi",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94523
+  },
+  {
+    "id": "sp2_intro_passion_fruit",
+    "text": "Passion fruit grows on climbing vines. Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_passion_fruit",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94524
+  },
+  {
+    "id": "sp2_share_passion_fruit",
+    "text": "Passion fruit for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_passion_fruit",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94525
+  },
+  {
+    "id": "sp2_intro_watermelon",
+    "text": "Watermelons grow on vines along the ground. Touch the fruit to pick it.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_watermelon",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94526
+  },
+  {
+    "id": "sp2_share_watermelon",
+    "text": "Watermelons for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_watermelon",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94527
+  },
+  {
+    "id": "sp2_intro_cantaloupe",
+    "text": "Cantaloupes grow on vines along the ground. Touch the fruit to pick it.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_cantaloupe",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94528
+  },
+  {
+    "id": "sp2_share_cantaloupe",
+    "text": "Cantaloupes for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_cantaloupe",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94529
+  },
+  {
+    "id": "sp2_intro_strawberry",
+    "text": "Strawberries grow on low plants near the ground. Touch the fruit to pick it.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_strawberry",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94530
+  },
+  {
+    "id": "sp2_share_strawberry",
+    "text": "Strawberries for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_strawberry",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94531
+  },
+  {
+    "id": "sp2_intro_pineapple",
+    "text": "Pineapples grow in the middle of leafy plants. Touch the fruit to pick it.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_pineapple",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94532
+  },
+  {
+    "id": "sp2_share_pineapple",
+    "text": "Pineapples for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_pineapple",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94533
+  },
+  {
+    "id": "sp2_intro_banana",
+    "text": "Bananas grow in bunches on tall plants. Touch the fruit to pick it.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_banana",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94534
+  },
+  {
+    "id": "sp2_share_banana",
+    "text": "Bananas for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_banana",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94535
+  },
+  {
+    "id": "sp2_intro_blueberry",
+    "text": "Blueberries grow on bushes. Touch the fruit to pick it.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_blueberry",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94536
+  },
+  {
+    "id": "sp2_share_blueberry",
+    "text": "Blueberries for everyone! Let's share!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_blueberry",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94537
+  },
+  {
+    "id": "sp2_intro_raspberry",
+    "text": "Raspberries grow on bushes. Touch the fruit to pick it.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: intro_raspberry",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94538
+  },
+  {
+    "id": "sp2_share_raspberry",
+    "text": "Let's share these raspberries!",
+    "voice_profile": "teddy",
+    "scene": "Fruit garden: share_raspberry",
+    "stress": [],
+    "instruction": "Happy child English. Warm delight at sharing the fruit. Clear words, no fillers.",
+    "rate": 0.98,
+    "seed": 94539
+  },
+  {
+    "id": "sp2_rope",
+    "text": "Cut the rope to drop this fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: rope",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94540
+  },
+  {
+    "id": "sp2_pick",
+    "text": "Touch the fruit to pick it.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: pick",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94541
+  },
+  {
+    "id": "sp2_mixed",
+    "text": "Cut a rope, or touch the fruit.",
+    "voice_profile": "guide",
+    "scene": "Fruit garden: mixed",
+    "stress": [],
+    "instruction": "Warm child English. Curious and clear. Stress the fruit name. Exact words, no fillers.",
+    "rate": 0.98,
+    "seed": 94542
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "dd4_start",
+    "text": "Here is a little shovel! Touch the soil, or pick up the shovel.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd4_start",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131074
+  },
+  {
+    "id": "dd4_brush",
+    "text": "Here is a soft brush! Touch the soil, or pick up the brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd4_brush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131075
+  },
+  {
+    "id": "dd4_fine",
+    "text": "Here is a fine brush! Touch the soil, or pick up the brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd4_fine",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131076
+  }
+]

@@ -1,0 +1,701 @@
+[
+  {
+    "id": "ac1_welcome",
+    "text": "Welcome to our little animal clinic. Let us help a friend!",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_welcome",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131020
+  },
+  {
+    "id": "ac1_next",
+    "text": "Here comes another little friend!",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_next",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131021
+  },
+  {
+    "id": "ac1_done",
+    "text": "I feel much better. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_done",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful grateful child voice. Smile clearly. Exact English. Warm relief, not loud.",
+    "rate": 0.94,
+    "seed": 131022
+  },
+  {
+    "id": "ac1_great",
+    "text": "You are so gentle!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_great",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131023
+  },
+  {
+    "id": "ac1_again",
+    "text": "Let us help this friend again.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_again",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131024
+  },
+  {
+    "id": "ac1_keep",
+    "text": "Gently, gently. You are doing it!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_keep",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131025
+  },
+  {
+    "id": "ac1_two",
+    "text": "Which tool can help our friend?",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_two",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131026
+  },
+  {
+    "id": "ac1_tool_hand",
+    "text": "A gentle helping hand.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_tool_hand",
+    "focus": "Helping hand",
+    "stress": [
+      "Helping hand"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131027
+  },
+  {
+    "id": "ac1_choose_hand",
+    "text": "Use your gentle helping hand.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_choose_hand",
+    "focus": "Helping hand",
+    "stress": [
+      "Helping hand"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131028
+  },
+  {
+    "id": "ac1_tool_sponge",
+    "text": "This is a soft sponge.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_tool_sponge",
+    "focus": "Soft sponge",
+    "stress": [
+      "Soft sponge"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131029
+  },
+  {
+    "id": "ac1_choose_sponge",
+    "text": "Find the soft sponge.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_choose_sponge",
+    "focus": "Soft sponge",
+    "stress": [
+      "Soft sponge"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131030
+  },
+  {
+    "id": "ac1_tool_towel",
+    "text": "This is a fluffy towel.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_tool_towel",
+    "focus": "Fluffy towel",
+    "stress": [
+      "Fluffy towel"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131031
+  },
+  {
+    "id": "ac1_choose_towel",
+    "text": "Find the fluffy towel.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_choose_towel",
+    "focus": "Fluffy towel",
+    "stress": [
+      "Fluffy towel"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131032
+  },
+  {
+    "id": "ac1_tool_cotton",
+    "text": "This is soft cotton.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_tool_cotton",
+    "focus": "Soft cotton",
+    "stress": [
+      "Soft cotton"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131033
+  },
+  {
+    "id": "ac1_choose_cotton",
+    "text": "Find the soft cotton.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_choose_cotton",
+    "focus": "Soft cotton",
+    "stress": [
+      "Soft cotton"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131034
+  },
+  {
+    "id": "ac1_tool_bandage",
+    "text": "This is a little bandage.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_tool_bandage",
+    "focus": "Little bandage",
+    "stress": [
+      "Little bandage"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131035
+  },
+  {
+    "id": "ac1_choose_bandage",
+    "text": "Find the little bandage.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_choose_bandage",
+    "focus": "Little bandage",
+    "stress": [
+      "Little bandage"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131036
+  },
+  {
+    "id": "ac1_tool_brush",
+    "text": "This is a soft brush.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_tool_brush",
+    "focus": "Soft brush",
+    "stress": [
+      "Soft brush"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131037
+  },
+  {
+    "id": "ac1_choose_brush",
+    "text": "Find the soft brush.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_choose_brush",
+    "focus": "Soft brush",
+    "stress": [
+      "Soft brush"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131038
+  },
+  {
+    "id": "ac1_tool_coldpack",
+    "text": "This is a cool pack.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_tool_coldpack",
+    "focus": "Cool pack",
+    "stress": [
+      "Cool pack"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131039
+  },
+  {
+    "id": "ac1_choose_coldpack",
+    "text": "Find the cool pack.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_choose_coldpack",
+    "focus": "Cool pack",
+    "stress": [
+      "Cool pack"
+    ],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131040
+  },
+  {
+    "id": "ac1_ask_roll",
+    "text": "Help me roll over, gently.",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_ask_roll",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131041
+  },
+  {
+    "id": "ac1_step_roll",
+    "text": "I am the right way up!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_step_roll",
+    "focus": "",
+    "stress": [],
+    "instruction": "Happy relieved child voice. Clear English. Gentle gratitude, smiling, exact words.",
+    "rate": 0.94,
+    "seed": 131042
+  },
+  {
+    "id": "ac1_ask_wash",
+    "text": "Wipe the muddy spots, gently.",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_ask_wash",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131043
+  },
+  {
+    "id": "ac1_step_wash",
+    "text": "The mud is gone. So clean!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_step_wash",
+    "focus": "",
+    "stress": [],
+    "instruction": "Happy relieved child voice. Clear English. Gentle gratitude, smiling, exact words.",
+    "rate": 0.94,
+    "seed": 131044
+  },
+  {
+    "id": "ac1_ask_dry",
+    "text": "Pat me dry with the towel.",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_ask_dry",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131045
+  },
+  {
+    "id": "ac1_step_dry",
+    "text": "Warm and dry. That feels nice!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_step_dry",
+    "focus": "",
+    "stress": [],
+    "instruction": "Happy relieved child voice. Clear English. Gentle gratitude, smiling, exact words.",
+    "rate": 0.94,
+    "seed": 131046
+  },
+  {
+    "id": "ac1_ask_clean",
+    "text": "Gently clean around my little scratch.",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_ask_clean",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131047
+  },
+  {
+    "id": "ac1_step_clean",
+    "text": "Nice and clean. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_step_clean",
+    "focus": "",
+    "stress": [],
+    "instruction": "Happy relieved child voice. Clear English. Gentle gratitude, smiling, exact words.",
+    "rate": 0.94,
+    "seed": 131048
+  },
+  {
+    "id": "ac1_ask_cover",
+    "text": "Put the bandage on my little scratch.",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_ask_cover",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131049
+  },
+  {
+    "id": "ac1_step_cover",
+    "text": "The bandage is on. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_step_cover",
+    "focus": "",
+    "stress": [],
+    "instruction": "Happy relieved child voice. Clear English. Gentle gratitude, smiling, exact words.",
+    "rate": 0.94,
+    "seed": 131050
+  },
+  {
+    "id": "ac1_ask_brush",
+    "text": "Brush the leaves away, gently.",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_ask_brush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131051
+  },
+  {
+    "id": "ac1_step_brush",
+    "text": "All the leaves are gone!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_step_brush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Happy relieved child voice. Clear English. Gentle gratitude, smiling, exact words.",
+    "rate": 0.94,
+    "seed": 131052
+  },
+  {
+    "id": "ac1_ask_cool",
+    "text": "Put the cool pack on my little bump.",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_ask_cool",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131053
+  },
+  {
+    "id": "ac1_step_cool",
+    "text": "Cool and comfy. That feels better!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_step_cool",
+    "focus": "",
+    "stress": [],
+    "instruction": "Happy relieved child voice. Clear English. Gentle gratitude, smiling, exact words.",
+    "rate": 0.94,
+    "seed": 131054
+  },
+  {
+    "id": "ac1_ask_comfort",
+    "text": "Give me a gentle pat.",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_ask_comfort",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131055
+  },
+  {
+    "id": "ac1_step_comfort",
+    "text": "Thank you for taking care of me!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_step_comfort",
+    "focus": "",
+    "stress": [],
+    "instruction": "Happy relieved child voice. Clear English. Gentle gratitude, smiling, exact words.",
+    "rate": 0.94,
+    "seed": 131056
+  },
+  {
+    "id": "ac1_intro_turtle",
+    "text": "Turtle rolled onto its back. Let us help.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_turtle",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131057
+  },
+  {
+    "id": "ac1_thanks_turtle",
+    "text": "I can walk again. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_turtle",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131058
+  },
+  {
+    "id": "ac1_intro_rabbit",
+    "text": "Bunny splashed in a muddy puddle.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_rabbit",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131059
+  },
+  {
+    "id": "ac1_thanks_rabbit",
+    "text": "My fur is clean and fluffy. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_rabbit",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131060
+  },
+  {
+    "id": "ac1_intro_cat",
+    "text": "Kitty has a little scratch on its paw.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_cat",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131061
+  },
+  {
+    "id": "ac1_thanks_cat",
+    "text": "My little paw feels better. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_cat",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131062
+  },
+  {
+    "id": "ac1_intro_hedgehog",
+    "text": "Hedgehog has leaves stuck in its coat.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_hedgehog",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131063
+  },
+  {
+    "id": "ac1_thanks_hedgehog",
+    "text": "No more tickly leaves. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_hedgehog",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131064
+  },
+  {
+    "id": "ac1_intro_bear",
+    "text": "Bear has a little bump. Let us be gentle.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_bear",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131065
+  },
+  {
+    "id": "ac1_thanks_bear",
+    "text": "That feels so much better. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_bear",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131066
+  },
+  {
+    "id": "ac1_intro_duck",
+    "text": "Duck is wet and chilly after the rain.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_duck",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131067
+  },
+  {
+    "id": "ac1_thanks_duck",
+    "text": "Warm and dry. Thank you for helping me!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_duck",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131068
+  },
+  {
+    "id": "ac1_intro_ladybug",
+    "text": "Ladybug rolled onto its back. Let us help.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_ladybug",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131069
+  },
+  {
+    "id": "ac1_thanks_ladybug",
+    "text": "I can wiggle my little feet. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_ladybug",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131070
+  },
+  {
+    "id": "ac1_intro_fox",
+    "text": "Fox has muddy paws after a forest walk.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_fox",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131071
+  },
+  {
+    "id": "ac1_thanks_fox",
+    "text": "My paws are clean again. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_fox",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131072
+  },
+  {
+    "id": "ac1_intro_dog",
+    "text": "Puppy has a little scratch on its paw.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_dog",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131073
+  },
+  {
+    "id": "ac1_thanks_dog",
+    "text": "My little paw feels better. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_dog",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131074
+  },
+  {
+    "id": "ac1_intro_squirrel",
+    "text": "Squirrel has leaves stuck in its fluffy tail.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_squirrel",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131075
+  },
+  {
+    "id": "ac1_thanks_squirrel",
+    "text": "My tail is fluffy again. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_squirrel",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131076
+  },
+  {
+    "id": "ac1_intro_panda",
+    "text": "Panda has a little bump. Let us help.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_panda",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131077
+  },
+  {
+    "id": "ac1_thanks_panda",
+    "text": "That feels so much better. Thank you!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_panda",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131078
+  },
+  {
+    "id": "ac1_intro_penguin",
+    "text": "Penguin is wet and chilly after the rain.",
+    "voice_profile": "guide",
+    "scene": "Animal Clinic: ac1_intro_penguin",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm playful child voice. Clear gentle English. Exact words. Friendly, never worried.",
+    "rate": 0.94,
+    "seed": 131079
+  },
+  {
+    "id": "ac1_thanks_penguin",
+    "text": "Warm and dry. Thank you for helping me!",
+    "voice_profile": "teddy",
+    "scene": "Animal Clinic: ac1_thanks_penguin",
+    "focus": "",
+    "stress": [],
+    "instruction": "Joyful thankful child voice. A lovely smile and relief. Clear exact words, unhurried.",
+    "rate": 0.94,
+    "seed": 131080
+  }
+]

@@ -1,0 +1,862 @@
+[
+  {
+    "id": "pf_again",
+    "text": "Let’s play again!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: pf_again",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6810
+  },
+  {
+    "id": "pf_nice",
+    "text": "You did it!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: pf_nice",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6811
+  },
+  {
+    "id": "pf_try",
+    "text": "Let’s try again.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: pf_try",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6812
+  },
+  {
+    "id": "pf_listen",
+    "text": "Let’s listen.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: pf_listen",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6813
+  },
+  {
+    "id": "pf_free",
+    "text": "Let’s play your way.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: pf_free",
+    "stress": [],
+    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
+    "rate": 0.91,
+    "seed": 26814
+  },
+  {
+    "id": "pf_next",
+    "text": "Here comes a new friend!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: pf_next",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6815
+  },
+  {
+    "id": "pf_help",
+    "text": "Tap me to listen again.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: pf_help",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6816
+  },
+  {
+    "id": "hs_short",
+    "text": "Short hair, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_short",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6817
+  },
+  {
+    "id": "hs_long",
+    "text": "Long hair, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_long",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6818
+  },
+  {
+    "id": "hs_neat",
+    "text": "Brush my hair, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_neat",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6819
+  },
+  {
+    "id": "hs_cut",
+    "text": "Let’s cut your hair.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_cut",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6820
+  },
+  {
+    "id": "hs_brush",
+    "text": "Let’s brush your hair.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_brush",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6821
+  },
+  {
+    "id": "hs_grow",
+    "text": "Let’s grow it back.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_grow",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6822
+  },
+  {
+    "id": "hs_short_done",
+    "text": "My hair is short! I love it!",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_short_done",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6823
+  },
+  {
+    "id": "hs_long_done",
+    "text": "My hair is long! I love it!",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_long_done",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6824
+  },
+  {
+    "id": "hs_neat_done",
+    "text": "So neat and smooth! Thank you!",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_neat_done",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6825
+  },
+  {
+    "id": "hs_giggle",
+    "text": "That tickles!",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_giggle",
+    "stress": [],
+    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
+    "rate": 0.91,
+    "seed": 26826
+  },
+  {
+    "id": "hs_photo",
+    "text": "Look at my new hair!",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_photo",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6827
+  },
+  {
+    "id": "hs_red",
+    "text": "Red hair!",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_red",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6828
+  },
+  {
+    "id": "hs_blue",
+    "text": "Your hair is blue.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_blue",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6829
+  },
+  {
+    "id": "hs_yellow",
+    "text": "Yellow hair!",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_yellow",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6830
+  },
+  {
+    "id": "hs_finish",
+    "text": "Three happy friends. What lovely hair!",
+    "voice_profile": "pip",
+    "scene": "Preschool play: hs_finish",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6831
+  },
+  {
+    "id": "sp_cut",
+    "text": "Cut the rope.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_cut",
+    "stress": [],
+    "instruction": "Clear child English. Emphasize CUT and ROPE. No fillers. Speak the exact sentence.",
+    "rate": 0.91,
+    "seed": 26832
+  },
+  {
+    "id": "sp_red",
+    "text": "Cut the red rope.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_red",
+    "stress": [],
+    "instruction": "Clear child English. Emphasize CUT and ROPE. No fillers. Speak the exact sentence.",
+    "rate": 0.91,
+    "seed": 26833
+  },
+  {
+    "id": "sp_blue",
+    "text": "Cut the blue rope.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_blue",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6834
+  },
+  {
+    "id": "sp_red_other",
+    "text": "That’s the red rope. Try the blue rope.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_red_other",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6835
+  },
+  {
+    "id": "sp_blue_other",
+    "text": "That’s the blue rope. Try the red rope.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_blue_other",
+    "stress": [],
+    "instruction": "Clear child English. Emphasize CUT and ROPE. No fillers. Speak the exact sentence.",
+    "rate": 0.91,
+    "seed": 26836
+  },
+  {
+    "id": "sp_down",
+    "text": "Down it goes!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_down",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6837
+  },
+  {
+    "id": "sp_roll",
+    "text": "Look! It’s rolling!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_roll",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6838
+  },
+  {
+    "id": "sp_bounce",
+    "text": "Bounce, bounce!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_bounce",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6839
+  },
+  {
+    "id": "sp_basket",
+    "text": "It’s in the basket!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_basket",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6840
+  },
+  {
+    "id": "sp_thanks",
+    "text": "Thank you for the picnic!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_thanks",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6841
+  },
+  {
+    "id": "sp_apple",
+    "text": "A juicy apple!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_apple",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6842
+  },
+  {
+    "id": "sp_pear",
+    "text": "A lovely pear!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_pear",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6843
+  },
+  {
+    "id": "sp_orange",
+    "text": "A sweet orange!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_orange",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6844
+  },
+  {
+    "id": "sp_next",
+    "text": "Let’s find another picnic.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_next",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6845
+  },
+  {
+    "id": "sp_finish",
+    "text": "Our picnic is ready. Yummy!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: sp_finish",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6846
+  },
+  {
+    "id": "ls_intro",
+    "text": "Pick a friend. Let’s make a story!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_intro",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6847
+  },
+  {
+    "id": "ls_play",
+    "text": "Let’s watch our little story.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_play",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6848
+  },
+  {
+    "id": "ls_finish",
+    "text": "What a lovely story!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_finish",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6849
+  },
+  {
+    "id": "ls_new",
+    "text": "A new place to play!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_new",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6850
+  },
+  {
+    "id": "ls_move",
+    "text": "Pick me up and move me.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_move",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6851
+  },
+  {
+    "id": "ls_wrong",
+    "text": "Here I am! Let’s listen again.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_wrong",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6852
+  },
+  {
+    "id": "gn_light",
+    "text": "Turn off the light, please.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_light",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6853
+  },
+  {
+    "id": "gn_curtain",
+    "text": "Close the curtains, please.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_curtain",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6854
+  },
+  {
+    "id": "gn_music",
+    "text": "Turn off the music, please.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_music",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6855
+  },
+  {
+    "id": "gn_light_off",
+    "text": "The light is off.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_light_off",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6856
+  },
+  {
+    "id": "gn_light_on",
+    "text": "The light is on.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_light_on",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6857
+  },
+  {
+    "id": "gn_curtain_closed",
+    "text": "The curtains are closed.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_curtain_closed",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6858
+  },
+  {
+    "id": "gn_curtain_open",
+    "text": "The curtains are open.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_curtain_open",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6859
+  },
+  {
+    "id": "gn_music_off",
+    "text": "It’s quiet now.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_music_off",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6860
+  },
+  {
+    "id": "gn_music_on",
+    "text": "The music is on.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_music_on",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6861
+  },
+  {
+    "id": "gn_sleepy",
+    "text": "I am sleepy.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_sleepy",
+    "stress": [],
+    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
+    "rate": 0.91,
+    "seed": 26862
+  },
+  {
+    "id": "gn_hug",
+    "text": "A gentle hug. Thank you.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_hug",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6863
+  },
+  {
+    "id": "gn_next",
+    "text": "Another friend is getting sleepy.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_next",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6864
+  },
+  {
+    "id": "gn_finish",
+    "text": "Everyone is asleep. Good night!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_finish",
+    "stress": [],
+    "instruction": "Gentle sleepy child voice. Soft, clear, cozy English, warm and reassuring.",
+    "rate": 0.94,
+    "seed": 6865
+  },
+  {
+    "id": "gn_night_rabbit",
+    "text": "Good night, Bunny.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_night_rabbit",
+    "stress": [],
+    "instruction": "A tender quiet goodnight. Warm clear child voice, peaceful and smiling.",
+    "rate": 0.94,
+    "seed": 6866
+  },
+  {
+    "id": "gn_night_bear",
+    "text": "Good night, Bear.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_night_bear",
+    "stress": [],
+    "instruction": "A tender quiet goodnight. Warm clear child voice, peaceful and smiling.",
+    "rate": 0.94,
+    "seed": 6867
+  },
+  {
+    "id": "gn_night_cat",
+    "text": "Good night, Kitty.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: gn_night_cat",
+    "stress": [],
+    "instruction": "A tender quiet goodnight. Warm clear child voice, peaceful and smiling.",
+    "rate": 0.94,
+    "seed": 6868
+  },
+  {
+    "id": "ls_cat",
+    "text": "Here’s the cat!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_cat",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6869
+  },
+  {
+    "id": "ls_rabbit",
+    "text": "Here’s the rabbit!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_rabbit",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6870
+  },
+  {
+    "id": "ls_bear",
+    "text": "Here’s the bear!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_bear",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6871
+  },
+  {
+    "id": "ls_duck",
+    "text": "Here’s the duck!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_duck",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6872
+  },
+  {
+    "id": "ls_fox",
+    "text": "Here’s the fox!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_fox",
+    "stress": [],
+    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
+    "rate": 0.91,
+    "seed": 26873
+  },
+  {
+    "id": "ls_owl",
+    "text": "Here’s the owl!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_owl",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6874
+  },
+  {
+    "id": "ls_ask_on_table",
+    "text": "Put me on the table, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_on_table",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6875
+  },
+  {
+    "id": "ls_at_on_table",
+    "text": "You’re on the table!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_on_table",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6876
+  },
+  {
+    "id": "ls_ask_under_table",
+    "text": "Put me under the table, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_under_table",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6877
+  },
+  {
+    "id": "ls_at_under_table",
+    "text": "You’re under the table!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_under_table",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6878
+  },
+  {
+    "id": "ls_ask_in_box",
+    "text": "Put me in the box, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_in_box",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6879
+  },
+  {
+    "id": "ls_at_in_box",
+    "text": "You are in the box!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_in_box",
+    "stress": [],
+    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
+    "rate": 0.91,
+    "seed": 26880
+  },
+  {
+    "id": "ls_ask_on_bench",
+    "text": "Put me on the bench, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_on_bench",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6881
+  },
+  {
+    "id": "ls_at_on_bench",
+    "text": "You’re on the bench!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_on_bench",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6882
+  },
+  {
+    "id": "ls_ask_under_bench",
+    "text": "Put me under the bench, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_under_bench",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6883
+  },
+  {
+    "id": "ls_at_under_bench",
+    "text": "You’re under the bench!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_under_bench",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6884
+  },
+  {
+    "id": "ls_ask_in_basket",
+    "text": "Put me in the basket, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_in_basket",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6885
+  },
+  {
+    "id": "ls_at_in_basket",
+    "text": "You are in the basket!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_in_basket",
+    "stress": [],
+    "instruction": "Clear natural English. Crisp first word. Exact words only, no fillers. Warm, unhurried child voice.",
+    "rate": 0.91,
+    "seed": 26886
+  },
+  {
+    "id": "ls_ask_on_log",
+    "text": "Put me on the log, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_on_log",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6887
+  },
+  {
+    "id": "ls_at_on_log",
+    "text": "You’re on the log!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_on_log",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6888
+  },
+  {
+    "id": "ls_ask_under_bridge",
+    "text": "Put me under the bridge, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_under_bridge",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6889
+  },
+  {
+    "id": "ls_at_under_bridge",
+    "text": "You’re under the bridge!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_under_bridge",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6890
+  },
+  {
+    "id": "ls_ask_in_tent",
+    "text": "Put me in the tent, please.",
+    "voice_profile": "pip",
+    "scene": "Preschool play: ls_ask_in_tent",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6891
+  },
+  {
+    "id": "ls_at_in_tent",
+    "text": "You’re in the tent!",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_at_in_tent",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6892
+  },
+  {
+    "id": "ls_under_hint",
+    "text": "Try a spot underneath.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_under_hint",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6893
+  },
+  {
+    "id": "ls_in_hint",
+    "text": "Let’s go inside.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_in_hint",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6894
+  },
+  {
+    "id": "ls_on_hint",
+    "text": "Try a spot on top.",
+    "voice_profile": "guide",
+    "scene": "Preschool play: ls_on_hint",
+    "stress": [],
+    "instruction": "Warm playful child guide. Clear natural English, joyful and unhurried.",
+    "rate": 0.94,
+    "seed": 6895
+  }
+]

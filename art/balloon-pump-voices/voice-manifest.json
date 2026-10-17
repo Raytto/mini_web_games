@@ -1,0 +1,261 @@
+{
+  "provider": "Alibaba Cloud Model Studio",
+  "model": "cosyvoice-v3.5-plus",
+  "language": "English",
+  "synthetic": true,
+  "processing": "mono 24kHz MP3, 80kbps, -18 LUFS, -2dBTP; original pitch and timing",
+  "clips": [
+    {
+      "id": "bp1_appear_red",
+      "text": "Look! A red balloon! Let's pump it up together!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: appear, red",
+      "focus": "red",
+      "stress": [
+        "red"
+      ],
+      "instruction": "Cheerful curious child voice. Stress red. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141400,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_appear_red.mp3",
+      "fingerprint": "39aaf84613078de00acafd38307c85bb6d916027462ef69aa01da0b4f194b086",
+      "duration": 3.456,
+      "rms_dbfs": -19.08,
+      "peak_dbfs": -2.84,
+      "sha256": "c320f897cb8de4779748835f0a0d8e1160494cc57bd2cfccf67f32ee64a876fb"
+    },
+    {
+      "id": "bp1_fly_red",
+      "text": "The red balloon is flying away!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: fly, red",
+      "focus": "red",
+      "stress": [
+        "red"
+      ],
+      "instruction": "Cheerful curious child voice. Stress red. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141401,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_fly_red.mp3",
+      "fingerprint": "13933f8432b50a3e24be0f94436a34cf590232ed82b6c75d45e851b15d847a09",
+      "duration": 2.568,
+      "rms_dbfs": -19.75,
+      "peak_dbfs": -4.15,
+      "sha256": "86a2d9620df7aadb3131d838f2416c575a8fe58ae06f4982aa79e1da46b12a3d"
+    },
+    {
+      "id": "bp1_appear_green",
+      "text": "Look! A green balloon! Let's pump it up together!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: appear, green",
+      "focus": "green",
+      "stress": [
+        "green"
+      ],
+      "instruction": "Cheerful curious child voice. Stress green. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141402,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_appear_green.mp3",
+      "fingerprint": "24a0b41f19b383e0a476d3bd3c2c653944e56fcf9a16dadbddfefa5056ae4bde",
+      "duration": 4.104,
+      "rms_dbfs": -18.78,
+      "peak_dbfs": -2.43,
+      "sha256": "0f432350bbffc31d725812f9a2c849e693b87fbe41fbf62644be3c6f3a502ae1"
+    },
+    {
+      "id": "bp1_fly_green",
+      "text": "The green balloon is flying away!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: fly, green",
+      "focus": "green",
+      "stress": [
+        "green"
+      ],
+      "instruction": "Cheerful curious child voice. Stress green. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141403,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_fly_green.mp3",
+      "fingerprint": "f316ec9dcc756ce0cc43ea6d86854152641bc250f58629b3d7e88481eefe7ce6",
+      "duration": 2.16,
+      "rms_dbfs": -19.53,
+      "peak_dbfs": -4.48,
+      "sha256": "5b4bfef4f08d9d72dbc32711b718057f0412cc82a90b180c611fe3f6c05ed4ef"
+    },
+    {
+      "id": "bp1_appear_blue",
+      "text": "Look! A blue balloon! Let's pump it up together!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: appear, blue",
+      "focus": "blue",
+      "stress": [
+        "blue"
+      ],
+      "instruction": "Cheerful curious child voice. Stress blue. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141404,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_appear_blue.mp3",
+      "fingerprint": "528ed61ded88e94ff59cb0f1620e3d28776f66f096670789f0d033063c3ab11d",
+      "duration": 3.864,
+      "rms_dbfs": -19.07,
+      "peak_dbfs": -2.81,
+      "sha256": "ba648eadeb05dba057d594b20c16a9be537e130bb74b0d5a70b30dff82149216"
+    },
+    {
+      "id": "bp1_fly_blue",
+      "text": "The blue balloon is flying away!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: fly, blue",
+      "focus": "blue",
+      "stress": [
+        "blue"
+      ],
+      "instruction": "Cheerful curious child voice. Stress blue. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141405,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_fly_blue.mp3",
+      "fingerprint": "04dbf6a9d0aa84732652b3cad96658915158ac9f95cf788c4d602c5611c6832b",
+      "duration": 2.496,
+      "rms_dbfs": -19.34,
+      "peak_dbfs": -5.15,
+      "sha256": "ee475873455482b156933f7d9f5ea9247dfe93ce3202ae16a847d2a7f8ee37cd"
+    },
+    {
+      "id": "bp1_appear_orange",
+      "text": "Look! An orange balloon! Let's pump it up together!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: appear, orange",
+      "focus": "orange",
+      "stress": [
+        "orange"
+      ],
+      "instruction": "Cheerful curious child voice. Stress orange. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141406,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_appear_orange.mp3",
+      "fingerprint": "b11baf40a01d98ea6b97e79f5164c97ae0662d4124ed9031d633c9cc007468ac",
+      "duration": 3.936,
+      "rms_dbfs": -19.06,
+      "peak_dbfs": -2.19,
+      "sha256": "6730be2d8a72b60a406c852ab522ff44bda0a5b1454af026e62dfb46e8197cde"
+    },
+    {
+      "id": "bp1_fly_orange",
+      "text": "The orange balloon is flying away!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: fly, orange",
+      "focus": "orange",
+      "stress": [
+        "orange"
+      ],
+      "instruction": "Cheerful curious child voice. Stress orange. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141407,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_fly_orange.mp3",
+      "fingerprint": "1561c1cfeb25d853b3437dcd6adfde5cd18e2f57eba3e43e8c6823fcc9632bce",
+      "duration": 2.976,
+      "rms_dbfs": -19.98,
+      "peak_dbfs": -4.21,
+      "sha256": "0439cf06820f4e6c4b0b7552409802596d30bfb1eaecbd88b5294b8f0e23df59"
+    },
+    {
+      "id": "bp1_appear_purple",
+      "text": "Look! A purple balloon! Let's pump it up together!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: appear, purple",
+      "focus": "purple",
+      "stress": [
+        "purple"
+      ],
+      "instruction": "Cheerful curious child voice. Stress purple. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141408,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_appear_purple.mp3",
+      "fingerprint": "7e6dca646ea609c0df21d37e13d262bacedbfc74751a09c86a08f553e2426333",
+      "duration": 3.792,
+      "rms_dbfs": -18.87,
+      "peak_dbfs": -2.71,
+      "sha256": "331a7aea7edb4e47a1523383e4376cf7decaee65021203e4f3ea4259be59940c"
+    },
+    {
+      "id": "bp1_fly_purple",
+      "text": "The purple balloon is flying away!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: fly, purple",
+      "focus": "purple",
+      "stress": [
+        "purple"
+      ],
+      "instruction": "Cheerful curious child voice. Stress purple. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141409,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_fly_purple.mp3",
+      "fingerprint": "3591a97052744f13aa48808e54a6ef1015db485c49d41edd114e567545938f86",
+      "duration": 2.904,
+      "rms_dbfs": -19.27,
+      "peak_dbfs": -4.1,
+      "sha256": "7615e0132c303c9724aed9d9fa16c2911f253067bbd1a5f7823c7cc20b544b3d"
+    },
+    {
+      "id": "bp1_appear_pink",
+      "text": "Look! A pink balloon! Let's pump it up together!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: appear, pink",
+      "focus": "pink",
+      "stress": [
+        "pink"
+      ],
+      "instruction": "Cheerful curious child voice. Stress pink. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141410,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_appear_pink.mp3",
+      "fingerprint": "fbcd3dafaf2b49c1af5cd3755ceb70eb41d8778e5fd25f756eed695d6b8eb5c4",
+      "duration": 3.216,
+      "rms_dbfs": -19.14,
+      "peak_dbfs": -2.6,
+      "sha256": "e0d4b43fe259ce0196caf3bf3363d29f64bc544cb6d4293f5d43ec2975787312"
+    },
+    {
+      "id": "bp1_fly_pink",
+      "text": "The pink balloon is flying away!",
+      "voice_profile": "pip",
+      "scene": "Balloon Pump: fly, pink",
+      "focus": "pink",
+      "stress": [
+        "pink"
+      ],
+      "instruction": "Cheerful curious child voice. Stress pink. Speak exact words, warmly and clearly.",
+      "rate": 0.98,
+      "seed": 141411,
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxpip35-392606c26bc5460db9a59e4cf84cf777",
+      "file": "bp1_fly_pink.mp3",
+      "fingerprint": "8a29190a605190c502df59cb41e6107819d6a86fd5e39248eeed48502fab22da",
+      "duration": 2.496,
+      "rms_dbfs": -19.5,
+      "peak_dbfs": -3.73,
+      "sha256": "d8068bd090962c9dff17b3fa55263884f96cfe466f418f614fd945afb263e7d8"
+    }
+  ]
+}

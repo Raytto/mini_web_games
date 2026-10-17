@@ -1,0 +1,41 @@
+[
+  {
+    "id": "dd1_name_therizinosaurus",
+    "text": "Therizinosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_therizinosaurus",
+    "focus": "Therizinosaurus",
+    "stress": [
+      "Therizinosaurus"
+    ],
+    "instruction": "Warm clear child voice. Pronounce theh-riz-in-oh-SORE-us. Speak exact words.",
+    "rate": 0.88,
+    "seed": 131173
+  },
+  {
+    "id": "dd1_name_apatosaurus",
+    "text": "Apatosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_apatosaurus",
+    "focus": "Apatosaurus",
+    "stress": [
+      "Apatosaurus"
+    ],
+    "instruction": "Warm clear child voice. Pronounce uh-PAT-oh-SORE-us. Speak exact words.",
+    "rate": 0.88,
+    "seed": 131183
+  },
+  {
+    "id": "dd1_fact_apatosaurus",
+    "text": "Apatosaurus has a long neck.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_apatosaurus",
+    "focus": "Apatosaurus",
+    "stress": [
+      "Apatosaurus"
+    ],
+    "instruction": "Warm clear child voice. Pronounce uh-PAT-oh-SORE-us. Speak exact words.",
+    "rate": 0.88,
+    "seed": 131184
+  }
+]
