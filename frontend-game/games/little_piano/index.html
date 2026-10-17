@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="../../favicon.png" type="image/png"><meta name="theme-color" content="#f6f1e6"><title>Little Piano · Xiaoxiao</title><link rel="stylesheet" href="style.css?v=20261017piano3"><link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1"><script defer src="../../scripts/game-home.js?v=20261003home2"></script></head>
-<body data-play-mode="free">
+<body data-play-mode="guide">
 <div class="app">
 <header><a href="../../home.html" aria-label="Home">Home</a><div class="brand"><span class="brand-icon">♫</span><div><h1 data-t="title">Little Piano</h1><p data-t="subtitle">A little touch. A little music.</p></div></div><div class="header-actions"><button id="voice" class="round" aria-label="English voice on" aria-pressed="true">♬</button><button id="info" class="round" aria-label="About this piano">i</button></div></header>
-<nav class="modes" aria-label="Play area"><button data-panel="free" data-mode="free" aria-pressed="true"><b>♫</b><span data-t="free">Free play</span></button><button data-panel="songs" aria-pressed="false"><b>♬</b><span data-t="songs">Songs</span></button></nav>
+<nav class="modes" aria-label="Play area"><button data-panel="free" data-mode="free" aria-pressed="false"><b>♫</b><span data-t="free">Free play</span></button><button data-panel="songs" aria-pressed="true"><b>♬</b><span data-t="songs">Songs</span></button></nav>
 <section class="music-desk">
-<div class="song-bar"><button id="choose" aria-haspopup="dialog"><span id="song-icon">✦</span><span><small data-t="choose">Choose a song</small><strong id="song-name">Twinkle, Twinkle</strong></span><span class="chevron">⌄</span></button><span id="kind" class="tag"></span></div>
-<div class="song-options"><div class="song-mode" role="group" aria-label="Song mode"><button data-mode="listen" aria-pressed="true">▷ <span data-t="listen">Listen</span></button><button data-mode="guide" aria-pressed="false">☞ <span data-t="guide">Follow the light</span></button></div><label id="tempo-wrap"><span data-t="tempo">Speed</span><select id="tempo"><option value="0.65" data-t="slow">Slow</option><option value="0.85" data-t="gentle" selected>Gentle</option><option value="1" data-t="normal">Normal</option></select></label></div>
-<div class="lesson"><div class="message"><h2 id="hint">Make your own music</h2><p id="subhint">Try the white keys and the black keys.</p></div><div class="transport"><button id="restart" class="secondary" aria-label="Start again">↶</button><button id="play" class="primary">▷ <span>Play</span></button></div></div>
+<div class="song-bar"><button id="choose" aria-haspopup="dialog"><span id="song-icon">♫</span><span><small data-t="choose">Choose a song</small><strong id="song-name">The Smurfs</strong></span><span class="chevron">⌄</span></button><span id="kind" class="tag"></span></div>
+<div class="song-options"><div class="song-mode" role="group" aria-label="Song mode"><button data-mode="listen" aria-pressed="false">▷ <span data-t="listen">Listen</span></button><button data-mode="guide" aria-pressed="true">☞ <span data-t="guide">Follow the light</span></button></div><label id="tempo-wrap" hidden><span data-t="tempo">Speed</span><select id="tempo"><option value="0.65" data-t="slow">Slow</option><option value="0.85" data-t="gentle" selected>Gentle</option><option value="1" data-t="normal">Normal</option></select></label></div>
+<div class="lesson"><div class="message"><h2 id="hint">Tap the glowing key</h2><p id="subhint">Take your time. I will wait for you.</p></div><div class="transport"><button id="restart" class="secondary" aria-label="Start again">↶</button><button id="play" class="primary">♪ <span>Hear note</span></button></div></div>
 <div class="score-line"><div id="notes" aria-label="Next notes"></div><span id="progress-label"></span></div><div class="progress-track"><div id="progress"></div></div>
 </section>
 <section class="instrument" aria-label="Piano keyboard"><div class="piano-rail"><span class="rail-name">XIAOXIAO</span><span id="key-caption" data-t="two">TWO OCTAVES · GRAND PIANO</span><span class="sound-status"><span id="sound-state"></span><button id="sound-retry" hidden data-t="retry">Retry sound</button></span></div><div id="keyboard" class="keyboard"></div><div class="piano-foot"><span data-t="low">LOWER</span><span id="playing-note">♪</span><span data-t="high">HIGHER</span></div></section>
@@ -18,5 +18,5 @@
 <div id="celebration" aria-hidden="true"></div>
 <script>window.MINI_GAME={id:"little_piano",name:"Little Piano"};</script>
 <script defer src="../../scripts/bankend-config.js?v=2"></script><script defer src="../../scripts/tracking.js?v=20261002play1"></script>
-<script type="module" src="game.js?v=20261017piano3"></script>
+<script type="module" src="game.js?v=20261017piano4"></script>
 </body></html>

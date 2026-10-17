@@ -6,8 +6,8 @@ const words={
 };
 let lang='en';try{lang=window.parent.XiaoxiaoI18n?.language || (localStorage.getItem('xiaoxiaoLanguage')==='zh'?'zh':'en');}catch{}
 const t=key=>words[key]?.[lang==='zh'?0:1] || key;
-let songMode='listen';
-let song=SONGS[0],mode='free',cursor=0,finished=false,running=false,everStarted=false,speed=.85;
+let songMode='guide';
+let song=SONGS.find(s=>s.id==='smurfs') ?? SONGS[0],mode='guide',cursor=0,finished=false,running=false,everStarted=false,speed=.85;
 let scheduled=[],scheduleIndex=0,nextTime=0,endTime=0,timer=null,raf=null,voicesOn=true,welcomed=false,loadFailed=false;
 let currentAuto=-1,pointers=new Map(),computer=new Map(),lastAdvance=0,completionTimer=null;
 try{voicesOn=localStorage.getItem('xiaoxiaoEnglishVoiceEnabled')!=='false';}catch{}
@@ -42,7 +42,7 @@ async function prepare(){
  loadFailed=false;soundStatus();
  try{await audio.load((a,b)=>{if(loadFailed)return;$('sound-state').textContent=`${t('loading')} ${a}/${b}`;});soundStatus();welcome();}catch{loadFailed=true;soundStatus();}
 }
-function welcome(){if(!welcomed && audio.ready && audio.ctx.state==='running' && mode==='free'){welcomed=true;speak('welcome');}}
+function welcome(){if(!welcomed && audio.ready && audio.ctx.state==='running'){welcomed=true;speak(mode==='guide'?'guide':'welcome');}}
 function clearVisual(){keys.forEach(k=>k.classList.remove('sounding'));}
 function render(){
  document.body.dataset.playMode=mode;
