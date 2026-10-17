@@ -1,0 +1,751 @@
+[
+  {
+    "id": "rabbit",
+    "name": "Rabbit",
+    "zh": "小兔",
+    "look": "a cream white baby rabbit with long soft pink-lined ears",
+    "day": "mint striped T-shirt and beige shorts",
+    "pajamas": "peach pajamas with tiny cream moons",
+    "steps": [
+      "brush",
+      "pajamas",
+      "story",
+      "curtain",
+      "light"
+    ],
+    "storyTitle": "The Moon Carrot",
+    "story": "A little rabbit found a carrot shaped like the moon. It tried to pull, but the carrot would not move. A tiny mouse came over to help. They pulled together, and out popped the carrot! They shared crunchy bites under the bright moon. Then the two happy friends curled up to sleep.",
+    "scene": "a cream white rabbit sharing a crescent-shaped orange carrot with a small field mouse in a moonlit vegetable garden",
+    "pages": [
+      {
+        "text": "A little rabbit found a carrot shaped like the moon.",
+        "clip": "gn3_story_rabbit_1",
+        "image": "stories-v3/rabbit-1"
+      },
+      {
+        "text": "It tried to pull, but the carrot would not move.",
+        "clip": "gn3_story_rabbit_2",
+        "image": "stories-v3/rabbit-2"
+      },
+      {
+        "text": "A tiny mouse came over to help.",
+        "clip": "gn3_story_rabbit_3",
+        "image": "stories-v3/rabbit-3"
+      },
+      {
+        "text": "They pulled together, and out popped the carrot!",
+        "clip": "gn3_story_rabbit_4",
+        "image": "stories-v3/rabbit-4"
+      },
+      {
+        "text": "They shared crunchy bites under the bright moon.",
+        "clip": "gn3_story_rabbit_5",
+        "image": "stories-v3/rabbit-5"
+      },
+      {
+        "text": "Then the two happy friends curled up to sleep.",
+        "clip": "gn3_story_rabbit_6",
+        "image": "stories-v3/rabbit-6"
+      }
+    ]
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "zh": "小熊",
+    "look": "a round honey brown bear cub with small round ears",
+    "day": "lavender T-shirt and beige shorts",
+    "pajamas": "sky blue pajamas with little cream stars",
+    "steps": [
+      "pajamas",
+      "brush",
+      "music",
+      "story",
+      "light"
+    ],
+    "storyTitle": "A Jar of Stars",
+    "story": "A little bear found three sleepy stars in the grass. It put them gently in a little glass jar. The smallest star blinked and looked up at the sky. The bear opened the jar on top of a hill. The three stars floated home and twinkled thank you. The bear fell asleep under their gentle light.",
+    "scene": "a honey brown bear cub gently placing three glowing golden stars in a glass jar beside a tiny woodland bed",
+    "pages": [
+      {
+        "text": "A little bear found three sleepy stars in the grass.",
+        "clip": "gn3_story_bear_1",
+        "image": "stories-v3/bear-1"
+      },
+      {
+        "text": "It put them gently in a little glass jar.",
+        "clip": "gn3_story_bear_2",
+        "image": "stories-v3/bear-2"
+      },
+      {
+        "text": "The smallest star blinked and looked up at the sky.",
+        "clip": "gn3_story_bear_3",
+        "image": "stories-v3/bear-3"
+      },
+      {
+        "text": "The bear opened the jar on top of a hill.",
+        "clip": "gn3_story_bear_4",
+        "image": "stories-v3/bear-4"
+      },
+      {
+        "text": "The three stars floated home and twinkled thank you.",
+        "clip": "gn3_story_bear_5",
+        "image": "stories-v3/bear-5"
+      },
+      {
+        "text": "The bear fell asleep under their gentle light.",
+        "clip": "gn3_story_bear_6",
+        "image": "stories-v3/bear-6"
+      }
+    ]
+  },
+  {
+    "id": "cat",
+    "name": "Kitten",
+    "zh": "小猫",
+    "look": "a ginger and cream kitten with little stripes and a curled tail",
+    "day": "turquoise T-shirt and beige shorts",
+    "pajamas": "navy blue pajamas with small cream moons",
+    "steps": [
+      "brush",
+      "pajamas",
+      "curtain",
+      "story",
+      "music",
+      "light"
+    ],
+    "storyTitle": "The Leaf Boat",
+    "story": "A kitten made a little boat from a big green leaf. It placed a flower inside and pushed the boat away. The little boat stopped beside a round stone. The kitten gave it a gentle push with a stick. The boat carried the flower to a waiting duck. The kitten waved goodnight and walked home to bed.",
+    "scene": "a ginger kitten safely sitting in a large leaf boat on a calm little stream, a crescent moon and warm home lights guiding it",
+    "pages": [
+      {
+        "text": "A kitten made a little boat from a big green leaf.",
+        "clip": "gn3_story_cat_1",
+        "image": "stories-v3/cat-1"
+      },
+      {
+        "text": "It placed a flower inside and pushed the boat away.",
+        "clip": "gn3_story_cat_2",
+        "image": "stories-v3/cat-2"
+      },
+      {
+        "text": "The little boat stopped beside a round stone.",
+        "clip": "gn3_story_cat_3",
+        "image": "stories-v3/cat-3"
+      },
+      {
+        "text": "The kitten gave it a gentle push with a stick.",
+        "clip": "gn3_story_cat_4",
+        "image": "stories-v3/cat-4"
+      },
+      {
+        "text": "The boat carried the flower to a waiting duck.",
+        "clip": "gn3_story_cat_5",
+        "image": "stories-v3/cat-5"
+      },
+      {
+        "text": "The kitten waved goodnight and walked home to bed.",
+        "clip": "gn3_story_cat_6",
+        "image": "stories-v3/cat-6"
+      }
+    ]
+  },
+  {
+    "id": "dog",
+    "name": "Puppy",
+    "zh": "小狗",
+    "look": "a caramel and cream puppy with floppy ears and a short soft tail",
+    "day": "butter yellow T-shirt and beige shorts",
+    "pajamas": "jade green pajamas with little cream stars",
+    "steps": [
+      "pajamas",
+      "story",
+      "curtain",
+      "light"
+    ],
+    "storyTitle": "The Tiny Slipper",
+    "story": "A puppy found a tiny slipper beside the path. It asked a rabbit, but the slipper was too small. Little footprints led to a door in a tree. A sleepy mouse opened the door in just one slipper. The puppy gave it back, and the mouse smiled. Both friends went to bed with warm, cozy feet.",
+    "scene": "a floppy-eared caramel puppy returning a tiny soft slipper to a sleepy mouse at the warmly lit round doorway of a tree house",
+    "pages": [
+      {
+        "text": "A puppy found a tiny slipper beside the path.",
+        "clip": "gn3_story_dog_1",
+        "image": "stories-v3/dog-1"
+      },
+      {
+        "text": "It asked a rabbit, but the slipper was too small.",
+        "clip": "gn3_story_dog_2",
+        "image": "stories-v3/dog-2"
+      },
+      {
+        "text": "Little footprints led to a door in a tree.",
+        "clip": "gn3_story_dog_3",
+        "image": "stories-v3/dog-3"
+      },
+      {
+        "text": "A sleepy mouse opened the door in just one slipper.",
+        "clip": "gn3_story_dog_4",
+        "image": "stories-v3/dog-4"
+      },
+      {
+        "text": "The puppy gave it back, and the mouse smiled.",
+        "clip": "gn3_story_dog_5",
+        "image": "stories-v3/dog-5"
+      },
+      {
+        "text": "Both friends went to bed with warm, cozy feet.",
+        "clip": "gn3_story_dog_6",
+        "image": "stories-v3/dog-6"
+      }
+    ]
+  },
+  {
+    "id": "fox",
+    "name": "Fox",
+    "zh": "小狐狸",
+    "look": "a rust orange fox cub with a cream muzzle and a big white-tipped tail",
+    "day": "mint T-shirt and beige shorts",
+    "pajamas": "soft lavender pajamas with little cream moons",
+    "steps": [
+      "brush",
+      "pajamas",
+      "music",
+      "story",
+      "light"
+    ],
+    "storyTitle": "The Firefly Path",
+    "story": "A little fox was walking home as the sky grew dark. At a bend in the path, it stopped to look around. A tiny firefly blinked beside a familiar tree. More fireflies made a glowing trail through the woods. The fox followed their lights to its cozy front door. It whispered thank you and snuggled into bed.",
+    "scene": "a rust orange fox cub walking along a safe mossy forest path lit by a gentle procession of glowing fireflies toward a cozy burrow",
+    "pages": [
+      {
+        "text": "A little fox was walking home as the sky grew dark.",
+        "clip": "gn3_story_fox_1",
+        "image": "stories-v3/fox-1"
+      },
+      {
+        "text": "At a bend in the path, it stopped to look around.",
+        "clip": "gn3_story_fox_2",
+        "image": "stories-v3/fox-2"
+      },
+      {
+        "text": "A tiny firefly blinked beside a familiar tree.",
+        "clip": "gn3_story_fox_3",
+        "image": "stories-v3/fox-3"
+      },
+      {
+        "text": "More fireflies made a glowing trail through the woods.",
+        "clip": "gn3_story_fox_4",
+        "image": "stories-v3/fox-4"
+      },
+      {
+        "text": "The fox followed their lights to its cozy front door.",
+        "clip": "gn3_story_fox_5",
+        "image": "stories-v3/fox-5"
+      },
+      {
+        "text": "It whispered thank you and snuggled into bed.",
+        "clip": "gn3_story_fox_6",
+        "image": "stories-v3/fox-6"
+      }
+    ]
+  },
+  {
+    "id": "panda",
+    "name": "Panda",
+    "zh": "熊猫宝宝",
+    "look": "a round black and cream giant panda cub with clear black eye patches",
+    "day": "peach T-shirt and beige shorts",
+    "pajamas": "mint pajamas with small cream stars",
+    "steps": [
+      "brush",
+      "pajamas",
+      "story",
+      "curtain",
+      "light"
+    ],
+    "storyTitle": "The Bamboo Bridge",
+    "story": "A panda saw a duck waiting beside a little stream. The duck wanted to cross and visit its friend. The panda laid some bamboo across the narrow water. It added one more piece to make the bridge steady. The duck waddled across and gave a happy thank you. The panda rested by the stream as the moon rose.",
+    "scene": "a black-and-white panda cub beside a tiny low bamboo bridge over a shallow brook while a yellow duck walks across, both smiling under soft twilight",
+    "pages": [
+      {
+        "text": "A panda saw a duck waiting beside a little stream.",
+        "clip": "gn3_story_panda_1",
+        "image": "stories-v3/panda-1"
+      },
+      {
+        "text": "The duck wanted to cross and visit its friend.",
+        "clip": "gn3_story_panda_2",
+        "image": "stories-v3/panda-2"
+      },
+      {
+        "text": "The panda laid some bamboo across the narrow water.",
+        "clip": "gn3_story_panda_3",
+        "image": "stories-v3/panda-3"
+      },
+      {
+        "text": "It added one more piece to make the bridge steady.",
+        "clip": "gn3_story_panda_4",
+        "image": "stories-v3/panda-4"
+      },
+      {
+        "text": "The duck waddled across and gave a happy thank you.",
+        "clip": "gn3_story_panda_5",
+        "image": "stories-v3/panda-5"
+      },
+      {
+        "text": "The panda rested by the stream as the moon rose.",
+        "clip": "gn3_story_panda_6",
+        "image": "stories-v3/panda-6"
+      }
+    ]
+  },
+  {
+    "id": "koala",
+    "name": "Koala",
+    "zh": "考拉",
+    "look": "a soft gray baby koala with large fluffy ears and a shiny oval charcoal nose",
+    "day": "sky blue T-shirt and beige shorts",
+    "pajamas": "lilac pajamas with small cream moons",
+    "steps": [
+      "pajamas",
+      "curtain",
+      "story",
+      "light"
+    ],
+    "storyTitle": "The Cloud Pillow",
+    "story": "A sleepy koala could not find a soft place to rest. It folded a leaf, but the leaf was much too small. A little cloud floated down beside its branch. The koala hugged the cloud like a fluffy pillow. A gentle breeze rocked the branch from side to side. The koala closed its eyes and dreamed of the moon.",
+    "scene": "a gray baby koala nestled safely in a broad eucalyptus branch hugging a small fluffy cloud like a pillow beneath a gentle moon",
+    "pages": [
+      {
+        "text": "A sleepy koala could not find a soft place to rest.",
+        "clip": "gn3_story_koala_1",
+        "image": "stories-v3/koala-1"
+      },
+      {
+        "text": "It folded a leaf, but the leaf was much too small.",
+        "clip": "gn3_story_koala_2",
+        "image": "stories-v3/koala-2"
+      },
+      {
+        "text": "A little cloud floated down beside its branch.",
+        "clip": "gn3_story_koala_3",
+        "image": "stories-v3/koala-3"
+      },
+      {
+        "text": "The koala hugged the cloud like a fluffy pillow.",
+        "clip": "gn3_story_koala_4",
+        "image": "stories-v3/koala-4"
+      },
+      {
+        "text": "A gentle breeze rocked the branch from side to side.",
+        "clip": "gn3_story_koala_5",
+        "image": "stories-v3/koala-5"
+      },
+      {
+        "text": "The koala closed its eyes and dreamed of the moon.",
+        "clip": "gn3_story_koala_6",
+        "image": "stories-v3/koala-6"
+      }
+    ]
+  },
+  {
+    "id": "elephant",
+    "name": "Elephant",
+    "zh": "小象",
+    "look": "a powder gray baby elephant with wide pink-lined ears and a short softly curved trunk",
+    "day": "coral T-shirt and beige shorts",
+    "pajamas": "teal pajamas with small cream stars",
+    "steps": [
+      "brush",
+      "pajamas",
+      "story",
+      "music",
+      "curtain",
+      "light"
+    ],
+    "storyTitle": "The Thirsty Flower",
+    "story": "A little elephant found a flower with drooping petals. It looked inside the watering can, but it was empty. The elephant filled its trunk at a little pond. It sprinkled gentle drops over the thirsty flower. The pink petals opened, and a butterfly came to rest. The elephant smiled and lay down beside the garden.",
+    "scene": "a small gray elephant gently sprinkling a few water drops from its trunk onto one blooming pink flower in a moonlit garden",
+    "pages": [
+      {
+        "text": "A little elephant found a flower with drooping petals.",
+        "clip": "gn3_story_elephant_1",
+        "image": "stories-v3/elephant-1"
+      },
+      {
+        "text": "It looked inside the watering can, but it was empty.",
+        "clip": "gn3_story_elephant_2",
+        "image": "stories-v3/elephant-2"
+      },
+      {
+        "text": "The elephant filled its trunk at a little pond.",
+        "clip": "gn3_story_elephant_3",
+        "image": "stories-v3/elephant-3"
+      },
+      {
+        "text": "It sprinkled gentle drops over the thirsty flower.",
+        "clip": "gn3_story_elephant_4",
+        "image": "stories-v3/elephant-4"
+      },
+      {
+        "text": "The pink petals opened, and a butterfly came to rest.",
+        "clip": "gn3_story_elephant_5",
+        "image": "stories-v3/elephant-5"
+      },
+      {
+        "text": "The elephant smiled and lay down beside the garden.",
+        "clip": "gn3_story_elephant_6",
+        "image": "stories-v3/elephant-6"
+      }
+    ]
+  },
+  {
+    "id": "lion",
+    "name": "Lion",
+    "zh": "小狮子",
+    "look": "a golden lion cub with a small round caramel mane and a soft tufted tail",
+    "day": "sage T-shirt and beige shorts",
+    "pajamas": "cream pajamas with little golden stars",
+    "steps": [
+      "brush",
+      "pajamas",
+      "story",
+      "light"
+    ],
+    "storyTitle": "A Quiet Goodnight",
+    "story": "A lion cub wanted to say goodnight to the birds. It took a big breath, then saw the sleepy babies. The lion closed its mouth and listened to their peeps. It softly whispered goodnight beside the little nest. The baby birds snuggled under their mother’s wing. The lion curled up below and fell quietly asleep.",
+    "scene": "a gentle golden lion cub whispering beside a low branch where three tiny baby birds snuggle in a cozy woven nest at dusk",
+    "pages": [
+      {
+        "text": "A lion cub wanted to say goodnight to the birds.",
+        "clip": "gn3_story_lion_1",
+        "image": "stories-v3/lion-1"
+      },
+      {
+        "text": "It took a big breath, then saw the sleepy babies.",
+        "clip": "gn3_story_lion_2",
+        "image": "stories-v3/lion-2"
+      },
+      {
+        "text": "The lion closed its mouth and listened to their peeps.",
+        "clip": "gn3_story_lion_3",
+        "image": "stories-v3/lion-3"
+      },
+      {
+        "text": "It softly whispered goodnight beside the little nest.",
+        "clip": "gn3_story_lion_4",
+        "image": "stories-v3/lion-4"
+      },
+      {
+        "text": "The baby birds snuggled under their mother’s wing.",
+        "clip": "gn3_story_lion_5",
+        "image": "stories-v3/lion-5"
+      },
+      {
+        "text": "The lion curled up below and fell quietly asleep.",
+        "clip": "gn3_story_lion_6",
+        "image": "stories-v3/lion-6"
+      }
+    ]
+  },
+  {
+    "id": "tiger",
+    "name": "Tiger",
+    "zh": "小老虎",
+    "look": "an orange tiger cub with soft dark stripes, cream muzzle and rounded ears",
+    "day": "navy T-shirt and beige shorts",
+    "pajamas": "apricot pajamas with small cream moons",
+    "steps": [
+      "pajamas",
+      "brush",
+      "curtain",
+      "story",
+      "light"
+    ],
+    "storyTitle": "The Star Kite",
+    "story": "A tiger made a little kite shaped like a star. It held the string, but the kite lay on the grass. A gentle breeze began to rustle the leaves. The tiger lifted the kite, and it danced above the trees. When the moon came out, the tiger reeled it in. The little star kite rested beside its sleepy friend.",
+    "scene": "an orange tiger cub holding a string attached to a small golden star-shaped kite floating gently above rounded trees in a peaceful twilight meadow",
+    "pages": [
+      {
+        "text": "A tiger made a little kite shaped like a star.",
+        "clip": "gn3_story_tiger_1",
+        "image": "stories-v3/tiger-1"
+      },
+      {
+        "text": "It held the string, but the kite lay on the grass.",
+        "clip": "gn3_story_tiger_2",
+        "image": "stories-v3/tiger-2"
+      },
+      {
+        "text": "A gentle breeze began to rustle the leaves.",
+        "clip": "gn3_story_tiger_3",
+        "image": "stories-v3/tiger-3"
+      },
+      {
+        "text": "The tiger lifted the kite, and it danced above the trees.",
+        "clip": "gn3_story_tiger_4",
+        "image": "stories-v3/tiger-4"
+      },
+      {
+        "text": "When the moon came out, the tiger reeled it in.",
+        "clip": "gn3_story_tiger_5",
+        "image": "stories-v3/tiger-5"
+      },
+      {
+        "text": "The little star kite rested beside its sleepy friend.",
+        "clip": "gn3_story_tiger_6",
+        "image": "stories-v3/tiger-6"
+      }
+    ]
+  },
+  {
+    "id": "monkey",
+    "name": "Monkey",
+    "zh": "小猴子",
+    "look": "a warm brown baby monkey with a tan round face, round ears and a long curled tail",
+    "day": "lemon yellow T-shirt and beige shorts",
+    "pajamas": "blue pajamas with small cream stars",
+    "steps": [
+      "brush",
+      "pajamas",
+      "music",
+      "story",
+      "light"
+    ],
+    "storyTitle": "The Leaf Hammock",
+    "story": "A little monkey found a big green leaf. It tied one end to a low tree branch. The other end drooped, so a friend helped tie it up. Together they made a soft little hammock. The monkey climbed in and rocked in the evening breeze. Its friend whispered goodnight as the monkey fell asleep.",
+    "scene": "a small brown monkey curled safely in a large green leaf hammock tied low between two tropical trees, warm firefly light and a peaceful evening breeze",
+    "pages": [
+      {
+        "text": "A little monkey found a big green leaf.",
+        "clip": "gn3_story_monkey_1",
+        "image": "stories-v3/monkey-1"
+      },
+      {
+        "text": "It tied one end to a low tree branch.",
+        "clip": "gn3_story_monkey_2",
+        "image": "stories-v3/monkey-2"
+      },
+      {
+        "text": "The other end drooped, so a friend helped tie it up.",
+        "clip": "gn3_story_monkey_3",
+        "image": "stories-v3/monkey-3"
+      },
+      {
+        "text": "Together they made a soft little hammock.",
+        "clip": "gn3_story_monkey_4",
+        "image": "stories-v3/monkey-4"
+      },
+      {
+        "text": "The monkey climbed in and rocked in the evening breeze.",
+        "clip": "gn3_story_monkey_5",
+        "image": "stories-v3/monkey-5"
+      },
+      {
+        "text": "Its friend whispered goodnight as the monkey fell asleep.",
+        "clip": "gn3_story_monkey_6",
+        "image": "stories-v3/monkey-6"
+      }
+    ]
+  },
+  {
+    "id": "pig",
+    "name": "Piglet",
+    "zh": "小猪",
+    "look": "a rosy pink piglet with a round snout, floppy little ears and a curly tail",
+    "day": "yellow striped T-shirt and beige shorts",
+    "pajamas": "lavender pajamas with small cream moons",
+    "steps": [
+      "pajamas",
+      "brush",
+      "story",
+      "music",
+      "curtain",
+      "light"
+    ],
+    "storyTitle": "The Moon in the Puddle",
+    "story": "A piglet saw a shiny moon in a little puddle. It touched the water, and the moon broke into ripples. The piglet waited very still beside the puddle. The water grew quiet, and the round moon came back. The piglet looked up and found the same moon in the sky. It smiled all the way home and dreamed of silver circles.",
+    "scene": "a rosy pink piglet gazing into a small puddle that reflects a bright silver full moon, a calm cottage garden after the rain",
+    "pages": [
+      {
+        "text": "A piglet saw a shiny moon in a little puddle.",
+        "clip": "gn3_story_pig_1",
+        "image": "stories-v3/pig-1"
+      },
+      {
+        "text": "It touched the water, and the moon broke into ripples.",
+        "clip": "gn3_story_pig_2",
+        "image": "stories-v3/pig-2"
+      },
+      {
+        "text": "The piglet waited very still beside the puddle.",
+        "clip": "gn3_story_pig_3",
+        "image": "stories-v3/pig-3"
+      },
+      {
+        "text": "The water grew quiet, and the round moon came back.",
+        "clip": "gn3_story_pig_4",
+        "image": "stories-v3/pig-4"
+      },
+      {
+        "text": "The piglet looked up and found the same moon in the sky.",
+        "clip": "gn3_story_pig_5",
+        "image": "stories-v3/pig-5"
+      },
+      {
+        "text": "It smiled all the way home and dreamed of silver circles.",
+        "clip": "gn3_story_pig_6",
+        "image": "stories-v3/pig-6"
+      }
+    ]
+  },
+  {
+    "id": "penguin",
+    "name": "Penguin",
+    "zh": "小企鹅",
+    "look": "a fluffy charcoal and cream baby penguin with a tiny orange beak and round flippers",
+    "day": "coral T-shirt",
+    "pajamas": "mint pajamas with small cream stars",
+    "steps": [
+      "brush",
+      "pajamas",
+      "curtain",
+      "story",
+      "light"
+    ],
+    "storyTitle": "The Northern Lights",
+    "story": "In a snowy storyland, a penguin met a sleepy bunny. The bunny shivered beside its little snow bed. The penguin brought a warm blanket from its home. It tucked the blanket gently around its little friend. Green and pink lights danced softly across the sky. The two friends fell asleep beneath the quiet colors.",
+    "scene": "a fluffy baby penguin tucking a tiny white snow bunny into a cozy snow nest lined with a real soft blanket, pastel aurora ribbons glowing overhead in a magical picture-book polar night",
+    "pages": [
+      {
+        "text": "In a snowy storyland, a penguin met a sleepy bunny.",
+        "clip": "gn3_story_penguin_1",
+        "image": "stories-v3/penguin-1"
+      },
+      {
+        "text": "The bunny shivered beside its little snow bed.",
+        "clip": "gn3_story_penguin_2",
+        "image": "stories-v3/penguin-2"
+      },
+      {
+        "text": "The penguin brought a warm blanket from its home.",
+        "clip": "gn3_story_penguin_3",
+        "image": "stories-v3/penguin-3"
+      },
+      {
+        "text": "It tucked the blanket gently around its little friend.",
+        "clip": "gn3_story_penguin_4",
+        "image": "stories-v3/penguin-4"
+      },
+      {
+        "text": "Green and pink lights danced softly across the sky.",
+        "clip": "gn3_story_penguin_5",
+        "image": "stories-v3/penguin-5"
+      },
+      {
+        "text": "The two friends fell asleep beneath the quiet colors.",
+        "clip": "gn3_story_penguin_6",
+        "image": "stories-v3/penguin-6"
+      }
+    ]
+  },
+  {
+    "id": "deer",
+    "name": "Fawn",
+    "zh": "小鹿",
+    "look": "a cinnamon baby deer with cream spots, big gentle ears and no antlers",
+    "day": "teal T-shirt and beige shorts",
+    "pajamas": "dusty rose pajamas with little cream stars",
+    "steps": [
+      "pajamas",
+      "story",
+      "music",
+      "light"
+    ],
+    "storyTitle": "The Glowing Flowers",
+    "story": "A fawn found a sleepy hedgehog beside a dark path. The hedgehog wanted to find its little leaf home. The fawn noticed a glowing flower beside the path. They followed one glowing flower after another. The last flower shone beside the hedgehog’s front door. The fawn said goodnight and rested under a nearby tree.",
+    "scene": "a spotted baby deer beside a trail of small softly glowing flowers leading a sleepy little hedgehog toward its cozy leaf home in a quiet forest",
+    "pages": [
+      {
+        "text": "A fawn found a sleepy hedgehog beside a dark path.",
+        "clip": "gn3_story_deer_1",
+        "image": "stories-v3/deer-1"
+      },
+      {
+        "text": "The hedgehog wanted to find its little leaf home.",
+        "clip": "gn3_story_deer_2",
+        "image": "stories-v3/deer-2"
+      },
+      {
+        "text": "The fawn noticed a glowing flower beside the path.",
+        "clip": "gn3_story_deer_3",
+        "image": "stories-v3/deer-3"
+      },
+      {
+        "text": "They followed one glowing flower after another.",
+        "clip": "gn3_story_deer_4",
+        "image": "stories-v3/deer-4"
+      },
+      {
+        "text": "The last flower shone beside the hedgehog’s front door.",
+        "clip": "gn3_story_deer_5",
+        "image": "stories-v3/deer-5"
+      },
+      {
+        "text": "The fawn said goodnight and rested under a nearby tree.",
+        "clip": "gn3_story_deer_6",
+        "image": "stories-v3/deer-6"
+      }
+    ]
+  },
+  {
+    "id": "squirrel",
+    "name": "Squirrel",
+    "zh": "小松鼠",
+    "look": "a russet baby squirrel with a cream tummy and a very fluffy curved tail",
+    "day": "purple T-shirt and beige shorts",
+    "pajamas": "golden yellow pajamas with little cream moons",
+    "steps": [
+      "brush",
+      "pajamas",
+      "story",
+      "curtain",
+      "light"
+    ],
+    "storyTitle": "The Shared Acorn",
+    "story": "A squirrel found one last acorn under an autumn tree. A little mouse came by with an empty basket. The squirrel opened the acorn and shared it with the mouse. A cool breeze made both little friends shiver. They pulled a big golden leaf over their shoulders. Warm and full, they curled up together and fell asleep.",
+    "scene": "a russet squirrel and a small field mouse sharing an acorn and curling together beneath a large amber autumn leaf like a blanket at a softly lit tree root",
+    "pages": [
+      {
+        "text": "A squirrel found one last acorn under an autumn tree.",
+        "clip": "gn3_story_squirrel_1",
+        "image": "stories-v3/squirrel-1"
+      },
+      {
+        "text": "A little mouse came by with an empty basket.",
+        "clip": "gn3_story_squirrel_2",
+        "image": "stories-v3/squirrel-2"
+      },
+      {
+        "text": "The squirrel opened the acorn and shared it with the mouse.",
+        "clip": "gn3_story_squirrel_3",
+        "image": "stories-v3/squirrel-3"
+      },
+      {
+        "text": "A cool breeze made both little friends shiver.",
+        "clip": "gn3_story_squirrel_4",
+        "image": "stories-v3/squirrel-4"
+      },
+      {
+        "text": "They pulled a big golden leaf over their shoulders.",
+        "clip": "gn3_story_squirrel_5",
+        "image": "stories-v3/squirrel-5"
+      },
+      {
+        "text": "Warm and full, they curled up together and fell asleep.",
+        "clip": "gn3_story_squirrel_6",
+        "image": "stories-v3/squirrel-6"
+      }
+    ]
+  }
+]
