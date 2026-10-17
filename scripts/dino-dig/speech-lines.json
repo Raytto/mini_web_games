@@ -1,0 +1,918 @@
+[
+  {
+    "id": "dd1_welcome",
+    "text": "Let us look for a dinosaur fossil!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_welcome",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131030
+  },
+  {
+    "id": "dd1_soil",
+    "text": "Use the little shovel. Scoop away the soil.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_soil",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131031
+  },
+  {
+    "id": "dd1_earth",
+    "text": "Use the small pick. Tap the bumpy earth.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_earth",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131032
+  },
+  {
+    "id": "dd1_dust",
+    "text": "Use the soft brush. Sweep the dust away.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_dust",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131033
+  },
+  {
+    "id": "dd1_soil_done",
+    "text": "Look! There is another layer underneath!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_soil_done",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131034
+  },
+  {
+    "id": "dd1_earth_done",
+    "text": "We are getting closer. Time for the soft brush!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_earth_done",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131035
+  },
+  {
+    "id": "dd1_dust_done",
+    "text": "You found a dinosaur fossil!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_dust_done",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131036
+  },
+  {
+    "id": "dd1_first_glimpse",
+    "text": "Look! A little bit of the fossil is showing!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_first_glimpse",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131037
+  },
+  {
+    "id": "dd1_more",
+    "text": "Keep going, gently. There is more to find.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_more",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131038
+  },
+  {
+    "id": "dd1_shovel",
+    "text": "This is a little shovel.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_shovel",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131039
+  },
+  {
+    "id": "dd1_pick",
+    "text": "This is a small pick.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_pick",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131040
+  },
+  {
+    "id": "dd1_brush",
+    "text": "This is a soft brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_brush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131041
+  },
+  {
+    "id": "dd1_assemble",
+    "text": "Let us put the fossil pieces together.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_assemble",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131042
+  },
+  {
+    "id": "dd1_fit",
+    "text": "Find where this fossil piece fits.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fit",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131043
+  },
+  {
+    "id": "dd1_piece_yes",
+    "text": "That piece fits!",
+    "voice_profile": "teddy",
+    "scene": "Dino Dig: dd1_piece_yes",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131044
+  },
+  {
+    "id": "dd1_piece_yes2",
+    "text": "The pieces are coming together!",
+    "voice_profile": "teddy",
+    "scene": "Dino Dig: dd1_piece_yes2",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131045
+  },
+  {
+    "id": "dd1_whole",
+    "text": "We found all the pieces!",
+    "voice_profile": "teddy",
+    "scene": "Dino Dig: dd1_whole",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131046
+  },
+  {
+    "id": "dd1_imagine",
+    "text": "Let us imagine our dinosaur alive!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_imagine",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131047
+  },
+  {
+    "id": "dd1_next",
+    "text": "Another fossil is waiting. Let us explore!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_next",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131048
+  },
+  {
+    "id": "dd1_again",
+    "text": "Let us uncover this fossil again.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_again",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131049
+  },
+  {
+    "id": "dd1_gentle",
+    "text": "So gentle. Nice digging!",
+    "voice_profile": "teddy",
+    "scene": "Dino Dig: dd1_gentle",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131050
+  },
+  {
+    "id": "dd1_hello",
+    "text": "Hello, little explorer!",
+    "voice_profile": "teddy",
+    "scene": "Dino Dig: dd1_hello",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131051
+  },
+  {
+    "id": "dd1_museum",
+    "text": "You found so many dinosaurs!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_museum",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131052
+  },
+  {
+    "id": "dd1_move",
+    "text": "Try brushing another little spot.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_move",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131053
+  },
+  {
+    "id": "dd1_name_triceratops",
+    "text": "Triceratops!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_triceratops",
+    "focus": "Triceratops",
+    "stress": [
+      "Triceratops"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131054
+  },
+  {
+    "id": "dd1_fact_triceratops",
+    "text": "Triceratops has three horns.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_triceratops",
+    "focus": "Triceratops",
+    "stress": [
+      "Triceratops"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131055
+  },
+  {
+    "id": "dd1_name_stegosaurus",
+    "text": "Stegosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_stegosaurus",
+    "focus": "Stegosaurus",
+    "stress": [
+      "Stegosaurus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131056
+  },
+  {
+    "id": "dd1_fact_stegosaurus",
+    "text": "Stegosaurus has plates on its back.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_stegosaurus",
+    "focus": "Stegosaurus",
+    "stress": [
+      "Stegosaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131057
+  },
+  {
+    "id": "dd1_name_trex",
+    "text": "Tyrannosaurus rex!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_trex",
+    "focus": "T. rex",
+    "stress": [
+      "T. rex"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131058
+  },
+  {
+    "id": "dd1_fact_trex",
+    "text": "T. rex has two tiny arms.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_trex",
+    "focus": "T. rex",
+    "stress": [
+      "T. rex"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131059
+  },
+  {
+    "id": "dd1_name_brachiosaurus",
+    "text": "Brachiosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_brachiosaurus",
+    "focus": "Brachiosaurus",
+    "stress": [
+      "Brachiosaurus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131060
+  },
+  {
+    "id": "dd1_fact_brachiosaurus",
+    "text": "Brachiosaurus has a very long neck.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_brachiosaurus",
+    "focus": "Brachiosaurus",
+    "stress": [
+      "Brachiosaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131061
+  },
+  {
+    "id": "dd1_name_ankylosaurus",
+    "text": "Ankylosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_ankylosaurus",
+    "focus": "Ankylosaurus",
+    "stress": [
+      "Ankylosaurus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131062
+  },
+  {
+    "id": "dd1_fact_ankylosaurus",
+    "text": "Ankylosaurus has a club on its tail.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_ankylosaurus",
+    "focus": "Ankylosaurus",
+    "stress": [
+      "Ankylosaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131063
+  },
+  {
+    "id": "dd1_name_parasaurolophus",
+    "text": "Parasaurolophus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_parasaurolophus",
+    "focus": "Parasaurolophus",
+    "stress": [
+      "Parasaurolophus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131064
+  },
+  {
+    "id": "dd1_fact_parasaurolophus",
+    "text": "Parasaurolophus has a long crest.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_parasaurolophus",
+    "focus": "Parasaurolophus",
+    "stress": [
+      "Parasaurolophus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131065
+  },
+  {
+    "id": "dd1_name_diplodocus",
+    "text": "Diplodocus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_diplodocus",
+    "focus": "Diplodocus",
+    "stress": [
+      "Diplodocus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131066
+  },
+  {
+    "id": "dd1_fact_diplodocus",
+    "text": "Diplodocus has a very long tail.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_diplodocus",
+    "focus": "Diplodocus",
+    "stress": [
+      "Diplodocus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131067
+  },
+  {
+    "id": "dd1_name_spinosaurus",
+    "text": "Spinosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_spinosaurus",
+    "focus": "Spinosaurus",
+    "stress": [
+      "Spinosaurus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131068
+  },
+  {
+    "id": "dd1_fact_spinosaurus",
+    "text": "Spinosaurus has a tall sail on its back.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_spinosaurus",
+    "focus": "Spinosaurus",
+    "stress": [
+      "Spinosaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131069
+  },
+  {
+    "id": "dd1_name_velociraptor",
+    "text": "Velociraptor!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_velociraptor",
+    "focus": "Velociraptor",
+    "stress": [
+      "Velociraptor"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131070
+  },
+  {
+    "id": "dd1_fact_velociraptor",
+    "text": "Velociraptor has feathers.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_velociraptor",
+    "focus": "Velociraptor",
+    "stress": [
+      "Velociraptor"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131071
+  },
+  {
+    "id": "dd1_name_iguanodon",
+    "text": "Iguanodon!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_iguanodon",
+    "focus": "Iguanodon",
+    "stress": [
+      "Iguanodon"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131072
+  },
+  {
+    "id": "dd1_fact_iguanodon",
+    "text": "Iguanodon has a spike on each thumb.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_iguanodon",
+    "focus": "Iguanodon",
+    "stress": [
+      "Iguanodon"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131073
+  },
+  {
+    "id": "dd1_name_allosaurus",
+    "text": "Allosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_allosaurus",
+    "focus": "Allosaurus",
+    "stress": [
+      "Allosaurus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131074
+  },
+  {
+    "id": "dd1_fact_allosaurus",
+    "text": "Allosaurus has three fingers on each hand.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_allosaurus",
+    "focus": "Allosaurus",
+    "stress": [
+      "Allosaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131075
+  },
+  {
+    "id": "dd1_name_carnotaurus",
+    "text": "Carnotaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_carnotaurus",
+    "focus": "Carnotaurus",
+    "stress": [
+      "Carnotaurus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131076
+  },
+  {
+    "id": "dd1_fact_carnotaurus",
+    "text": "Carnotaurus has two horns on its head.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_carnotaurus",
+    "focus": "Carnotaurus",
+    "stress": [
+      "Carnotaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131077
+  },
+  {
+    "id": "dd1_name_pachycephalosaurus",
+    "text": "Pachycephalosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_pachycephalosaurus",
+    "focus": "Pachycephalosaurus",
+    "stress": [
+      "Pachycephalosaurus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131078
+  },
+  {
+    "id": "dd1_fact_pachycephalosaurus",
+    "text": "Pachycephalosaurus has a thick, round skull.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_pachycephalosaurus",
+    "focus": "Pachycephalosaurus",
+    "stress": [
+      "Pachycephalosaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131079
+  },
+  {
+    "id": "dd1_name_microraptor",
+    "text": "Microraptor!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_microraptor",
+    "focus": "Microraptor",
+    "stress": [
+      "Microraptor"
+    ],
+    "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
+    "rate": 0.9,
+    "seed": 131080
+  },
+  {
+    "id": "dd1_fact_microraptor",
+    "text": "Microraptor has feathers on its arms and legs.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_microraptor",
+    "focus": "Microraptor",
+    "stress": [
+      "Microraptor"
+    ],
+    "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
+    "rate": 0.9,
+    "seed": 131081
+  },
+  {
+    "id": "dd1_name_therizinosaurus",
+    "text": "Therizinosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_therizinosaurus",
+    "focus": "Therizinosaurus",
+    "stress": [
+      "Therizinosaurus"
+    ],
+    "instruction": "Warm clear child voice. Pronounce theh-riz-in-oh-SORE-us. Speak exact words.",
+    "rate": 0.88,
+    "seed": 131173
+  },
+  {
+    "id": "dd1_fact_therizinosaurus",
+    "text": "Therizinosaurus has very long claws.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_therizinosaurus",
+    "focus": "Therizinosaurus",
+    "stress": [
+      "Therizinosaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131083
+  },
+  {
+    "id": "dd1_name_gallimimus",
+    "text": "Gallimimus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_gallimimus",
+    "focus": "Gallimimus",
+    "stress": [
+      "Gallimimus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131084
+  },
+  {
+    "id": "dd1_fact_gallimimus",
+    "text": "Gallimimus has long legs for running.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_gallimimus",
+    "focus": "Gallimimus",
+    "stress": [
+      "Gallimimus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131085
+  },
+  {
+    "id": "dd1_name_oviraptor",
+    "text": "Oviraptor!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_oviraptor",
+    "focus": "Oviraptor",
+    "stress": [
+      "Oviraptor"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131086
+  },
+  {
+    "id": "dd1_fact_oviraptor",
+    "text": "Oviraptor has a beak with no teeth.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_oviraptor",
+    "focus": "Oviraptor",
+    "stress": [
+      "Oviraptor"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131087
+  },
+  {
+    "id": "dd1_name_corythosaurus",
+    "text": "Corythosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_corythosaurus",
+    "focus": "Corythosaurus",
+    "stress": [
+      "Corythosaurus"
+    ],
+    "instruction": "Delighted curious child voice. Clearly say the dinosaur name. Exact words.",
+    "rate": 0.94,
+    "seed": 131088
+  },
+  {
+    "id": "dd1_fact_corythosaurus",
+    "text": "Corythosaurus eats plants.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_corythosaurus",
+    "focus": "Corythosaurus",
+    "stress": [
+      "Corythosaurus"
+    ],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131089
+  },
+  {
+    "id": "dd1_name_dilophosaurus",
+    "text": "Dilophosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_dilophosaurus",
+    "focus": "Dilophosaurus",
+    "stress": [
+      "Dilophosaurus"
+    ],
+    "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
+    "rate": 0.9,
+    "seed": 131090
+  },
+  {
+    "id": "dd1_fact_dilophosaurus",
+    "text": "Dilophosaurus has two crests on its head.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_dilophosaurus",
+    "focus": "Dilophosaurus",
+    "stress": [
+      "Dilophosaurus"
+    ],
+    "instruction": "Curious child voice. Clear dinosaur name, warm and unhurried. Speak exact words.",
+    "rate": 0.9,
+    "seed": 131091
+  },
+  {
+    "id": "dd1_name_apatosaurus",
+    "text": "Apatosaurus!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_name_apatosaurus",
+    "focus": "Apatosaurus",
+    "stress": [
+      "Apatosaurus"
+    ],
+    "instruction": "Warm clear child voice. Pronounce uh-PAT-oh-SORE-us. Speak exact words.",
+    "rate": 0.88,
+    "seed": 131183
+  },
+  {
+    "id": "dd1_fact_apatosaurus",
+    "text": "Apatosaurus has a long neck.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_fact_apatosaurus",
+    "focus": "Apatosaurus",
+    "stress": [
+      "Apatosaurus"
+    ],
+    "instruction": "Warm clear child voice. Pronounce uh-PAT-oh-SORE-us. Speak exact words.",
+    "rate": 0.88,
+    "seed": 131184
+  },
+  {
+    "id": "dd1_over_here",
+    "text": "Try digging over here!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd1_over_here",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131094
+  },
+  {
+    "id": "dd2_sand",
+    "text": "Some bones are showing. Gently brush away the sandy soil.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd2_sand",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131095
+  },
+  {
+    "id": "dd2_first_glimpse",
+    "text": "Look! Some bones are showing. Let us use a soft brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd2_first_glimpse",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131096
+  },
+  {
+    "id": "dd2_sand_done",
+    "text": "Almost there! Gently sweep away the fine dust.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd2_sand_done",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131097
+  },
+  {
+    "id": "dd3_take_brush",
+    "text": "Here is a soft brush! Tap it or drag it to the soil.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd3_take_brush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131098
+  },
+  {
+    "id": "dd3_take_fine",
+    "text": "Here is a fine brush! Tap it or drag it to the fossil.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd3_take_fine",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131099
+  },
+  {
+    "id": "dd3_fine",
+    "text": "Use the fine brush. Gently sweep the last dust away.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd3_fine",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131100
+  },
+  {
+    "id": "dd3_finebrush",
+    "text": "This is a fine brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd3_finebrush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131101
+  },
+  {
+    "id": "dd4_start",
+    "text": "Here is a little shovel! Touch the soil, or pick up the shovel.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd4_start",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131102
+  },
+  {
+    "id": "dd4_brush",
+    "text": "Here is a soft brush! Touch the soil, or pick up the brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd4_brush",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131103
+  },
+  {
+    "id": "dd4_fine",
+    "text": "Here is a fine brush! Touch the soil, or pick up the brush.",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd4_fine",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131104
+  },
+  {
+    "id": "dd5_next_button",
+    "text": "Ready for another dinosaur? Tap the big arrow!",
+    "voice_profile": "guide",
+    "scene": "Dino Dig: dd5_next_button",
+    "focus": "",
+    "stress": [],
+    "instruction": "Warm curious child voice. Speak exact clear English, gentle and playful.",
+    "rate": 0.94,
+    "seed": 131105
+  }
+]
