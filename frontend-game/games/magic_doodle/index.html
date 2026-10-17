@@ -3,17 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="../../scripts/i18n-messages.js?v=20260924b"></script>
+    <script src="../../scripts/i18n.js?v=20260924e2"></script>
+    <link rel="stylesheet" href="../../scripts/i18n.css?v=20260924b">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <title>魔法画画</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/game-voice.css?v=20260930gv1">
+<link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+<script defer src="../../scripts/game-home.js?v=20261003home2"></script>
 </head>
 
 <body>
     <div id="game-container">
         <canvas id="canvas"></canvas>
-        <a href="../../home.html" class="back-btn">⬅</a>
+        <a href="../../home.html" class="back-btn" aria-label="返回游戏首页">⬅</a>
         <div class="instruction-hint">✨ 拖手指，连星星 ✨</div>
     </div>
     <script>
@@ -21,7 +27,9 @@
     </script>
     <script src="../../scripts/bankend-config.js?v=2"></script>
     <script src="../../scripts/tracking.js?v=2"></script>
-    <script src="script.js?v=2"></script>
+    <script src="../shared/voice-catalog.js?v=20260930lf1"></script>
+    <script src="../shared/game-voice.js?v=20260930lf1"></script>
+    <script src="script.js?v=20261002stars1"></script>
 </body>
 
 </html>

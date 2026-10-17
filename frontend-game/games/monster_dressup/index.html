@@ -2,34 +2,39 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <script src="../../scripts/i18n-messages.js?v=20260924b"></script>
+    <script src="../../scripts/i18n.js?v=20260924e2"></script>
+    <link rel="stylesheet" href="../../scripts/i18n.css?v=20260924b">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, viewport-fit=cover">
     <title>怪兽换装</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="../shared/game-voice.css?v=20260930gv1">
+<link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+<script defer src="../../scripts/game-home.js?v=20261003home2"></script>
 </head>
 <body>
     <div id="game" class="dressup-game">
         <header class="game-header">
-            <a class="round-btn back-btn" href="../../home.html" aria-label="返回">←</a>
+            <a class="round-btn back-btn" href="../../home.html" aria-label="返回游戏首页">←</a>
             <div class="title-wrap">
                 <h1>怪兽换装</h1>
-                <p id="hint">选一个部件，帮怪兽装扮起来</p>
+                <p id="hint">从 12 个部件里挑 5 个，放哪里都可以</p>
             </div>
             <button id="reset-btn" class="round-btn reset-btn" type="button" aria-label="重新开始">↻</button>
         </header>
 
         <main class="dressup-scene">
-            <img class="scene-background" src="../shared/generated_assets/monster_dressup_bg.png" alt="" draggable="false">
+            <img class="scene-background" src="../shared/generated_assets/monster_dressup_bg_preview.webp" data-full-src="../shared/generated_assets/monster_dressup_bg_optimized.webp" alt="" draggable="false">
 
             <div class="collection-badge" aria-live="polite">
                 <span>怪兽图鉴</span>
-                <strong id="collection-count">0/5</strong>
+                <strong id="collection-count">0/25</strong>
             </div>
 
             <div id="monster-stage" class="monster-stage" aria-label="等待换装的空白脸小怪兽">
                 <div class="monster-shadow"></div>
                 <img id="monster-base" class="monster-base" alt="没有眼睛、鼻子和嘴巴的小怪兽" draggable="false">
-                <div id="slots-layer" class="slots-layer" aria-hidden="true"></div>
-                <div id="placed-layer" class="placed-layer" aria-hidden="true"></div>
+                <div id="placed-layer" class="placed-layer"></div>
             </div>
 
             <div id="celebration" class="celebration" aria-live="polite">
@@ -37,7 +42,13 @@
                 <strong>装扮完成啦！</strong>
             </div>
 
-            <section id="parts-tray" class="parts-tray" aria-label="怪兽换装部件"></section>
+            <section id="parts-tray" class="parts-tray" aria-label="怪兽换装部件">
+                <div class="tray-heading">
+                    <strong>任选 5 个 · 随便放</strong>
+                    <span id="parts-count" aria-live="polite">0/5</span>
+                </div>
+                <div id="parts-list" class="parts-list"></div>
+            </section>
 
             <section id="next-panel" class="next-panel" aria-live="polite" hidden>
                 <div>
@@ -52,7 +63,10 @@
     <script>window.MINI_GAME = { id: "monster_dressup", name: "怪兽换装" };</script>
     <script src="../../scripts/bankend-config.js?v=2"></script>
     <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/progressive-images.js?v=2"></script>
     <script src="../shared/game_juice.js?v=1"></script>
-    <script src="game.js?v=5"></script>
+    <script src="../shared/voice-catalog.js?v=20260930lf1"></script>
+    <script src="../shared/game-voice.js?v=20260930lf1"></script>
+    <script src="game.js?v=20260930lf1"></script>
 </body>
 </html>

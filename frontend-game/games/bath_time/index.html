@@ -2,10 +2,16 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+    <script src="../../scripts/i18n-messages.js?v=20260924b"></script>
+    <script src="../../scripts/i18n.js?v=20260924e2"></script>
+    <link rel="stylesheet" href="../../scripts/i18n.css?v=20260924b">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="theme-color" content="#bdf5f2">
   <title>洗澡澡</title>
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="../shared/game-voice.css?v=20260930gv1">
+<link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+<script defer src="../../scripts/game-home.js?v=20261003home2"></script>
 </head>
 <body>
   <main class="game-shell" id="gameShell">
@@ -42,15 +48,15 @@
       </div>
       <div class="tools" id="tools">
         <button class="tool-card" type="button" data-tool="soap" aria-label="使用香皂">
-          <img src="../shared/generated_assets/bath_time_item_soap.png" alt="粉色香皂" draggable="false">
+          <img src="../shared/generated_assets/bath_time_item_soap_optimized.webp" alt="粉色香皂" draggable="false">
           <span>搓香皂</span>
         </button>
         <button class="tool-card" type="button" data-tool="rinse" aria-label="使用花洒">
-          <img src="../shared/generated_assets/bath_time_item_shower.png" alt="蓝色花洒" draggable="false">
+          <img src="../shared/generated_assets/bath_time_item_shower_optimized.webp" alt="蓝色花洒" draggable="false">
           <span>冲泡泡</span>
         </button>
         <button class="tool-card" type="button" data-tool="towel" aria-label="使用毛巾">
-          <img src="../shared/generated_assets/bath_time_item_towel.png" alt="橙色毛巾" draggable="false">
+          <img src="../shared/generated_assets/bath_time_item_towel_optimized.webp" alt="橙色毛巾" draggable="false">
           <span>擦干净</span>
         </button>
       </div>
@@ -65,6 +71,8 @@
   <script src="../../scripts/bankend-config.js?v=2"></script>
   <script src="../../scripts/tracking.js?v=2"></script>
   <script src="../shared/game_juice.js?v=1"></script>
-  <script src="game.js?v=4"></script>
+  <script src="../shared/voice-catalog.js?v=20260930lf1"></script>
+    <script src="../shared/game-voice.js?v=20260930lf1"></script>
+    <script src="game.js?v=20260930lf1"></script>
 </body>
 </html>

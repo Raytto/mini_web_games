@@ -3,15 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="../../scripts/i18n-messages.js?v=20260924b"></script>
+    <script src="../../scripts/i18n.js?v=20260924e2"></script>
+    <link rel="stylesheet" href="../../scripts/i18n.css?v=20260924b">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <title>修小路</title>
     <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="../shared/game-voice.css?v=20260930gv1">
+<link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+<script defer src="../../scripts/game-home.js?v=20261003home2"></script>
 </head>
 
 <body>
     <div id="game" class="road-game">
         <header class="game-header">
-            <a class="round-btn" href="../../home.html" aria-label="返回">←</a>
+            <a class="round-btn" href="../../home.html" aria-label="返回游戏首页">←</a>
             <div class="title-wrap">
                 <h1>修小路</h1>
                 <p id="hint">先把碎石填进路坑</p>
@@ -21,10 +27,10 @@
 
         <main class="game-main">
             <section id="road-scene" class="road-scene" aria-label="需要修理的小路">
-                <img id="road-stage" class="road-stage" src="../shared/generated_assets/road_helper_stage_broken_v2.png" alt="前方道路有一个宽宽的破损路坑" draggable="false">
+                <img id="road-stage" class="road-stage" src="../shared/generated_assets/road_helper_stage_broken_v2_preview.webp" data-full-src="../shared/generated_assets/road_helper_stage_broken_v2_optimized.webp" alt="前方道路有一个宽宽的破损路坑" draggable="false">
                 <div id="repair-target" class="repair-target" aria-hidden="true"></div>
                 <img id="action-prop" class="action-prop" alt="" draggable="false" hidden>
-                <img id="drive-car" class="drive-car" src="../shared/generated_assets/road_helper_item_car.png" alt="红色小车从修好的路上安全通过" draggable="false" hidden>
+                <img id="drive-car" class="drive-car" src="../shared/generated_assets/road_helper_item_car_optimized.webp" alt="红色小车从修好的路上安全通过" draggable="false" hidden>
 
                 <div id="step-strip" class="step-strip" aria-label="修路进度"></div>
 
@@ -46,8 +52,11 @@
     </script>
     <script src="../../scripts/bankend-config.js?v=2"></script>
     <script src="../../scripts/tracking.js?v=2"></script>
+    <script src="../shared/progressive-images.js?v=2"></script>
     <script src="../shared/game_juice.js?v=1"></script>
-    <script src="game.js?v=3"></script>
+    <script src="../shared/voice-catalog.js?v=20260930lf1"></script>
+    <script src="../shared/game-voice.js?v=20260930lf1"></script>
+    <script src="game.js?v=20260930lf1"></script>
 </body>
 
 </html>
