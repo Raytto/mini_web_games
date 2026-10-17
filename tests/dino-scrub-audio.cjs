@@ -7,6 +7,7 @@ const base=process.env.DIG_BASE||'http://127.0.0.1:8003',out=process.env.DIG_EVI
  try{
  const context=await browser.newContext({viewport:{width:1024,height:768},hasTouch:true,serviceWorkers:'block'});
  await context.route(/\/(api|bankend)\//,r=>r.abort());
+ if(process.env.DIG_GAME_OVERRIDE)await context.route('**/games/dino_dig/game.js*',r=>r.fulfill({contentType:'application/javascript',body:fs.readFileSync(process.env.DIG_GAME_OVERRIDE,'utf8')}));
  const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
  // Observe real Web Audio nodes, without replacing the implementation or input.
  await page.addInitScript(()=>{
@@ -16,6 +17,7 @@ const base=process.env.DIG_BASE||'http://127.0.0.1:8003',out=process.env.DIG_EVI
   AudioContext.prototype.createOscillator=function(){soundProbe.oscillators++;return osc.call(this)};
  });
  await page.goto(base+'/games/dino_dig/');await page.waitForSelector('body[data-phase="dig"]');
+ await page.locator('#dig-canvas').focus();for(let i=0;i<18;i++)await page.keyboard.press('Enter');await page.waitForSelector('body[data-phase=toolReady]');await page.locator('#next-tool').tap();await page.waitForSelector('body[data-layer="1"][data-phase=dig]');await page.waitForTimeout(300);await page.evaluate(()=>window.soundProbe={loops:0,active:0,max:0,oscillators:0});
  const r=await page.locator('#dig-canvas').boundingBox();
  const at=(x,y)=>({x:r.x+(x-14)*r.width/692,y:r.y+(y-38)*r.height/520});
  const start=at(160,190);await page.mouse.move(start.x,start.y);await page.mouse.down();await page.waitForFunction(()=>soundProbe.loops>0);

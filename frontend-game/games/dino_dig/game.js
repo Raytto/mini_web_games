@@ -1,15 +1,17 @@
 import {Playground,$,button,shuffle,clamp,LINES} from '../playful_shared/core.js?v=20261002play1';
-import {DINOSAURS,LAYERS,DIG_LINES,TOOLS,VERSION} from './content.js?v=20261014dig11';
+import {DINOSAURS,LAYERS,DIG_LINES,TOOLS,VERSION} from './rock-content.js?v=20261017rock1';
 import {DigVoice} from './voice.js?v=20261014dig11';
 import {SoilLayer,SURFACE} from './soil.js?v=20261014dig10';
 import {createImageLoader} from './image-loader.js?v=20261013dig8';
 import {DigScrubSound} from './scrub-audio.js?v=20261017scrub1';
+import {RockLayer} from './rock.js?v=20261017rock1';
+import {RockStrikeSound} from './rock-audio.js?v=20261017rock1';
 Object.assign(LINES,DIG_LINES);
 const app=new Playground({id:'dino_dig',title:'Dino Dig',zh:'小恐龙考古队',theme:'sand',eyebrow:'LITTLE DIGS · BIG DISCOVERIES'});
 app.voice.stop();app.voice=new DigVoice('dino_dig',s=>app.voiceState(s));app.voiceState({enabled:app.voice.enabled});
-const scrub=new DigScrubSound(app);
-$('#mute').addEventListener('click',()=>{if(!app.voice.enabled)scrub.stop();});
-window.addEventListener('blur',()=>cancelGesture());
+const scrub=new DigScrubSound(app),rockSound=new RockStrikeSound(app);
+$('#mute').addEventListener('click',()=>{if(!app.voice.enabled){scrub.stop();rockSound.stop();}});
+window.addEventListener('blur',()=>{cancelGesture();rockSound.stop();});
 const tr=(en,zh)=>app.lang==='zh'?zh:en,reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const art=n=>new URL('assets/'+n+(/^(depth\/|site-)/.test(n)?'-lite':'')+'.webp?v='+VERSION,import.meta.url).href;
 const canvas=document.createElement('canvas');canvas.id='dig-canvas';canvas.width=692;canvas.height=520;canvas.tabIndex=0;canvas.setAttribute('role','button');
@@ -25,32 +27,34 @@ const RELEASE_COVERAGE=.95;
 let fade=null,offerReady=false,toolFresh=true,keyboardUsing=false,releaseFinish=false;
 const assetTool=id=>'tool-'+(id==='finebrush'?'brush':id);
 const toolClip=id=>id==='finebrush'?'dd3_finebrush':'dd1_'+id;
-function nextReady(){const next=level+1;return next<3&&images.has(assetTool(LAYERS[next].tool))&&images.has(next===2?'depth/'+dino.id+'-final':depthPictures()[next+1]);}
+function nextReady(){const next=level+1;return next<LAYERS.length&&images.has(assetTool(LAYERS[next].tool))&&images.has(depthPictures()[next])&&images.has(next===LAYERS.length-1?'depth/'+dino.id+'-final':depthPictures()[next+1]);}
+const nextPrompt=()=>level===0?'dd5_rock_done':level===1?'dd4_brush':'dd4_fine';
+const makeLayer=i=>i===0?new RockLayer(images.get(depthPictures()[i])):new SoilLayer(images.get(depthPictures()[i]),LAYERS[i].strength);
 function positionOffer(){const c=canvas.getBoundingClientRect(),b=board.getBoundingClientRect();offer.style.right=Math.max(10,b.right-c.right+12)+'px';offer.style.top=Math.max(8,c.top-b.top+8)+'px';}
 new ResizeObserver(positionOffer).observe(canvas);
 function syncTool(){
  const available=['dig','toolReady'].includes(phase);
- if(!available){offer.hidden=true;offer.classList.remove('ready','taken');return;}
+ if(!available||(phase==='dig'&&level===0&&!toolFresh)){offer.hidden=true;offer.classList.remove('ready','taken');return;}
  const id=LAYERS[phase==='toolReady'?level+1:level].tool;
  if(offer.dataset.tool!==id){offer.dataset.tool=id;offer.querySelector('img').dataset.asset=assetTool(id);offer.querySelector('img').src=imageSource(assetTool(id));refreshTools();}
  const ready=phase==='dig'||nextReady(),using=phase==='dig'&&(!!gesture||keyboardUsing);
  offer.disabled=!ready;offer.hidden=false;offer.classList.toggle('taken',using);offer.classList.toggle('ready',ready&&toolFresh&&!using);offer.setAttribute('aria-pressed',String(!toolFresh));positionOffer();
  document.body.dataset.toolFresh=String(toolFresh);
 }
-function updateOffer(){if(phase!=='toolReady')return;syncTool();if(nextReady()&&!offerReady){offerReady=true;app.guide=level===0?'dd4_brush':'dd4_fine';app.guideTo(app.guide);app.chime('tap');}}
+function updateOffer(){if(phase!=='toolReady')return;syncTool();if(nextReady()&&!offerReady){offerReady=true;app.guide=nextPrompt();app.guideTo(app.guide);app.chime('tap');}}
 function fadeResiduals(final=false){fade={index:level,at:app.time,duration:reduced.matches?.3:.95,final};}
 function finishLayer(){
  if(phase!=='dig'||fade||!(layers[level].complete||(releaseFinish&&!gesture&&!keyboardUsing)))return;
- if(level<2)offerTool();else{keyboardPoint=null;app.tools.replaceChildren();fadeResiduals(true);phaseTo('finishing');}
+ if(level<LAYERS.length-1)offerTool();else{keyboardPoint=null;app.tools.replaceChildren();fadeResiduals(true);phaseTo('finishing');}
 }
 function offerTool(){
  // Only full clearing while held, or an eligible release, can offer a new tool.
  fadeResiduals();keyboardPoint=null;toolFresh=true;phaseTo('toolReady');offerReady=false;
- app.guide=level===0?'dd4_brush':'dd4_fine';app.caption.textContent=DIG_LINES[app.guide];syncTool();updateOffer();
+ app.guide=nextPrompt();app.caption.textContent=DIG_LINES[app.guide];syncTool();updateOffer();
 }
 function takeTool(){
  if(phase!=='toolReady'||!nextReady())return false;
- LAYERS.forEach((l,i)=>{if(!layers[i]&&images.has(depthPictures()[i]))layers[i]=new SoilLayer(images.get(depthPictures()[i]),l.strength);});
+ LAYERS.forEach((l,i)=>{if(!layers[i]&&images.has(depthPictures()[i]))layers[i]=makeLayer(i);});
  level++;loading.hidden=true;beginDig();return true;
 }
 function showGhost(e){if(!gesture?.fromTool)return;ghost.src=imageSource(assetTool(LAYERS[level].tool));ghost.dataset.tool=LAYERS[level].tool;ghost.hidden=false;ghost.style.left=e.clientX+'px';ghost.style.top=e.clientY+'px';}
@@ -67,7 +71,7 @@ function useTool(){
 offer.addEventListener('pointerdown',e=>{
  if(!validPointer(e)||!['dig','toolReady'].includes(phase))return;
  e.preventDefault();e.stopPropagation();app.input();if(!useTool())return;
- gesture={id:e.pointerId,from:offer,fromTool:true,moved:false,start:{x:e.clientX,y:e.clientY},point:point(e),at:app.time};
+ gesture={id:e.pointerId,rock:level===0,from:offer,fromTool:true,moved:false,start:{x:e.clientX,y:e.clientY},point:point(e),at:app.time};
  try{offer.setPointerCapture(e.pointerId);}catch{}syncTool();showGhost(e);updateData();
 });
 offer.addEventListener('click',e=>{if(e.detail===0&&!app.hidden){app.input();if(useTool()){app.feedback(toolClip(LAYERS[level].tool));syncTool();}}});
@@ -99,14 +103,14 @@ function updateData(){
  if(!dino)return;
  Object.assign(document.body.dataset,{imageCount:String(images.size),total:String(DINOSAURS.length),dino:dino.id,site:dino.site,phase,layer:String(level),tool:phase==='dig'?LAYERS[level].tool:'none',coverage:String(layers[level]?.coverage||0),coverages:JSON.stringify(LAYERS.map((_,i)=>+(layers[i]?.coverage||0).toFixed(5))),served:String(served),discoveries:String(discovered.size),strokes:String(strokeCount),dragging:String(!!gesture),depthArt:JSON.stringify(depthPictures()),centralCoverage:String(layers[level]?.centralCoverage||0),fade:fade?String(clamp((app.time-fade.at)/fade.duration,0,1)):'none'});
  $('#progress').textContent=tr(discovered.size+' of '+DINOSAURS.length+' dinosaurs', '发现了 '+discovered.size+' / '+DINOSAURS.length+' 种');
- canvas.setAttribute('aria-label',phase==='loading'?tr('Our fossil camp is getting ready','考古营地正在准备'):phase==='dig'?tr('Dig the highlighted patch. Move with arrows or press Enter to explore.','挖开提示的土块。方向键移动，空格挖掘，回车挖提示位置。'):phase==='toolReady'?tr('Touch the soil, or tap or drag the glowing tool.','直接触摸土面，或点按、拖动发光的工具。'):phase==='revealed'?tr('The whole fossil is uncovered. Watch our dinosaur come alive.','完整化石露出来了，看看恐龙活着的样子。'):tr('Meet our dinosaur. Use the big next dinosaur button to keep exploring.','认识这只恐龙，点下方大按钮去找下一只。'));
+ canvas.setAttribute('aria-label',phase==='loading'?tr('Our fossil camp is getting ready','考古营地正在准备'):phase==='dig'&&level===0?tr('Tap a rock to break off one big piece.','点一下石头，敲掉一大块。'):phase==='dig'?tr('Dig the highlighted patch. Move with arrows or press Enter to explore.','挖开提示的土块。方向键移动，空格挖掘，回车挖提示位置。'):phase==='toolReady'?tr('Touch the soil, or tap or drag the glowing tool.','直接触摸土面，或点按、拖动发光的工具。'):phase==='revealed'?tr('The whole fossil is uncovered. Watch our dinosaur come alive.','完整化石露出来了，看看恐龙活着的样子。'):tr('Meet our dinosaur. Use the big next dinosaur button to keep exploring.','认识这只恐龙，点下方大按钮去找下一只。'));
  if(phase==='alive')discovery.innerHTML=(app.lang==='zh'?dino.zh:dino.en)+'<small>'+tr(dino.fact,dino.zhfact)+'</small>';
  for(const b of app.tools.querySelectorAll('button'))b.disabled=phase!=='dig';
 }
 function refreshTools(){
  for(const b of document.querySelectorAll('.tool[data-tool]')){b.querySelector('small').textContent=tr(TOOLS[b.dataset.tool].en,TOOLS[b.dataset.tool].zh);b.setAttribute('aria-label',tr(TOOLS[b.dataset.tool].en,TOOLS[b.dataset.tool].zh));}
 }
-function depthPictures(){return ['depth/soil','depth/'+dino.id+'-peek','depth/'+dino.id+'-reveal'];}
+function depthPictures(){return ['layer-rock-v1','depth/soil','depth/'+dino.id+'-peek','depth/'+dino.id+'-reveal'];}
 async function prepare(friend){
  const local=++token;loader.cancel();cancelGesture();
  // Keep only this animal's decoded pictures; twenty rounds must not retain all artwork.
@@ -116,17 +120,17 @@ fade=null;toolFresh=true;keyboardUsing=false;offer.hidden=true;offer.classList.r
  const site='site-'+dino.site;if(images.has(site))$('.backdrop').style.backgroundImage='url("'+imageSource(site)+'")';
  // Only the first surface, its immediate reveal and current tool gate play.
  loader.load(site);
- const required=[...depthPictures().slice(0,2),'tool-shovel'];
+ const required=[...depthPictures().slice(0,2),'tool-pick'];
  const ready=await Promise.all(required.map(n=>loader.load(n)));
  if(local!==token||app.destroyed||ready.some(im=>!im))return;
- layers=LAYERS.map((l,i)=>images.has(depthPictures()[i])?new SoilLayer(images.get(depthPictures()[i]),l.strength):null);loading.hidden=true;$('#art-note').hidden=true;beginDig(true);
+ layers=LAYERS.map((l,i)=>images.has(depthPictures()[i])?makeLayer(i):null);loading.hidden=true;$('#art-note').hidden=true;beginDig(true);
  // Later pictures download while the child explores the first layer.
- for(const name of [...depthPictures().slice(2),'depth/'+dino.id+'-final','tool-brush','dino-'+dino.id])loader.load(name);
+ for(const name of [...depthPictures().slice(2),'depth/'+dino.id+'-final','tool-shovel','tool-brush','dino-'+dino.id])loader.load(name);
 }
 function beginDig(first=false){
  // Set the new phase before syncing the toolbar: level already advanced.
  toolFresh=true;phaseTo('dig');cancelGesture();progressAt=app.time;progressCoverage=layers[level].coverage;attemptsSinceProgress=0;stuckHint=false;document.body.dataset.guidance='none';buildTools();app.lastInput=app.time;lastHint=app.time;app.guide=LAYERS[level].clip;
- if(first){app.guide='dd4_start';app.sequence(['dd1_welcome',app.guide]);}else app.guideTo(app.guide);
+ if(first){app.guide='dd5_pick_start';app.sequence(['dd1_welcome',app.guide]);}else app.guideTo(app.guide);
 }
 function buildTools(){app.tools.replaceChildren();syncTool();updateData();}
 function point(e){const r=canvas.getBoundingClientRect();return{x:14+(e.clientX-r.left)*692/r.width,y:38+(e.clientY-r.top)*520/r.height};}
@@ -140,13 +144,13 @@ function cancelGesture(){
 }
 function finishOnRelease(){
  if(phase!=='dig'||app.hidden||gesture||keyboardUsing)return;
- releaseFinish=layers[level].centralCoverage>RELEASE_COVERAGE;finishLayer();
+ releaseFinish=level>0&&layers[level].centralCoverage>RELEASE_COVERAGE;finishLayer();
 }
-function dust(x,y){if(reduced.matches)return;for(let i=0;i<4;i++)particles.push({x,y,vx:(Math.random()-.5)*105,vy:-40-Math.random()*70,age:0,color:LAYERS[level].color,r:3+Math.random()*5});while(particles.length>72)particles.shift();}
+function dust(x,y){if(reduced.matches)return;for(let i=0;i<4;i++)particles.push({x,y,vx:(Math.random()-.5)*105,vy:-40-Math.random()*70,age:0,color:LAYERS[level].color,rock:level===0,r:(level===0?6:3)+Math.random()*5});while(particles.length>72)particles.shift();}
 function stamp(p){
  if(phase!=='dig'||app.hidden||!inSurface(p))return;
  pointerMark={...p,at:app.time};app.lastInput=app.time;
- const changed=layers[level].stamp(p.x,p.y);strokeCount++;attemptsSinceProgress++;const coverage=layers[level].coverage;if(coverage-progressCoverage>=.004){progressAt=app.time;progressCoverage=coverage;attemptsSinceProgress=0;stuckHint=false;app.guide=LAYERS[level].clip;document.body.dataset.guidance='none';}if(changed){dust(p.x,p.y);scrub.stroke(level);}
+ const changed=layers[level].stamp(p.x,p.y);strokeCount++;attemptsSinceProgress++;const coverage=layers[level].coverage;if(coverage-progressCoverage>=.004){progressAt=app.time;progressCoverage=coverage;attemptsSinceProgress=0;stuckHint=false;app.guide=LAYERS[level].clip;document.body.dataset.guidance='none';}if(changed){dust(p.x,p.y);if(level===0)rockSound.hit();else scrub.stroke(level-1);}
  updateData();
  finishLayer();
 }
@@ -162,14 +166,14 @@ board.addEventListener('pointerdown',e=>{
  if(!validPointer(e)||!['dig','toolReady','alive'].includes(phase))return;e.preventDefault();app.input();const p=point(e);
  if(phase==='alive'){phaseAt=app.time;app.say('dd1_hello');app.chime('pop');return;}
  if(!useTool())return;
- gesture={id:e.pointerId,from:board,fromTool:false,moved:false,start:{x:e.clientX,y:e.clientY},point:p,at:app.time};try{board.setPointerCapture(e.pointerId);}catch{}syncTool();
+ gesture={id:e.pointerId,rock:level===0,from:board,fromTool:false,moved:false,start:{x:e.clientX,y:e.clientY},point:p,at:app.time};try{board.setPointerCapture(e.pointerId);}catch{}syncTool();
  if(phase==='dig')stamp(p);
 });
 document.addEventListener('pointermove',e=>{
  if(!gesture||e.pointerId!==gesture.id||app.hidden)return;e.preventDefault();
  const old=gesture.point,p=point(e);gesture.point=p;gesture.moved=gesture.moved||Math.hypot(e.clientX-gesture.start.x,e.clientY-gesture.start.y)>5;
  showGhost(e);
- if(gesture.moved&&phase==='dig'){gesture.at=app.time;sweep(old,p);}else if(gesture.moved)app.lastInput=app.time;
+ if(gesture.moved&&phase==='dig'&&!gesture.rock){gesture.at=app.time;sweep(old,p);}else if(gesture.moved)app.lastInput=app.time;
 },{passive:false});
 document.addEventListener('pointerup',e=>{
  if(!gesture||e.pointerId!==gesture.id)return;const fromTool=gesture.fromTool,moved=gesture.moved,p=point(e);
@@ -179,7 +183,7 @@ document.addEventListener('pointercancel',e=>{if(gesture?.id===e.pointerId)cance
 canvas.addEventListener('keydown',e=>{
  if(app.hidden)return;
  if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();keyboardPoint ||= layers[level]?.hint()||{x:360,y:280};keyboardPoint.x=clamp(keyboardPoint.x+(e.key==='ArrowLeft'?-34:e.key==='ArrowRight'?34:0),48,672);keyboardPoint.y=clamp(keyboardPoint.y+(e.key==='ArrowUp'?-34:e.key==='ArrowDown'?34:0),70,490);app.input();return;}
- if(e.key!=='Enter'&&e.key!==' ')return;e.preventDefault();app.input();
+ if(e.key!=='Enter'&&e.key!==' ')return;e.preventDefault();if(level===0&&e.repeat)return;app.input();
  if(['dig','toolReady'].includes(phase)&&useTool()){keyboardUsing=true;syncTool();stamp(e.key===' '&&keyboardPoint?keyboardPoint:layers[level].hint());}
  else if(phase==='alive'){phaseAt=app.time;app.say('dd1_hello');}
 });
@@ -207,9 +211,9 @@ function drawPit(alpha=1){
  roundRect(43,58,634,436,29,'#f0d7a3');
  ctx.save();ctx.beginPath();ctx.roundRect(SURFACE.x,SURFACE.y,SURFACE.w,SURFACE.h,27);ctx.clip();
  drawImage('depth/'+dino.id+'-final',SURFACE.x,SURFACE.y,SURFACE.w,SURFACE.h);
- for(let i=2;i>=0;i--)if(layers[i]){ctx.save();if(fade?.index===i){const u=clamp((app.time-fade.at)/fade.duration,0,1);ctx.globalAlpha*=1-u*u*(3-2*u);}ctx.drawImage(layers[i].canvas,0,0);ctx.restore();}
+ for(let i=LAYERS.length-1;i>=0;i--)if(layers[i]){ctx.save();if(fade?.index===i){const u=clamp((app.time-fade.at)/fade.duration,0,1);ctx.globalAlpha*=1-u*u*(3-2*u);}ctx.drawImage(layers[i].canvas,0,0);ctx.restore();}
  ctx.restore();ctx.strokeStyle='#76563855';ctx.lineWidth=6;ctx.beginPath();ctx.roundRect(48,70,624,420,27);ctx.stroke();
- for(let i=0;i<3;i++){roundRect(66,519+i*12,588,11,4,LAYERS[i].color);if(i<level||phase==='revealed'){ctx.fillStyle='#fff5d370';ctx.fillRect(66,519+i*12,588,11);}}
+ for(let i=0;i<LAYERS.length;i++){roundRect(66,519+i*9,588,8,4,LAYERS[i].color);if(i<level||phase==='revealed'){ctx.fillStyle='#fff5d370';ctx.fillRect(66,519+i*9,588,8);}}
  ctx.restore();
 }
 function draw(dt,time){
@@ -221,27 +225,29 @@ function draw(dt,time){
    const h=keyboardPoint||layers[level].hint();ctx.save();ctx.strokeStyle='#fff1b7';ctx.lineWidth=4;ctx.setLineDash([9,8]);ctx.beginPath();ctx.arc(h.x,h.y,54,0,Math.PI*2);ctx.stroke();ctx.restore();arrow(h.x,h.y-47,time);
   }
   const mark=gesture?.point||pointerMark;
-  if(mark&&!gesture?.fromTool&&inSurface(mark)&&(gesture||time-mark.at<.45)){const id=LAYERS[level].tool;ctx.save();ctx.translate(mark.x+8,mark.y-8);if(!reduced.matches)ctx.rotate(Math.sin(time*16)*.08);const size=id==='finebrush'?79:105;drawImage(assetTool(id),-size/2,-size/2,size,size);ctx.restore();}
+  if(mark&&!gesture?.fromTool&&inSurface(mark)&&(gesture||time-mark.at<.45)){const id=LAYERS[level].tool;ctx.save();ctx.translate(mark.x+8,mark.y-8);if(!reduced.matches){const age=time-(pointerMark?.at??-1);ctx.rotate(id==='pick'?(age>=0&&age<.24?-.65*Math.sin(age/.24*Math.PI):0):Math.sin(time*16)*.08);}const size=id==='finebrush'?79:105;drawImage(assetTool(id),-size/2,-size/2,size,size);ctx.restore();}
  }else if(['alive','departing'].includes(phase)){
   const age=time-aliveAt,t=clamp(age/.8,0,1),bounce=reduced.matches?0:Math.sin(Math.min(age,1)*Math.PI)*-18;
   ctx.fillStyle='#a1845433';ctx.beginPath();ctx.ellipse(360,506,220,23,0,0,Math.PI*2);ctx.fill();
   if(t<1)drawPit(1-t);
   ctx.save();ctx.translate(0,bounce+(reduced.matches?0:Math.sin(time*2)*3));drawImage('dino-'+dino.id,35,66,650,450,t);ctx.restore();
  }
- for(const p of particles){p.age+=dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=230*dt;ctx.globalAlpha=Math.max(0,1-p.age/.65);ctx.fillStyle=p.color;ctx.beginPath();ctx.ellipse(p.x,p.y,p.r,p.r*.65,p.age*3,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;particles=particles.filter(p=>p.age<.65);
+ for(const p of particles){p.age+=dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=230*dt;ctx.globalAlpha=Math.max(0,1-p.age/.65);ctx.fillStyle=p.color;ctx.beginPath();if(p.rock){ctx.moveTo(p.x-p.r,p.y);ctx.lineTo(p.x-p.r*.2,p.y-p.r);ctx.lineTo(p.x+p.r,p.y-p.r*.3);ctx.lineTo(p.x+p.r*.6,p.y+p.r*.7);ctx.lineTo(p.x-p.r*.5,p.y+p.r*.6);ctx.closePath();}else ctx.ellipse(p.x,p.y,p.r,p.r*.65,p.age*3,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;particles=particles.filter(p=>p.age<.65);
 }
 app.listeners.add((dt,time)=>{
- if(fade){document.body.dataset.fade=String(clamp((time-fade.at)/fade.duration,0,1));if(time-fade.at>=fade.duration){const ended=fade;layers[ended.index].clear();fade=null;document.body.dataset.fade='none';updateData();if(ended.final){phaseTo('revealed');app.guide=LAYERS[2].done;app.say(app.guide);}else if(phase==='dig')finishLayer();}}
+ if(fade){document.body.dataset.fade=String(clamp((time-fade.at)/fade.duration,0,1));if(time-fade.at>=fade.duration){const ended=fade;layers[ended.index].clear();fade=null;document.body.dataset.fade='none';updateData();if(ended.final){phaseTo('revealed');app.guide=LAYERS.at(-1).done;app.say(app.guide);}else if(phase==='dig')finishLayer();}}
 
  if(phase==='dig'){
   const stalled=time-progressAt>3.8&&attemptsSinceProgress>=3;
   if(stalled&&!stuckHint){stuckHint=true;document.body.dataset.guidance='remaining';}
   if(stuckHint&&time-lastRedirect>14&&!app.voice.active){lastRedirect=time;app.guideTo('dd1_over_here');}
-  if(gesture&&!gesture.fromTool&&time-gesture.at>.13){gesture.at=time;stamp(gesture.point);}
-  if(time-app.lastInput>13&&time-lastHint>18){lastHint=time;app.guideTo(toolFresh?'dd4_start':LAYERS[level].clip);}
+  if(gesture&&!gesture.rock&&!gesture.fromTool&&time-gesture.at>.13){gesture.at=time;stamp(gesture.point);}
+  if(time-app.lastInput>13&&time-lastHint>18){lastHint=time;app.guideTo(toolFresh?(level===0?'dd5_pick_start':'dd4_start'):LAYERS[level].clip);}
  }else if(phase==='toolReady'){updateOffer();if(time-app.lastInput>12&&time-lastHint>15&&offerReady){lastHint=time;app.guideTo(app.guide);}}else if(phase==='revealed'&&time-phaseAt>1.8&&(!app.voice.active||time-phaseAt>6)){if(images.has('dino-'+dino.id)){loading.hidden=true;meetDino();}else{loading.textContent=tr('Our dinosaur is on its way…','恐龙正在赶来……');loading.hidden=false;}}
  else if(phase==='alive'&&time-app.lastInput>18&&time-lastHint>22&&!app.voice.active){lastHint=time;app.say('dd5_next_button');}
  else if(phase==='departing'&&time-phaseAt>.8&&(!app.voice.active||time-phaseAt>4))prepare(nextDino());
  draw(dt,time);
 });
+// Read-only geometry for touch and polygon verification; never changes game state.
+window.dinoRockDebug=()=>({pieces:layers[0]?.pieces?.map(p=>({id:p.id,center:{...p.center},polygon:p.polygon.map(q=>({...q})),removed:p.removed})),phase,level});
 refreshLabels();prepare(nextDino());

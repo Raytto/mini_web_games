@@ -1,3 +1,23 @@
+## 2026-10-17 石层（当前入口）
+
+四层顺序：石层 → 表土 → 沙土 → 细尘。`rock-content.js` 为内容扩展，导入原 `content.js` 的 20 种恐龙和三层土，避免重生成旧配音；后续重新生成基础内容不会丢失新增石层。石层使用现有小挖镐，18 块随机 Voronoi 多边形，每次点按整块移除；长按、划动和键盘重复不连击，清空洞不清相邻块。工具首次用起后收起，防止遮挡手机右上角石块；换层再次显示下一工具。
+
+`rock.js` 管理几何、命中与图层，`rock-audio.js` 提供短促金属轻敲加碎石瞬态；后面三层继续使用 `scrub-audio.js`。只有全部 18 块敲完才换小铲；原土层的按住 100%／松手超过 95% 规则保留。单个石面贴图和工具复用，不按恐龙复制资源。
+
+新增 3 条 CosyVoice 3.5 Plus 英语提示，来源 `speech-rocks.json`，独立 ASR 3/3 匹配。图像用内置 image_gen 生成，再缩放压缩为 `assets/layer-rock-v1.webp`；完整提示词、输出哈希和语音哈希见 `rock-assets.json`。不把 API 凭据、签名 URL 或原始 WAV 写入 Git。
+
+```bash
+python3 scripts/dino-dig/build-rock-content.py
+DIG_BASE=https://xiaoxiao.cool CWW_JOB_RUNTIME=/path/to/runtime node tests/dino-rock.cjs
+DIG_BASE=https://xiaoxiao.cool CWW_JOB_RUNTIME=/path/to/runtime node tests/dino-rock-loading.cjs
+```
+
+`tests/dino-release.cjs` 先真实敲掉 18 块石头，再回归原三土层；`tests/dino-scrub-audio.cjs` 也先进入小铲层。两个脚本继续使用原有 `DIG_ENGINE` / `DIG_EVIDENCE` 参数（音效脚本自行遍历双引擎）。新测试支持 `DIG_GAME_OVERRIDE` 仅在验收时通过浏览器路由加载待发布的单个入口文件，不创建开发副本或改变线上入口。
+
+版本：入口 `20261017rock1`，基础物种、素材与语音资源版本仍为 `20261014dig11`；新资源使用新文件名。发布、规则和回退以知识库 `projects/mini-web-game/docs/dino-rock-layer.md` 为准。下列版本记录保留历史背景。
+
+---
+
 # 当前内容：每种一配色与可辨物种（dig11，2026-10-14）
 
 当前入口/内容版本 `20261014dig11`。保留青绿色三角龙，将外形相近的戟龙、尖角龙替换为小盗龙、双脊龙，仍有 20 种；每种固定一款活体图片，不生成换色副本。按住至 100%、主动松手超过 95% 的 dig10 交互原样保留。

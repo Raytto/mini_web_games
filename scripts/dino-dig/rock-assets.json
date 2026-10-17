@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-17",
+  "image": {
+    "file": "frontend-game/games/dino_dig/assets/layer-rock-v1.webp",
+    "generator": "built-in image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset type: a texture for the top rock crust in a gentle toddler dinosaur excavation game. Create one landscape, top-down, orthographic view filling the entire image with continuous warm grey and muted taupe sandstone/slate stone surface, soft tactile hand-painted 3D storybook game art. Subtle natural rough grain, pale mineral speckles, broad quiet color variation. Mostly a single unbroken flat rock sheet, no large cracks or individual stones: the game will add polygon cracks and break it into chunks dynamically. No fossils, bones, tools, plants, characters, border, frame, perspective, writing or logos. Soft diffuse daylight, restrained contrast, not photorealistic or scary. Fill edge to edge with stone texture. Landscape ratio about 3:2.",
+    "conversion": "Full frame scaled to 936 x 630 and encoded as WebP quality 84; polygon cracks are rendered in Canvas.",
+    "sha256": "a2eb374da761c6a7d5ddbf7c10a4c628307dea2ff274ad80be154c01920b70d8",
+    "bytes": 132650
+  },
+  "speech": {
+    "model": "cosyvoice-v3.5-plus",
+    "profile": "guide",
+    "lines": "speech-rocks.json",
+    "asr": "3/3 exact matches, no manual overrides"
+  },
+  "audio": [
+    {
+      "file": "frontend-game/games/dino_dig/audio/dd5_pick_start.mp3",
+      "bytes": 27884,
+      "sha256": "4944acdebd4bab861c29e23a272e50ac92f89232dc14bf8e57a9a6f511da2969"
+    },
+    {
+      "file": "frontend-game/games/dino_dig/audio/dd5_rock_done.mp3",
+      "bytes": 47084,
+      "sha256": "9697bfb2ae1cb26d08783c71b67b135413b5409ffe6a6d505acca937b2123690"
+    },
+    {
+      "file": "frontend-game/games/dino_dig/audio/dd5_rock_tap.mp3",
+      "bytes": 37004,
+      "sha256": "24fc2b1bb8ff15b7a7496e7a566796e32aae66829964458b7f6114153a8d56a4"
+    }
+  ]
+}
