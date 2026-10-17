@@ -14,7 +14,7 @@ async function run(engine){
  const choose=async id=>{await p.locator('#choose').click();await p.locator(`[data-song="${id}"]`).click();};
  try{
  await p.goto(base+'/games/little_piano/index.html');await p.waitForFunction(()=>window.pianoDebug?.().ready);assert.equal((await state()).sampleCount,9);assert.equal(await p.locator('.white').count(),15);assert.equal(await p.locator('.black').count(),10);
- await choose('twinkle'); // The following repeated-note checks use Twinkle explicitly.
+ await choose('twinkle');await p.locator('[data-mode=free]').click(); // Set up the original free-play and repeated-note checks explicitly.
  await tap(60);await p.waitForFunction(()=>pianoDebug().context==='running');assert.equal((await state()).context,'running');await p.locator('[data-panel="songs"]').click();await p.locator('[data-mode="guide"]').click();await tap(62);assert.equal((await state()).cursor,0,'wrong note advanced');await p.waitForTimeout(500);assert.equal((await state()).cursor,0,'guide ran automatically');await p.locator('#play').click();assert.equal((await state()).cursor,0,'hear note advanced');
  await tap(60);assert.equal((await state()).cursor,1);await p.waitForTimeout(150);await tap(60);assert.equal((await state()).cursor,2,'repeated note not playable');await p.locator('#restart').click();assert.equal((await state()).cursor,0);
  // Real multi-touch input in Chromium; equivalent independent PointerEvents in WebKit.
