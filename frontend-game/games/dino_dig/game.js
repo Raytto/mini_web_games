@@ -3,9 +3,13 @@ import {DINOSAURS,LAYERS,DIG_LINES,TOOLS,VERSION} from './content.js?v=20261014d
 import {DigVoice} from './voice.js?v=20261014dig11';
 import {SoilLayer,SURFACE} from './soil.js?v=20261014dig10';
 import {createImageLoader} from './image-loader.js?v=20261013dig8';
+import {DigScrubSound} from './scrub-audio.js?v=20261017scrub1';
 Object.assign(LINES,DIG_LINES);
 const app=new Playground({id:'dino_dig',title:'Dino Dig',zh:'小恐龙考古队',theme:'sand',eyebrow:'LITTLE DIGS · BIG DISCOVERIES'});
 app.voice.stop();app.voice=new DigVoice('dino_dig',s=>app.voiceState(s));app.voiceState({enabled:app.voice.enabled});
+const scrub=new DigScrubSound(app);
+$('#mute').addEventListener('click',()=>{if(!app.voice.enabled)scrub.stop();});
+window.addEventListener('blur',()=>cancelGesture());
 const tr=(en,zh)=>app.lang==='zh'?zh:en,reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const art=n=>new URL('assets/'+n+(/^(depth\/|site-)/.test(n)?'-lite':'')+'.webp?v='+VERSION,import.meta.url).href;
 const canvas=document.createElement('canvas');canvas.id='dig-canvas';canvas.width=692;canvas.height=520;canvas.tabIndex=0;canvas.setAttribute('role','button');
@@ -72,7 +76,7 @@ const discovery=document.createElement('div');discovery.id='discovery';discovery
 const nextButton=document.createElement('button');nextButton.id='next-dinosaur';nextButton.type='button';nextButton.hidden=true;nextButton.innerHTML='<span class=next-label></span><span class=next-arrow aria-hidden=true>➜</span>';document.querySelector('footer').prepend(nextButton);
 nextButton.addEventListener('click',()=>{if(phase!=='alive'||app.hidden)return;app.input();nextButton.disabled=true;phaseTo('departing');app.guide='dd1_next';app.say(app.guide);});
 const images=new Map(),repairing=new WeakSet();let token=0;
-let queue=shuffle([...DINOSAURS]),lastId=null,dino=null,phase='loading',phaseAt=0,aliveAt=0,level=0,layers=[],gesture=null,particles=[],lastSound=-9,lastHint=-9,served=0,strokeCount=0,pointerMark=null,keyboardPoint=null;
+let queue=shuffle([...DINOSAURS]),lastId=null,dino=null,phase='loading',phaseAt=0,aliveAt=0,level=0,layers=[],gesture=null,particles=[],lastHint=-9,served=0,strokeCount=0,pointerMark=null,keyboardPoint=null;
 let progressAt=0,progressCoverage=0,attemptsSinceProgress=0,stuckHint=false,lastRedirect=-30;
 const loader=createImageLoader({images,url:art,paused:()=>app.hidden||app.destroyed,onReady:(name,image)=>{if(dino&&name==='site-'+dino.site)$('.backdrop').style.backgroundImage='url("'+image.src+'")';}});
 const imageSource=name=>images.get(name)?.src||art(name);
@@ -90,7 +94,7 @@ function refreshLabels(){
  updateData();refreshTools();
 }
 function nextDino(){if(!queue.length){queue=shuffle([...DINOSAURS]);if(queue[0].id===lastId)[queue[0],queue[1]]=[queue[1],queue[0]];}const d=queue.shift();lastId=d.id;return d;}
-function phaseTo(p){phase=p;phaseAt=app.time;document.body.dataset.phase=p;nextButton.hidden=p!=='alive';nextButton.disabled=p!=='alive';updateData();syncTool();}
+function phaseTo(p){if(p!=='dig')scrub.stop();phase=p;phaseAt=app.time;document.body.dataset.phase=p;nextButton.hidden=p!=='alive';nextButton.disabled=p!=='alive';updateData();syncTool();}
 function updateData(){
  if(!dino)return;
  Object.assign(document.body.dataset,{imageCount:String(images.size),total:String(DINOSAURS.length),dino:dino.id,site:dino.site,phase,layer:String(level),tool:phase==='dig'?LAYERS[level].tool:'none',coverage:String(layers[level]?.coverage||0),coverages:JSON.stringify(LAYERS.map((_,i)=>+(layers[i]?.coverage||0).toFixed(5))),served:String(served),discoveries:String(discovered.size),strokes:String(strokeCount),dragging:String(!!gesture),depthArt:JSON.stringify(depthPictures()),centralCoverage:String(layers[level]?.centralCoverage||0),fade:fade?String(clamp((app.time-fade.at)/fade.duration,0,1)):'none'});
@@ -129,6 +133,7 @@ function point(e){const r=canvas.getBoundingClientRect();return{x:14+(e.clientX-
 function validPointer(e){return e.isPrimary&&e.button<=0&&!app.hidden&&!gesture;}
 function inSurface(p){return p.x>=SURFACE.x-12&&p.x<=SURFACE.x+SURFACE.w+12&&p.y>=SURFACE.y-12&&p.y<=SURFACE.y+SURFACE.h+12;}
 function cancelGesture(){
+ scrub.stop();
  releaseFinish=false;ghost.hidden=true;keyboardUsing=false;
  if(gesture){try{gesture.from.releasePointerCapture(gesture.id);}catch{}}
  gesture=null;pointerMark=null;if(dino){document.body.dataset.dragging='false';syncTool();}
@@ -141,7 +146,7 @@ function dust(x,y){if(reduced.matches)return;for(let i=0;i<4;i++)particles.push(
 function stamp(p){
  if(phase!=='dig'||app.hidden||!inSurface(p))return;
  pointerMark={...p,at:app.time};app.lastInput=app.time;
- const changed=layers[level].stamp(p.x,p.y);strokeCount++;attemptsSinceProgress++;const coverage=layers[level].coverage;if(coverage-progressCoverage>=.004){progressAt=app.time;progressCoverage=coverage;attemptsSinceProgress=0;stuckHint=false;app.guide=LAYERS[level].clip;document.body.dataset.guidance='none';}if(changed){dust(p.x,p.y);if(app.time-lastSound>.18){app.chime(level===2?'tap':'pop');lastSound=app.time;}}
+ const changed=layers[level].stamp(p.x,p.y);strokeCount++;attemptsSinceProgress++;const coverage=layers[level].coverage;if(coverage-progressCoverage>=.004){progressAt=app.time;progressCoverage=coverage;attemptsSinceProgress=0;stuckHint=false;app.guide=LAYERS[level].clip;document.body.dataset.guidance='none';}if(changed){dust(p.x,p.y);scrub.stroke(level);}
  updateData();
  finishLayer();
 }
@@ -178,7 +183,7 @@ canvas.addEventListener('keydown',e=>{
  if(['dig','toolReady'].includes(phase)&&useTool()){keyboardUsing=true;syncTool();stamp(e.key===' '&&keyboardPoint?keyboardPoint:layers[level].hint());}
  else if(phase==='alive'){phaseAt=app.time;app.say('dd1_hello');}
 });
-canvas.addEventListener('keyup',e=>{if((e.key==='Enter'||e.key===' ')&&keyboardUsing){keyboardUsing=false;syncTool();finishOnRelease();}});
+canvas.addEventListener('keyup',e=>{if((e.key==='Enter'||e.key===' ')&&keyboardUsing){scrub.stop();keyboardUsing=false;syncTool();finishOnRelease();}});
 app.onCancel=cancelGesture;app.onRestart=()=>{if(dino)prepare(dino);};
 app.onVisibility=visible=>{cancelGesture();if(visible&&['revealed','alive'].includes(phase)){phaseAt=app.time;if(app.guide)app.say(app.guide);}};
 async function repairImage(im){

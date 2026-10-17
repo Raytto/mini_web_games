@@ -32,3 +32,7 @@ body[data-play-mode="free"] .song-bar,body[data-play-mode="free"] .score-line,bo
 }
 
 .modes button{min-height:44px}
+
+/* Keep longer song titles inside the lesson strip and the expanded chooser. */
+#choose{min-width:0;flex:1}#choose>span:nth-child(2){min-width:0}#song-name{display:block;overflow-wrap:anywhere}#song-icon,.chevron{flex-shrink:0}.song-option>span:last-child{min-width:0}.song-option strong{overflow-wrap:anywhere}
+#songs .dialog-heading{position:sticky;top:-22px;background:#fffcf4;z-index:2;padding:10px 0}
