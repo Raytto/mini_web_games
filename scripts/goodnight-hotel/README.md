@@ -1,3 +1,11 @@
+## 2026-10-17: English text beside each story picture
+
+The story card now renders the current `pages[].text` in `#story-text`, directly below its picture, using the same page record as the narration clip. It updates on each automatic page turn and stays visible when muted or replaying. English text remains English in both interface languages. The card uses the available play-area height, with a flexible image and an untruncated text block for compact phones and landscape.
+
+Entry/style version: `20261017night4`; content and audio remain `20261011night3`. No story wording or recordings changed. `tests/goodnight-hotel-stories.cjs` checks the visible page text, six-page synchronization, five viewport sizes, replay, mute, background and restart. Optional `HOTEL_PREVIEW` points to a runtime directory with `hotel-game.mjs` and `hotel-style.css` for browser-only preview before publication.
+
+The older release notes below describe previous versions. Current publishing and Git rollback follow the server knowledge base maintenance rules.
+
 # Goodnight Hotel: guided bedtime routines
 
 Released content version: `20261003night2`. The game has 15 distinct animals, each with 4–6 ordered steps, a unique illustrated two-sentence story, pajamas and a sleeping pose. Tap a room object or its footer picture; the brush, pajamas and book can also be dragged onto the animal. Completed steps cannot be undone accidentally. A wrong-order tap gently repeats the current request.

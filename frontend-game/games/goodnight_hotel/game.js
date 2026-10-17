@@ -61,12 +61,13 @@ function commitAction(){if(actionCommitted)return;actionCommitted=true;const whi
 function advanceStep(){if(!friend||index>=friend.steps.length)return;index++;currentAction=null;actionCommitted=false;storyToken++;storyBubble?.remove();storyBubble=null;delete document.body.dataset.storyPage;actionArt?.remove();actionArt=null;
  if(index===friend.steps.length){sleep();return;}setPhase('playing');updateTools();guide();}
 function beginStory(){storyPage=0;storyBubble=document.createElement('button');storyBubble.id='story-bubble';storyBubble.type='button';
- storyBubble.innerHTML='<span class="story-heading"></span><img id="story-picture" alt=""><span class="story-footer"><span id="story-pages"></span><span class="story-listen"></span></span>';
+ storyBubble.innerHTML='<span class="story-heading"></span><img id="story-picture" alt=""><span id="story-text" lang="en"></span><span class="story-footer"><span id="story-pages"></span><span class="story-listen"></span></span>';
  $('.play-area').append(storyBubble);storyBubble.onclick=replayStory;showStoryPage();}
 function showStoryPage(){setPhase('story');updateTools();storyReadyAt=null;storyQuietAt=null;const token=++storyToken,page=friend.pages[storyPage];
  document.body.dataset.storyPage=String(storyPage+1);document.body.dataset.storyPages=String(friend.pages.length);
  storyBubble.setAttribute('aria-label',`${friend.storyTitle}, page ${storyPage+1} of ${friend.pages.length}. ${page.text} Listen again.`);
  $('.story-heading',storyBubble).textContent=friend.storyTitle;
+ $('#story-text',storyBubble).textContent=page.text;
  $('.story-listen',storyBubble).textContent=caption('Tap picture to listen again','点画面再听一遍');
  $('#story-pages',storyBubble).innerHTML=friend.pages.map((_,i)=>`<span class="story-dot ${i===storyPage?'is-current':''}" aria-hidden="true"></span>`).join('')+`<b>${storyPage+1} / ${friend.pages.length}</b>`;
  const image=$('#story-picture',storyBubble);failedImages.delete(image);if(!failedImages.size)$('#art-note').hidden=true;
