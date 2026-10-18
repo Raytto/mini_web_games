@@ -12,7 +12,7 @@ const server = http.createServer((req,res) => {
   if (!file.startsWith(root + path.sep)) return res.writeHead(403).end();
   try {
     const body = fs.readFileSync(file), ext = path.extname(file);
-    res.writeHead(200,{'Content-Type':({'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.mp3':'audio/mpeg','.webp':'image/webp','.png':'image/png'})[ext] || 'application/octet-stream'});
+    res.writeHead(200,{'Content-Type':({'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.mp3':'audio/mpeg','.webp':'image/webp','.png':'image/png'})[ext] || 'application/octet-stream'});
     res.end(body);
   } catch {res.writeHead(404).end();}
 });
@@ -67,6 +67,13 @@ async function slot(frame,id) {
     await f.locator('.hideout').first().waitFor();
     let game = p.frames().find(frame => frame.url().includes('/games/hide_seek/'));
     assert.ok(game);
+    const homeIconType=await game.evaluate(async()=>{
+      const background=getComputedStyle(document.querySelector('#home'),'::before').backgroundImage;
+      const url=background.match(/url\(["']?(.*?)["']?\)/)?.[1];
+      if(!url) throw Error('Missing shared Home icon');
+      return (await fetch(url)).headers.get('content-type');
+    });
+    assert.match(homeIconType,/image\/svg\+xml/);
     await p.waitForFunction(() => window.__qaAudio.starts.some(x=>x.duration>0 && x.state==='running'));
     const shell = await p.evaluate(() => {
       window.__qaContext = window.gameSpeechContext('hide_seek');
