@@ -1,0 +1,299 @@
+{
+  "version": "20261001guidance1",
+  "reviewedAt": "2026-10-14",
+  "meaning": "建议起玩年龄，按当前最基本可玩交互和理解门槛评估；不是必须达到的通关年龄或专业发展评估。",
+  "rubric": {
+    "1": "点按、自由触摸与直接因果反馈；不先要求会计数或识词。",
+    "2": "基本拖放、明显属性配对、简单分类或有引导的固定步骤。",
+    "3": "场景推理、用途／栖息地关系或较复杂的多步骤任务。"
+  },
+  "games": [
+    {
+      "id": "silly_hair_salon",
+      "title": "怪兽理发店",
+      "minAge": 2,
+      "basis": "工具操作与头发可逆变化；点按可替代划动，听请求改造为进阶。",
+      "source": "frontend-game/games/silly_hair_salon/game.js"
+    },
+    {
+      "id": "goodnight_hotel",
+      "title": "晚安动物旅馆",
+      "minAge": 2,
+      "basis": "通过可见物体操作灯、窗帘与音乐盒，完成一至三项房间状态变化。",
+      "source": "frontend-game/games/goodnight_hotel/game.js"
+    },
+    {
+      "id": "snip_picnic",
+      "title": "剪绳野餐队",
+      "minAge": 2,
+      "basis": "点按或划断大目标绳子，观察滚动入篮；听颜色选择绳子为进阶。",
+      "source": "frontend-game/games/snip_picnic/game.js"
+    },
+    {
+      "id": "living_stickers",
+      "title": "会动的贴纸书",
+      "minAge": 2,
+      "basis": "点选／拖放角色到不同空间位置，语音描述关系；听请求摆放为进阶。",
+      "source": "frontend-game/games/living_stickers/game.js"
+    },
+    {
+      "id": "little_detective",
+      "title": "Little Detective",
+      "minAge": 3,
+      "basis": "观察场景、比较四个候选，并根据颜色、动作、物品或痕迹推理唯一答案。",
+      "source": "frontend-game/games/little_detective/game.js"
+    },
+    {
+      "id": "tickly_teddy",
+      "title": "阿嚏！痒痒熊",
+      "minAge": 1,
+      "basis": "自由模式直接点身体部位就有反应和命名；听指令找部位属于进阶玩法。",
+      "source": "frontend-game/games/tickly_teddy/game.js"
+    },
+    {
+      "id": "duck_boat",
+      "title": "小鸭子上船",
+      "minAge": 1,
+      "basis": "点一只鸭子自动入座并顺序报数；不要求先会数到十二，也不必精确拖放。",
+      "source": "frontend-game/games/duck_boat/game.js"
+    },
+    {
+      "id": "peekaboo_house",
+      "title": "谁在窗后",
+      "minAge": 2,
+      "basis": "先看两位动物，再记住位置并听名称揭帘，包含简单匹配和短时记忆。",
+      "source": "frontend-game/games/peekaboo_house/game.js"
+    },
+    {
+      "id": "jelly_colors",
+      "title": "彩虹果冻工坊",
+      "minAge": 1,
+      "basis": "点颜色即可自由混色，没有固定答案；更复杂配色和模具属于进阶探索。",
+      "source": "frontend-game/games/jelly_colors/game.js"
+    },
+    {
+      "id": "hello_teddy",
+      "title": "小熊电话屋",
+      "minAge": 2,
+      "basis": "听小熊请求，从六件图片物品里选择并递交，可点按或拖动。",
+      "source": "frontend-game/games/hello_teddy/game.js"
+    },
+    {
+      "id": "fruit_slice",
+      "title": "切水果",
+      "minAge": 1,
+      "basis": "点按或划过大水果立即切开反馈；连击并非开始玩的前提。",
+      "source": "frontend-game/games/fruit_slice/game.js"
+    },
+    {
+      "id": "balloon_pop",
+      "title": "戳气球",
+      "minAge": 1,
+      "basis": "点到气球立即爆开，基础玩法无需分类或理解任务顺序。",
+      "source": "frontend-game/games/balloon_pop/game.js"
+    },
+    {
+      "id": "feed_animal",
+      "title": "喂小猫",
+      "minAge": 2,
+      "basis": "区分猫咪想吃和不想吃的食物，再送到猫或篮子，包含简单二分选择。",
+      "source": "frontend-game/games/feed_animal/game.js"
+    },
+    {
+      "id": "feed_ants",
+      "title": "喂蚂蚁",
+      "minAge": 2,
+      "basis": "先从食物栏取出食物，再拖到场景中放下，看蚂蚁搬运。",
+      "source": "frontend-game/games/feed_ants/game.js"
+    },
+    {
+      "id": "bubble_pop",
+      "title": "戳泡泡",
+      "minAge": 1,
+      "basis": "点按或滑过泡泡即可产生声音和动画。",
+      "source": "frontend-game/games/bubble_pop/game.js"
+    },
+    {
+      "id": "animal_tap",
+      "title": "拍拍动物",
+      "minAge": 1,
+      "basis": "点动物就能听名字、看动作，直接因果反馈。",
+      "source": "frontend-game/games/animal_tap/game.js"
+    },
+    {
+      "id": "monster_transform",
+      "title": "怪兽变脸",
+      "minAge": 1,
+      "basis": "点一下随机换五官和身体，自由观察，不要求匹配。",
+      "source": "frontend-game/games/monster_transform/game.js"
+    },
+    {
+      "id": "time_magic",
+      "title": "天气魔法",
+      "minAge": 1,
+      "basis": "点按或划动即可换天气和昼夜，没有正确答案要求。",
+      "source": "frontend-game/games/time_magic/game.js"
+    },
+    {
+      "id": "magic_doodle",
+      "title": "魔法画画",
+      "minAge": 1,
+      "basis": "任意位置触摸、划动就产生光点；连星星是可逐步探索的目标。",
+      "source": "frontend-game/games/magic_doodle/script.js"
+    },
+    {
+      "id": "car_track",
+      "title": "小车嘀嘀",
+      "minAge": 2,
+      "basis": "需持续拖住小车沿道路前进；有吸附辅助，但仍要进行路径跟随。",
+      "source": "frontend-game/games/car_track/game.js"
+    },
+    {
+      "id": "balloon_pump",
+      "title": "打气球",
+      "minAge": 1,
+      "basis": "按住即可打气、松手放飞，气球太小时可以继续按住。",
+      "source": "frontend-game/games/balloon_pump/script.js"
+    },
+    {
+      "id": "feed_fish",
+      "title": "喂小鱼",
+      "minAge": 1,
+      "basis": "可直接点水面投食，鱼会主动游来；拖拽和识别鱼种不是入门前提。",
+      "source": "frontend-game/games/feed_fish/script.js"
+    },
+    {
+      "id": "tidy_up",
+      "title": "收玩具",
+      "minAge": 2,
+      "basis": "需要抓住玩具并拖入箱子，完成同一类目标的连续拖放。",
+      "source": "frontend-game/games/tidy_up/script.js"
+    },
+    {
+      "id": "egg_hatch",
+      "title": "孵小蛋",
+      "minAge": 1,
+      "basis": "反复点蛋即可孵化；收集图鉴是附加玩法。",
+      "source": "frontend-game/games/egg_hatch/script.js"
+    },
+    {
+      "id": "animal_breakfast",
+      "title": "动物早餐",
+      "minAge": 2,
+      "basis": "从少量食物中为动物配对，支持点选后点目标或拖放。",
+      "source": "frontend-game/games/animal_breakfast/game.js"
+    },
+    {
+      "id": "train_cargo",
+      "title": "小火车装货",
+      "minAge": 2,
+      "basis": "按显眼颜色把货物与车厢匹配，带语音和引导。",
+      "source": "frontend-game/games/train_cargo/game.js"
+    },
+    {
+      "id": "bath_time",
+      "title": "洗澡澡",
+      "minAge": 2,
+      "basis": "按提示依次使用肥皂、花洒和毛巾，固定三步日常顺序。",
+      "source": "frontend-game/games/bath_time/game.js"
+    },
+    {
+      "id": "little_chef",
+      "title": "小小厨房",
+      "minAge": 3,
+      "basis": "不同食谱有三至五个工具／食材步骤，需要按当前食谱持续推进。",
+      "source": "frontend-game/games/little_chef/game.js"
+    },
+    {
+      "id": "road_helper",
+      "title": "修小路",
+      "minAge": 2,
+      "basis": "跟随三步提示拖放桥板、填料和小车等工具，目标区域明显。",
+      "source": "frontend-game/games/road_helper/game.js"
+    },
+    {
+      "id": "garden_grow",
+      "title": "种花花",
+      "minAge": 2,
+      "basis": "跟随播种、浇水、光照等步骤拖放工具，观察植物阶段变化。",
+      "source": "frontend-game/games/garden_grow/game.js"
+    },
+    {
+      "id": "shadow_match",
+      "title": "影子配对",
+      "minAge": 2,
+      "basis": "把动物外形与对应轮廓匹配，再点按或拖放。",
+      "source": "frontend-game/games/shadow_match/game.js"
+    },
+    {
+      "id": "little_band",
+      "title": "小乐队",
+      "minAge": 2,
+      "basis": "把乐器分配给对应伙伴，完成简单配对后演奏。",
+      "source": "frontend-game/games/little_band/game.js"
+    },
+    {
+      "id": "weather_dress",
+      "title": "天气穿衣",
+      "minAge": 3,
+      "basis": "根据当前天气挑选合适的衣物／用品，需要理解天气与用途的关系。",
+      "source": "frontend-game/games/weather_dress/game.js"
+    },
+    {
+      "id": "find_friends",
+      "title": "找同伴",
+      "minAge": 3,
+      "basis": "实际玩法是动物与树梢、草原、水下栖息地配对，需要动物生活环境知识。",
+      "source": "frontend-game/games/find_friends/game.js"
+    },
+    {
+      "id": "monster_dressup",
+      "title": "怪兽换装",
+      "minAge": 2,
+      "basis": "自由选择五官与饰品并放到身体位置，包含部件选择和空间摆放。",
+      "source": "frontend-game/games/monster_dressup/game.js"
+    },
+    {
+      "id": "parcel_sort",
+      "title": "收快递",
+      "minAge": 2,
+      "basis": "把圆形、方形、三角形包裹与同形入口匹配。",
+      "source": "frontend-game/games/parcel_sort/game.js"
+    },
+    {
+      "id": "animal_clinic",
+      "title": "动物小诊所",
+      "minAge": 3,
+      "basis": "一轮一个小问题，先单工具后两选一，以宽松点按或拖动完成照顾；成人可带入。",
+      "source": "frontend-game/games/animal_clinic/game.js"
+    },
+    {
+      "id": "dino_dig",
+      "title": "小恐龙考古队",
+      "minAge": 3,
+      "basis": "大范围触摸逐层挖掘，自动换工具；四块化石拼图有轮廓、吸附及温和提示。",
+      "source": "frontend-game/games/dino_dig/game.js"
+    },
+    {
+      "id": "draw_swim",
+      "title": "我画的小鱼活了",
+      "minAge": 3,
+      "basis": "按头、身体、尾巴画三部分；允许点画和歪线，自动绑定并播放孩子自己的笔迹。",
+      "source": "frontend-game/games/draw_swim/game.js"
+    },
+    {
+      "id": "little_piano",
+      "title": "小钢琴",
+      "minAge": 1,
+      "basis": "自由点按琴键立即发声，不要求读谱或计数；逐键跟弹为进阶玩法。",
+      "source": "frontend-game/games/little_piano/game.js"
+    },
+    {
+      "id": "little_drums",
+      "title": "小鼓手",
+      "minAge": 1,
+      "basis": "自由点按大块鼓面立即发声，不要求识谱；两手配合与跟随示例为进阶。",
+      "source": "frontend-game/games/little_drums/game.js"
+    }
+  ]
+}
