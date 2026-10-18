@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "match": 2,
+    "review": 0
+  },
+  "clips": [
+    {
+      "id": "wg_33e95d2a46ced6563a16",
+      "sha256": "da04996ecdd998ea740bd56a06ca200dccb36f5aa58e87c3b231ac5c08af33c5",
+      "expected": "Let us make a music train! Choose a sound, tap a car, then press play.",
+      "transcript": "Let us make a music train. Choose a sound, tap a car, then press play.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "wg_a01969d0f911b283f49e",
+      "sha256": "c3bc5c49b7d43318252e07ce6d07a4a6fe52d5992a8f12686362369b13378c38",
+      "expected": "Choose a drum or a cymbal. Tap a train car to add it. You can put more than one sound in a car. Press play to hear your music.",
+      "transcript": "Choose a drum or a cymbal. Tap a train car to add it. You can put more than one sound in a car. Press play to hear your music.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    }
+  ]
+}

@@ -294,6 +294,13 @@
       "minAge": 1,
       "basis": "自由点按大块鼓面立即发声，不要求识谱；两手配合与跟随示例为进阶。",
       "source": "frontend-game/games/little_drums/game.js"
+    },
+    {
+      "id": "rhythm_train",
+      "title": "节奏小火车",
+      "minAge": 3,
+      "basis": "选择乐器后点车厢，听有顺序的循环反馈；成人可示范一次，多乐器与空拍为进阶探索。",
+      "source": "frontend-game/games/rhythm_train/game.js"
     }
   ]
 }

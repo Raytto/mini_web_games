@@ -1,0 +1,20 @@
+[
+  {
+    "id": "wg_33e95d2a46ced6563a16",
+    "key": "intro",
+    "text": "Let us make a music train! Choose a sound, tap a car, then press play.",
+    "voice_profile": "warm_guide",
+    "rate": 0.92,
+    "seed": 18650,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  },
+  {
+    "id": "wg_a01969d0f911b283f49e",
+    "key": "help",
+    "text": "Choose a drum or a cymbal. Tap a train car to add it. You can put more than one sound in a car. Press play to hear your music.",
+    "voice_profile": "warm_guide",
+    "rate": 0.92,
+    "seed": 18651,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  }
+]

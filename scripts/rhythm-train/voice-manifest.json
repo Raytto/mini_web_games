@@ -1,0 +1,46 @@
+{
+  "model": "cosyvoice-v3.5-plus",
+  "provider": "Alibaba Cloud Model Studio",
+  "synthetic": true,
+  "processing": "mono 24kHz MP3, 80kbps, -18 LUFS, -2dBTP; original pitch and timing",
+  "clips": [
+    {
+      "id": "wg_33e95d2a46ced6563a16",
+      "key": "intro",
+      "text": "Let us make a music train! Choose a sound, tap a car, then press play.",
+      "voice_profile": "warm_guide",
+      "rate": 0.92,
+      "seed": 18650,
+      "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing.",
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxsoftc17-11ec3a487c0f49c6a0540bb87ca73751",
+      "file": "wg_33e95d2a46ced6563a16.mp3",
+      "fingerprint": "00f0f7fa54b24a05b5137ff142509d0ea44cbb327b866f2293f16db495f5ba17",
+      "raw_sha256": "22f53fa610cf4273591557d7834306a82cd611c6da65b2a7245722d60fa52c10",
+      "duration": 7.296,
+      "rms_dbfs": -19.56,
+      "peak_dbfs": -2.44,
+      "sha256": "da04996ecdd998ea740bd56a06ca200dccb36f5aa58e87c3b231ac5c08af33c5",
+      "runtime_file": "frontend-game/games/rhythm_train/audio/intro.mp3"
+    },
+    {
+      "id": "wg_a01969d0f911b283f49e",
+      "key": "help",
+      "text": "Choose a drum or a cymbal. Tap a train car to add it. You can put more than one sound in a car. Press play to hear your music.",
+      "voice_profile": "warm_guide",
+      "rate": 0.92,
+      "seed": 18651,
+      "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing.",
+      "model": "cosyvoice-v3.5-plus",
+      "voice": "cosyvoice-v3.5-plus-vd-xxsoftc17-11ec3a487c0f49c6a0540bb87ca73751",
+      "file": "wg_a01969d0f911b283f49e.mp3",
+      "fingerprint": "6a0190b48a3adeae82d444e9d3dd4feeed8aa508c70e11b4ee9a006028b8d276",
+      "raw_sha256": "d94fa3b459193b46d1d4cda5aa6a98447477c12ba1f09b8ea4c785580b27be08",
+      "duration": 9.216,
+      "rms_dbfs": -18.8,
+      "peak_dbfs": -3.12,
+      "sha256": "c3bc5c49b7d43318252e07ce6d07a4a6fe52d5992a8f12686362369b13378c38",
+      "runtime_file": "frontend-game/games/rhythm_train/audio/help.mp3"
+    }
+  ]
+}
