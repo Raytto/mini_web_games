@@ -1,0 +1,338 @@
+[
+  {
+    "id": "where_rabbit",
+    "text": "Where's the rabbit?",
+    "file": "where_rabbit.mp3",
+    "sha256": "6a1f40665ae2528300e97c8acea57d13029c16fdd92aa9db2843a2c024a8c5af",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_rabbit",
+    "text": "This is a rabbit.",
+    "file": "lf_p_this_rabbit.mp3",
+    "sha256": "8f07365f0b563869047dcf40f2c7d586debcd46730f4c0025ce0ba40973d1cbd",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_rabbit",
+    "text": "Yes! It is a rabbit!",
+    "file": "lf_p_yes_rabbit.mp3",
+    "sha256": "bcfa27a0aaeb3aff5830d7ca1d32621fa7441dbc063656442f8f26d030de7811",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_squirrel",
+    "text": "Where's the squirrel?",
+    "file": "where_squirrel.mp3",
+    "sha256": "3fcbdac2b2ab4d5358535069b088406c0bd29161df0e550743fc082867a47fe0",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_squirrel",
+    "text": "This is a squirrel.",
+    "file": "lf_p_this_squirrel.mp3",
+    "sha256": "cf6b72be10f88819259f00a96434f9ae38f0762ea30918c8fd475b8c448e19c9",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_squirrel",
+    "text": "Yes! It is a squirrel!",
+    "file": "lf_p_yes_squirrel.mp3",
+    "sha256": "2052069db3b4603d727e2e5a1612c794545650df2f1f33689261520f079153d5",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_fox",
+    "text": "Where's the fox?",
+    "file": "where_fox.mp3",
+    "sha256": "57760cfc2ed515fd0c9303724647c73f7a2a10edb7db88e546fae664e098ea43",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_fox",
+    "text": "This is a fox.",
+    "file": "lf_p_this_fox.mp3",
+    "sha256": "71fdcc4d12d85ee666a09ad1763f1a3d2c95fda839a83ccc6572a3a1249b1284",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_fox",
+    "text": "Yes! It is a fox!",
+    "file": "lf_p_yes_fox.mp3",
+    "sha256": "cf3afe5caa3c70c574e37d0dbcd00fc96abd39bd3f40948b4816c20b6b292135",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_owl",
+    "text": "Where's the owl?",
+    "file": "where_owl.mp3",
+    "sha256": "b5cae54732317961f3f8a462a306c213bae08f495315ed59d4d084c9c4853449",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_owl",
+    "text": "This is an owl.",
+    "file": "lf_p_this_owl.mp3",
+    "sha256": "96800d89c965edd62de1d6ed0f2cd0533aa8630099a3b94ec2cdc3139b12da73",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_owl",
+    "text": "Yes! It is an owl!",
+    "file": "lf_p_yes_owl.mp3",
+    "sha256": "b7f2d83b7b7f5090a3cea14a0fc5ed704e890de27355269823e20358733961c2",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_duck",
+    "text": "Where is the duck?",
+    "file": "where_duck.mp3",
+    "sha256": "b1cfd53a8a4f9cb37134f66957514fb6029f0b5861d55e137c2717a4310d2f06",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_duck",
+    "text": "This is a duck.",
+    "file": "lf_p_this_duck.mp3",
+    "sha256": "15d79296479d4c9d982fde1f9fa83dd719637a9b8ceab2eadda3f49c2b5d6bad",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_duck",
+    "text": "Yes! It is a duck!",
+    "file": "lf_p_yes_duck.mp3",
+    "sha256": "e8a5d6dfd25a9c964632b3c30e256ccb8ffc2313cbd66fcdc49383fa0fab6bad",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_frog",
+    "text": "Where's the frog?",
+    "file": "where_frog.mp3",
+    "sha256": "ba6bf593a556487803e12890626fe8eb6f20a55d357937bfc96239fd26886dc1",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_frog",
+    "text": "This is a frog.",
+    "file": "lf_p_this_frog.mp3",
+    "sha256": "381a7c77bc85a15466b61a1f74c37eeefc6656eac80e1ca5158f7b7374feffc4",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_frog",
+    "text": "Yes! It is a frog!",
+    "file": "lf_p_yes_frog.mp3",
+    "sha256": "bada5b35af23995b081bb6e985455b56a34a343d1a3e10c75e5fbc0c5932d6ea",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_turtle",
+    "text": "Where's the turtle?",
+    "file": "where_turtle.mp3",
+    "sha256": "0462c5e733f32c2d54e88cd230f632e5a56ddb648bbb5ce0eea55d9687f4deaa",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_turtle",
+    "text": "This is a turtle.",
+    "file": "lf_p_this_turtle.mp3",
+    "sha256": "a6742e025161360a52f746f05bbca5eab2d00481a6ad929bf94377b4c0028f70",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_turtle",
+    "text": "Yes! It is a turtle!",
+    "file": "lf_p_yes_turtle.mp3",
+    "sha256": "de54ea0164505662f25df0922a9f01a715b5a781dad65a2d422a45b20d7a5150",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_hedgehog",
+    "text": "Where's the hedgehog?",
+    "file": "where_hedgehog.mp3",
+    "sha256": "7d8961befc59a7cdd555805606e5be1481a36d4955c916f0c74e7f6e924c417b",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_hedgehog",
+    "text": "This is a hedgehog.",
+    "file": "lf_p_this_hedgehog.mp3",
+    "sha256": "380705d2ffe821e2bdba96472c27469d383c0200c42d58803678dd785bb6e965",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_hedgehog",
+    "text": "Yes! It is a hedgehog!",
+    "file": "lf_p_yes_hedgehog.mp3",
+    "sha256": "d5f62bf497e8721725438ad44cb59ec6ce820f51917e1a76bacd9748905d0c58",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_cat",
+    "text": "Where's the cat?",
+    "file": "where_cat.mp3",
+    "sha256": "b09b68731eaff65b23f90e6ba3d001dde8b7b6b067251729c710319563f13211",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_cat",
+    "text": "This is a cat.",
+    "file": "lf_p_this_cat.mp3",
+    "sha256": "26fdcdc89d4e34a50ceb0101230031f4279e02e6e0cb0a2ced91f7509cc54f6a",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_cat",
+    "text": "Yes! It is a cat!",
+    "file": "lf_p_yes_cat.mp3",
+    "sha256": "5f1452810f45592c1e88d4160321b9632c0c9cec5e0366171369cb43926f16e0",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_dog",
+    "text": "Where's the dog?",
+    "file": "where_dog.mp3",
+    "sha256": "7417ea2f70b735b77c1b76d0cb47bbcb7240b3b7d574188007fcb027e972e4f4",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_dog",
+    "text": "This is a dog.",
+    "file": "lf_p_this_dog.mp3",
+    "sha256": "ed5696d3dce420d12340d308e7fa37737cf099dfed596c66771763a786103b3f",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_dog",
+    "text": "Yes! It is a dog!",
+    "file": "lf_p_yes_dog.mp3",
+    "sha256": "8dcdf96141c196ddb0a7d9748146fff7ea85bdf3faa2471983f8ccd8127226f6",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_mouse",
+    "text": "Where's the mouse?",
+    "file": "where_mouse.mp3",
+    "sha256": "b08493b838e55645eb51573f80ef1a58c2c2d7c2d700317adb6869eb1cbb175e",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_mouse",
+    "text": "This is a mouse.",
+    "file": "lf_p_this_mouse.mp3",
+    "sha256": "87e3ff1f5e84e211972aea9a885da9427b6739c45364bcf0d920f281e6f19076",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_mouse",
+    "text": "Yes! It is a mouse!",
+    "file": "lf_p_yes_mouse.mp3",
+    "sha256": "b2adf18965e87825f5f6369b8a3a1885791467ec76f5ba74c8a5888b50afb92f",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_pig",
+    "text": "Where's the pig?",
+    "file": "where_pig.mp3",
+    "sha256": "781b8266ca574402eff6e20ba0d9c4fb5a86b5fcc49109282e97443da74a41f5",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_pig",
+    "text": "This is a pig.",
+    "file": "lf_p_this_pig.mp3",
+    "sha256": "28b5a8b479c3eed0cee225164d2e9973ced414cccd4879d876d7a2fdea25766e",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_pig",
+    "text": "Yes! It is a pig!",
+    "file": "lf_p_yes_pig.mp3",
+    "sha256": "82073709578b324d0f1540cfc41102f181c729851b44de10a4e53c4f564cc8e0",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_sheep",
+    "text": "Where's the sheep?",
+    "file": "where_sheep.mp3",
+    "sha256": "7da63329570077d50ec72f196825b9223ab923357d4d4fd24379f6e397e48ee4",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_sheep",
+    "text": "This is a sheep.",
+    "file": "lf_p_this_sheep.mp3",
+    "sha256": "2fc3f03e8015a5cfb9379ba0486d8a735f8acdd05149827ab6e8585de4290ad9",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_sheep",
+    "text": "Yes! It is a sheep!",
+    "file": "lf_p_yes_sheep.mp3",
+    "sha256": "1d6585854bbdfb917ee173435ae358c834a0ce60c958c0bc2f4354eb08d58577",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "where_chick",
+    "text": "Where is the chick?",
+    "file": "where_chick.mp3",
+    "sha256": "832c09dba8b6310c3270cd218a15ea72c9e7d9a1fcd7b3297a0cdc235350a001",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_this_chick",
+    "text": "This is a chick.",
+    "file": "lf_p_this_chick.mp3",
+    "sha256": "190733ab904acfdd9bd60a253bc4af585192d40294094ba855c4c8608c45f965",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  },
+  {
+    "id": "lf_p_yes_chick",
+    "text": "Yes! It is a chick!",
+    "file": "lf_p_yes_chick.mp3",
+    "sha256": "3cefd5de579145e18bc566dee70856324c2d1c998e31b50e9ee6e6afe1489ed8",
+    "model": "cosyvoice-v3.5-plus",
+    "voice_profile": "warm_guide"
+  }
+]

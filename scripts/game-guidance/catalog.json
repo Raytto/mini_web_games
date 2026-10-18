@@ -301,6 +301,20 @@
       "minAge": 3,
       "basis": "选择乐器后点车厢，听有顺序的循环反馈；成人可示范一次，多乐器与空拍为进阶探索。",
       "source": "frontend-game/games/rhythm_train/game.js"
+    },
+    {
+      "id": "symmetry_draw",
+      "title": "对称画",
+      "minAge": 2,
+      "basis": "保留线上既有2岁起标签：手指自由画一笔即可看到镜像反馈，不要求理解对称定义；等分、橡皮与作品保存为进阶。",
+      "source": "frontend-game/games/symmetry_draw/game.js"
+    },
+    {
+      "id": "hide_seek",
+      "title": "小伙伴藏哪儿",
+      "minAge": 3,
+      "basis": "对照完整动物与尾巴、耳朵等局部，在四个藏处中寻找一个指定目标；点按即可揭晓，可用提示，年龄为设计建议，尚无儿童试玩数据。",
+      "source": "frontend-game/games/hide_seek/game.js"
     }
   ]
 }
