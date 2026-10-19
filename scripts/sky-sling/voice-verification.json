@@ -1,0 +1,72 @@
+{
+  "summary": {
+    "match": 8,
+    "review": 0
+  },
+  "clips": [
+    {
+      "id": "wg_204edcff431f80a86937",
+      "sha256": "d105d1f9fec43afb06d0dfb8496aba557632ad68357e44e370804f06cbed73ac",
+      "expected": "A feather! Light and fast.",
+      "transcript": "A feather, light and fast.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "wg_397d3140f24be9ce5a71",
+      "sha256": "d83e402d20d97da1eb85dc9b0b6b76952b12e6b04c92f8e154cd14cd127ef0a7",
+      "expected": "Pull it back, then let it fly! Pop the bubbles in the sky.",
+      "transcript": "Pull it back, then let it fly. Pop the bubbles in the sky.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "wg_4074923fd1b401b83f5d",
+      "sha256": "f3508eb05db7e8dd3f1c7352555f28ceb3c6a14458ccef351ef3def98accff7b",
+      "expected": "You made a rainbow!",
+      "transcript": "You made a rainbow.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "wg_8d7516adf0240d0f17bf",
+      "sha256": "bba3a15fa8c4ce5cd96630472b8f90f5a5eea9580c93666f5049351b5f20d3c8",
+      "expected": "Hold your little friend. Pull back, then let go! Pull down to aim up. Choose a new friend below.",
+      "transcript": "Hold your little friend, pull back, then let go. Pull down to aim up. Choose a new friend below.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "wg_a4354cab1e8b6b97ecf5",
+      "sha256": "9aeb322ca02551d2562b01087f358826f009494c3c6b11d9aa691eab547acd05",
+      "expected": "Wow! So many bubbles!",
+      "transcript": "Wow, so many bubbles!",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "wg_aebb6962b47ab8ac4db3",
+      "sha256": "5d7166af420aa9369b9dd16135a2f7644a7c92bb1e24e1c814cc71545ab67779",
+      "expected": "A rainbow flower! Pop a whole bunch.",
+      "transcript": "A rainbow flower pop a whole bunch.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "wg_f85807c6070470f57cba",
+      "sha256": "ac70c68ed36152a306a5d878028295687f1fced5bc2a83f626145e9b8826b1eb",
+      "expected": "A sun disc! It spins through the bubbles.",
+      "transcript": "A sun disc it spins through the bubbles.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    },
+    {
+      "id": "wg_fa6ae8b0f5e8cdd32a93",
+      "sha256": "ca257ca666683a4c5a3c03602392de28deaa0748e9eacf633a455663efbec83c",
+      "expected": "A moon ball! Big and heavy.",
+      "transcript": "A moon ball, big and heavy.",
+      "model": "qwen3-asr-flash",
+      "status": "match"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "wg_397d3140f24be9ce5a71",
+    "key": "intro",
+    "text": "Pull it back, then let it fly! Pop the bubbles in the sky.",
+    "voice_profile": "warm_guide",
+    "rate": 0.93,
+    "seed": 23100,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  },
+  {
+    "id": "wg_8d7516adf0240d0f17bf",
+    "key": "help",
+    "text": "Hold your little friend. Pull back, then let go! Pull down to aim up. Choose a new friend below.",
+    "voice_profile": "warm_guide",
+    "rate": 0.93,
+    "seed": 23101,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  },
+  {
+    "id": "wg_f85807c6070470f57cba",
+    "key": "sun",
+    "text": "A sun disc! It spins through the bubbles.",
+    "voice_profile": "warm_guide",
+    "rate": 0.93,
+    "seed": 23102,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  },
+  {
+    "id": "wg_204edcff431f80a86937",
+    "key": "feather",
+    "text": "A feather! Light and fast.",
+    "voice_profile": "warm_guide",
+    "rate": 0.93,
+    "seed": 23103,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  },
+  {
+    "id": "wg_fa6ae8b0f5e8cdd32a93",
+    "key": "moon",
+    "text": "A moon ball! Big and heavy.",
+    "voice_profile": "warm_guide",
+    "rate": 0.93,
+    "seed": 23104,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  },
+  {
+    "id": "wg_aebb6962b47ab8ac4db3",
+    "key": "flower",
+    "text": "A rainbow flower! Pop a whole bunch.",
+    "voice_profile": "warm_guide",
+    "rate": 0.93,
+    "seed": 23105,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  },
+  {
+    "id": "wg_a4354cab1e8b6b97ecf5",
+    "key": "great",
+    "text": "Wow! So many bubbles!",
+    "voice_profile": "warm_guide",
+    "rate": 0.93,
+    "seed": 23106,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  },
+  {
+    "id": "wg_4074923fd1b401b83f5d",
+    "key": "rainbow",
+    "text": "You made a rainbow!",
+    "voice_profile": "warm_guide",
+    "rate": 0.93,
+    "seed": 23107,
+    "instruction": "Speak warmly and gently to a young child. Use clear natural English, without singing."
+  }
+]
