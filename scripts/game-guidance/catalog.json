@@ -315,6 +315,14 @@
       "minAge": 3,
       "basis": "对照完整动物与尾巴、耳朵等局部，在四个藏处中寻找一个指定目标；点按即可揭晓，可用提示，年龄为设计建议，尚无儿童试玩数据。",
       "source": "frontend-game/games/hide_seek/game.js"
+    },
+    {
+      "id": "sky_sling",
+      "title": "泡泡弹弹乐",
+      "minAge": 3,
+      "basis": "按住、反向拖拽、松手的连续控制，结合可见轨迹瞄准；没有计数或得分门槛。",
+      "source": "frontend-game/games/sky_sling/index.html",
+      "reviewedAt": "2026-10-19"
     }
   ]
 }
