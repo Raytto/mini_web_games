@@ -1,0 +1,32 @@
+{
+  "note": "Reused approved warm-guide recordings; no newly synthesized voice.",
+  "clips": [
+    {
+      "text": "This is a big smile.",
+      "voice": "cosyvoice-v3.5-plus-vd-xxsoftc17-11ec3a487c0f49c6a0540bb87ca73751",
+      "model": "cosyvoice-v3.5-plus",
+      "rate": 0.92,
+      "sha256": "275a7acaffedcd5b7035e615ce477a692b459e18bfaa13e833e31aa1d1491063",
+      "file": "smile.mp3",
+      "source": "lf_d7d568d8fbf3.mp3"
+    },
+    {
+      "text": "This is a gentle smile.",
+      "voice": "cosyvoice-v3.5-plus-vd-xxsoftc17-11ec3a487c0f49c6a0540bb87ca73751",
+      "model": "cosyvoice-v3.5-plus",
+      "rate": 0.92,
+      "sha256": "17b12de0ebb59491619111324d0f62eeef62a88ea416e0d2ff0b57c36e6fca6c",
+      "file": "gentle.mp3",
+      "source": "lf_3c9b8a02f4ab.mp3"
+    },
+    {
+      "text": "Your picture is ready!",
+      "voice": "cosyvoice-v3.5-plus-vd-xxsoftc17-11ec3a487c0f49c6a0540bb87ca73751",
+      "model": "cosyvoice-v3.5-plus",
+      "rate": 0.92,
+      "sha256": "cfa271073a19ea821bc4bb4f16fe78fdb207b057b8ce372db5667f82787f0c3b",
+      "file": "photo.mp3",
+      "source": "sd1_picture.mp3"
+    }
+  ]
+}

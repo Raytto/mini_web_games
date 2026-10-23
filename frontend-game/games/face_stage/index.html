@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f1e6">
+  <title>Face Stage · 我的脸来演主角</title>
+  <link rel="icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../scripts/game-home.css?v=20261002home1">
+  <link rel="stylesheet" href="style.css?v=20261023face1">
+  <script defer src="../../scripts/game-home.js?v=20261003home2"></script>
+  <script defer src="art.js?v=20261023face1"></script>
+  <script defer src="game.js?v=20261023face1"></script>
+</head>
+<body>
+<header>
+  <a id="home" href="../../home.html" aria-label="Home"></a>
+  <div class="brand"><h1 data-t="title">Face Stage</h1><p>THE FAMILY PHOTO CLUB</p></div>
+  <div class="header-tools"><button id="sound" class="round" aria-label="Mute voice">♪</button><button id="help" class="round" aria-label="Help">?</button></div>
+</header>
+<main>
+  <section class="play-area" aria-label="Photo stage">
+    <div id="stageBox">
+      <canvas id="stage" width="1200" height="1000" aria-label="Put your face in the oval; tap the stage for a surprise" tabindex="0"></canvas>
+      <span id="cameraBadge" class="badge">Camera off</span>
+      <span id="sceneBadge" class="badge right">01 / 10</span>
+      <div id="countdown" aria-live="assertive" hidden></div>
+      <div id="flash" hidden></div>
+    </div>
+    <div class="scene-caption"><strong id="sceneTitle"></strong><span id="scenePrompt"></span></div>
+  </section>
+  <aside class="controls">
+    <div class="onboarding"><span class="eyebrow" data-t="eyebrow">A LITTLE FACE. A BIG ADVENTURE.</span><p id="tip" data-t="tip">Find a costume, put your face in the circle, and make a silly face together.</p></div>
+    <div class="main-controls">
+      <button id="camera" class="primary"><span class="cam-icon" aria-hidden="true"></span><span id="cameraLabel">Turn camera on</span></button>
+      <button id="shutter" class="shutter" disabled><span class="shutter-dot" aria-hidden="true"></span><span data-t="take">Take a photo</span></button>
+    </div>
+    <div class="small-controls"><button id="scenes" data-t="scenes">Choose scene</button><button id="align" data-t="align">Fit our faces</button></div>
+    <p id="status" role="status" aria-live="polite"></p>
+    <p class="privacy" data-t="privacy">Only on this device. No microphone. No photo uploads.</p>
+    <div class="scene-nav"><button id="previous" aria-label="Previous scene">←</button><span id="peopleLabel"></span><button id="next" aria-label="Next scene">→</button></div>
+  </aside>
+</main>
+<video id="cameraVideo" autoplay muted playsinline webkit-playsinline aria-hidden="true"></video>
+<div id="sceneDialog" class="overlay" hidden>
+ <section role="dialog" aria-modal="true" aria-labelledby="sceneHeading" class="sheet scene-sheet">
+  <div class="sheet-head"><div><span class="eyebrow" data-t="wardrobe">TEN LITTLE WORLDS</span><h2 id="sceneHeading" data-t="choose">Who shall we be?</h2></div><button class="close" data-close="sceneDialog" aria-label="Close">×</button></div>
+  <div class="filters" role="group" aria-label="Number of people"><button data-filter="0" aria-pressed="true" data-t="all">All</button><button data-filter="1" aria-pressed="false" data-t="solo">Just me</button><button data-filter="2" aria-pressed="false" data-t="duo">You + me</button><button data-filter="3" aria-pressed="false" data-t="family">All three</button></div>
+  <div id="sceneGrid"></div>
+ </section>
+</div>
+<div id="adjustPanel" class="adjust" hidden>
+ <div class="adjust-title"><strong data-t="adjustTitle">Grown-up fitting room</strong><button id="finishAlign" data-t="done">Done</button></div>
+ <p data-t="adjustHint">Drag a face circle to your face. Tap a circle to change its size.</p>
+ <div id="personButtons" class="person-buttons"></div>
+ <label><span data-t="holeSize">Circle size</span><input id="holeSize" type="range" min="0.7" max="1.35" value="1" step="0.025"></label>
+ <label><span data-t="zoom">Camera zoom</span><input id="zoom" type="range" min="1" max="2" value="1" step="0.025"></label>
+ <div class="adjust-actions"><button id="swap" data-t="swap">Swap sides</button><button id="level" data-t="level">Same height</button><button id="reset" data-t="reset">Reset fitting</button></div>
+ <label class="check"><input id="timer" type="checkbox" checked><span data-t="timer">3-second timer</span></label>
+</div>
+<div id="photoDialog" class="overlay" hidden>
+ <section role="dialog" aria-modal="true" aria-labelledby="photoHeading" class="sheet photo-sheet">
+  <h2 id="photoHeading" data-t="photoTitle">Look at us!</h2>
+  <p data-t="photoPrivacy">Camera off. This picture stays here until you save it or leave.</p>
+  <img id="photo" alt="Your family photo, ready to save">
+  <p id="saveHint" data-t="saveHint">On iPhone or iPad: Share picture → Save Image, if offered. You can also press and hold the picture.</p>
+  <div class="photo-actions"><button id="share" class="primary" data-t="share">Share picture</button><button id="download" data-t="download">Download PNG</button><button id="retake" data-t="retake">Retake</button></div>
+  <p id="saveStatus" role="status" aria-live="polite"></p>
+  <button id="backToStage" class="text-button" data-t="back">Back to stage</button>
+ </section>
+</div>
+<div id="helpDialog" class="overlay" hidden>
+ <section role="dialog" aria-modal="true" aria-labelledby="helpHeading" class="sheet help-sheet">
+  <div class="sheet-head"><h2 id="helpHeading" data-t="helpTitle">Let's get in the picture</h2><button class="close" data-close="helpDialog" aria-label="Close">×</button></div>
+  <ol><li data-t="help1">A grown-up steadies the device and taps Turn camera on. Allow camera access.</li><li data-t="help2">Choose a one-, two- or three-person scene. The two-person scenes start with one big and one little character.</li><li data-t="help3">If faces do not fit, open Fit our faces. Drag the circles and adjust their sizes. Swap sides or use the same height.</li><li data-t="help4">Make a face, tap the stage for a little surprise, then take a photo. Camera stops after the photo.</li><li data-t="help5">Share picture opens your device's menu. Choose Save Image if offered; otherwise download or press and hold the preview. Downloading is not the same as saving to Photos.</li></ol>
+  <p data-t="helpPrivacy">No face recognition, recording or microphone. Pictures are combined on this device and are not automatically uploaded. Leaving or switching apps turns the camera off; turn it on again when ready.</p>
+  <button id="helpDone" class="primary" data-t="done">Done</button>
+ </section>
+</div>
+</body></html>
