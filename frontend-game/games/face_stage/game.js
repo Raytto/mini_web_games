@@ -96,4 +96,7 @@ window.addEventListener('storage',e=>{if(e.key==='xiaoxiaoLanguage')window.Xiaox
 // Read-only diagnostics: tests exercise actual buttons and pointer events.
 Object.defineProperty(window,'faceStageState',{get:()=>({mode,scene:scene.id,people:scene.n,poses:poses.map(p=>({...p})),zoom,adjust,selected,sound,voicePlays,tracks:stream?.getTracks().map(t=>({kind:t.kind,state:t.readyState}))||[],video:{width:video.videoWidth,height:video.videoHeight,ready:video.readyState},photo:photoFile?{name:photoFile.name,size:photoFile.size,type:photoFile.type}:null,requestId,count})});
 renderUI();draw();raf=requestAnimationFrame(loop);
+// The home-card gesture unlocks the shared voice context; camera permission
+// remains a separate, explicit action inside the game.
+try{if(parent!==window&&parent.gameSpeechContext?.('face_stage'))void say('smile')}catch{}
 })();
